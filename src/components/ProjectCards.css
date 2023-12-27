@@ -188,3 +188,32 @@ justify-content: center;
         }
     
     }
+
+    @media only screen and (max-width: 420px) {
+      
+
+        #first-card{
+            margin-bottom: 20%;
+        }
+
+        .proj-skill-item{
+            margin: auto;
+        }
+    
+    }
+
+    @media only screen and (max-width: 390px) {
+    
+        #first-card{
+            margin-bottom: 40%;
+        }
+    
+    }
+
+    @media only screen and (max-width: 325px) {
+    
+        #first-card{
+            margin-bottom: 60%;
+        }
+    
+    }

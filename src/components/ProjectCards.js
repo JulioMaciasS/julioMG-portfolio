@@ -14,7 +14,7 @@ function ProjectCards() {
 
     return (
         <div className='proj-cards-container'>
-            <a className='proj-custom-link' href='https://juliotabj.wixsite.com/juliotechguides/post/how-to-create-a-minimalistic-app-with-ads-and-microtransactions-in-ios' target='_blank' rel="noopener noreferrer">
+            <a className='proj-custom-link' href='https://juliotabj.wixsite.com/juliotechguides/post/how-to-create-a-minimalistic-app-with-ads-and-microtransactions-in-ios' target='_blank' rel="noopener noreferrer" id='first-card'>
 
                 <div className='proj-card-container'>
 

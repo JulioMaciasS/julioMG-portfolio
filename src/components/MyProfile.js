@@ -14,7 +14,7 @@ function MyProfile() {
         <section>
           <h2>Who am I?</h2>
           <p>
-          My name is Julio Macias Gonzalez, born and raised in Spain. I have always been passionate about learning, particularly in the realm of technology. In my free time, I enjoy going to the gym, traveling, and occasionally playing video games. I make it a point to stay up to date with the latest advancements in technology.
+          My name is Julio Macias Gonzalez, born and raised in Spain. I have always been passionate about learning, particularly in the realm of technology. In my free time, I enjoy going to the gym, travelling, and occasionally playing video games. I make it a point to stay up to date with the latest advancements in technology.
           </p>
         </section>
 
