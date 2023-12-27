@@ -27,7 +27,7 @@
     height: 80px;
     width: 80px;
     display: flex;
-    flex-direction: column; /* Align content vertically */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -61,4 +61,32 @@
     font-size: 14px;
     margin-top: 6px;
     font-weight: bold;
+  }
+
+  @media only screen and (max-width: 700px) {
+    .web-info-text-container-dark{
+      width: 100%;
+      height: max-content;
+      flex-wrap: wrap; /* Allow cards to wrap onto the next line */
+      height: max-content;
+      justify-content:center; /* Distribute cards evenly */
+      display: flex;
+      overflow-x: hidden;
+      overflow-y: auto;
+      text-align: center;
+    }
+
+    .skill-item{
+      margin: 15px;
+    }
+  }
+
+  @media only screen and (max-width: 449px) {
+    .skill-container{
+      flex-wrap: wrap; /* Allow cards to wrap onto the next line */
+      height: max-content;
+      justify-content: center;
+      width: 100%;
+      align-items: center;
+    }
   }

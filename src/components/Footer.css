@@ -62,4 +62,8 @@
     .footer-row{
         flex-direction: column;
     }
+
+    .footer-column{
+        width: 100%;
+    }
 }

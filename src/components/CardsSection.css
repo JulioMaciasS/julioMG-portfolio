@@ -43,4 +43,5 @@ text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   .container-background {
     flex-wrap: wrap; /* Allow cards to wrap onto the next line */
     height: max-content;
-  }}
+  }
+}
