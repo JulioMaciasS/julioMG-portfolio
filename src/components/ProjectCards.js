@@ -3,13 +3,13 @@ import "./ProjectCards.css";
 
 function ProjectCards() {
 
-    var reactIconLink = '/images/logos/react.png';
-    var HTMLIconLink = '/images/logos/html.png';
-    var JavaScriptIconLink = '/images/logos/javascript.png';
-    var CSSIconLink = '/images/logos/css.png';
-    var swiftIconLink = '/images/logos/swift.png';
-    var XcodeIconLink = '/images/logos/Xcode.png';
-    var swiftUIIconLink = '/images/logos/SwiftUI.png';
+    var reactIconLink = './images/logos/react.png';
+    var HTMLIconLink = './images/logos/html.png';
+    var JavaScriptIconLink = './images/logos/javascript.png';
+    var CSSIconLink = './images/logos/css.png';
+    var swiftIconLink = './images/logos/swift.png';
+    var XcodeIconLink = './images/logos/Xcode.png';
+    var swiftUIIconLink = './images/logos/SwiftUI.png';
 
 
     return (
@@ -18,7 +18,7 @@ function ProjectCards() {
 
                 <div className='proj-card-container'>
 
-                    <img className='proj-card-image' src='/images/img-project.jpg' alt='Project Card'></img>
+                    <img className='proj-card-image' src='./images/img-project.jpg' alt='Project Card'></img>
 
                     <div className='proj-text-container'>
 
@@ -55,7 +55,7 @@ function ProjectCards() {
 
                 <div className='proj-card-container'>
 
-                    <img className='proj-card-image' src='/images/q-mark-icon.jpeg' alt='Project Card'></img>
+                    <img className='proj-card-image' src='./images/q-mark-icon.jpeg' alt='Project Card'></img>
 
                     <div className='proj-text-container'>
 
@@ -66,17 +66,17 @@ function ProjectCards() {
                         <div class="proj-skill-container">
 
                             <div class="proj-skill-item">
-                                <img src='/images/q-mark-icon.jpeg' alt="" className="skill-icon" id='q-mark-icon'/>
+                                <img src='./images/q-mark-icon.jpeg' alt="" className="skill-icon" id='q-mark-icon'/>
                                 <p className="skill-text">?</p>
                             </div>
 
                             <div class="proj-skill-item">
-                                <img src='/images/q-mark-icon.jpeg' alt="" className="skill-icon" id='q-mark-icon'/>
+                                <img src='./images/q-mark-icon.jpeg' alt="" className="skill-icon" id='q-mark-icon'/>
                                 <p className="skill-text">?</p>
                             </div>
 
                             <div class="proj-skill-item">
-                                <img src='/images/q-mark-icon.jpeg' alt="" className="skill-icon" id='q-mark-icon'/>
+                                <img src='./images/q-mark-icon.jpeg' alt="" className="skill-icon" id='q-mark-icon'/>
                                 <p className="skill-text">?</p>
                             </div>
 

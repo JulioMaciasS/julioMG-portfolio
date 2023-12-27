@@ -3,10 +3,10 @@ import './SkillsCard.css';
 
 function SkillsCard() {
 
-    var reactIconLink = '/images/logos/react.png';
-    var HTMLIconLink = '/images/logos/html.png';
-    var JavaScriptIconLink = '/images/logos/javascript.png';
-    var CSSIconLink = '/images/logos/css.png';
+    var reactIconLink = './images/logos/react.png';
+    var HTMLIconLink = './images/logos/html.png';
+    var JavaScriptIconLink = './images/logos/javascript.png';
+    var CSSIconLink = './images/logos/css.png';
 
     return (
         <div className='web-info-text-container-dark'>

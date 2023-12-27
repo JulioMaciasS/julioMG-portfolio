@@ -15,7 +15,7 @@ export default function CardsSection() {
  >
         </LinkCard>
         <LinkCard
- imageURL='/images/covers/microt-cover-img.png'
+ imageURL='./images/covers/microt-cover-img.png'
  title='How to implement iOS microtransactions for beginners'   
  hrefLink='https://juliotabj.wixsite.com/juliotechguides/post/how-to-implement-ios-microtransactions-for-beginners'    
  >
@@ -27,12 +27,12 @@ export default function CardsSection() {
  >
         </LinkCard>
         <LinkCard
- imageURL='/images/img-9.jpg'
+ imageURL='./images/img-9.jpg'
  title='Card Sample'   
  >
         </LinkCard>
         <LinkCard
- imageURL='/images/img-9.jpg'
+ imageURL='./images/img-9.jpg'
  title='Card Sample'   
  >
         </LinkCard>
