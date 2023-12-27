@@ -12,6 +12,7 @@
     margin-bottom: 30px; */
     transform: scale(0.85);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Adjusted box-shadow for a subtle effect */
+  
   }
 
 
@@ -69,9 +70,9 @@
       height: max-content;
       flex-wrap: wrap; /* Allow cards to wrap onto the next line */
       height: max-content;
-      justify-content:center; /* Distribute cards evenly */
+      justify-content:flex-start; /* Distribute cards evenly */
       display: flex;
-      overflow-x: hidden;
+      overflow-x: scroll;
       overflow-y: auto;
       text-align: center;
     }

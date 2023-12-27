@@ -7,6 +7,7 @@ function SkillsCard() {
     var HTMLIconLink = './images/logos/html.png';
     var JavaScriptIconLink = './images/logos/javascript.png';
     var CSSIconLink = './images/logos/css.png';
+    var NodeJSIconLink = './images/logos/node.png';
 
     return (
         <div className='web-info-text-container-dark'>
@@ -30,6 +31,10 @@ function SkillsCard() {
                 <div class="skill-item">
                     <img src={CSSIconLink} alt="CSS Icon" className="skill-icon" />
                     <p className="skill-text">CSS</p>
+                </div>
+                <div class="skill-item">
+                    <img src={NodeJSIconLink} alt="NodeJS Icon" className="skill-icon" />
+                    <p className="skill-text">NodeJS</p>
                 </div>
             </div>
             
