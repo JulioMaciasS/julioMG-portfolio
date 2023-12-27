@@ -5,7 +5,7 @@ import SkillsCard from './SkillsCard';
 function Footer() {
 
   var InstagramIconLink = './images/logos/instagram.png';
-  var LinkedInIconLink = './images/logos/linkedin.png';
+  var LinkedInIconLink = './images/logos/Linkedin.png';
   var GithubIconLink = './images/logos/github.png';
 
 

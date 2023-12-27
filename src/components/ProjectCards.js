@@ -9,7 +9,7 @@ function ProjectCards() {
     var CSSIconLink = './images/logos/css.png';
     var swiftIconLink = './images/logos/swift.png';
     var XcodeIconLink = './images/logos/Xcode.png';
-    var swiftUIIconLink = './images/logos/SwiftUI.png';
+    var swiftUIIconLink = './images/logos/swiftUI.png';
 
 
     return (
