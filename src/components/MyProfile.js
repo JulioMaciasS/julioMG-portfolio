@@ -22,11 +22,13 @@ function MyProfile() {
           <h2>Why did I decide to study Computer Science?</h2>
 
           <div className='txtAndPic'>
+            <div className='column'>
           <img src='./images/computer.png' id='computer' alt='first desktop computer picture'/>
+          <center><p id='caption'><em>Caption: First self-assembled computer in 2020.</em></p></center>
+          </div>
           <p>My journey with technology began in 2014 when I received a gift, a PS4. However, as gaming consoles often struggled to deliver good performance, my curiosity about computers sparked, getting a Windows gaming laptop a year later. When dealing with a computer, often, you run into problems such as the infamous Windows blue screen, the enjoyment while solving these challenges has driven my journey.</p>
           </div>
-          <p><em>Caption: First self-assembled computer in 2020.</em></p>
-
+<br/>
           <p>Because of all this, when the time came to make a choice, I knew that Computer Science was the way forward for me.</p>
         </section>
 
