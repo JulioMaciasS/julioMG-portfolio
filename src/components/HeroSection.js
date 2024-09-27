@@ -38,7 +38,7 @@ export default function HeroSection() {
       <div>
                   {/*Card containing About me hyperlink*/}
         <div className='bottom-cards-container'>
-          <Link to='/julioMG-portfolio/about-me' className='custom-link'>
+          <Link to='/about-me' className='custom-link'>
             <div className='web-info-text-container' id='aboutmelnk'>
               <h1>
                 About me
@@ -46,7 +46,7 @@ export default function HeroSection() {
             </div>
           </Link>
           {/*Card containing Projects hyperlink*/}
-          <Link to='/julioMG-portfolio/projects' className='custom-link'>
+          <Link to='/projects' className='custom-link'>
             <div className='web-info-text-container' id='projects'>
               <h1>
                 Projects
