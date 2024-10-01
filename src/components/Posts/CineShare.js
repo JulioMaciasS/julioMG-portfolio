@@ -3,7 +3,7 @@ import '../Post.css'
 
 function CineSharePost() {
 
-  let angularIcon = './images/logos/angular-v18.jpeg';
+  let angularIcon = './images/logos/angular-v18.png';
   let springBootIcon = './images/logos/spring-boot.png';
   let mySqlIcon = './images/logos/mysql.jpg';
   let awsIcon = './images/logos/aws.png';
@@ -113,7 +113,7 @@ function CineSharePost() {
                 Working with AWS has been a new experience for me, moving beyond hosting simple static websites via GitHub Pages. I now use Amplify for frontend hosting, Elastic Beanstalk for backend deployment, RDS for database management, and Route 53 for domain management. This project has introduced me to the extensive possibilities of cloud computing, particularly the idea of building serverless applications.
               </p>
               <div className='flex flex-col justify-center items-center w-full'>
-                <img src={'./images/cineSharePost/awsTechnologies.webp'} className='object-cover rounded-xl w-96' alt='copilotCover page cineshare' />
+                <img src={'./images/cineSharePost/awsTechnologies.png'} className='object-cover rounded-xl w-96' alt='copilotCover page cineshare' />
                 <label className='text-gray-600'>AWS Technologies</label>
               </div>
 

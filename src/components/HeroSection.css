@@ -169,7 +169,7 @@ margin-left: 100px;
 #aboutmelnk {
   position: relative;
   isolation: isolate;
-  background: url('/public/images/profile-pic-2.png') center center/cover no-repeat;
+  background: url('/public/images/profile-pic-2.jpg') center center/cover no-repeat;
 }
 
 #aboutmelnk::before {
