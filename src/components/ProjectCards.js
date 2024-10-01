@@ -20,9 +20,9 @@ function ProjectCards() {
       ];
       
       const technologiesFutureProjects = [
-        { name: '?', icon: './images/q-mark-icon.jpeg' },
-        { name: '?', icon: './images/q-mark-icon.jpeg' },
-        { name: '?', icon: './images/q-mark-icon.jpeg' },
+        { name: '?', icon: './images/q-mark-icon.jpg' },
+        { name: '?', icon: './images/q-mark-icon.jpg' },
+        { name: '?', icon: './images/q-mark-icon.jpg' },
         ];
 
         const technologiesCineShare = [
@@ -55,7 +55,7 @@ function ProjectCards() {
 
 <ProjectCard
       link="#"
-      imageSrc="./images/q-mark-icon.jpeg"
+      imageSrc="./images/q-mark-icon.jpg"
       title="More projects coming soon..."
       description="Innovation awaits"
       technologies={technologiesFutureProjects}

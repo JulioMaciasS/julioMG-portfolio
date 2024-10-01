@@ -3,11 +3,11 @@ import '../Post.css'
 
 function CineSharePost() {
 
-  let angularIcon = './images/logos/angular-v18.webp';
+  let angularIcon = './images/logos/angular-v18.jpeg';
   let springBootIcon = './images/logos/spring-boot.png';
   let mySqlIcon = './images/logos/mysql.jpg';
   let awsIcon = './images/logos/aws.png';
-  let openAiIcon = './images/logos/openAI.png';
+  let openAiIcon = './images/logos/openai.png';
 
   return (
     <div>
