@@ -14,37 +14,34 @@ function Footer() {
 
       <div className='footer-column'>
 
-     
 
-          <div className='footer-column'>
+        <div className='flex flex-row gap-20 p-8'>
+          <div >
 
-            <h1>Social media</h1>
-            
-            <div className='icons-wrapper'>
+            <h1 className='text-xl mb-2'>Contact me:</h1>
 
-              <a href="https://www.instagram.com/julio.m.g_/" target='_blank' rel="noopener noreferrer" className='icon'>
-                     <img src={InstagramIconLink} alt="Instagram Icon" className="icon" />
-              </a>
+            <h2 className='mb-2'>juliomaciasdev@gmail.com</h2>
+            <a href="https://www.linkedin.com/in/julio-macias-gonzalez-199266282/" target='_blank' rel="noopener noreferrer" className='icon'>
+              <div className='flex flex-row gap-1'>
+                <h2>LinkedIn</h2><i class="bi bi-linkedin"></i>
+              </div>
+            </a>
 
-              <a href="https://www.linkedin.com/in/julio-macias-gonzalez-199266282/" target='_blank' rel="noopener noreferrer" className='icon'>
-              <img src={LinkedInIconLink} alt="LinkedIn Icon" className="icon" />
-              </a>
-
-              <a href="https://github.com/JulioMaciasS" target='_blank' rel="noopener noreferrer" className='icon'>
+        </div>
+        <div>
+        <h1 className='text-xl mb-2'>Other links:</h1>
+        <a href="https://github.com/JulioMaciasS" target='_blank' rel="noopener noreferrer" className='icon'>
               <img src={GithubIconLink} alt="Github Icon" className="icon" />
-              </a>
-
-            </div>
-          
-          </div>
-
-          <div className='footer-column'>
-          </div>
+            </a>
+        </div>
+        </div>
+        <div className='footer-column'>
+        </div>
         <SkillsCard />
 
 
       </div>
-      <p className='website-rights'>JulioTech 2023©</p>
+      <p className='website-rights'>© 2024 JulioTech. All rights reserved.</p>
 
     </div>
   );

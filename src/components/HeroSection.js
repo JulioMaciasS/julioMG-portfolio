@@ -40,17 +40,19 @@ export default function HeroSection() {
         <div className='bottom-cards-container'>
           <Link to='/about-me' className='custom-link'>
             <div className='web-info-text-container' id='aboutmelnk'>
-              <h1>
+              <h1 className='flex justify-end ml-40 bg-black italic p-1 w-20'>
                 About me
               </h1>
+
             </div>
           </Link>
           {/*Card containing Projects hyperlink*/}
           <Link to='/projects' className='custom-link'>
             <div className='web-info-text-container' id='projects'>
-              <h1>
+              <h1 className='text-center ml-40 italic p-1 w-20'>
                 Projects
               </h1>
+
             </div>
           </Link>
         </div>

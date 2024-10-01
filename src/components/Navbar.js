@@ -48,7 +48,7 @@ window.addEventListener('resize', showButton);
                                 Projects
                             </Link>
                         </li>
-                        <li>
+                        {/* <li>
                         <a
                href='./Downloads/Resume-Julio-Macias-Gonzalez.pdf' download='Julio Macias Gonzalez - CV/Resume'
                 className='nav-links-mobile'
@@ -56,10 +56,10 @@ window.addEventListener('resize', showButton);
               >
                 Download CV/Resume
               </a>
-            </li>
+            </li> */}
                     </ul>
                     </div>
-                    {button && <Button buttonStyle='btn--outline'>Download CV/Resume</Button>}
+                    {/* {button && <Button buttonStyle='btn--outline'>Download CV/Resume</Button>} */}
                 </div>
             </nav>
         </>

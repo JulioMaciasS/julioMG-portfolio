@@ -202,8 +202,8 @@ margin-left: 100px;
 
 .web-info-text-container h1 {
   color: white;
-  text-align: end;
   margin-top: 100px; /* This will push the text to the bottom */
+  background-color: rgb(43, 43, 43);
 }
 
 

@@ -9,7 +9,6 @@ function Home () {
         <>
         <HeroSection/>
         <CardsSection/>
-        <Footer/>
         </>
     );
 }

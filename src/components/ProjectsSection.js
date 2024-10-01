@@ -11,7 +11,9 @@ function ProjectsSection() {
                     <h1 id='title'>
                         My Projects
                     </h1>
+                    <div className='mt-10'>
                     <ProjectCards/>
+                    </div>
                 </div>
             </div>
         </div>

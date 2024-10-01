@@ -9,13 +9,12 @@ Some of the sections to include are:
 - Skills (maybe a grid with icons of all the technologies that I consider myself proficient)
 - Brief education explanation
 - Brief work experience explanation
-- Suggestion do download CV if more info is desired
+- Suggestion to download CV if more info is desired
 */
 function Aboutme () { 
     return(
         <>
 <MyProfile/>
-<Footer/>
         </>
     );
 }
