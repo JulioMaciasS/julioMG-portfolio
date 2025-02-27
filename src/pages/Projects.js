@@ -1,7 +1,5 @@
 import React from 'react';
-import '../../App.css';
-import ProjectsSection from '../ProjectsSection';
-import Footer from '../Footer'
+import ProjectsSection from '../components/Projects/ProjectsSection';
 
 function Projects () { 
     return(

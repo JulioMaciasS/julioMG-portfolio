@@ -8,10 +8,11 @@ z-index: -1;
 
 }
 
+
+
 .hero-container{
     /* background: url('public/images/img-home.jpg') center center/cover no-repeat; */
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -22,7 +23,6 @@ z-index: -1;
 .hero-container {
 	margin: 0;
 	padding: 0;
-	height: 100vh;
 	overflow: hidden;
 	--sz: 5px; /*** size ***/
 	--sp: 10s; /*** speed ***/
@@ -35,7 +35,6 @@ z-index: -1;
 }
 
 .hero-container {
-	height: 100vh;
 	background:
 		/* black shadows */
 		radial-gradient(circle at 50% 50%, var(--b4) calc(var(--sz) * 1), #fff0 calc(var(--sz) * 8)) var(--ts),

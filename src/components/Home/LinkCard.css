@@ -1,6 +1,6 @@
 .LinkCard-container {
     width: 200px;
-    height: 300px;
+    height: 350px; /* Increased from 300px */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,7 +11,7 @@
 }
 
 .LinkCard-container:hover {
-transform: scale(1.1);
+transform: scale(1.05);
 transition: all 0.5s ease-out;
 
 }
@@ -27,9 +27,8 @@ transition: all 0.5s ease-out;
     justify-self: flex-start; /* Align items to the top of the container */
 }
 
-.text-container > h1 {
+.text-container > h3 {
  margin-top: 10px; /* Add some spacing between the image and the title */
- font-size: 18px;
  padding: 5px;
     color: rgb(0, 0, 0);
     text-align: center; /* Center the text */
@@ -37,7 +36,7 @@ transition: all 0.5s ease-out;
 
 .text-container {
     background-color: rgb(255, 255, 255);
-    height: 100px;
+    height: 150px; /* Increased from 100px */
     width: 200px;
     border-bottom-right-radius: 25px;
     display: flex;

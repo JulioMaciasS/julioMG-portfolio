@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
+import { Button } from '../Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
@@ -25,7 +25,7 @@ window.addEventListener('resize', showButton);
             <nav className='navbar'>
                 <div className='navbar-container'>
                     <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                        JulioTech
+                        JulioDev
                         <i class="fa-solid fa-microchip"/>
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
@@ -38,25 +38,23 @@ window.addEventListener('resize', showButton);
                                 Home
                             </Link>
                         </li>
-                        <li className='nav-item'>
-                            <Link to='/about-me' className='nav-links' onClick={closeMobileMenu}>
-                                About me
-                            </Link>
-                        </li>
-                        <li className='nav-item'>
-                            <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
+
+                        <li className='nav-item justify-center'>
+                        <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
                                 Projects
                             </Link>
                         </li>
-                        {/* <li>
-                        <a
-               href='./Downloads/Resume-Julio-Macias-Gonzalez.pdf' download='Julio Macias Gonzalez - CV/Resume'
-                className='nav-links-mobile'
-                onClick={closeMobileMenu}
-              >
-                Download CV/Resume
-              </a>
-            </li> */}
+{                   button &&      <li className='nav-item flex flex-col justify-center'>
+                            <Link to='/contact-me' className='nav-links contact-me-border' onClick={closeMobileMenu}>
+                            Say Hello&nbsp;<span>👋</span>                          
+                            </Link>
+                        </li>}
+                        <li className='h-[80px]'>
+                        <Link to='/contact-me' className='nav-links-mobile ' onClick={closeMobileMenu}
+                        >
+                            Say Hello&nbsp;<span>👋</span>
+                          </Link>
+            </li>
                     </ul>
                     </div>
                     {/* {button && <Button buttonStyle='btn--outline'>Download CV/Resume</Button>} */}

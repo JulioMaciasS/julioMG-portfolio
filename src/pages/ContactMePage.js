@@ -1,7 +1,6 @@
 import React from 'react';
-import '../../App.css';
-import MyProfile from '../MyProfile';
-import Footer from '../Footer'
+import '../App.css';
+import ContactMe from '../components/ContactMe/ContactMe';
 
 /*
 Some of the sections to include are:
@@ -11,12 +10,12 @@ Some of the sections to include are:
 - Brief work experience explanation
 - Suggestion to download CV if more info is desired
 */
-function Aboutme () { 
+function ContactMePage () { 
     return(
         <>
-<MyProfile/>
+<ContactMe/>
         </>
     );
 }
 
-export default Aboutme;
+export default ContactMePage;

@@ -80,7 +80,50 @@
   display: none;
 }
 
+.contact-me-border {
+  border: 2px solid #fff;
+  border-radius: 50px; /* Changed from 20px to 50px for pill shape */
+  padding: 6px 20px !important; /* Reduced from 8px to 6px to make it less tall */
+  transition: all 0.3s ease-out;
+  height: 80% !important; /* Added height for desktop */
+  margin: auto 0; /* Center vertically */
+  display: flex;
+  align-items: center;
+}
+
+.nav-links span,
+.nav-links-mobile span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.nav-links:hover span,
+.nav-links-mobile:hover span {
+  animation: wave 0.7s infinite;
+}
+
+@keyframes wave {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(15deg); }
+  75% { transform: rotate(-15deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Rest of the CSS remains the same */
+
+.contact-me-border:hover {
+  background: #fff;
+  color: #242424;
+  border-bottom: none !important;
+}
+
 @media screen and (max-width: 960px) {
+  .contact-me-border {
+    border: none;
+    padding: 2rem !important;
+    margin: 0;
+    height: auto !important; /* Reset height for mobile */
+  }
   .NavbarItems {
     position: relative;
   }
@@ -95,6 +138,9 @@
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
+    flex-direction: column;
+    align-content: flex-start; /* Align items to the top of the container */
+    justify-content: flex-start; /* Align items to the top of the container */
   }
 
 
@@ -103,11 +149,10 @@
   left: 0;
   opacity: 1;
   transition: all 0.5s ease;
+  top: 80px;
   z-index: 1;
   display: flex;
-  flex-direction: column;
-  align-content: flex-start; /* Align items to the top of the container */
-  justify-content: flex-start; /* Align items to the top of the container */
+ 
 }
 
 
@@ -150,9 +195,14 @@
   .nav-links-mobile {
     display: block;
     text-align: center;
-    margin: 2rem auto;
-    border-radius: 4px;
+    margin-inline:  auto;
+    border-radius: 50px; /* Changed from 20px to 50px for pill shape */
     width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     text-decoration: none;
     font-size: 1.5rem;
     background-color: transparent;
@@ -160,11 +210,24 @@
     padding: 14px 20px;
     border: 1px solid #fff;
     transition: all 0.3s ease-out;
+    font-size: 1.2rem;
   }
 
   .nav-links-mobile:hover {
     background: #fff;
     color: #242424;
     transition: 250ms;
+  }
+
+  .contact-me-border {
+    border: none;
+    padding: 2rem !important;
+    margin: 0;
+    height: auto !important; /* Reset height for mobile */
+  }
+
+  .contact-me-border:hover {
+    background: #fff;
+    border-bottom: none;
   }
 }

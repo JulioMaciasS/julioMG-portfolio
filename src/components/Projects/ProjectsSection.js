@@ -1,6 +1,5 @@
 import React from 'react';
-import Navbar from './Navbar';
-import ProjectCards from './ProjectCards';
+import ProjectCards from './ProjectsSection/ProjectCards';
 import './ProjectsSection.css';
 
 function ProjectsSection() {

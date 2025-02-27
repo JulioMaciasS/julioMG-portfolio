@@ -8,6 +8,7 @@ const ProjectCard = ({
     description, 
     technologies,
     new: newProject = false,
+    padding: padding = false,
   }) => {
     return (
         <a 
@@ -18,7 +19,7 @@ const ProjectCard = ({
         >
           <div className='proj-card-container'>
             <img 
-              className='proj-card-image' 
+              className={`proj-card-image ${padding ? 'p-4 bg-gray-50' : ''}`}
               src={imageSrc} 
               alt={`${title} Image`} 
             />

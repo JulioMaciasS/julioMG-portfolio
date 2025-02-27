@@ -11,7 +11,7 @@
     margin-right: 75px;
     margin-bottom: 30px; */
     transform: scale(0.85);
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Adjusted box-shadow for a subtle effect */
+    border: 1px solid lightgray;
   
   }
 
@@ -34,12 +34,13 @@
     text-align: center;
     border-radius: 10px;
     margin-right: 25px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Adjusted box-shadow for a subtle effect */
+    /* Removed box-shadow and substituted with a thin light gray outline */
+    border: 1px solid lightgray;
     transition: all 0.5s ease-out;
-  }
+}
 
   .skill-item:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: all 0.5s ease-out;
   }
   
