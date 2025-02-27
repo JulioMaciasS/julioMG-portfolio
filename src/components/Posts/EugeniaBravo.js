@@ -87,7 +87,7 @@ function EugeniaBravo() {
               <section className="p-6 rounded-xl">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">Introduction</h2>
                 <p className="text-gray-700 leading-relaxed">
-                  In order to further develop my Software engineering skills, I developed eugeniabravo.com and tudivorciointeligente.com. Not only this put my software skills to test, but the treatment with a client.
+                  To further develop my software engineering skills, I created eugeniabravo.com and tudivorciointeligente.com. This project not only challenged my technical abilities but also improved my client communication skills.
                 </p>
               </section>
 
@@ -95,7 +95,7 @@ function EugeniaBravo() {
               <section className="p-6 rounded-xl">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">Technologies</h2>
                 <p className="text-gray-700 mb-6">
-                  To developed this website I came to an agreement with the client as it was a friend of mine, choosing technologies which would directly enchance my Software Engineering skills opposed to out of the box alternatives such as WordPress or Wix, yet delivering a robust website.
+                  To develop this website, I collaborated with a friend who is also my client, choosing technologies that would enhance my software engineering skills rather than relying on out-of-the-box solutions like WordPress or Wix. This approach delivered a robust and customized website.
                 </p>
 
                 {/* Tech stack icons */}
@@ -126,10 +126,10 @@ function EugeniaBravo() {
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">Frontend</h2>
                 <h3 className="font-semibold text-lg text-gray-700 mb-2">React – TypeScript</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  As this was a real project I used React, opposed to my previous project as this is my more experienced frontend framework/library. As there should be many datahandling, TypeScript would provide safer data type handling than JavaScript.
+                  Since this was a professional project, I used React to leverage my advanced knowledge of the framework. Additionally, implementing TypeScript ensured safer data handling compared to plain JavaScript.
                 </p>
                 <p className="text-gray-700 leading-relaxed mt-4">
-                  To get things started, I decided to try a new AI Tool called <a target='_blank' rel="noopener noreferrer" href='https://bolt.new' className='text-blue-500 hover:underline'>bolt.new</a> which is capable of creating a project from the ground, run it, and make improvements based on new prompts. Later on, I downloaded the generated "boilerplate code" to continue development.
+                  To kickstart development, I experimented with an innovative AI tool called <a target='_blank' rel="noopener noreferrer" href='https://bolt.new' className='text-blue-500 hover:underline'>bolt.new</a>, which can generate a project from scratch, run it, and iteratively improve the code based on prompts. I then downloaded the generated boilerplate code to continue development.
                 </p>
               </section>
 
@@ -138,7 +138,7 @@ function EugeniaBravo() {
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">Backend</h2>
                 <h3 className="font-semibold text-lg text-gray-700 mb-2">AWS Amplify</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  In my previous project, I made a Spring Boot backend with an AWS RDS database. This approach lead to some issues such as the backend crushing unnexpectedly and higher development time and complexity. As a solo developer in this project, my time is limited and I needed a way of simplifying this side of the development with a robust and flexible solution. This is when I decided to use Amplify which can be described in many ways, such as "backend as a service". This is not only simpler to develop, once you get familiarised, but more robust and cost-efficient for small to medium projects, as the infrastructure is fully managed for you.
+                  In a previous project, I built a Spring Boot backend integrated with an AWS RDS database. However, this approach led to issues such as unexpected crashes, increased development time, and added complexity. As a solo developer with limited time, I needed a simpler yet robust solution. That’s when I opted for AWS Amplify, a “backend as a service” solution. Amplify is easier to develop once familiar with it, and it offers a robust, cost-effective infrastructure for small to medium projects, since it is fully managed.
                 </p>
               </section>
 
@@ -146,14 +146,14 @@ function EugeniaBravo() {
               <section className="p-6 rounded-xl">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">Website Structure</h2>
                 <p className="text-gray-700 mb-6">
-                  This website is divided into public access pages and admin pages.
+                  The website is divided into public access pages and admin pages.
                 </p>
 
                 {/* Public Pages Section */}
                 <div className="mb-8">
                   <h3 className="font-semibold text-lg text-gray-700 mb-2">Public Pages</h3>
                   <p className="text-gray-700 leading-relaxed mb-6">
-                    The website creates a balance between promoting Eugenia's products and inviting the user to contact her and yet remain useful to the user by providing useful blog posts with no ads at all.
+                    The website strikes a balance between promoting Eugenia's products and inviting users to get in touch, while also providing valuable ad-free blog content.
                   </p>
 
                   {/* Public Pages ImageSlider */}
@@ -167,7 +167,7 @@ function EugeniaBravo() {
                 <div>
                   <h3 className="font-semibold text-lg text-gray-700 mb-2">Admin Pages</h3>
                   <p className="text-gray-700 leading-relaxed mb-6">
-                    Protected by Amplify's User Authentication there is a hidden admin page through which the website team can manage the website's content. It features a dashboard, and an admin panel to either, modify posts, preview private posts, or delete posts.
+                    Protected by Amplify's User Authentication, there is a private admin page through which the website team manages content. This portal features a dashboard and an admin panel for modifying, reviewing private posts, or deleting posts.
                   </p>
 
                   {/* Admin Pages ImageSlider */}
@@ -181,7 +181,7 @@ function EugeniaBravo() {
               {/* Call to Action */}
               <section className="p-6 rounded-xl bg-blue-50">
                 <p className="text-gray-700 leading-relaxed text-center">
-                  Do you need help from a lawyer in Spain? <a className='text-blue-500 hover:underline font-medium' href='https://www.eugeniabravo.com/contacto' target='_blank' rel="noopener noreferrer">Contact with Eugenia!</a>
+                  Need legal assistance in Spain? <a className='text-blue-500 hover:underline font-medium' href='https://www.eugeniabravo.com/contacto' target='_blank' rel="noopener noreferrer">Contact Eugenia!</a>
                 </p>
               </section>
 
