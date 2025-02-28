@@ -19,7 +19,7 @@ const ProjectCard = ({
         >
           <div className='proj-card-container'>
             <img 
-              className={`proj-card-image ${padding ? 'p-4 bg-gray-50' : ''}`}
+              className={`proj-card-image ${padding ? 'p-4 bg-gray-50 object-contain' : ''}`}
               src={imageSrc} 
               alt={`${title} Image`} 
             />
