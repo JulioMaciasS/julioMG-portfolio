@@ -65,13 +65,13 @@ function EugeniaBravo() {
         <div className='white-container'>
           <div className='contents-container max-w-4xl mx-auto'>
             {/* Header with logo */}
-            <div className='flex flex-row items-center gap-3 mb-6 border-b border-gray-200 pb-4 w-full'>
+            <div className='flex flex-row items-center gap-2 sm:gap-3 mb-6 border-b border-gray-200 pb-4 w-full'>
               <img 
                 src='/images/eugeniaBravoPost/EugeniaBravoIcon.png' 
-                className='w-12 h-12 object-contain' 
+                className='w-10 h-10 sm:w-12 sm:h-12 object-contain rounded-lg shadow-md' 
                 alt='EugeniaBravo logo'
               />
-              <h1 className="text-gray-800 mb-0 text-4xl font-bold">EugeniaBravo</h1>
+              <h1 className="text-gray-800 mb-0 text-4xl md:text-5xl font-bold" id='top'>EugeniaBravo</h1>
               <a 
                 href="https://eugeniabravo.com" 
                 target="_blank" 
