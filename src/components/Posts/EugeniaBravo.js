@@ -76,7 +76,7 @@ function EugeniaBravo() {
                 href="https://eugeniabravo.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="ml-2 text-blue-500 hover:text-blue-700 transition-colors"
+                className="text-blue-500 hover:text-blue-700 transition-colors"
               >
                 <i className="bi bi-arrow-up-right-square text-2xl"></i>
               </a>
