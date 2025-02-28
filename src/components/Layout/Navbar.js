@@ -7,8 +7,33 @@ function Navbar() {
     const [click, setClick] = useState(false);
     const[button,setButton] = useState(true);
 
-    const handleClick = () => setClick(!click);
-    const closeMobileMenu = () => setClick(false);
+    const handleClick = () => {
+        // Toggle menu state
+        const newClickState = !click;
+        setClick(newClickState);
+        
+        // Toggle body scroll
+        if (newClickState) {
+            // When menu opens, disable scrolling
+            document.body.style.overflow = 'hidden';
+        } else {
+            // When menu closes, enable scrolling
+            document.body.style.overflow = 'auto';
+        }
+    };
+    
+    const closeMobileMenu = () => {
+        setClick(false);
+        // Re-enable scrolling when menu closes
+        document.body.style.overflow = 'auto';
+    };
+
+        // Clean up function to ensure scroll is re-enabled if component unmounts
+        useEffect(() => {
+            return () => {
+                document.body.style.overflow = 'auto';
+            };
+        }, []);
 
 const showButton = () => {if(window.innerWidth <=960) {
     setButton(false)
