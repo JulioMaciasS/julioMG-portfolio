@@ -31,10 +31,12 @@ text-align: center;
     flex-wrap: wrap; /* Allow cards to wrap onto the next line */
     height: max-content;
     justify-content:center; /* Distribute cards evenly */
+    box-shadow: none;
   }
   
   .container-background {
     flex-wrap: wrap; /* Allow cards to wrap onto the next line */
     height: max-content;
+    background-color: transparent;
   }
 }

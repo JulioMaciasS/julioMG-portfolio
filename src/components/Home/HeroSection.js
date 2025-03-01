@@ -16,7 +16,7 @@ export default function HeroSection() {
       <section className="hero-container p-6 relative flex flex-col lg:flex-row items-center justify-center min-h-[calc(100vh-80px)] overflow-hidden px-4">
         {/* Background overlay */}
         <div className="absolute inset-0 bg-black opacity-50"></div>
-
+        <div className='-translate-y-28 lg:-translate-y-0 h-[calc(100vh-80px)] flex flex-col items-center justify-center'>
         <div className="relative z-0 flex flex-col lg:flex-row items-center justify-center w-full max-w-6xl">
           {/* Text content */}
           <div className="lg:w-1/2 text-center lg:text-left text-white">
@@ -49,13 +49,13 @@ export default function HeroSection() {
             />
           </div>
         </div>
-
         <button
           onClick={scrollDown}
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2 focus:outline-none z-10"
         >
           <ChevronDown className="w-8 h-8 text-white animate-bounce" />
         </button>
+        </div>
       </section>
     </>
   );

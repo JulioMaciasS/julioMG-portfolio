@@ -3,7 +3,7 @@ import React from 'react'
 function AboutMe() {
   return (
     <section className="bg-[whitesmoke] py-12 flex justify-center">
-      <div className="relative max-w-3xl w-full inline-block">
+      <div className="relative max-w-3xl w-full inline-block mx-4">
         {/* White filled shape offset for 3D effect */}
         <div className="absolute -bottom-3 -left-3 w-full h-full bg-[#313131] rounded-3xl" />
         <div className="relative bg-white rounded-3xl p-8 text-center shadow-lg">
