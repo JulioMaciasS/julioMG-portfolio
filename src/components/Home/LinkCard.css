@@ -8,6 +8,8 @@
     border-radius: 10px;
     margin: 20px;
     transition: all 0.5s ease-out;
+    border-top-left-radius: 25px; /* Apply border-radius to the image */
+    border-bottom-right-radius: 25px; /* Apply border-radius to the image */
 }
 
 .LinkCard-container:hover {

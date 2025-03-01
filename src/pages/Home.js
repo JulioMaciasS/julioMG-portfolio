@@ -9,8 +9,10 @@ function Home () {
         <>
         
         <HeroSection/>
-        <div className='container-background min-h-fit flex flex-col items-center justify-center hero-section'>       
+        <div className='container-background min-h-fit flex flex-col items-center justify-center hero-section'> 
+            <div className='flex flex-col items-center justify-center min-h-[60vh]'>
         <AboutMe/>
+        </div>      
         <CardsSection/>
         </div>
         </>

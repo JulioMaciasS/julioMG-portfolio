@@ -7,13 +7,14 @@ import { Link } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
 
 export default function HeroSection() {
+
   const scrollDown = () => {
     window.scrollBy({ top: window.innerHeight - 80, behavior: 'smooth' });
   };
 
   return (
     <>
-      <section className="hero-container p-6 relative flex flex-col lg:flex-row items-center justify-center min-h-[calc(100vh-80px)] overflow-hidden px-4">
+      <section className="hero-container p-6 relative flex flex-col lg:flex-row items-center justify-center h-[calc(100vh-80px)] overflow-hidden px-4">
         {/* Background overlay */}
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className='-translate-y-28 lg:-translate-y-0 h-[calc(100vh-80px)] flex flex-col items-center justify-center'>

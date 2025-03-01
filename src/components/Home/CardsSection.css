@@ -28,7 +28,7 @@ text-align: center;
 /* Add a media query for smaller screens */
 @media only screen and (max-width: 960px) {
   .cards-container {
-    flex-wrap: wrap; /* Allow cards to wrap onto the next line */
+  flex-direction: column;
     height: max-content;
     justify-content:center; /* Distribute cards evenly */
     box-shadow: none;
