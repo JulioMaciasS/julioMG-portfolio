@@ -16,7 +16,8 @@ export const Button = ({
     onClick,
     buttonStyle,
     buttonSize,
-    buttonShape
+    buttonShape,
+    className
 }) => {
     const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0];
     const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0];
@@ -24,7 +25,7 @@ export const Button = ({
     const checkButtonBackground = buttonStyle === 'btn--outline' ? BG[1] : BG[0];
     return (
         <button
-            className={`btn ${checkButtonStyle} ${checkButtonSize} ${checkButtonShape} ${checkButtonBackground}`}
+            className={`btn ${checkButtonStyle} ${checkButtonSize} ${checkButtonShape} ${checkButtonBackground} ${className || ''} `}
             onClick={onClick}
             type={type}
         >

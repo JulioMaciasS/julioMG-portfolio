@@ -2,7 +2,7 @@ import React from 'react'
 
 function AboutMe() {
   return (
-    <section className="bg-[whitesmoke] py-12 flex justify-center">
+    <section className=" py-12 flex justify-center">
       <div className="relative max-w-3xl w-full inline-block mx-4">
         {/* White filled shape offset for 3D effect */}
         <div className="absolute -bottom-3 -left-3 w-full h-full bg-[#313131] rounded-3xl" />
@@ -13,7 +13,7 @@ function AboutMe() {
           </h3>
           
           <p className="text-[#313131] text-lg leading-relaxed mb-6">
-            Since 2022 I have been sharpening my Software Engineering technologies.<br />
+            Since 2022, I have been sharpening my Software Engineering technologies.<br />
             I have a strong passion for full-stack web development and I actively look for innovative ways 
             to leverage technology to help drive business success.
           </p>

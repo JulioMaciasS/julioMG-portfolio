@@ -1,9 +1,7 @@
 /* Improved styling for the cards container */
 
 .container-background {
-height: 600px;
 width: auto;
-background-color: whitesmoke;
 align-items: center;
 justify-content: center;
 margin: auto; /* Centered the container with auto margins */

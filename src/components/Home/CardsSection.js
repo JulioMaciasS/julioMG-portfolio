@@ -7,7 +7,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function CardsSection() {
   return (
-    <div className='container-background min-h-fit min-w-full flex flex-col items-center justify-center hero-section'>
+    <div className='container-background px-4 min-w-full min-h-[60vh] flex flex-col items-center justify-center hero-section'>
       <h2>Discover my latest projects</h2>
       <div className='cards-container'>
         <LinkCard
@@ -31,8 +31,13 @@ export default function CardsSection() {
         />
       </div>
       <Link to="/projects" className="mt-8 mb-8">
-        <Button buttonStyle="btn--outline" buttonSize="btn--xlarge" buttonShape="btn--round">
-          More Projects <ArrowRight/>
+        <Button
+          buttonStyle="btn--outline"
+          buttonSize="btn--xlarge"
+          buttonShape="btn--round"
+          className="hover:border-black border-2 transition-colors duration-300"
+        >
+          More Projects <ArrowRight />
         </Button>
       </Link>
     </div>
