@@ -1,4 +1,3 @@
-// Language: JavaScript
 import React from 'react';
 import '../../App.css';
 import { Button } from '../Button';
@@ -7,9 +6,17 @@ import { Link } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
 
 export default function HeroSection() {
-
   const scrollDown = () => {
-    window.scrollBy({ top: window.innerHeight - 80, behavior: 'smooth' });
+    // Find the AboutMe section element
+    const aboutMeSection = document.querySelector('.bg-[whitesmoke]');
+    
+    if (aboutMeSection) {
+      // Scroll to the AboutMe section with a smooth animation
+      aboutMeSection.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // Fallback if AboutMe section isn't found
+      window.scrollBy({ top: window.innerHeight - 80, behavior: 'smooth' });
+    }
   };
 
   return (
@@ -53,6 +60,7 @@ export default function HeroSection() {
         <button
           onClick={scrollDown}
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2 focus:outline-none z-10"
+          aria-label="Scroll to About section"
         >
           <ChevronDown className="w-8 h-8 text-white animate-bounce" />
         </button>
