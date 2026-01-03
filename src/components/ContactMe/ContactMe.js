@@ -35,9 +35,11 @@ function ContactMe() {
           <h1 className="text-center" id='title'>
             Thanks for taking the time to reach out.
           </h1>
-          <div className='h-full flex flex-col items-center justify-center'>
-            <h2 className='font-bold text-3xl mt-4 mb-8'>How can I help you today?</h2>
-            <div className='h-full w-full max-w-[512px] mx-auto flex justify-center items-center'>
+          <div className='contact-content'>
+            <div className='contact-heading'>
+              <h2>How can I help you today?</h2>
+            </div>
+            <div className='contact-form-card'>
               <iframe 
                 className="basinIframe"
                 src="https://usebasin.com/form/4539a1a983a5/view/297d57c4edd5?iframe=true"
@@ -56,15 +58,13 @@ function ContactMe() {
             </div>
             
             {/* Divider with "or" in the middle */}
-            <div className="w-full max-w-[512px] flex items-center my-8">
-              <div className="flex-grow h-px bg-gray-300"></div>
-              <span className="px-4 text-gray-500 font-medium">or</span>
-              <div className="flex-grow h-px bg-gray-300"></div>
+            <div className="contact-divider">
+              <span>or</span>
             </div>
             
             {/* LinkedIn option */}
-            <div className="flex flex-col items-center">
-              <span className="mb-4 text-lg">Connect with me on LinkedIn</span>
+            <div className="contact-alt">
+              <span>Connect with me on LinkedIn</span>
               <a 
                 href="https://www.linkedin.com/in/julio-macias-gonzalez/" 
                 target="_blank" 

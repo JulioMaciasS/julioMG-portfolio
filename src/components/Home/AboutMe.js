@@ -6,7 +6,7 @@ function AboutMe() {
       <div className="relative max-w-3xl w-full inline-block mx-4">
         {/* White filled shape offset for 3D effect */}
         <div className="absolute -bottom-3 -left-3 w-full h-full bg-[#313131] rounded-3xl" />
-        <div className="relative bg-white rounded-3xl p-8 text-center shadow-lg">
+        <div className="relative bg-white rounded-3xl p-8 text-center shadow-lg border-2 border-[#313131]">
           
           <h3 className="text-[#313131] text-3xl font-bold mb-4">
             Hi, I'm Julio. Nice to meet you!

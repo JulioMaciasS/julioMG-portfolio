@@ -28,7 +28,9 @@ const ProjectCard = ({
               <p>{description}</p>
 {
  technologies &&
- <><p className='mb-5 skills-title'>Tech stack:</p><div className="proj-skill-container">
+ <>
+ {/* <p className='mb-5 skills-title'>Tech stack:</p> */}
+ <div className="proj-skill-container">
                 {technologies.map((tech, index) => (
                   <div className="proj-skill-item" key={index}>
                     <img
