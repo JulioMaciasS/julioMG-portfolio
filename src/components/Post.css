@@ -22,7 +22,7 @@
     --b3: #0c0b0a;
     --b4: #0c0b0ae0;
     --c1: #ffffff;
-    --ts: 50%/calc(var(--sz) * 17.5) calc(var(--sz) * 29.5);
+    --ts: 0 0/calc(var(--sz) * 17.5) calc(var(--sz) * 29.5);
 }
 
 .post-container {
