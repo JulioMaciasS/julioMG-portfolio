@@ -4,31 +4,36 @@ import LinkCard from './LinkCard';
 import { Link } from 'react-router-dom';
 import { Button } from '../Button';
 import { ArrowRight } from 'lucide-react';
+import { PROJECTS } from '../../data/projects';
 
 export default function CardsSection() {
+  const maxDescriptionLength = 55;
+  const latestProjects = PROJECTS.slice(0, 4);
+
+  const truncateText = (text, maxLength = maxDescriptionLength) => {
+    if (!text) {
+      return '';
+    }
+    if (text.length <= maxLength) {
+      return text;
+    }
+    return `${text.slice(0, maxLength - 3).trimEnd()}...`;
+  };
+
   return (
     <div className='container-background px-4 min-w-full min-h-[60vh] flex flex-col items-center justify-center hero-section'>
       <h2>Discover my latest projects</h2>
       <div className='cards-container'>
-        <LinkCard
-          imageURL='./images/eugeniaBravoPost/EugeniaBravoIcon.png'
-          title='Eugenia Bravo'
-          description={'Real Blog full-stack website developed for a lawyer'}   
-          hrefLink="./projects/eugeniabravo"
-          padding={true}
-        />
-        <LinkCard
-          imageURL='./images/CineShare.png'
-          title='CineShare'
-          description={'First full-stack cloud project'}   
-          hrefLink="./projects/cineshare"
-        />
-        <LinkCard
-          imageURL='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperaccess.com%2Ffull%2F266471.jpg&f=1&nofb=1&ipt=75fd924b0422de25c055ab764e6ccc63217e25b775ee810a4399ecd625ac856a&ipo=images'
-          title='JulioTech Guides'   
-          description={'iOS guides for begginers developed as a first year project'}
-          hrefLink='https://juliotabj.wixsite.com/juliotechguides'    
-        />
+        {latestProjects.map((project) => (
+          <LinkCard
+            key={project.id}
+            imageURL={project.imageSrc}
+            title={project.title}
+            description={truncateText(project.description)}
+            hrefLink={project.link}
+            padding={project.padding}
+          />
+        ))}
       </div>
       <Link to="/projects" className="mt-8 mb-8">
         <Button

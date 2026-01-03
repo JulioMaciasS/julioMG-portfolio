@@ -9,7 +9,9 @@ import CineSharePost from './components/Posts/CineShare.js';
 import ScrollToTop from './utils/ScrollToTop.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import EugeniaBravo from './components/Posts/EugeniaBravo.js';
+import EugeniaBravoRebuild from './components/Posts/EugeniaBravoRebuild.js';
 import ContactMePage from './pages/ContactMePage.js';
+import NotFound from './pages/NotFound.js';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
             <Route path='/projects' element={<Projects/>}/>
             <Route path='/projects/cineshare' element={<CineSharePost/>}/>
             <Route path='/projects/eugeniabravo' element={<EugeniaBravo/>}/>
+            <Route path='/projects/eugeniabravo-rebuild' element={<EugeniaBravoRebuild/>}/>
+            <Route path='*' element={<NotFound/>}/>
           </Routes>
           <Footer/>
       </Router>

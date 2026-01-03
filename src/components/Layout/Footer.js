@@ -43,7 +43,7 @@ export default function Footer() {
         </div>
       </div>
       
-      <p className='website-rights'>© 2024 JulioDev. All rights reserved.</p>
+      <p className='website-rights'>© 2026 JulioDev. All rights reserved.</p>
     </div>
   );
 }
