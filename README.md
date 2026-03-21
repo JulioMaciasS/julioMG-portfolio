@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+# JulioDev Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal portfolio website for Julio Macias Gonzalez, built to present software engineering work with more depth than a typical project grid. The site combines a polished landing page, a dedicated projects hub, long-form case studies, a contact flow, and downloadable resume assets in one React application.
 
-## Available Scripts
+Live site: [portfolio.juliodev.co.uk](https://portfolio.juliodev.co.uk/)
 
-In the project directory, you can run:
+## What This Project Showcases
 
-### `npm start`
+- A portfolio experience designed to feel like a product, not just a static resume
+- Featured work with dedicated write-ups for architecture, tooling, and delivery decisions
+- A responsive React frontend with custom styling and route-based navigation
+- Professional touchpoints including SEO metadata, sitemap support, contact options, and resume download assets
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Key Sections
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- `/` - Landing page with hero section, personal introduction, and featured projects
+- `/projects` - Project gallery with quick summaries and technology tags
+- `/projects/cineshare` - Case study for a full-stack social platform focused on film discovery
+- `/projects/eugeniabravo` - Original client project write-up built around React and AWS Amplify
+- `/projects/eugeniabravo-rebuild` - Migration case study covering Next.js, TypeScript, Supabase, SEO, and editorial tooling
+- `/contact-me` - Contact page with embedded Basin form and LinkedIn CTA
 
-### `npm test`
+## Featured Work
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### EugeniaBravo Rebuild
 
-### `npm run build`
+Migration of a real client website from a plain React SPA to a Next.js and Supabase stack. The case study focuses on SEO, content indexing, admin workflows, media management, and simplifying operations for a smaller project.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Eugenia Bravo
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Original production website for a lawyer, built with React, TypeScript, AWS Amplify, and Brevo. This project shows the earlier architecture before the rebuild.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### CineShare
 
-### `npm run eject`
+A learning-focused full-stack app for discovering and sharing movies and TV shows. The write-up covers Angular, Spring Boot, MySQL, AWS, security considerations, and the use of AI tools during development.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Universal Paperclips for iOS
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+An external article documenting the development of a reduced iOS version of Universal Paperclips using SwiftUI, with monetization features like ads and microtransactions.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Tech Stack
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- React 18
+- React Router
+- JavaScript
+- Tailwind CSS utilities plus custom CSS modules/stylesheets
+- Lucide React, Bootstrap Icons, and Font Awesome for UI icons
+- Create React App tooling
+- `gh-pages` deployment script support
 
-## Learn More
+## Project Strengths
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Clear personal branding and portfolio storytelling
+- Case-study style project pages instead of shallow link cards
+- Mixed content strategy across web, cloud, and mobile work
+- Built-in SEO signals through metadata, canonical tags, `robots.txt`, and `sitemap.xml`
+- Contact flow that gives visitors both a form path and direct professional links
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Local Development
 
-### Code Splitting
+```bash
+npm install
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The app runs locally at [http://localhost:3000](http://localhost:3000).
 
-### Analyzing the Bundle Size
+## Scripts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm start      # start the development server
+npm test       # run the CRA test runner
+npm run build  # create a production build
+npm run deploy # publish the build with gh-pages
+```
 
-### Making a Progressive Web App
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```text
+public/
+  images/              Static images for cards, posts, logos, and profile media
+  Downloads/           Resume PDF
+  robots.txt           Search crawler rules
+  sitemap.xml          Sitemap for indexing
 
-### Advanced Configuration
+src/
+  components/
+    Home/              Landing page sections
+    Layout/            Navbar and footer
+    Projects/          Projects listing UI
+    Posts/             Long-form project case studies
+    ContactMe/         Contact page content
+  data/
+    projects.js        Featured project metadata
+  pages/               Route-level pages
+  utils/               Shared app utilities
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Notes
 
-### Deployment
+This repository is the portfolio application itself. Some featured projects link to separate production sites or external repositories, while others are documented directly inside this app as case studies.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Author
 
-### `npm run build` fails to minify
+Julio Macias Gonzalez
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Portfolio: [portfolio.juliodev.co.uk](https://portfolio.juliodev.co.uk/)
+- LinkedIn: [julio-macias-gonzalez](https://www.linkedin.com/in/julio-macias-gonzalez-199266282/)
+- GitHub: [@JulioMaciasS](https://github.com/JulioMaciasS)
