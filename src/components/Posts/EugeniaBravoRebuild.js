@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import '../Post.css';
 import ImageSlider from './ImageSlider';
 
@@ -78,6 +79,17 @@ function EugeniaBravoRebuild() {
 
   return (
     <div>
+      <Helmet>
+        <title>EugeniaBravo Rebuild | JulioDev Portfolio</title>
+        <meta name="description" content="EugeniaBravo Rebuild - Rebuilt with Next.js, TypeScript, and Supabase for improved performance and maintainability." />
+        <link rel="canonical" href="https://portfolio.juliodev.co.uk/projects/eugeniabravo-rebuild" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://portfolio.juliodev.co.uk/projects/eugeniabravo-rebuild" />
+        <meta property="og:title" content="EugeniaBravo Rebuild | JulioDev Portfolio" />
+        <meta property="og:description" content="EugeniaBravo Rebuild - Rebuilt with Next.js, TypeScript, and Supabase for improved performance and maintainability." />
+        <meta property="og:image" content="https://portfolio.juliodev.co.uk/images/eugeniaBravoPost/EugeniaBravoIcon.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
       <div className='post-container'>
         <div className='white-container'>
           <div className='contents-container max-w-4xl mx-auto'>

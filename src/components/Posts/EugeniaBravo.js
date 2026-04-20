@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import '../Post.css';
 import ImageSlider from './ImageSlider';
 
@@ -61,6 +62,17 @@ function EugeniaBravo() {
 
   return (
     <div>
+      <Helmet>
+        <title>EugeniaBravo Project | JulioDev Portfolio</title>
+        <meta name="description" content="EugeniaBravo - A professional website built with React, TypeScript, AWS Amplify, and Brevo for a business client." />
+        <link rel="canonical" href="https://portfolio.juliodev.co.uk/projects/eugeniabravo" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://portfolio.juliodev.co.uk/projects/eugeniabravo" />
+        <meta property="og:title" content="EugeniaBravo Project | JulioDev Portfolio" />
+        <meta property="og:description" content="EugeniaBravo - A professional website built with React, TypeScript, AWS Amplify, and Brevo for a business client." />
+        <meta property="og:image" content="https://portfolio.juliodev.co.uk/images/eugeniaBravoPost/EugeniaBravoIcon.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
       <div className='post-container'>
         <div className='white-container'>
           <div className='contents-container max-w-4xl mx-auto'>

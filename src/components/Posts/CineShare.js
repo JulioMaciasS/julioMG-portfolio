@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import '../Post.css';
 import ImageSlider from './ImageSlider';
 
@@ -33,6 +34,17 @@ function CineSharePost() {
 
   return (
     <div>
+      <Helmet>
+        <title>CineShare Project | JulioDev Portfolio</title>
+        <meta name="description" content="CineShare - A social platform for sharing movie and TV show recommendations. Built with Angular, Spring Boot, MySQL, and AWS." />
+        <link rel="canonical" href="https://portfolio.juliodev.co.uk/projects/cineshare" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://portfolio.juliodev.co.uk/projects/cineshare" />
+        <meta property="og:title" content="CineShare Project | JulioDev Portfolio" />
+        <meta property="og:description" content="CineShare - A social platform for sharing movie and TV show recommendations. Built with Angular, Spring Boot, MySQL, and AWS." />
+        <meta property="og:image" content="https://portfolio.juliodev.co.uk/images/CineShare.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Helmet>
       <div className='post-container'>
         <div className='white-container'>
           <div className='contents-container max-w-4xl mx-auto'>
