@@ -69,6 +69,12 @@ window.addEventListener('resize', showButton);
                                 Projects
                             </Link>
                         </li>
+
+                        <li className='nav-item justify-center'>
+                        <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
+                                Services
+                            </Link>
+                        </li>
 {                   button &&      <li className='nav-item flex flex-col justify-center'>
                             <Link to='/contact-me' className='nav-links contact-me-border' onClick={closeMobileMenu}>
                             Say Hello&nbsp;<span>👋</span>                          

@@ -4,6 +4,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home.js';
 import Projects from './pages/Projects.js';
+import Services from './pages/Services.js';
 import Footer from './components/Layout/Footer.js';
 import CineSharePost from './components/Posts/CineShare.js';
 import ScrollToTop from './utils/ScrollToTop.js';
@@ -23,6 +24,7 @@ function App() {
             <Route path='/' exact element={<Home/>}/>
             <Route path='/contact-me' element={<ContactMePage/>}/>
             <Route path='/projects' element={<Projects/>}/>
+            <Route path='/services' element={<Services/>}/>
             <Route path='/projects/cineshare' element={<CineSharePost/>}/>
             <Route path='/projects/eugeniabravo' element={<EugeniaBravo/>}/>
             <Route path='/projects/eugeniabravo-rebuild' element={<EugeniaBravoRebuild/>}/>
