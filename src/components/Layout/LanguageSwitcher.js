@@ -1,11 +1,15 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { Globe, Check } from 'lucide-react';
 import { SUPPORTED_LANGUAGES } from '../../i18n';
+import { localizedPath, stripLangPrefix } from '../../utils/siteConfig';
 import './LanguageSwitcher.css';
 
 function LanguageSwitcher({ onSelect }) {
   const { i18n, t } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
   const [open, setOpen] = useState(false);
   const ref = useRef(null);
 
@@ -24,7 +28,9 @@ function LanguageSwitcher({ onSelect }) {
   }, []);
 
   const changeLanguage = (code) => {
+    const logicalPath = stripLangPrefix(location.pathname);
     i18n.changeLanguage(code);
+    navigate(localizedPath(logicalPath, code));
     setOpen(false);
     if (onSelect) {
       onSelect();

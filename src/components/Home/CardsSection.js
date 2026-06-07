@@ -1,7 +1,7 @@
 import React from 'react';
 import "./CardsSection.css";
 import LinkCard from './LinkCard';
-import { Link } from 'react-router-dom';
+import Link from '../LocalizedLink';
 import { Button } from '../Button';
 import { ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';

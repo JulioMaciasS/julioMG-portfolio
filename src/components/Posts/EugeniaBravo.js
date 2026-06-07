@@ -1,6 +1,6 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
+import SeoHead from '../Seo/SeoHead';
 import '../Post.css';
 import ImageSlider from './ImageSlider';
 
@@ -65,17 +65,13 @@ function EugeniaBravo() {
 
   return (
     <div>
-      <Helmet>
-        <title>{t('posts.eugeniaBravo.meta.title')}</title>
-        <meta name="description" content={t('posts.eugeniaBravo.meta.description')} />
-        <link rel="canonical" href="https://portfolio.juliodev.co.uk/projects/eugeniabravo" />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content="https://portfolio.juliodev.co.uk/projects/eugeniabravo" />
-        <meta property="og:title" content={t('posts.eugeniaBravo.meta.title')} />
-        <meta property="og:description" content={t('posts.eugeniaBravo.meta.description')} />
-        <meta property="og:image" content="https://portfolio.juliodev.co.uk/images/eugeniaBravoPost/EugeniaBravoIcon.png" />
-        <meta name="twitter:card" content="summary_large_image" />
-      </Helmet>
+      <SeoHead
+        path="/projects/eugeniabravo"
+        title={t('posts.eugeniaBravo.meta.title')}
+        description={t('posts.eugeniaBravo.meta.description')}
+        image="https://portfolio.juliodev.co.uk/images/eugeniaBravoPost/EugeniaBravoIcon.png"
+        type="article"
+      />
       <div className='post-container'>
         <div className='white-container'>
           <div className='contents-container max-w-4xl mx-auto'>

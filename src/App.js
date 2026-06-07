@@ -13,6 +13,7 @@ import EugeniaBravo from './components/Posts/EugeniaBravo.js';
 import EugeniaBravoRebuild from './components/Posts/EugeniaBravoRebuild.js';
 import ContactMePage from './pages/ContactMePage.js';
 import NotFound from './pages/NotFound.js';
+import LangLayout from './components/Layout/LangLayout.js';
 
 function App() {
   return (
@@ -21,13 +22,27 @@ function App() {
         <Navbar/>
         <ScrollToTop/>
           <Routes>
-            <Route path='/' exact element={<Home/>}/>
+            {/* Unprefixed (English / auto-detected) */}
+            <Route path='/' element={<Home/>}/>
             <Route path='/contact-me' element={<ContactMePage/>}/>
             <Route path='/projects' element={<Projects/>}/>
             <Route path='/services' element={<Services/>}/>
             <Route path='/projects/cineshare' element={<CineSharePost/>}/>
             <Route path='/projects/eugeniabravo' element={<EugeniaBravo/>}/>
             <Route path='/projects/eugeniabravo-rebuild' element={<EugeniaBravoRebuild/>}/>
+
+            {/* Language-prefixed (es / fr / ar) */}
+            <Route path=':lang' element={<LangLayout/>}>
+              <Route index element={<Home/>}/>
+              <Route path='contact-me' element={<ContactMePage/>}/>
+              <Route path='projects' element={<Projects/>}/>
+              <Route path='services' element={<Services/>}/>
+              <Route path='projects/cineshare' element={<CineSharePost/>}/>
+              <Route path='projects/eugeniabravo' element={<EugeniaBravo/>}/>
+              <Route path='projects/eugeniabravo-rebuild' element={<EugeniaBravoRebuild/>}/>
+              <Route path='*' element={<NotFound/>}/>
+            </Route>
+
             <Route path='*' element={<NotFound/>}/>
           </Routes>
           <Footer/>

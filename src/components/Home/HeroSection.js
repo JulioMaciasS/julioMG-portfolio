@@ -2,7 +2,7 @@ import React from 'react';
 import '../../App.css';
 import { Button } from '../Button';
 import './HeroSection.css';
-import { Link } from 'react-router-dom';
+import Link from '../LocalizedLink';
 import { ChevronDown } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 
