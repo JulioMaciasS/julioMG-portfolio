@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from '../Button';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from './LanguageSwitcher';
 import './Navbar.css';
 
 function Navbar() {
+    const { t } = useTranslation();
     const [click, setClick] = useState(false);
     const[button,setButton] = useState(true);
 
@@ -60,30 +62,33 @@ window.addEventListener('resize', showButton);
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
                             <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                                Home
+                                {t('nav.home')}
                             </Link>
                         </li>
 
                         <li className='nav-item justify-center'>
                         <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
-                                Projects
+                                {t('nav.projects')}
                             </Link>
                         </li>
 
                         <li className='nav-item justify-center'>
                         <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
-                                Services
+                                {t('nav.services')}
                             </Link>
                         </li>
 {                   button &&      <li className='nav-item flex flex-col justify-center'>
                             <Link to='/contact-me' className='nav-links contact-me-border' onClick={closeMobileMenu}>
-                            Say Hello&nbsp;<span>👋</span>                          
+                            {t('nav.sayHello')}&nbsp;<span>👋</span>
                             </Link>
                         </li>}
+                        <li className='nav-item flex items-center justify-center'>
+                            <LanguageSwitcher onSelect={closeMobileMenu} />
+                        </li>
                         <li className='h-[80px]'>
                         <Link to='/contact-me' className='nav-links-mobile ' onClick={closeMobileMenu}
                         >
-                            Say Hello&nbsp;<span>👋</span>
+                            {t('nav.sayHello')}&nbsp;<span>👋</span>
                           </Link>
             </li>
                     </ul>

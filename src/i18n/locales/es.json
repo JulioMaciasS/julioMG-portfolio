@@ -1,0 +1,283 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "projects": "Proyectos",
+    "services": "Servicios",
+    "sayHello": "Saluda"
+  },
+  "language": {
+    "select": "Idioma",
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "ar": "العربية"
+  },
+  "footer": {
+    "contactMe": "Contáctame:",
+    "otherLinks": "Otros enlaces:",
+    "rights": "© {{year}} JulioDev. Todos los derechos reservados.",
+    "skillsTitle": "Sitio web desarrollado con las siguientes tecnologías:"
+  },
+  "notFound": {
+    "message": "Esta página no existe. Es posible que el enlace esté roto o que la página se haya movido.",
+    "back": "Volver al inicio"
+  },
+  "home": {
+    "meta": {
+      "title": "JulioDev | Portafolio de Ingeniero de Software",
+      "description": "Portafolio de Julio Macías González que muestra proyectos de ingeniería de software, incluyendo desarrollo web, arquitectura en la nube y aplicaciones móviles."
+    },
+    "hero": {
+      "title": "¡Bienvenido a mi portafolio!",
+      "subtitle": "Soy un ingeniero de software que persigue los problemas y va tras las soluciones.",
+      "projects": "Proyectos",
+      "contact": "Contáctame",
+      "scrollAria": "Desplázate a la sección Acerca de"
+    },
+    "about": {
+      "title": "Hola, soy Julio. ¡Encantado de conocerte!",
+      "body1": "Desde 2022 he estado perfeccionando mis habilidades en tecnologías de Ingeniería de Software.",
+      "body2": "Me apasiona el desarrollo web full-stack y busco activamente formas innovadoras de aprovechar la tecnología para impulsar el éxito de los negocios.",
+      "tags": {
+        "problemSolver": "Resuelvo problemas",
+        "teamPlayer": "Trabajo en equipo",
+        "fullStack": "Desarrollador Full-Stack",
+        "learner": "Aprendizaje continuo"
+      }
+    },
+    "cards": {
+      "heading": "Descubre mis últimos proyectos",
+      "more": "Más proyectos"
+    }
+  },
+  "projects": {
+    "meta": {
+      "title": "Proyectos | Portafolio de JulioDev",
+      "description": "Explora los proyectos de ingeniería de software de Julio Macías González, incluyendo CineShare, EugeniaBravo y más."
+    },
+    "heading": "Mis proyectos",
+    "new": "¡Nuevo!",
+    "items": {
+      "eugenia-bravo-rebuild": {
+        "title": "Reconstrucción de EugeniaBravo",
+        "description": "Migración a Next.js + Supabase para un mejor SEO y una operativa más sencilla."
+      },
+      "eugenia-bravo": {
+        "title": "Eugenia Bravo",
+        "description": "Proyecto del mundo real. Sitio web de blog y página de aterrizaje para una abogada."
+      },
+      "cineshare": {
+        "title": "CineShare",
+        "description": "Conoce más sobre el desarrollo de CineShare. ¡Una red social para descubrir películas y series increíbles!"
+      },
+      "universal-paperclips": {
+        "title": "Universal Paperclips para iOS",
+        "description": "Este artículo contiene una guía que explica cómo desarrollé una versión reducida del juego Universal Paperclips. Algunas de las características clave que presenta la app son los anuncios de Google y las microtransacciones."
+      }
+    }
+  },
+  "services": {
+    "meta": {
+      "title": "Servicios | JulioDev — Desarrollo Web y Consultoría",
+      "description": "Ingeniería de software y consultoría freelance por Julio Macías González. Especializado en Supabase, Next.js y React, con experiencia empresarial en Angular, Java/Spring y CI/CD."
+    },
+    "hero": {
+      "eyebrow": "Consultoría y Freelance",
+      "title": "Ingeniería que impulsa tu negocio",
+      "subtitlePrefix": "Soy Julio, un ingeniero de software especializado en ",
+      "subtitleHighlight": "Supabase, Next.js y React",
+      "subtitleSuffix": ". Ayudo a startups y a equipos empresariales a diseñar, construir y lanzar productos web fiables, desde aplicaciones desde cero hasta migraciones y CI/CD.",
+      "bookCall": "Reserva una llamada gratuita",
+      "seeWork": "Ver mi trabajo"
+    },
+    "specialty": {
+      "label": "Especializado en"
+    },
+    "grid": {
+      "heading": "Cómo puedo ayudarte",
+      "subtitle": "Colaboraciones flexibles: por proyecto, continuas o una consulta puntual. Elige la que mejor te encaje."
+    },
+    "items": {
+      "product": {
+        "title": "Desarrollo de Productos y Aplicaciones Web",
+        "description": "Aplicaciones web de principio a fin construidas sobre mi stack principal: Next.js, React y Supabase. Desde la primera línea del esquema hasta un producto rápido y listo para SEO en producción."
+      },
+      "enterprise": {
+        "title": "Ingeniería Frontend Empresarial",
+        "description": "Frontends a gran escala y fáciles de mantener para equipos y herramientas internas, no solo productos de consumo. Me muevo con soltura dentro de bases de código empresariales consolidadas y sistemas de diseño."
+      },
+      "backend": {
+        "title": "Backend y APIs",
+        "description": "APIs y servicios robustos para potenciar tu producto. Desde modelos de datos en Supabase/Postgres hasta servicios en Java y Spring Boot para cargas de trabajo empresariales más exigentes."
+      },
+      "cicd": {
+        "title": "CI/CD y DevOps",
+        "description": "Pipelines automatizados para que los despliegues sean aburridos y seguros. Compila, prueba y despliega en cada push con GitHub Actions y Docker, además de una buena higiene de entornos y versiones."
+      },
+      "migrations": {
+        "title": "Migraciones y Modernización",
+        "description": "Migrar sitios heredados o difíciles de mantener a un stack moderno sin perder SEO ni contenido, justo lo que hice al migrar el sitio en producción de un cliente a Next.js + Supabase."
+      },
+      "consulting": {
+        "title": "Consultoría Técnica",
+        "description": "Un segundo par de ojos sobre la arquitectura, las decisiones de stack, el rendimiento o el SEO. Colaboraciones breves para desbloquear a tu equipo y reducir el riesgo de la próxima decisión."
+      }
+    },
+    "why": {
+      "heading": "Por qué trabajar conmigo",
+      "point1Lead": "Trabajo real, lanzado para clientes.",
+      "point1Text": "Reconstruí y migré el sitio web en producción de un cliente a Next.js + Supabase, mejorando el SEO, los flujos de administración y las operaciones del día a día.",
+      "point2Lead": "Experiencia empresarial, no solo demos.",
+      "point2Text": "He trabajado en grandes bases de código y herramientas internas con Angular, Java y Spring, así que me siento cómodo en sistemas serios y de larga vida.",
+      "point3Lead": "Hablas directamente con quien hace el trabajo.",
+      "point3Text": "Sin gestores de cuenta ni traspasos: comunicación directa desde la primera llamada hasta la entrega.",
+      "caseStudyLink": "Lee el caso de estudio de la migración"
+    },
+    "process": {
+      "heading": "Cómo trabajaremos juntos",
+      "subtitle": "Un proceso sencillo y transparente, desde el primer saludo hasta la entrega.",
+      "step1Title": "Llamada de descubrimiento",
+      "step1Text": "Una llamada gratuita de 30 minutos para entender tus objetivos, limitaciones y plazos.",
+      "step2Title": "Propuesta y alcance",
+      "step2Text": "Una propuesta clara y cerrada: qué se construye, cuánto tarda y cuánto cuesta.",
+      "step3Title": "Construcción y lanzamiento",
+      "step3Text": "Entrega iterativa con seguimientos periódicos, para que siempre veas el progreso.",
+      "step4Title": "Entrega y soporte",
+      "step4Text": "Una entrega limpia, documentación y soporte continuo opcional."
+    },
+    "cta": {
+      "heading": "¿Tienes un proyecto en mente?",
+      "text": "Cuéntame qué estás construyendo. Te responderé en un par de días con una opinión honesta sobre cómo puedo ayudarte.",
+      "button": "Inicia una conversación"
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contáctame | Portafolio de JulioDev",
+      "description": "Ponte en contacto con Julio Macías González. Formulario de contacto para consultas de ingeniería de software y oportunidades de colaboración."
+    },
+    "title": "Gracias por tomarte el tiempo de escribirme.",
+    "heading": "¿Cómo puedo ayudarte hoy?",
+    "formTitle": "Formulario de contacto",
+    "or": "o",
+    "linkedinPrompt": "Conecta conmigo en LinkedIn",
+    "linkedinButton": "Perfil de LinkedIn"
+  },
+  "posts": {
+    "common": {
+      "thanks": "Gracias por leer,",
+      "author": "Julio Macías González",
+      "introHeading": "Introducción",
+      "technologiesHeading": "Tecnologías",
+      "frontendHeading": "Frontend",
+      "backendHeading": "Backend",
+      "conclusionHeading": "Conclusión"
+    },
+    "cineshare": {
+      "meta": {
+        "title": "Proyecto CineShare | Portafolio de JulioDev",
+        "description": "CineShare - Una plataforma social para compartir recomendaciones de películas y series. Construida con Angular, Spring Boot, MySQL y AWS."
+      },
+      "intro1": "CineShare es un proyecto personal enfocado en explorar tecnologías web modernas e infraestructura en la nube. Esta experiencia de aprendizaje me ayudó a obtener conocimientos valiosos para futuras aplicaciones del mundo real.",
+      "intro2": "La plataforma permite a los usuarios compartir y descubrir recomendaciones de películas y series dentro de una comunidad social.",
+      "technologiesIntro": "A lo largo de este proyecto, he explorado una variedad de tecnologías, tanto de frontend como de backend, para construir una aplicación full-stack.",
+      "frontendSubtitle": "Angular CLI – HTML, CSS, TypeScript",
+      "frontendBody": "Este proyecto en Angular utiliza módulos principales de Angular, NgRx para la gestión del estado y renderizado del lado del servidor mediante Express. Incorpora Bootstrap y Tailwind CSS para los estilos, junto con DaisyUI para los componentes de UI.",
+      "backendSubtitle": "Spring Boot – Java",
+      "backendBody": "El backend está impulsado por Spring Boot, aprovechando múltiples starters como Data JPA para el acceso a la base de datos, Spring Security para la autenticación y Spring MVC con un servidor Tomcat embebido. Integra MySQL para la conectividad con la base de datos, Lombok para reducir el código repetitivo, JJWT para el manejo de JWT, Springdoc OpenAPI para la documentación de la API y Actuator para la monitorización.",
+      "securityHeading": "Ciberseguridad",
+      "securityBody": "Las funciones de seguridad están actualmente en desarrollo. El frontend usa CryptoJS para cifrar las cargas útiles mediante cifrado AES, mientras que el backend implementa Spring Security para la autenticación basada en JWT. JWT filtra las solicitudes no autorizadas, y todas las contraseñas se cifran tanto en tránsito como en reposo en la base de datos. Además, hay un certificado SSL en uso para HTTPS.",
+      "securityCaption": "Registro de usuario con medidas de seguridad",
+      "cloudHeading": "Infraestructura en la nube",
+      "cloudBody": "Trabajar con AWS ha sido una experiencia nueva para mí, yendo más allá del alojamiento de simples sitios web estáticos mediante GitHub Pages. Ahora uso Amplify para el alojamiento del frontend, Elastic Beanstalk para el despliegue del backend, RDS para la gestión de la base de datos y Route 53 para la gestión del dominio. Este proyecto me ha introducido en las amplias posibilidades de la computación en la nube, en particular la idea de construir aplicaciones serverless.",
+      "cloudCaption": "Arquitectura de servicios de AWS",
+      "aiHeading": "Herramientas de IA",
+      "aiBody": "GitHub Copilot y ChatGPT han sido compañeros inestimables a lo largo de este proyecto. Copilot ayudó con consultas relacionadas con el código y sugerencias basadas en el contexto, mientras que ChatGPT fue útil para preguntas más amplias, como la elección de las soluciones en la nube adecuadas.",
+      "conclusion1": "Este proyecto me ha permitido desarrollar una aplicación full-stack, cubriendo diversos aspectos, desde el frontend hasta el backend, la seguridad y la infraestructura en la nube.",
+      "conclusion2": "Mi próximo proyecto explorará aplicaciones web serverless, bases de datos NoSQL y APIs de IA.",
+      "notAvailable": "CineShare ya no está disponible.",
+      "captions": {
+        "mainPage": "Página principal",
+        "mainLoggedPage": "Página principal con sesión iniciada",
+        "moviesRanking": "Ranking de películas"
+      }
+    },
+    "eugeniaBravo": {
+      "meta": {
+        "title": "Proyecto EugeniaBravo | Portafolio de JulioDev",
+        "description": "EugeniaBravo - Un sitio web profesional construido con React, TypeScript, AWS Amplify y Brevo para un cliente empresarial."
+      },
+      "intro": "Para seguir desarrollando mis habilidades de ingeniería de software, creé eugeniabravo.com y tudivorciointeligente.com. Este proyecto no solo puso a prueba mis capacidades técnicas, sino que también mejoró mis habilidades de comunicación con el cliente.",
+      "technologiesIntro": "Para desarrollar este sitio web, colaboré con una amiga que también es mi clienta, eligiendo tecnologías que potenciaran mis habilidades de ingeniería de software en lugar de depender de soluciones predefinidas como WordPress o Wix. Este enfoque dio como resultado un sitio web robusto y personalizado.",
+      "frontendSubtitle": "React – TypeScript",
+      "frontendBody1": "Dado que se trataba de un proyecto profesional, usé React para aprovechar mi conocimiento avanzado del framework. Además, implementar TypeScript garantizó un manejo de datos más seguro en comparación con JavaScript puro.",
+      "frontendBody2Prefix": "Para arrancar el desarrollo, experimenté con una innovadora herramienta de IA llamada ",
+      "frontendBody2Suffix": ", que puede generar un proyecto desde cero, ejecutarlo y mejorar el código de forma iterativa a partir de instrucciones. Luego descargué el código base generado para continuar con el desarrollo.",
+      "backendSubtitle": "AWS Amplify",
+      "backendBody": "En un proyecto anterior, construí un backend en Spring Boot integrado con una base de datos AWS RDS. Sin embargo, este enfoque provocó problemas como caídas inesperadas, mayor tiempo de desarrollo y complejidad añadida. Como desarrollador en solitario con tiempo limitado, necesitaba una solución más sencilla pero robusta. Fue entonces cuando opté por AWS Amplify, una solución de \"backend como servicio\". Amplify es más fácil de desarrollar una vez que te familiarizas con él, y ofrece una infraestructura robusta y rentable para proyectos pequeños y medianos, ya que está totalmente gestionada.",
+      "structureHeading": "Estructura del sitio web",
+      "structureIntro": "El sitio web se divide en páginas de acceso público y páginas de administración.",
+      "publicPagesTitle": "Páginas públicas",
+      "publicPagesBody": "El sitio web logra un equilibrio entre promocionar los servicios de Eugenia e invitar a los usuarios a ponerse en contacto, al tiempo que ofrece contenido valioso de blog sin anuncios.",
+      "adminPagesTitle": "Páginas de administración",
+      "adminPagesBody": "Protegida por la autenticación de usuarios de Amplify, hay una página de administración privada a través de la cual el equipo del sitio web gestiona el contenido. Este portal cuenta con un panel de control y un panel de administración para modificar, revisar publicaciones privadas o eliminar publicaciones.",
+      "ctaPrefix": "¿Necesitas asistencia legal en España? ",
+      "ctaLink": "¡Contacta con Eugenia!",
+      "captions": {
+        "adminDashboard": "Panel de administración",
+        "blogPostsManagement": "Gestión de publicaciones del blog",
+        "editPostPage": "Página de edición de publicación",
+        "adminNavigationMenu": "Menú de navegación de administración",
+        "homePage": "Página de inicio",
+        "blog": "Blog",
+        "services": "Servicios",
+        "contactMe": "Contáctame"
+      }
+    },
+    "eugeniaBravoRebuild": {
+      "meta": {
+        "title": "Reconstrucción de EugeniaBravo | Portafolio de JulioDev",
+        "description": "Reconstrucción de EugeniaBravo - Reconstruido con Next.js, TypeScript y Supabase para mejorar el rendimiento y la mantenibilidad."
+      },
+      "intro": "EugeniaBravo evolucionó de una sencilla aplicación de página única en React a un proyecto construido con Next.js para mejorar el SEO, la visibilidad y los flujos editoriales de un sitio orientado al contenido. La migración también reemplazó AWS Amplify por Supabase, que encaja mejor en proyectos más pequeños que aun así necesitan autenticación, almacenamiento y una base de datos relacional.",
+      "goalsHeading": "Objetivos de la migración",
+      "goalsBody": "Los principales objetivos eran lograr que el contenido del blog se indexara de forma fiable, mejorar el rendimiento de las páginas y simplificar las operaciones de backend para que el proyecto pudiera mantenerse ligero sin renunciar a funciones como las herramientas de administración, la subida de archivos multimedia y la edición de contenido enriquecido.",
+      "technologiesIntro": "La reconstrucción se centra en Next.js con TypeScript en el frontend y Supabase para el backend y el almacenamiento.",
+      "frontendSeoHeading": "Frontend y SEO",
+      "frontendSeoBody1": "Next.js permite el renderizado en el servidor y la generación estática del blog, lo que significa que los rastreadores reciben el HTML completo en lugar de una estructura prácticamente vacía. Esto supone una gran mejora frente a React puro para la indexación dinámica, porque cada publicación puede entregar metadatos completos, etiquetas canónicas y vistas previas enriquecidas en el momento en que se solicita.",
+      "frontendSeoBody2": "El proyecto incluye sitemaps, reglas de robots y metadatos por página para que los nuevos artículos se vuelvan visibles rápidamente. También mejora el enrutamiento, la optimización de imágenes y el rendimiento general de carga del sitio público.",
+      "backendHeading": "Backend con Supabase",
+      "backendBody1": "Supabase reemplazó a Amplify para mantener el stack más ligero y accesible para un equipo más pequeño. Con Postgres, autenticación integrada y almacenamiento en un solo lugar, es más fácil de mantener que una configuración de AWS más grande, sin dejar de ofrecer una base sólida para el panel de administración y los flujos de trabajo multimedia.",
+      "backendBody2": "La autenticación ahora admite MFA, las publicaciones y categorías viven en tablas relacionales, y las imágenes se almacenan en Supabase Storage con alternativas sensatas.",
+      "workflowHeading": "Flujo de trabajo de contenido",
+      "workflowBody": "Los editores gestionan publicaciones, categorías y autores desde el panel de administración, con TinyMCE para la edición de contenido enriquecido y flujos de vista previa antes de publicar. El blog usa slugs amigables para el SEO, publicaciones relacionadas y tarjetas recomendadas para mantener el interés de los lectores.",
+      "publicHeading": "Experiencia pública",
+      "publicBody": "El sitio público combina un embudo de marketing con un blog fácil de explorar y de carga rápida. Las páginas de servicios, testimonios, preguntas frecuentes y contacto están construidas sobre la misma base amigable para el SEO.",
+      "safeguardsHeading": "Salvaguardas de la versión de demostración",
+      "safeguardsBody1": "La rama de demostración se publica sin secretos, funciona con datos de prueba en memoria y desactiva las escrituras para que los revisores puedan explorar la interfaz de forma segura. La analítica y las herramientas de cookies están controladas mediante variables de entorno para mantener la demo aislada de producción.",
+      "safeguardsBody2Prefix": "La demo pública está disponible con las páginas de administración habilitadas en ",
+      "previousHeading": "Versión anterior",
+      "previousBodyPrefix": "Si quieres un desglose completo del stack original de React y Amplify, puedes leer la publicación anterior ",
+      "previousBodyLink": "aquí",
+      "previousBodySuffix": ".",
+      "ctaPrefix": "Visita el sitio en producción en ",
+      "ctaMiddle": ", explora la demo en ",
+      "ctaBeforeRepo": ", o revisa el repositorio en ",
+      "ctaSuffix": ".",
+      "captions": {
+        "homePage": "Página de inicio",
+        "blog": "Blog",
+        "services": "Servicios",
+        "contact": "Contacto",
+        "footer": "Pie de página",
+        "adminDashboard": "Panel de administración",
+        "blogPostManagement": "Gestión de publicaciones del blog",
+        "categoriesManagement": "Gestión de categorías",
+        "authorsManagement": "Gestión de autores",
+        "securitySettings": "Configuración de seguridad",
+        "addNewPost": "Añadir nueva publicación",
+        "editPost": "Editar publicación"
+      }
+    }
+  }
+}

@@ -1,8 +1,10 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './Footer.css';
 import SkillsCard from '../SkillsCard';
 
 export default function Footer() {
+  const { t } = useTranslation();
   var GithubIconLink = '/images/logos/github.png';
 
   return (
@@ -11,7 +13,7 @@ export default function Footer() {
         <div className='footer-column lg:w-auto'>
           <div className='flex flex-col sm:flex-row gap-10 sm:gap-20 p-4 sm:p-8'>
             <div>
-              <h1 className='text-xl mb-2'>Contact me:</h1>
+              <h1 className='text-xl mb-2'>{t('footer.contactMe')}</h1>
               <h2 className='mb-2 text-sm sm:text-base break-all sm:break-normal'>julomaciasgonzalez@juliodev.co.uk</h2>
               <a href="https://www.linkedin.com/in/julio-macias-gonzalez-199266282/" 
                  target='_blank' 
@@ -24,7 +26,7 @@ export default function Footer() {
               </a>
             </div>
             <div>
-              <h1 className='text-xl mb-2'>Other links:</h1>
+              <h1 className='text-xl mb-2'>{t('footer.otherLinks')}</h1>
               <a href="https://github.com/JulioMaciasS" 
                  target='_blank' 
                  rel="noopener noreferrer" 
@@ -43,7 +45,7 @@ export default function Footer() {
         </div>
       </div>
       
-      <p className='website-rights'>© 2026 JulioDev. All rights reserved.</p>
+      <p className='website-rights'>{t('footer.rights', { year: new Date().getFullYear() })}</p>
     </div>
   );
 }

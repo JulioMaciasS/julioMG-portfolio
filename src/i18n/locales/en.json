@@ -1,0 +1,283 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "services": "Services",
+    "sayHello": "Say Hello"
+  },
+  "language": {
+    "select": "Language",
+    "en": "English",
+    "es": "Español",
+    "fr": "Français",
+    "ar": "العربية"
+  },
+  "footer": {
+    "contactMe": "Contact me:",
+    "otherLinks": "Other links:",
+    "rights": "© {{year}} JulioDev. All rights reserved.",
+    "skillsTitle": "Website developed using the following technologies:"
+  },
+  "notFound": {
+    "message": "This page does not exist. The link may be broken or the page was moved.",
+    "back": "Back to Home"
+  },
+  "home": {
+    "meta": {
+      "title": "JulioDev | Software Engineer Portfolio",
+      "description": "Julio Macias Gonzalez's portfolio showcasing software engineering projects including web development, cloud architecture, and mobile applications."
+    },
+    "hero": {
+      "title": "Welcome to my portfolio!",
+      "subtitle": "I'm a software engineer that chases problems and pursues solutions.",
+      "projects": "Projects",
+      "contact": "Contact me",
+      "scrollAria": "Scroll to About section"
+    },
+    "about": {
+      "title": "Hi, I'm Julio. Nice to meet you!",
+      "body1": "Since 2022, I have been sharpening my Software Engineering technologies.",
+      "body2": "I have a strong passion for full-stack web development and I actively look for innovative ways to leverage technology to help drive business success.",
+      "tags": {
+        "problemSolver": "Problem Solver",
+        "teamPlayer": "Team Player",
+        "fullStack": "Full-Stack Developer",
+        "learner": "Continuous Learner"
+      }
+    },
+    "cards": {
+      "heading": "Discover my latest projects",
+      "more": "More Projects"
+    }
+  },
+  "projects": {
+    "meta": {
+      "title": "Projects | JulioDev Portfolio",
+      "description": "Browse Julio Macias Gonzalez's software engineering projects including CineShare, EugeniaBravo, and more."
+    },
+    "heading": "My Projects",
+    "new": "New!",
+    "items": {
+      "eugenia-bravo-rebuild": {
+        "title": "EugeniaBravo Rebuild",
+        "description": "Migration to Next.js + Supabase for better SEO and easier ops."
+      },
+      "eugenia-bravo": {
+        "title": "Eugenia Bravo",
+        "description": "Real world project. Blog Website and Landing Page for a lawyer."
+      },
+      "cineshare": {
+        "title": "CineShare",
+        "description": "Learn more about CineShare's development. A social media to discover Amazing Movies and TV Shows!"
+      },
+      "universal-paperclips": {
+        "title": "Universal Paperclips for iOS",
+        "description": "This article contains a guide explaining how I developed a reduced version of the game Universal Paperclips. Some of the key features presented in the app are Google Ads and Microtransactions."
+      }
+    }
+  },
+  "services": {
+    "meta": {
+      "title": "Services | JulioDev — Web Development & Consulting",
+      "description": "Freelance software engineering and consulting by Julio Macias Gonzalez. Specialised in Supabase, Next.js and React, with enterprise experience in Angular, Java/Spring and CI/CD."
+    },
+    "hero": {
+      "eyebrow": "Consulting & Freelance",
+      "title": "Engineering that moves your business forward",
+      "subtitlePrefix": "I'm Julio, a software engineer specialised in ",
+      "subtitleHighlight": "Supabase, Next.js and React",
+      "subtitleSuffix": ". I help startups and enterprise teams design, build and ship reliable web products — from greenfield apps to migrations and CI/CD.",
+      "bookCall": "Book a free call",
+      "seeWork": "See my work"
+    },
+    "specialty": {
+      "label": "Specialised in"
+    },
+    "grid": {
+      "heading": "How I can help",
+      "subtitle": "Flexible engagements — project-based, ongoing, or a one-off consultation. Pick what fits."
+    },
+    "items": {
+      "product": {
+        "title": "Product & Web App Development",
+        "description": "End-to-end web applications built on my core stack: Next.js, React and Supabase. From the first line of schema to a fast, SEO-ready product in production."
+      },
+      "enterprise": {
+        "title": "Enterprise Frontend Engineering",
+        "description": "Large-scale, maintainable frontends for teams and internal tooling — not just consumer products. Comfortable inside established enterprise codebases and design systems."
+      },
+      "backend": {
+        "title": "Backend & APIs",
+        "description": "Robust APIs and services to power your product. From Supabase/Postgres data models to Java and Spring Boot services for heavier enterprise workloads."
+      },
+      "cicd": {
+        "title": "CI/CD & DevOps",
+        "description": "Automated pipelines so shipping is boring and safe. Build, test and deploy on every push with GitHub Actions and Docker, plus environment and release hygiene."
+      },
+      "migrations": {
+        "title": "Migrations & Modernisation",
+        "description": "Moving legacy or hard-to-maintain sites onto a modern stack without losing SEO or content — exactly what I did migrating a live client site to Next.js + Supabase."
+      },
+      "consulting": {
+        "title": "Technical Consulting",
+        "description": "A second pair of eyes on architecture, stack choices, performance or SEO. Short engagements to unblock your team and de-risk the next decision."
+      }
+    },
+    "why": {
+      "heading": "Why work with me",
+      "point1Lead": "Real, shipped client work.",
+      "point1Text": "I rebuilt and migrated a live client website to Next.js + Supabase — improving SEO, admin workflows and day-to-day operations.",
+      "point2Lead": "Enterprise experience, not just demos.",
+      "point2Text": "I've worked across large codebases and internal tooling with Angular, Java and Spring — so I'm comfortable in serious, long-lived systems.",
+      "point3Lead": "You talk to the person doing the work.",
+      "point3Text": "No account managers, no hand-offs — direct communication from first call to delivery.",
+      "caseStudyLink": "Read the migration case study"
+    },
+    "process": {
+      "heading": "How we'll work together",
+      "subtitle": "A simple, transparent process from first hello to handover.",
+      "step1Title": "Discovery call",
+      "step1Text": "A free 30-minute call to understand your goals, constraints and timeline.",
+      "step2Title": "Proposal & scope",
+      "step2Text": "A clear, fixed proposal: what gets built, how long it takes and what it costs.",
+      "step3Title": "Build & ship",
+      "step3Text": "Iterative delivery with regular check-ins, so you always see progress.",
+      "step4Title": "Handover & support",
+      "step4Text": "Clean handover, documentation and optional ongoing support."
+    },
+    "cta": {
+      "heading": "Have a project in mind?",
+      "text": "Tell me what you're building. I'll get back to you within a couple of days with honest thoughts on how I can help.",
+      "button": "Start a conversation"
+    }
+  },
+  "contact": {
+    "meta": {
+      "title": "Contact Me | JulioDev Portfolio",
+      "description": "Get in touch with Julio Macias Gonzalez. Contact form for software engineering enquiries and collaboration opportunities."
+    },
+    "title": "Thanks for taking the time to reach out.",
+    "heading": "How can I help you today?",
+    "formTitle": "Contact form",
+    "or": "or",
+    "linkedinPrompt": "Connect with me on LinkedIn",
+    "linkedinButton": "LinkedIn Profile"
+  },
+  "posts": {
+    "common": {
+      "thanks": "Thank you for reading,",
+      "author": "Julio Macias Gonzalez",
+      "introHeading": "Introduction",
+      "technologiesHeading": "Technologies",
+      "frontendHeading": "Frontend",
+      "backendHeading": "Backend",
+      "conclusionHeading": "Conclusion"
+    },
+    "cineshare": {
+      "meta": {
+        "title": "CineShare Project | JulioDev Portfolio",
+        "description": "CineShare - A social platform for sharing movie and TV show recommendations. Built with Angular, Spring Boot, MySQL, and AWS."
+      },
+      "intro1": "CineShare is a personal project focused on exploring modern web technologies and cloud infrastructure. This learning experience helped me gain valuable insights for future real-world applications.",
+      "intro2": "The platform enables users to share and discover movie and TV show recommendations within a social community.",
+      "technologiesIntro": "Throughout this project, I have explored a variety of technologies, both frontend and backend, to build a full-stack application.",
+      "frontendSubtitle": "Angular CLI – HTML, CSS, TypeScript",
+      "frontendBody": "This Angular project utilizes core Angular modules, NgRx for state management, and server-side rendering via Express. It incorporates Bootstrap and Tailwind CSS for styling, along with DaisyUI for UI components.",
+      "backendSubtitle": "Spring Boot – Java",
+      "backendBody": "The backend is powered by Spring Boot, leveraging multiple starters such as Data JPA for database access, Spring Security for authentication, and Spring MVC with an embedded Tomcat server. It integrates MySQL for database connectivity, Lombok to reduce boilerplate code, JJWT for JWT handling, Springdoc OpenAPI for API documentation, and Actuator for monitoring.",
+      "securityHeading": "Cybersecurity",
+      "securityBody": "Security features are currently under development. The frontend uses CryptoJS to encrypt payloads via AES encryption, while the backend implements Spring Security for JWT-based authentication. JWT filters unauthorized requests, and all passwords are encrypted both in transit and at rest in the database. Additionally, an SSL certificate is in place for HTTPS.",
+      "securityCaption": "User registration with security measures",
+      "cloudHeading": "Cloud Infrastructure",
+      "cloudBody": "Working with AWS has been a new experience for me, moving beyond hosting simple static websites via GitHub Pages. I now use Amplify for frontend hosting, Elastic Beanstalk for backend deployment, RDS for database management, and Route 53 for domain management. This project has introduced me to the extensive possibilities of cloud computing, particularly the idea of building serverless applications.",
+      "cloudCaption": "AWS Services Architecture",
+      "aiHeading": "AI Tools",
+      "aiBody": "GitHub Copilot and ChatGPT have been invaluable companions throughout this project. Copilot assisted with code-related queries and context-driven suggestions, while ChatGPT was helpful for broader questions, such as selecting appropriate cloud solutions.",
+      "conclusion1": "This project has enabled me to develop a full-stack application, covering various aspects from frontend to backend, security, and cloud infrastructure.",
+      "conclusion2": "My next project will explore serverless web apps, NoSQL databases, and AI APIs.",
+      "notAvailable": "CineShare is no longer available.",
+      "captions": {
+        "mainPage": "Main Page",
+        "mainLoggedPage": "Main Logged Page",
+        "moviesRanking": "Movies Ranking"
+      }
+    },
+    "eugeniaBravo": {
+      "meta": {
+        "title": "EugeniaBravo Project | JulioDev Portfolio",
+        "description": "EugeniaBravo - A professional website built with React, TypeScript, AWS Amplify, and Brevo for a business client."
+      },
+      "intro": "To further develop my software engineering skills, I created eugeniabravo.com and tudivorciointeligente.com. This project not only challenged my technical abilities but also improved my client communication skills.",
+      "technologiesIntro": "To develop this website, I collaborated with a friend who is also my client, choosing technologies that would enhance my software engineering skills rather than relying on out-of-the-box solutions like WordPress or Wix. This approach delivered a robust and customized website.",
+      "frontendSubtitle": "React – TypeScript",
+      "frontendBody1": "Since this was a professional project, I used React to leverage my advanced knowledge of the framework. Additionally, implementing TypeScript ensured safer data handling compared to plain JavaScript.",
+      "frontendBody2Prefix": "To kickstart development, I experimented with an innovative AI tool called ",
+      "frontendBody2Suffix": ", which can generate a project from scratch, run it, and iteratively improve the code based on prompts. I then downloaded the generated boilerplate code to continue development.",
+      "backendSubtitle": "AWS Amplify",
+      "backendBody": "In a previous project, I built a Spring Boot backend integrated with an AWS RDS database. However, this approach led to issues such as unexpected crashes, increased development time, and added complexity. As a solo developer with limited time, I needed a simpler yet robust solution. That's when I opted for AWS Amplify, a \"backend as a service\" solution. Amplify is easier to develop once familiar with it, and it offers a robust, cost-effective infrastructure for small to medium projects, since it is fully managed.",
+      "structureHeading": "Website Structure",
+      "structureIntro": "The website is divided into public access pages and admin pages.",
+      "publicPagesTitle": "Public Pages",
+      "publicPagesBody": "The website strikes a balance between promoting Eugenia's products and inviting users to get in touch, while also providing valuable ad-free blog content.",
+      "adminPagesTitle": "Admin Pages",
+      "adminPagesBody": "Protected by Amplify's User Authentication, there is a private admin page through which the website team manages content. This portal features a dashboard and an admin panel for modifying, reviewing private posts, or deleting posts.",
+      "ctaPrefix": "Need legal assistance in Spain? ",
+      "ctaLink": "Contact Eugenia!",
+      "captions": {
+        "adminDashboard": "Admin Dashboard",
+        "blogPostsManagement": "Blog Posts Management",
+        "editPostPage": "Edit Post Page",
+        "adminNavigationMenu": "Admin Navigation Menu",
+        "homePage": "Home Page",
+        "blog": "Blog",
+        "services": "Services",
+        "contactMe": "Contact Me"
+      }
+    },
+    "eugeniaBravoRebuild": {
+      "meta": {
+        "title": "EugeniaBravo Rebuild | JulioDev Portfolio",
+        "description": "EugeniaBravo Rebuild - Rebuilt with Next.js, TypeScript, and Supabase for improved performance and maintainability."
+      },
+      "intro": "EugeniaBravo evolved from a plain React single page app into a Next.js build to improve SEO, discoverability, and editorial workflows for a content-driven site. The migration also replaced AWS Amplify with Supabase, which is a better fit for smaller projects that still need auth, storage, and a relational database.",
+      "goalsHeading": "Migration Goals",
+      "goalsBody": "The main goals were to get blog content indexed reliably, improve page performance, and simplify backend operations so the project could stay lean without giving up features like admin tooling, media uploads, and rich content editing.",
+      "technologiesIntro": "The rebuild centers around Next.js with TypeScript on the frontend and Supabase for the backend and storage.",
+      "frontendSeoHeading": "Frontend and SEO",
+      "frontendSeoBody1": "Next.js enables server rendering and static generation for the blog, which means crawlers receive full HTML instead of a mostly empty shell. This is a big improvement over plain React for dynamic indexation, because each post can ship complete metadata, canonical tags, and rich previews the moment it is requested.",
+      "frontendSeoBody2": "The build includes sitemaps, robots rules, and per-page metadata so new articles become discoverable quickly. It also improves routing, image optimization, and overall load performance for the public site.",
+      "backendHeading": "Backend with Supabase",
+      "backendBody1": "Supabase replaced Amplify to keep the stack lighter and more approachable for a smaller team. With Postgres, built-in auth, and storage in one place, it is easier to maintain than a larger AWS configuration while still providing a robust foundation for the admin dashboard and media workflows.",
+      "backendBody2": "Auth now supports MFA, posts and categories live in relational tables, and images are stored in Supabase Storage with sensible fallbacks.",
+      "workflowHeading": "Content Workflow",
+      "workflowBody": "Editors manage posts, categories, and authors from the admin dashboard, with TinyMCE for rich content editing and preview flows before publishing. The blog uses SEO friendly slugs, related posts, and recommended cards to keep readers engaged.",
+      "publicHeading": "Public Experience",
+      "publicBody": "The public site combines a marketing funnel with a blog that is easy to browse and fast to load. Services, testimonials, FAQ, and contact pages are all built with the same SEO friendly foundation.",
+      "safeguardsHeading": "Demo Build Safeguards",
+      "safeguardsBody1": "The demo branch ships without secrets, runs on in-memory fixtures, and disables writes so reviewers can explore the UI safely. Analytics and cookie tooling are gated behind environment flags to keep the demo isolated from production.",
+      "safeguardsBody2Prefix": "The public demo is available with admin pages enabled at ",
+      "previousHeading": "Previous Build",
+      "previousBodyPrefix": "If you want a full breakdown of the original React and Amplify stack, you can read the earlier post ",
+      "previousBodyLink": "here",
+      "previousBodySuffix": ".",
+      "ctaPrefix": "Visit the live site at ",
+      "ctaMiddle": ", explore the demo at ",
+      "ctaBeforeRepo": ", or browse the repo on ",
+      "ctaSuffix": ".",
+      "captions": {
+        "homePage": "Home Page",
+        "blog": "Blog",
+        "services": "Services",
+        "contact": "Contact",
+        "footer": "Footer",
+        "adminDashboard": "Admin Dashboard",
+        "blogPostManagement": "Blog Post Management",
+        "categoriesManagement": "Categories Management",
+        "authorsManagement": "Authors Management",
+        "securitySettings": "Security settings",
+        "addNewPost": "Add new post",
+        "editPost": "Edit Post"
+      }
+    }
+  }
+}

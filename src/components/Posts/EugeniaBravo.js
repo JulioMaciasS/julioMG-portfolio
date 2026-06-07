@@ -1,30 +1,33 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { useTranslation } from 'react-i18next';
 import '../Post.css';
 import ImageSlider from './ImageSlider';
 
 function EugeniaBravo() {
+  const { t } = useTranslation();
+
   // Define images for the slider
   const adminPanelImages = [
     {
       src: '/images/eugeniaBravoPost/AdminPanel1.png',
       alt: 'Admin Dashboard',
-      caption: 'Admin Dashboard'
+      caption: t('posts.eugeniaBravo.captions.adminDashboard')
     },
     {
       src: '/images/eugeniaBravoPost/AdminPanel2.png',
       alt: 'Blog Posts Management',
-      caption: 'Blog Posts Management'
+      caption: t('posts.eugeniaBravo.captions.blogPostsManagement')
     },
     {
       src: '/images/eugeniaBravoPost/AdminPanel3.png',
       alt: 'Edit Post Page',
-      caption: 'Edit Post Page'
+      caption: t('posts.eugeniaBravo.captions.editPostPage')
     },
     {
       src: '/images/eugeniaBravoPost/AdminPanel4.png',
       alt: 'Admin Navigation Menu',
-      caption: 'Admin Navigation Menu'
+      caption: t('posts.eugeniaBravo.captions.adminNavigationMenu')
     }
   ];
 
@@ -32,22 +35,22 @@ function EugeniaBravo() {
     {
       src: '/images/eugeniaBravoPost/Public1.png',
       alt: 'Home Page',
-      caption: 'Home Page'
+      caption: t('posts.eugeniaBravo.captions.homePage')
     },
     {
       src: '/images/eugeniaBravoPost/Public2.png',
       alt: 'Blog',
-      caption: 'Blog'
+      caption: t('posts.eugeniaBravo.captions.blog')
     },
     {
       src: '/images/eugeniaBravoPost/Public3.png',
       alt: 'Services',
-      caption: 'Services'
+      caption: t('posts.eugeniaBravo.captions.services')
     },
     {
       src: '/images/eugeniaBravoPost/Public4.png',
       alt: 'Contact Me',
-      caption: 'Contact Me'
+      caption: t('posts.eugeniaBravo.captions.contactMe')
     }
   ];
 
@@ -63,13 +66,13 @@ function EugeniaBravo() {
   return (
     <div>
       <Helmet>
-        <title>EugeniaBravo Project | JulioDev Portfolio</title>
-        <meta name="description" content="EugeniaBravo - A professional website built with React, TypeScript, AWS Amplify, and Brevo for a business client." />
+        <title>{t('posts.eugeniaBravo.meta.title')}</title>
+        <meta name="description" content={t('posts.eugeniaBravo.meta.description')} />
         <link rel="canonical" href="https://portfolio.juliodev.co.uk/projects/eugeniabravo" />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://portfolio.juliodev.co.uk/projects/eugeniabravo" />
-        <meta property="og:title" content="EugeniaBravo Project | JulioDev Portfolio" />
-        <meta property="og:description" content="EugeniaBravo - A professional website built with React, TypeScript, AWS Amplify, and Brevo for a business client." />
+        <meta property="og:title" content={t('posts.eugeniaBravo.meta.title')} />
+        <meta property="og:description" content={t('posts.eugeniaBravo.meta.description')} />
         <meta property="og:image" content="https://portfolio.juliodev.co.uk/images/eugeniaBravoPost/EugeniaBravoIcon.png" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
@@ -78,15 +81,15 @@ function EugeniaBravo() {
           <div className='contents-container max-w-4xl mx-auto'>
             {/* Header with logo */}
             <div className='flex flex-row items-center gap-2 sm:gap-3 mb-6 border-b border-gray-200 pb-4 w-full'>
-              <img 
-                src='/images/eugeniaBravoPost/EugeniaBravoIcon.png' 
-                className='w-10 h-10 sm:w-12 sm:h-12 object-contain rounded-lg shadow-md' 
+              <img
+                src='/images/eugeniaBravoPost/EugeniaBravoIcon.png'
+                className='w-10 h-10 sm:w-12 sm:h-12 object-contain rounded-lg shadow-md'
                 alt='EugeniaBravo logo'
               />
               <h1 className="text-gray-800 mb-0 text-4xl md:text-5xl font-bold" id='top'>EugeniaBravo</h1>
-              <a 
-                href="https://eugeniabravo.com" 
-                target="_blank" 
+              <a
+                href="https://eugeniabravo.com"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-500 hover:text-blue-700 transition-colors"
               >
@@ -97,17 +100,17 @@ function EugeniaBravo() {
             <div className='text-left space-y-8'>
               {/* Introduction Section */}
               <section className="p-6 rounded-xl">
-                <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">Introduction</h2>
+                <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.common.introHeading')}</h2>
                 <p className="text-gray-700 leading-relaxed">
-                  To further develop my software engineering skills, I created eugeniabravo.com and tudivorciointeligente.com. This project not only challenged my technical abilities but also improved my client communication skills.
+                  {t('posts.eugeniaBravo.intro')}
                 </p>
               </section>
 
               {/* Technologies Section */}
               <section className="p-6 rounded-xl">
-                <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">Technologies</h2>
+                <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.common.technologiesHeading')}</h2>
                 <p className="text-gray-700 mb-6">
-                  To develop this website, I collaborated with a friend who is also my client, choosing technologies that would enhance my software engineering skills rather than relying on out-of-the-box solutions like WordPress or Wix. This approach delivered a robust and customized website.
+                  {t('posts.eugeniaBravo.technologiesIntro')}
                 </p>
 
                 {/* Tech stack icons */}
@@ -121,10 +124,10 @@ function EugeniaBravo() {
                   }).map(([name, icon]) => (
                     <div key={name} className='flex flex-col items-center transition-transform hover:scale-110'>
                       <div className="bg-white p-3 rounded-xl shadow-md mb-2 w-24 h-24 flex items-center justify-center">
-                        <img 
-                          src={icon} 
-                          className='object-contain max-h-full max-w-full rounded-lg' 
-                          alt={`${name} icon`} 
+                        <img
+                          src={icon}
+                          className='object-contain max-h-full max-w-full rounded-lg'
+                          alt={`${name} icon`}
                         />
                       </div>
                       <label className='text-gray-700 font-medium'>{name}</label>
@@ -135,40 +138,41 @@ function EugeniaBravo() {
 
               {/* Frontend Section */}
               <section className="p-6 rounded-xl">
-                <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">Frontend</h2>
-                <h3 className="font-semibold text-lg text-gray-700 mb-2">React – TypeScript</h3>
+                <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.common.frontendHeading')}</h2>
+                <h3 className="font-semibold text-lg text-gray-700 mb-2">{t('posts.eugeniaBravo.frontendSubtitle')}</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Since this was a professional project, I used React to leverage my advanced knowledge of the framework. Additionally, implementing TypeScript ensured safer data handling compared to plain JavaScript.
+                  {t('posts.eugeniaBravo.frontendBody1')}
                 </p>
                 <p className="text-gray-700 leading-relaxed mt-4">
-                  To kickstart development, I experimented with an innovative AI tool called <a target='_blank' rel="noopener noreferrer" href='https://bolt.new' className='text-blue-500 hover:underline'>bolt.new</a>, which can generate a project from scratch, run it, and iteratively improve the code based on prompts. I then downloaded the generated boilerplate code to continue development.
+                  {t('posts.eugeniaBravo.frontendBody2Prefix')}
+                  <a target='_blank' rel="noopener noreferrer" href='https://bolt.new' className='text-blue-500 hover:underline'>bolt.new</a>
+                  {t('posts.eugeniaBravo.frontendBody2Suffix')}
                 </p>
               </section>
 
               {/* Backend Section */}
               <section className="p-6 rounded-xl">
-                <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">Backend</h2>
-                <h3 className="font-semibold text-lg text-gray-700 mb-2">AWS Amplify</h3>
+                <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.common.backendHeading')}</h2>
+                <h3 className="font-semibold text-lg text-gray-700 mb-2">{t('posts.eugeniaBravo.backendSubtitle')}</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  In a previous project, I built a Spring Boot backend integrated with an AWS RDS database. However, this approach led to issues such as unexpected crashes, increased development time, and added complexity. As a solo developer with limited time, I needed a simpler yet robust solution. That’s when I opted for AWS Amplify, a “backend as a service” solution. Amplify is easier to develop once familiar with it, and it offers a robust, cost-effective infrastructure for small to medium projects, since it is fully managed.
+                  {t('posts.eugeniaBravo.backendBody')}
                 </p>
               </section>
 
               {/* Website Structure Section */}
               <section className="p-6 rounded-xl">
-                <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">Website Structure</h2>
+                <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.eugeniaBravo.structureHeading')}</h2>
                 <p className="text-gray-700 mb-6">
-                  The website is divided into public access pages and admin pages.
+                  {t('posts.eugeniaBravo.structureIntro')}
                 </p>
 
                 {/* Public Pages Section */}
                 <div className="mb-8">
-                  <h3 className="font-semibold text-lg text-gray-700 mb-2">Public Pages</h3>
+                  <h3 className="font-semibold text-lg text-gray-700 mb-2">{t('posts.eugeniaBravo.publicPagesTitle')}</h3>
                   <p className="text-gray-700 leading-relaxed mb-6">
-                    The website strikes a balance between promoting Eugenia's products and inviting users to get in touch, while also providing valuable ad-free blog content.
+                    {t('posts.eugeniaBravo.publicPagesBody')}
                   </p>
 
-                  {/* Public Pages ImageSlider */}
                   <ImageSlider
                     images={publicPageImages}
                     containerClassName="max-w-4xl mx-auto p-4 rounded-xl"
@@ -177,12 +181,11 @@ function EugeniaBravo() {
 
                 {/* Admin Pages Section */}
                 <div>
-                  <h3 className="font-semibold text-lg text-gray-700 mb-2">Admin Pages</h3>
+                  <h3 className="font-semibold text-lg text-gray-700 mb-2">{t('posts.eugeniaBravo.adminPagesTitle')}</h3>
                   <p className="text-gray-700 leading-relaxed mb-6">
-                    Protected by Amplify's User Authentication, there is a private admin page through which the website team manages content. This portal features a dashboard and an admin panel for modifying, reviewing private posts, or deleting posts.
+                    {t('posts.eugeniaBravo.adminPagesBody')}
                   </p>
 
-                  {/* Admin Pages ImageSlider */}
                   <ImageSlider
                     images={adminPanelImages}
                     containerClassName="max-w-4xl mx-auto p-4 rounded-xl"
@@ -193,16 +196,17 @@ function EugeniaBravo() {
               {/* Call to Action */}
               <section className="p-6 rounded-xl bg-blue-50">
                 <p className="text-gray-700 leading-relaxed text-center">
-                  Need legal assistance in Spain? <a className='text-blue-500 hover:underline font-medium' href='https://www.eugeniabravo.com/contacto' target='_blank' rel="noopener noreferrer">Contact Eugenia!</a>
+                  {t('posts.eugeniaBravo.ctaPrefix')}
+                  <a className='text-blue-500 hover:underline font-medium' href='https://www.eugeniabravo.com/contacto' target='_blank' rel="noopener noreferrer">{t('posts.eugeniaBravo.ctaLink')}</a>
                 </p>
               </section>
 
               {/* Footer */}
               <div className="text-right border-t border-gray-200 pt-4 mt-8">
                 <p className="text-gray-600">
-                  Thank you for reading,
+                  {t('posts.common.thanks')}
                 </p>
-                <p className="font-semibold text-gray-800">Julio Macias Gonzalez</p>
+                <p className="font-semibold text-gray-800">{t('posts.common.author')}</p>
               </div>
             </div>
           </div>

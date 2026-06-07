@@ -1,0 +1,96 @@
+.lang-switcher {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.lang-switcher-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50px;
+  color: #fff;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease-out;
+}
+
+.lang-switcher-toggle:hover {
+  background: #fff;
+  color: #1a1717;
+  border-color: #fff;
+}
+
+.lang-switcher-current {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.lang-switcher-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  list-style: none;
+  margin: 0;
+  padding: 6px;
+  background: #242222;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 14px;
+  min-width: 160px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  z-index: 1000;
+}
+
+/* Flip alignment for RTL layouts */
+[dir='rtl'] .lang-switcher-menu {
+  right: auto;
+  left: 0;
+}
+
+.lang-switcher-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 0.98rem;
+  text-align: start;
+  transition: background 0.15s ease-out;
+}
+
+.lang-switcher-option:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.lang-switcher-option.is-active {
+  background: rgba(255, 255, 255, 0.16);
+  font-weight: 600;
+}
+
+/* Mobile: render inline inside the open nav menu */
+@media screen and (max-width: 960px) {
+  .lang-switcher {
+    justify-content: center;
+    margin: 1rem auto;
+  }
+
+  .lang-switcher-toggle {
+    padding: 10px 22px;
+    font-size: 1.1rem;
+  }
+
+  .lang-switcher-menu {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

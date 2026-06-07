@@ -1,7 +1,9 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './SkillsCard.css';
 
 function SkillsCard() {
+    const { t } = useTranslation();
 
     var reactIconLink = '/images/logos/react.png';
     var HTMLIconLink = '/images/logos/html.png';
@@ -13,7 +15,7 @@ function SkillsCard() {
         <div className='web-info-text-container-dark'>
 
             <p className='skill-text-title'>
-                Website developed using the following technologies:
+                {t('footer.skillsTitle')}
             </p>
             <div class="skill-container">
                 <div class="skill-item">

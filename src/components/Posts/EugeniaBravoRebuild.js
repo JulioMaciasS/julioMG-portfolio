@@ -1,34 +1,37 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { useTranslation } from 'react-i18next';
 import '../Post.css';
 import ImageSlider from './ImageSlider';
 
 function EugeniaBravoRebuild() {
+  const { t } = useTranslation();
+
   const publicPageImages = [
     {
       src: '/images/eugeniaBravoRebuild/Public 1.png',
       alt: 'EugeniaBravo homepage hero section',
-      caption: 'Home Page'
+      caption: t('posts.eugeniaBravoRebuild.captions.homePage')
     },
     {
       src: '/images/eugeniaBravoRebuild/Public 2.png',
       alt: 'EugeniaBravo blog listing',
-      caption: 'Blog'
+      caption: t('posts.eugeniaBravoRebuild.captions.blog')
     },
     {
       src: '/images/eugeniaBravoRebuild/Public 3.png',
       alt: 'EugeniaBravo services overview',
-      caption: 'Services'
+      caption: t('posts.eugeniaBravoRebuild.captions.services')
     },
     {
       src: '/images/eugeniaBravoRebuild/Public 4.png',
       alt: 'EugeniaBravo contact page',
-      caption: 'Contact'
+      caption: t('posts.eugeniaBravoRebuild.captions.contact')
     },
     {
       src: '/images/eugeniaBravoRebuild/Public 5.png',
       alt: 'EugeniaBravo site footer',
-      caption: 'Footer'
+      caption: t('posts.eugeniaBravoRebuild.captions.footer')
     }
   ];
 
@@ -36,37 +39,37 @@ function EugeniaBravoRebuild() {
     {
       src: '/images/eugeniaBravoRebuild/Admin 1.png',
       alt: 'EugeniaBravo admin dashboard',
-      caption: 'Admin Dashboard'
+      caption: t('posts.eugeniaBravoRebuild.captions.adminDashboard')
     },
     {
       src: '/images/eugeniaBravoRebuild/Admin 2.png',
       alt: 'EugeniaBravo admin post management',
-      caption: 'Blog Post Management'
+      caption: t('posts.eugeniaBravoRebuild.captions.blogPostManagement')
     },
     {
       src: '/images/eugeniaBravoRebuild/Admin 3.png',
       alt: 'EugeniaBravo admin categories management',
-      caption: 'Categories Management'
+      caption: t('posts.eugeniaBravoRebuild.captions.categoriesManagement')
     },
     {
       src: '/images/eugeniaBravoRebuild/Admin 4.png',
       alt: 'EugeniaBravo admin authors management',
-      caption: 'Authors Management'
+      caption: t('posts.eugeniaBravoRebuild.captions.authorsManagement')
     },
     {
       src: '/images/eugeniaBravoRebuild/Admin 5.png',
       alt: 'EugeniaBravo admin security settings',
-      caption: 'Security settings'
+      caption: t('posts.eugeniaBravoRebuild.captions.securitySettings')
     },
     {
       src: '/images/eugeniaBravoRebuild/Admin 6.png',
       alt: 'EugeniaBravo admin add new post',
-      caption: 'Add new post'
+      caption: t('posts.eugeniaBravoRebuild.captions.addNewPost')
     },
     {
       src: '/images/eugeniaBravoRebuild/Admin 7.png',
       alt: 'EugeniaBravo admin edit post',
-      caption: 'Edit Post'
+      caption: t('posts.eugeniaBravoRebuild.captions.editPost')
     }
   ];
 
@@ -80,13 +83,13 @@ function EugeniaBravoRebuild() {
   return (
     <div>
       <Helmet>
-        <title>EugeniaBravo Rebuild | JulioDev Portfolio</title>
-        <meta name="description" content="EugeniaBravo Rebuild - Rebuilt with Next.js, TypeScript, and Supabase for improved performance and maintainability." />
+        <title>{t('posts.eugeniaBravoRebuild.meta.title')}</title>
+        <meta name="description" content={t('posts.eugeniaBravoRebuild.meta.description')} />
         <link rel="canonical" href="https://portfolio.juliodev.co.uk/projects/eugeniabravo-rebuild" />
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://portfolio.juliodev.co.uk/projects/eugeniabravo-rebuild" />
-        <meta property="og:title" content="EugeniaBravo Rebuild | JulioDev Portfolio" />
-        <meta property="og:description" content="EugeniaBravo Rebuild - Rebuilt with Next.js, TypeScript, and Supabase for improved performance and maintainability." />
+        <meta property="og:title" content={t('posts.eugeniaBravoRebuild.meta.title')} />
+        <meta property="og:description" content={t('posts.eugeniaBravoRebuild.meta.description')} />
         <meta property="og:image" content="https://portfolio.juliodev.co.uk/images/eugeniaBravoPost/EugeniaBravoIcon.png" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
@@ -112,25 +115,23 @@ function EugeniaBravoRebuild() {
 
             <div className='text-left space-y-8'>
               <section className="p-6 rounded-xl">
-                <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">Introduction</h2>
+                <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.common.introHeading')}</h2>
                 <p className="text-gray-700 leading-relaxed">
-                  EugeniaBravo evolved from a plain React single page app into a Next.js build to improve SEO, discoverability, and editorial workflows for a content-driven site.
-                  The migration also replaced AWS Amplify with Supabase, which is a better fit for smaller projects that still need auth, storage, and a relational database.
+                  {t('posts.eugeniaBravoRebuild.intro')}
                 </p>
               </section>
 
               <section className="p-6 rounded-xl">
-                <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">Migration Goals</h2>
+                <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.eugeniaBravoRebuild.goalsHeading')}</h2>
                 <p className="text-gray-700 leading-relaxed">
-                  The main goals were to get blog content indexed reliably, improve page performance, and simplify backend operations so the project could stay lean without
-                  giving up features like admin tooling, media uploads, and rich content editing.
+                  {t('posts.eugeniaBravoRebuild.goalsBody')}
                 </p>
               </section>
 
               <section className="p-6 rounded-xl">
-                <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">Technologies</h2>
+                <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.common.technologiesHeading')}</h2>
                 <p className="text-gray-700 mb-6">
-                  The rebuild centers around Next.js with TypeScript on the frontend and Supabase for the backend and storage.
+                  {t('posts.eugeniaBravoRebuild.technologiesIntro')}
                 </p>
                 <div className='flex flex-row flex-wrap gap-6 justify-center items-center w-full text-center mb-6'>
                   {Object.entries({
@@ -154,35 +155,29 @@ function EugeniaBravoRebuild() {
               </section>
 
               <section className="p-6 rounded-xl">
-                <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">Frontend and SEO</h2>
+                <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.eugeniaBravoRebuild.frontendSeoHeading')}</h2>
                 <p className="text-gray-700 leading-relaxed">
-                  Next.js enables server rendering and static generation for the blog, which means crawlers receive full HTML instead of a mostly empty shell.
-                  This is a big improvement over plain React for dynamic indexation, because each post can ship complete metadata, canonical tags, and rich previews
-                  the moment it is requested.
+                  {t('posts.eugeniaBravoRebuild.frontendSeoBody1')}
                 </p>
                 <p className="text-gray-700 leading-relaxed mt-4">
-                  The build includes sitemaps, robots rules, and per-page metadata so new articles become discoverable quickly.
-                  It also improves routing, image optimization, and overall load performance for the public site.
+                  {t('posts.eugeniaBravoRebuild.frontendSeoBody2')}
                 </p>
               </section>
 
               <section className="p-6 rounded-xl">
-                <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">Backend with Supabase</h2>
+                <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.eugeniaBravoRebuild.backendHeading')}</h2>
                 <p className="text-gray-700 leading-relaxed">
-                  Supabase replaced Amplify to keep the stack lighter and more approachable for a smaller team.
-                  With Postgres, built-in auth, and storage in one place, it is easier to maintain than a larger AWS configuration while still providing a robust
-                  foundation for the admin dashboard and media workflows.
+                  {t('posts.eugeniaBravoRebuild.backendBody1')}
                 </p>
                 <p className="text-gray-700 leading-relaxed mt-4">
-                  Auth now supports MFA, posts and categories live in relational tables, and images are stored in Supabase Storage with sensible fallbacks.
+                  {t('posts.eugeniaBravoRebuild.backendBody2')}
                 </p>
               </section>
 
               <section className="p-6 rounded-xl">
-                <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">Content Workflow</h2>
+                <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.eugeniaBravoRebuild.workflowHeading')}</h2>
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  Editors manage posts, categories, and authors from the admin dashboard, with TinyMCE for rich content editing and preview flows before publishing.
-                  The blog uses SEO friendly slugs, related posts, and recommended cards to keep readers engaged.
+                  {t('posts.eugeniaBravoRebuild.workflowBody')}
                 </p>
                 <ImageSlider
                   images={adminPanelImages}
@@ -191,10 +186,9 @@ function EugeniaBravoRebuild() {
               </section>
 
               <section className="p-6 rounded-xl">
-                <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">Public Experience</h2>
+                <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.eugeniaBravoRebuild.publicHeading')}</h2>
                 <p className="text-gray-700 leading-relaxed mb-6">
-                  The public site combines a marketing funnel with a blog that is easy to browse and fast to load.
-                  Services, testimonials, FAQ, and contact pages are all built with the same SEO friendly foundation.
+                  {t('posts.eugeniaBravoRebuild.publicBody')}
                 </p>
                 <ImageSlider
                   images={publicPageImages}
@@ -203,13 +197,12 @@ function EugeniaBravoRebuild() {
               </section>
 
               <section className="p-6 rounded-xl">
-                <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">Demo Build Safeguards</h2>
+                <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.eugeniaBravoRebuild.safeguardsHeading')}</h2>
                 <p className="text-gray-700 leading-relaxed">
-                  The demo branch ships without secrets, runs on in-memory fixtures, and disables writes so reviewers can explore the UI safely.
-                  Analytics and cookie tooling are gated behind environment flags to keep the demo isolated from production.
+                  {t('posts.eugeniaBravoRebuild.safeguardsBody1')}
                 </p>
                 <p className="text-gray-700 leading-relaxed mt-4">
-                  The public demo is available with admin pages enabled at{' '}
+                  {t('posts.eugeniaBravoRebuild.safeguardsBody2Prefix')}
                   <a
                     className='text-blue-500 hover:underline font-medium'
                     href='https://eugeniabravo-public.vercel.app/'
@@ -222,27 +215,31 @@ function EugeniaBravoRebuild() {
               </section>
 
               <section className="p-6 rounded-xl">
-                <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">Previous Build</h2>
+                <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.eugeniaBravoRebuild.previousHeading')}</h2>
                 <p className="text-gray-700 leading-relaxed">
-                  If you want a full breakdown of the original React and Amplify stack, you can read the earlier post{' '}
-                  <a className='text-blue-500 hover:underline font-medium' href='/projects/eugeniabravo'>here</a>.
+                  {t('posts.eugeniaBravoRebuild.previousBodyPrefix')}
+                  <a className='text-blue-500 hover:underline font-medium' href='/projects/eugeniabravo'>{t('posts.eugeniaBravoRebuild.previousBodyLink')}</a>
+                  {t('posts.eugeniaBravoRebuild.previousBodySuffix')}
                 </p>
               </section>
 
               <section className="p-6 rounded-xl bg-blue-50">
                 <p className="text-gray-700 leading-relaxed text-center">
-                  Visit the live site at{' '}
-                  <a className='text-blue-500 hover:underline font-medium' href='https://eugeniabravo.com' target='_blank' rel="noopener noreferrer">eugeniabravo.com</a>, explore the demo at{' '}
-                  <a className='text-blue-500 hover:underline font-medium' href='https://eugeniabravo-public.vercel.app/' target='_blank' rel="noopener noreferrer">eugeniabravo-public.vercel.app</a>, or browse the repo on{' '}
-                  <a className='text-blue-500 hover:underline font-medium' href='https://github.com/JulioMaciasS/eugeniabravo-public' target='_blank' rel="noopener noreferrer">GitHub</a>.
+                  {t('posts.eugeniaBravoRebuild.ctaPrefix')}
+                  <a className='text-blue-500 hover:underline font-medium' href='https://eugeniabravo.com' target='_blank' rel="noopener noreferrer">eugeniabravo.com</a>
+                  {t('posts.eugeniaBravoRebuild.ctaMiddle')}
+                  <a className='text-blue-500 hover:underline font-medium' href='https://eugeniabravo-public.vercel.app/' target='_blank' rel="noopener noreferrer">eugeniabravo-public.vercel.app</a>
+                  {t('posts.eugeniaBravoRebuild.ctaBeforeRepo')}
+                  <a className='text-blue-500 hover:underline font-medium' href='https://github.com/JulioMaciasS/eugeniabravo-public' target='_blank' rel="noopener noreferrer">GitHub</a>
+                  {t('posts.eugeniaBravoRebuild.ctaSuffix')}
                 </p>
               </section>
 
               <div className="text-right border-t border-gray-200 pt-4 mt-8">
                 <p className="text-gray-600">
-                  Thank you for reading,
+                  {t('posts.common.thanks')}
                 </p>
-                <p className="font-semibold text-gray-800">Julio Macias Gonzalez</p>
+                <p className="font-semibold text-gray-800">{t('posts.common.author')}</p>
               </div>
             </div>
           </div>

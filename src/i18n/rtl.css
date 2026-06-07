@@ -1,0 +1,60 @@
+/*
+ * Right-to-left (RTL) overrides, applied when <html dir="rtl"> is set
+ * (currently for Arabic). The base layout relies on flexbox, which mirrors
+ * automatically under dir="rtl"; these rules fix the spots that use
+ * physical/hardcoded directions instead of logical ones.
+ */
+
+[dir='rtl'] {
+  text-align: right;
+}
+
+/* Navbar logo uses a physical left margin */
+[dir='rtl'] .navbar-logo {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+[dir='rtl'] .navbar-logo i {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+[dir='rtl'] .nav-menu {
+  justify-content: start;
+  margin-right: 0;
+  margin-left: 2rem;
+}
+
+/* Hero copy is forced left-aligned on desktop via Tailwind text-left */
+[dir='rtl'] .hero-container .lg\:text-left {
+  text-align: right;
+}
+
+/* Blog/case-study posts use Tailwind text-left / text-right utilities */
+[dir='rtl'] .post-container .text-left {
+  text-align: right;
+}
+
+[dir='rtl'] .post-container .text-right {
+  text-align: left;
+}
+
+/* Section headings within posts keep their underline alignment readable */
+[dir='rtl'] .contents-container h1,
+[dir='rtl'] .contents-container h2,
+[dir='rtl'] .contents-container h3 {
+  text-align: right;
+}
+
+/* Services page: cards and lists read naturally right-to-left */
+[dir='rtl'] .services-why-card li {
+  text-align: right;
+}
+
+/* Keep code-like inline tokens (URLs, tech names) rendering left-to-right
+   even inside RTL paragraphs, so they don't get visually reordered. */
+[dir='rtl'] .contents-container a[href^='http'],
+[dir='rtl'] .contents-container a[href^='/'] {
+  unicode-bidi: isolate;
+}

@@ -1,7 +1,8 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './ProjectCard.css';
 
-const ProjectCard = ({ 
+const ProjectCard = ({
     link, 
     imageSrc, 
     title, 
@@ -10,6 +11,7 @@ const ProjectCard = ({
     new: newProject = false,
     padding: padding = false,
   }) => {
+    const { t } = useTranslation();
     return (
         <a 
           className='proj-custom-link' 
@@ -24,7 +26,7 @@ const ProjectCard = ({
               alt={`${title} Image`} 
             />
             <div className='proj-text-container'>
-              <h1>{title} {newProject && <span className='text-yellow-400 text-xl'>New!</span>} </h1>
+              <h1>{title} {newProject && <span className='text-yellow-400 text-xl'>{t('projects.new')}</span>} </h1>
               <p>{description}</p>
 {
  technologies &&

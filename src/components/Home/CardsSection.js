@@ -4,9 +4,11 @@ import LinkCard from './LinkCard';
 import { Link } from 'react-router-dom';
 import { Button } from '../Button';
 import { ArrowRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { PROJECTS } from '../../data/projects';
 
 export default function CardsSection() {
+  const { t } = useTranslation();
   const maxDescriptionLength = 55;
   const latestProjects = PROJECTS.slice(0, 4);
 
@@ -22,14 +24,14 @@ export default function CardsSection() {
 
   return (
     <div className='container-background px-4 min-w-full min-h-[60vh] flex flex-col items-center justify-center hero-section'>
-      <h2>Discover my latest projects</h2>
+      <h2>{t('home.cards.heading')}</h2>
       <div className='cards-container'>
         {latestProjects.map((project) => (
           <LinkCard
             key={project.id}
             imageURL={project.imageSrc}
-            title={project.title}
-            description={truncateText(project.description)}
+            title={t(`projects.items.${project.id}.title`)}
+            description={truncateText(t(`projects.items.${project.id}.description`))}
             hrefLink={project.link}
             padding={project.padding}
           />
@@ -42,7 +44,7 @@ export default function CardsSection() {
           buttonShape="btn--round"
           className="hover:border-black border-2 transition-colors duration-300"
         >
-          More Projects <ArrowRight />
+          {t('home.cards.more')} <ArrowRight />
         </Button>
       </Link>
     </div>

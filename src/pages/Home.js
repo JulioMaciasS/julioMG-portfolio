@@ -1,16 +1,18 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { useTranslation } from 'react-i18next';
 import HeroSection from '../components/Home/HeroSection';
 import CardsSection from '../components/Home/CardsSection';
 import AboutMe from '../components/Home/AboutMe';
 
 
 function Home() {
+    const { t } = useTranslation();
     return (
         <>
             <Helmet>
-                <title>JulioDev | Software Engineer Portfolio</title>
-                <meta name="description" content="Julio Macias Gonzalez's portfolio showcasing software engineering projects including web development, cloud architecture, and mobile applications." />
+                <title>{t('home.meta.title')}</title>
+                <meta name="description" content={t('home.meta.description')} />
                 <link rel="canonical" href="https://portfolio.juliodev.co.uk/" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://portfolio.juliodev.co.uk/" />

@@ -4,8 +4,10 @@ import { Button } from '../Button';
 import './HeroSection.css';
 import { Link } from 'react-router-dom';
 import { ChevronDown } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 export default function HeroSection() {
+  const { t } = useTranslation();
   const scrollDown = () => {
     // Find the AboutMe section element
     const aboutMeSection = document.querySelector('.bg-[whitesmoke]');
@@ -29,20 +31,20 @@ export default function HeroSection() {
           {/* Text content */}
           <div className="lg:w-1/2 text-center lg:text-left text-white">
             <h1 className="text-5xl lg:text-6xl font-bold mb-4">
-              Welcome to my portfolio!
+              {t('home.hero.title')}
             </h1>
             <h2 className="text-xl lg:text-2xl text-gray-200 mb-8">
-              I'm an aspiring software engineer that chases problems and pursues solutions.
+              {t('home.hero.subtitle')}
             </h2>
             <div className="flex flex-col lg:flex-row justify-center lg:justify-start gap-6">
               <Link to="/projects">
                 <Button buttonStyle="btn--primary" buttonSize="btn--large" buttonShape="btn--round">
-                  Projects
+                  {t('home.hero.projects')}
                 </Button>
               </Link>
               <Link to="/contact-me">
                 <Button buttonStyle="btn--outline" buttonSize="btn--large" buttonShape="btn--round">
-                Contact me
+                {t('home.hero.contact')}
                 </Button>
               </Link>
             </div>
@@ -60,7 +62,7 @@ export default function HeroSection() {
         <button
           onClick={scrollDown}
           className="absolute bottom-8 left-1/2 transform -translate-x-1/2 focus:outline-none z-10"
-          aria-label="Scroll to About section"
+          aria-label={t('home.hero.scrollAria')}
         >
           <ChevronDown className="w-8 h-8 text-white animate-bounce" />
         </button>

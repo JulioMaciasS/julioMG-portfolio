@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { useTranslation } from 'react-i18next';
 import '../App.css';
 import ContactMe from '../components/ContactMe/ContactMe';
 
@@ -11,12 +12,13 @@ Some of the sections to include are:
 - Brief work experience explanation
 - Suggestion to download CV if more info is desired
 */
-function ContactMePage () { 
+function ContactMePage () {
+    const { t } = useTranslation();
     return(
         <>
 <Helmet>
-    <title>Contact Me | JulioDev Portfolio</title>
-    <meta name="description" content="Get in touch with Julio Macias Gonzalez. Contact form for software engineering enquiries and collaboration opportunities." />
+    <title>{t('contact.meta.title')}</title>
+    <meta name="description" content={t('contact.meta.description')} />
     <link rel="canonical" href="https://portfolio.juliodev.co.uk/contact-me" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://portfolio.juliodev.co.uk/contact-me" />

@@ -236,6 +236,41 @@ home) reads better and is more neutral for international clients.
 
 ---
 
+## 5. Multilanguage (i18n) — DONE + follow-ups
+
+**Status: implemented in this branch.** The site is now multilingual with
+**English, Spanish, French and Arabic (RTL)**.
+
+What was built:
+- `react-i18next` + `i18next-browser-languagedetector`, configured in
+  `src/i18n/index.js`. Language is auto-detected (browser/localStorage) and
+  persisted in `localStorage` under `i18nextLng`.
+- One JSON file per language in `src/i18n/locales/` (`en/es/fr/ar.json`), all
+  sharing an identical 191-key structure. English is the source of truth and
+  fallback.
+- A **language switcher** in the navbar (`LanguageSwitcher.js`).
+- **RTL support** for Arabic: `<html dir/lang>` is updated on language change,
+  with targeted overrides in `src/i18n/rtl.css`.
+- All UI, marketing pages, SEO meta (Helmet titles/descriptions) and the three
+  long case studies are fully translated.
+
+Follow-ups / nice-to-haves:
+- **SEO hreflang:** because this is a client-side SPA, search engines see one
+  URL per route regardless of language. For best multilingual SEO after the
+  domain move, consider language-prefixed routes (`/es/...`, `/fr/...`,
+  `/ar/...`) with `hreflang` alternate tags, or pre-rendering per language.
+- **Adding a language** (e.g. German/Portuguese) is now ~10 min: add the code
+  to `SUPPORTED_LANGUAGES` in `src/i18n/index.js`, drop in a new `de.json`
+  (copy `en.json` and translate), and import it.
+- **Deeper RTL polish:** the current `rtl.css` covers the high-visibility cases
+  (text alignment, navbar, posts). A full pass could mirror remaining
+  physical-direction CSS (paddings/margins) using CSS logical properties.
+- **Translate image `alt` text** in the case studies (kept in English for now).
+- **Keep translations in sync:** when adding new English keys, update all four
+  locale files. A small CI check comparing key parity would prevent drift.
+
+---
+
 ## Suggested order of execution
 
 1. **Logo regeneration** (§2) — quick, unblocks the brand refresh.
