@@ -1,0 +1,81 @@
+{
+  "consent": {
+    "title": "Nous respectons votre vie privée",
+    "description": "J'utilise des cookies pour analyser le trafic et améliorer votre expérience. Vous pouvez accepter tous les cookies, refuser ceux qui ne sont pas essentiels ou gérer vos préférences.",
+    "learnMore": "Politique relative aux cookies",
+    "acceptAll": "Tout accepter",
+    "rejectAll": "Refuser les non essentiels",
+    "managePreferences": "Gérer les préférences",
+    "savePreferences": "Enregistrer les préférences",
+    "preferencesTitle": "Préférences en matière de cookies",
+    "preferencesIntro": "Choisissez les catégories de cookies que vous autorisez. Les cookies strictement nécessaires sont toujours actifs, car le site ne peut pas fonctionner correctement sans eux.",
+    "necessaryTitle": "Strictement nécessaires",
+    "necessaryDescription": "Indispensables au fonctionnement du site et à la mémorisation de vos choix en matière de cookies. Ils sont toujours activés.",
+    "analyticsTitle": "Mesure d'audience",
+    "analyticsDescription": "Me permettent de comprendre comment les visiteurs utilisent le site grâce à Google Analytics et Microsoft Clarity (y compris des cartes de chaleur anonymes et des statistiques de session). Entièrement facultatifs.",
+    "alwaysOn": "Toujours actifs",
+    "close": "Fermer"
+  },
+  "links": {
+    "privacyPolicy": "Politique de confidentialité",
+    "cookiePolicy": "Politique relative aux cookies",
+    "cookieSettings": "Paramètres des cookies",
+    "legal": "Mentions légales"
+  },
+  "privacy": {
+    "meta": {
+      "title": "Politique de confidentialité | JulioDev",
+      "description": "Comment JulioDev collecte, utilise et protège vos données personnelles."
+    },
+    "title": "Politique de confidentialité",
+    "lastUpdated": "Dernière mise à jour : {{date}}",
+    "templateNotice": "Avis relatif au modèle : cette politique constitue un point de départ. Veuillez la relire en y intégrant les informations exactes de votre entreprise ainsi que les règles de protection des données de votre pays de résidence avant de vous y fier.",
+    "intro": "La présente politique de confidentialité explique comment {{controllerName}} (« je », « moi », « mon ») collecte, utilise et protège vos données personnelles lorsque vous visitez ce site web.",
+    "whoTitle": "Qui je suis",
+    "whoBody": "Ce site web est exploité par {{controllerName}}. Pour toute question relative à la confidentialité, vous pouvez me contacter à l'adresse {{contactEmail}}.",
+    "dataTitle": "Données que je collecte",
+    "dataBody": "Je réduis la collecte de données au strict minimum. Si vous utilisez le formulaire de contact, je reçois les informations que vous choisissez de fournir (telles que votre nom, votre adresse e-mail et votre message). Si vous consentez à la mesure d'audience, je reçois des données d'utilisation anonymisées telles que les pages consultées, votre localisation approximative ainsi que le type d'appareil et de navigateur.",
+    "useTitle": "Comment j'utilise vos données",
+    "useBody": "J'utilise vos coordonnées uniquement pour répondre à votre demande, et les données de mesure d'audience uniquement pour comprendre comment le site est utilisé et l'améliorer. Je ne vends pas vos données.",
+    "legalBasisTitle": "Base légale",
+    "legalBasisBody": "Je traite les données du formulaire de contact sur la base de votre demande (mesures prises à votre demande avant la conclusion d'un contrat) et les données de mesure d'audience sur la base de votre consentement, que vous pouvez retirer à tout moment.",
+    "cookiesTitle": "Cookies et mesure d'audience",
+    "cookiesBody": "Les cookies de mesure d'audience et les cookies associés ne sont chargés qu'après votre consentement. Pour le détail des cookies et outils spécifiques utilisés, consultez la politique relative aux cookies.",
+    "thirdPartiesTitle": "Services tiers",
+    "thirdPartiesBody": "Avec votre consentement, j'utilise Google Analytics et Microsoft Clarity pour la mesure d'audience, ainsi qu'un prestataire de formulaire tiers (Basin) pour traiter les envois du formulaire de contact. Ces prestataires traitent les données pour mon compte selon leurs propres conditions.",
+    "rightsTitle": "Vos droits",
+    "rightsBody": "Selon votre lieu de résidence, vous pouvez disposer du droit d'accéder à vos données personnelles, de les rectifier, de les supprimer ou d'en limiter le traitement, ainsi que de retirer votre consentement à tout moment. Pour exercer l'un de ces droits, contactez-moi à l'adresse {{contactEmail}}.",
+    "retentionTitle": "Conservation des données",
+    "retentionBody": "Je conserve les messages du formulaire de contact uniquement le temps nécessaire au traitement de votre demande, et les données de mesure d'audience selon les paramètres de conservation standard des prestataires.",
+    "transfersTitle": "Transferts internationaux",
+    "transfersBody": "Certains prestataires peuvent traiter des données en dehors de votre pays. Lorsque cela se produit, ils s'appuient sur des garanties appropriées telles que les clauses contractuelles types.",
+    "changesTitle": "Modifications de cette politique",
+    "changesBody": "Je peux mettre à jour cette politique de temps à autre. La date de « dernière mise à jour » indiquée ci-dessus reflète la version la plus récente.",
+    "contactTitle": "Contact",
+    "contactBody": "Pour toute question concernant cette politique ou vos données, écrivez-moi à l'adresse {{contactEmail}}."
+  },
+  "cookie": {
+    "meta": {
+      "title": "Politique relative aux cookies | JulioDev",
+      "description": "Quels cookies ce site web utilise et comment les gérer."
+    },
+    "title": "Politique relative aux cookies",
+    "lastUpdated": "Dernière mise à jour : {{date}}",
+    "templateNotice": "Avis relatif au modèle : relisez cette liste de cookies afin qu'elle corresponde aux outils que vous activez réellement avant de vous y fier.",
+    "intro": "La présente politique relative aux cookies explique ce que sont les cookies, lesquels ce site web utilise et comment vous pouvez les contrôler.",
+    "whatTitle": "Que sont les cookies ?",
+    "whatBody": "Les cookies sont de petits fichiers texte enregistrés sur votre appareil lorsque vous visitez un site web. Ils sont largement utilisés pour faire fonctionner les sites, ou les faire fonctionner plus efficacement, et pour fournir des informations au propriétaire du site.",
+    "typesTitle": "Cookies utilisés par ce site",
+    "necessaryTitle": "Strictement nécessaires",
+    "necessaryBody": "Ils mémorisent vos préférences en matière de cookies afin que le site fonctionne correctement. Ils sont toujours actifs et ne nécessitent pas de consentement.",
+    "analyticsTitle": "Mesure d'audience (facultatif)",
+    "analyticsBody": "Chargés uniquement avec votre consentement. Google Analytics (GA4) mesure le trafic et l'utilisation ; Microsoft Clarity fournit des cartes de chaleur anonymes et des statistiques de session pour aider à améliorer le site.",
+    "manageTitle": "Comment gérer les cookies",
+    "manageBody": "Vous pouvez modifier ou retirer votre consentement à tout moment à l'aide du lien « Paramètres des cookies » situé dans le pied de page. Vous pouvez également bloquer ou supprimer les cookies via les paramètres de votre navigateur, mais certaines parties du site risquent alors de ne pas fonctionner comme prévu.",
+    "changesTitle": "Modifications",
+    "changesBody": "Je peux mettre à jour cette politique relative aux cookies à mesure que les outils que j'utilise évoluent. La date de « dernière mise à jour » indiquée ci-dessus reflète la version la plus récente.",
+    "tableTool": "Outil",
+    "tablePurpose": "Finalité",
+    "tableCategory": "Catégorie"
+  }
+}

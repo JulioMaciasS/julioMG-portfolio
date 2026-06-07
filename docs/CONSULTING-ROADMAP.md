@@ -132,6 +132,35 @@ vector, centred, generous padding, crisp at 32x32px. Minimal, modern, tech brand
 
 ## 3. Analytics, heatmaps & cookies (all free)
 
+**Status: implemented in this branch (needs your IDs to go live).**
+
+What was built:
+- A custom, translatable **cookie consent banner** (`src/components/Consent/`)
+  with granular categories (strictly necessary always-on + optional analytics),
+  reject-as-easy-as-accept, stored in `localStorage`, and re-openable from the
+  footer "Cookie settings" link.
+- **Analytics loaders** (`src/utils/analytics.js`) for **Google Analytics 4**
+  and **Microsoft Clarity** (heatmaps + session stats). Nothing loads until the
+  visitor consents, and nothing loads unless the IDs are configured — so the
+  site is safe to deploy without them.
+- **Privacy Policy** (`/privacy-policy`) and **Cookie Policy** (`/cookie-policy`)
+  pages, fully translated (EN/ES/FR/AR), linked in the footer. They carry a
+  visible "template notice" — review the wording and fill in your jurisdiction
+  before relying on them.
+
+**To activate analytics**, add these env vars (e.g. in a `.env` file or your
+host's env settings) and rebuild:
+```
+REACT_APP_GA4_ID=G-XXXXXXXXXX        # from Google Analytics 4
+REACT_APP_CLARITY_ID=xxxxxxxxxx      # from Microsoft Clarity
+# Optional: force the consent banner to show even without IDs (previews):
+REACT_APP_FORCE_CONSENT=true
+```
+Update the data-controller name/email/jurisdiction in `src/pages/PrivacyPolicy.js`
+(`CONTROLLER`) and the policy text once you've confirmed your details.
+
+The original research/options for this section are kept below for reference.
+
 **Goal:** understand visitor behaviour + be GDPR/PECR-compliant, at zero cost.
 
 ### 3.1 Recommended free stack
@@ -255,10 +284,12 @@ What was built:
   long case studies are fully translated.
 
 Follow-ups / nice-to-haves:
-- **SEO hreflang:** because this is a client-side SPA, search engines see one
-  URL per route regardless of language. For best multilingual SEO after the
-  domain move, consider language-prefixed routes (`/es/...`, `/fr/...`,
-  `/ar/...`) with `hreflang` alternate tags, or pre-rendering per language.
+- **SEO hreflang: DONE.** Language-prefixed routes (`/es`, `/fr`, `/ar`; English
+  at the unprefixed root) are live, each page emits per-language canonical +
+  `hreflang` alternates (+ x-default) via `SeoHead`, and `sitemap.xml` lists all
+  language URLs. Remaining for best results: **pre-rendering/SSR per language**
+  (a CRA SPA still serves a JS shell first). After the domain move, submit the
+  new sitemap and verify hreflang in Google Search Console.
 - **Adding a language** (e.g. German/Portuguese) is now ~10 min: add the code
   to `SUPPORTED_LANGUAGES` in `src/i18n/index.js`, drop in a new `de.json`
   (copy `en.json` and translate), and import it.

@@ -308,4 +308,92 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://portfolio.juliodev.co.uk/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://portfolio.juliodev.co.uk/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://portfolio.juliodev.co.uk/es/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://portfolio.juliodev.co.uk/fr/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://portfolio.juliodev.co.uk/ar/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://portfolio.juliodev.co.uk/privacy-policy"/>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.juliodev.co.uk/es/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://portfolio.juliodev.co.uk/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://portfolio.juliodev.co.uk/es/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://portfolio.juliodev.co.uk/fr/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://portfolio.juliodev.co.uk/ar/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://portfolio.juliodev.co.uk/privacy-policy"/>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.juliodev.co.uk/fr/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://portfolio.juliodev.co.uk/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://portfolio.juliodev.co.uk/es/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://portfolio.juliodev.co.uk/fr/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://portfolio.juliodev.co.uk/ar/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://portfolio.juliodev.co.uk/privacy-policy"/>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.juliodev.co.uk/ar/privacy-policy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://portfolio.juliodev.co.uk/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://portfolio.juliodev.co.uk/es/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://portfolio.juliodev.co.uk/fr/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://portfolio.juliodev.co.uk/ar/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://portfolio.juliodev.co.uk/privacy-policy"/>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.juliodev.co.uk/cookie-policy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://portfolio.juliodev.co.uk/cookie-policy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://portfolio.juliodev.co.uk/es/cookie-policy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://portfolio.juliodev.co.uk/fr/cookie-policy"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://portfolio.juliodev.co.uk/ar/cookie-policy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://portfolio.juliodev.co.uk/cookie-policy"/>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.juliodev.co.uk/es/cookie-policy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://portfolio.juliodev.co.uk/cookie-policy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://portfolio.juliodev.co.uk/es/cookie-policy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://portfolio.juliodev.co.uk/fr/cookie-policy"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://portfolio.juliodev.co.uk/ar/cookie-policy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://portfolio.juliodev.co.uk/cookie-policy"/>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.juliodev.co.uk/fr/cookie-policy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://portfolio.juliodev.co.uk/cookie-policy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://portfolio.juliodev.co.uk/es/cookie-policy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://portfolio.juliodev.co.uk/fr/cookie-policy"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://portfolio.juliodev.co.uk/ar/cookie-policy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://portfolio.juliodev.co.uk/cookie-policy"/>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://portfolio.juliodev.co.uk/ar/cookie-policy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://portfolio.juliodev.co.uk/cookie-policy"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://portfolio.juliodev.co.uk/es/cookie-policy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://portfolio.juliodev.co.uk/fr/cookie-policy"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://portfolio.juliodev.co.uk/ar/cookie-policy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://portfolio.juliodev.co.uk/cookie-policy"/>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
 </urlset>

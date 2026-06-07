@@ -1,0 +1,81 @@
+{
+  "consent": {
+    "title": "We value your privacy",
+    "description": "I use cookies to analyse traffic and improve your experience. You can accept all cookies, reject non-essential ones, or manage your preferences.",
+    "learnMore": "Cookie Policy",
+    "acceptAll": "Accept all",
+    "rejectAll": "Reject non-essential",
+    "managePreferences": "Manage preferences",
+    "savePreferences": "Save preferences",
+    "preferencesTitle": "Cookie preferences",
+    "preferencesIntro": "Choose which categories of cookies you allow. Strictly necessary cookies are always active because the site cannot function properly without them.",
+    "necessaryTitle": "Strictly necessary",
+    "necessaryDescription": "Required for the website to work and to remember your cookie choices. These are always on.",
+    "analyticsTitle": "Analytics",
+    "analyticsDescription": "Let me understand how visitors use the site using Google Analytics and Microsoft Clarity (including anonymous heatmaps and session statistics). Completely optional.",
+    "alwaysOn": "Always on",
+    "close": "Close"
+  },
+  "links": {
+    "privacyPolicy": "Privacy Policy",
+    "cookiePolicy": "Cookie Policy",
+    "cookieSettings": "Cookie settings",
+    "legal": "Legal"
+  },
+  "privacy": {
+    "meta": {
+      "title": "Privacy Policy | JulioDev",
+      "description": "How JulioDev collects, uses and protects your personal data."
+    },
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated: {{date}}",
+    "templateNotice": "Template notice: this policy is a starting point. Please review it with the correct business details and the data-protection rules of your country of residence before relying on it.",
+    "intro": "This Privacy Policy explains how {{controllerName}} (\"I\", \"me\", \"my\") collects, uses and protects your personal data when you visit this website.",
+    "whoTitle": "Who I am",
+    "whoBody": "This website is operated by {{controllerName}}. For any privacy question, you can reach me at {{contactEmail}}.",
+    "dataTitle": "Data I collect",
+    "dataBody": "I keep data collection to a minimum. If you use the contact form, I receive the information you choose to provide (such as your name, email address and message). If you consent to analytics, I receive anonymised usage data such as pages visited, approximate location, device and browser type.",
+    "useTitle": "How I use your data",
+    "useBody": "I use contact details only to reply to your enquiry, and analytics data only to understand how the site is used and to improve it. I do not sell your data.",
+    "legalBasisTitle": "Legal basis",
+    "legalBasisBody": "I process contact-form data on the basis of your request (taking steps at your request before entering into a contract) and analytics data on the basis of your consent, which you can withdraw at any time.",
+    "cookiesTitle": "Cookies and analytics",
+    "cookiesBody": "Analytics and related cookies are loaded only after you give consent. For details of the specific cookies and tools used, see the Cookie Policy.",
+    "thirdPartiesTitle": "Third-party services",
+    "thirdPartiesBody": "With your consent I use Google Analytics and Microsoft Clarity for usage analytics, and a third-party form provider (Basin) to handle contact-form submissions. These providers process data on my behalf under their own terms.",
+    "rightsTitle": "Your rights",
+    "rightsBody": "Depending on your location, you may have the right to access, correct, delete or restrict the processing of your personal data, and to withdraw consent at any time. To exercise any of these rights, contact me at {{contactEmail}}.",
+    "retentionTitle": "Data retention",
+    "retentionBody": "I keep contact-form messages only as long as needed to handle your enquiry, and analytics data according to the providers' standard retention settings.",
+    "transfersTitle": "International transfers",
+    "transfersBody": "Some providers may process data outside your country. Where that happens, they rely on appropriate safeguards such as standard contractual clauses.",
+    "changesTitle": "Changes to this policy",
+    "changesBody": "I may update this policy from time to time. The \"last updated\" date above reflects the latest version.",
+    "contactTitle": "Contact",
+    "contactBody": "For any question about this policy or your data, email me at {{contactEmail}}."
+  },
+  "cookie": {
+    "meta": {
+      "title": "Cookie Policy | JulioDev",
+      "description": "Which cookies this website uses and how to manage them."
+    },
+    "title": "Cookie Policy",
+    "lastUpdated": "Last updated: {{date}}",
+    "templateNotice": "Template notice: review this cookie list to match the tools you actually enable before relying on it.",
+    "intro": "This Cookie Policy explains what cookies are, which ones this website uses, and how you can control them.",
+    "whatTitle": "What are cookies?",
+    "whatBody": "Cookies are small text files stored on your device when you visit a website. They are widely used to make sites work, or work more efficiently, and to provide information to the site owner.",
+    "typesTitle": "Cookies this site uses",
+    "necessaryTitle": "Strictly necessary",
+    "necessaryBody": "These remember your cookie preferences so the site works correctly. They are always active and do not require consent.",
+    "analyticsTitle": "Analytics (optional)",
+    "analyticsBody": "Loaded only with your consent. Google Analytics (GA4) measures traffic and usage; Microsoft Clarity provides anonymous heatmaps and session statistics to help improve the site.",
+    "manageTitle": "How to manage cookies",
+    "manageBody": "You can change or withdraw your consent at any time using the \"Cookie settings\" link in the footer. You can also block or delete cookies through your browser settings, although some parts of the site may then not work as intended.",
+    "changesTitle": "Changes",
+    "changesBody": "I may update this Cookie Policy as the tools I use change. The \"last updated\" date above reflects the latest version.",
+    "tableTool": "Tool",
+    "tablePurpose": "Purpose",
+    "tableCategory": "Category"
+  }
+}

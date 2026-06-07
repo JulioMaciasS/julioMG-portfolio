@@ -2,9 +2,12 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import './Footer.css';
 import SkillsCard from '../SkillsCard';
+import LocalizedLink from '../LocalizedLink';
+import { openConsentSettings } from '../../utils/consent';
 
 export default function Footer() {
   const { t } = useTranslation();
+  const { t: tLegal } = useTranslation('legal');
   var GithubIconLink = '/images/logos/github.png';
 
   return (
@@ -45,6 +48,18 @@ export default function Footer() {
         </div>
       </div>
       
+      <div className='footer-legal'>
+        <LocalizedLink to='/privacy-policy' className='footer-legal-link'>
+          {tLegal('links.privacyPolicy')}
+        </LocalizedLink>
+        <LocalizedLink to='/cookie-policy' className='footer-legal-link'>
+          {tLegal('links.cookiePolicy')}
+        </LocalizedLink>
+        <button type='button' className='footer-legal-link footer-legal-button' onClick={openConsentSettings}>
+          {tLegal('links.cookieSettings')}
+        </button>
+      </div>
+
       <p className='website-rights'>{t('footer.rights', { year: new Date().getFullYear() })}</p>
     </div>
   );

@@ -1,0 +1,81 @@
+{
+  "consent": {
+    "title": "Tu privacidad nos importa",
+    "description": "Utilizo cookies para analizar el tráfico y mejorar tu experiencia. Puedes aceptar todas las cookies, rechazar las no esenciales o gestionar tus preferencias.",
+    "learnMore": "Política de cookies",
+    "acceptAll": "Aceptar todas",
+    "rejectAll": "Rechazar las no esenciales",
+    "managePreferences": "Gestionar preferencias",
+    "savePreferences": "Guardar preferencias",
+    "preferencesTitle": "Preferencias de cookies",
+    "preferencesIntro": "Elige qué categorías de cookies permites. Las cookies estrictamente necesarias están siempre activas porque el sitio no puede funcionar correctamente sin ellas.",
+    "necessaryTitle": "Estrictamente necesarias",
+    "necessaryDescription": "Necesarias para que el sitio web funcione y para recordar tus preferencias de cookies. Están siempre activadas.",
+    "analyticsTitle": "Analítica",
+    "analyticsDescription": "Me permiten entender cómo usan el sitio las personas que lo visitan mediante Google Analytics y Microsoft Clarity (incluidos mapas de calor anónimos y estadísticas de sesión). Totalmente opcional.",
+    "alwaysOn": "Siempre activas",
+    "close": "Cerrar"
+  },
+  "links": {
+    "privacyPolicy": "Política de privacidad",
+    "cookiePolicy": "Política de cookies",
+    "cookieSettings": "Configuración de cookies",
+    "legal": "Aviso legal"
+  },
+  "privacy": {
+    "meta": {
+      "title": "Política de privacidad | JulioDev",
+      "description": "Cómo JulioDev recopila, utiliza y protege tus datos personales."
+    },
+    "title": "Política de privacidad",
+    "lastUpdated": "Última actualización: {{date}}",
+    "templateNotice": "Aviso sobre la plantilla: esta política es un punto de partida. Revísala con los datos correctos de tu negocio y con la normativa de protección de datos de tu país de residencia antes de utilizarla.",
+    "intro": "Esta Política de privacidad explica cómo {{controllerName}} (\"yo\", \"mi\", \"mis\") recopila, utiliza y protege tus datos personales cuando visitas este sitio web.",
+    "whoTitle": "Quién soy",
+    "whoBody": "Este sitio web está gestionado por {{controllerName}}. Para cualquier consulta sobre privacidad, puedes escribirme a {{contactEmail}}.",
+    "dataTitle": "Datos que recopilo",
+    "dataBody": "Mantengo la recopilación de datos al mínimo. Si utilizas el formulario de contacto, recibo la información que decides proporcionar (como tu nombre, dirección de correo electrónico y mensaje). Si aceptas la analítica, recibo datos de uso anonimizados, como las páginas visitadas, la ubicación aproximada y el tipo de dispositivo y navegador.",
+    "useTitle": "Cómo utilizo tus datos",
+    "useBody": "Utilizo los datos de contacto únicamente para responder a tu consulta, y los datos de analítica solo para entender cómo se usa el sitio y mejorarlo. No vendo tus datos.",
+    "legalBasisTitle": "Base jurídica",
+    "legalBasisBody": "Trato los datos del formulario de contacto sobre la base de tu solicitud (adoptando medidas a petición tuya antes de la celebración de un contrato) y los datos de analítica sobre la base de tu consentimiento, que puedes retirar en cualquier momento.",
+    "cookiesTitle": "Cookies y analítica",
+    "cookiesBody": "Las cookies de analítica y relacionadas se cargan únicamente después de que des tu consentimiento. Para conocer los detalles de las cookies y herramientas concretas que se utilizan, consulta la Política de cookies.",
+    "thirdPartiesTitle": "Servicios de terceros",
+    "thirdPartiesBody": "Con tu consentimiento, utilizo Google Analytics y Microsoft Clarity para la analítica de uso, y un proveedor de formularios externo (Basin) para gestionar los envíos del formulario de contacto. Estos proveedores tratan los datos en mi nombre conforme a sus propias condiciones.",
+    "rightsTitle": "Tus derechos",
+    "rightsBody": "Según tu ubicación, es posible que tengas derecho a acceder, corregir, eliminar o restringir el tratamiento de tus datos personales, y a retirar tu consentimiento en cualquier momento. Para ejercer cualquiera de estos derechos, escríbeme a {{contactEmail}}.",
+    "retentionTitle": "Conservación de los datos",
+    "retentionBody": "Conservo los mensajes del formulario de contacto solo durante el tiempo necesario para gestionar tu consulta, y los datos de analítica conforme a la configuración de conservación estándar de los proveedores.",
+    "transfersTitle": "Transferencias internacionales",
+    "transfersBody": "Algunos proveedores pueden tratar datos fuera de tu país. Cuando esto ocurre, se basan en garantías adecuadas, como las cláusulas contractuales tipo.",
+    "changesTitle": "Cambios en esta política",
+    "changesBody": "Es posible que actualice esta política de vez en cuando. La fecha de \"última actualización\" que figura arriba refleja la versión más reciente.",
+    "contactTitle": "Contacto",
+    "contactBody": "Para cualquier consulta sobre esta política o sobre tus datos, escríbeme a {{contactEmail}}."
+  },
+  "cookie": {
+    "meta": {
+      "title": "Política de cookies | JulioDev",
+      "description": "Qué cookies utiliza este sitio web y cómo gestionarlas."
+    },
+    "title": "Política de cookies",
+    "lastUpdated": "Última actualización: {{date}}",
+    "templateNotice": "Aviso sobre la plantilla: revisa esta lista de cookies para que coincida con las herramientas que realmente actives antes de utilizarla.",
+    "intro": "Esta Política de cookies explica qué son las cookies, cuáles utiliza este sitio web y cómo puedes controlarlas.",
+    "whatTitle": "¿Qué son las cookies?",
+    "whatBody": "Las cookies son pequeños archivos de texto que se almacenan en tu dispositivo cuando visitas un sitio web. Se utilizan ampliamente para que los sitios funcionen, o funcionen de forma más eficiente, y para proporcionar información al propietario del sitio.",
+    "typesTitle": "Cookies que utiliza este sitio",
+    "necessaryTitle": "Estrictamente necesarias",
+    "necessaryBody": "Estas recuerdan tus preferencias de cookies para que el sitio funcione correctamente. Están siempre activas y no requieren consentimiento.",
+    "analyticsTitle": "Analítica (opcional)",
+    "analyticsBody": "Se cargan únicamente con tu consentimiento. Google Analytics (GA4) mide el tráfico y el uso; Microsoft Clarity ofrece mapas de calor anónimos y estadísticas de sesión para ayudar a mejorar el sitio.",
+    "manageTitle": "Cómo gestionar las cookies",
+    "manageBody": "Puedes cambiar o retirar tu consentimiento en cualquier momento a través del enlace \"Configuración de cookies\" del pie de página. También puedes bloquear o eliminar las cookies desde la configuración de tu navegador, aunque en ese caso algunas partes del sitio podrían no funcionar como se espera.",
+    "changesTitle": "Cambios",
+    "changesBody": "Es posible que actualice esta Política de cookies a medida que cambien las herramientas que utilizo. La fecha de \"última actualización\" que figura arriba refleja la versión más reciente.",
+    "tableTool": "Herramienta",
+    "tablePurpose": "Finalidad",
+    "tableCategory": "Categoría"
+  }
+}

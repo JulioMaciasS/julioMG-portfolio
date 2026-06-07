@@ -7,6 +7,11 @@ import es from './locales/es.json';
 import fr from './locales/fr.json';
 import ar from './locales/ar.json';
 
+import legalEn from './locales/legal/en.json';
+import legalEs from './locales/legal/es.json';
+import legalFr from './locales/legal/fr.json';
+import legalAr from './locales/legal/ar.json';
+
 export const SUPPORTED_LANGUAGES = [
   { code: 'en', label: 'English', dir: 'ltr' },
   { code: 'es', label: 'Español', dir: 'ltr' },
@@ -26,11 +31,13 @@ i18n
   .use(initReactI18next)
   .init({
     resources: {
-      en: { translation: en },
-      es: { translation: es },
-      fr: { translation: fr },
-      ar: { translation: ar }
+      en: { translation: en, legal: legalEn },
+      es: { translation: es, legal: legalEs },
+      fr: { translation: fr, legal: legalFr },
+      ar: { translation: ar, legal: legalAr }
     },
+    ns: ['translation', 'legal'],
+    defaultNS: 'translation',
     fallbackLng: 'en',
     supportedLngs: SUPPORTED_LANGUAGES.map((l) => l.code),
     nonExplicitSupportedLngs: true,

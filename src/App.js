@@ -12,8 +12,11 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import EugeniaBravo from './components/Posts/EugeniaBravo.js';
 import EugeniaBravoRebuild from './components/Posts/EugeniaBravoRebuild.js';
 import ContactMePage from './pages/ContactMePage.js';
+import PrivacyPolicy from './pages/PrivacyPolicy.js';
+import CookiePolicy from './pages/CookiePolicy.js';
 import NotFound from './pages/NotFound.js';
 import LangLayout from './components/Layout/LangLayout.js';
+import CookieConsent from './components/Consent/CookieConsent.js';
 
 function App() {
   return (
@@ -30,6 +33,8 @@ function App() {
             <Route path='/projects/cineshare' element={<CineSharePost/>}/>
             <Route path='/projects/eugeniabravo' element={<EugeniaBravo/>}/>
             <Route path='/projects/eugeniabravo-rebuild' element={<EugeniaBravoRebuild/>}/>
+            <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
+            <Route path='/cookie-policy' element={<CookiePolicy/>}/>
 
             {/* Language-prefixed (es / fr / ar) */}
             <Route path=':lang' element={<LangLayout/>}>
@@ -40,12 +45,15 @@ function App() {
               <Route path='projects/cineshare' element={<CineSharePost/>}/>
               <Route path='projects/eugeniabravo' element={<EugeniaBravo/>}/>
               <Route path='projects/eugeniabravo-rebuild' element={<EugeniaBravoRebuild/>}/>
+              <Route path='privacy-policy' element={<PrivacyPolicy/>}/>
+              <Route path='cookie-policy' element={<CookiePolicy/>}/>
               <Route path='*' element={<NotFound/>}/>
             </Route>
 
             <Route path='*' element={<NotFound/>}/>
           </Routes>
           <Footer/>
+          <CookieConsent/>
       </Router>
     </>
   );
