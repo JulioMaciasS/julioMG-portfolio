@@ -17,6 +17,7 @@ import CookiePolicy from './pages/CookiePolicy.js';
 import NotFound from './pages/NotFound.js';
 import LangLayout from './components/Layout/LangLayout.js';
 import CookieConsent from './components/Consent/CookieConsent.js';
+import PageviewTracker from './components/Analytics/PageviewTracker.js';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Router>
         <Navbar/>
         <ScrollToTop/>
+        <PageviewTracker/>
           <Routes>
             {/* Unprefixed (English / auto-detected) */}
             <Route path='/' element={<Home/>}/>

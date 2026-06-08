@@ -1,6 +1,6 @@
 {
   "consent": {
-    "title": "Tu privacidad nos importa",
+    "title": "Valoramos tu privacidad",
     "description": "Utilizo cookies para analizar el tráfico y mejorar tu experiencia. Puedes aceptar todas las cookies, rechazar las no esenciales o gestionar tus preferencias.",
     "learnMore": "Política de cookies",
     "acceptAll": "Aceptar todas",
@@ -12,7 +12,7 @@
     "necessaryTitle": "Estrictamente necesarias",
     "necessaryDescription": "Necesarias para que el sitio web funcione y para recordar tus preferencias de cookies. Están siempre activadas.",
     "analyticsTitle": "Analítica",
-    "analyticsDescription": "Me permiten entender cómo usan el sitio las personas que lo visitan mediante Google Analytics y Microsoft Clarity (incluidos mapas de calor anónimos y estadísticas de sesión). Totalmente opcional.",
+    "analyticsDescription": "Me permiten entender cómo usan el sitio las personas que lo visitan mediante PostHog (analítica de producto respetuosa con la privacidad, que incluye mapas de calor anónimos y estadísticas de sesión). Totalmente opcional.",
     "alwaysOn": "Siempre activas",
     "close": "Cerrar"
   },
@@ -42,7 +42,7 @@
     "cookiesTitle": "Cookies y analítica",
     "cookiesBody": "Las cookies de analítica y relacionadas se cargan únicamente después de que des tu consentimiento. Para conocer los detalles de las cookies y herramientas concretas que se utilizan, consulta la Política de cookies.",
     "thirdPartiesTitle": "Servicios de terceros",
-    "thirdPartiesBody": "Con tu consentimiento, utilizo Google Analytics y Microsoft Clarity para la analítica de uso, y un proveedor de formularios externo (Basin) para gestionar los envíos del formulario de contacto. Estos proveedores tratan los datos en mi nombre conforme a sus propias condiciones.",
+    "thirdPartiesBody": "Con tu consentimiento, utilizo PostHog para analítica de producto respetuosa con la privacidad (incluidos mapas de calor y estadísticas de sesión), y un proveedor de formularios externo (Basin) para gestionar los envíos del formulario de contacto. Estos proveedores tratan los datos en mi nombre conforme a sus propias condiciones.",
     "rightsTitle": "Tus derechos",
     "rightsBody": "Según tu ubicación, es posible que tengas derecho a acceder, corregir, eliminar o restringir el tratamiento de tus datos personales, y a retirar tu consentimiento en cualquier momento. Para ejercer cualquiera de estos derechos, escríbeme a {{contactEmail}}.",
     "retentionTitle": "Conservación de los datos",
@@ -69,7 +69,7 @@
     "necessaryTitle": "Estrictamente necesarias",
     "necessaryBody": "Estas recuerdan tus preferencias de cookies para que el sitio funcione correctamente. Están siempre activas y no requieren consentimiento.",
     "analyticsTitle": "Analítica (opcional)",
-    "analyticsBody": "Se cargan únicamente con tu consentimiento. Google Analytics (GA4) mide el tráfico y el uso; Microsoft Clarity ofrece mapas de calor anónimos y estadísticas de sesión para ayudar a mejorar el sitio.",
+    "analyticsBody": "Se cargan únicamente con tu consentimiento. PostHog mide el tráfico y el uso y ofrece mapas de calor anónimos y estadísticas de sesión para ayudar a mejorar el sitio.",
     "manageTitle": "Cómo gestionar las cookies",
     "manageBody": "Puedes cambiar o retirar tu consentimiento en cualquier momento a través del enlace \"Configuración de cookies\" del pie de página. También puedes bloquear o eliminar las cookies desde la configuración de tu navegador, aunque en ese caso algunas partes del sitio podrían no funcionar como se espera.",
     "changesTitle": "Cambios",

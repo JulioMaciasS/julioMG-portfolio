@@ -139,23 +139,26 @@ What was built:
   with granular categories (strictly necessary always-on + optional analytics),
   reject-as-easy-as-accept, stored in `localStorage`, and re-openable from the
   footer "Cookie settings" link.
-- **Analytics loaders** (`src/utils/analytics.js`) for **Google Analytics 4**
-  and **Microsoft Clarity** (heatmaps + session stats). Nothing loads until the
-  visitor consents, and nothing loads unless the IDs are configured — so the
-  site is safe to deploy without them.
+- **Analytics via PostHog** (`src/utils/analytics.js`) — one tool covering
+  product analytics, heatmaps and session replay. Nothing loads until the
+  visitor consents, and nothing loads unless PostHog is configured — so the
+  site is safe to deploy without it. SPA navigations are tracked by
+  `PageviewTracker`.
 - **Privacy Policy** (`/privacy-policy`) and **Cookie Policy** (`/cookie-policy`)
   pages, fully translated (EN/ES/FR/AR), linked in the footer. They carry a
   visible "template notice" — review the wording and fill in your jurisdiction
   before relying on them.
 
-**To activate analytics**, add these env vars (e.g. in a `.env` file or your
-host's env settings) and rebuild:
+**To activate analytics**, add these env vars (in Vercel → Settings →
+Environment Variables, or a local `.env`) and redeploy:
 ```
-REACT_APP_GA4_ID=G-XXXXXXXXXX        # from Google Analytics 4
-REACT_APP_CLARITY_ID=xxxxxxxxxx      # from Microsoft Clarity
-# Optional: force the consent banner to show even without IDs (previews):
+REACT_APP_POSTHOG_KEY=phc_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   # PostHog Project API key
+REACT_APP_POSTHOG_HOST=https://eu.i.posthog.com             # optional, EU is the default
+# Optional: force the consent banner to show even without a key (previews):
 REACT_APP_FORCE_CONSENT=true
 ```
+Get the key at posthog.com → sign up → choose **EU Cloud** → Project Settings →
+Project API Key. Enable session replay/heatmaps in the PostHog project settings.
 Update the data-controller name/email/jurisdiction in `src/pages/PrivacyPolicy.js`
 (`CONTROLLER`) and the policy text once you've confirmed your details.
 

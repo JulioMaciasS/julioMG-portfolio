@@ -44,12 +44,7 @@ function CookiePolicy() {
                   <td>{t('cookie.necessaryTitle')}</td>
                 </tr>
                 <tr>
-                  <td>Google Analytics (GA4)</td>
-                  <td>{t('cookie.analyticsBody')}</td>
-                  <td>{t('cookie.analyticsTitle')}</td>
-                </tr>
-                <tr>
-                  <td>Microsoft Clarity</td>
+                  <td>PostHog</td>
                   <td>{t('cookie.analyticsBody')}</td>
                   <td>{t('cookie.analyticsTitle')}</td>
                 </tr>
