@@ -30,7 +30,7 @@
   "home": {
     "meta": {
       "title": "Julio Macias | Développeur logiciel",
-      "description": "Julio Macias Gonzalez — développeur logiciel avec une expérience en entreprise chez Citi. Applications web full-stack, cloud et pilotées par l'IA. Disponible en freelance et en conseil."
+      "description": "Julio Macias Gonzalez, développeur logiciel avec une expérience en entreprise chez Citi. Applications web full-stack, cloud et pilotées par l'IA. Disponible en freelance et en conseil."
     },
     "hero": {
       "badge": "Disponible en freelance et en conseil",
@@ -44,7 +44,7 @@
     "about": {
       "title": "Bonjour, je suis Julio. Ravi de vous rencontrer !",
       "body1": "Je suis développeur logiciel et diplômé en informatique de la Queen's University Belfast, avec une expérience en entreprise chez Citi à construire et livrer des applications full-stack.",
-      "body2": "Je suis passionné par le développement web full-stack, le cloud et l'IA — et j'adore transformer des idées en produits fiables qui génèrent de vrais résultats pour les entreprises.",
+      "body2": "Je suis passionné par le développement web full-stack, le cloud et l'IA, et j'adore transformer des idées en produits fiables qui génèrent de vrais résultats pour les entreprises.",
       "tags": {
         "problemSolver": "Résolveur de problèmes",
         "teamPlayer": "Esprit d'équipe",
@@ -54,13 +54,13 @@
     },
     "cards": {
       "heading": "Dernières réalisations",
-      "subheading": "Quelques projets récents — du vrai travail client aux expérimentations cloud et IA.",
+      "subheading": "Quelques projets récents, du vrai travail client aux expérimentations cloud et IA.",
       "more": "Voir tous les projets"
     },
     "servicesCta": {
       "eyebrow": "Freelance & conseil",
       "heading": "Besoin d'un développeur qui livre ?",
-      "text": "Je prends des missions en freelance et en conseil — des applications web complètes aux migrations, au cloud et au conseil technique. Communication directe, des résultats réellement livrés.",
+      "text": "Je prends des missions en freelance et en conseil, des applications web complètes aux migrations, au cloud et au conseil technique. Communication directe, des résultats réellement livrés.",
       "button": "Découvrez comment je peux aider"
     }
   },
@@ -70,12 +70,12 @@
       "description": "Parcourez les projets d'ingénierie logicielle de Julio Macias Gonzalez, notamment CineShare, EugeniaBravo et bien d'autres."
     },
     "heading": "Mes projets",
-    "subheading": "Du vrai travail client, des plateformes cloud et des expérimentations IA — chacun accompagné d'un compte rendu de sa réalisation.",
+    "subheading": "Du vrai travail client, des plateformes cloud et des expérimentations IA, chacun accompagné d'un compte rendu de sa réalisation.",
     "new": "Nouveau !",
     "items": {
       "chatgptlearn": {
         "title": "ChatGPTLearn",
-        "description": "Projet de fin d'études — une plateforme de formation à l'IA full-stack qui aide les entreprises à apprendre des workflows ChatGPT concrets."
+        "description": "Projet de fin d'études : une plateforme de formation à l'IA full-stack qui aide les entreprises à apprendre des workflows ChatGPT concrets."
       },
       "eugenia-bravo-rebuild": {
         "title": "Refonte d'EugeniaBravo",
@@ -93,7 +93,7 @@
   },
   "services": {
     "meta": {
-      "title": "Services | Julio Macias — Développement web et conseil",
+      "title": "Services | Julio Macias, Développement web et conseil",
       "description": "Ingénierie logicielle et conseil en freelance par Julio Macias Gonzalez. Spécialisé en Supabase, Next.js et React, avec une expérience en entreprise sur Angular, Java/Spring et CI/CD."
     },
     "hero": {
@@ -101,7 +101,7 @@
       "title": "Une ingénierie qui fait avancer votre entreprise",
       "subtitlePrefix": "Je suis Julio, un ingénieur logiciel spécialisé en ",
       "subtitleHighlight": "Supabase, Next.js et React",
-      "subtitleSuffix": ". J'aide les startups et les équipes en entreprise à concevoir, développer et livrer des produits web fiables — des applications créées de zéro aux migrations et au CI/CD.",
+      "subtitleSuffix": ". J'aide les startups et les équipes en entreprise à concevoir, développer et livrer des produits web fiables, des applications créées de zéro aux migrations et au CI/CD.",
       "bookCall": "Réserver un appel gratuit",
       "seeWork": "Voir mes réalisations"
     },
@@ -110,7 +110,7 @@
     },
     "grid": {
       "heading": "Comment je peux vous aider",
-      "subtitle": "Des collaborations flexibles — au projet, en continu ou sous forme de consultation ponctuelle. Choisissez ce qui vous convient."
+      "subtitle": "Des collaborations flexibles : au projet, en continu ou sous forme de consultation ponctuelle. Choisissez ce qui vous convient."
     },
     "items": {
       "product": {
@@ -119,7 +119,7 @@
       },
       "enterprise": {
         "title": "Ingénierie frontend en entreprise",
-        "description": "Des frontends à grande échelle et maintenables pour les équipes et les outils internes — pas uniquement des produits grand public. À l'aise au sein de bases de code d'entreprise et de design systems établis."
+        "description": "Des frontends à grande échelle et maintenables pour les équipes et les outils internes, pas uniquement des produits grand public. À l'aise au sein de bases de code d'entreprise et de design systems établis."
       },
       "backend": {
         "title": "Backend & API",
@@ -131,7 +131,7 @@
       },
       "migrations": {
         "title": "Migrations & modernisation",
-        "description": "Faire passer des sites anciens ou difficiles à maintenir vers une stack moderne sans perdre le SEO ni le contenu — exactement ce que j'ai fait en migrant le site d'un client en production vers Next.js + Supabase."
+        "description": "Faire passer des sites anciens ou difficiles à maintenir vers une stack moderne sans perdre le SEO ni le contenu : exactement ce que j'ai fait en migrant le site d'un client en production vers Next.js + Supabase."
       },
       "consulting": {
         "title": "Conseil technique",
@@ -141,11 +141,11 @@
     "why": {
       "heading": "Pourquoi travailler avec moi",
       "point1Lead": "Un vrai travail client, livré en production.",
-      "point1Text": "J'ai reconstruit et migré un site client en production vers Next.js + Supabase — améliorant le SEO, les flux d'administration et les opérations quotidiennes.",
+      "point1Text": "J'ai reconstruit et migré un site client en production vers Next.js + Supabase, améliorant le SEO, les flux d'administration et les opérations quotidiennes.",
       "point2Lead": "De l'expérience en entreprise, pas seulement des démos.",
-      "point2Text": "J'ai travaillé sur de grandes bases de code et des outils internes avec Angular, Java et Spring — je suis donc à l'aise dans des systèmes sérieux et durables.",
+      "point2Text": "J'ai travaillé sur de grandes bases de code et des outils internes avec Angular, Java et Spring. Je suis donc à l'aise dans des systèmes sérieux et durables.",
       "point3Lead": "Vous échangez directement avec la personne qui réalise le travail.",
-      "point3Text": "Pas de chargés de compte, pas de relais — une communication directe du premier appel à la livraison.",
+      "point3Text": "Pas de chargés de compte, pas de relais : une communication directe du premier appel à la livraison.",
       "caseStudyLink": "Lire l'étude de cas de la migration"
     },
     "process": {
@@ -184,7 +184,7 @@
       "send": "Envoyer le message",
       "sending": "Envoi…",
       "successTitle": "Message envoyé !",
-      "successText": "Merci de m'avoir contacté — je vous répondrai bientôt.",
+      "successText": "Merci de m'avoir contacté, je vous répondrai bientôt.",
       "sendAnother": "Envoyer un autre message",
       "error": "Une erreur s'est produite. Veuillez réessayer ou m'écrire directement par e-mail.",
       "notConfigured": "Le formulaire de contact n'est pas encore configuré. Contactez-moi par e-mail ou sur LinkedIn.",
@@ -207,12 +207,12 @@
     "chatgptlearn": {
       "meta": {
         "title": "ChatGPTLearn | Portfolio Julio Macias",
-        "description": "ChatGPTLearn — mon projet de fin d'études. Une plateforme de formation à l'IA full-stack construite avec Next.js, React, Supabase et PostgreSQL pour aider les entreprises à apprendre des workflows ChatGPT concrets."
+        "description": "ChatGPTLearn, mon projet de fin d'études. Une plateforme de formation à l'IA full-stack construite avec Next.js, React, Supabase et PostgreSQL pour aider les entreprises à apprendre des workflows ChatGPT concrets."
       },
       "date": "Avril 2026",
       "intro": "ChatGPTLearn est mon projet de fin d'études : une plateforme de formation à l'IA full-stack qui aide les entreprises et leurs équipes à apprendre des workflows ChatGPT concrets et pratiques. Plutôt qu'une nouvelle série de diapositives, elle offre aux utilisateurs une véritable interface de type ChatGPT pour s'exercer, intégrée à une expérience de cours et de gestion d'équipe.",
       "goalsHeading": "L'objectif",
-      "goalsBody": "La plupart des formations à l'IA sont théoriques et vite oubliées. L'objectif était de construire une plateforme où les équipes font réellement le travail — en pratiquant des prompts et des workflows dans une interface de chat familière — pendant que les responsables intègrent leurs collaborateurs et suivent leur progression via des cours structurés et un accès sur invitation.",
+      "goalsBody": "La plupart des formations à l'IA sont théoriques et vite oubliées. L'objectif était de construire une plateforme où les équipes font réellement le travail (en pratiquant des prompts et des workflows dans une interface de chat familière) pendant que les responsables intègrent leurs collaborateurs et suivent leur progression via des cours structurés et un accès sur invitation.",
       "technologiesIntro": "ChatGPTLearn repose sur une stack full-stack moderne : Next.js et React côté frontend pour des pages rapides et optimisées pour le SEO, avec Supabase et PostgreSQL pour gérer l'authentification, les données et le stockage.",
       "featuresHeading": "Fonctionnalités clés",
       "feature1": "Une interface de chat de type ChatGPT où les utilisateurs s'exercent à de vrais workflows de prompting.",
@@ -220,9 +220,9 @@
       "feature3": "L'intégration des équipes avec un accès sur invitation pour que les entreprises puissent le déployer auprès de leurs collaborateurs.",
       "feature4": "Un accès basé sur les rôles et un modèle de données relationnel sur Supabase/PostgreSQL.",
       "aiHeading": "Construit avec le développement assisté par IA",
-      "aiBody": "Le projet a aussi été une expérimentation d'ingénierie assistée par IA. Je l'ai construit en m'appuyant sur des outils comme Claude Code, Codex et GitHub Copilot — en les utilisant pour aller plus vite tout en gardant un contrôle total sur l'architecture et la qualité du code. Cela reflète ma façon de travailler aujourd'hui : l'IA comme multiplicateur de force, et non comme un substitut au jugement d'ingénierie.",
+      "aiBody": "Le projet a aussi été une expérimentation d'ingénierie assistée par IA. Je l'ai construit en m'appuyant sur des outils comme Claude Code, Codex et GitHub Copilot, en les utilisant pour aller plus vite tout en gardant un contrôle total sur l'architecture et la qualité du code. Cela reflète ma façon de travailler aujourd'hui : l'IA comme multiplicateur de force, et non comme un substitut au jugement d'ingénierie.",
       "outcomeHeading": "Résultat",
-      "outcomeBody": "ChatGPTLearn a réuni tout ce qui me tient à cœur — le web full-stack, un véritable cas d'usage produit et l'IA — dans un seul projet de fin d'études noté, et c'est la direction dans laquelle je veux continuer à construire."
+      "outcomeBody": "ChatGPTLearn a réuni tout ce qui me tient à cœur (le web full-stack, un véritable cas d'usage produit et l'IA) dans un seul projet de fin d'études noté, et c'est la direction dans laquelle je veux continuer à construire."
     },
     "cineshare": {
       "meta": {
@@ -232,9 +232,9 @@
       "intro1": "CineShare est un projet personnel axé sur l'exploration des technologies web modernes et de l'infrastructure cloud. Cette expérience d'apprentissage m'a permis d'acquérir des connaissances précieuses pour de futures applications concrètes.",
       "intro2": "La plateforme permet aux utilisateurs de partager et de découvrir des recommandations de films et de séries au sein d'une communauté sociale.",
       "technologiesIntro": "Tout au long de ce projet, j'ai exploré une variété de technologies, aussi bien frontend que backend, afin de construire une application full-stack.",
-      "frontendSubtitle": "Angular CLI – HTML, CSS, TypeScript",
+      "frontendSubtitle": "Angular CLI, HTML, CSS, TypeScript",
       "frontendBody": "Ce projet Angular utilise les modules de base d'Angular, NgRx pour la gestion de l'état et le rendu côté serveur via Express. Il intègre Bootstrap et Tailwind CSS pour la mise en forme, ainsi que DaisyUI pour les composants d'interface.",
-      "backendSubtitle": "Spring Boot – Java",
+      "backendSubtitle": "Spring Boot, Java",
       "backendBody": "Le backend est propulsé par Spring Boot, en s'appuyant sur plusieurs starters tels que Data JPA pour l'accès à la base de données, Spring Security pour l'authentification et Spring MVC avec un serveur Tomcat embarqué. Il intègre MySQL pour la connectivité à la base de données, Lombok pour réduire le code répétitif, JJWT pour la gestion des JWT, Springdoc OpenAPI pour la documentation de l'API et Actuator pour la supervision.",
       "securityHeading": "Cybersécurité",
       "securityBody": "Les fonctionnalités de sécurité sont actuellement en cours de développement. Le frontend utilise CryptoJS pour chiffrer les données via le chiffrement AES, tandis que le backend implémente Spring Security pour une authentification basée sur les JWT. Le JWT filtre les requêtes non autorisées, et tous les mots de passe sont chiffrés à la fois en transit et au repos dans la base de données. De plus, un certificat SSL est en place pour le HTTPS.",
@@ -260,7 +260,7 @@
       },
       "intro": "Pour développer davantage mes compétences en ingénierie logicielle, j'ai créé eugeniabravo.com et tudivorciointeligente.com. Ce projet a non seulement mis à l'épreuve mes capacités techniques, mais a aussi amélioré mes compétences en communication client.",
       "technologiesIntro": "Pour développer ce site, j'ai collaboré avec une amie qui est aussi ma cliente, en choisissant des technologies qui renforceraient mes compétences en ingénierie logicielle plutôt que de m'appuyer sur des solutions clés en main comme WordPress ou Wix. Cette approche a permis de livrer un site robuste et sur mesure.",
-      "frontendSubtitle": "React – TypeScript",
+      "frontendSubtitle": "React, TypeScript",
       "frontendBody1": "Comme il s'agissait d'un projet professionnel, j'ai utilisé React pour tirer parti de ma connaissance avancée du framework. De plus, l'implémentation de TypeScript a garanti une manipulation des données plus sûre qu'avec du JavaScript pur.",
       "frontendBody2Prefix": "Pour démarrer le développement, j'ai expérimenté un outil d'IA innovant appelé ",
       "frontendBody2Suffix": ", capable de générer un projet de zéro, de l'exécuter et d'améliorer le code de façon itérative à partir d'instructions. J'ai ensuite téléchargé le code de base généré pour poursuivre le développement.",

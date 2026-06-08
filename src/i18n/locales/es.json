@@ -30,7 +30,7 @@
   "home": {
     "meta": {
       "title": "Julio Macias | Desarrollador de Software",
-      "description": "Julio Macías González — desarrollador de software con experiencia en la industria en Citi. Aplicaciones web full-stack, en la nube y basadas en IA. Disponible para trabajo freelance y consultoría."
+      "description": "Julio Macías González, desarrollador de software con experiencia en la industria en Citi. Aplicaciones web full-stack, en la nube y basadas en IA. Disponible para trabajo freelance y consultoría."
     },
     "hero": {
       "badge": "Disponible para freelance y consultoría",
@@ -44,7 +44,7 @@
     "about": {
       "title": "Hola, soy Julio. ¡Encantado de conocerte!",
       "body1": "Soy desarrollador de software y graduado en Ciencias de la Computación por la Queen's University Belfast, con experiencia en la industria en Citi construyendo y lanzando aplicaciones full-stack.",
-      "body2": "Me apasionan el desarrollo web full-stack, la nube y la IA — y me encanta convertir ideas en productos fiables que generan resultados reales para los negocios.",
+      "body2": "Me apasionan el desarrollo web full-stack, la nube y la IA, y me encanta convertir ideas en productos fiables que generan resultados reales para los negocios.",
       "tags": {
         "problemSolver": "Resuelvo problemas",
         "teamPlayer": "Trabajo en equipo",
@@ -54,13 +54,13 @@
     },
     "cards": {
       "heading": "Últimos trabajos",
-      "subheading": "Algunos proyectos recientes — desde trabajo real con clientes hasta experimentos en la nube y de IA.",
+      "subheading": "Algunos proyectos recientes, desde trabajo real con clientes hasta experimentos en la nube y de IA.",
       "more": "Ver todos los proyectos"
     },
     "servicesCta": {
       "eyebrow": "Freelance y consultoría",
       "heading": "¿Necesitas un desarrollador que entregue?",
-      "text": "Acepto trabajo freelance y de consultoría — desde aplicaciones web completas hasta migraciones, nube y asesoría técnica. Comunicación directa, resultados reales entregados.",
+      "text": "Acepto trabajo freelance y de consultoría, desde aplicaciones web completas hasta migraciones, nube y asesoría técnica. Comunicación directa, resultados reales entregados.",
       "button": "Mira cómo puedo ayudarte"
     }
   },
@@ -70,12 +70,12 @@
       "description": "Explora los proyectos de ingeniería de software de Julio Macías González, incluyendo CineShare, EugeniaBravo y más."
     },
     "heading": "Mis proyectos",
-    "subheading": "Trabajo real con clientes, plataformas en la nube y experimentos de IA — cada uno con una descripción de cómo se construyó.",
+    "subheading": "Trabajo real con clientes, plataformas en la nube y experimentos de IA, cada uno con una descripción de cómo se construyó.",
     "new": "¡Nuevo!",
     "items": {
       "chatgptlearn": {
         "title": "ChatGPTLearn",
-        "description": "Proyecto de fin de carrera — una plataforma de formación en IA full-stack que ayuda a las empresas a aprender flujos de trabajo prácticos con ChatGPT."
+        "description": "Proyecto de fin de carrera: una plataforma de formación en IA full-stack que ayuda a las empresas a aprender flujos de trabajo prácticos con ChatGPT."
       },
       "eugenia-bravo-rebuild": {
         "title": "Reconstrucción de EugeniaBravo",
@@ -93,7 +93,7 @@
   },
   "services": {
     "meta": {
-      "title": "Servicios | Julio Macias — Desarrollo Web y Consultoría",
+      "title": "Servicios | Julio Macias, Desarrollo Web y Consultoría",
       "description": "Ingeniería de software y consultoría freelance por Julio Macías González. Especializado en Supabase, Next.js y React, con experiencia empresarial en Angular, Java/Spring y CI/CD."
     },
     "hero": {
@@ -184,7 +184,7 @@
       "send": "Enviar mensaje",
       "sending": "Enviando…",
       "successTitle": "¡Mensaje enviado!",
-      "successText": "Gracias por escribirme — te responderé pronto.",
+      "successText": "Gracias por escribirme. Te responderé pronto.",
       "sendAnother": "Enviar otro mensaje",
       "error": "Algo salió mal. Inténtalo de nuevo o escríbeme directamente por correo.",
       "notConfigured": "El formulario de contacto aún no está configurado. Contáctame por correo electrónico o LinkedIn.",
@@ -207,12 +207,12 @@
     "chatgptlearn": {
       "meta": {
         "title": "ChatGPTLearn | Portafolio de Julio Macias",
-        "description": "ChatGPTLearn — mi proyecto de fin de carrera. Una plataforma de formación en IA full-stack construida con Next.js, React, Supabase y PostgreSQL para ayudar a las empresas a aprender flujos de trabajo prácticos con ChatGPT."
+        "description": "ChatGPTLearn, mi proyecto de fin de carrera. Una plataforma de formación en IA full-stack construida con Next.js, React, Supabase y PostgreSQL para ayudar a las empresas a aprender flujos de trabajo prácticos con ChatGPT."
       },
       "date": "Abril de 2026",
       "intro": "ChatGPTLearn es mi proyecto de fin de carrera: una plataforma de formación en IA full-stack que ayuda a las empresas y a sus equipos a aprender flujos de trabajo prácticos con ChatGPT. En lugar de otra serie de diapositivas, ofrece a los usuarios una interfaz real al estilo de ChatGPT para practicar, envuelta en una experiencia de cursos y gestión de equipos.",
       "goalsHeading": "El objetivo",
-      "goalsBody": "La mayoría de la formación en IA es teórica y se olvida con facilidad. El objetivo era construir una plataforma donde los equipos realmente hagan el trabajo —practicando prompts y flujos de trabajo en una interfaz de chat familiar— mientras los responsables incorporan a su personal y siguen el progreso a través de cursos estructurados y acceso por invitación.",
+      "goalsBody": "La mayoría de la formación en IA es teórica y se olvida con facilidad. El objetivo era construir una plataforma donde los equipos realmente hagan el trabajo (practicando prompts y flujos de trabajo en una interfaz de chat familiar) mientras los responsables incorporan a su personal y siguen el progreso a través de cursos estructurados y acceso por invitación.",
       "technologiesIntro": "ChatGPTLearn está construido sobre un stack full-stack moderno: Next.js y React en el frontend para páginas rápidas y listas para SEO, con Supabase y PostgreSQL encargándose de la autenticación, los datos y el almacenamiento.",
       "featuresHeading": "Características principales",
       "feature1": "Una interfaz de chat al estilo de ChatGPT donde los usuarios practican flujos de trabajo reales de prompting.",
@@ -220,9 +220,9 @@
       "feature3": "Incorporación de equipos con acceso por invitación para que las empresas puedan desplegarlo entre su personal.",
       "feature4": "Acceso basado en roles y un modelo de datos relacional en Supabase/PostgreSQL.",
       "aiHeading": "Construido con desarrollo asistido por IA",
-      "aiBody": "El proyecto fue también un experimento en ingeniería asistida por IA. Lo construí apoyándome en herramientas como Claude Code, Codex y GitHub Copilot — usándolas para avanzar más rápido manteniendo el control total sobre la arquitectura y la calidad del código. Refleja cómo trabajo hoy: la IA como multiplicador de fuerza, no como sustituto del criterio de ingeniería.",
+      "aiBody": "El proyecto fue también un experimento en ingeniería asistida por IA. Lo construí apoyándome en herramientas como Claude Code, Codex y GitHub Copilot, usándolas para avanzar más rápido manteniendo el control total sobre la arquitectura y la calidad del código. Refleja cómo trabajo hoy: la IA como multiplicador de fuerza, no como sustituto del criterio de ingeniería.",
       "outcomeHeading": "Resultado",
-      "outcomeBody": "ChatGPTLearn reunió todo lo que me importa —el desarrollo web full-stack, un caso de uso de producto real y la IA— en un único proyecto de fin de carrera evaluado, y es la dirección en la que quiero seguir construyendo."
+      "outcomeBody": "ChatGPTLearn reunió todo lo que me importa (el desarrollo web full-stack, un caso de uso de producto real y la IA) en un único proyecto de fin de carrera evaluado, y es la dirección en la que quiero seguir construyendo."
     },
     "cineshare": {
       "meta": {
@@ -232,9 +232,9 @@
       "intro1": "CineShare es un proyecto personal enfocado en explorar tecnologías web modernas e infraestructura en la nube. Esta experiencia de aprendizaje me ayudó a obtener conocimientos valiosos para futuras aplicaciones del mundo real.",
       "intro2": "La plataforma permite a los usuarios compartir y descubrir recomendaciones de películas y series dentro de una comunidad social.",
       "technologiesIntro": "A lo largo de este proyecto, he explorado una variedad de tecnologías, tanto de frontend como de backend, para construir una aplicación full-stack.",
-      "frontendSubtitle": "Angular CLI – HTML, CSS, TypeScript",
+      "frontendSubtitle": "Angular CLI: HTML, CSS, TypeScript",
       "frontendBody": "Este proyecto en Angular utiliza módulos principales de Angular, NgRx para la gestión del estado y renderizado del lado del servidor mediante Express. Incorpora Bootstrap y Tailwind CSS para los estilos, junto con DaisyUI para los componentes de UI.",
-      "backendSubtitle": "Spring Boot – Java",
+      "backendSubtitle": "Spring Boot: Java",
       "backendBody": "El backend está impulsado por Spring Boot, aprovechando múltiples starters como Data JPA para el acceso a la base de datos, Spring Security para la autenticación y Spring MVC con un servidor Tomcat embebido. Integra MySQL para la conectividad con la base de datos, Lombok para reducir el código repetitivo, JJWT para el manejo de JWT, Springdoc OpenAPI para la documentación de la API y Actuator para la monitorización.",
       "securityHeading": "Ciberseguridad",
       "securityBody": "Las funciones de seguridad están actualmente en desarrollo. El frontend usa CryptoJS para cifrar las cargas útiles mediante cifrado AES, mientras que el backend implementa Spring Security para la autenticación basada en JWT. JWT filtra las solicitudes no autorizadas, y todas las contraseñas se cifran tanto en tránsito como en reposo en la base de datos. Además, hay un certificado SSL en uso para HTTPS.",
@@ -260,7 +260,7 @@
       },
       "intro": "Para seguir desarrollando mis habilidades de ingeniería de software, creé eugeniabravo.com y tudivorciointeligente.com. Este proyecto no solo puso a prueba mis capacidades técnicas, sino que también mejoró mis habilidades de comunicación con el cliente.",
       "technologiesIntro": "Para desarrollar este sitio web, colaboré con una amiga que también es mi clienta, eligiendo tecnologías que potenciaran mis habilidades de ingeniería de software en lugar de depender de soluciones predefinidas como WordPress o Wix. Este enfoque dio como resultado un sitio web robusto y personalizado.",
-      "frontendSubtitle": "React – TypeScript",
+      "frontendSubtitle": "React: TypeScript",
       "frontendBody1": "Dado que se trataba de un proyecto profesional, usé React para aprovechar mi conocimiento avanzado del framework. Además, implementar TypeScript garantizó un manejo de datos más seguro en comparación con JavaScript puro.",
       "frontendBody2Prefix": "Para arrancar el desarrollo, experimenté con una innovadora herramienta de IA llamada ",
       "frontendBody2Suffix": ", que puede generar un proyecto desde cero, ejecutarlo y mejorar el código de forma iterativa a partir de instrucciones. Luego descargué el código base generado para continuar con el desarrollo.",

@@ -30,7 +30,7 @@
   "home": {
     "meta": {
       "title": "Julio Macias | Software Developer",
-      "description": "Julio Macias Gonzalez — software developer with industry experience at Citi. Full-stack web, cloud and AI-driven applications. Available for freelance and consulting."
+      "description": "Julio Macias Gonzalez, software developer with industry experience at Citi. Full-stack web, cloud and AI-driven applications. Available for freelance and consulting."
     },
     "hero": {
       "badge": "Available for freelance & consulting",
@@ -44,7 +44,7 @@
     "about": {
       "title": "Hi, I'm Julio. Nice to meet you!",
       "body1": "I'm a software developer and Computer Science graduate from Queen's University Belfast, with industry experience at Citi building and shipping full-stack applications.",
-      "body2": "I'm passionate about full-stack web development, cloud and AI — and I love turning ideas into reliable products that drive real business results.",
+      "body2": "I'm passionate about full-stack web development, cloud and AI, and I love turning ideas into reliable products that drive real business results.",
       "tags": {
         "problemSolver": "Problem Solver",
         "teamPlayer": "Team Player",
@@ -54,13 +54,13 @@
     },
     "cards": {
       "heading": "Latest work",
-      "subheading": "A few recent projects — from real client work to cloud and AI experiments.",
+      "subheading": "A few recent projects, from real client work to cloud and AI experiments.",
       "more": "View all projects"
     },
     "servicesCta": {
       "eyebrow": "Freelance & consulting",
       "heading": "Need a developer who ships?",
-      "text": "I take on freelance and consulting work — from full web apps to migrations, cloud and technical advice. Direct communication, real shipped results.",
+      "text": "I take on freelance and consulting work, from full web apps to migrations, cloud and technical advice. Direct communication, real shipped results.",
       "button": "See how I can help"
     }
   },
@@ -70,12 +70,12 @@
       "description": "Browse Julio Macias Gonzalez's software engineering projects including CineShare, EugeniaBravo, and more."
     },
     "heading": "My Projects",
-    "subheading": "Real client work, cloud platforms and AI experiments — each with a write-up of how it was built.",
+    "subheading": "Real client work, cloud platforms and AI experiments, each with a write-up of how it was built.",
     "new": "New!",
     "items": {
       "chatgptlearn": {
         "title": "ChatGPTLearn",
-        "description": "Final year project — a full-stack AI training platform helping businesses learn practical ChatGPT workflows."
+        "description": "Final year project: a full-stack AI training platform helping businesses learn practical ChatGPT workflows."
       },
       "eugenia-bravo-rebuild": {
         "title": "EugeniaBravo Rebuild",
@@ -93,7 +93,7 @@
   },
   "services": {
     "meta": {
-      "title": "Services | Julio Macias — Web Development & Consulting",
+      "title": "Services | Julio Macias, Web Development & Consulting",
       "description": "Freelance software engineering and consulting by Julio Macias Gonzalez. Specialised in Supabase, Next.js and React, with enterprise experience in Angular, Java/Spring and CI/CD."
     },
     "hero": {
@@ -101,7 +101,7 @@
       "title": "Engineering that moves your business forward",
       "subtitlePrefix": "I'm Julio, a software engineer specialised in ",
       "subtitleHighlight": "Supabase, Next.js and React",
-      "subtitleSuffix": ". I help startups and enterprise teams design, build and ship reliable web products — from greenfield apps to migrations and CI/CD.",
+      "subtitleSuffix": ". I help startups and enterprise teams design, build and ship reliable web products, from greenfield apps to migrations and CI/CD.",
       "bookCall": "Book a free call",
       "seeWork": "See my work"
     },
@@ -110,7 +110,7 @@
     },
     "grid": {
       "heading": "How I can help",
-      "subtitle": "Flexible engagements — project-based, ongoing, or a one-off consultation. Pick what fits."
+      "subtitle": "Flexible engagements: project-based, ongoing, or a one-off consultation. Pick what fits."
     },
     "items": {
       "product": {
@@ -119,7 +119,7 @@
       },
       "enterprise": {
         "title": "Enterprise Frontend Engineering",
-        "description": "Large-scale, maintainable frontends for teams and internal tooling — not just consumer products. Comfortable inside established enterprise codebases and design systems."
+        "description": "Large-scale, maintainable frontends for teams and internal tooling, not just consumer products. Comfortable inside established enterprise codebases and design systems."
       },
       "backend": {
         "title": "Backend & APIs",
@@ -131,7 +131,7 @@
       },
       "migrations": {
         "title": "Migrations & Modernisation",
-        "description": "Moving legacy or hard-to-maintain sites onto a modern stack without losing SEO or content — exactly what I did migrating a live client site to Next.js + Supabase."
+        "description": "Moving legacy or hard-to-maintain sites onto a modern stack without losing SEO or content. Exactly what I did migrating a live client site to Next.js + Supabase."
       },
       "consulting": {
         "title": "Technical Consulting",
@@ -141,11 +141,11 @@
     "why": {
       "heading": "Why work with me",
       "point1Lead": "Real, shipped client work.",
-      "point1Text": "I rebuilt and migrated a live client website to Next.js + Supabase — improving SEO, admin workflows and day-to-day operations.",
+      "point1Text": "I rebuilt and migrated a live client website to Next.js + Supabase, improving SEO, admin workflows and day-to-day operations.",
       "point2Lead": "Enterprise experience, not just demos.",
-      "point2Text": "I've worked across large codebases and internal tooling with Angular, Java and Spring — so I'm comfortable in serious, long-lived systems.",
+      "point2Text": "I've worked across large codebases and internal tooling with Angular, Java and Spring, so I'm comfortable in serious, long-lived systems.",
       "point3Lead": "You talk to the person doing the work.",
-      "point3Text": "No account managers, no hand-offs — direct communication from first call to delivery.",
+      "point3Text": "No account managers, no hand-offs. Direct communication from first call to delivery.",
       "caseStudyLink": "Read the migration case study"
     },
     "process": {
@@ -184,7 +184,7 @@
       "send": "Send message",
       "sending": "Sending…",
       "successTitle": "Message sent!",
-      "successText": "Thanks for reaching out — I'll get back to you soon.",
+      "successText": "Thanks for reaching out. I'll get back to you soon.",
       "sendAnother": "Send another message",
       "error": "Something went wrong. Please try again or email me directly.",
       "notConfigured": "The contact form isn't configured yet. Please reach me via email or LinkedIn.",
@@ -207,12 +207,12 @@
     "chatgptlearn": {
       "meta": {
         "title": "ChatGPTLearn | Julio Macias Portfolio",
-        "description": "ChatGPTLearn — my final year project. A full-stack AI training platform built with Next.js, React, Supabase and PostgreSQL to help businesses learn practical ChatGPT workflows."
+        "description": "ChatGPTLearn, my final year project. A full-stack AI training platform built with Next.js, React, Supabase and PostgreSQL to help businesses learn practical ChatGPT workflows."
       },
       "date": "April 2026",
       "intro": "ChatGPTLearn is my final year project: a full-stack AI training platform that helps businesses and their teams learn practical, hands-on ChatGPT workflows. Rather than another set of slides, it gives users a real ChatGPT-style interface to practise in, wrapped in a course and team-management experience.",
       "goalsHeading": "The Goal",
-      "goalsBody": "Most AI training is theoretical and forgettable. The aim was to build a platform where teams actually do the work — practising prompts and workflows in a familiar chat interface — while managers onboard their people and track progress through structured courses and invite-based access.",
+      "goalsBody": "Most AI training is theoretical and forgettable. The aim was to build a platform where teams actually do the work (practising prompts and workflows in a familiar chat interface) while managers onboard their people and track progress through structured courses and invite-based access.",
       "technologiesIntro": "ChatGPTLearn is built on a modern full-stack: Next.js and React on the frontend for fast, SEO-ready pages, with Supabase and PostgreSQL handling authentication, data and storage.",
       "featuresHeading": "Key Features",
       "feature1": "A ChatGPT-style chat interface where users practise real prompting workflows.",
@@ -220,9 +220,9 @@
       "feature3": "Team onboarding with invite-based access so businesses can roll it out to their people.",
       "feature4": "Role-based access and a relational data model on Supabase/PostgreSQL.",
       "aiHeading": "Built with AI-assisted development",
-      "aiBody": "The project was also an experiment in AI-assisted engineering. I built it leaning on tools like Claude Code, Codex and GitHub Copilot — using them to move faster while keeping full control over architecture and code quality. It reflects how I work today: AI as a force-multiplier, not a replacement for engineering judgement.",
+      "aiBody": "The project was also an experiment in AI-assisted engineering. I built it leaning on tools like Claude Code, Codex and GitHub Copilot, using them to move faster while keeping full control over architecture and code quality. It reflects how I work today: AI as a force-multiplier, not a replacement for engineering judgement.",
       "outcomeHeading": "Outcome",
-      "outcomeBody": "ChatGPTLearn brought together everything I care about — full-stack web, a real product use-case, and AI — into a single graded final year project, and it's the direction I want to keep building in."
+      "outcomeBody": "ChatGPTLearn brought together everything I care about: full-stack web, a real product use-case, and AI, into a single graded final year project, and it's the direction I want to keep building in."
     },
     "cineshare": {
       "meta": {
@@ -232,9 +232,9 @@
       "intro1": "CineShare is a personal project focused on exploring modern web technologies and cloud infrastructure. This learning experience helped me gain valuable insights for future real-world applications.",
       "intro2": "The platform enables users to share and discover movie and TV show recommendations within a social community.",
       "technologiesIntro": "Throughout this project, I have explored a variety of technologies, both frontend and backend, to build a full-stack application.",
-      "frontendSubtitle": "Angular CLI – HTML, CSS, TypeScript",
+      "frontendSubtitle": "Angular CLI: HTML, CSS, TypeScript",
       "frontendBody": "This Angular project utilizes core Angular modules, NgRx for state management, and server-side rendering via Express. It incorporates Bootstrap and Tailwind CSS for styling, along with DaisyUI for UI components.",
-      "backendSubtitle": "Spring Boot – Java",
+      "backendSubtitle": "Spring Boot: Java",
       "backendBody": "The backend is powered by Spring Boot, leveraging multiple starters such as Data JPA for database access, Spring Security for authentication, and Spring MVC with an embedded Tomcat server. It integrates MySQL for database connectivity, Lombok to reduce boilerplate code, JJWT for JWT handling, Springdoc OpenAPI for API documentation, and Actuator for monitoring.",
       "securityHeading": "Cybersecurity",
       "securityBody": "Security features are currently under development. The frontend uses CryptoJS to encrypt payloads via AES encryption, while the backend implements Spring Security for JWT-based authentication. JWT filters unauthorized requests, and all passwords are encrypted both in transit and at rest in the database. Additionally, an SSL certificate is in place for HTTPS.",
@@ -260,7 +260,7 @@
       },
       "intro": "To further develop my software engineering skills, I created eugeniabravo.com and tudivorciointeligente.com. This project not only challenged my technical abilities but also improved my client communication skills.",
       "technologiesIntro": "To develop this website, I collaborated with a friend who is also my client, choosing technologies that would enhance my software engineering skills rather than relying on out-of-the-box solutions like WordPress or Wix. This approach delivered a robust and customized website.",
-      "frontendSubtitle": "React – TypeScript",
+      "frontendSubtitle": "React: TypeScript",
       "frontendBody1": "Since this was a professional project, I used React to leverage my advanced knowledge of the framework. Additionally, implementing TypeScript ensured safer data handling compared to plain JavaScript.",
       "frontendBody2Prefix": "To kickstart development, I experimented with an innovative AI tool called ",
       "frontendBody2Suffix": ", which can generate a project from scratch, run it, and iteratively improve the code based on prompts. I then downloaded the generated boilerplate code to continue development.",
