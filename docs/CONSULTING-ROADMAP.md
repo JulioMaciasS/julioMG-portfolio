@@ -81,52 +81,42 @@ change.
 
 ---
 
-## 2. Logo regeneration (Gemini prompts)
+## 2. Brand identity — **DONE**
 
-> Note: Claude can't generate images here. Use these prompts in Google
-> **Gemini** (Imagen / "Nano Banana" image generation) or any image model,
-> then drop the result into `public/images/` and update the favicon set.
+**Brand:** **Julio Macias**, with a **"JM"** monogram for square/icon contexts.
+Rather than an AI-generated logo (which produced a different mark on every render
+and never stayed consistent across sizes), the identity is **typographic**: the
+wordmark and the JM initials are both set in **Space Grotesk** — a modern,
+tech-forward geometric sans — so every asset shares a single source of truth and
+stays pixel-consistent from a 16px favicon to the 1200×630 social card.
 
-Current brand mark: the wordmark **"JulioDev"** + a Font Awesome microchip icon
-(`fa-microchip`) in the navbar. Keep the wordmark; regenerate a custom icon/logo
-that matches the dark, minimal aesthetic.
+- **Navbar:** the "Julio Macias" wordmark in Space Grotesk 600
+  (`src/components/Layout/Navbar.js` / `Navbar.css`). The old `JulioDev` +
+  microchip icon is gone.
+- **Font:** self-hosted via `@fontsource/space-grotesk` (no third-party
+  requests, consistent with the GDPR-safe font setup).
+- **Palette:** charcoal `#1a1717` + white, matching the existing dark theme.
 
-**Prompt A — Minimal monogram icon:**
+**Asset generation (reproducible):** all favicon / PWA / Open Graph images are
+generated from one script — no manual image editing.
+
 ```
-A minimalist logo icon for a software engineering consultancy called "JulioDev".
-A clean geometric monogram combining the letters "J" and "D", styled as a subtle
-microchip / circuit motif. Flat vector, single colour (near-black #1a1717) on a
-transparent background, thick rounded strokes, high contrast, no text, no
-gradients. Designed to work as a small favicon and a navbar icon. Modern, premium,
-tech-forward.
-```
-
-**Prompt B — Wordmark + icon lockup:**
-```
-A horizontal logo lockup for "JulioDev", a freelance software engineer and
-consultancy. Bold geometric sans-serif wordmark in near-black (#1a1717) next to a
-small abstract microchip/circuit monogram icon. Flat vector, transparent
-background, balanced spacing, premium and minimal, suitable for a website header.
-No tagline, no drop shadows.
+node scripts/gen-brand-assets.js
 ```
 
-**Prompt C — App/favicon tile:**
-```
-A square app icon for "JulioDev" software consultancy. A single abstract "JD"
-microchip monogram, white on a dark charcoal (#1a1717) rounded square, flat
-vector, centred, generous padding, crisp at 32x32px. Minimal, modern, tech brand.
-```
+It renders the JM tile and the og-image from Space Grotesk (vendored at
+`scripts/fonts/SpaceGrotesk.ttf`) and writes:
+- `public/favicon.ico` (16/32/48), `favicon-16x16.png`, `favicon-32x32.png`
+- `public/apple-touch-icon.png` (180), `logo192.png`, `logo512.png`
+- `public/og-image.png` (1200×630 wordmark + tagline card)
 
-**Variations to request:** light-on-dark and dark-on-light versions, plus a
-1:1 square crop for favicon/PWA icons.
+Requires devDependencies `sharp` and `png-to-ico`. `index.html` (favicons,
+theme-color, default OG/Twitter tags) and `manifest.json` (icons, name, theme)
+are already wired to these files.
 
-**After generating, update:**
-- `public/favicon.ico`, `favicon-16x16.png`, `favicon-32x32.png`,
-  `apple-touch-icon.png`, `logo192.png`, `logo512.png`
-- The navbar mark in `src/components/Layout/Navbar.js` (replace the
-  `fa-microchip` `<i>` with the new SVG/img)
-- `public/manifest.json` icon references
-- The `og-image.png` referenced by Helmet (currently missing — see §4.4)
+**Remaining (not blocking):** point the live domain to `juliomacias.dev` and then
+update the absolute URLs in `index.html` / `src/utils/siteConfig.js` (`SITE_URL`)
+and the contact email — see §4.
 
 ---
 

@@ -24,8 +24,8 @@
   },
   "privacy": {
     "meta": {
-      "title": "Privacy Policy | JulioDev",
-      "description": "How JulioDev collects, uses and protects your personal data."
+      "title": "Privacy Policy | Julio Macias",
+      "description": "How Julio Macias collects, uses and protects your personal data."
     },
     "title": "Privacy Policy",
     "lastUpdated": "Last updated: {{date}}",
@@ -57,7 +57,7 @@
   },
   "cookie": {
     "meta": {
-      "title": "Cookie Policy | JulioDev",
+      "title": "Cookie Policy | Julio Macias",
       "description": "Which cookies this website uses and how to manage them."
     },
     "title": "Cookie Policy",

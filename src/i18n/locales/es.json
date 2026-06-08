@@ -15,7 +15,7 @@
   "footer": {
     "contactMe": "Contáctame:",
     "otherLinks": "Otros enlaces:",
-    "rights": "© {{year}} JulioDev. Todos los derechos reservados.",
+    "rights": "© {{year}} Julio Macias. Todos los derechos reservados.",
     "skillsTitle": "Sitio web desarrollado con las siguientes tecnologías:"
   },
   "notFound": {
@@ -24,7 +24,7 @@
   },
   "home": {
     "meta": {
-      "title": "JulioDev | Portafolio de Ingeniero de Software",
+      "title": "Julio Macias | Portafolio de Ingeniero de Software",
       "description": "Portafolio de Julio Macías González que muestra proyectos de ingeniería de software, incluyendo desarrollo web, arquitectura en la nube y aplicaciones móviles."
     },
     "hero": {
@@ -52,7 +52,7 @@
   },
   "projects": {
     "meta": {
-      "title": "Proyectos | Portafolio de JulioDev",
+      "title": "Proyectos | Portafolio de Julio Macias",
       "description": "Explora los proyectos de ingeniería de software de Julio Macías González, incluyendo CineShare, EugeniaBravo y más."
     },
     "heading": "Mis proyectos",
@@ -78,7 +78,7 @@
   },
   "services": {
     "meta": {
-      "title": "Servicios | JulioDev — Desarrollo Web y Consultoría",
+      "title": "Servicios | Julio Macias — Desarrollo Web y Consultoría",
       "description": "Ingeniería de software y consultoría freelance por Julio Macías González. Especializado en Supabase, Next.js y React, con experiencia empresarial en Angular, Java/Spring y CI/CD."
     },
     "hero": {
@@ -153,7 +153,7 @@
   },
   "contact": {
     "meta": {
-      "title": "Contáctame | Portafolio de JulioDev",
+      "title": "Contáctame | Portafolio de Julio Macias",
       "description": "Ponte en contacto con Julio Macías González. Formulario de contacto para consultas de ingeniería de software y oportunidades de colaboración."
     },
     "title": "Gracias por tomarte el tiempo de escribirme.",
@@ -175,7 +175,7 @@
     },
     "cineshare": {
       "meta": {
-        "title": "Proyecto CineShare | Portafolio de JulioDev",
+        "title": "Proyecto CineShare | Portafolio de Julio Macias",
         "description": "CineShare - Una plataforma social para compartir recomendaciones de películas y series. Construida con Angular, Spring Boot, MySQL y AWS."
       },
       "intro1": "CineShare es un proyecto personal enfocado en explorar tecnologías web modernas e infraestructura en la nube. Esta experiencia de aprendizaje me ayudó a obtener conocimientos valiosos para futuras aplicaciones del mundo real.",
@@ -204,7 +204,7 @@
     },
     "eugeniaBravo": {
       "meta": {
-        "title": "Proyecto EugeniaBravo | Portafolio de JulioDev",
+        "title": "Proyecto EugeniaBravo | Portafolio de Julio Macias",
         "description": "EugeniaBravo - Un sitio web profesional construido con React, TypeScript, AWS Amplify y Brevo para un cliente empresarial."
       },
       "intro": "Para seguir desarrollando mis habilidades de ingeniería de software, creé eugeniabravo.com y tudivorciointeligente.com. Este proyecto no solo puso a prueba mis capacidades técnicas, sino que también mejoró mis habilidades de comunicación con el cliente.",
@@ -236,7 +236,7 @@
     },
     "eugeniaBravoRebuild": {
       "meta": {
-        "title": "Reconstrucción de EugeniaBravo | Portafolio de JulioDev",
+        "title": "Reconstrucción de EugeniaBravo | Portafolio de Julio Macias",
         "description": "Reconstrucción de EugeniaBravo - Reconstruido con Next.js, TypeScript y Supabase para mejorar el rendimiento y la mantenibilidad."
       },
       "intro": "EugeniaBravo evolucionó de una sencilla aplicación de página única en React a un proyecto construido con Next.js para mejorar el SEO, la visibilidad y los flujos editoriales de un sitio orientado al contenido. La migración también reemplazó AWS Amplify por Supabase, que encaja mejor en proyectos más pequeños que aun así necesitan autenticación, almacenamiento y una base de datos relacional.",

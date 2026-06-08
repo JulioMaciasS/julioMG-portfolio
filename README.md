@@ -1,4 +1,4 @@
-# JulioDev Portfolio
+# Julio Macias Portfolio
 
 Personal portfolio website for Julio Macias Gonzalez, built to present software engineering work with more depth than a typical project grid. The site combines a polished landing page, a dedicated projects hub, long-form case studies, a contact flow, and downloadable resume assets in one React application.
 

@@ -15,7 +15,7 @@
   "footer": {
     "contactMe": "تواصل معي:",
     "otherLinks": "روابط أخرى:",
-    "rights": "© {{year}} JulioDev. جميع الحقوق محفوظة.",
+    "rights": "© {{year}} Julio Macias. جميع الحقوق محفوظة.",
     "skillsTitle": "تم تطوير الموقع باستخدام التقنيات التالية:"
   },
   "notFound": {
@@ -24,7 +24,7 @@
   },
   "home": {
     "meta": {
-      "title": "JulioDev | معرض أعمال مهندس برمجيات",
+      "title": "Julio Macias | معرض أعمال مهندس برمجيات",
       "description": "معرض أعمال خوليو ماسياس غونزاليس الذي يستعرض مشاريع هندسة البرمجيات بما في ذلك تطوير الويب وهندسة السحابة وتطبيقات الهاتف المحمول."
     },
     "hero": {
@@ -52,7 +52,7 @@
   },
   "projects": {
     "meta": {
-      "title": "المشاريع | معرض أعمال JulioDev",
+      "title": "المشاريع | معرض أعمال Julio Macias",
       "description": "تصفّح مشاريع هندسة البرمجيات لخوليو ماسياس غونزاليس بما في ذلك CineShare وEugeniaBravo وغيرها."
     },
     "heading": "مشاريعي",
@@ -78,7 +78,7 @@
   },
   "services": {
     "meta": {
-      "title": "الخدمات | JulioDev — تطوير الويب والاستشارات",
+      "title": "الخدمات | Julio Macias — تطوير الويب والاستشارات",
       "description": "خدمات هندسة برمجيات واستشارات مستقلة يقدّمها خوليو ماسياس غونزاليس. متخصص في Supabase وNext.js وReact، مع خبرة مؤسسية في Angular وJava/Spring وCI/CD."
     },
     "hero": {
@@ -153,7 +153,7 @@
   },
   "contact": {
     "meta": {
-      "title": "تواصل معي | معرض أعمال JulioDev",
+      "title": "تواصل معي | معرض أعمال Julio Macias",
       "description": "تواصل مع خوليو ماسياس غونزاليس. نموذج تواصل لاستفسارات هندسة البرمجيات وفرص التعاون."
     },
     "title": "شكراً لأخذك الوقت للتواصل.",
@@ -175,7 +175,7 @@
     },
     "cineshare": {
       "meta": {
-        "title": "مشروع CineShare | معرض أعمال JulioDev",
+        "title": "مشروع CineShare | معرض أعمال Julio Macias",
         "description": "CineShare - منصة اجتماعية لمشاركة توصيات الأفلام والمسلسلات. مبنية باستخدام Angular وSpring Boot وMySQL وAWS."
       },
       "intro1": "CineShare مشروع شخصي يركّز على استكشاف تقنيات الويب الحديثة والبنية التحتية السحابية. ساعدتني هذه التجربة التعليمية على اكتساب رؤى قيّمة للتطبيقات الواقعية المستقبلية.",
@@ -204,7 +204,7 @@
     },
     "eugeniaBravo": {
       "meta": {
-        "title": "مشروع EugeniaBravo | معرض أعمال JulioDev",
+        "title": "مشروع EugeniaBravo | معرض أعمال Julio Macias",
         "description": "EugeniaBravo - موقع احترافي مبني باستخدام React وTypeScript وAWS Amplify وBrevo لعميل تجاري."
       },
       "intro": "لتطوير مهاراتي في هندسة البرمجيات أكثر، أنشأت eugeniabravo.com وtudivorciointeligente.com. لم يتحدَّ هذا المشروع قدراتي التقنية فحسب، بل حسّن أيضاً مهاراتي في التواصل مع العملاء.",
@@ -236,7 +236,7 @@
     },
     "eugeniaBravoRebuild": {
       "meta": {
-        "title": "إعادة بناء EugeniaBravo | معرض أعمال JulioDev",
+        "title": "إعادة بناء EugeniaBravo | معرض أعمال Julio Macias",
         "description": "إعادة بناء EugeniaBravo - أُعيد بناؤه باستخدام Next.js وTypeScript وSupabase لتحسين الأداء وقابلية الصيانة."
       },
       "intro": "تطوّر EugeniaBravo من تطبيق React أحادي الصفحة بسيط إلى بنية Next.js لتحسين السيو وقابلية الاكتشاف وتدفقات التحرير لموقع قائم على المحتوى. كما استبدل الترحيل AWS Amplify بـ Supabase، وهو خيار أنسب للمشاريع الأصغر التي لا تزال بحاجة إلى المصادقة والتخزين وقاعدة بيانات علائقية.",

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from '../LocalizedLink';
 import { useTranslation } from 'react-i18next';
-import { Cpu, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
 import './Navbar.css';
 
@@ -53,8 +53,7 @@ window.addEventListener('resize', showButton);
             <nav className='navbar'>
                 <div className='navbar-container'>
                     <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                        JulioDev
-                        <Cpu className='ml-2' size={22} />
+                        Julio Macias
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
                         {click ? <X size={28} color='#fff' /> : <Menu size={28} color='#fff' />}

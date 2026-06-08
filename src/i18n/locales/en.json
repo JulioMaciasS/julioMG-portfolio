@@ -15,7 +15,7 @@
   "footer": {
     "contactMe": "Contact me:",
     "otherLinks": "Other links:",
-    "rights": "© {{year}} JulioDev. All rights reserved.",
+    "rights": "© {{year}} Julio Macias. All rights reserved.",
     "skillsTitle": "Website developed using the following technologies:"
   },
   "notFound": {
@@ -24,7 +24,7 @@
   },
   "home": {
     "meta": {
-      "title": "JulioDev | Software Engineer Portfolio",
+      "title": "Julio Macias | Software Engineer Portfolio",
       "description": "Julio Macias Gonzalez's portfolio showcasing software engineering projects including web development, cloud architecture, and mobile applications."
     },
     "hero": {
@@ -52,7 +52,7 @@
   },
   "projects": {
     "meta": {
-      "title": "Projects | JulioDev Portfolio",
+      "title": "Projects | Julio Macias Portfolio",
       "description": "Browse Julio Macias Gonzalez's software engineering projects including CineShare, EugeniaBravo, and more."
     },
     "heading": "My Projects",
@@ -78,7 +78,7 @@
   },
   "services": {
     "meta": {
-      "title": "Services | JulioDev — Web Development & Consulting",
+      "title": "Services | Julio Macias — Web Development & Consulting",
       "description": "Freelance software engineering and consulting by Julio Macias Gonzalez. Specialised in Supabase, Next.js and React, with enterprise experience in Angular, Java/Spring and CI/CD."
     },
     "hero": {
@@ -153,7 +153,7 @@
   },
   "contact": {
     "meta": {
-      "title": "Contact Me | JulioDev Portfolio",
+      "title": "Contact Me | Julio Macias Portfolio",
       "description": "Get in touch with Julio Macias Gonzalez. Contact form for software engineering enquiries and collaboration opportunities."
     },
     "title": "Thanks for taking the time to reach out.",
@@ -175,7 +175,7 @@
     },
     "cineshare": {
       "meta": {
-        "title": "CineShare Project | JulioDev Portfolio",
+        "title": "CineShare Project | Julio Macias Portfolio",
         "description": "CineShare - A social platform for sharing movie and TV show recommendations. Built with Angular, Spring Boot, MySQL, and AWS."
       },
       "intro1": "CineShare is a personal project focused on exploring modern web technologies and cloud infrastructure. This learning experience helped me gain valuable insights for future real-world applications.",
@@ -204,7 +204,7 @@
     },
     "eugeniaBravo": {
       "meta": {
-        "title": "EugeniaBravo Project | JulioDev Portfolio",
+        "title": "EugeniaBravo Project | Julio Macias Portfolio",
         "description": "EugeniaBravo - A professional website built with React, TypeScript, AWS Amplify, and Brevo for a business client."
       },
       "intro": "To further develop my software engineering skills, I created eugeniabravo.com and tudivorciointeligente.com. This project not only challenged my technical abilities but also improved my client communication skills.",
@@ -236,7 +236,7 @@
     },
     "eugeniaBravoRebuild": {
       "meta": {
-        "title": "EugeniaBravo Rebuild | JulioDev Portfolio",
+        "title": "EugeniaBravo Rebuild | Julio Macias Portfolio",
         "description": "EugeniaBravo Rebuild - Rebuilt with Next.js, TypeScript, and Supabase for improved performance and maintainability."
       },
       "intro": "EugeniaBravo evolved from a plain React single page app into a Next.js build to improve SEO, discoverability, and editorial workflows for a content-driven site. The migration also replaced AWS Amplify with Supabase, which is a better fit for smaller projects that still need auth, storage, and a relational database.",

@@ -24,7 +24,11 @@
   margin-left: 20px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  font-family: 'Space Grotesk', 'Roboto', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
   display: flex;
   align-items: center;
 }
