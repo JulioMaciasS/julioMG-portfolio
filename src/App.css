@@ -1,28 +1,15 @@
 * {
-    box-sizing: border-box;
-font-family: 'Roboto', sans-serif;
-    /* font-family: 'PT Sans', sans-serif; */
-  }
-  
-.hero-section h2 {
-    padding: 30px;
-font-size: 36px;
-/* color: rgb(0, 0, 0); */
-text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
 }
 
-.hero-section h3 {
-    /* padding: 30px;
-font-size: 26px; */
-/* color: rgb(0, 0, 0); */
-text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+.hero-section h2 {
+  padding: 30px;
+  font-size: 36px;
 }
 
 .hero-section p {
-    text-align: center;
-    flex-wrap: wrap;
-    /* color: #000000; */
-    /* font-size: 18px; */
-    padding-left: 0;
-    padding-right: 0;
+  text-align: center;
+  flex-wrap: wrap;
+  padding-left: 0;
+  padding-right: 0;
 }

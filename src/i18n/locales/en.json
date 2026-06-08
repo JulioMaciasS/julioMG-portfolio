@@ -24,20 +24,22 @@
   },
   "home": {
     "meta": {
-      "title": "Julio Macias | Software Engineer Portfolio",
-      "description": "Julio Macias Gonzalez's portfolio showcasing software engineering projects including web development, cloud architecture, and mobile applications."
+      "title": "Julio Macias | Software Developer",
+      "description": "Julio Macias Gonzalez — software developer with industry experience at Citi. Full-stack web, cloud and AI-driven applications. Available for freelance and consulting."
     },
     "hero": {
-      "title": "Welcome to my portfolio!",
-      "subtitle": "I'm a software engineer that chases problems and pursues solutions.",
-      "projects": "Projects",
-      "contact": "Contact me",
-      "scrollAria": "Scroll to About section"
+      "badge": "Available for freelance & consulting",
+      "title": "Hi, I'm Julio. I build full-stack web products.",
+      "subtitle": "Software developer with industry experience at Citi, specialising in full-stack web, cloud and AI-driven apps. I help businesses design, build and ship reliable software.",
+      "work": "Work with me",
+      "projects": "View my work",
+      "contact": "or just say hello →",
+      "scrollAria": "Scroll to the next section"
     },
     "about": {
       "title": "Hi, I'm Julio. Nice to meet you!",
-      "body1": "Since 2022, I have been sharpening my Software Engineering technologies.",
-      "body2": "I have a strong passion for full-stack web development and I actively look for innovative ways to leverage technology to help drive business success.",
+      "body1": "I'm a software developer and Computer Science graduate from Queen's University Belfast, with industry experience at Citi building and shipping full-stack applications.",
+      "body2": "I'm passionate about full-stack web development, cloud and AI — and I love turning ideas into reliable products that drive real business results.",
       "tags": {
         "problemSolver": "Problem Solver",
         "teamPlayer": "Team Player",
@@ -46,8 +48,15 @@
       }
     },
     "cards": {
-      "heading": "Discover my latest projects",
-      "more": "More Projects"
+      "heading": "Latest work",
+      "subheading": "A few recent projects — from real client work to cloud and AI experiments.",
+      "more": "View all projects"
+    },
+    "servicesCta": {
+      "eyebrow": "Freelance & consulting",
+      "heading": "Need a developer who ships?",
+      "text": "I take on freelance and consulting work — from full web apps to migrations, cloud and technical advice. Direct communication, real shipped results.",
+      "button": "See how I can help"
     }
   },
   "projects": {
@@ -56,8 +65,13 @@
       "description": "Browse Julio Macias Gonzalez's software engineering projects including CineShare, EugeniaBravo, and more."
     },
     "heading": "My Projects",
+    "subheading": "Real client work, cloud platforms and AI experiments — each with a write-up of how it was built.",
     "new": "New!",
     "items": {
+      "chatgptlearn": {
+        "title": "ChatGPTLearn",
+        "description": "Final year project — a full-stack AI training platform helping businesses learn practical ChatGPT workflows."
+      },
       "eugenia-bravo-rebuild": {
         "title": "EugeniaBravo Rebuild",
         "description": "Migration to Next.js + Supabase for better SEO and easier ops."
@@ -69,10 +83,6 @@
       "cineshare": {
         "title": "CineShare",
         "description": "Learn more about CineShare's development. A social media to discover Amazing Movies and TV Shows!"
-      },
-      "universal-paperclips": {
-        "title": "Universal Paperclips for iOS",
-        "description": "This article contains a guide explaining how I developed a reduced version of the game Universal Paperclips. Some of the key features presented in the app are Google Ads and Microtransactions."
       }
     }
   },
@@ -172,6 +182,26 @@
       "frontendHeading": "Frontend",
       "backendHeading": "Backend",
       "conclusionHeading": "Conclusion"
+    },
+    "chatgptlearn": {
+      "meta": {
+        "title": "ChatGPTLearn | Julio Macias Portfolio",
+        "description": "ChatGPTLearn — my final year project. A full-stack AI training platform built with Next.js, React, Supabase and PostgreSQL to help businesses learn practical ChatGPT workflows."
+      },
+      "date": "April 2026",
+      "intro": "ChatGPTLearn is my final year project: a full-stack AI training platform that helps businesses and their teams learn practical, hands-on ChatGPT workflows. Rather than another set of slides, it gives users a real ChatGPT-style interface to practise in, wrapped in a course and team-management experience.",
+      "goalsHeading": "The Goal",
+      "goalsBody": "Most AI training is theoretical and forgettable. The aim was to build a platform where teams actually do the work — practising prompts and workflows in a familiar chat interface — while managers onboard their people and track progress through structured courses and invite-based access.",
+      "technologiesIntro": "ChatGPTLearn is built on a modern full-stack: Next.js and React on the frontend for fast, SEO-ready pages, with Supabase and PostgreSQL handling authentication, data and storage.",
+      "featuresHeading": "Key Features",
+      "feature1": "A ChatGPT-style chat interface where users practise real prompting workflows.",
+      "feature2": "Course management to structure lessons and learning paths.",
+      "feature3": "Team onboarding with invite-based access so businesses can roll it out to their people.",
+      "feature4": "Role-based access and a relational data model on Supabase/PostgreSQL.",
+      "aiHeading": "Built with AI-assisted development",
+      "aiBody": "The project was also an experiment in AI-assisted engineering. I built it leaning on tools like Claude Code, Codex and GitHub Copilot — using them to move faster while keeping full control over architecture and code quality. It reflects how I work today: AI as a force-multiplier, not a replacement for engineering judgement.",
+      "outcomeHeading": "Outcome",
+      "outcomeBody": "ChatGPTLearn brought together everything I care about — full-stack web, a real product use-case, and AI — into a single graded final year project, and it's the direction I want to keep building in."
     },
     "cineshare": {
       "meta": {

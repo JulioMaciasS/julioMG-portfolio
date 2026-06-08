@@ -11,6 +11,7 @@ import ScrollToTop from './utils/ScrollToTop.js';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import EugeniaBravo from './components/Posts/EugeniaBravo.js';
 import EugeniaBravoRebuild from './components/Posts/EugeniaBravoRebuild.js';
+import ChatGPTLearn from './components/Posts/ChatGPTLearn.js';
 import ContactMePage from './pages/ContactMePage.js';
 import PrivacyPolicy from './pages/PrivacyPolicy.js';
 import CookiePolicy from './pages/CookiePolicy.js';
@@ -32,6 +33,7 @@ function App() {
             <Route path='/contact-me' element={<ContactMePage/>}/>
             <Route path='/projects' element={<Projects/>}/>
             <Route path='/services' element={<Services/>}/>
+            <Route path='/projects/chatgptlearn' element={<ChatGPTLearn/>}/>
             <Route path='/projects/cineshare' element={<CineSharePost/>}/>
             <Route path='/projects/eugeniabravo' element={<EugeniaBravo/>}/>
             <Route path='/projects/eugeniabravo-rebuild' element={<EugeniaBravoRebuild/>}/>
@@ -44,6 +46,7 @@ function App() {
               <Route path='contact-me' element={<ContactMePage/>}/>
               <Route path='projects' element={<Projects/>}/>
               <Route path='services' element={<Services/>}/>
+              <Route path='projects/chatgptlearn' element={<ChatGPTLearn/>}/>
               <Route path='projects/cineshare' element={<CineSharePost/>}/>
               <Route path='projects/eugeniabravo' element={<EugeniaBravo/>}/>
               <Route path='projects/eugeniabravo-rebuild' element={<EugeniaBravoRebuild/>}/>

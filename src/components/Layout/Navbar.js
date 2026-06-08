@@ -52,8 +52,13 @@ window.addEventListener('resize', showButton);
         <>
             <nav className='navbar'>
                 <div className='navbar-container'>
-                    <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                        Julio Macias
+                    <Link to='/' className='navbar-logo' onClick={closeMobileMenu} aria-label='Julio Macias — home'>
+                        <svg className='navbar-logo-mark' viewBox='0 0 64 64' width='34' height='34' aria-hidden='true'>
+                            <rect width='64' height='64' rx='15' fill='#2a2624' stroke='#4a423d' strokeWidth='1.5' />
+                            <text x='32' y='44' textAnchor='middle' fontFamily="'Space Grotesk', sans-serif"
+                                  fontSize='30' fontWeight='700' letterSpacing='0.5' fill='#ffffff'>JM</text>
+                        </svg>
+                        <span className='navbar-logo-text'>Julio Macias</span>
                     </Link>
                     <div className='menu-icon' onClick={handleClick}>
                         {click ? <X size={28} color='#fff' /> : <Menu size={28} color='#fff' />}

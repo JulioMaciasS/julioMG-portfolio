@@ -2,6 +2,22 @@ const BASE_URL = '/images/logos/';
 
 export const PROJECTS = [
   {
+    id: 'chatgptlearn',
+    title: 'ChatGPTLearn',
+    description: 'Final year project. A full-stack AI training platform that helps businesses learn practical ChatGPT workflows.',
+    imageSrc: './images/chatgptlearn/cover.png',
+    link: '/projects/chatgptlearn',
+    isExternal: false,
+    padding: false,
+    isNew: true,
+    technologies: [
+      { name: 'Next.js', icon: `${BASE_URL}nextjs.svg` },
+      { name: 'React', icon: `${BASE_URL}react.png` },
+      { name: 'Supabase', icon: `${BASE_URL}supabase.svg` },
+      { name: 'OpenAI', icon: `${BASE_URL}openai.png` }
+    ]
+  },
+  {
     id: 'eugenia-bravo-rebuild',
     title: 'EugeniaBravo Rebuild',
     description: 'Migration to Next.js + Supabase for better SEO and easier ops.',
@@ -9,7 +25,6 @@ export const PROJECTS = [
     link: '/projects/eugeniabravo-rebuild',
     isExternal: false,
     padding: true,
-    isNew: true,
     technologies: [
       { name: 'Next.js', icon: `${BASE_URL}nextjs.svg` },
       { name: 'React', icon: `${BASE_URL}react.png` },
@@ -46,20 +61,6 @@ export const PROJECTS = [
       { name: 'Spring', icon: `${BASE_URL}spring-boot.png` },
       { name: 'MySQL', icon: `${BASE_URL}mysql.jpg` },
       { name: 'AWS', icon: `${BASE_URL}aws.png` }
-    ]
-  },
-  {
-    id: 'universal-paperclips',
-    title: 'Universal Paperclips for iOS',
-    description: 'This article contains a guide explaining how I developed a reduced version of the game Universal Paperclips. Some of the key features presented in the app are Google Ads and Microtransactions.',
-    imageSrc: './images/img-project.jpg',
-    link: 'https://juliotabj.wixsite.com/juliotechguides/post/how-to-create-a-minimalistic-app-with-ads-and-microtransactions-in-ios',
-    isExternal: true,
-    padding: false,
-    technologies: [
-      { name: 'Xcode', icon: `${BASE_URL}Xcode.png` },
-      { name: 'Swift', icon: `${BASE_URL}swift.png` },
-      { name: 'SwiftUI', icon: `${BASE_URL}swiftui.png` }
     ]
   }
 ];

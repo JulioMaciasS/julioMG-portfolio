@@ -24,13 +24,26 @@
   margin-left: 20px;
   cursor: pointer;
   text-decoration: none;
-  font-family: 'Space Grotesk', 'Roboto', sans-serif;
-  font-size: 1.7rem;
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: -0.01em;
   white-space: nowrap;
   display: flex;
   align-items: center;
+  gap: 12px;
+}
+
+.navbar-logo-mark {
+  flex-shrink: 0;
+  border-radius: 12px;
+  transition: transform 0.25s ease;
+}
+.navbar-logo:hover .navbar-logo-mark {
+  transform: rotate(-4deg) scale(1.06);
+}
+.navbar-logo-text {
+  transition: opacity 0.25s ease;
 }
 
 /* Add padding to the text and the icon */

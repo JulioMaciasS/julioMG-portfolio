@@ -1,0 +1,30 @@
+.about-card-face {
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.about-card-shadow {
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+/* On hover, the face lifts toward the cursor and the shadow spreads — the
+   signature offset card gains depth. */
+.about-card:hover .about-card-face {
+  transform: translate(2px, -2px);
+}
+.about-card:hover .about-card-shadow {
+  transform: translate(4px, 4px);
+}
+
+.about-tag {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+.about-tag:hover {
+  transform: translateY(-3px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-card:hover .about-card-face,
+  .about-card:hover .about-card-shadow { transform: none; }
+}

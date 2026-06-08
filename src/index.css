@@ -1,3 +1,84 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@layer base {
+  :root {
+    --color-ink: #1a1717;
+    --color-charcoal: #313131;
+    --color-surface: #242424;
+    --color-accent: #f4b942;
+    /* Mouse-tracked spotlight position (updated in JS). */
+    --mx: 50%;
+    --my: 35%;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer components {
+  /* Reveal-on-scroll: hidden until .is-visible is toggled by IntersectionObserver. */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+                transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Interactive spotlight backdrop — a charcoal field lit by the cursor. */
+  .spotlight-bg {
+    position: relative;
+    background-color: var(--color-ink);
+    isolation: isolate;
+  }
+  .spotlight-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+      radial-gradient(
+        600px circle at var(--mx) var(--my),
+        rgba(244, 185, 66, 0.18),
+        rgba(244, 185, 66, 0.06) 35%,
+        transparent 60%
+      ),
+      radial-gradient(900px circle at var(--mx) var(--my), rgba(255, 255, 255, 0.07), transparent 55%);
+    transition: background 0.15s ease-out;
+  }
+  /* Faint dotted texture, far cleaner than the old tiled pattern. */
+  .spotlight-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+    background-size: 26px 26px;
+    mask-image: radial-gradient(700px circle at var(--mx) var(--my), #000 10%, transparent 70%);
+    -webkit-mask-image: radial-gradient(700px circle at var(--mx) var(--my), #000 10%, transparent 70%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .spotlight-bg::before, .spotlight-bg::after { transition: none; }
+}

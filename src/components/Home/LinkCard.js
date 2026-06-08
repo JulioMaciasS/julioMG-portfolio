@@ -1,16 +1,44 @@
 import React from 'react';
+import Link from '../LocalizedLink';
+import { ArrowUpRight } from 'lucide-react';
 import "./LinkCard.css";
 
-export default function LinkCard({ imageURL, title, hrefLink, padding, description }) {
-  return (
-    <a className='custom-link' href={hrefLink} target='_blank' rel="noopener noreferrer">
-    <div className='LinkCard-container shadow-md'>
-        <img className={`LinkCard-image ${padding ? "p-4 bg-gray-50" : ""}`} src={imageURL} alt='Link Card'></img>
-        <div className='text-container p-4'>
-          <h3 className='text-xl font-bold'>{title}</h3>
-          <p className='text-sm'>{description}</p>
+/**
+ * Project / blog card. Internal routes use the localized client-side Link
+ * (no new tab, no full reload); only genuinely external links open a new tab.
+ */
+export default function LinkCard({ imageURL, title, hrefLink, padding, description, isExternal, isNew, tag }) {
+  const inner = (
+    <div className='LinkCard-container group'>
+      <div className="LinkCard-image-wrap">
+        <img
+          className={`LinkCard-image ${padding ? "p-6 bg-gray-50" : ""}`}
+          src={imageURL}
+          alt={title}
+          loading="lazy"
+        />
+        {isNew && <span className="LinkCard-badge">{tag}</span>}
+      </div>
+      <div className='LinkCard-body'>
+        <div className="flex items-center justify-between gap-2">
+          <h3 className='text-lg font-bold font-display text-[#1a1717]'>{title}</h3>
+          <ArrowUpRight className="LinkCard-arrow text-gray-400" size={18} />
         </div>
+        <p className='text-sm text-gray-500 mt-1 leading-relaxed'>{description}</p>
+      </div>
     </div>
-    </a>
-  )
+  );
+
+  if (isExternal) {
+    return (
+      <a className='LinkCard-link' href={hrefLink} target='_blank' rel="noopener noreferrer">
+        {inner}
+      </a>
+    );
+  }
+  return (
+    <Link className='LinkCard-link' to={hrefLink}>
+      {inner}
+    </Link>
+  );
 }
