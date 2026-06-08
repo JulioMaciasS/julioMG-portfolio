@@ -44,7 +44,7 @@
     "thirdPartiesTitle": "Services tiers",
     "thirdPartiesBody": "Avec votre consentement, j'utilise PostHog pour une analyse de produit respectueuse de la vie privée (comprenant des cartes de chaleur et des statistiques de session), ainsi qu'un prestataire de formulaire tiers (Basin) pour traiter les envois du formulaire de contact. Ces prestataires traitent les données pour mon compte selon leurs propres conditions.",
     "rightsTitle": "Vos droits",
-    "rightsBody": "Selon votre lieu de résidence, vous pouvez disposer du droit d'accéder à vos données personnelles, de les rectifier, de les supprimer ou d'en limiter le traitement, ainsi que de retirer votre consentement à tout moment. Pour exercer l'un de ces droits, contactez-moi à l'adresse {{contactEmail}}.",
+    "rightsBody": "Si vous résidez dans l'UE/EEE ou au Royaume-Uni, vous disposez du droit d'accéder à vos données personnelles, de les rectifier, de les supprimer, d'en limiter le traitement ou de vous y opposer, du droit à la portabilité des données, ainsi que du droit de retirer votre consentement à tout moment sans que cela n'affecte les traitements antérieurs. Vous avez également le droit d'introduire une réclamation auprès de votre autorité locale de protection des données (autorité de contrôle). Pour exercer l'un de ces droits, contactez-moi à l'adresse {{contactEmail}}.",
     "retentionTitle": "Conservation des données",
     "retentionBody": "Je conserve les messages du formulaire de contact uniquement le temps nécessaire au traitement de votre demande, et les données de mesure d'audience selon les paramètres de conservation standard des prestataires.",
     "transfersTitle": "Transferts internationaux",

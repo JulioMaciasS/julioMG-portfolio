@@ -27,7 +27,14 @@ export function loadAnalytics() {
     capture_pageview: true,
     autocapture: true,
     enable_heatmaps: true,
-    persistence: 'localStorage+cookie'
+    // GDPR-friendly defaults: don't build person profiles for anonymous
+    // visitors, honour Do Not Track, and mask all inputs in session replays.
+    person_profiles: 'identified_only',
+    respect_dnt: true,
+    persistence: 'localStorage+cookie',
+    session_recording: {
+      maskAllInputs: true
+    }
   });
 }
 

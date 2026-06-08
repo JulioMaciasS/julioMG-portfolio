@@ -162,6 +162,35 @@ Project API Key. Enable session replay/heatmaps in the PostHog project settings.
 Update the data-controller name/email/jurisdiction in `src/pages/PrivacyPolicy.js`
 (`CONTROLLER`) and the policy text once you've confirmed your details.
 
+### EU (GDPR / ePrivacy) compliance — implemented
+
+Because the site now collects usage data, the following were done for EU
+compliance:
+- **No third-party requests before consent.** Google Fonts and the Font Awesome
+  CDN were removed and replaced with **self-hosted fonts** (`@fontsource`) and
+  local icons (`lucide-react`), so the visitor's IP is not sent to Google or
+  Cloudflare on page load. PostHog only loads **after** consent.
+- **Prior, granular, revocable consent**: necessary always-on + optional
+  analytics (off by default); reject is as easy as accept; re-openable from the
+  footer. Consent is **versioned and expires after 180 days** (re-prompt).
+- **PostHog hardened**: `person_profiles: 'identified_only'` (no profiles for
+  anonymous visitors), `respect_dnt: true`, and session-replay input masking.
+- **Policies** updated with full GDPR rights (access, rectification, erasure,
+  restriction, objection, portability, withdraw consent, and the right to lodge
+  a complaint with a supervisory authority).
+
+**Still on you to finish the compliance picture:**
+- In the **PostHog project settings**: confirm **EU data residency**, enable
+  **"Discard client IP data"** (geolocation without storing IPs), and set a
+  sensible **data-retention** period.
+- Fill in the real **controller name, contact email and country/jurisdiction**
+  in `src/pages/PrivacyPolicy.js` (`CONTROLLER`) — you've moved out of the UK, so
+  the supervisory authority is now your new country's DPA.
+- Hosting note: the site is on **AWS Amplify**. Ensure the Amplify **rewrite
+  rule** sends client-side routes to `/index.html` (200) so `/es`, `/fr`, `/ar`
+  deep links resolve. `REACT_APP_POSTHOG_KEY` must be set as an Amplify build
+  env var (done) and picked up on the next build.
+
 The original research/options for this section are kept below for reference.
 
 **Goal:** understand visitor behaviour + be GDPR/PECR-compliant, at zero cost.
