@@ -47,7 +47,7 @@ function ChatGPTLearn() {
             {/* Cover */}
             <img
               src="/images/chatgptlearn/cover.png"
-              alt="ChatGPTLearn — AI training platform"
+              alt="ChatGPTLearn, AI training platform"
               className="w-full rounded-xl shadow-md mb-8"
             />
 

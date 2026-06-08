@@ -23,7 +23,7 @@ import '@fontsource/space-grotesk/700.css';
 // Easter egg #1 — a hello for the curious who open the console.
 // eslint-disable-next-line no-console
 console.log(
-  '%cHi there 👋  — Julio here.',
+  '%cHi there 👋  Julio here.',
   'font-size:15px;font-weight:700;color:#f4b942;'
 );
 // eslint-disable-next-line no-console
