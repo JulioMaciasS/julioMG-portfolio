@@ -22,22 +22,29 @@
     "message": "Esta página no existe. Es posible que el enlace esté roto o que la página se haya movido.",
     "back": "Volver al inicio"
   },
+  "easterEgg": {
+    "title": "¡Encontraste el secreto! 🎉",
+    "text": "Bien hecho. Quienes se fijan en los pequeños detalles suelen ser excelentes clientes…",
+    "cta": "Construyamos algo"
+  },
   "home": {
     "meta": {
-      "title": "Julio Macias | Portafolio de Ingeniero de Software",
-      "description": "Portafolio de Julio Macías González que muestra proyectos de ingeniería de software, incluyendo desarrollo web, arquitectura en la nube y aplicaciones móviles."
+      "title": "Julio Macias | Desarrollador de Software",
+      "description": "Julio Macías González — desarrollador de software con experiencia en la industria en Citi. Aplicaciones web full-stack, en la nube y basadas en IA. Disponible para trabajo freelance y consultoría."
     },
     "hero": {
-      "title": "¡Bienvenido a mi portafolio!",
-      "subtitle": "Soy un ingeniero de software que persigue los problemas y va tras las soluciones.",
-      "projects": "Proyectos",
-      "contact": "Contáctame",
+      "badge": "Disponible para freelance y consultoría",
+      "title": "Hola, soy Julio. Construyo productos web full-stack.",
+      "subtitle": "Desarrollador de software con experiencia en la industria en Citi, especializado en aplicaciones web full-stack, en la nube y basadas en IA. Ayudo a las empresas a diseñar, construir y lanzar software fiable.",
+      "work": "Trabaja conmigo",
+      "projects": "Ver mi trabajo",
+      "contact": "o simplemente saluda →",
       "scrollAria": "Desplázate a la sección Acerca de"
     },
     "about": {
       "title": "Hola, soy Julio. ¡Encantado de conocerte!",
-      "body1": "Desde 2022 he estado perfeccionando mis habilidades en tecnologías de Ingeniería de Software.",
-      "body2": "Me apasiona el desarrollo web full-stack y busco activamente formas innovadoras de aprovechar la tecnología para impulsar el éxito de los negocios.",
+      "body1": "Soy desarrollador de software y graduado en Ciencias de la Computación por la Queen's University Belfast, con experiencia en la industria en Citi construyendo y lanzando aplicaciones full-stack.",
+      "body2": "Me apasionan el desarrollo web full-stack, la nube y la IA — y me encanta convertir ideas en productos fiables que generan resultados reales para los negocios.",
       "tags": {
         "problemSolver": "Resuelvo problemas",
         "teamPlayer": "Trabajo en equipo",
@@ -46,8 +53,15 @@
       }
     },
     "cards": {
-      "heading": "Descubre mis últimos proyectos",
-      "more": "Más proyectos"
+      "heading": "Últimos trabajos",
+      "subheading": "Algunos proyectos recientes — desde trabajo real con clientes hasta experimentos en la nube y de IA.",
+      "more": "Ver todos los proyectos"
+    },
+    "servicesCta": {
+      "eyebrow": "Freelance y consultoría",
+      "heading": "¿Necesitas un desarrollador que entregue?",
+      "text": "Acepto trabajo freelance y de consultoría — desde aplicaciones web completas hasta migraciones, nube y asesoría técnica. Comunicación directa, resultados reales entregados.",
+      "button": "Mira cómo puedo ayudarte"
     }
   },
   "projects": {
@@ -56,8 +70,13 @@
       "description": "Explora los proyectos de ingeniería de software de Julio Macías González, incluyendo CineShare, EugeniaBravo y más."
     },
     "heading": "Mis proyectos",
+    "subheading": "Trabajo real con clientes, plataformas en la nube y experimentos de IA — cada uno con una descripción de cómo se construyó.",
     "new": "¡Nuevo!",
     "items": {
+      "chatgptlearn": {
+        "title": "ChatGPTLearn",
+        "description": "Proyecto de fin de carrera — una plataforma de formación en IA full-stack que ayuda a las empresas a aprender flujos de trabajo prácticos con ChatGPT."
+      },
       "eugenia-bravo-rebuild": {
         "title": "Reconstrucción de EugeniaBravo",
         "description": "Migración a Next.js + Supabase para un mejor SEO y una operativa más sencilla."
@@ -69,10 +88,6 @@
       "cineshare": {
         "title": "CineShare",
         "description": "Conoce más sobre el desarrollo de CineShare. ¡Una red social para descubrir películas y series increíbles!"
-      },
-      "universal-paperclips": {
-        "title": "Universal Paperclips para iOS",
-        "description": "Este artículo contiene una guía que explica cómo desarrollé una versión reducida del juego Universal Paperclips. Algunas de las características clave que presenta la app son los anuncios de Google y las microtransacciones."
       }
     }
   },
@@ -159,6 +174,22 @@
     "title": "Gracias por tomarte el tiempo de escribirme.",
     "heading": "¿Cómo puedo ayudarte hoy?",
     "formTitle": "Formulario de contacto",
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "tu@ejemplo.com",
+      "message": "Mensaje",
+      "messagePlaceholder": "Cuéntame un poco sobre tu proyecto o tu pregunta…",
+      "send": "Enviar mensaje",
+      "sending": "Enviando…",
+      "successTitle": "¡Mensaje enviado!",
+      "successText": "Gracias por escribirme — te responderé pronto.",
+      "sendAnother": "Enviar otro mensaje",
+      "error": "Algo salió mal. Inténtalo de nuevo o escríbeme directamente por correo.",
+      "notConfigured": "El formulario de contacto aún no está configurado. Contáctame por correo electrónico o LinkedIn.",
+      "privacy": "Tus datos solo se usan para responderte. Sin spam, nunca."
+    },
     "or": "o",
     "linkedinPrompt": "Conecta conmigo en LinkedIn",
     "linkedinButton": "Perfil de LinkedIn"
@@ -172,6 +203,26 @@
       "frontendHeading": "Frontend",
       "backendHeading": "Backend",
       "conclusionHeading": "Conclusión"
+    },
+    "chatgptlearn": {
+      "meta": {
+        "title": "ChatGPTLearn | Portafolio de Julio Macias",
+        "description": "ChatGPTLearn — mi proyecto de fin de carrera. Una plataforma de formación en IA full-stack construida con Next.js, React, Supabase y PostgreSQL para ayudar a las empresas a aprender flujos de trabajo prácticos con ChatGPT."
+      },
+      "date": "Abril de 2026",
+      "intro": "ChatGPTLearn es mi proyecto de fin de carrera: una plataforma de formación en IA full-stack que ayuda a las empresas y a sus equipos a aprender flujos de trabajo prácticos con ChatGPT. En lugar de otra serie de diapositivas, ofrece a los usuarios una interfaz real al estilo de ChatGPT para practicar, envuelta en una experiencia de cursos y gestión de equipos.",
+      "goalsHeading": "El objetivo",
+      "goalsBody": "La mayoría de la formación en IA es teórica y se olvida con facilidad. El objetivo era construir una plataforma donde los equipos realmente hagan el trabajo —practicando prompts y flujos de trabajo en una interfaz de chat familiar— mientras los responsables incorporan a su personal y siguen el progreso a través de cursos estructurados y acceso por invitación.",
+      "technologiesIntro": "ChatGPTLearn está construido sobre un stack full-stack moderno: Next.js y React en el frontend para páginas rápidas y listas para SEO, con Supabase y PostgreSQL encargándose de la autenticación, los datos y el almacenamiento.",
+      "featuresHeading": "Características principales",
+      "feature1": "Una interfaz de chat al estilo de ChatGPT donde los usuarios practican flujos de trabajo reales de prompting.",
+      "feature2": "Gestión de cursos para estructurar lecciones y rutas de aprendizaje.",
+      "feature3": "Incorporación de equipos con acceso por invitación para que las empresas puedan desplegarlo entre su personal.",
+      "feature4": "Acceso basado en roles y un modelo de datos relacional en Supabase/PostgreSQL.",
+      "aiHeading": "Construido con desarrollo asistido por IA",
+      "aiBody": "El proyecto fue también un experimento en ingeniería asistida por IA. Lo construí apoyándome en herramientas como Claude Code, Codex y GitHub Copilot — usándolas para avanzar más rápido manteniendo el control total sobre la arquitectura y la calidad del código. Refleja cómo trabajo hoy: la IA como multiplicador de fuerza, no como sustituto del criterio de ingeniería.",
+      "outcomeHeading": "Resultado",
+      "outcomeBody": "ChatGPTLearn reunió todo lo que me importa —el desarrollo web full-stack, un caso de uso de producto real y la IA— en un único proyecto de fin de carrera evaluado, y es la dirección en la que quiero seguir construyendo."
     },
     "cineshare": {
       "meta": {
