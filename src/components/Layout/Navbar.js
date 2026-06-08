@@ -82,15 +82,15 @@ window.addEventListener('resize', showButton);
                             {t('nav.sayHello')}&nbsp;<span>👋</span>
                             </Link>
                         </li>}
-                        <li className='nav-item flex items-center justify-center'>
-                            <LanguageSwitcher onSelect={closeMobileMenu} />
-                        </li>
                         <li className='h-[80px]'>
                         <Link to='/contact-me' className='nav-links-mobile ' onClick={closeMobileMenu}
                         >
                             {t('nav.sayHello')}&nbsp;<span>👋</span>
                           </Link>
             </li>
+                        <li className='nav-item flex items-center justify-center'>
+                            <LanguageSwitcher onSelect={closeMobileMenu} />
+                        </li>
                     </ul>
                     </div>
                     {/* {button && <Button buttonStyle='btn--outline'>Download CV/Resume</Button>} */}
