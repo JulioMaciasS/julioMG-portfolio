@@ -114,9 +114,10 @@ Requires devDependencies `sharp` and `png-to-ico`. `index.html` (favicons,
 theme-color, default OG/Twitter tags) and `manifest.json` (icons, name, theme)
 are already wired to these files.
 
-**Remaining (not blocking):** point the live domain to `juliomacias.dev` and then
-update the absolute URLs in `index.html` / `src/utils/siteConfig.js` (`SITE_URL`)
-and the contact email — see §4.
+**Remaining (not blocking):** the canonical domain is now `https://juliomacias.dev`
+(SITE_URL, sitemap, robots, OG, schema.org). Still to do: connect the domain in
+Vercel and point DNS, and decide on the contact email — it still reads
+`...@juliodev.co.uk` (left as-is until a mailbox exists on the new domain).
 
 ---
 

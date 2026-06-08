@@ -20,7 +20,7 @@ function ContactMePage () {
     path="/contact-me"
     title={t('contact.meta.title')}
     description={t('contact.meta.description')}
-    image="https://portfolio.juliodev.co.uk/og-image.png"
+    image="https://juliomacias.dev/og-image.png"
 />
 <ContactMe/>
         </>

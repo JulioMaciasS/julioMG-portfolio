@@ -41,7 +41,7 @@ function CineSharePost() {
         path="/projects/cineshare"
         title={t('posts.cineshare.meta.title')}
         description={t('posts.cineshare.meta.description')}
-        image="https://portfolio.juliodev.co.uk/images/CineShare.png"
+        image="https://juliomacias.dev/images/CineShare.png"
         type="article"
       />
       <div className='post-container'>

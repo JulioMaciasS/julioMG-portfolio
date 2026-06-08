@@ -14,7 +14,7 @@ function Home() {
                 path="/"
                 title={t('home.meta.title')}
                 description={t('home.meta.description')}
-                image="https://portfolio.juliodev.co.uk/og-image.png"
+                image="https://juliomacias.dev/og-image.png"
             />
             <HeroSection />
             <div className='min-h-fit flex flex-col items-center justify-center hero-section'>

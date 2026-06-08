@@ -11,7 +11,7 @@ function Projects () {
     path="/projects"
     title={t('projects.meta.title')}
     description={t('projects.meta.description')}
-    image="https://portfolio.juliodev.co.uk/og-image.png"
+    image="https://juliomacias.dev/og-image.png"
 />
 <ProjectsSection/>
         </>

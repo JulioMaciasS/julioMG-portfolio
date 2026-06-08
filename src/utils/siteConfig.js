@@ -2,7 +2,7 @@
 // means the upcoming .co.uk -> .com domain move is a one-line change, and all
 // canonical/hreflang URLs stay consistent.
 
-export const SITE_URL = 'https://portfolio.juliodev.co.uk';
+export const SITE_URL = 'https://juliomacias.dev';
 
 export const DEFAULT_LANG = 'en';
 // Languages that live under a URL prefix (English stays at the unprefixed root).

@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://portfolio.juliodev.co.uk/sitemap.xml
+Sitemap: https://juliomacias.dev/sitemap.xml

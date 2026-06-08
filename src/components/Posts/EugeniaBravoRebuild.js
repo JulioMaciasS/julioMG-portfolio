@@ -86,7 +86,7 @@ function EugeniaBravoRebuild() {
         path="/projects/eugeniabravo-rebuild"
         title={t('posts.eugeniaBravoRebuild.meta.title')}
         description={t('posts.eugeniaBravoRebuild.meta.description')}
-        image="https://portfolio.juliodev.co.uk/images/eugeniaBravoPost/EugeniaBravoIcon.png"
+        image="https://juliomacias.dev/images/eugeniaBravoPost/EugeniaBravoIcon.png"
         type="article"
       />
       <div className='post-container'>

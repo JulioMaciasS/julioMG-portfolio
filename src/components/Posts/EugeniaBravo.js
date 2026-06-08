@@ -69,7 +69,7 @@ function EugeniaBravo() {
         path="/projects/eugeniabravo"
         title={t('posts.eugeniaBravo.meta.title')}
         description={t('posts.eugeniaBravo.meta.description')}
-        image="https://portfolio.juliodev.co.uk/images/eugeniaBravoPost/EugeniaBravoIcon.png"
+        image="https://juliomacias.dev/images/eugeniaBravoPost/EugeniaBravoIcon.png"
         type="article"
       />
       <div className='post-container'>
