@@ -147,6 +147,10 @@ REACT_APP_POSTHOG_KEY=phc_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   # PostHog Project A
 REACT_APP_POSTHOG_HOST=https://eu.i.posthog.com             # optional, EU is the default
 # Optional: force the consent banner to show even without a key (previews):
 REACT_APP_FORCE_CONSENT=true
+# Contact form (Web3Forms) — get a free access key at web3forms.com (just
+# enter the destination email, no signup). Without it the form shows a polite
+# "not configured" message and the LinkedIn/email fallbacks still work.
+REACT_APP_WEB3FORMS_KEY=your-web3forms-access-key
 ```
 Get the key at posthog.com → sign up → choose **EU Cloud** → Project Settings →
 Project API Key. Enable session replay/heatmaps in the PostHog project settings.
