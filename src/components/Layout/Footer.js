@@ -17,7 +17,7 @@ export default function Footer() {
           <div className='flex flex-col sm:flex-row gap-10 sm:gap-20 p-4 sm:p-8'>
             <div>
               <h1 className='text-xl mb-2'>{t('footer.contactMe')}</h1>
-              <h2 className='mb-2 text-sm sm:text-base break-all sm:break-normal'>julomaciasgonzalez@juliodev.co.uk</h2>
+              <h2 className='mb-2 text-sm sm:text-base break-all sm:break-normal'>julio@juliomacias.dev</h2>
               <a href="https://www.linkedin.com/in/julio-macias-gonzalez-199266282/" 
                  target='_blank' 
                  rel="noopener noreferrer" 

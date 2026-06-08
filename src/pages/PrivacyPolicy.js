@@ -7,7 +7,7 @@ const LAST_UPDATED = '2026-06-07';
 
 const CONTROLLER = {
   controllerName: 'Julio Macias Gonzalez',
-  contactEmail: 'julomaciasgonzalez@juliodev.co.uk'
+  contactEmail: 'julio@juliomacias.dev'
 };
 
 const SECTIONS = [
