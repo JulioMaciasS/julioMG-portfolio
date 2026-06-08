@@ -19,6 +19,7 @@ import NotFound from './pages/NotFound.js';
 import LangLayout from './components/Layout/LangLayout.js';
 import CookieConsent from './components/Consent/CookieConsent.js';
 import PageviewTracker from './components/Analytics/PageviewTracker.js';
+import EasterEgg from './components/common/EasterEgg.js';
 
 function App() {
   return (
@@ -59,6 +60,7 @@ function App() {
           </Routes>
           <Footer/>
           <CookieConsent/>
+          <EasterEgg/>
       </Router>
     </>
   );

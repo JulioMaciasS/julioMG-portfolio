@@ -1,122 +1,59 @@
 .project-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-size: cover; /* Added background-size property for better image handling */
-}
-
-.project-container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-    object-fit: contain;
-
-}
-
-.project-container {
-	margin: 0;
-	padding: 0;
-	--sz: 5px; /*** size ***/
-	--sp: 10s; /*** speed ***/
-	--b1: #3c3532;
-	--b2: #1c1b18;
-	--b3: #0c0b0a;
-	--b4: #0c0b0ae0;
-	--c1: #ffffff;
-	--ts: 0 0/calc(var(--sz) * 17.5) calc(var(--sz) * 29.5);
-}
-
-.project-container {
-	background:
-		/* black shadows */
-		radial-gradient(circle at 50% 50%, var(--b4) calc(var(--sz) * 1), #fff0 calc(var(--sz) * 8)) var(--ts),
-		radial-gradient(circle at 0% 0%, var(--b4) calc(var(--sz) * 1), #fff0 calc(var(--sz) * 8)) var(--ts),
-		radial-gradient(circle at 0% 100%, var(--b4) calc(var(--sz) * 1), #fff0 calc(var(--sz) * 8)) var(--ts),
-		radial-gradient(circle at 100% 0%, var(--b4) calc(var(--sz) * 1), #fff0 calc(var(--sz) * 8)) var(--ts),
-		radial-gradient(circle at 100% 100%, var(--b4) calc(var(--sz) * 1), #fff0 calc(var(--sz) * 8)) var(--ts),
-		/* border bottom */
-		conic-gradient(from 90deg at 97.5% 67%, var(--c1) 0 87.5deg, #fff0 88deg 100%) var(--ts), /*repeated*/
-		conic-gradient(from 90deg at 97.5% 67%, var(--c1) 0 87.5deg, #fff0 88deg 100%) var(--ts),
-		conic-gradient(from 182.5deg at 2.5% 67%, #fff0 0 0deg, var(--c1) 0.5deg 90deg, #fff0 0 100%) var(--ts), /*repeated*/
-		conic-gradient(from 182.5deg at 2.5% 67%, #fff0 0 0deg, var(--c1) 0.5deg 90deg, #fff0 0 100%) var(--ts), 
-		/* border top */
-		conic-gradient(from 270deg at 2.5% 33%, var(--c1) 0 87.5deg, #fff0 88deg 100%) var(--ts), /*repeated*/
-		conic-gradient(from 270deg at 2.5% 33%, var(--c1) 0 87.5deg, #fff0 88deg 100%) var(--ts),
-		conic-gradient(from 2.5deg at 97.5% 33%, #fff0 0 0deg, var(--c1) 0.5deg 90deg, #fff0 0 100%) var(--ts), /*repeated*/
-		conic-gradient(from 2.5deg at 97.5% 33%, #fff0 0 0deg, var(--c1) 0.5deg 90deg, #fff0 0 100%) var(--ts),
-		/* bottom */
-		conic-gradient(from 116.5deg at 50% 85.5%, var(--b1) 0 127deg, #fff0 0 100%) var(--ts), /*repeated*/
-		conic-gradient(from 116.5deg at 50% 85.5%, var(--b1) 0 127deg, #fff0 0 100%) var(--ts), /*repeated*/
-		conic-gradient(from 116.5deg at 50% 85.5%, var(--b1) 0 127deg, #fff0 0 100%) var(--ts),
-		conic-gradient(from 120deg at 50% 83%, var(--c1) 0 120deg, #fff0 0 100%) var(--ts),
-		/* top */
-		conic-gradient(from -63.5deg at 50% 14.5%, var(--b1) 0 127deg, #fff0 0 100%) var(--ts), /*repeated*/
-		conic-gradient(from -63.5deg at 50% 14.5%, var(--b1) 0 127deg, #fff0 0 100%) var(--ts), /*repeated*/
-		conic-gradient(from -63.5deg at 50% 14.5%, var(--b1) 0 127deg, #fff0 0 100%) var(--ts),
-		conic-gradient(from -60deg at 50% 17%, var(--c1) 0 120deg, #fff0 0 100%) var(--ts),
-		/* central gradient */
-		conic-gradient(
-			from 0deg at 50% 50%, #fff0 0 2deg, 
-			var(--b2) 2.5deg 57.5deg, 
-			#fff0 58deg 62.5deg, 
-			var(--b1) 63deg 117.5deg, 
-			#fff0 118deg 122.5deg, 
-			var(--b3) 123deg 177.5deg, 
-			#fff0 178deg 182deg, 
-			var(--b2) 182.5deg 237.5deg, 
-			#fff0 0 242.5deg, 
-			var(--b1) 243deg 297.5deg, 
-			#fff0 298deg 302.5deg, 
-			var(--b3) 303deg 357.5deg,
-			#fff0 358deg 360deg
-		) var(--ts),
-		/* bg */
-		var(--c1);
-	animation: colors var(--sp) linear 0s infinite;
+  width: 100%;
+  margin: 0;
+  padding: 40px 16px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Clean charcoal field with a soft static glow — replaces the old animated
+     tiled pattern (kept consistent with the home spotlight backdrop). */
+  background-color: #1a1717;
+  background-image:
+    radial-gradient(700px circle at 50% 0%, rgba(244, 185, 66, 0.12), transparent 60%),
+    radial-gradient(900px circle at 50% 0%, rgba(255, 255, 255, 0.05), transparent 55%);
 }
 
 .project-cards-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: calc(100vh - 80px);
-    height: fit-content;
-    width: 1200px;
-    background-color: whitesmoke;
-    padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - 200px);
+  height: fit-content;
+  width: 100%;
+  max-width: 1200px;
+  background-color: whitesmoke;
+  padding: 48px 40px;
+  border-radius: 28px;
+  box-shadow: 0 30px 60px -25px rgba(0, 0, 0, 0.5);
 }
 
 #title {
-    text-align: center;
-    color: #000000;
-    font-size: clamp(2.25rem, 3.5vw, 3.5rem);
-    font-weight: 800;
-    letter-spacing: 0.02em;
-    margin: 0 0 12px;
-    padding-left: 0;
-    padding-right: 0;
+  text-align: center;
+  color: #1a1717;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(2.25rem, 3.5vw, 3.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 12px;
 }
 
 #title::after {
-    content: '';
-    display: block;
-    width: 72px;
-    height: 3px;
-    margin: 12px auto 0;
-    background-color: #111111;
-    border-radius: 999px;
+  content: '';
+  display: block;
+  width: 72px;
+  height: 4px;
+  margin: 16px auto 0;
+  background-color: #f4b942;
+  border-radius: 999px;
 }
 
 #bottom {
-margin-bottom: 100px;
+  margin-bottom: 100px;
 }
 
-@media only screen and (max-width: 1200px) {
-	.project-cards-container{
-		width: 100%;
-	}
+@media only screen and (max-width: 768px) {
+  .project-cards-container {
+    padding: 32px 18px;
+    border-radius: 20px;
+  }
 }

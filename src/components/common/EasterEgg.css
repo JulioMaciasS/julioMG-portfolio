@@ -1,0 +1,56 @@
+.egg-toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  max-width: 340px;
+  padding: 16px 18px;
+  border-radius: 16px;
+  background: #1a1717;
+  color: #fff;
+  border: 1px solid #3a3330;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+  animation: egg-pop 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+@keyframes egg-pop {
+  0% { opacity: 0; transform: translateY(20px) scale(0.95); }
+  100% { opacity: 1; transform: none; }
+}
+.egg-link {
+  display: inline-block;
+  margin-top: 8px;
+  color: #f4b942;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.egg-link:hover { text-decoration: underline; }
+
+.egg-confetti {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 999;
+  overflow: hidden;
+}
+.egg-confetti span {
+  position: absolute;
+  top: -10px;
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+  opacity: 0.9;
+  animation: egg-fall 2.6s linear forwards;
+}
+@keyframes egg-fall {
+  0% { transform: translateY(-10px) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(105vh) rotate(540deg); opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .egg-confetti { display: none; }
+  .egg-toast { animation: none; }
+}

@@ -12,7 +12,10 @@ function ProjectsSection() {
                     <h1 id='title'>
                         {t('projects.heading')}
                     </h1>
-                    <div className='mt-10'>
+                    <p className='text-center text-gray-500 max-w-xl mx-auto text-lg'>
+                        {t('projects.subheading')}
+                    </p>
+                    <div className='mt-12 w-full'>
                     <ProjectCards/>
                     </div>
                 </div>

@@ -4,12 +4,13 @@ import ProjectCard from './ProjectCard';
 import Link from '../../LocalizedLink';
 import { useTranslation } from 'react-i18next';
 import { PROJECTS } from '../../../data/projects';
+import Reveal from '../../common/Reveal';
 
 function ProjectCards() {
     const { t } = useTranslation();
     return (
         <div className='flex flex-col gap-10 proj-cards-container'>
-            {PROJECTS.map((project) => {
+            {PROJECTS.map((project, i) => {
                 const card = (
                     <ProjectCard
                         imageSrc={project.imageSrc}
@@ -22,18 +23,10 @@ function ProjectCards() {
                     />
                 );
 
-                if (project.isExternal) {
-                    return (
-                        <React.Fragment key={project.id}>
-                            {card}
-                        </React.Fragment>
-                    );
-                }
-
                 return (
-                    <Link key={project.id} to={project.link}>
-                        {card}
-                    </Link>
+                    <Reveal key={project.id} delay={(i % 2) * 90}>
+                        {project.isExternal ? card : <Link to={project.link}>{card}</Link>}
+                    </Reveal>
                 );
             })}
         </div>

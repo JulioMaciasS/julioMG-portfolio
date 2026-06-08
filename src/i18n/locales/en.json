@@ -22,6 +22,11 @@
     "message": "This page does not exist. The link may be broken or the page was moved.",
     "back": "Back to Home"
   },
+  "easterEgg": {
+    "title": "You found the secret! 🎉",
+    "text": "Nicely done. People who notice the little details usually make great clients…",
+    "cta": "Let's build something"
+  },
   "home": {
     "meta": {
       "title": "Julio Macias | Software Developer",
@@ -169,6 +174,22 @@
     "title": "Thanks for taking the time to reach out.",
     "heading": "How can I help you today?",
     "formTitle": "Contact form",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "you@example.com",
+      "message": "Message",
+      "messagePlaceholder": "Tell me a little about your project or question…",
+      "send": "Send message",
+      "sending": "Sending…",
+      "successTitle": "Message sent!",
+      "successText": "Thanks for reaching out — I'll get back to you soon.",
+      "sendAnother": "Send another message",
+      "error": "Something went wrong. Please try again or email me directly.",
+      "notConfigured": "The contact form isn't configured yet. Please reach me via email or LinkedIn.",
+      "privacy": "Your details are only used to reply to you. No spam, ever."
+    },
     "or": "or",
     "linkedinPrompt": "Connect with me on LinkedIn",
     "linkedinButton": "LinkedIn Profile"
