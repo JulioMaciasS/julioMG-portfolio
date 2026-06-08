@@ -9,7 +9,7 @@ const ProjectCard = ({
     description, 
     technologies,
     new: newProject = false,
-    padding: padding = false,
+    padding = false,
   }) => {
     const { t } = useTranslation();
     return (
@@ -23,7 +23,7 @@ const ProjectCard = ({
             <img 
               className={`proj-card-image ${padding ? 'p-4 bg-gray-50 object-contain' : ''}`}
               src={imageSrc} 
-              alt={`${title} Image`} 
+              alt={title} 
             />
             <div className='proj-text-container'>
               <h1>{title} {newProject && <span className='text-yellow-400 text-xl'>{t('projects.new')}</span>} </h1>
