@@ -5,7 +5,8 @@ function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Scroll to top
+    // Jump instantly to the top on route change (no smooth animation).
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   }, [pathname]); // Triggers whenever the pathname changes
 
   return null; // This component doesn't render anything

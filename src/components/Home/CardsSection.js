@@ -5,11 +5,11 @@ import Link from '../LocalizedLink';
 import { Button } from '../Button';
 import { ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import { PROJECTS } from '../../data/projects';
+import { PROJECTS, formatProjectDate } from '../../data/projects';
 import Reveal from '../common/Reveal';
 
 export default function CardsSection() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const maxDescriptionLength = 92;
   const latestProjects = PROJECTS.slice(0, 4);
 
@@ -20,7 +20,7 @@ export default function CardsSection() {
   };
 
   return (
-    <section className="cards-section w-full bg-white px-4 py-20">
+    <section className="cards-section w-full bg-white px-4 py-24 rounded-t-[44px]">
       <Reveal className="text-center max-w-2xl mx-auto mb-12">
         <h2 className="font-display text-3xl sm:text-4xl font-bold text-[#1a1717] mb-3">
           {t('home.cards.heading')}
@@ -40,6 +40,7 @@ export default function CardsSection() {
               isExternal={project.isExternal}
               isNew={project.isNew}
               tag={t('projects.new')}
+              date={formatProjectDate(project.date, i18n.language)}
             />
           </Reveal>
         ))}

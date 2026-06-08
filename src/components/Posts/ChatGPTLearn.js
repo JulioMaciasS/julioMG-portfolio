@@ -51,18 +51,18 @@ function ChatGPTLearn() {
               className="w-full rounded-xl shadow-md mb-8"
             />
 
-            <div className="text-left space-y-8">
-              <section className="p-6 rounded-xl">
+            <div className="text-left space-y-5">
+              <section className="py-2">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.common.introHeading')}</h2>
                 <p className="text-gray-700 leading-relaxed">{t('posts.chatgptlearn.intro')}</p>
               </section>
 
-              <section className="p-6 rounded-xl">
+              <section className="py-2">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.chatgptlearn.goalsHeading')}</h2>
                 <p className="text-gray-700 leading-relaxed">{t('posts.chatgptlearn.goalsBody')}</p>
               </section>
 
-              <section className="p-6 rounded-xl">
+              <section className="py-2">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.common.technologiesHeading')}</h2>
                 <p className="text-gray-700 mb-6">{t('posts.chatgptlearn.technologiesIntro')}</p>
                 <div className="flex flex-row flex-wrap gap-6 justify-center items-center w-full text-center mb-2">
@@ -77,7 +77,7 @@ function ChatGPTLearn() {
                 </div>
               </section>
 
-              <section className="p-6 rounded-xl">
+              <section className="py-2">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.chatgptlearn.featuresHeading')}</h2>
                 <ul className="space-y-3">
                   {features.map((f, i) => (
@@ -94,7 +94,7 @@ function ChatGPTLearn() {
                 <p className="text-gray-700 leading-relaxed">{t('posts.chatgptlearn.aiBody')}</p>
               </section>
 
-              <section className="p-6 rounded-xl">
+              <section className="py-2">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.chatgptlearn.outcomeHeading')}</h2>
                 <p className="text-gray-700 leading-relaxed mb-4">{t('posts.chatgptlearn.outcomeBody')}</p>
                 <Link to="/services" className="text-blue-500 hover:underline font-medium">

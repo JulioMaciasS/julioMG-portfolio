@@ -38,19 +38,28 @@ function Navbar() {
             };
         }, []);
 
-const showButton = () => {if(window.innerWidth <=960) {
-    setButton(false)
-} else {setButton(true)}
+const [scrolled, setScrolled] = useState(false);
+
+const showButton = () => {
+    setButton(window.innerWidth > 960);
 };
 
 useEffect(() => {
-    showButton()},[]
-)
-window.addEventListener('resize', showButton);
+    showButton();
+    window.addEventListener('resize', showButton);
+    return () => window.removeEventListener('resize', showButton);
+}, []);
+
+useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 16);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+}, []);
 
     return (
         <>
-            <nav className='navbar'>
+            <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
                 <div className='navbar-container'>
                     <Link to='/' className='navbar-logo' onClick={closeMobileMenu} aria-label='Julio Macias — home'>
                         <svg className='navbar-logo-mark' viewBox='0 0 64 64' width='34' height='34' aria-hidden='true'>

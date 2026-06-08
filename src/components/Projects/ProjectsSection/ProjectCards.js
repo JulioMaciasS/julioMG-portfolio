@@ -3,11 +3,11 @@ import "./ProjectCards.css";
 import ProjectCard from './ProjectCard';
 import Link from '../../LocalizedLink';
 import { useTranslation } from 'react-i18next';
-import { PROJECTS } from '../../../data/projects';
+import { PROJECTS, formatProjectDate } from '../../../data/projects';
 import Reveal from '../../common/Reveal';
 
 function ProjectCards() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     return (
         <div className='flex flex-col gap-10 proj-cards-container'>
             {PROJECTS.map((project, i) => {
@@ -19,13 +19,17 @@ function ProjectCards() {
                         technologies={project.technologies}
                         padding={project.padding}
                         new={project.isNew}
-                        link={project.isExternal ? project.link : undefined}
+                        date={formatProjectDate(project.date, i18n.language)}
                     />
                 );
 
                 return (
                     <Reveal key={project.id} delay={(i % 2) * 90}>
-                        {project.isExternal ? card : <Link to={project.link}>{card}</Link>}
+                        {project.isExternal ? (
+                            <a href={project.link} target='_blank' rel='noopener noreferrer' className='proj-custom-link'>{card}</a>
+                        ) : (
+                            <Link to={project.link} className='proj-custom-link'>{card}</Link>
+                        )}
                     </Reveal>
                 );
             })}

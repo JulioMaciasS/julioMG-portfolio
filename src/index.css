@@ -13,10 +13,6 @@
     --my: 35%;
   }
 
-  html {
-    scroll-behavior: smooth;
-  }
-
   body {
     font-family: 'Inter', system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -43,12 +39,36 @@
     transform: none;
   }
 
-  /* Interactive spotlight backdrop — a charcoal field lit by the cursor. */
+  /* Shared base: charcoal field + faint dotted texture (replaces the old busy
+     tiled pattern). Used across dark sections for one consistent backdrop. */
+  .bloom-bg,
   .spotlight-bg {
     position: relative;
     background-color: var(--color-ink);
     isolation: isolate;
   }
+  .bloom-bg::after,
+  .spotlight-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 26px 26px;
+  }
+
+  /* Static bloom — a fixed ambient glow near the top. No cursor tracking. */
+  .bloom-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+      radial-gradient(650px circle at 50% 0%, rgba(244, 185, 66, 0.13), transparent 60%),
+      radial-gradient(900px circle at 50% 0%, rgba(255, 255, 255, 0.05), transparent 55%);
+  }
+
+  /* Interactive spotlight — the bloom follows the cursor. Hero only. */
   .spotlight-bg::before {
     content: '';
     position: absolute;
@@ -64,14 +84,8 @@
       radial-gradient(900px circle at var(--mx) var(--my), rgba(255, 255, 255, 0.07), transparent 55%);
     transition: background 0.15s ease-out;
   }
-  /* Faint dotted texture, far cleaner than the old tiled pattern. */
+  /* The dotted texture is revealed by the cursor on the interactive variant. */
   .spotlight-bg::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
-    background-size: 26px 26px;
     mask-image: radial-gradient(700px circle at var(--mx) var(--my), #000 10%, transparent 70%);
     -webkit-mask-image: radial-gradient(700px circle at var(--mx) var(--my), #000 10%, transparent 70%);
   }

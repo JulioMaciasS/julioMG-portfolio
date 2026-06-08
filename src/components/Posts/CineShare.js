@@ -57,9 +57,9 @@ function CineSharePost() {
               <h1 className="text-gray-800 mb-0 text-4xl md:text-5xl font-bold" id='top'>CineShare</h1>
             </div>
 
-            <div className='text-left space-y-8'>
+            <div className='text-left space-y-5'>
               {/* Introduction Section */}
-              <section className=" p-6 rounded-xl ">
+              <section className="py-2">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.common.introHeading')}</h2>
                 <p className="text-gray-700 leading-relaxed">
                   {t('posts.cineshare.intro1')}
@@ -70,7 +70,7 @@ function CineSharePost() {
               </section>
 
               {/* Technologies Section */}
-              <section className=" p-6 rounded-xl ">
+              <section className="py-2">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.common.technologiesHeading')}</h2>
                 <p className="text-gray-700 mb-6">
                   {t('posts.cineshare.technologiesIntro')}
@@ -100,7 +100,7 @@ function CineSharePost() {
               </section>
 
               {/* Frontend Section */}
-              <section className=" p-6 rounded-xl ">
+              <section className="py-2">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.common.frontendHeading')}</h2>
                 <div className="mb-6">
                   <h3 className="font-semibold text-lg text-gray-700 mb-2">{t('posts.cineshare.frontendSubtitle')}</h3>
@@ -117,7 +117,7 @@ function CineSharePost() {
               </section>
 
               {/* Backend Section */}
-              <section className=" p-6 rounded-xl ">
+              <section className="py-2">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.common.backendHeading')}</h2>
                 <h3 className="font-semibold text-lg text-gray-700 mb-2">{t('posts.cineshare.backendSubtitle')}</h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -126,7 +126,7 @@ function CineSharePost() {
               </section>
 
               {/* Cybersecurity Section */}
-              <section className=" p-6 rounded-xl ">
+              <section className="py-2">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.cineshare.securityHeading')}</h2>
                 <p className="text-gray-700 leading-relaxed mb-6">
                   {t('posts.cineshare.securityBody')}
@@ -145,7 +145,7 @@ function CineSharePost() {
               </section>
 
               {/* AWS Section */}
-              <section className=" p-6 rounded-xl ">
+              <section className="py-2">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.cineshare.cloudHeading')}</h2>
                 <p className="text-gray-700 leading-relaxed mb-6">
                   {t('posts.cineshare.cloudBody')}
@@ -164,7 +164,7 @@ function CineSharePost() {
               </section>
 
               {/* AI Tools Section */}
-              <section className=" p-6 rounded-xl ">
+              <section className="py-2">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.cineshare.aiHeading')}</h2>
                 <p className="text-gray-700 leading-relaxed mb-6">
                   {t('posts.cineshare.aiBody')}
@@ -182,7 +182,7 @@ function CineSharePost() {
               </section>
 
               {/* Conclusion Section */}
-              <section className=" p-6 rounded-xl ">
+              <section className="py-2">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.common.conclusionHeading')}</h2>
                 <p className="text-gray-700 leading-relaxed">
                   {t('posts.cineshare.conclusion1')}

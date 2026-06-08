@@ -3,16 +3,14 @@ import Link from '../LocalizedLink';
 import { Button } from '../Button';
 import { ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
-import useSpotlight from '../../hooks/useSpotlight';
 import Reveal from '../common/Reveal';
 
-/** Dark, cursor-lit call-to-action band steering visitors toward the services page. */
+/** Dark call-to-action band steering visitors toward the services page. */
 export default function ServicesCta() {
   const { t } = useTranslation();
-  const spotlightRef = useSpotlight();
 
   return (
-    <section ref={spotlightRef} className="spotlight-bg w-full py-20 px-6">
+    <section className="bloom-bg w-full py-24 px-6 rounded-t-[44px] overflow-hidden">
       <Reveal className="max-w-3xl mx-auto text-center text-white">
         <p className="uppercase tracking-[0.2em] text-xs font-medium text-accent mb-4">
           {t('home.servicesCta.eyebrow')}

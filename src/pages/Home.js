@@ -18,16 +18,18 @@ function Home() {
       />
       <HeroSection />
 
-      {/* Light intro band — about card */}
-      <div id="after-hero" className="w-full bg-[whitesmoke] flex justify-center py-16 sm:py-24 rounded-b-[40px]">
+      {/* Stacked, softly-overlapping panels for smooth section transitions. */}
+      <div id="after-hero" className="relative z-10 -mt-8 w-full bg-[whitesmoke] rounded-t-[44px] flex justify-center py-16 sm:py-24">
         <AboutMe />
       </div>
 
-      {/* Dark services CTA */}
-      <ServicesCta />
+      <div className="relative z-20 -mt-8">
+        <ServicesCta />
+      </div>
 
-      {/* Latest work / blog */}
-      <CardsSection />
+      <div className="relative z-30 -mt-8">
+        <CardsSection />
+      </div>
     </>
   );
 }

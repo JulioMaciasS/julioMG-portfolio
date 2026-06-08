@@ -5,12 +5,28 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Clean charcoal field with a soft static glow — replaces the old animated
-     tiled pattern (kept consistent with the home spotlight backdrop). */
+  position: relative;
+  isolation: isolate;
+  /* Clean charcoal field + static bloom + dotted texture — the same backdrop
+     used across the site (replaces the old animated tiled pattern). */
   background-color: #1a1717;
-  background-image:
+}
+.project-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
     radial-gradient(700px circle at 50% 0%, rgba(244, 185, 66, 0.12), transparent 60%),
     radial-gradient(900px circle at 50% 0%, rgba(255, 255, 255, 0.05), transparent 55%);
+}
+.project-container::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 26px 26px;
 }
 
 .project-cards-container {

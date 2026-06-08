@@ -5,7 +5,8 @@ export const PROJECTS = [
     id: 'chatgptlearn',
     title: 'ChatGPTLearn',
     description: 'Final year project. A full-stack AI training platform that helps businesses learn practical ChatGPT workflows.',
-    imageSrc: './images/chatgptlearn/cover.png',
+    imageSrc: './images/covers/chatgptlearn.png',
+    date: '2026-04-15',
     link: '/projects/chatgptlearn',
     isExternal: false,
     padding: false,
@@ -21,10 +22,11 @@ export const PROJECTS = [
     id: 'eugenia-bravo-rebuild',
     title: 'EugeniaBravo Rebuild',
     description: 'Migration to Next.js + Supabase for better SEO and easier ops.',
-    imageSrc: './images/eugeniaBravoPost/EugeniaBravoIcon.png',
+    imageSrc: './images/covers/eugeniabravo-rebuild.png',
+    date: '2025-11-01',
     link: '/projects/eugeniabravo-rebuild',
     isExternal: false,
-    padding: true,
+    padding: false,
     technologies: [
       { name: 'Next.js', icon: `${BASE_URL}nextjs.svg` },
       { name: 'React', icon: `${BASE_URL}react.png` },
@@ -36,10 +38,11 @@ export const PROJECTS = [
     id: 'eugenia-bravo',
     title: 'Eugenia Bravo',
     description: 'Real world project. Blog Website and Landing Page for a lawyer.',
-    imageSrc: './images/eugeniaBravoPost/EugeniaBravoIcon.png',
+    imageSrc: './images/covers/eugeniabravo.png',
+    date: '2024-03-01',
     link: '/projects/eugeniabravo',
     isExternal: false,
-    padding: true,
+    padding: false,
     technologies: [
       { name: 'React', icon: `${BASE_URL}react.png` },
       { name: 'TypeScript', icon: `${BASE_URL}typescript.png` },
@@ -52,7 +55,8 @@ export const PROJECTS = [
     id: 'cineshare',
     title: 'CineShare',
     description: 'Learn more about CineShare\'s development. A social media to discover Amazing Movies and TV Shows!',
-    imageSrc: './images/CineShare.png',
+    imageSrc: './images/covers/cineshare.png',
+    date: '2023-08-01',
     link: '/projects/cineshare',
     isExternal: false,
     padding: false,
@@ -64,3 +68,13 @@ export const PROJECTS = [
     ]
   }
 ];
+
+/** Localised "Mon YYYY" label for a project's ISO date. */
+export function formatProjectDate(iso, lang = 'en') {
+  if (!iso) return '';
+  try {
+    return new Intl.DateTimeFormat(lang, { month: 'short', year: 'numeric' }).format(new Date(iso));
+  } catch (_) {
+    return '';
+  }
+}

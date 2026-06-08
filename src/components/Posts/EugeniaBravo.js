@@ -93,9 +93,9 @@ function EugeniaBravo() {
               </a>
             </div>
 
-            <div className='text-left space-y-8'>
+            <div className='text-left space-y-5'>
               {/* Introduction Section */}
-              <section className="p-6 rounded-xl">
+              <section className="py-2">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.common.introHeading')}</h2>
                 <p className="text-gray-700 leading-relaxed">
                   {t('posts.eugeniaBravo.intro')}
@@ -103,7 +103,7 @@ function EugeniaBravo() {
               </section>
 
               {/* Technologies Section */}
-              <section className="p-6 rounded-xl">
+              <section className="py-2">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.common.technologiesHeading')}</h2>
                 <p className="text-gray-700 mb-6">
                   {t('posts.eugeniaBravo.technologiesIntro')}
@@ -133,7 +133,7 @@ function EugeniaBravo() {
               </section>
 
               {/* Frontend Section */}
-              <section className="p-6 rounded-xl">
+              <section className="py-2">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.common.frontendHeading')}</h2>
                 <h3 className="font-semibold text-lg text-gray-700 mb-2">{t('posts.eugeniaBravo.frontendSubtitle')}</h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -147,7 +147,7 @@ function EugeniaBravo() {
               </section>
 
               {/* Backend Section */}
-              <section className="p-6 rounded-xl">
+              <section className="py-2">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.common.backendHeading')}</h2>
                 <h3 className="font-semibold text-lg text-gray-700 mb-2">{t('posts.eugeniaBravo.backendSubtitle')}</h3>
                 <p className="text-gray-700 leading-relaxed">
@@ -156,7 +156,7 @@ function EugeniaBravo() {
               </section>
 
               {/* Website Structure Section */}
-              <section className="p-6 rounded-xl">
+              <section className="py-2">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.eugeniaBravo.structureHeading')}</h2>
                 <p className="text-gray-700 mb-6">
                   {t('posts.eugeniaBravo.structureIntro')}

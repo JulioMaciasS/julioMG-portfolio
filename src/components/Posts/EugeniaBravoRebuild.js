@@ -109,22 +109,22 @@ function EugeniaBravoRebuild() {
               </a>
             </div>
 
-            <div className='text-left space-y-8'>
-              <section className="p-6 rounded-xl">
+            <div className='text-left space-y-5'>
+              <section className="py-2">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.common.introHeading')}</h2>
                 <p className="text-gray-700 leading-relaxed">
                   {t('posts.eugeniaBravoRebuild.intro')}
                 </p>
               </section>
 
-              <section className="p-6 rounded-xl">
+              <section className="py-2">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.eugeniaBravoRebuild.goalsHeading')}</h2>
                 <p className="text-gray-700 leading-relaxed">
                   {t('posts.eugeniaBravoRebuild.goalsBody')}
                 </p>
               </section>
 
-              <section className="p-6 rounded-xl">
+              <section className="py-2">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.common.technologiesHeading')}</h2>
                 <p className="text-gray-700 mb-6">
                   {t('posts.eugeniaBravoRebuild.technologiesIntro')}
@@ -150,7 +150,7 @@ function EugeniaBravoRebuild() {
                 </div>
               </section>
 
-              <section className="p-6 rounded-xl">
+              <section className="py-2">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.eugeniaBravoRebuild.frontendSeoHeading')}</h2>
                 <p className="text-gray-700 leading-relaxed">
                   {t('posts.eugeniaBravoRebuild.frontendSeoBody1')}
@@ -160,7 +160,7 @@ function EugeniaBravoRebuild() {
                 </p>
               </section>
 
-              <section className="p-6 rounded-xl">
+              <section className="py-2">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.eugeniaBravoRebuild.backendHeading')}</h2>
                 <p className="text-gray-700 leading-relaxed">
                   {t('posts.eugeniaBravoRebuild.backendBody1')}
@@ -170,7 +170,7 @@ function EugeniaBravoRebuild() {
                 </p>
               </section>
 
-              <section className="p-6 rounded-xl">
+              <section className="py-2">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.eugeniaBravoRebuild.workflowHeading')}</h2>
                 <p className="text-gray-700 leading-relaxed mb-6">
                   {t('posts.eugeniaBravoRebuild.workflowBody')}
@@ -181,7 +181,7 @@ function EugeniaBravoRebuild() {
                 />
               </section>
 
-              <section className="p-6 rounded-xl">
+              <section className="py-2">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.eugeniaBravoRebuild.publicHeading')}</h2>
                 <p className="text-gray-700 leading-relaxed mb-6">
                   {t('posts.eugeniaBravoRebuild.publicBody')}
@@ -192,7 +192,7 @@ function EugeniaBravoRebuild() {
                 />
               </section>
 
-              <section className="p-6 rounded-xl">
+              <section className="py-2">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.eugeniaBravoRebuild.safeguardsHeading')}</h2>
                 <p className="text-gray-700 leading-relaxed">
                   {t('posts.eugeniaBravoRebuild.safeguardsBody1')}
@@ -210,7 +210,7 @@ function EugeniaBravoRebuild() {
                 </p>
               </section>
 
-              <section className="p-6 rounded-xl">
+              <section className="py-2">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.eugeniaBravoRebuild.previousHeading')}</h2>
                 <p className="text-gray-700 leading-relaxed">
                   {t('posts.eugeniaBravoRebuild.previousBodyPrefix')}
