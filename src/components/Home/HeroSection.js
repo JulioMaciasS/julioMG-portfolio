@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
+import { createPortal } from 'react-dom';
 import '../../App.css';
 import { Button } from '../Button';
 import './HeroSection.css';
@@ -29,6 +30,230 @@ function CodeWindow() {
         </code></pre>
       </div>
     </div>
+  );
+}
+
+/**
+ * Pixel-art ghost companion. It is FIXED to the viewport. Behaviours:
+ *  - It wanders the bottom band ONLY while the hero is in view, so it never
+ *    distracts readers in the content below.
+ *  - Once the reader scrolls into the content, it glides up to rest above the
+ *    floating "Contact me" button (no jump) and stays there until they scroll
+ *    back to the hero.
+ *  - Click it and it glides progressively over to the button and jumps a few
+ *    times, then returns to wandering (in the hero) or resting (in the content).
+ *
+ * Everything is computed in viewport coordinates (the contact button is fixed
+ * too), so it stays correct no matter how the page is scrolled or resized.
+ */
+function HeroMascot() {
+  const ref = useRef(null);
+  const st = useRef({
+    x: 0, y: 110, face: 1, clicking: false, parked: false, cancelled: false, reduce: false,
+    wander: null, timers: [], step: null, glideToButton: null, heroRatio: null, w: 48, h: 38,
+  });
+  const [jumping, setJumping] = useState(false);
+
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return undefined;
+    const s = st.current;
+    s.cancelled = false;
+    s.w = el.offsetWidth || 48;
+    s.h = el.offsetHeight || 38;
+
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const clamp = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
+    const rand = (a, b) => a + Math.random() * (b - a);
+
+    const region = () => {
+      const vw = window.innerWidth;
+      return { minX: 16, maxX: Math.max(16, vw - s.w - 16), minY: 84, maxY: 168 };
+    };
+    const place = (transition) => {
+      el.style.transition = transition;
+      el.style.transform = `translate(${s.x}px, ${-s.y}px) scaleX(${s.face})`;
+    };
+    const buttonTarget = () => {
+      const btn = document.querySelector('.floating-contact');
+      if (!btn) return null;
+      const br = btn.getBoundingClientRect();
+      const vw = window.innerWidth;
+      const vh = window.innerHeight;
+      return {
+        tx: clamp(br.left + br.width / 2 - s.w / 2, 16, Math.max(16, vw - s.w - 16)),
+        ty: clamp(vh - br.top + 10, 40, vh - s.h),
+      };
+    };
+    const glideToButton = (maxDur, instant) => {
+      const t = buttonTarget();
+      if (!t) return 0;
+      const dist = Math.hypot(t.tx - s.x, t.ty - s.y);
+      const dur = instant || dist < 8 ? 0 : clamp(dist / 200, 0.6, maxDur);
+      s.face = t.tx < s.x ? -1 : 1;
+      s.x = t.tx;
+      s.y = t.ty;
+      place(dur === 0 ? 'none' : `transform ${dur}s cubic-bezier(0.34, 0, 0.2, 1)`);
+      return dur * 1000;
+    };
+    s.glideToButton = glideToButton;
+    s.reduce = reduce;
+
+    // How much of the hero is still in view (its bottom edge / viewport height).
+    const heroRatio = () => {
+      const hero = document.querySelector('.hero-container');
+      if (!hero) return window.scrollY <= 1 ? 1 : 0;
+      return hero.getBoundingClientRect().bottom / window.innerHeight;
+    };
+    s.heroRatio = heroRatio;
+
+    // On mobile/tablet the bottom strip is occupied by the hero CTAs + contact
+    // button, so the ghost rests above the button instead of wandering.
+    const isMobile = () => window.innerWidth < 1024;
+    const canWander = () => !reduce && !isMobile();
+    s.canWander = canWander;
+
+    const r0 = region();
+    s.x = clamp(s.x || r0.minX + (r0.maxX - r0.minX) * 0.18, r0.minX, r0.maxX);
+    s.y = clamp(s.y || 110, r0.minY, r0.maxY);
+    place('none');
+
+    const step = () => {
+      if (s.cancelled || s.clicking || s.parked) return;
+      const r = region();
+      const tx = rand(r.minX, r.maxX);
+      const ty = rand(r.minY, r.maxY);
+      const dist = Math.hypot(tx - s.x, ty - s.y);
+      const dur = clamp(dist / 95, 2.6, 7); // roughly constant speed
+      s.face = tx < s.x ? -1 : 1;
+      s.x = tx;
+      s.y = ty;
+      place(`transform ${dur}s ease-in-out`);
+      s.wander = setTimeout(step, dur * 1000 + rand(350, 1200));
+    };
+    s.step = step;
+
+    if (!canWander() || heroRatio() <= 0.5) {
+      s.parked = true;
+      glideToButton(0, true); // rest above the button (mobile / reduced motion / past the hero)
+    } else {
+      s.wander = setTimeout(step, 500);
+    }
+
+    // Wander only while the hero is in view. Once the reader scrolls into the
+    // content, the ghost rests above the contact button (no jump, no wandering)
+    // so it never distracts. Hysteresis avoids flapping at the boundary.
+    const onScroll = () => {
+      if (s.cancelled || s.clicking || !canWander()) return;
+      const ratio = heroRatio();
+      if (s.parked) {
+        if (ratio > 0.65) {
+          s.parked = false;
+          step(); // scrolled back into the hero → resume wandering
+        }
+      } else if (ratio < 0.45) {
+        s.parked = true;
+        clearTimeout(s.wander);
+        glideToButton(0.9); // left the hero → rest above the button
+      }
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    const onResize = () => {
+      s.w = el.offsetWidth || s.w;
+      s.h = el.offsetHeight || s.h;
+      if (!canWander()) {
+        // mobile / reduced motion → rest above the button
+        s.parked = true;
+        clearTimeout(s.wander);
+        glideToButton(0, true);
+      } else if (s.clicking) {
+        glideToButton(0, true);
+      } else if (heroRatio() > 0.5) {
+        if (s.parked) {
+          s.parked = false;
+          step();
+        } else {
+          const r = region();
+          s.x = clamp(s.x, r.minX, r.maxX);
+          s.y = clamp(s.y, r.minY, r.maxY);
+        }
+      } else {
+        s.parked = true;
+        clearTimeout(s.wander);
+        glideToButton(0, true);
+      }
+    };
+    window.addEventListener('resize', onResize);
+
+    return () => {
+      s.cancelled = true;
+      clearTimeout(s.wander);
+      s.timers.forEach(clearTimeout);
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onResize);
+    };
+  }, []);
+
+  const handleClick = () => {
+    const el = ref.current;
+    const s = st.current;
+    if (!el || s.clicking || !s.glideToButton) return;
+    s.clicking = true;
+    clearTimeout(s.wander);
+
+    const arrive = s.glideToButton(2.4) + 40; // progressive glide (0 if already parked)
+    s.timers.push(setTimeout(() => setJumping(true), arrive));
+    s.timers.push(setTimeout(() => setJumping(false), arrive + 1400));
+    s.timers.push(setTimeout(() => {
+      s.clicking = false;
+      // Resume wandering only on desktop and back in the hero; else rest at the button.
+      if (!s.cancelled && s.canWander && s.canWander() && s.heroRatio && s.heroRatio() > 0.5) {
+        s.parked = false;
+        if (s.step) s.step();
+      } else {
+        s.parked = true;
+      }
+    }, arrive + 1550));
+  };
+
+  return createPortal(
+    <button
+      ref={ref}
+      type="button"
+      onClick={handleClick}
+      className={`hero-mascot ${jumping ? 'is-jumping' : ''}`}
+      style={{ transform: 'translate(48px, -110px)' }}
+      aria-label="Poke the mascot"
+    >
+      <span className="hero-mascot-bob">
+        <svg
+          className="hero-mascot-sprite"
+          viewBox="0 0 10 8"
+          shapeRendering="crispEdges"
+          width="48"
+          height="38"
+        >
+          <g fill="#f4b942">
+            <rect x="3" y="0" width="4" height="1" />
+            <rect x="2" y="1" width="6" height="1" />
+            <rect x="1" y="2" width="8" height="5" />
+            <rect x="1" y="7" width="2" height="1" />
+            <rect x="4" y="7" width="2" height="1" />
+            <rect x="7" y="7" width="2" height="1" />
+          </g>
+          <g fill="#ffffff">
+            <rect x="2" y="3" width="2" height="2" />
+            <rect x="5" y="3" width="2" height="2" />
+          </g>
+          <g fill="#1a1717">
+            <rect x="3" y="4" width="1" height="1" />
+            <rect x="6" y="4" width="1" height="1" />
+          </g>
+        </svg>
+      </span>
+    </button>,
+    document.body
   );
 }
 
@@ -82,6 +307,8 @@ export default function HeroSection() {
           <CodeWindow />
         </div>
       </div>
+
+      <HeroMascot />
 
       <button
         onClick={scrollDown}

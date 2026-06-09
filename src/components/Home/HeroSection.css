@@ -141,3 +141,57 @@
   .hero-code { animation: none; }
   .hero-code-cursor { animation: none; }
 }
+
+/* ---- Pixel mascot (fixed companion, wanders the bottom band) ---- */
+.hero-mascot {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 800;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  appearance: none;
+  cursor: pointer;
+  will-change: transform;
+}
+.hero-mascot:focus-visible {
+  outline: 2px solid #f4b942;
+  outline-offset: 4px;
+  border-radius: 8px;
+}
+.hero-mascot-bob {
+  display: block;
+  transform-origin: bottom center;
+  animation: hero-mascot-bob 1.8s ease-in-out infinite;
+}
+.hero-mascot.is-jumping .hero-mascot-bob {
+  animation: hero-mascot-jump 0.45s ease-out 3;
+}
+@keyframes hero-mascot-jump {
+  0% { transform: translateY(0) scaleY(1); }
+  18% { transform: translateY(0) scaleY(0.78); }
+  50% { transform: translateY(-24px) scaleY(1.12); }
+  82% { transform: translateY(0) scaleY(0.86); }
+  100% { transform: translateY(0) scaleY(1); }
+}
+.hero-mascot-sprite {
+  display: block;
+  image-rendering: pixelated;
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.45));
+}
+@media (max-width: 640px) {
+  .hero-mascot-sprite {
+    width: 40px;
+    height: 32px;
+  }
+}
+@keyframes hero-mascot-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-7px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-mascot-bob,
+  .hero-mascot.is-jumping .hero-mascot-bob { animation: none; }
+}
