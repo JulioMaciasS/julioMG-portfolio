@@ -3,7 +3,9 @@
     "home": "Home",
     "projects": "Projects",
     "services": "Services",
-    "sayHello": "Say Hello"
+    "sayHello": "Say Hello",
+    "contact": "Contact me",
+    "contactFloating": "Contact me"
   },
   "language": {
     "select": "Language",
@@ -42,9 +44,15 @@
       "scrollAria": "Scroll to the next section"
     },
     "about": {
-      "title": "Hi, I'm Julio. Nice to meet you!",
+      "eyebrow": "About me",
+      "title": "A bit about me",
       "body1": "I'm a software developer and Computer Science graduate from Queen's University Belfast, with industry experience at Citi building and shipping full-stack applications.",
       "body2": "I'm passionate about full-stack web development, cloud and AI, and I love turning ideas into reliable products that drive real business results.",
+      "highlights": {
+        "degree": "Computer Science graduate, QUB",
+        "experience": "Industry experience at Citi",
+        "focus": "Full-stack, cloud & AI"
+      },
       "tags": {
         "problemSolver": "Problem Solver",
         "teamPlayer": "Team Player",

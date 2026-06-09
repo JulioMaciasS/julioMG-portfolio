@@ -3,7 +3,9 @@
     "home": "Inicio",
     "projects": "Proyectos",
     "services": "Servicios",
-    "sayHello": "Saluda"
+    "sayHello": "Saluda",
+    "contact": "Contactar",
+    "contactFloating": "Ponerse en contacto"
   },
   "language": {
     "select": "Idioma",
@@ -42,9 +44,15 @@
       "scrollAria": "Desplázate a la sección Acerca de"
     },
     "about": {
-      "title": "Hola, soy Julio. ¡Encantado de conocerte!",
+      "eyebrow": "Sobre mí",
+      "title": "Un poco sobre mí",
       "body1": "Soy desarrollador de software y graduado en Ciencias de la Computación por la Queen's University Belfast, con experiencia en la industria en Citi construyendo y lanzando aplicaciones full-stack.",
       "body2": "Me apasionan el desarrollo web full-stack, la nube y la IA, y me encanta convertir ideas en productos fiables que generan resultados reales para los negocios.",
+      "highlights": {
+        "degree": "Graduado en Informática, QUB",
+        "experience": "Experiencia profesional en Citi",
+        "focus": "Full-stack, cloud e IA"
+      },
       "tags": {
         "problemSolver": "Resuelvo problemas",
         "teamPlayer": "Trabajo en equipo",

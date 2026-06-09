@@ -1,6 +1,6 @@
 import React from 'react';
 import "./CardsSection.css";
-import LinkCard from './LinkCard';
+import ProjectCard from '../common/ProjectCard';
 import Link from '../LocalizedLink';
 import { Button } from '../Button';
 import { ArrowRight } from 'lucide-react';
@@ -11,14 +11,7 @@ import SectionDivider from '../common/SectionDivider';
 
 export default function CardsSection() {
   const { t, i18n } = useTranslation();
-  const maxDescriptionLength = 92;
   const latestProjects = PROJECTS.slice(0, 4);
-
-  const truncate = (text, maxLength = maxDescriptionLength) => {
-    if (!text) return '';
-    if (text.length <= maxLength) return text;
-    return `${text.slice(0, maxLength - 3).trimEnd()}...`;
-  };
 
   return (
     <section className="cards-section w-full bg-white px-4 py-24 relative overflow-hidden">
@@ -33,10 +26,11 @@ export default function CardsSection() {
       <div className="cards-grid">
         {latestProjects.map((project, i) => (
           <Reveal key={project.id} delay={i * 90} className="h-full flex">
-            <LinkCard
+            <ProjectCard
               imageURL={project.imageSrc}
               title={t(`projects.items.${project.id}.title`)}
-              description={truncate(t(`projects.items.${project.id}.description`))}
+              description={t(`projects.items.${project.id}.description`)}
+              technologies={project.technologies}
               hrefLink={project.link}
               padding={project.padding}
               isExternal={project.isExternal}

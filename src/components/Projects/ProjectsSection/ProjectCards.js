@@ -1,7 +1,6 @@
 import React from 'react';
 import "./ProjectCards.css";
-import ProjectCard from './ProjectCard';
-import Link from '../../LocalizedLink';
+import ProjectCard from '../../common/ProjectCard';
 import { useTranslation } from 'react-i18next';
 import { PROJECTS, formatProjectDate } from '../../../data/projects';
 import Reveal from '../../common/Reveal';
@@ -9,30 +8,23 @@ import Reveal from '../../common/Reveal';
 function ProjectCards() {
     const { t, i18n } = useTranslation();
     return (
-        <div className='flex flex-col gap-10 proj-cards-container'>
-            {PROJECTS.map((project, i) => {
-                const card = (
+        <div className='proj-cards-grid'>
+            {PROJECTS.map((project, i) => (
+                <Reveal key={project.id} delay={(i % 2) * 90} className='h-full flex'>
                     <ProjectCard
-                        imageSrc={project.imageSrc}
+                        imageURL={project.imageSrc}
                         title={t(`projects.items.${project.id}.title`)}
                         description={t(`projects.items.${project.id}.description`)}
                         technologies={project.technologies}
                         padding={project.padding}
-                        new={project.isNew}
+                        isNew={project.isNew}
+                        tag={t('projects.new')}
                         date={formatProjectDate(project.date, i18n.language)}
+                        hrefLink={project.link}
+                        isExternal={project.isExternal}
                     />
-                );
-
-                return (
-                    <Reveal key={project.id} delay={(i % 2) * 90}>
-                        {project.isExternal ? (
-                            <a href={project.link} target='_blank' rel='noopener noreferrer' className='proj-custom-link'>{card}</a>
-                        ) : (
-                            <Link to={project.link} className='proj-custom-link'>{card}</Link>
-                        )}
-                    </Reveal>
-                );
-            })}
+                </Reveal>
+            ))}
         </div>
     );
 }

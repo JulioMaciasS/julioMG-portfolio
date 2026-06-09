@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Globe, Check } from 'lucide-react';
+import { Globe, Check, ChevronDown } from 'lucide-react';
 import { SUPPORTED_LANGUAGES } from '../../i18n';
 import { localizedPath, stripLangPrefix } from '../../utils/siteConfig';
 import './LanguageSwitcher.css';
@@ -49,6 +49,11 @@ function LanguageSwitcher({ onSelect }) {
       >
         <Globe size={20} />
         <span className="lang-switcher-current">{activeLang.label}</span>
+        <ChevronDown
+          size={16}
+          className={`lang-switcher-chevron ${open ? 'is-open' : ''}`}
+          aria-hidden="true"
+        />
       </button>
 
       {open && (

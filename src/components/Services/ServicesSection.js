@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import './ServicesSection.css';
 import Reveal from '../common/Reveal';
+import SectionDivider from '../common/SectionDivider';
 
 const LOGO_BASE = '/images/logos/';
 
@@ -47,7 +48,15 @@ function ServicesSection() {
           <h1 className="services-title">{t('services.hero.title')}</h1>
           <p className="services-subtitle">
             {t('services.hero.subtitlePrefix')}
-            <strong>{t('services.hero.subtitleHighlight')}</strong>
+            {SPECIALTY.map((tech, i) => (
+              <React.Fragment key={tech.name}>
+                <strong className="services-hero-tech">
+                  <img src={tech.icon} alt="" aria-hidden="true" />
+                  {tech.name}
+                </strong>
+                {i < SPECIALTY.length - 1 && (i === SPECIALTY.length - 2 ? ' & ' : ', ')}
+              </React.Fragment>
+            ))}
             {t('services.hero.subtitleSuffix')}
           </p>
           <div className="services-hero-cta">
@@ -65,21 +74,9 @@ function ServicesSection() {
         </div>
       </section>
 
-      {/* Specialty band */}
-      <section className="services-specialty">
-        <p className="services-specialty-label">{t('services.specialty.label')}</p>
-        <div className="services-specialty-logos">
-          {SPECIALTY.map((tech) => (
-            <div key={tech.name} className="services-specialty-item">
-              <img src={tech.icon} alt={`${tech.name} logo`} />
-              <span>{tech.name}</span>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* Services grid */}
       <section className="services-grid-section">
+        <SectionDivider variant="wave" color="#1a1717" />
         <div className="services-section-head">
           <h2>{t('services.grid.heading')}</h2>
           <p>{t('services.grid.subtitle')}</p>
@@ -137,11 +134,18 @@ function ServicesSection() {
         </div>
         <div className="services-process-grid">
           {PROCESS.map((step, index) => (
-            <Reveal key={step} delay={index * 70} className="services-process-step">
-              <span className="services-process-number">{`0${index + 1}`}</span>
-              <h3>{t(`services.process.${step}Title`)}</h3>
-              <p>{t(`services.process.${step}Text`)}</p>
-            </Reveal>
+            <React.Fragment key={step}>
+              <Reveal delay={index * 70} className="services-process-step">
+                <span className="services-process-number">{`0${index + 1}`}</span>
+                <h3>{t(`services.process.${step}Title`)}</h3>
+                <p>{t(`services.process.${step}Text`)}</p>
+              </Reveal>
+              {index < PROCESS.length - 1 && (
+                <div className="services-process-arrow" aria-hidden="true">
+                  <ArrowRight size={26} strokeWidth={2} />
+                </div>
+              )}
+            </React.Fragment>
           ))}
         </div>
       </section>

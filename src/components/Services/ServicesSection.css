@@ -63,49 +63,25 @@
   color: #f4b942;
 }
 
+.services-hero-tech {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.services-hero-tech img {
+  width: 1.15em;
+  height: 1.15em;
+  object-fit: contain;
+}
+
 .services-hero-cta {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
   justify-content: center;
-}
-
-/* ---------- Specialty band ---------- */
-.services-specialty {
-  background: whitesmoke;
-  padding: 36px 24px;
-  text-align: center;
-}
-
-.services-specialty-label {
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  font-size: 0.8rem;
-  color: #6b6b6b;
-  margin-bottom: 20px;
-}
-
-.services-specialty-logos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 48px;
-  justify-content: center;
-  align-items: center;
-}
-
-.services-specialty-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  color: #313131;
-  font-weight: 600;
-}
-
-.services-specialty-item img {
-  width: 52px;
-  height: 52px;
-  object-fit: contain;
 }
 
 /* ---------- Section heads ---------- */
@@ -131,7 +107,9 @@
 
 /* ---------- Services grid ---------- */
 .services-grid-section {
-  padding: 80px 24px;
+  position: relative;
+  overflow: hidden;
+  padding: 96px 24px 80px;
   background: #ffffff;
 }
 
@@ -303,18 +281,29 @@
 }
 
 .services-process-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  gap: 12px;
   max-width: 1120px;
   margin: 0 auto;
 }
 
 .services-process-step {
+  flex: 1 1 200px;
+  min-width: 190px;
   background: #fff;
   border-radius: 18px;
   padding: 28px 24px;
   border: 1px solid #e6e6e6;
+}
+
+.services-process-arrow {
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  color: #c9a23f;
 }
 
 .services-process-number {
@@ -366,13 +355,23 @@
 }
 
 /* ---------- Responsive ---------- */
+/* Stack the process steps vertically once they no longer fit in one row,
+   with the connecting arrows rotated to point downward. */
+@media screen and (max-width: 900px) {
+  .services-process-grid {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .services-process-arrow {
+    justify-content: center;
+    transform: rotate(90deg);
+  }
+}
+
 @media screen and (max-width: 600px) {
   .services-hero {
     padding: 64px 20px 60px;
-  }
-
-  .services-specialty-logos {
-    gap: 32px;
   }
 
   .services-why-card {

@@ -20,6 +20,7 @@ import LangLayout from './components/Layout/LangLayout.js';
 import CookieConsent from './components/Consent/CookieConsent.js';
 import PageviewTracker from './components/Analytics/PageviewTracker.js';
 import EasterEgg from './components/common/EasterEgg.js';
+import FloatingContact from './components/Layout/FloatingContact.js';
 
 function App() {
   return (
@@ -59,6 +60,7 @@ function App() {
             <Route path='*' element={<NotFound/>}/>
           </Routes>
           <Footer/>
+          <FloatingContact/>
           <CookieConsent/>
           <EasterEgg/>
       </Router>

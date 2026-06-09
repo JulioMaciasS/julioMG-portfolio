@@ -21,9 +21,14 @@ export default function Marquee() {
     </div>
   );
 
+  // Four identical groups keep the -50% loop seamless even on wide monitors:
+  // the first half (two groups) always overflows the viewport, so there is no
+  // gap before the track resets.
   return (
     <div className="marquee" role="presentation">
       <div className="marquee-track">
+        {row}
+        {row}
         {row}
         {row}
       </div>

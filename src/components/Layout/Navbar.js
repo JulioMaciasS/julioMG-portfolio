@@ -8,7 +8,6 @@ import './Navbar.css';
 function Navbar() {
     const { t } = useTranslation();
     const [click, setClick] = useState(false);
-    const[button,setButton] = useState(true);
 
     const handleClick = () => {
         // Toggle menu state
@@ -39,16 +38,6 @@ function Navbar() {
         }, []);
 
 const [scrolled, setScrolled] = useState(false);
-
-const showButton = () => {
-    setButton(window.innerWidth > 960);
-};
-
-useEffect(() => {
-    showButton();
-    window.addEventListener('resize', showButton);
-    return () => window.removeEventListener('resize', showButton);
-}, []);
 
 useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 16);
@@ -91,17 +80,12 @@ useEffect(() => {
                                 {t('nav.services')}
                             </Link>
                         </li>
-{                   button &&      <li className='nav-item flex flex-col justify-center'>
-                            <Link to='/contact-me' className='nav-links contact-me-border' onClick={closeMobileMenu}>
-                            {t('nav.sayHello')}&nbsp;<span>👋</span>
+
+                        <li className='nav-item justify-center'>
+                        <Link to='/contact-me' className='nav-links' onClick={closeMobileMenu}>
+                                {t('nav.contact')}
                             </Link>
-                        </li>}
-                        <li className='h-[80px]'>
-                        <Link to='/contact-me' className='nav-links-mobile ' onClick={closeMobileMenu}
-                        >
-                            {t('nav.sayHello')}&nbsp;<span>👋</span>
-                          </Link>
-            </li>
+                        </li>
                         <li className='nav-item flex items-center justify-center'>
                             <LanguageSwitcher onSelect={closeMobileMenu} />
                         </li>

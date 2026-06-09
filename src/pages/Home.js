@@ -6,7 +6,6 @@ import CardsSection from '../components/Home/CardsSection';
 import AboutMe from '../components/Home/AboutMe';
 import ServicesCta from '../components/Home/ServicesCta';
 import Marquee from '../components/Home/Marquee';
-import SectionDivider from '../components/common/SectionDivider';
 
 function Home() {
   const { t } = useTranslation();
@@ -23,12 +22,11 @@ function Home() {
       {/* Transition 1 — moving tech ticker out of the hero */}
       <Marquee />
 
-      {/* Transition 2 — charcoal wave flowing into the light about band */}
+      {/* Clean straight transition from the dark ticker into the light about band */}
       <section
         id="after-hero"
         className="relative overflow-hidden w-full bg-[whitesmoke] flex justify-center pt-24 pb-16 sm:pb-24"
       >
-        <SectionDivider variant="wave" color="#1a1717" />
         <AboutMe />
       </section>
 

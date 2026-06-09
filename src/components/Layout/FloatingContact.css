@@ -1,0 +1,61 @@
+.floating-contact {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 900;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 22px;
+  border-radius: 999px;
+  background: #f4b942;
+  color: #1a1717;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.28);
+  border: 2px solid #1a1717;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.22s ease;
+}
+
+.floating-contact:hover {
+  transform: translateY(-3px);
+  background: #ffc850;
+  box-shadow: 0 16px 34px rgba(0, 0, 0, 0.34);
+}
+
+.floating-contact-wave {
+  display: inline-block;
+  font-size: 1.1rem;
+  transform-origin: 70% 70%;
+}
+
+.floating-contact:hover .floating-contact-wave {
+  animation: floating-wave 0.6s ease-in-out;
+}
+
+@keyframes floating-wave {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(18deg); }
+  50% { transform: rotate(-8deg); }
+  75% { transform: rotate(14deg); }
+}
+
+/* Compact on small screens — keep it clear of the thumb zone but unobtrusive. */
+@media screen and (max-width: 600px) {
+  .floating-contact {
+    right: 16px;
+    bottom: 16px;
+    padding: 11px 18px;
+    font-size: 0.92rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floating-contact,
+  .floating-contact:hover .floating-contact-wave {
+    transition: none;
+    animation: none;
+  }
+}

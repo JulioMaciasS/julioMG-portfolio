@@ -9,10 +9,10 @@
   align-items: center;
   gap: 6px;
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  border: none;
   border-radius: 10px;
   color: rgba(255, 255, 255, 0.85);
-  padding: 7px 12px;
+  padding: 7px 10px;
   cursor: pointer;
   font-size: 0.95rem;
   transition: all 0.2s ease-out;
@@ -21,7 +21,15 @@
 .lang-switcher-toggle:hover {
   background: rgba(255, 255, 255, 0.08);
   color: #fff;
-  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.lang-switcher-chevron {
+  opacity: 0.7;
+  transition: transform 0.2s ease-out;
+}
+
+.lang-switcher-chevron.is-open {
+  transform: rotate(180deg);
 }
 
 .lang-switcher-current {
