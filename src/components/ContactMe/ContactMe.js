@@ -7,21 +7,25 @@ import "./ContactMe.css"
 const WEB3FORMS_KEY = process.env.REACT_APP_WEB3FORMS_KEY;
 // Cal.com booking link, e.g. "julio-macias/intro-call". Set at build time.
 const CAL_LINK = process.env.REACT_APP_CAL_LINK;
+// Stable namespace shared by getCalApi() and <Cal>, so the UI-config call always
+// targets this embed's iframe — Cal's recommended pattern.
+const CAL_NAMESPACE = 'booking';
 const ENDPOINT = 'https://api.web3forms.com/submit';
 
-function ContactMe() {
-  const { t } = useTranslation();
-  const [status, setStatus] = useState('idle'); // idle | sending | success | error
-  const [mode, setMode] = useState('message'); // 'message' | 'call'
-
-  // Style the Cal.com embed to match the site once the booking tab is opened.
-  // Runs only when the embed is actually mounted, so the Cal script isn't
-  // loaded until the visitor asks to book — keeps the page light.
+/**
+ * Cal.com inline booking embed.
+ *
+ * Configures the embed UI once, on its own mount, against the same namespace the
+ * <Cal> element registers under. Keeping the getCalApi()/cal('ui') call in the
+ * same component that renders <Cal> — instead of a parent effect that re-ran on
+ * every tab change — is what stops Cal's script racing into its
+ * "createIframe must be called before doInIframe" error.
+ */
+function BookingEmbed() {
   useEffect(() => {
-    if (mode !== 'call' || !CAL_LINK) return;
     let cancelled = false;
     (async () => {
-      const cal = await getCalApi();
+      const cal = await getCalApi({ namespace: CAL_NAMESPACE });
       if (cancelled) return;
       cal('ui', {
         theme: 'light',
@@ -31,6 +35,30 @@ function ContactMe() {
       });
     })();
     return () => { cancelled = true; };
+  }, []);
+
+  return (
+    <Cal
+      namespace={CAL_NAMESPACE}
+      calLink={CAL_LINK}
+      style={{ width: '100%', minHeight: '600px', overflow: 'scroll' }}
+      config={{ layout: 'month_view' }}
+    />
+  );
+}
+
+function ContactMe() {
+  const { t } = useTranslation();
+  const [status, setStatus] = useState('idle'); // idle | sending | success | error
+  const [mode, setMode] = useState('message'); // 'message' | 'call'
+  // Mount the booking embed the first time the visitor opens the call tab, then
+  // keep it mounted (just hidden when inactive). Lazy so the Cal script isn't
+  // fetched until asked for, but never unmounted/remounted — remounting the
+  // iframe is what tripped Cal's init error.
+  const [callOpened, setCallOpened] = useState(false);
+
+  useEffect(() => {
+    if (mode === 'call') setCallOpened(true);
   }, [mode]);
 
   const handleSubmit = async (e) => {
@@ -113,7 +141,7 @@ function ContactMe() {
             </button>
           </div>
 
-          {mode === 'message' ? (
+          {mode === 'message' && (
           <div className='contact-form-card' role="tabpanel" id="contact-panel-message" aria-labelledby="contact-tab-message">
             {status === 'success' ? (
               <div className="flex flex-col items-center text-center gap-3 py-10 px-4">
@@ -179,21 +207,23 @@ function ContactMe() {
               </form>
             )}
           </div>
-          ) : (
-          <div className='contact-cal-card' role="tabpanel" id="contact-panel-call" aria-labelledby="contact-tab-call">
-            {CAL_LINK ? (
-              <Cal
-                calLink={CAL_LINK}
-                style={{ width: '100%', minHeight: '600px', overflow: 'scroll' }}
-                config={{ layout: 'month_view' }}
-              />
-            ) : (
-              <div className="contact-cal-empty">
-                <CalendarDays size={40} aria-hidden="true" />
-                <p>{t('contact.cal.notConfigured')}</p>
+          )}
+
+          {CAL_LINK ? (
+            callOpened && (
+              <div className='contact-cal-card' role="tabpanel" id="contact-panel-call" aria-labelledby="contact-tab-call" hidden={mode !== 'call'}>
+                <BookingEmbed />
               </div>
-            )}
-          </div>
+            )
+          ) : (
+            mode === 'call' && (
+              <div className='contact-cal-card' role="tabpanel" id="contact-panel-call" aria-labelledby="contact-tab-call">
+                <div className="contact-cal-empty">
+                  <CalendarDays size={40} aria-hidden="true" />
+                  <p>{t('contact.cal.notConfigured')}</p>
+                </div>
+              </div>
+            )
           )}
         </div>
       </div>
