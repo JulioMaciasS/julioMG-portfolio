@@ -1,5 +1,11 @@
 .navbar {
-  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  /* Solid colour in both states (only the alpha changes on scroll) so the
+     transition is interpolable. backdrop-filter is always present — animating
+     from blur(0), never from `none` — which avoids the white flicker that a
+     gradient→rgba / none→blur transition produced. */
+  background-color: rgb(26, 24, 23);
+  backdrop-filter: saturate(160%) blur(0px);
+  -webkit-backdrop-filter: saturate(160%) blur(0px);
   height: 80px;
   display: flex;
   justify-content: center;
@@ -8,12 +14,13 @@
   position: sticky;
   top: 0;
   z-index: 999;
-  transition: background 0.3s ease, backdrop-filter 0.3s ease, box-shadow 0.3s ease, height 0.3s ease;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease,
+              -webkit-backdrop-filter 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Translucent, blurred bar once the page is scrolled. */
 .navbar--scrolled {
-  background: rgba(22, 20, 20, 0.65);
+  background-color: rgba(22, 20, 20, 0.72);
   backdrop-filter: saturate(160%) blur(12px);
   -webkit-backdrop-filter: saturate(160%) blur(12px);
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06), 0 10px 30px rgba(0, 0, 0, 0.25);
