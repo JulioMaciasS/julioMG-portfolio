@@ -1,0 +1,46 @@
+.lw {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.lw-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  display: block;
+  will-change: transform;
+}
+
+/* Different speeds + one reversed → parallax depth */
+.lw-1 { opacity: 0.5; animation: lw-drift 19s linear infinite; }
+.lw-2 { opacity: 0.78; animation: lw-drift 13s linear infinite reverse; }
+.lw-3 { opacity: 1; animation: lw-drift 9s linear infinite; }
+
+@keyframes lw-drift {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* Slow variant: same drift, but much gentler than the hero so it stays alive
+   without competing with the CTA beside it. */
+.lw--slow .lw-1 { animation-duration: 60s; }
+.lw--slow .lw-2 { animation-duration: 46s; }
+.lw--slow .lw-3 { animation-duration: 38s; }
+
+/* Static variant: freeze the layers at distinct offsets so the layered depth
+   is kept, just without the drift. */
+.lw--static .lw-1 { animation: none; transform: translateX(-9%); }
+.lw--static .lw-2 { animation: none; transform: translateX(-28%); }
+.lw--static .lw-3 { animation: none; transform: translateX(-2%); }
+
+@media (prefers-reduced-motion: reduce) {
+  .lw-layer { animation: none; }
+}

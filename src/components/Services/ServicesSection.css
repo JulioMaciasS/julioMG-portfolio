@@ -109,7 +109,7 @@
 .services-grid-section {
   position: relative;
   overflow: hidden;
-  padding: 96px 24px 80px;
+  padding: 120px 24px 80px;
   background: #ffffff;
 }
 
@@ -276,7 +276,9 @@
 
 /* ---------- Process ---------- */
 .services-process {
-  padding: 80px 24px;
+  position: relative;
+  overflow: hidden;
+  padding: 96px 24px 80px;
   background: whitesmoke;
 }
 
@@ -306,6 +308,12 @@
   color: #c9a23f;
 }
 
+/* In RTL the process row flows right-to-left, so the connector must point
+   left (toward the next step) instead of right. */
+[dir='rtl'] .services-process-arrow {
+  transform: scaleX(-1);
+}
+
 .services-process-number {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 2rem;
@@ -329,6 +337,7 @@
 /* ---------- Final CTA ---------- */
 .services-cta {
   position: relative;
+  overflow: hidden;
   background: #1a1717;
   background-image:
     radial-gradient(700px circle at 50% 0%, rgba(244, 185, 66, 0.14), transparent 60%),
@@ -336,7 +345,7 @@
   background-size: auto, 26px 26px;
   color: #fff;
   text-align: center;
-  padding: 88px 24px;
+  padding: 120px 24px 88px;
 }
 
 .services-cta h2 {
@@ -354,6 +363,19 @@
   line-height: 1.7;
 }
 
+/* "Start a conversation" — the inverted version of the hero's "View my work"
+   button. That one is outlined and fills in on hover; this one starts solid
+   white (the current baseline) and empties to an outlined button on hover.
+   Specificity (0,3,0) beats the generic .btn--large:hover in Button.css. */
+.services-cta .btn--primary {
+  transition: all 0.3s ease-out;
+}
+
+.services-cta .btn--primary:hover {
+  background: transparent;
+  color: #fff;
+}
+
 /* ---------- Responsive ---------- */
 /* Stack the process steps vertically once they no longer fit in one row,
    with the connecting arrows rotated to point downward. */
@@ -363,7 +385,10 @@
     align-items: stretch;
   }
 
-  .services-process-arrow {
+  /* Stacked vertically in both reading directions, so the arrow points
+     straight down — overrides the horizontal RTL flip above. */
+  .services-process-arrow,
+  [dir='rtl'] .services-process-arrow {
     justify-content: center;
     transform: rotate(90deg);
   }

@@ -15,6 +15,7 @@ import {
 import './ServicesSection.css';
 import Reveal from '../common/Reveal';
 import SectionDivider from '../common/SectionDivider';
+import LayeredWaves from '../common/LayeredWaves';
 
 const LOGO_BASE = '/images/logos/';
 
@@ -76,7 +77,7 @@ function ServicesSection() {
 
       {/* Services grid */}
       <section className="services-grid-section">
-        <SectionDivider variant="wave" color="#1a1717" />
+        <LayeredWaves colors={['#2b2725', '#221f1e', '#1a1717']} height={104} />
         <div className="services-section-head">
           <h2>{t('services.grid.heading')}</h2>
           <p>{t('services.grid.subtitle')}</p>
@@ -128,6 +129,7 @@ function ServicesSection() {
 
       {/* Process */}
       <section className="services-process">
+        <SectionDivider variant="diagonal" color="#ffffff" accent />
         <div className="services-section-head">
           <h2>{t('services.process.heading')}</h2>
           <p>{t('services.process.subtitle')}</p>
@@ -152,6 +154,7 @@ function ServicesSection() {
 
       {/* Final CTA */}
       <section className="services-cta">
+        <LayeredWaves colors={['#e2e2e2', '#ececec', '#f5f5f5']} height={92} speed="slow" />
         <Reveal className="relative z-10">
           <h2>{t('services.cta.heading')}</h2>
           <p>{t('services.cta.text')}</p>
