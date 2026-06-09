@@ -22,7 +22,7 @@ function Home() {
       {/* Transition 1 — moving tech ticker out of the hero */}
       <Marquee />
 
-      {/* Clean straight transition from the dark ticker into the light about band */}
+      {/* Light about band */}
       <section
         id="after-hero"
         className="relative overflow-hidden w-full bg-[whitesmoke] flex justify-center pt-24 pb-16 sm:pb-24"
@@ -30,11 +30,11 @@ function Home() {
         <AboutMe />
       </section>
 
-      {/* Transition 3 — diagonal accent cut into the dark services band */}
-      <ServicesCta />
-
-      {/* Transition 4 — wide curve into the white latest-work section */}
+      {/* Proof: latest work (white), gentle curve out of the about band */}
       <CardsSection />
+
+      {/* The ask: diagonal accent cut from the work grid into the dark services CTA */}
+      <ServicesCta />
     </>
   );
 }

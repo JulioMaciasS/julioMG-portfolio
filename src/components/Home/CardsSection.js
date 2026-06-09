@@ -15,7 +15,7 @@ export default function CardsSection() {
 
   return (
     <section className="cards-section w-full bg-white px-4 py-24 relative overflow-hidden">
-      <SectionDivider variant="curve" color="#1a1717" />
+      <SectionDivider variant="curve" color="#f5f5f5" shadow />
       <Reveal className="text-center max-w-2xl mx-auto mb-12 relative z-10">
         <h2 className="font-display text-3xl sm:text-4xl font-bold text-[#1a1717] mb-3">
           {t('home.cards.heading')}

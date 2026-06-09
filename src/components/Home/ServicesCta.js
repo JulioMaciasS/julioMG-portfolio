@@ -12,7 +12,7 @@ export default function ServicesCta() {
 
   return (
     <section className="bloom-bg w-full py-24 px-6 relative overflow-hidden">
-      <SectionDivider variant="diagonal" color="#f5f5f5" accent />
+      <SectionDivider variant="diagonal" color="#ffffff" accent />
       <Reveal className="max-w-3xl mx-auto text-center text-white relative z-10">
         <p className="uppercase tracking-[0.2em] text-xs font-medium text-accent mb-4">
           {t('home.servicesCta.eyebrow')}

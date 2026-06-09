@@ -16,10 +16,14 @@ const SHAPES = {
   diagonal: 'M0,0 H1440 V6 L0,54 Z'
 };
 
-export default function SectionDivider({ variant = 'wave', color = '#1a1717', accent = false, height = 56 }) {
+export default function SectionDivider({ variant = 'wave', color = '#1a1717', accent = false, height = 56, shadow = false }) {
   return (
     <div className="section-divider" aria-hidden="true">
-      <svg viewBox="0 0 1440 64" preserveAspectRatio="none" style={{ height }}>
+      <svg
+        viewBox="0 0 1440 64"
+        preserveAspectRatio="none"
+        style={{ height, filter: shadow ? 'drop-shadow(0 5px 6px rgba(0, 0, 0, 0.09))' : undefined }}
+      >
         <path d={SHAPES[variant]} fill={color} />
         {accent && variant === 'diagonal' && (
           <line x1="0" y1="54" x2="1440" y2="6" stroke="#f4b942" strokeWidth="2.5" vectorEffect="non-scaling-stroke" />
