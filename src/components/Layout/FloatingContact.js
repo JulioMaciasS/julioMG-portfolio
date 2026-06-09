@@ -1,14 +1,22 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import Link from '../LocalizedLink';
 import { useTranslation } from 'react-i18next';
+import { stripLangPrefix } from '../../utils/siteConfig';
 import './FloatingContact.css';
 
 /**
  * Persistent "Say Hello" call-to-action that floats in the bottom-right corner
  * on every page (moved out of the navbar). Links to the contact page.
+ * Hidden on the contact page itself, where it would be redundant.
  */
 export default function FloatingContact() {
   const { t } = useTranslation();
+  const location = useLocation();
+
+  if (stripLangPrefix(location.pathname) === '/contact-me') {
+    return null;
+  }
 
   return (
     <Link
