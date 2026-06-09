@@ -4,6 +4,60 @@
   width: 100%;
 }
 
+/* Profile photo with the availability badge overlapping its lower-right */
+.hero-intro {
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+}
+.hero-avatar-wrap {
+  position: relative;
+  flex-shrink: 0;
+  line-height: 0;
+}
+.hero-avatar {
+  display: block;
+  width: 116px;
+  height: 116px;
+  border-radius: 9999px;
+  object-fit: cover;
+  object-position: center 28%;
+  border: 2px solid rgba(244, 185, 66, 0.6);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+}
+.hero-badge.hero-badge--overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 64px;
+  white-space: nowrap;
+  background: #161313;
+  border-color: rgba(244, 185, 66, 0.55);
+  backdrop-filter: none;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.55);
+}
+@media (max-width: 640px) {
+  /* Lift the hero block (photo first) higher up the phone screen */
+  .hero-content {
+    top: -32px;
+  }
+  .hero-avatar {
+    width: 100px;
+    height: 100px;
+  }
+  /* Centre the (single-line) pill over the photo's lower edge on small screens */
+  .hero-badge.hero-badge--overlay {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
+  }
+}
+@media (max-width: 360px) {
+  .hero-badge.hero-badge--overlay {
+    font-size: 0.74rem;
+    padding: 5px 11px;
+  }
+}
+
 /* "Available for work" badge */
 .hero-badge {
   display: inline-flex;

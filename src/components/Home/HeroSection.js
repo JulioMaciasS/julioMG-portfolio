@@ -272,13 +272,22 @@ export default function HeroSection() {
       ref={spotlightRef}
       className="spotlight-bg hero-container relative flex flex-col items-center justify-center h-[calc(100vh-80px)] overflow-hidden px-6"
     >
-      <div className="relative z-10 flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-16 w-full max-w-6xl">
+      <div className="hero-content relative z-10 flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-16 w-full max-w-6xl">
         {/* Text */}
         <div className="lg:w-[55%] text-center lg:text-left text-white">
-          <span className="hero-badge animate-fade-in">
-            <span className="hero-badge-dot" />
-            {t('home.hero.badge')}
-          </span>
+          <div className="hero-intro justify-center lg:justify-start animate-fade-in">
+            <div className="hero-avatar-wrap">
+              <img
+                src="./images/profile-pic-3.jpg"
+                alt="Julio Macias"
+                className="hero-avatar"
+              />
+              <span className="hero-badge hero-badge--overlay">
+                <span className="hero-badge-dot" />
+                {t('home.hero.badge')}
+              </span>
+            </div>
+          </div>
           <h1 className="hero-title text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-bold mt-5 mb-4 animate-fade-up">
             {t('home.hero.title')}
           </h1>
