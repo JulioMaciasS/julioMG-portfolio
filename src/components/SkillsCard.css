@@ -1,94 +1,50 @@
-.web-info-text-container-dark {
-  min-height: 200px;
-  width: 100%;
-  max-width: 600px;
-  background: rgb(43, 43, 43);
-  border-radius: 20px;
-  padding: 20px;
-  border: 2px solid lightgray;
-  margin: 0 auto;
-}
-
-.skill-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 25px;
-  gap: 15px;
-}
-
-.skill-item {
-  height: 80px;
-  width: 80px;
+/* Compact "built with" tech row for the footer corner. */
+.tech-stack {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.tech-stack-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.tech-stack-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px 14px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tech-chip {
+  display: inline-flex;
   align-items: center;
-  text-align: center;
-  border-radius: 10px;
-  border: 2px solid lightgray;
-  transition: all 0.5s ease-out;
-  margin: 5px;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.2s ease;
+}
+.tech-chip:hover {
+  color: #fff;
 }
 
-.skill-item:hover {
-  transform: scale(1.05);
-  transition: all 0.5s ease-out;
-}
-
-.skill-icon {
+.tech-chip-icon {
+  width: 18px;
+  height: 18px;
   object-fit: contain;
-  width: 40px;
-  height: 40px;
 }
 
-.skill-text-title {
-  color: white;
-  font-size: 18px;
-  text-align: center;
-  margin-top: 6px;
-  font-weight: bold;
-}
-
-.skill-text {
-  color: white;
-  font-size: 14px;
-  margin-top: 6px;
-  font-weight: bold;
-}
-
-@media only screen and (max-width: 700px) {
-  .web-info-text-container-dark {
-    padding: 15px 10px;
-    transform: scale(1);
-  }
-
-  .skill-text-title {
-    font-size: 16px;
-  }
-}
-
-@media only screen and (max-width: 449px) {
-  .skill-container {
-    flex-wrap: wrap;
-    height: max-content;
-    justify-content: center;
-    width: 100%;
+@media screen and (max-width: 920px) {
+  .tech-stack,
+  .tech-stack-list {
     align-items: center;
-  }
-
-  .skill-item {
-    height: 70px;
-    width: 70px;
-  }
-
-  .skill-icon {
-    width: 30px;
-    height: 30px;
-  }
-
-  .skill-text {
-    font-size: 12px;
+    justify-content: center;
   }
 }

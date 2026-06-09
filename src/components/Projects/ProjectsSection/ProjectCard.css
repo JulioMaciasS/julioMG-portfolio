@@ -6,8 +6,8 @@
 
 
 .proj-card-container {
-    width: min(900px, 92vw);
-    height: 300px;
+    width: 100%;
+    height: 280px;
     display: flex;
     flex-direction: row;
     align-items: center;

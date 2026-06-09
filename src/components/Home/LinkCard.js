@@ -12,7 +12,7 @@ export default function LinkCard({ imageURL, title, hrefLink, padding, descripti
     <div className='LinkCard-container group'>
       <div className="LinkCard-image-wrap">
         <img
-          className={`LinkCard-image ${padding ? "object-contain p-6 bg-[#f4f4f5]" : "object-cover"}`}
+          className={`LinkCard-image ${padding ? "object-contain p-5" : "object-cover object-center"}`}
           src={imageURL}
           alt={title}
           loading="lazy"
