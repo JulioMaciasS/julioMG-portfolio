@@ -48,6 +48,9 @@ useEffect(() => {
 
     return (
         <>
+            {/* Solid panel behind the transparent bar at the top of the page; it
+                scrolls away so the bar transitions smoothly from solid to glass. */}
+            <div className='navbar-top-backdrop' aria-hidden='true' />
             <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
                 <div className='navbar-container'>
                     <Link to='/' className='navbar-logo' onClick={closeMobileMenu} aria-label='Julio Macias, home'>
