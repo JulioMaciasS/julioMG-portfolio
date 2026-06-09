@@ -174,21 +174,31 @@
     height: calc(100vh - 80px);
     position: absolute;
     top: 80px;
-    left: -100%;
+    left: 0;
+    /* Background and stacking context live on the element itself (not just
+       .active) so they don't blink away the instant the menu starts closing —
+       that vanishing backdrop was what made the old close look broken.
+       The panel fades and settles down into place rather than sliding in from
+       off-canvas: a horizontal off-screen slide extends the page width in RTL
+       (Arabic), which produced the mobile overflow / horizontal-scroll bug. */
+    background: #1a1717;
+    z-index: 1000;
     opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
     padding: 24px 0 48px;
     gap: 4px;
     align-items: center;
     justify-content: flex-start;
-    transition: left 0.45s ease, opacity 0.45s ease;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 0.3s;
     overflow-y: auto;
   }
 
   .nav-menu.active {
-    background: #1a1717;
-    left: 0;
     opacity: 1;
-    z-index: 1000;
+    visibility: visible;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s;
   }
 
   .nav-item {

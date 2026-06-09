@@ -84,10 +84,13 @@
   font-weight: 600;
 }
 
-/* Mobile: render inline inside the open nav menu */
+/* Mobile: render inline inside the open nav menu, left-aligned so the toggle
+   lines up with the left edge of the option pills (same 88% / 360px block). */
 @media screen and (max-width: 960px) {
   .lang-switcher {
-    justify-content: center;
+    width: 88%;
+    max-width: 360px;
+    justify-content: flex-start;
     margin: 1rem auto;
   }
 
@@ -98,7 +101,7 @@
 
   .lang-switcher-menu {
     right: auto;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    transform: none;
   }
 }

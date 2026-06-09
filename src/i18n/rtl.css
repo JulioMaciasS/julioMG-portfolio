@@ -20,10 +20,15 @@
   margin-right: 10px;
 }
 
-[dir='rtl'] .nav-menu {
-  justify-content: start;
-  margin-right: 0;
-  margin-left: 2rem;
+/* Desktop nav row only. On mobile (≤960px) .nav-menu becomes a full-width
+   absolute overlay, where this horizontal-row margin would push it past the
+   viewport edge and create horizontal overflow. */
+@media screen and (min-width: 961px) {
+  [dir='rtl'] .nav-menu {
+    justify-content: start;
+    margin-right: 0;
+    margin-left: 2rem;
+  }
 }
 
 /* Hero copy is forced left-aligned on desktop via Tailwind text-left */
