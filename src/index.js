@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot, hydrateRoot } from 'react-dom/client';
 import { HelmetProvider } from 'react-helmet-async';
 import App from './App';
 import './index.css';
@@ -34,18 +34,15 @@ console.log(
 
 const rootElement = document.getElementById('root');
 
+const app = (
+  <HelmetProvider>
+    <App/>
+  </HelmetProvider>
+);
+
+// hydrateRoot when the markup was prerendered, createRoot for the normal SPA path.
 if (rootElement.hasChildNodes()) {
-  ReactDOM.hydrate(
-    <HelmetProvider>
-      <App/>
-    </HelmetProvider>,
-    rootElement
-  );
+  hydrateRoot(rootElement, app);
 } else {
-  ReactDOM.render(
-    <HelmetProvider>
-      <App/>
-    </HelmetProvider>,
-    rootElement
-  );
+  createRoot(rootElement).render(app);
 }
