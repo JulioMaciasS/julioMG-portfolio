@@ -70,14 +70,14 @@ useEffect(() => {
                         </li>
 
                         <li className='nav-item justify-center'>
-                        <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
-                                {t('nav.projects')}
+                        <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
+                                {t('nav.services')}
                             </Link>
                         </li>
 
                         <li className='nav-item justify-center'>
-                        <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
-                                {t('nav.services')}
+                        <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
+                                {t('nav.projects')}
                             </Link>
                         </li>
 
