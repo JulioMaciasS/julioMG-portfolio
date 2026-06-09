@@ -12,7 +12,12 @@ function NotFound() {
         {t('notFound.message')}
       </p>
       <Link to="/">
-        <Button buttonStyle="btn--outline" buttonSize="btn--large" buttonShape="btn--round">
+        <Button
+          buttonStyle="btn--outline"
+          buttonSize="btn--large"
+          buttonShape="btn--round"
+          className="!bg-[#1a1717] hover:!bg-black !text-white !border-[#1a1717] transition-colors"
+        >
           {t('notFound.back')}
         </Button>
       </Link>

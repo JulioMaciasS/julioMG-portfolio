@@ -48,7 +48,12 @@ export default function CardsSection() {
 
       <div className="text-center mt-12">
         <Link to="/projects">
-          <Button buttonStyle="btn--outline" buttonSize="btn--large" buttonShape="btn--round">
+          <Button
+            buttonStyle="btn--outline"
+            buttonSize="btn--large"
+            buttonShape="btn--round"
+            className="!bg-[#1a1717] hover:!bg-black !text-white !border-[#1a1717] transition-colors"
+          >
             {t('home.cards.more')} <ArrowRight className="inline ml-1" size={18} />
           </Button>
         </Link>

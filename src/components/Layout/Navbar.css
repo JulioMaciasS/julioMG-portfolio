@@ -1,11 +1,9 @@
 .navbar {
-  /* Solid colour in both states (only the alpha changes on scroll) so the
-     transition is interpolable. backdrop-filter is always present — animating
-     from blur(0), never from `none` — which avoids the white flicker that a
-     gradient→rgba / none→blur transition produced. */
+  /* Solid, fully-opaque background in both states. A translucent backdrop-filter
+     bar flickers white on scroll (a known Chrome repaint glitch where the sticky
+     element drops its backdrop for a frame, showing the page behind). Keeping the
+     background solid guarantees there is never a frame without a painted fill. */
   background-color: rgb(26, 24, 23);
-  backdrop-filter: saturate(160%) blur(0px);
-  -webkit-backdrop-filter: saturate(160%) blur(0px);
   height: 80px;
   display: flex;
   justify-content: center;
@@ -14,16 +12,13 @@
   position: sticky;
   top: 0;
   z-index: 999;
-  transition: background-color 0.3s ease, backdrop-filter 0.3s ease,
-              -webkit-backdrop-filter 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Translucent, blurred bar once the page is scrolled. */
+/* Slightly deeper bar with a soft shadow once the page is scrolled. */
 .navbar--scrolled {
-  background-color: rgba(22, 20, 20, 0.72);
-  backdrop-filter: saturate(160%) blur(12px);
-  -webkit-backdrop-filter: saturate(160%) blur(12px);
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06), 0 10px 30px rgba(0, 0, 0, 0.25);
+  background-color: rgb(20, 18, 17);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.06), 0 8px 26px rgba(0, 0, 0, 0.3);
 }
 
 .navbar-container {
