@@ -278,7 +278,7 @@ export default function HeroSection() {
           <div className="hero-intro justify-center lg:justify-start animate-fade-in">
             <div className="hero-avatar-wrap">
               <img
-                src="./images/profile-pic.png"
+                src="./images/profile-pic.jpeg"
                 alt="Julio Macias"
                 className="hero-avatar"
               />
