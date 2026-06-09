@@ -50,39 +50,88 @@
     padding: 16px;
 }
 
-.contact-divider {
+/* Slider selector that toggles between the message form and call booking. */
+.contact-switch {
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 360px;
+    padding: 4px;
+    background-color: #ececec;
+    border: 1px solid #d9d9d9;
+    border-radius: 999px;
+}
+
+/* The sliding pill that sits behind the active option. */
+.contact-switch-thumb {
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: 4px;
+    width: calc(50% - 4px);
+    background-color: #1a1717;
+    border-radius: 999px;
+    transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 0;
+}
+
+.contact-switch-thumb[data-mode='call'] {
+    transform: translateX(100%);
+}
+
+/* RTL: the first option sits on the right, so anchor and slide the other way. */
+[dir='rtl'] .contact-switch-thumb {
+    left: auto;
+    right: 4px;
+}
+
+[dir='rtl'] .contact-switch-thumb[data-mode='call'] {
+    transform: translateX(-100%);
+}
+
+.contact-switch-option {
+    position: relative;
+    z-index: 1;
+    flex: 1 1 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 14px;
+    border: none;
+    background: transparent;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #5c5c5c;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: color 0.2s ease;
+}
+
+.contact-switch-option.is-active {
+    color: #ffffff;
+}
+
+/* Card that hosts the Cal.com booking embed. */
+.contact-cal-card {
     width: 100%;
     max-width: 560px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    color: #6b7280;
+    background-color: #ffffff;
+    border: 1px solid #d9d9d9;
+    border-radius: 18px;
+    padding: 8px;
+    overflow: hidden;
 }
 
-.contact-divider::before,
-.contact-divider::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background-color: #d1d5db;
-}
-
-.contact-divider span {
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    font-size: 12px;
-    font-weight: 600;
-}
-
-.contact-alt {
+.contact-cal-empty {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 12px;
+    min-height: 280px;
+    padding: 24px;
     text-align: center;
-}
-
-.contact-alt span {
-    color: #111111;
-    font-size: 1rem;
+    color: #5c5c5c;
 }

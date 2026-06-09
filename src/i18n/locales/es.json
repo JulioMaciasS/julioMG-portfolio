@@ -198,9 +198,13 @@
       "notConfigured": "El formulario de contacto aún no está configurado. Contáctame por correo electrónico o LinkedIn.",
       "privacy": "Tus datos solo se usan para responderte. Sin spam, nunca."
     },
-    "or": "o",
-    "linkedinPrompt": "Conecta conmigo en LinkedIn",
-    "linkedinButton": "Perfil de LinkedIn"
+    "tabs": {
+      "message": "Enviar un mensaje",
+      "call": "Reservar una llamada"
+    },
+    "cal": {
+      "notConfigured": "La reserva de llamadas aún no está configurada; envíame un mensaje mientras tanto."
+    }
   },
   "posts": {
     "common": {

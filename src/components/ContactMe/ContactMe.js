@@ -1,14 +1,37 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Send, CheckCircle2, Loader2 } from 'lucide-react'
+import { Send, CheckCircle2, Loader2, MessageSquare, CalendarDays } from 'lucide-react'
+import Cal, { getCalApi } from '@calcom/embed-react'
 import "./ContactMe.css"
 
 const WEB3FORMS_KEY = process.env.REACT_APP_WEB3FORMS_KEY;
+// Cal.com booking link, e.g. "julio-macias/intro-call". Set at build time.
+const CAL_LINK = process.env.REACT_APP_CAL_LINK;
 const ENDPOINT = 'https://api.web3forms.com/submit';
 
 function ContactMe() {
   const { t } = useTranslation();
   const [status, setStatus] = useState('idle'); // idle | sending | success | error
+  const [mode, setMode] = useState('message'); // 'message' | 'call'
+
+  // Style the Cal.com embed to match the site once the booking tab is opened.
+  // Runs only when the embed is actually mounted, so the Cal script isn't
+  // loaded until the visitor asks to book — keeps the page light.
+  useEffect(() => {
+    if (mode !== 'call' || !CAL_LINK) return;
+    let cancelled = false;
+    (async () => {
+      const cal = await getCalApi();
+      if (cancelled) return;
+      cal('ui', {
+        theme: 'light',
+        cssVarsPerTheme: { light: { 'cal-brand': '#1a1717' } },
+        hideEventTypeDetails: false,
+        layout: 'month_view',
+      });
+    })();
+    return () => { cancelled = true; };
+  }, [mode]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -63,7 +86,35 @@ function ContactMe() {
             <h2>{t('contact.heading')}</h2>
           </div>
 
-          <div className='contact-form-card'>
+          {/* Slider selector: write a message, or book a call. */}
+          <div className="contact-switch" role="tablist" aria-label={t('contact.heading')}>
+            <span className="contact-switch-thumb" data-mode={mode} aria-hidden="true" />
+            <button
+              type="button"
+              role="tab"
+              id="contact-tab-message"
+              aria-selected={mode === 'message'}
+              aria-controls="contact-panel-message"
+              className={`contact-switch-option ${mode === 'message' ? 'is-active' : ''}`}
+              onClick={() => setMode('message')}
+            >
+              <MessageSquare size={18} aria-hidden="true" /> {t('contact.tabs.message')}
+            </button>
+            <button
+              type="button"
+              role="tab"
+              id="contact-tab-call"
+              aria-selected={mode === 'call'}
+              aria-controls="contact-panel-call"
+              className={`contact-switch-option ${mode === 'call' ? 'is-active' : ''}`}
+              onClick={() => setMode('call')}
+            >
+              <CalendarDays size={18} aria-hidden="true" /> {t('contact.tabs.call')}
+            </button>
+          </div>
+
+          {mode === 'message' ? (
+          <div className='contact-form-card' role="tabpanel" id="contact-panel-message" aria-labelledby="contact-tab-message">
             {status === 'success' ? (
               <div className="flex flex-col items-center text-center gap-3 py-10 px-4">
                 <CheckCircle2 className="text-green-500" size={48} />
@@ -128,25 +179,22 @@ function ContactMe() {
               </form>
             )}
           </div>
-
-          {/* Divider */}
-          <div className="contact-divider"><span>{t('contact.or')}</span></div>
-
-          {/* LinkedIn option */}
-          <div className="contact-alt">
-            <span>{t('contact.linkedinPrompt')}</span>
-            <a
-              href="https://www.linkedin.com/in/julio-macias-gonzalez/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-6 py-3 bg-[#0A66C2] text-white rounded-lg font-medium flex items-center hover:bg-[#084e96] transition-colors"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" className="mr-2">
-                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-              </svg>
-              {t('contact.linkedinButton')}
-            </a>
+          ) : (
+          <div className='contact-cal-card' role="tabpanel" id="contact-panel-call" aria-labelledby="contact-tab-call">
+            {CAL_LINK ? (
+              <Cal
+                calLink={CAL_LINK}
+                style={{ width: '100%', minHeight: '600px', overflow: 'scroll' }}
+                config={{ layout: 'month_view' }}
+              />
+            ) : (
+              <div className="contact-cal-empty">
+                <CalendarDays size={40} aria-hidden="true" />
+                <p>{t('contact.cal.notConfigured')}</p>
+              </div>
+            )}
           </div>
+          )}
         </div>
       </div>
     </div>

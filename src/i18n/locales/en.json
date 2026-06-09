@@ -198,9 +198,13 @@
       "notConfigured": "The contact form isn't configured yet. Please reach me via email or LinkedIn.",
       "privacy": "Your details are only used to reply to you. No spam, ever."
     },
-    "or": "or",
-    "linkedinPrompt": "Connect with me on LinkedIn",
-    "linkedinButton": "LinkedIn Profile"
+    "tabs": {
+      "message": "Send a message",
+      "call": "Book a call"
+    },
+    "cal": {
+      "notConfigured": "Call booking isn't set up yet — please send a message instead."
+    }
   },
   "posts": {
     "common": {

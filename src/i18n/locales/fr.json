@@ -198,9 +198,13 @@
       "notConfigured": "Le formulaire de contact n'est pas encore configuré. Contactez-moi par e-mail ou sur LinkedIn.",
       "privacy": "Vos coordonnées servent uniquement à vous répondre. Aucun spam, jamais."
     },
-    "or": "ou",
-    "linkedinPrompt": "Connectez-vous avec moi sur LinkedIn",
-    "linkedinButton": "Profil LinkedIn"
+    "tabs": {
+      "message": "Envoyer un message",
+      "call": "Réserver un appel"
+    },
+    "cal": {
+      "notConfigured": "La prise de rendez-vous n'est pas encore configurée — envoyez-moi un message en attendant."
+    }
   },
   "posts": {
     "common": {
