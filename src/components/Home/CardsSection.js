@@ -7,6 +7,7 @@ import { ArrowRight } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
 import { PROJECTS, formatProjectDate } from '../../data/projects';
 import Reveal from '../common/Reveal';
+import SectionDivider from '../common/SectionDivider';
 
 export default function CardsSection() {
   const { t, i18n } = useTranslation();
@@ -20,8 +21,9 @@ export default function CardsSection() {
   };
 
   return (
-    <section className="cards-section w-full bg-white px-4 py-24 rounded-t-[44px]">
-      <Reveal className="text-center max-w-2xl mx-auto mb-12">
+    <section className="cards-section w-full bg-white px-4 py-24 relative overflow-hidden">
+      <SectionDivider variant="curve" color="#1a1717" />
+      <Reveal className="text-center max-w-2xl mx-auto mb-12 relative z-10">
         <h2 className="font-display text-3xl sm:text-4xl font-bold text-[#1a1717] mb-3">
           {t('home.cards.heading')}
         </h2>

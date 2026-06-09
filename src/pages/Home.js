@@ -5,6 +5,8 @@ import HeroSection from '../components/Home/HeroSection';
 import CardsSection from '../components/Home/CardsSection';
 import AboutMe from '../components/Home/AboutMe';
 import ServicesCta from '../components/Home/ServicesCta';
+import Marquee from '../components/Home/Marquee';
+import SectionDivider from '../components/common/SectionDivider';
 
 function Home() {
   const { t } = useTranslation();
@@ -18,18 +20,23 @@ function Home() {
       />
       <HeroSection />
 
-      {/* Stacked, softly-overlapping panels for smooth section transitions. */}
-      <div id="after-hero" className="relative z-10 -mt-8 w-full bg-[whitesmoke] rounded-t-[44px] flex justify-center py-16 sm:py-24">
+      {/* Transition 1 — moving tech ticker out of the hero */}
+      <Marquee />
+
+      {/* Transition 2 — charcoal wave flowing into the light about band */}
+      <section
+        id="after-hero"
+        className="relative overflow-hidden w-full bg-[whitesmoke] flex justify-center pt-24 pb-16 sm:pb-24"
+      >
+        <SectionDivider variant="wave" color="#1a1717" />
         <AboutMe />
-      </div>
+      </section>
 
-      <div className="relative z-20 -mt-8">
-        <ServicesCta />
-      </div>
+      {/* Transition 3 — diagonal accent cut into the dark services band */}
+      <ServicesCta />
 
-      <div className="relative z-30 -mt-8">
-        <CardsSection />
-      </div>
+      {/* Transition 4 — wide curve into the white latest-work section */}
+      <CardsSection />
     </>
   );
 }

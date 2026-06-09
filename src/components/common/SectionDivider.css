@@ -1,0 +1,14 @@
+.section-divider {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.section-divider svg {
+  display: block;
+  width: 100%;
+}
