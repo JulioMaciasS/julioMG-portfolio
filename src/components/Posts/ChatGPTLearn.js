@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import SeoHead from '../Seo/SeoHead';
 import Link from '../LocalizedLink';
+import PostBreadcrumb from './PostBreadcrumb';
 import '../Post.css';
 
 function ChatGPTLearn() {
@@ -33,6 +34,7 @@ function ChatGPTLearn() {
       <div className="post-container">
         <div className="white-container">
           <div className="contents-container max-w-4xl mx-auto">
+            <PostBreadcrumb current="ChatGPTLearn" />
             {/* Header */}
             <div className="mb-6 border-b border-gray-200 pb-4 w-full">
               <div className="flex flex-row items-center gap-3 mb-2">
@@ -67,7 +69,7 @@ function ChatGPTLearn() {
                 <p className="text-gray-700 mb-6">{t('posts.chatgptlearn.technologiesIntro')}</p>
                 <div className="flex flex-row flex-wrap gap-6 justify-center items-center w-full text-center mb-2">
                   {Object.entries(ICONS).map(([name, icon]) => (
-                    <div key={name} className="flex flex-col items-center transition-transform hover:scale-110">
+                    <div key={name} className="flex flex-col items-center">
                       <div className="bg-white p-3 rounded-xl shadow-md mb-2 w-24 h-24 flex items-center justify-center">
                         <img src={icon} className="object-contain max-h-full max-w-full rounded-lg" alt={`${name} icon`} />
                       </div>

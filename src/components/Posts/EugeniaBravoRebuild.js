@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import SeoHead from '../Seo/SeoHead';
 import '../Post.css';
 import ImageSlider from './ImageSlider';
+import PostBreadcrumb from './PostBreadcrumb';
 
 function EugeniaBravoRebuild() {
   const { t } = useTranslation();
@@ -92,6 +93,7 @@ function EugeniaBravoRebuild() {
       <div className='post-container'>
         <div className='white-container'>
           <div className='contents-container max-w-4xl mx-auto'>
+            <PostBreadcrumb current="EugeniaBravo Rebuild" />
             <div className='flex flex-row items-center gap-2 sm:gap-3 mb-6 border-b border-gray-200 pb-4 w-full'>
               <img
                 src='/images/eugeniaBravoPost/EugeniaBravoIcon.png'
@@ -136,7 +138,7 @@ function EugeniaBravoRebuild() {
                     "TypeScript": ICONS.typescript,
                     "Supabase": ICONS.supabase
                   }).map(([name, icon]) => (
-                    <div key={name} className='flex flex-col items-center transition-transform hover:scale-110'>
+                    <div key={name} className='flex flex-col items-center'>
                       <div className="bg-white p-3 rounded-xl shadow-md mb-2 w-24 h-24 flex items-center justify-center">
                         <img
                           src={icon}

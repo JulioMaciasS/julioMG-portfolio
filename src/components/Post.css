@@ -47,6 +47,31 @@
   padding: 40px 44px;
 }
 
+.post-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+.post-breadcrumb-link {
+  color: #6b7280;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.post-breadcrumb-link:hover {
+  color: #1a1717;
+}
+.post-breadcrumb-sep {
+  color: #c0c4cc;
+  flex-shrink: 0;
+}
+.post-breadcrumb-current {
+  color: #1a1717;
+  font-weight: 600;
+}
+
 #bottom { margin-bottom: 0; }
 
 #caption {

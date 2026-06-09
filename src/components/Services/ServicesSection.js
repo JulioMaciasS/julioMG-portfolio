@@ -13,6 +13,7 @@ import {
   CheckCircle2
 } from 'lucide-react';
 import './ServicesSection.css';
+import Reveal from '../common/Reveal';
 
 const LOGO_BASE = '/images/logos/';
 
@@ -84,10 +85,10 @@ function ServicesSection() {
           <p>{t('services.grid.subtitle')}</p>
         </div>
         <div className="services-grid">
-          {SERVICES.map((service) => {
+          {SERVICES.map((service, index) => {
             const Icon = service.icon;
             return (
-              <article key={service.key} className="service-card-wrapper">
+              <Reveal as="article" key={service.key} delay={index * 70} className="service-card-wrapper">
                 <div className="service-card-shadow" />
                 <div className="service-card">
                   <div className="service-card-icon">
@@ -101,7 +102,7 @@ function ServicesSection() {
                     ))}
                   </div>
                 </div>
-              </article>
+              </Reveal>
             );
           })}
         </div>
@@ -109,7 +110,7 @@ function ServicesSection() {
 
       {/* Why work with me */}
       <section className="services-why">
-        <div className="services-why-card">
+        <Reveal as="div" className="services-why-card">
           <h2>{t('services.why.heading')}</h2>
           <ul>
             {['point1', 'point2', 'point3'].map((point) => (
@@ -125,7 +126,7 @@ function ServicesSection() {
           <Link to="/projects/eugeniabravo-rebuild" className="services-why-link">
             {t('services.why.caseStudyLink')} <ArrowRight size={18} />
           </Link>
-        </div>
+        </Reveal>
       </section>
 
       {/* Process */}
@@ -136,24 +137,26 @@ function ServicesSection() {
         </div>
         <div className="services-process-grid">
           {PROCESS.map((step, index) => (
-            <div key={step} className="services-process-step">
+            <Reveal key={step} delay={index * 70} className="services-process-step">
               <span className="services-process-number">{`0${index + 1}`}</span>
               <h3>{t(`services.process.${step}Title`)}</h3>
               <p>{t(`services.process.${step}Text`)}</p>
-            </div>
+            </Reveal>
           ))}
         </div>
       </section>
 
       {/* Final CTA */}
       <section className="services-cta">
-        <h2>{t('services.cta.heading')}</h2>
-        <p>{t('services.cta.text')}</p>
-        <Link to="/contact-me">
-          <Button buttonStyle="btn--primary" buttonSize="btn--large" buttonShape="btn--round">
-            {t('services.cta.button')}
-          </Button>
-        </Link>
+        <Reveal className="relative z-10">
+          <h2>{t('services.cta.heading')}</h2>
+          <p>{t('services.cta.text')}</p>
+          <Link to="/contact-me">
+            <Button buttonStyle="btn--primary" buttonSize="btn--large" buttonShape="btn--round">
+              {t('services.cta.button')}
+            </Button>
+          </Link>
+        </Reveal>
       </section>
     </main>
   );
