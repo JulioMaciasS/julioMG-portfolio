@@ -48,9 +48,11 @@ function CodeWindow() {
  */
 function HeroMascot() {
   const ref = useRef(null);
+  const pupilsRef = useRef(null);
   const st = useRef({
     x: 0, y: 110, face: 1, clicking: false, parked: false, cancelled: false, reduce: false,
     wander: null, timers: [], step: null, glideToButton: null, heroRatio: null, w: 48, h: 38,
+    eyeX: 0, eyeY: 0, eyeRaf: null,
   });
   const [jumping, setJumping] = useState(false);
 
@@ -72,7 +74,8 @@ function HeroMascot() {
     };
     const place = (transition) => {
       el.style.transition = transition;
-      el.style.transform = `translate(${s.x}px, ${-s.y}px) scaleX(${s.face})`;
+      // No scaleX flip — the body stays put and the eyes convey direction instead.
+      el.style.transform = `translate(${s.x}px, ${-s.y}px)`;
     };
     const buttonTarget = () => {
       const btn = document.querySelector('.floating-contact');
@@ -186,12 +189,54 @@ function HeroMascot() {
     };
     window.addEventListener('resize', onResize);
 
+    // --- Eyes track the cursor (fine pointers only; respects reduced motion) ---
+    const finePointer = window.matchMedia('(pointer: fine)').matches;
+    let lastMouseX = window.innerWidth / 2;
+    let lastMouseY = window.innerHeight / 2;
+    const onMouseMove = (e) => { lastMouseX = e.clientX; lastMouseY = e.clientY; };
+    const EYE_MAX = 0.5; // max pupil shift in SVG units — keeps the pupil inside the eye
+    const tickEyes = () => {
+      if (s.cancelled) return;
+      const pupils = pupilsRef.current;
+      if (pupils) {
+        const cx = s.x + s.w / 2;                        // ghost centre, screen px
+        const cy = window.innerHeight - s.y - s.h / 2;
+        // While gliding to + jumping over the contact button, look at the
+        // button; otherwise follow the cursor.
+        let aimX = lastMouseX;
+        let aimY = lastMouseY;
+        if (s.clicking) {
+          const btn = document.querySelector('.floating-contact');
+          if (btn) {
+            const b = btn.getBoundingClientRect();
+            aimX = b.left + b.width / 2;
+            aimY = b.top + b.height / 2;
+          }
+        }
+        const dx = aimX - cx;
+        const dy = aimY - cy;
+        const len = Math.hypot(dx, dy) || 1;
+        const tx = (dx / len) * EYE_MAX;
+        const ty = (dy / len) * EYE_MAX;
+        s.eyeX += (tx - s.eyeX) * 0.2;                   // ease toward the target
+        s.eyeY += (ty - s.eyeY) * 0.2;
+        pupils.setAttribute('transform', `translate(${s.eyeX.toFixed(3)} ${s.eyeY.toFixed(3)})`);
+      }
+      s.eyeRaf = requestAnimationFrame(tickEyes);
+    };
+    if (finePointer && !reduce) {
+      window.addEventListener('mousemove', onMouseMove, { passive: true });
+      s.eyeRaf = requestAnimationFrame(tickEyes);
+    }
+
     return () => {
       s.cancelled = true;
       clearTimeout(s.wander);
       s.timers.forEach(clearTimeout);
       window.removeEventListener('scroll', onScroll);
       window.removeEventListener('resize', onResize);
+      window.removeEventListener('mousemove', onMouseMove);
+      if (s.eyeRaf) cancelAnimationFrame(s.eyeRaf);
     };
   }, []);
 
@@ -246,9 +291,9 @@ function HeroMascot() {
             <rect x="2" y="3" width="2" height="2" />
             <rect x="5" y="3" width="2" height="2" />
           </g>
-          <g fill="#1a1717">
-            <rect x="3" y="4" width="1" height="1" />
-            <rect x="6" y="4" width="1" height="1" />
+          <g fill="#1a1717" ref={pupilsRef}>
+            <rect x="2.5" y="3.5" width="1" height="1" />
+            <rect x="5.5" y="3.5" width="1" height="1" />
           </g>
         </svg>
       </span>
