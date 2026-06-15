@@ -1,19 +1,21 @@
+'use client';
+
 import React, { useState, useEffect } from 'react';
 import Link from '../LocalizedLink';
-import { useTranslation } from 'react-i18next';
+import { useTranslations } from 'next-intl';
 import { Menu, X } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
 import './Navbar.css';
 
 function Navbar() {
-    const { t } = useTranslation();
+    const t = useTranslations();
     const [click, setClick] = useState(false);
 
     const handleClick = () => {
         // Toggle menu state
         const newClickState = !click;
         setClick(newClickState);
-        
+
         // Toggle body scroll
         if (newClickState) {
             // When menu opens, disable scrolling
@@ -23,7 +25,7 @@ function Navbar() {
             document.body.style.overflow = 'auto';
         }
     };
-    
+
     const closeMobileMenu = () => {
         setClick(false);
         // Re-enable scrolling when menu closes

@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from '../LocalizedLink';
-import { useTranslation } from 'react-i18next';
+import { useTranslations } from 'next-intl';
 import { Button } from '../Button';
 import {
   Layers,
@@ -37,7 +37,7 @@ const SERVICES = [
 const PROCESS = ['step1', 'step2', 'step3', 'step4'];
 
 function ServicesSection() {
-  const { t } = useTranslation();
+  const t = useTranslations();
 
   return (
     <main className="services-page">

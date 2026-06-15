@@ -28,12 +28,12 @@
       "description": "Cómo Julio Macias recopila, utiliza y protege tus datos personales."
     },
     "title": "Política de privacidad",
-    "lastUpdated": "Última actualización: {{date}}",
+    "lastUpdated": "Última actualización: {date}",
     "templateNotice": "Nota: el correo electrónico de contacto se actualizará una vez que el nuevo dominio esté en funcionamiento. Como con cualquier documento legal, considera una revisión profesional antes de basarte en esta política.",
-    "intro": "Esta Política de privacidad explica cómo {{controllerName}} (\"yo\", \"mí\", \"mi\") recopila, utiliza y protege tus datos personales cuando visitas este sitio web.",
+    "intro": "Esta Política de privacidad explica cómo {controllerName} (\"yo\", \"mí\", \"mi\") recopila, utiliza y protege tus datos personales cuando visitas este sitio web.",
     "jurisdiction": "la República de Irlanda",
     "whoTitle": "Quién soy",
-    "whoBody": "Este sitio web está gestionado por {{controllerName}}, con sede en {{jurisdiction}}. Para cualquier consulta sobre privacidad, puedes escribirme a {{contactEmail}}.",
+    "whoBody": "Este sitio web está gestionado por {controllerName}, con sede en {jurisdiction}. Para cualquier consulta sobre privacidad, puedes escribirme a {contactEmail}.",
     "dataTitle": "Datos que recopilo",
     "dataBody": "Mantengo la recopilación de datos al mínimo. Si utilizas el formulario de contacto, recibo la información que decides proporcionar (como tu nombre, dirección de correo electrónico y mensaje). Si aceptas la analítica, recibo datos de uso anonimizados, como las páginas visitadas, la ubicación aproximada y el tipo de dispositivo y navegador.",
     "useTitle": "Cómo utilizo tus datos",
@@ -45,7 +45,7 @@
     "thirdPartiesTitle": "Servicios de terceros",
     "thirdPartiesBody": "Con tu consentimiento, utilizo PostHog para analítica de producto respetuosa con la privacidad (incluidos mapas de calor y estadísticas de sesión), y un proveedor de formularios externo (Basin) para gestionar los envíos del formulario de contacto. Estos proveedores tratan los datos en mi nombre conforme a sus propias condiciones.",
     "rightsTitle": "Tus derechos",
-    "rightsBody": "Si te encuentras en la UE/EEE o en el Reino Unido, tienes derecho a acceder, rectificar, suprimir, limitar u oponerte al tratamiento de tus datos personales, derecho a la portabilidad de los datos y derecho a retirar tu consentimiento en cualquier momento sin que ello afecte al tratamiento previo. También tienes derecho a presentar una reclamación ante tu autoridad local de protección de datos (autoridad de control). Para ejercer cualquiera de estos derechos, escríbeme a {{contactEmail}}.",
+    "rightsBody": "Si te encuentras en la UE/EEE o en el Reino Unido, tienes derecho a acceder, rectificar, suprimir, limitar u oponerte al tratamiento de tus datos personales, derecho a la portabilidad de los datos y derecho a retirar tu consentimiento en cualquier momento sin que ello afecte al tratamiento previo. También tienes derecho a presentar una reclamación ante tu autoridad local de protección de datos (autoridad de control). Para ejercer cualquiera de estos derechos, escríbeme a {contactEmail}.",
     "retentionTitle": "Conservación de los datos",
     "retentionBody": "Conservo los mensajes del formulario de contacto solo durante el tiempo necesario para gestionar tu consulta, y los datos de analítica conforme a la configuración de conservación estándar de los proveedores.",
     "transfersTitle": "Transferencias internacionales",
@@ -53,7 +53,7 @@
     "changesTitle": "Cambios en esta política",
     "changesBody": "Es posible que actualice esta política de vez en cuando. La fecha de \"última actualización\" que figura arriba refleja la versión más reciente.",
     "contactTitle": "Contacto",
-    "contactBody": "Para cualquier consulta sobre esta política o sobre tus datos, escríbeme a {{contactEmail}}."
+    "contactBody": "Para cualquier consulta sobre esta política o sobre tus datos, escríbeme a {contactEmail}."
   },
   "cookie": {
     "meta": {
@@ -61,7 +61,7 @@
       "description": "Qué cookies utiliza este sitio web y cómo gestionarlas."
     },
     "title": "Política de cookies",
-    "lastUpdated": "Última actualización: {{date}}",
+    "lastUpdated": "Última actualización: {date}",
     "templateNotice": "Aviso sobre la plantilla: revisa esta lista de cookies para que coincida con las herramientas que realmente actives antes de basarte en ella.",
     "intro": "Esta Política de cookies explica qué son las cookies, cuáles utiliza este sitio web y cómo puedes controlarlas.",
     "whatTitle": "¿Qué son las cookies?",

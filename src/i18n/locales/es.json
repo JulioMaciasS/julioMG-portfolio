@@ -17,7 +17,7 @@
   "footer": {
     "contactMe": "Contáctame:",
     "otherLinks": "Otros enlaces:",
-    "rights": "© {{year}} Julio Macias. Todos los derechos reservados.",
+    "rights": "© {year} Julio Macías González. Todos los derechos reservados.",
     "skillsTitle": "Hecho con"
   },
   "notFound": {
@@ -31,7 +31,7 @@
   },
   "home": {
     "meta": {
-      "title": "Julio Macias | Desarrollador de Software",
+      "title": "Julio Macías González | Desarrollador de Software",
       "description": "Julio Macías González, desarrollador de software con experiencia en la industria en Citi. Aplicaciones web full-stack, en la nube y basadas en IA. Disponible para trabajo freelance y consultoría."
     },
     "hero": {

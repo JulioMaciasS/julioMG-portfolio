@@ -1,5 +1,7 @@
+'use client';
+
 import { useEffect, useRef } from 'react';
-import { useLocation } from 'react-router-dom';
+import { usePathname } from 'next/navigation';
 import { capturePageview } from '../../utils/analytics';
 
 /**
@@ -8,7 +10,7 @@ import { capturePageview } from '../../utils/analytics';
  * counting. No-ops until analytics is loaded (i.e. after consent).
  */
 function PageviewTracker() {
-  const location = useLocation();
+  const pathname = usePathname();
   const isFirst = useRef(true);
 
   useEffect(() => {
@@ -17,7 +19,7 @@ function PageviewTracker() {
       return;
     }
     capturePageview();
-  }, [location.pathname]);
+  }, [pathname]);
 
   return null;
 }

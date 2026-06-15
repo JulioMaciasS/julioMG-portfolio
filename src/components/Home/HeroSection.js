@@ -1,3 +1,5 @@
+'use client';
+
 import React, { useEffect, useRef, useState } from 'react';
 import { createPortal } from 'react-dom';
 import '../../App.css';
@@ -5,7 +7,7 @@ import { Button } from '../Button';
 import './HeroSection.css';
 import Link from '../LocalizedLink';
 import { ChevronDown } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
+import { useTranslations } from 'next-intl';
 import useSpotlight from '../../hooks/useSpotlight';
 
 /** Stylised code window — the hero's visual focal point on desktop. */
@@ -303,8 +305,14 @@ function HeroMascot() {
 }
 
 export default function HeroSection() {
-  const { t } = useTranslation();
+  const t = useTranslations();
   const spotlightRef = useSpotlight();
+  // The mascot portals into document.body, so it must only render on the client.
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const scrollDown = () => {
     const next = document.getElementById('after-hero');
@@ -323,7 +331,7 @@ export default function HeroSection() {
           <div className="hero-intro justify-center lg:justify-start animate-fade-in">
             <div className="hero-avatar-wrap">
               <img
-                src="./images/profile-pic.jpeg"
+                src="/images/profile-pic.jpeg"
                 alt="Julio Macias"
                 className="hero-avatar"
               />
@@ -362,7 +370,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      <HeroMascot />
+      {mounted && <HeroMascot />}
 
       <button
         onClick={scrollDown}

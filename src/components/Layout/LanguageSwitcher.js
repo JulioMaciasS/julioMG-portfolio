@@ -1,19 +1,20 @@
+'use client';
+
 import React, { useState, useRef, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useLocale, useTranslations } from 'next-intl';
 import { Globe, Check, ChevronDown } from 'lucide-react';
-import { SUPPORTED_LANGUAGES } from '../../i18n';
-import { localizedPath, stripLangPrefix } from '../../utils/siteConfig';
+import { SUPPORTED_LANGUAGES } from '../../i18n/config';
+import { usePathname, useRouter } from '../../i18n/navigation';
 import './LanguageSwitcher.css';
 
 function LanguageSwitcher({ onSelect }) {
-  const { i18n, t } = useTranslation();
-  const navigate = useNavigate();
-  const location = useLocation();
+  const t = useTranslations();
+  const current = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const ref = useRef(null);
 
-  const current = (i18n.language || 'en').split('-')[0];
   const activeLang =
     SUPPORTED_LANGUAGES.find((l) => l.code === current) || SUPPORTED_LANGUAGES[0];
 
@@ -28,9 +29,8 @@ function LanguageSwitcher({ onSelect }) {
   }, []);
 
   const changeLanguage = (code) => {
-    const logicalPath = stripLangPrefix(location.pathname);
-    i18n.changeLanguage(code);
-    navigate(localizedPath(logicalPath, code));
+    // next-intl keeps the same logical path and swaps the locale prefix.
+    router.replace(pathname, { locale: code });
     setOpen(false);
     if (onSelect) {
       onSelect();

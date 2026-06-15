@@ -1,12 +1,13 @@
 import React from 'react';
 import "./ProjectCards.css";
 import ProjectCard from '../../common/ProjectCard';
-import { useTranslation } from 'react-i18next';
+import { useTranslations, useLocale } from 'next-intl';
 import { PROJECTS, formatProjectDate } from '../../../data/projects';
 import Reveal from '../../common/Reveal';
 
 function ProjectCards() {
-    const { t, i18n } = useTranslation();
+    const t = useTranslations();
+    const locale = useLocale();
     return (
         <div className='proj-cards-grid'>
             {PROJECTS.map((project, i) => (
@@ -19,7 +20,7 @@ function ProjectCards() {
                         padding={project.padding}
                         isNew={project.isNew}
                         tag={t('projects.new')}
-                        date={formatProjectDate(project.date, i18n.language)}
+                        date={formatProjectDate(project.date, locale)}
                         hrefLink={project.link}
                         isExternal={project.isExternal}
                     />

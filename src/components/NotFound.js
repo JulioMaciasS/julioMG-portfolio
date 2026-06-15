@@ -1,10 +1,12 @@
+'use client';
+
 import React from 'react';
-import Link from '../components/LocalizedLink';
-import { useTranslation } from 'react-i18next';
-import { Button } from '../components/Button';
+import Link from './LocalizedLink';
+import { useTranslations } from 'next-intl';
+import { Button } from './Button';
 
 function NotFound() {
-  const { t } = useTranslation();
+  const t = useTranslations();
   return (
     <div className="min-h-[70vh] flex flex-col items-center justify-center text-center px-4">
       <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-4">404</h1>
