@@ -1,77 +1,80 @@
 # Julio Macias Portfolio
 
-Personal portfolio website for Julio Macias Gonzalez, built to present software engineering work with more depth than a typical project grid. The site combines a polished landing page, a dedicated projects hub, long-form case studies, a contact flow, and downloadable resume assets in one React application.
+Personal portfolio for **Julio Macias Gonzalez**, built to present software
+engineering work with more depth than a typical project grid: a polished
+landing page, a services page, a projects hub, long-form case studies, a
+contact flow, and a downloadable resume — in one statically-generated,
+multilingual site.
 
-Live site: [portfolio.juliodev.co.uk](https://portfolio.juliodev.co.uk/)
-
-## What This Project Showcases
-
-- A portfolio experience designed to feel like a product, not just a static resume
-- Featured work with dedicated write-ups for architecture, tooling, and delivery decisions
-- A responsive React frontend with custom styling and route-based navigation
-- Professional touchpoints including SEO metadata, sitemap support, contact options, and resume download assets
-
-## Key Sections
-
-- `/` - Landing page with hero section, personal introduction, and featured projects
-- `/projects` - Project gallery with quick summaries and technology tags
-- `/projects/cineshare` - Case study for a full-stack social platform focused on film discovery
-- `/projects/eugeniabravo` - Original client project write-up built around React and AWS Amplify
-- `/projects/eugeniabravo-rebuild` - Migration case study covering Next.js, TypeScript, Supabase, SEO, and editorial tooling
-- `/contact-me` - Contact page with embedded Basin form and LinkedIn CTA
-
-## Featured Work
-
-### EugeniaBravo Rebuild
-
-Migration of a real client website from a plain React SPA to a Next.js and Supabase stack. The case study focuses on SEO, content indexing, admin workflows, media management, and simplifying operations for a smaller project.
-
-### Eugenia Bravo
-
-Original production website for a lawyer, built with React, TypeScript, AWS Amplify, and Brevo. This project shows the earlier architecture before the rebuild.
-
-### CineShare
-
-A learning-focused full-stack app for discovering and sharing movies and TV shows. The write-up covers Angular, Spring Boot, MySQL, AWS, security considerations, and the use of AI tools during development.
-
-### Universal Paperclips for iOS
-
-An external article documenting the development of a reduced iOS version of Universal Paperclips using SwiftUI, with monetization features like ads and microtransactions.
+Live site: [juliomacias.dev](https://juliomacias.dev)
 
 ## Tech Stack
 
-- React 18
-- React Router
-- JavaScript
-- Tailwind CSS utilities plus custom CSS modules/stylesheets
-- Lucide React, Bootstrap Icons, and Font Awesome for UI icons
-- Create React App tooling
-- `gh-pages` deployment script support
+- **Next.js 14** (App Router) with **static generation (SSG)** — every route
+  is prerendered to HTML at build time for fast loads and reliable SEO indexing
+- **next-intl** for internationalisation (English, Spanish, French, Arabic),
+  English at the root and other locales URL-prefixed (`as-needed`)
+- **React 18**, JavaScript
+- **Tailwind CSS** plus per-component stylesheets
+- **@fontsource** self-hosted fonts (Inter, Space Grotesk) — no third-party
+  font requests before consent
+- **PostHog** product analytics, loaded only after cookie consent
+- **Cal.com** embed for call booking and **Web3Forms** for the contact form
+- Lucide React + Bootstrap Icons for UI icons
 
-## Project Strengths
+## SEO
 
-- Clear personal branding and portfolio storytelling
-- Case-study style project pages instead of shallow link cards
-- Mixed content strategy across web, cloud, and mobile work
-- Built-in SEO signals through metadata, canonical tags, `robots.txt`, and `sitemap.xml`
-- Contact flow that gives visitors both a form path and direct professional links
+The site was migrated from Create React App to Next.js specifically to fix
+search indexing: a client-rendered SPA served an empty HTML shell for every
+URL, so most pages were never indexed. Now each route ships:
+
+- A unique server-rendered `<title>`, meta description, and visible content
+- A localised canonical URL and `hreflang` alternates (en/es/fr/ar + x-default)
+  via the Next Metadata API
+- A `Person` JSON-LD block (`name` "Julio Macias Gonzalez",
+  `alternateName` "Julio Macias", `sameAs` LinkedIn + GitHub)
+- A dynamically generated `sitemap.xml` and `robots.txt`
+
+## Key Routes
+
+- `/` — landing page: hero, about, latest work, services CTA
+- `/services` — freelance & consulting services
+- `/projects` — project gallery with summaries and tech tags
+- `/projects/chatgptlearn` — final-year AI training platform case study
+- `/projects/cineshare` — full-stack film discovery platform case study
+- `/projects/eugeniabravo` — original client project (React + AWS Amplify)
+- `/projects/eugeniabravo-rebuild` — migration to Next.js + Supabase
+- `/contact-me` — contact form (Web3Forms) and Cal.com booking
+- `/privacy-policy`, `/cookie-policy` — legal pages
+
+Localised variants live under `/es`, `/fr`, and `/ar`.
 
 ## Local Development
 
 ```bash
 npm install
-npm start
+npm run dev
 ```
 
-The app runs locally at [http://localhost:3000](http://localhost:3000).
+The app runs at [http://localhost:3000](http://localhost:3000).
+
+Create a `.env.local` for the client-side integrations (all optional — the site
+runs without them):
+
+```bash
+NEXT_PUBLIC_CAL_LINK=<cal-username>/<event-slug>   # Cal.com booking link
+NEXT_PUBLIC_WEB3FORMS_KEY=<key>                     # contact form
+NEXT_PUBLIC_POSTHOG_KEY=<key>                       # analytics (optional)
+NEXT_PUBLIC_POSTHOG_HOST=https://eu.i.posthog.com  # optional, EU default
+```
 
 ## Scripts
 
 ```bash
-npm start      # start the development server
-npm test       # run the CRA test runner
-npm run build  # create a production build
-npm run deploy # publish the build with gh-pages
+npm run dev    # start the dev server
+npm run build  # production build (static generation)
+npm run start  # serve the production build
+npm run lint   # run next lint
 ```
 
 ## Project Structure
@@ -80,30 +83,42 @@ npm run deploy # publish the build with gh-pages
 public/
   images/              Static images for cards, posts, logos, and profile media
   Downloads/           Resume PDF
-  robots.txt           Search crawler rules
-  sitemap.xml          Sitemap for indexing
 
 src/
+  app/
+    [locale]/          Localised routes (layout, pages, per-route metadata)
+    sitemap.js         Generated sitemap.xml
+    robots.js          Generated robots.txt
+    globals.css        Global styles + Tailwind layers
   components/
     Home/              Landing page sections
-    Layout/            Navbar and footer
+    Layout/            Navbar, footer, language switcher
     Projects/          Projects listing UI
     Posts/             Long-form project case studies
-    ContactMe/         Contact page content
+    Legal/             Privacy and cookie policy pages
+    ContactMe/         Contact form + Cal.com embed
   data/
     projects.js        Featured project metadata
-  pages/               Route-level pages
-  utils/               Shared app utilities
+  i18n/
+    routing.js         Locales + as-needed prefix config
+    request.js         Message loading
+    locales/           Translation catalogs (en, es, fr, ar)
+  utils/
+    seo.js             Metadata/canonical/hreflang helper
+    analytics.js       Consent-gated PostHog
+middleware.js          next-intl locale routing
 ```
 
-## Notes
+## Deployment
 
-This repository is the portfolio application itself. Some featured projects link to separate production sites or external repositories, while others are documented directly inside this app as case studies.
+The site is hosted on **Vercel** and **auto-deploys on every push to `main`**.
+Vercel auto-detects the Next.js framework. The client env vars above must be
+set in the Vercel dashboard (Settings → Environment Variables).
 
 ## Author
 
 Julio Macias Gonzalez
 
-- Portfolio: [portfolio.juliodev.co.uk](https://portfolio.juliodev.co.uk/)
+- Portfolio: [juliomacias.dev](https://juliomacias.dev)
 - LinkedIn: [julio-macias-gonzalez](https://www.linkedin.com/in/julio-macias-gonzalez-199266282/)
 - GitHub: [@JulioMaciasS](https://github.com/JulioMaciasS)
