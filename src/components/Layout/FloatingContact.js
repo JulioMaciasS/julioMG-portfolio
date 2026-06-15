@@ -1,8 +1,9 @@
+'use client';
+
 import React from 'react';
-import { useLocation } from 'react-router-dom';
 import Link from '../LocalizedLink';
-import { useTranslation } from 'react-i18next';
-import { stripLangPrefix } from '../../utils/siteConfig';
+import { useTranslations } from 'next-intl';
+import { usePathname } from '../../i18n/navigation';
 import './FloatingContact.css';
 
 /**
@@ -11,10 +12,11 @@ import './FloatingContact.css';
  * Hidden on the contact page itself, where it would be redundant.
  */
 export default function FloatingContact() {
-  const { t } = useTranslation();
-  const location = useLocation();
+  const t = useTranslations();
+  // next-intl's usePathname returns the locale-agnostic path (no /es prefix).
+  const pathname = usePathname();
 
-  if (stripLangPrefix(location.pathname) === '/contact-me') {
+  if (pathname === '/contact-me') {
     return null;
   }
 

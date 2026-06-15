@@ -17,7 +17,7 @@
   "footer": {
     "contactMe": "تواصل معي:",
     "otherLinks": "روابط أخرى:",
-    "rights": "© {{year}} Julio Macias. جميع الحقوق محفوظة.",
+    "rights": "© {year} Julio Macias Gonzalez. جميع الحقوق محفوظة.",
     "skillsTitle": "صُمم باستخدام"
   },
   "notFound": {
@@ -31,7 +31,7 @@
   },
   "home": {
     "meta": {
-      "title": "Julio Macias | مطوّر برمجيات",
+      "title": "Julio Macias Gonzalez | مطوّر برمجيات",
       "description": "خوليو ماسياس غونزاليس، مطوّر برمجيات يتمتّع بخبرة مهنية في Citi. تطبيقات ويب متكاملة وسحابية ومدعومة بالذكاء الاصطناعي. متاح للعمل الحر والاستشارات."
     },
     "hero": {

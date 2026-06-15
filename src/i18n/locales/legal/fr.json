@@ -28,12 +28,12 @@
       "description": "Comment Julio Macias collecte, utilise et protège vos données personnelles."
     },
     "title": "Politique de confidentialité",
-    "lastUpdated": "Dernière mise à jour : {{date}}",
+    "lastUpdated": "Dernière mise à jour : {date}",
     "templateNotice": "Remarque : l'adresse e-mail de contact sera mise à jour dès que le nouveau domaine sera en ligne. Comme pour tout document juridique, il est recommandé de le faire relire par un professionnel avant de vous appuyer sur cette politique.",
-    "intro": "La présente politique de confidentialité explique comment {{controllerName}} (« je », « moi », « mon ») collecte, utilise et protège vos données personnelles lorsque vous visitez ce site web.",
+    "intro": "La présente politique de confidentialité explique comment {controllerName} (« je », « moi », « mon ») collecte, utilise et protège vos données personnelles lorsque vous visitez ce site web.",
     "jurisdiction": "la République d'Irlande",
     "whoTitle": "Qui je suis",
-    "whoBody": "Ce site web est exploité par {{controllerName}}, établi en {{jurisdiction}}. Pour toute question relative à la confidentialité, vous pouvez me contacter à l'adresse {{contactEmail}}.",
+    "whoBody": "Ce site web est exploité par {controllerName}, établi en {jurisdiction}. Pour toute question relative à la confidentialité, vous pouvez me contacter à l'adresse {contactEmail}.",
     "dataTitle": "Données que je collecte",
     "dataBody": "Je réduis la collecte de données au strict minimum. Si vous utilisez le formulaire de contact, je reçois les informations que vous choisissez de fournir (telles que votre nom, votre adresse e-mail et votre message). Si vous consentez à la mesure d'audience, je reçois des données d'utilisation anonymisées telles que les pages consultées, votre localisation approximative ainsi que le type d'appareil et de navigateur.",
     "useTitle": "Comment j'utilise vos données",
@@ -45,7 +45,7 @@
     "thirdPartiesTitle": "Services tiers",
     "thirdPartiesBody": "Avec votre consentement, j'utilise PostHog pour une analyse de produit respectueuse de la vie privée (comprenant des cartes de chaleur et des statistiques de session), ainsi qu'un prestataire de formulaire tiers (Basin) pour traiter les envois du formulaire de contact. Ces prestataires traitent les données pour mon compte selon leurs propres conditions.",
     "rightsTitle": "Vos droits",
-    "rightsBody": "Si vous résidez dans l'UE/EEE ou au Royaume-Uni, vous disposez du droit d'accéder à vos données personnelles, de les rectifier, de les supprimer, d'en limiter le traitement ou de vous y opposer, du droit à la portabilité des données, ainsi que du droit de retirer votre consentement à tout moment sans que cela n'affecte les traitements antérieurs. Vous avez également le droit d'introduire une réclamation auprès de votre autorité locale de protection des données (autorité de contrôle). Pour exercer l'un de ces droits, contactez-moi à l'adresse {{contactEmail}}.",
+    "rightsBody": "Si vous résidez dans l'UE/EEE ou au Royaume-Uni, vous disposez du droit d'accéder à vos données personnelles, de les rectifier, de les supprimer, d'en limiter le traitement ou de vous y opposer, du droit à la portabilité des données, ainsi que du droit de retirer votre consentement à tout moment sans que cela n'affecte les traitements antérieurs. Vous avez également le droit d'introduire une réclamation auprès de votre autorité locale de protection des données (autorité de contrôle). Pour exercer l'un de ces droits, contactez-moi à l'adresse {contactEmail}.",
     "retentionTitle": "Conservation des données",
     "retentionBody": "Je conserve les messages du formulaire de contact uniquement le temps nécessaire au traitement de votre demande, et les données de mesure d'audience selon les paramètres de conservation standard des prestataires.",
     "transfersTitle": "Transferts internationaux",
@@ -53,7 +53,7 @@
     "changesTitle": "Modifications de cette politique",
     "changesBody": "Je peux mettre à jour cette politique de temps à autre. La date de « dernière mise à jour » indiquée ci-dessus reflète la version la plus récente.",
     "contactTitle": "Contact",
-    "contactBody": "Pour toute question concernant cette politique ou vos données, écrivez-moi à l'adresse {{contactEmail}}."
+    "contactBody": "Pour toute question concernant cette politique ou vos données, écrivez-moi à l'adresse {contactEmail}."
   },
   "cookie": {
     "meta": {
@@ -61,7 +61,7 @@
       "description": "Quels cookies ce site web utilise et comment les gérer."
     },
     "title": "Politique relative aux cookies",
-    "lastUpdated": "Dernière mise à jour : {{date}}",
+    "lastUpdated": "Dernière mise à jour : {date}",
     "templateNotice": "Avis relatif au modèle : relisez cette liste de cookies afin qu'elle corresponde aux outils que vous activez réellement avant de vous y fier.",
     "intro": "La présente politique relative aux cookies explique ce que sont les cookies, lesquels ce site web utilise et comment vous pouvez les contrôler.",
     "whatTitle": "Que sont les cookies ?",

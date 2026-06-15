@@ -2,13 +2,13 @@ import React from 'react';
 import Link from '../LocalizedLink';
 import { Button } from '../Button';
 import { ArrowRight } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
+import { useTranslations } from 'next-intl';
 import Reveal from '../common/Reveal';
 import SectionDivider from '../common/SectionDivider';
 
 /** Dark call-to-action band steering visitors toward the services page. */
 export default function ServicesCta() {
-  const { t } = useTranslation();
+  const t = useTranslations();
 
   return (
     <section className="bloom-bg w-full py-24 px-6 relative overflow-hidden">

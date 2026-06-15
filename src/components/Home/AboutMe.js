@@ -1,5 +1,5 @@
 import React from 'react'
-import { useTranslation } from 'react-i18next'
+import { useTranslations } from 'next-intl'
 import { GraduationCap, Briefcase, Code2 } from 'lucide-react'
 import Reveal from '../common/Reveal'
 import './AboutMe.css'
@@ -11,7 +11,7 @@ const HIGHLIGHTS = [
 ];
 
 function AboutMe() {
-  const { t } = useTranslation();
+  const t = useTranslations();
 
   return (
     <Reveal as="section" className="about-section w-full">
@@ -21,7 +21,7 @@ function AboutMe() {
           <div className="about-photo">
             <div className="about-photo-shadow" aria-hidden="true" />
             <img
-              src="./images/hero/profile-pic.jpg"
+              src="/images/hero/profile-pic.jpg"
               alt="Julio Macias"
               className="about-photo-img"
             />

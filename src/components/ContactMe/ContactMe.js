@@ -1,12 +1,14 @@
+'use client';
+
 import React, { useState, useEffect } from 'react'
-import { useTranslation } from 'react-i18next'
+import { useTranslations } from 'next-intl'
 import { Send, CheckCircle2, Loader2, MessageSquare, CalendarDays } from 'lucide-react'
 import Cal, { getCalApi } from '@calcom/embed-react'
 import "./ContactMe.css"
 
-const WEB3FORMS_KEY = process.env.REACT_APP_WEB3FORMS_KEY;
+const WEB3FORMS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_KEY;
 // Cal.com booking link, e.g. "julio-macias/intro-call". Set at build time.
-const CAL_LINK = process.env.REACT_APP_CAL_LINK;
+const CAL_LINK = process.env.NEXT_PUBLIC_CAL_LINK;
 // Stable namespace shared by getCalApi() and <Cal>, so the UI-config call always
 // targets this embed's iframe — Cal's recommended pattern.
 const CAL_NAMESPACE = 'booking';
@@ -48,7 +50,7 @@ function BookingEmbed() {
 }
 
 function ContactMe() {
-  const { t } = useTranslation();
+  const t = useTranslations();
   const [status, setStatus] = useState('idle'); // idle | sending | success | error
   const [mode, setMode] = useState('message'); // 'message' | 'call'
   // Mount the booking embed the first time the visitor opens the call tab, then

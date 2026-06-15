@@ -1,5 +1,7 @@
+'use client';
+
 import React, { useEffect, useState } from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslations } from 'next-intl';
 import LocalizedLink from '../LocalizedLink';
 import { loadAnalytics, disableAnalytics } from '../../utils/analytics';
 import {
@@ -11,7 +13,7 @@ import {
 import './CookieConsent.css';
 
 function CookieConsent() {
-  const { t } = useTranslation('legal');
+  const t = useTranslations('legal');
   const [visible, setVisible] = useState(false);
   const [showPrefs, setShowPrefs] = useState(false);
   const [analytics, setAnalytics] = useState(false);

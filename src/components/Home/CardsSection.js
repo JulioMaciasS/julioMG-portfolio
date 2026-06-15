@@ -4,13 +4,14 @@ import ProjectCard from '../common/ProjectCard';
 import Link from '../LocalizedLink';
 import { Button } from '../Button';
 import { ArrowRight } from 'lucide-react';
-import { useTranslation } from 'react-i18next';
+import { useTranslations, useLocale } from 'next-intl';
 import { PROJECTS, formatProjectDate } from '../../data/projects';
 import Reveal from '../common/Reveal';
 import SectionDivider from '../common/SectionDivider';
 
 export default function CardsSection() {
-  const { t, i18n } = useTranslation();
+  const t = useTranslations();
+  const locale = useLocale();
   const latestProjects = PROJECTS.slice(0, 4);
 
   return (
@@ -36,7 +37,7 @@ export default function CardsSection() {
               isExternal={project.isExternal}
               isNew={project.isNew}
               tag={t('projects.new')}
-              date={formatProjectDate(project.date, i18n.language)}
+              date={formatProjectDate(project.date, locale)}
             />
           </Reveal>
         ))}

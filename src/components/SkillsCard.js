@@ -1,5 +1,5 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslations } from 'next-intl';
 import './SkillsCard.css';
 
 const TECHS = [
@@ -11,7 +11,7 @@ const TECHS = [
 ];
 
 function SkillsCard() {
-  const { t } = useTranslation();
+  const t = useTranslations();
 
   return (
     <div className="tech-stack">

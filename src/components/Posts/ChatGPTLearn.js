@@ -1,12 +1,11 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
-import SeoHead from '../Seo/SeoHead';
+import { useTranslations } from 'next-intl';
 import Link from '../LocalizedLink';
 import PostBreadcrumb from './PostBreadcrumb';
 import '../Post.css';
 
 function ChatGPTLearn() {
-  const { t } = useTranslation();
+  const t = useTranslations();
 
   const ICONS = {
     'Next.js': '/images/logos/nextjs.svg',
@@ -24,13 +23,6 @@ function ChatGPTLearn() {
 
   return (
     <div>
-      <SeoHead
-        path="/projects/chatgptlearn"
-        title={t('posts.chatgptlearn.meta.title')}
-        description={t('posts.chatgptlearn.meta.description')}
-        image="https://juliomacias.dev/images/chatgptlearn/cover.png"
-        type="article"
-      />
       <div className="post-container">
         <div className="white-container">
           <div className="contents-container max-w-4xl mx-auto">

@@ -46,5 +46,5 @@ export function openConsentSettings() {
 // Only surface the consent UI when there is actually something to consent to
 // (analytics configured), or when explicitly forced for previews/demos.
 export function shouldShowConsentUI() {
-  return hasAnalyticsConfigured() || process.env.REACT_APP_FORCE_CONSENT === 'true';
+  return hasAnalyticsConfigured() || process.env.NEXT_PUBLIC_FORCE_CONSENT === 'true';
 }

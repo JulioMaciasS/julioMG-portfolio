@@ -17,7 +17,7 @@
   "footer": {
     "contactMe": "Contact me:",
     "otherLinks": "Other links:",
-    "rights": "© {{year}} Julio Macias. All rights reserved.",
+    "rights": "© {year} Julio Macias Gonzalez. All rights reserved.",
     "skillsTitle": "Built with"
   },
   "notFound": {
@@ -31,7 +31,7 @@
   },
   "home": {
     "meta": {
-      "title": "Julio Macias | Software Developer",
+      "title": "Julio Macias Gonzalez | Software Developer",
       "description": "Julio Macias Gonzalez, software developer with industry experience at Citi. Full-stack web, cloud and AI-driven applications. Available for freelance and consulting."
     },
     "hero": {
@@ -46,7 +46,7 @@
     "about": {
       "eyebrow": "About me",
       "title": "A bit about me",
-      "body1": "I'm a software developer and Computer Science graduate from Queen's University Belfast, with industry experience at Citi building and shipping full-stack applications.",
+      "body1": "I'm Julio Macias Gonzalez, a software developer and Computer Science graduate from Queen's University Belfast, with industry experience at Citi building and shipping full-stack applications.",
       "body2": "I'm passionate about full-stack web development, cloud and AI, and I love turning ideas into reliable products that drive real business results.",
       "highlights": {
         "degree": "Computer Science graduate, QUB",
@@ -74,7 +74,7 @@
   },
   "projects": {
     "meta": {
-      "title": "Projects | Julio Macias Portfolio",
+      "title": "Projects | Julio Macias Gonzalez",
       "description": "Browse Julio Macias Gonzalez's software engineering projects including CineShare, EugeniaBravo, and more."
     },
     "heading": "My Projects",
@@ -101,7 +101,7 @@
   },
   "services": {
     "meta": {
-      "title": "Services | Julio Macias, Web Development & Consulting",
+      "title": "Services | Julio Macias Gonzalez, Web Development & Consulting",
       "description": "Freelance software engineering and consulting by Julio Macias Gonzalez. Specialised in Supabase, Next.js and React, with enterprise experience in Angular, Java/Spring and CI/CD."
     },
     "hero": {
@@ -176,7 +176,7 @@
   },
   "contact": {
     "meta": {
-      "title": "Contact Me | Julio Macias Portfolio",
+      "title": "Contact Me | Julio Macias Gonzalez",
       "description": "Get in touch with Julio Macias Gonzalez. Contact form for software engineering enquiries and collaboration opportunities."
     },
     "title": "Thanks for taking the time to reach out.",
@@ -218,7 +218,7 @@
     },
     "chatgptlearn": {
       "meta": {
-        "title": "ChatGPTLearn | Julio Macias Portfolio",
+        "title": "ChatGPTLearn | Julio Macias Gonzalez",
         "description": "ChatGPTLearn, my final year project. A full-stack AI training platform built with Next.js, React, Supabase and PostgreSQL to help businesses learn practical ChatGPT workflows."
       },
       "date": "April 2026",
@@ -238,7 +238,7 @@
     },
     "cineshare": {
       "meta": {
-        "title": "CineShare Project | Julio Macias Portfolio",
+        "title": "CineShare Project | Julio Macias Gonzalez",
         "description": "CineShare - A social platform for sharing movie and TV show recommendations. Built with Angular, Spring Boot, MySQL, and AWS."
       },
       "intro1": "CineShare is a personal project focused on exploring modern web technologies and cloud infrastructure. This learning experience helped me gain valuable insights for future real-world applications.",
@@ -267,7 +267,7 @@
     },
     "eugeniaBravo": {
       "meta": {
-        "title": "EugeniaBravo Project | Julio Macias Portfolio",
+        "title": "EugeniaBravo Project | Julio Macias Gonzalez",
         "description": "EugeniaBravo - A professional website built with React, TypeScript, AWS Amplify, and Brevo for a business client."
       },
       "intro": "To further develop my software engineering skills, I created eugeniabravo.com and tudivorciointeligente.com. This project not only challenged my technical abilities but also improved my client communication skills.",
@@ -299,7 +299,7 @@
     },
     "eugeniaBravoRebuild": {
       "meta": {
-        "title": "EugeniaBravo Rebuild | Julio Macias Portfolio",
+        "title": "EugeniaBravo Rebuild | Julio Macias Gonzalez",
         "description": "EugeniaBravo Rebuild - Rebuilt with Next.js, TypeScript, and Supabase for improved performance and maintainability."
       },
       "intro": "EugeniaBravo evolved from a plain React single page app into a Next.js build to improve SEO, discoverability, and editorial workflows for a content-driven site. The migration also replaced AWS Amplify with Supabase, which is a better fit for smaller projects that still need auth, storage, and a relational database.",

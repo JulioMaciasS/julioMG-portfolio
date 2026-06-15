@@ -24,16 +24,16 @@
   },
   "privacy": {
     "meta": {
-      "title": "Privacy Policy | Julio Macias",
+      "title": "Privacy Policy | Julio Macias Gonzalez",
       "description": "How Julio Macias collects, uses and protects your personal data."
     },
     "title": "Privacy Policy",
-    "lastUpdated": "Last updated: {{date}}",
+    "lastUpdated": "Last updated: {date}",
     "templateNotice": "Note: the contact email will be updated once the new domain is live. As with any legal document, consider a professional review before relying on this policy.",
-    "intro": "This Privacy Policy explains how {{controllerName}} (\"I\", \"me\", \"my\") collects, uses and protects your personal data when you visit this website.",
+    "intro": "This Privacy Policy explains how {controllerName} (\"I\", \"me\", \"my\") collects, uses and protects your personal data when you visit this website.",
     "jurisdiction": "the Republic of Ireland",
     "whoTitle": "Who I am",
-    "whoBody": "This website is operated by {{controllerName}}, based in {{jurisdiction}}. For any privacy question, you can reach me at {{contactEmail}}.",
+    "whoBody": "This website is operated by {controllerName}, based in {jurisdiction}. For any privacy question, you can reach me at {contactEmail}.",
     "dataTitle": "Data I collect",
     "dataBody": "I keep data collection to a minimum. If you use the contact form, I receive the information you choose to provide (such as your name, email address and message). If you consent to analytics, I receive anonymised usage data such as pages visited, approximate location, device and browser type.",
     "useTitle": "How I use your data",
@@ -45,7 +45,7 @@
     "thirdPartiesTitle": "Third-party services",
     "thirdPartiesBody": "With your consent I use PostHog for privacy-friendly product analytics (including heatmaps and session statistics), and a third-party form provider (Basin) to handle contact-form submissions. These providers process data on my behalf under their own terms.",
     "rightsTitle": "Your rights",
-    "rightsBody": "If you are in the EU/EEA or UK, you have the right to access, correct, delete, restrict or object to the processing of your personal data, the right to data portability, and the right to withdraw consent at any time without affecting prior processing. You also have the right to lodge a complaint with your local data protection (supervisory) authority. To exercise any of these rights, contact me at {{contactEmail}}.",
+    "rightsBody": "If you are in the EU/EEA or UK, you have the right to access, correct, delete, restrict or object to the processing of your personal data, the right to data portability, and the right to withdraw consent at any time without affecting prior processing. You also have the right to lodge a complaint with your local data protection (supervisory) authority. To exercise any of these rights, contact me at {contactEmail}.",
     "retentionTitle": "Data retention",
     "retentionBody": "I keep contact-form messages only as long as needed to handle your enquiry, and analytics data according to the providers' standard retention settings.",
     "transfersTitle": "International transfers",
@@ -53,15 +53,15 @@
     "changesTitle": "Changes to this policy",
     "changesBody": "I may update this policy from time to time. The \"last updated\" date above reflects the latest version.",
     "contactTitle": "Contact",
-    "contactBody": "For any question about this policy or your data, email me at {{contactEmail}}."
+    "contactBody": "For any question about this policy or your data, email me at {contactEmail}."
   },
   "cookie": {
     "meta": {
-      "title": "Cookie Policy | Julio Macias",
+      "title": "Cookie Policy | Julio Macias Gonzalez",
       "description": "Which cookies this website uses and how to manage them."
     },
     "title": "Cookie Policy",
-    "lastUpdated": "Last updated: {{date}}",
+    "lastUpdated": "Last updated: {date}",
     "templateNotice": "Template notice: review this cookie list to match the tools you actually enable before relying on it.",
     "intro": "This Cookie Policy explains what cookies are, which ones this website uses, and how you can control them.",
     "whatTitle": "What are cookies?",

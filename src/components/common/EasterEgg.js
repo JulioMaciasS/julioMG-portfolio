@@ -1,6 +1,8 @@
+'use client';
+
 import React, { useEffect, useState } from 'react';
 import Link from '../LocalizedLink';
-import { useTranslation } from 'react-i18next';
+import { useTranslations } from 'next-intl';
 import { PartyPopper, X } from 'lucide-react';
 import './EasterEgg.css';
 
@@ -14,7 +16,7 @@ const SEQUENCE = [
  * short burst of confetti. Harmless, dependency-free, and self-cleaning.
  */
 export default function EasterEgg() {
-  const { t } = useTranslation();
+  const t = useTranslations();
   const [active, setActive] = useState(false);
 
   useEffect(() => {

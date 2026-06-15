@@ -1,13 +1,15 @@
+'use client';
+
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslations } from 'next-intl';
 import './Footer.css';
 import SkillsCard from '../SkillsCard';
 import LocalizedLink from '../LocalizedLink';
 import { openConsentSettings } from '../../utils/consent';
 
 export default function Footer() {
-  const { t } = useTranslation();
-  const { t: tLegal } = useTranslation('legal');
+  const t = useTranslations();
+  const tLegal = useTranslations('legal');
   var GithubIconLink = '/images/logos/github.png';
 
   return (
@@ -18,9 +20,9 @@ export default function Footer() {
             <div>
               <h1 className='text-xl mb-2'>{t('footer.contactMe')}</h1>
               <h2 className='mb-2 text-sm sm:text-base break-all sm:break-normal'>julio@juliomacias.dev</h2>
-              <a href="https://www.linkedin.com/in/julio-macias-gonzalez-199266282/" 
-                 target='_blank' 
-                 rel="noopener noreferrer" 
+              <a href="https://www.linkedin.com/in/julio-macias-gonzalez-199266282/"
+                 target='_blank'
+                 rel="noopener noreferrer"
                  className='icon-link'>
                 <div className='flex flex-row items-center gap-2'>
                   <h2>LinkedIn</h2>
@@ -30,9 +32,9 @@ export default function Footer() {
             </div>
             <div>
               <h1 className='text-xl mb-2'>{t('footer.otherLinks')}</h1>
-              <a href="https://github.com/JulioMaciasS" 
-                 target='_blank' 
-                 rel="noopener noreferrer" 
+              <a href="https://github.com/JulioMaciasS"
+                 target='_blank'
+                 rel="noopener noreferrer"
                  className='icon-link'>
                 <div className='flex flex-row items-center gap-2'>
                   <h2>GitHub</h2>
@@ -42,12 +44,12 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        
+
         <div className='w-full lg:w-auto lg:mr-8 xl:mr-0 px-4'>
           <SkillsCard />
         </div>
       </div>
-      
+
       <div className='footer-legal'>
         <LocalizedLink to='/privacy-policy' className='footer-legal-link'>
           {tLegal('links.privacyPolicy')}

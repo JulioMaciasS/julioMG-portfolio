@@ -1,12 +1,11 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
-import SeoHead from '../Seo/SeoHead';
+import { useTranslations } from 'next-intl';
 import '../Post.css';
 import ImageSlider from './ImageSlider';
 import PostBreadcrumb from './PostBreadcrumb';
 
 function CineSharePost() {
-  const { t } = useTranslation();
+  const t = useTranslations();
 
   // Use constants for icons with descriptive names
   const ICONS = {
@@ -38,13 +37,6 @@ function CineSharePost() {
 
   return (
     <div>
-      <SeoHead
-        path="/projects/cineshare"
-        title={t('posts.cineshare.meta.title')}
-        description={t('posts.cineshare.meta.description')}
-        image="https://juliomacias.dev/images/CineShare.png"
-        type="article"
-      />
       <div className='post-container'>
         <div className='white-container'>
           <div className='contents-container max-w-4xl mx-auto'>

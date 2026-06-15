@@ -2,13 +2,13 @@
 // Nothing here runs until the visitor grants consent, and nothing loads unless
 // PostHog is configured. The site is safe to deploy without it — analytics stay
 // off until you add:
-//   REACT_APP_POSTHOG_KEY=phc_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-//   REACT_APP_POSTHOG_HOST=https://eu.i.posthog.com   (optional, EU is default)
+//   NEXT_PUBLIC_POSTHOG_KEY=phc_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+//   NEXT_PUBLIC_POSTHOG_HOST=https://eu.i.posthog.com   (optional, EU is default)
 
 import posthog from 'posthog-js';
 
-const POSTHOG_KEY = process.env.REACT_APP_POSTHOG_KEY;
-const POSTHOG_HOST = process.env.REACT_APP_POSTHOG_HOST || 'https://eu.i.posthog.com';
+const POSTHOG_KEY = process.env.NEXT_PUBLIC_POSTHOG_KEY;
+const POSTHOG_HOST = process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://eu.i.posthog.com';
 
 let loaded = false;
 

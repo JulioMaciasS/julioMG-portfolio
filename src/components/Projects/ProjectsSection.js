@@ -1,10 +1,10 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
+import { useTranslations } from 'next-intl';
 import ProjectCards from './ProjectsSection/ProjectCards';
 import './ProjectsSection.css';
 
 function ProjectsSection() {
-    const { t } = useTranslation();
+    const t = useTranslations();
     return (
         <div>
             <div className='project-container'>
