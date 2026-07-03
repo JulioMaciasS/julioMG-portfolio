@@ -3,12 +3,13 @@
 // PostHog is configured. The site is safe to deploy without it — analytics stay
 // off until you add:
 //   NEXT_PUBLIC_POSTHOG_KEY=phc_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-//   NEXT_PUBLIC_POSTHOG_HOST=https://eu.i.posthog.com   (optional, EU is default)
+//   NEXT_PUBLIC_POSTHOG_HOST=https://t.juliomacias.dev   (optional, reverse proxy is default)
 
 import posthog from 'posthog-js';
 
 const POSTHOG_KEY = process.env.NEXT_PUBLIC_POSTHOG_KEY;
-const POSTHOG_HOST = process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://eu.i.posthog.com';
+// Default to the self-hosted reverse proxy so requests aren't blocked by ad blockers.
+const POSTHOG_HOST = process.env.NEXT_PUBLIC_POSTHOG_HOST || 'https://t.juliomacias.dev';
 
 let loaded = false;
 
@@ -24,6 +25,7 @@ export function loadAnalytics() {
 
   posthog.init(POSTHOG_KEY, {
     api_host: POSTHOG_HOST,
+    defaults: '2026-05-30',
     capture_pageview: true,
     autocapture: true,
     enable_heatmaps: true,
