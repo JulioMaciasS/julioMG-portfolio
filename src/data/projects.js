@@ -2,6 +2,23 @@ const BASE_URL = '/images/logos/';
 
 export const PROJECTS = [
   {
+    id: 'los-lagos-hotel',
+    title: 'Los Lagos Hotel',
+    description: 'Two sites for a Patagonian hotel: a bilingual direct-booking website and an internal rate operations tool.',
+    imageSrc: '/images/losLagosHotel/cover.jpg',
+    date: '2026-07-04',
+    link: '/projects/loslagoshotel',
+    isExternal: false,
+    padding: false,
+    isNew: true,
+    technologies: [
+      { name: 'Next.js', icon: `${BASE_URL}nextjs.svg` },
+      { name: 'React', icon: `${BASE_URL}react.png` },
+      { name: 'TypeScript', icon: `${BASE_URL}typescript.png` },
+      { name: 'Supabase', icon: `${BASE_URL}supabase.svg` }
+    ]
+  },
+  {
     id: 'chatgptlearn',
     title: 'ChatGPTLearn',
     description: 'Final year project. A full-stack AI training platform that helps businesses learn practical ChatGPT workflows.',
@@ -10,7 +27,6 @@ export const PROJECTS = [
     link: '/projects/chatgptlearn',
     isExternal: false,
     padding: false,
-    isNew: true,
     technologies: [
       { name: 'Next.js', icon: `${BASE_URL}nextjs.svg` },
       { name: 'React', icon: `${BASE_URL}react.png` },

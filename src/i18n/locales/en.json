@@ -81,6 +81,10 @@
     "subheading": "Real client work, cloud platforms and AI experiments, each with a write-up of how it was built.",
     "new": "New!",
     "items": {
+      "los-lagos-hotel": {
+        "title": "Los Lagos Hotel",
+        "description": "Two sites for a Patagonian hotel: a bilingual direct-booking website and an internal rate operations tool."
+      },
       "chatgptlearn": {
         "title": "ChatGPTLearn",
         "description": "Final year project: a full-stack AI training platform helping businesses learn practical ChatGPT workflows."
@@ -215,6 +219,64 @@
       "frontendHeading": "Frontend",
       "backendHeading": "Backend",
       "conclusionHeading": "Conclusion"
+    },
+    "losLagosHotel": {
+      "meta": {
+        "title": "Los Lagos Hotel | Julio Macias Gonzalez",
+        "description": "Two web apps for a family-run hotel in El Calafate, Patagonia: a bilingual direct-booking website built around the Cloudbeds engine, and an internal tool that prices rooms in dollars and publishes them to Cloudbeds in pesos."
+      },
+      "intro1": "Los Lagos Hotel is a family run hotel in El Calafate, the Patagonian town most travellers use as a base for the Perito Moreno glacier. When this work started the hotel was moving off Minihotel, an older property management system, onto Cloudbeds. That migration is what made the rest possible: once the rooms, rates and reservations lived somewhere with a real API, the hotel could finally have a site that sells directly and a tool that prices without anyone doing arithmetic by hand.",
+      "intro2": "So I built two web apps for it. One is the bilingual site guests book on; the other is the internal tool the hotel prices with. They look nothing alike, and they are not meant to. One is a shop window, the other is a back office. What they share is a backend, and both talk to the same Cloudbeds account.",
+      "briefHeading": "The Brief",
+      "briefBody1": "Selling hotel rooms in Argentina has two wrinkles that end up shaping everything else. The first is currency: Cloudbeds charges in Argentine pesos, but the hotel and the revenue people who price for it work in dollars, because the peso moves often enough that a price set in pesos is quietly wrong within a week. The second is tax: guests who live outside Argentina are exempt from the 21% VAT on lodging, so the same room legitimately has two prices depending on where the guest lives.",
+      "briefBody2": "Both of those landed on the reception desk. Staff recalculated room rates by hand whenever the exchange rate moved, and worked out the right amount to charge each guest case by case. The brief was to take bookings directly on the hotel's own site, show each guest the price that actually applies to them, and stop pricing from being a manual job.",
+      "technologiesIntro": "The guest site is Next.js with TypeScript, statically pre-rendered in each language. The internal tool is a React single page app built with Vite. Supabase, meaning Postgres, row level security and Edge Functions, is the shared backend, and both apps ultimately write to the Cloudbeds API.",
+      "guestSiteHeading": "Site One: The Guest Website",
+      "guestSiteBody1": "The public site is bilingual. Spanish is the default and lives at the plain URLs, English sits under /en, and every page is pre-rendered in both languages so crawlers receive real HTML instead of an empty shell. Beyond the rooms and the hotel itself, most of the content exists to answer the questions people actually ask before committing to a trip to Patagonia: how far the centre is, how to get in from the airport, what there is to do once you arrive.",
+      "guestSiteBody2": "Two details I particularly enjoyed building. The sections are separated by curved SVG transitions rather than the usual straight rule. And the location page carries an interactive OpenStreetMap map with custom pins for the hotel and for the restaurants, attractions and banks around it, alongside walking and driving times to the centre, the bus terminal, the airport and the glacier. Review scores from TripAdvisor, Google and Booking are gathered onto a single strip so guests do not have to go hunting for them.",
+      "bookingHeading": "Making the Booking Engine Fit the Hotel",
+      "bookingBody1": "The booking page embeds Cloudbeds' Immersive Experience, a third party web component that renders its own checkout inside the site. It is effectively a black box, so everything the hotel needed on top of it is added by a single observer that watches the component's DOM and re-applies the adjustments each time it re-renders. What that layer adds:",
+      "bookingFeature1": "A residency toggle. The guest states whether they live in Argentina or abroad, which decides whether the 21% VAT applies to what they see, and writes a billing flag onto the reservation so the exemption is applied downstream instead of reception capturing nationality by hand.",
+      "bookingFeature2": "Prices that trace back to dollars. The hotel's durable price is in dollars while the guest is charged in pesos, and the conversion runs on a rate the site fetches through an API route with a sanity band, a freshness limit, a last known good fallback and a degraded mode that declines to convert at all rather than use a guessed rate.",
+      "bookingFeature3": "A bed type selector Cloudbeds does not offer. Guests choose a double bed or two singles per room, with counters bounded by what is genuinely free that night. The physical room IDs behind that calculation stay on the server and never reach the browser.",
+      "bookingFeature4": "A recorded price breakdown. Net, VAT and gross in both currencies, plus the exchange rate used, are written onto each reservation as custom fields, so the front desk charges from numbers captured at booking time rather than recomputing them days later.",
+      "bookingFeature5": "Automatic room assignment. When a booking completes, a webhook reads the bed layout the guest asked for and assigns matching physical rooms. It deliberately leaves Cloudbeds' own assignment alone when nothing compatible is free, rather than putting someone in the wrong bed.",
+      "bookingBody2": "The most instructive bug came out of that observer. Driving Cloudbeds' own quantity stepper made the component re-render, which re-triggered the observer, which drove the stepper again. One click produced over 600,000 DOM mutations and froze the tab. The fix was a re-entrancy guard around the adjustment pass, and any code that touches Cloudbeds' DOM now has to run inside it.",
+      "opsHeading": "Site Two: The Rate Operations Tool",
+      "opsBody1": "The second app is where the hotel sets its prices. It is internal only: there is no public sign up, accounts are created by an administrator, and the two roles, pricing and hotel staff, are enforced by row level security in Postgres and checked again inside every privileged function, not merely hidden from the navigation.",
+      "opsFeature1": "A price calendar that works in dollars. The hotel brings in outside revenue managers, and dollars are the currency they price in, so dollars are what they type: one base price for a single day or for a whole date range, or a bulk upload by CSV when a full season is being repriced at once. Each room type derives its own price from a percentage modifier, rounds up to the next twenty cents and converts to pesos at Cloudbeds' own rate. Pricing in the currency they actually think in is what makes smart pricing practical here at all.",
+      "opsFeature2": "Publishing that checks its own work. Publishing runs as preview then commit. The preview shows exactly which rows will be sent and what Cloudbeds will receive, and after committing the app reads the rates back out of Cloudbeds and marks each one confirmed, sent or failed depending on what came back.",
+      "opsFeature3": "An exchange rate watcher. A scheduled function reads the official Banco Nación rate, records it only when it has actually changed, recalculates every stored peso price from its durable dollar source, and opens a task for staff. That task cannot be closed by simply clicking a button. Completing it re-reads Cloudbeds' currency settings and only succeeds when they match.",
+      "opsBody2": "The dollar price is the durable one throughout. Peso values are always derived from it, which is what turns an exchange rate change into a recalculation rather than a re-entry.",
+      "opsBody3": "Not automating that last step is the point. A currency like the Argentine peso can move sharply and with little warning, so a system that repriced every room the instant a feed twitched would be a liability rather than a convenience: a bad or purely transient reading would propagate straight into live prices, and the hotel would find out by selling rooms too cheap. So observing a rate never moves a price on its own. It records the rate, recalculates what the new prices would be, and opens a task. Prices move only once a person confirms the rate is genuinely live in Cloudbeds. Cloudbeds does have its own automatic conversion, refreshed twice a day from a global rates feed, but for this hotel that is neither frequent enough nor the right reference: what it bills against is the official Banco Nación rate, not an international mid market one.",
+      "opsBody4": "The weak point of a human confirmation step is that a human has to notice it. So the same Edge Functions that open an FX task also push it to a Telegram group, through a bot I wrote for the hotel: the old rate, the new rate, whether it came from the automatic feed or a manual entry, and a button that deep links straight into the tasks page of the ops tool. It posts again when someone applies the rate, naming who did it, and if the rate moves back before anyone has acted it posts a cancellation so nobody does redundant work. The notification is deliberately best effort and can never throw. The FX task is already committed by the time a message is attempted, so a missing token or a Telegram outage must not be able to break rate recording.",
+      "architectureHeading": "Why Two Apps and Not One",
+      "architectureBody1": "The two halves have genuinely different requirements. The guest site is public, multilingual and lives or dies on being indexable, so it is statically pre-rendered per locale. The ops tool sits behind a login, has no SEO surface at all and never needs server rendering, so it is a plain single page app that talks straight to Supabase. Smaller, cheaper and simpler to reason about.",
+      "architectureBody2": "What they do share is the backend. Anything privileged, the Cloudbeds token, the service role key, the physical room mapping, the exchange rate writes, runs inside Postgres or an Edge Function. Neither browser ever holds a Cloudbeds credential.",
+      "outcomeHeading": "Where It Landed",
+      "outcomeBody1": "The operations tool is in production and the hotel prices with it: repricing is now one number typed once, previewed, published and verified against Cloudbeds, instead of a manual pass across every room type and every date. The guest site is complete and waiting on the cutover from the hotel's existing site, at which point direct bookings land on it with each guest seeing the price that applies to them.",
+      "outcomeBody2": "A fair amount of the work was not code. Because reception is the team actually charging guests, the project also produced Spanish front desk guides for taking payment by pay link, an in app help section explaining each screen, and the privacy and retention documents an internal tool holding staff data needs.",
+      "cta": "Two apps for one small hotel: a shop window that has to survive Google, and a back office that has to survive a moving exchange rate. The operations tool is internal and sits behind a login; the guest site goes live when the hotel cuts over from its existing one.",
+      "captions": {
+        "home": "The homepage: the hero, the reasons to book direct, and the availability search",
+        "language": "The language picker. The whole site is published in Spanish and English",
+        "reviews": "Verified review scores from TripAdvisor, Google and Booking, with the curved section transitions",
+        "location": "Interactive map with custom pins and travel times from the hotel",
+        "contact": "Contact page with phone, WhatsApp, email and the enquiry form",
+        "rooms": "The booking engine, with the residency toggle and the bed type selector",
+        "datePicker": "The Cloudbeds date picker on the homepage, with the nightly rate shown on each date",
+        "opsDashboard": "Dashboard: latest exchange rate, pending tasks and occupancy",
+        "opsCalendar": "Price calendar: one base price in dollars per day, derived per room type",
+        "opsFx": "Exchange rate history, each change pending until confirmed in Cloudbeds",
+        "opsHelp": "In app documentation written for hotel staff",
+        "opsSecurity": "Account security with two factor authentication and passkeys",
+        "opsTelegram": "Telegram alerts: the old and new rate, where it came from, and a button into the tasks page"
+      },
+      "opsFeature4": "The operational surround: an activity log, team management, a help section written for hotel staff rather than developers, and account security with two factor authentication and passkeys.",
+      "complianceHeading": "Privacy, Consent and Analytics",
+      "complianceBody1": "Argentina has its own data protection regime, Ley 25.326, supervised by the AAIP, and the sites were built against it rather than retrofitted afterwards. The guest site carries a privacy policy and a cookie policy written to that law, including the Habeas Data rights it grants and how to exercise them, and the booking flow collects only what a reservation actually needs.",
+      "complianceBody2": "Consent is enforced in code, not just described on a page. There is exactly one non essential category on the guest site, analytics, and nothing analytics related loads until the visitor has explicitly opted in. Strictly necessary items, meaning the language preference, the booking engine itself and the record of the choice, are never gated. That is what satisfies the prior consent rule under Ley 25.326, and GDPR and ePrivacy for the European guests the hotel gets plenty of.",
+      "complianceBody3": "Behind that gate sits PostHog for product analytics and session replay, alongside Google Analytics, so the hotel can see how people actually move through the site and where they drop out of a booking instead of guessing. The internal tool has its own paperwork: a privacy notice for staff, a record of processing activities, and a retention policy that is genuinely implemented, with a scheduled job purging the activity log after 24 months and the Cloudbeds request logs after 90 days."
     },
     "chatgptlearn": {
       "meta": {

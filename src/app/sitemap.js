@@ -9,6 +9,7 @@ const PATHS = [
   { path: '/services', priority: 0.9 },
   { path: '/contact-me', priority: 0.9 },
   { path: '/projects', priority: 0.8 },
+  { path: '/projects/loslagoshotel', priority: 0.8 },
   { path: '/projects/chatgptlearn', priority: 0.8 },
   { path: '/projects/cineshare', priority: 0.7 },
   { path: '/projects/eugeniabravo', priority: 0.7 },
