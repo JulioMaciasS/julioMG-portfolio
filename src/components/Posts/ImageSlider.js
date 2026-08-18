@@ -45,7 +45,7 @@ function ImageSlider({ images, containerClassName }) {
                   src={image.src}
                   alt={image.alt}
                   loading={index === 0 ? undefined : 'lazy'}
-                  className="max-h-full max-w-full object-contain cursor-pointer"
+                  className="max-h-full max-w-full object-contain rounded-lg cursor-pointer"
                   onClick={() => setShowModal(true)}
                 />
               </div>
@@ -107,7 +107,7 @@ function ImageSlider({ images, containerClassName }) {
             <img
               src={images[currentSlide].src}
               alt={images[currentSlide].alt}
-              className="max-h-[90vh] max-w-full object-contain"
+              className="max-h-[90vh] max-w-full object-contain rounded-lg"
               onClick={(e) => e.stopPropagation()}
             />
           </div>
