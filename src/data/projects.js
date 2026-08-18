@@ -7,6 +7,7 @@ export const PROJECTS = [
     description: 'Two sites for a Patagonian hotel: a bilingual direct-booking website and an internal rate operations tool.',
     imageSrc: '/images/losLagosHotel/cover.jpg',
     date: '2026-07-04',
+    updated: '2026-08-18',
     link: '/projects/loslagoshotel',
     isExternal: false,
     padding: false,
@@ -93,4 +94,23 @@ export function formatProjectDate(iso, lang = 'en') {
   } catch (_) {
     return '';
   }
+}
+
+/**
+ * Day-precision date for the "last updated" line on a post. Falls back to the
+ * published date when a project has never been revised.
+ */
+export function formatPostDate(iso, lang = 'en') {
+  if (!iso) return '';
+  try {
+    return new Intl.DateTimeFormat(lang, { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(iso));
+  } catch (_) {
+    return '';
+  }
+}
+
+/** The date a post should advertise: its last revision, else its publication. */
+export function postUpdatedDate(id) {
+  const project = PROJECTS.find((p) => p.id === id);
+  return project ? project.updated || project.date : '';
 }

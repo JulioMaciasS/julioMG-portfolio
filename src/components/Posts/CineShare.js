@@ -3,6 +3,8 @@ import { useTranslations } from 'next-intl';
 import '../Post.css';
 import ImageSlider from './ImageSlider';
 import PostBreadcrumb from './PostBreadcrumb';
+import PostUpdated from './PostUpdated';
+import { postUpdatedDate } from '../../data/projects';
 
 function CineSharePost() {
   const t = useTranslations();
@@ -50,6 +52,7 @@ function CineSharePost() {
               />
               <h1 className="text-gray-800 mb-0 text-4xl md:text-5xl font-bold" id='top'>CineShare</h1>
             </div>
+            <PostUpdated date={postUpdatedDate('cineshare')} />
 
             <div className='text-left space-y-5'>
               {/* Introduction Section */}

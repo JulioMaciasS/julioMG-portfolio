@@ -3,6 +3,8 @@ import { useTranslations } from 'next-intl';
 import '../Post.css';
 import ImageSlider from './ImageSlider';
 import PostBreadcrumb from './PostBreadcrumb';
+import PostUpdated from './PostUpdated';
+import { postUpdatedDate } from '../../data/projects';
 
 function EugeniaBravoRebuild() {
   const t = useTranslations();
@@ -102,6 +104,7 @@ function EugeniaBravoRebuild() {
                 <i className="bi bi-arrow-up-right-square text-2xl"></i>
               </a>
             </div>
+            <PostUpdated date={postUpdatedDate('eugenia-bravo-rebuild')} />
 
             <div className='text-left space-y-5'>
               <section className="py-2">

@@ -2,6 +2,8 @@ import React from 'react';
 import { useTranslations } from 'next-intl';
 import Link from '../LocalizedLink';
 import PostBreadcrumb from './PostBreadcrumb';
+import PostUpdated from './PostUpdated';
+import { postUpdatedDate } from '../../data/projects';
 import '../Post.css';
 
 function ChatGPTLearn() {
@@ -37,6 +39,7 @@ function ChatGPTLearn() {
               </div>
               <p className="text-sm text-gray-500">{t('posts.chatgptlearn.date')}</p>
             </div>
+            <PostUpdated date={postUpdatedDate('chatgptlearn')} />
 
             {/* Cover */}
             <img

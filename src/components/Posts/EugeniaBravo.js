@@ -3,6 +3,8 @@ import { useTranslations } from 'next-intl';
 import '../Post.css';
 import ImageSlider from './ImageSlider';
 import PostBreadcrumb from './PostBreadcrumb';
+import PostUpdated from './PostUpdated';
+import { postUpdatedDate } from '../../data/projects';
 
 function EugeniaBravo() {
   const t = useTranslations();
@@ -86,6 +88,7 @@ function EugeniaBravo() {
                 <i className="bi bi-arrow-up-right-square text-2xl"></i>
               </a>
             </div>
+            <PostUpdated date={postUpdatedDate('eugenia-bravo')} />
 
             <div className='text-left space-y-5'>
               {/* Introduction Section */}

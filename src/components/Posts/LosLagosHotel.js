@@ -3,6 +3,8 @@ import { useTranslations } from 'next-intl';
 import '../Post.css';
 import ImageSlider from './ImageSlider';
 import PostBreadcrumb from './PostBreadcrumb';
+import PostUpdated from './PostUpdated';
+import { postUpdatedDate } from '../../data/projects';
 
 function LosLagosHotel() {
   const t = useTranslations();
@@ -117,6 +119,7 @@ function LosLagosHotel() {
               />
               <h1 className="text-gray-800 mb-0 text-4xl md:text-5xl font-bold" id='top'>Los Lagos Hotel</h1>
             </div>
+            <PostUpdated date={postUpdatedDate('los-lagos-hotel')} />
 
             <div className='text-left space-y-5'>
               <section className="py-2">
@@ -216,9 +219,6 @@ function LosLagosHotel() {
                   ))}
                 </ul>
                 <p className="text-gray-700 leading-relaxed">
-                  {t('posts.losLagosHotel.opsBody2')}
-                </p>
-                <p className="text-gray-700 leading-relaxed !mt-4">
                   {t('posts.losLagosHotel.opsBody3')}
                 </p>
                 <p className="text-gray-700 leading-relaxed !mt-4 !mb-6">
