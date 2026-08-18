@@ -137,6 +137,9 @@ function LosLagosHotel() {
                 <p className="text-gray-700 leading-relaxed !mt-4">
                   {t('posts.losLagosHotel.briefBody2')}
                 </p>
+                <p className="text-gray-700 leading-relaxed !mt-4">
+                  {t('posts.losLagosHotel.briefBody3')}
+                </p>
               </section>
 
               <section className="py-2">
@@ -198,7 +201,10 @@ function LosLagosHotel() {
 
               <section className="py-2">
                 <h2 className="text-2xl font-semibold text-gray-800 mb-4 border-b border-gray-100 pb-2">{t('posts.losLagosHotel.opsHeading')}</h2>
-                <p className="text-gray-700 leading-relaxed !mb-4">
+                <p className="text-gray-700 leading-relaxed">
+                  {t('posts.losLagosHotel.opsRationale')}
+                </p>
+                <p className="text-gray-700 leading-relaxed !mt-4 !mb-4">
                   {t('posts.losLagosHotel.opsBody1')}
                 </p>
                 <ul className="space-y-3 mb-4">
