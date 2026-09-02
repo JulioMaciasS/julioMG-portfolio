@@ -21,10 +21,11 @@ export const PROJECTS = [
   },
   {
     id: 'chatgptlearn',
-    title: 'ChatGPTLearn',
-    description: 'Final year project. A full-stack AI training platform that helps businesses learn practical ChatGPT workflows.',
+    title: 'Discentik',
+    description: 'Final year project. A full-stack AI learning and assessment platform with guided courses, secure AI workflows and automated evaluation.',
     imageSrc: '/images/chatgptlearn/cover.png',
     date: '2026-04-15',
+    updated: '2026-09-02',
     link: '/projects/chatgptlearn',
     isExternal: false,
     padding: false,

@@ -86,7 +86,7 @@
         "description": "Deux sites pour un hôtel de Patagonie : un site bilingue de réservation directe et un outil interne de gestion des tarifs."
       },
       "chatgptlearn": {
-        "title": "ChatGPTLearn",
+        "title": "Discentik",
         "description": "Projet de fin d'études : une plateforme de formation à l'IA full-stack qui aide les entreprises à apprendre des workflows ChatGPT concrets."
       },
       "eugenia-bravo-rebuild": {
@@ -282,14 +282,14 @@
     },
     "chatgptlearn": {
       "meta": {
-        "title": "ChatGPTLearn | Portfolio Julio Macias",
-        "description": "ChatGPTLearn, mon projet de fin d'études. Une plateforme de formation à l'IA full-stack construite avec Next.js, React, Supabase et PostgreSQL pour aider les entreprises à apprendre des workflows ChatGPT concrets."
+        "title": "Discentik | Portfolio Julio Macias",
+        "description": "Discentik, mon projet de fin d'études. Une plateforme de formation à l'IA full-stack construite avec Next.js, React, Supabase et PostgreSQL pour aider les entreprises à apprendre des workflows ChatGPT concrets."
       },
       "date": "Avril 2026",
-      "intro": "ChatGPTLearn est mon projet de fin d'études : une plateforme de formation à l'IA full-stack qui aide les entreprises et leurs équipes à apprendre des workflows ChatGPT concrets et pratiques. Plutôt qu'une nouvelle série de diapositives, elle offre aux utilisateurs une véritable interface de type ChatGPT pour s'exercer, intégrée à une expérience de cours et de gestion d'équipe.",
+      "intro": "Discentik est mon projet de fin d'études : une plateforme de formation à l'IA full-stack qui aide les entreprises et leurs équipes à apprendre des workflows ChatGPT concrets et pratiques. Plutôt qu'une nouvelle série de diapositives, elle offre aux utilisateurs une véritable interface de type ChatGPT pour s'exercer, intégrée à une expérience de cours et de gestion d'équipe.",
       "goalsHeading": "L'objectif",
       "goalsBody": "La plupart des formations à l'IA sont théoriques et vite oubliées. L'objectif était de construire une plateforme où les équipes font réellement le travail (en pratiquant des prompts et des workflows dans une interface de chat familière) pendant que les responsables intègrent leurs collaborateurs et suivent leur progression via des cours structurés et un accès sur invitation.",
-      "technologiesIntro": "ChatGPTLearn repose sur une stack full-stack moderne : Next.js et React côté frontend pour des pages rapides et optimisées pour le SEO, avec Supabase et PostgreSQL pour gérer l'authentification, les données et le stockage.",
+      "technologiesIntro": "Discentik repose sur une stack full-stack moderne : Next.js et React côté frontend pour des pages rapides et optimisées pour le SEO, avec Supabase et PostgreSQL pour gérer l'authentification, les données et le stockage.",
       "featuresHeading": "Fonctionnalités clés",
       "feature1": "Une interface de chat de type ChatGPT où les utilisateurs s'exercent à de vrais workflows de prompting.",
       "feature2": "Une gestion des cours pour structurer les leçons et les parcours d'apprentissage.",
@@ -298,7 +298,7 @@
       "aiHeading": "Construit avec le développement assisté par IA",
       "aiBody": "Le projet a aussi été une expérimentation d'ingénierie assistée par IA. Je l'ai construit en m'appuyant sur des outils comme Claude Code, Codex et GitHub Copilot, en les utilisant pour aller plus vite tout en gardant un contrôle total sur l'architecture et la qualité du code. Cela reflète ma façon de travailler aujourd'hui : l'IA comme multiplicateur de force, et non comme un substitut au jugement d'ingénierie.",
       "outcomeHeading": "Résultat",
-      "outcomeBody": "ChatGPTLearn a réuni tout ce qui me tient à cœur (le web full-stack, un véritable cas d'usage produit et l'IA) dans un seul projet de fin d'études noté, et c'est la direction dans laquelle je veux continuer à construire."
+      "outcomeBody": "Discentik a réuni tout ce qui me tient à cœur (le web full-stack, un véritable cas d'usage produit et l'IA) dans un seul projet de fin d'études noté, et c'est la direction dans laquelle je veux continuer à construire."
     },
     "cineshare": {
       "meta": {

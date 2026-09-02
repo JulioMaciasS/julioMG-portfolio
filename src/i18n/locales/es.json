@@ -86,7 +86,7 @@
         "description": "Dos sitios para un hotel de la Patagonia: una web bilingüe de reserva directa y una herramienta interna de gestión de tarifas."
       },
       "chatgptlearn": {
-        "title": "ChatGPTLearn",
+        "title": "Discentik",
         "description": "Proyecto de fin de carrera: una plataforma de formación en IA full-stack que ayuda a las empresas a aprender flujos de trabajo prácticos con ChatGPT."
       },
       "eugenia-bravo-rebuild": {
@@ -282,14 +282,14 @@
     },
     "chatgptlearn": {
       "meta": {
-        "title": "ChatGPTLearn | Portafolio de Julio Macias",
-        "description": "ChatGPTLearn, mi proyecto de fin de carrera. Una plataforma de formación en IA full-stack construida con Next.js, React, Supabase y PostgreSQL para ayudar a las empresas a aprender flujos de trabajo prácticos con ChatGPT."
+        "title": "Discentik | Portafolio de Julio Macias",
+        "description": "Discentik, mi proyecto de fin de carrera. Una plataforma de formación en IA full-stack construida con Next.js, React, Supabase y PostgreSQL para ayudar a las empresas a aprender flujos de trabajo prácticos con ChatGPT."
       },
       "date": "Abril de 2026",
-      "intro": "ChatGPTLearn es mi proyecto de fin de carrera: una plataforma de formación en IA full-stack que ayuda a las empresas y a sus equipos a aprender flujos de trabajo prácticos con ChatGPT. En lugar de otra serie de diapositivas, ofrece a los usuarios una interfaz real al estilo de ChatGPT para practicar, envuelta en una experiencia de cursos y gestión de equipos.",
+      "intro": "Discentik es mi proyecto de fin de carrera: una plataforma de formación en IA full-stack que ayuda a las empresas y a sus equipos a aprender flujos de trabajo prácticos con ChatGPT. En lugar de otra serie de diapositivas, ofrece a los usuarios una interfaz real al estilo de ChatGPT para practicar, envuelta en una experiencia de cursos y gestión de equipos.",
       "goalsHeading": "El objetivo",
       "goalsBody": "La mayoría de la formación en IA es teórica y se olvida con facilidad. El objetivo era construir una plataforma donde los equipos realmente hagan el trabajo (practicando prompts y flujos de trabajo en una interfaz de chat familiar) mientras los responsables incorporan a su personal y siguen el progreso a través de cursos estructurados y acceso por invitación.",
-      "technologiesIntro": "ChatGPTLearn está construido sobre un stack full-stack moderno: Next.js y React en el frontend para páginas rápidas y listas para SEO, con Supabase y PostgreSQL encargándose de la autenticación, los datos y el almacenamiento.",
+      "technologiesIntro": "Discentik está construido sobre un stack full-stack moderno: Next.js y React en el frontend para páginas rápidas y listas para SEO, con Supabase y PostgreSQL encargándose de la autenticación, los datos y el almacenamiento.",
       "featuresHeading": "Características principales",
       "feature1": "Una interfaz de chat al estilo de ChatGPT donde los usuarios practican flujos de trabajo reales de prompting.",
       "feature2": "Gestión de cursos para estructurar lecciones y rutas de aprendizaje.",
@@ -298,7 +298,7 @@
       "aiHeading": "Construido con desarrollo asistido por IA",
       "aiBody": "El proyecto fue también un experimento en ingeniería asistida por IA. Lo construí apoyándome en herramientas como Claude Code, Codex y GitHub Copilot, usándolas para avanzar más rápido manteniendo el control total sobre la arquitectura y la calidad del código. Refleja cómo trabajo hoy: la IA como multiplicador de fuerza, no como sustituto del criterio de ingeniería.",
       "outcomeHeading": "Resultado",
-      "outcomeBody": "ChatGPTLearn reunió todo lo que me importa (el desarrollo web full-stack, un caso de uso de producto real y la IA) en un único proyecto de fin de carrera evaluado, y es la dirección en la que quiero seguir construyendo."
+      "outcomeBody": "Discentik reunió todo lo que me importa (el desarrollo web full-stack, un caso de uso de producto real y la IA) en un único proyecto de fin de carrera evaluado, y es la dirección en la que quiero seguir construyendo."
     },
     "cineshare": {
       "meta": {
