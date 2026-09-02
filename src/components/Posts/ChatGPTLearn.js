@@ -28,11 +28,11 @@ function ChatGPTLearn() {
       <div className="post-container">
         <div className="white-container">
           <div className="contents-container max-w-4xl mx-auto">
-            <PostBreadcrumb current="ChatGPTLearn" />
+            <PostBreadcrumb current="Discentik" />
             {/* Header */}
             <div className="mb-6 border-b border-gray-200 pb-4 w-full">
               <div className="flex flex-row items-center gap-3 mb-2">
-                <h1 className="text-gray-800 mb-0 text-4xl md:text-5xl font-bold" id="top">ChatGPTLearn</h1>
+                <h1 className="text-gray-800 mb-0 text-4xl md:text-5xl font-bold" id="top">Discentik</h1>
                 <span className="text-xs font-semibold uppercase tracking-wide bg-amber-100 text-amber-700 px-2 py-1 rounded-full">
                   {t('projects.new')}
                 </span>
@@ -44,7 +44,7 @@ function ChatGPTLearn() {
             {/* Cover */}
             <img
               src="/images/chatgptlearn/cover.png"
-              alt="ChatGPTLearn, AI training platform"
+              alt="Discentik, AI learning and assessment platform"
               className="w-full rounded-xl shadow-md mb-8"
             />
 
