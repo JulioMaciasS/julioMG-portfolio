@@ -85,7 +85,7 @@
         "title": "Los Lagos Hotel",
         "description": "Deux sites pour un hôtel de Patagonie : un site bilingue de réservation directe et un outil interne de gestion des tarifs."
       },
-      "chatgptlearn": {
+      "discentik": {
         "title": "Discentik",
         "description": "Projet de fin d'études : une plateforme de formation à l'IA full-stack qui aide les entreprises à apprendre des workflows ChatGPT concrets."
       },
@@ -280,7 +280,7 @@
       "complianceBody2": "Le consentement est appliqué dans le code, pas seulement décrit sur une page. Il existe exactement une catégorie non essentielle sur le site client, l'analytique, et rien de ce qui s'y rapporte ne se charge tant que le visiteur n'a pas donné son accord explicite. Trois éléments ne sont jamais bloqués : la préférence de langue, le moteur de réservation lui-même et l'enregistrement du choix. C'est ce qui satisfait la règle du consentement préalable de la Ley 25.326, ainsi que le RGPD et l'ePrivacy pour les clients européens, nombreux dans cet hôtel.",
       "complianceBody3": "Derrière cette barrière se trouvent PostHog pour l'analytique produit et le rejeu de session, aux côtés de Google Analytics, afin que l'hôtel voie comment les gens circulent réellement sur le site et à quel moment ils abandonnent une réservation, au lieu de le supposer. L'outil interne a sa propre documentation : une notice de confidentialité pour le personnel, un registre des activités de traitement, et une politique de conservation réellement mise en oeuvre, avec une tâche planifiée qui purge le journal d'activité au bout de 24 mois et les journaux de requêtes Cloudbeds au bout de 90 jours."
     },
-    "chatgptlearn": {
+    "discentik": {
       "meta": {
         "title": "Discentik | Portfolio Julio Macias",
         "description": "Discentik, mon projet de fin d'études. Une plateforme de formation à l'IA full-stack construite avec Next.js, React, Supabase et PostgreSQL pour aider les entreprises à apprendre des workflows ChatGPT concrets."
