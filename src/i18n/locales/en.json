@@ -86,7 +86,7 @@
         "description": "Two sites for a Patagonian hotel: a bilingual direct-booking website and an internal rate operations tool."
       },
       "chatgptlearn": {
-        "title": "ChatGPTLearn",
+        "title": "Discentik",
         "description": "Final year project: a full-stack AI training platform helping businesses learn practical ChatGPT workflows."
       },
       "eugenia-bravo-rebuild": {
@@ -282,14 +282,14 @@
     },
     "chatgptlearn": {
       "meta": {
-        "title": "ChatGPTLearn | Julio Macias Gonzalez",
-        "description": "ChatGPTLearn, my final year project. A full-stack AI training platform built with Next.js, React, Supabase and PostgreSQL to help businesses learn practical ChatGPT workflows."
+        "title": "Discentik | Julio Macias Gonzalez",
+        "description": "Discentik, my final year project. A full-stack AI training platform built with Next.js, React, Supabase and PostgreSQL to help businesses learn practical ChatGPT workflows."
       },
       "date": "April 2026",
-      "intro": "ChatGPTLearn is my final year project: a full-stack AI training platform that helps businesses and their teams learn practical, hands-on ChatGPT workflows. Rather than another set of slides, it gives users a real ChatGPT-style interface to practise in, wrapped in a course and team-management experience.",
+      "intro": "Discentik is my final year project: a full-stack AI training platform that helps businesses and their teams learn practical, hands-on ChatGPT workflows. Rather than another set of slides, it gives users a real ChatGPT-style interface to practise in, wrapped in a course and team-management experience.",
       "goalsHeading": "The Goal",
       "goalsBody": "Most AI training is theoretical and forgettable. The aim was to build a platform where teams actually do the work (practising prompts and workflows in a familiar chat interface) while managers onboard their people and track progress through structured courses and invite-based access.",
-      "technologiesIntro": "ChatGPTLearn is built on a modern full-stack: Next.js and React on the frontend for fast, SEO-ready pages, with Supabase and PostgreSQL handling authentication, data and storage.",
+      "technologiesIntro": "Discentik is built on a modern full-stack: Next.js and React on the frontend for fast, SEO-ready pages, with Supabase and PostgreSQL handling authentication, data and storage.",
       "featuresHeading": "Key Features",
       "feature1": "A ChatGPT-style chat interface where users practise real prompting workflows.",
       "feature2": "Course management to structure lessons and learning paths.",
@@ -298,7 +298,7 @@
       "aiHeading": "Built with AI-assisted development",
       "aiBody": "The project was also an experiment in AI-assisted engineering. I built it leaning on tools like Claude Code, Codex and GitHub Copilot, using them to move faster while keeping full control over architecture and code quality. It reflects how I work today: AI as a force-multiplier, not a replacement for engineering judgement.",
       "outcomeHeading": "Outcome",
-      "outcomeBody": "ChatGPTLearn brought together everything I care about: full-stack web, a real product use-case, and AI, into a single graded final year project, and it's the direction I want to keep building in."
+      "outcomeBody": "Discentik brought together everything I care about: full-stack web, a real product use-case, and AI, into a single graded final year project, and it's the direction I want to keep building in."
     },
     "cineshare": {
       "meta": {
