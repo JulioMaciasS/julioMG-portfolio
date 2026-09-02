@@ -40,7 +40,7 @@ URL, so most pages were never indexed. Now each route ships:
 - `/` — landing page: hero, about, latest work, services CTA
 - `/services` — freelance & consulting services
 - `/projects` — project gallery with summaries and tech tags
-- `/projects/chatgptlearn` — Discentik final-year AI learning platform case study
+- `/projects/discentik` — Discentik final-year AI learning platform case study
 - `/projects/cineshare` — full-stack film discovery platform case study
 - `/projects/eugeniabravo` — original client project (React + AWS Amplify)
 - `/projects/eugeniabravo-rebuild` — migration to Next.js + Supabase

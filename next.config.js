@@ -12,6 +12,31 @@ const nextConfig = {
   // The ported CRA components don't follow eslint-config-next conventions
   // (e.g. <img> vs next/image); don't block production builds on lint.
   eslint: { ignoreDuringBuilds: true },
+
+  async redirects() {
+    return [
+      {
+        source: '/projects/chatgptlearn',
+        destination: '/projects/discentik',
+        permanent: true,
+      },
+      {
+        source: '/es/projects/chatgptlearn',
+        destination: '/es/projects/discentik',
+        permanent: true,
+      },
+      {
+        source: '/fr/projects/chatgptlearn',
+        destination: '/fr/projects/discentik',
+        permanent: true,
+      },
+      {
+        source: '/ar/projects/chatgptlearn',
+        destination: '/ar/projects/discentik',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = withNextIntl(nextConfig);

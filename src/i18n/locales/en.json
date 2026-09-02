@@ -85,7 +85,7 @@
         "title": "Los Lagos Hotel",
         "description": "Two sites for a Patagonian hotel: a bilingual direct-booking website and an internal rate operations tool."
       },
-      "chatgptlearn": {
+      "discentik": {
         "title": "Discentik",
         "description": "Final year project: a full-stack AI training platform helping businesses learn practical ChatGPT workflows."
       },
@@ -280,7 +280,7 @@
       "complianceBody2": "Consent is enforced in code, not just described on a page. There is exactly one non essential category on the guest site, analytics, and nothing analytics related loads until the visitor has explicitly opted in. Three things are never gated: the language preference, the booking engine itself, and the record of the choice. That is what satisfies the prior consent rule under Ley 25.326, and GDPR and ePrivacy for the European guests the hotel gets plenty of.",
       "complianceBody3": "Behind that gate sits PostHog for product analytics and session replay, alongside Google Analytics, so the hotel can see how people actually move through the site and where they drop out of a booking instead of guessing. The internal tool has its own paperwork: a privacy notice for staff, a record of processing activities, and a retention policy that is genuinely implemented, with a scheduled job purging the activity log after 24 months and the Cloudbeds request logs after 90 days."
     },
-    "chatgptlearn": {
+    "discentik": {
       "meta": {
         "title": "Discentik | Julio Macias Gonzalez",
         "description": "Discentik, my final year project. A full-stack AI training platform built with Next.js, React, Supabase and PostgreSQL to help businesses learn practical ChatGPT workflows."
