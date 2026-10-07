@@ -118,6 +118,15 @@ function LosLagosHotel() {
                 alt='Los Lagos Hotel logo'
               />
               <h1 className="text-gray-800 mb-0 text-4xl md:text-5xl font-bold" id='top'>Los Lagos Hotel</h1>
+              <a
+                href="https://loslagoshotel.com.ar/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-500 hover:text-blue-700 transition-colors"
+                aria-label="Visit loslagoshotel.com.ar"
+              >
+                <i className="bi bi-arrow-up-right-square text-2xl"></i>
+              </a>
             </div>
             <PostUpdated date={postUpdatedDate('los-lagos-hotel')} />
 

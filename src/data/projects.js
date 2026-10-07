@@ -7,7 +7,7 @@ export const PROJECTS = [
     description: 'Two sites for a Patagonian hotel: a bilingual direct-booking website and an internal rate operations tool.',
     imageSrc: '/images/losLagosHotel/cover.jpg',
     date: '2026-07-04',
-    updated: '2026-08-18',
+    updated: '2026-10-07',
     link: '/projects/loslagoshotel',
     isExternal: false,
     padding: false,
