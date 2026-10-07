@@ -22,7 +22,7 @@ function ProjectCards() {
                         tag={t('projects.new')}
                         isLive={Boolean(project.liveUrl)}
                         liveLabel={t('projects.live')}
-                        date={formatProjectDate(project.date, locale)}
+                        date={project.ongoing ? t('projects.ongoing') : formatProjectDate(project.date, locale)}
                         hrefLink={project.link}
                         isExternal={project.isExternal}
                     />

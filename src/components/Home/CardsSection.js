@@ -7,16 +7,17 @@ import { ArrowRight } from 'lucide-react';
 import { useTranslations, useLocale } from 'next-intl';
 import { PROJECTS, formatProjectDate } from '../../data/projects';
 import Reveal from '../common/Reveal';
+import { FEATURED_PROJECT_ID } from './FeaturedProject';
 import SectionDivider from '../common/SectionDivider';
 
 export default function CardsSection() {
   const t = useTranslations();
   const locale = useLocale();
-  const latestProjects = PROJECTS.slice(0, 4);
+  const latestProjects = PROJECTS.filter((p) => p.id !== FEATURED_PROJECT_ID).slice(0, 4);
 
   return (
-    <section className="cards-section w-full bg-white px-4 py-24 relative overflow-hidden">
-      <SectionDivider variant="curve" color="#f5f5f5" shadow />
+    <section className="cards-section w-full bg-[whitesmoke] px-4 pt-28 pb-12 relative overflow-hidden">
+      <SectionDivider variant="curve" color="#ffffff" />
       <Reveal className="text-center max-w-2xl mx-auto mb-12 relative z-10">
         <h2 className="font-display text-3xl sm:text-4xl font-bold text-[#1a1717] mb-3">
           {t('home.cards.heading')}
@@ -39,7 +40,7 @@ export default function CardsSection() {
               tag={t('projects.new')}
               isLive={Boolean(project.liveUrl)}
               liveLabel={t('projects.live')}
-              date={formatProjectDate(project.date, locale)}
+              date={project.ongoing ? t('projects.ongoing') : formatProjectDate(project.date, locale)}
             />
           </Reveal>
         ))}

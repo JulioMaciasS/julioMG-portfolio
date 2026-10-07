@@ -5,7 +5,11 @@ import ImageSlider from './ImageSlider';
 import PostBreadcrumb from './PostBreadcrumb';
 import PostUpdated from './PostUpdated';
 import PostSummary from './PostSummary';
+import TestimonialCard from '../common/TestimonialCard';
+import { TESTIMONIALS } from '../../data/testimonials';
 import { postUpdatedDate } from '../../data/projects';
+
+const testimonials = TESTIMONIALS.filter((item) => item.project === 'los-lagos-hotel');
 
 function LosLagosHotel() {
   const t = useTranslations();
@@ -274,6 +278,10 @@ function LosLagosHotel() {
                   {t('posts.losLagosHotel.outcomeBody2')}
                 </p>
               </section>
+
+              {testimonials.map((item) => (
+                <TestimonialCard key={item.name} testimonial={item} />
+              ))}
 
               <section className="p-6 rounded-xl bg-emerald-50">
                 <p className="text-gray-700 leading-relaxed text-center">

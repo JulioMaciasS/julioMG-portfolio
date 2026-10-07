@@ -71,6 +71,18 @@
       "heading": "Need a website or tool for your business?",
       "text": "I build websites, online booking, AI automations and simple internal tools for small businesses, explained in plain language and looked after once they are live.",
       "button": "See how I can help"
+    },
+    "featured": {
+      "eyebrow": "Featured project",
+      "title": "Discentik, the AI learning platform I founded",
+      "body": "Discentik helps people learn practical AI skills by doing real tasks, with guidance and automated feedback. I designed and built the whole product, which brings together everything I offer: a public website, user accounts, payments, AI features and automation.",
+      "points": [
+        "Open for registration in Ireland, Spain, the United States and Australia",
+        "Course sales and instructor payouts built on Stripe",
+        "AI chat, feedback and research running securely on the server"
+      ],
+      "visit": "Visit discentik.com",
+      "read": "Read the case study"
     }
   },
   "projects": {
@@ -103,7 +115,8 @@
         "description": "A landing page for a family lawyer that automatically emails her free divorce guide to every new subscriber."
       }
     },
-    "live": "Live"
+    "live": "Live",
+    "ongoing": "Ongoing"
   },
   "services": {
     "meta": {
@@ -149,20 +162,10 @@
       "text": "Tell me about your business and what you would like to improve. I will reply within a couple of days with honest thoughts on how I can help.",
       "button": "Start a conversation"
     },
-    "featured": {
-      "eyebrow": "Featured project",
-      "title": "Discentik, the AI learning platform I founded",
-      "body": "Discentik helps people learn practical AI skills by doing real tasks, with guidance and automated feedback. I designed and built the whole product, which brings together everything I offer: a public website, user accounts, payments, AI features and automation.",
-      "points": [
-        "Open for registration in Ireland, Spain, the United States and Australia",
-        "Course sales and instructor payouts built on Stripe",
-        "AI chat, feedback and research running securely on the server"
-      ],
-      "visit": "Visit discentik.com",
-      "read": "Read the case study"
-    },
     "testimonials": {
-      "heading": "What clients say"
+      "heading": "What clients say",
+      "subtitle": "Endorsements from past clients",
+      "readCaseStudy": "Read the case study"
     },
     "categories": [
       {

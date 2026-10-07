@@ -4,8 +4,11 @@ import { buildMetadata } from '@/utils/seo';
 import HeroSection from '@/components/Home/HeroSection';
 import Marquee from '@/components/Home/Marquee';
 import AboutMe from '@/components/Home/AboutMe';
+import FeaturedProject from '@/components/Home/FeaturedProject';
 import CardsSection from '@/components/Home/CardsSection';
+import Testimonials from '@/components/Home/Testimonials';
 import ServicesCta from '@/components/Home/ServicesCta';
+import SectionDivider from '@/components/common/SectionDivider';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -31,16 +34,22 @@ export default function HomePage({ params: { locale } }) {
       {/* Transition 1 — moving tech ticker out of the hero */}
       <Marquee />
 
-      {/* Light about band */}
-      <section
-        id="after-hero"
-        className="relative overflow-hidden w-full bg-[whitesmoke] flex justify-center pt-24 pb-16 sm:pb-24"
-      >
-        <AboutMe />
-      </section>
+      {/* Flagship: the product I founded */}
+      <FeaturedProject id="after-hero" />
 
       {/* Proof: latest work */}
       <CardsSection />
+
+      {/* Social proof: what clients say */}
+      <Testimonials />
+
+      {/* Light about band */}
+      <section
+        className="relative overflow-hidden w-full bg-[whitesmoke] flex justify-center pt-28 pb-16 sm:pb-24"
+      >
+        <SectionDivider variant="curve" color="#ffffff" />
+        <AboutMe />
+      </section>
 
       {/* The ask: dark services CTA */}
       <ServicesCta />

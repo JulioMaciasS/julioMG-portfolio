@@ -1,5 +1,6 @@
 import en from '@/i18n/locales/en.json';
 import { PROJECTS } from '@/data/projects';
+import { TESTIMONIALS } from '@/data/testimonials';
 import { SITE_URL, absoluteUrl } from '@/utils/siteConfig';
 
 // llms.txt: a plain-text summary for AI assistants and LLM crawlers (GEO),
@@ -35,6 +36,12 @@ export function GET() {
     const item = en.projects.items[project.id];
     const live = project.liveUrl ? ` Live site: ${project.liveUrl}` : '';
     lines.push(`- [${item.title}](${SITE_URL}${project.link}): ${item.description}${live}`);
+  }
+  if (TESTIMONIALS.length) {
+    lines.push('', '## Client testimonials', '');
+    for (const item of TESTIMONIALS) {
+      lines.push(`> "${item.quote}"`, `> ${item.name}, ${item.role.en} (${item.date})`, '');
+    }
   }
   lines.push('', '## Frequently asked questions', '');
   for (const { q, a } of s.faq.items) {

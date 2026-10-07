@@ -71,6 +71,18 @@
       "heading": "¿Necesitas una web o una herramienta para tu negocio?",
       "text": "Creo webs, reservas online, automatizaciones con IA y herramientas internas sencillas para pequeños negocios, te lo explico sin tecnicismos y me ocupo de ellas una vez publicadas.",
       "button": "Descubre cómo puedo ayudarte"
+    },
+    "featured": {
+      "eyebrow": "Proyecto destacado",
+      "title": "Discentik, la plataforma de aprendizaje con IA que fundé",
+      "body": "Discentik ayuda a aprender competencias prácticas de IA haciendo tareas reales, con guía y feedback automático. Diseñé y desarrollé todo el producto, que reúne todo lo que ofrezco: web pública, cuentas de usuario, pagos, funciones de IA y automatización.",
+      "points": [
+        "Registro abierto en Irlanda, España, Estados Unidos y Australia",
+        "Venta de cursos y pagos a instructores sobre Stripe",
+        "Chat, feedback e investigación con IA ejecutados de forma segura en el servidor"
+      ],
+      "visit": "Visitar discentik.com",
+      "read": "Leer el caso completo"
     }
   },
   "projects": {
@@ -103,7 +115,8 @@
         "description": "Una página para una abogada de familia que envía automáticamente su guía gratuita sobre el divorcio a cada nuevo suscriptor."
       }
     },
-    "live": "En línea"
+    "live": "En línea",
+    "ongoing": "En curso"
   },
   "services": {
     "meta": {
@@ -149,20 +162,10 @@
       "text": "Cuéntame sobre tu negocio y qué te gustaría mejorar. Te responderé en un par de días con una opinión sincera sobre cómo puedo ayudarte.",
       "button": "Inicia una conversación"
     },
-    "featured": {
-      "eyebrow": "Proyecto destacado",
-      "title": "Discentik, la plataforma de aprendizaje con IA que fundé",
-      "body": "Discentik ayuda a aprender competencias prácticas de IA haciendo tareas reales, con guía y feedback automático. Diseñé y desarrollé todo el producto, que reúne todo lo que ofrezco: web pública, cuentas de usuario, pagos, funciones de IA y automatización.",
-      "points": [
-        "Registro abierto en Irlanda, España, Estados Unidos y Australia",
-        "Venta de cursos y pagos a instructores sobre Stripe",
-        "Chat, feedback e investigación con IA ejecutados de forma segura en el servidor"
-      ],
-      "visit": "Visitar discentik.com",
-      "read": "Leer el caso completo"
-    },
     "testimonials": {
-      "heading": "Qué dicen mis clientes"
+      "heading": "Qué dicen mis clientes",
+      "subtitle": "Recomendaciones de clientes anteriores",
+      "readCaseStudy": "Leer el caso"
     },
     "categories": [
       {

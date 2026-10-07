@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from '../LocalizedLink';
-import { useTranslations, useLocale } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import { Button } from '../Button';
 import {
   Globe,
@@ -9,11 +9,10 @@ import {
   Wrench,
   LifeBuoy,
   ArrowRight,
-  ArrowUpRight,
-  CheckCircle2,
-  Quote
+  CheckCircle2
 } from 'lucide-react';
 import { TESTIMONIALS } from '../../data/testimonials';
+import TestimonialCard from '../common/TestimonialCard';
 import './ServicesSection.css';
 import Reveal from '../common/Reveal';
 import SectionDivider from '../common/SectionDivider';
@@ -28,19 +27,12 @@ const CATEGORY_ICONS = {
   support: LifeBuoy
 };
 
-const FEATURED = {
-  image: '/images/discentik/practice-canvas.jpg',
-  liveUrl: 'https://discentik.com/',
-  caseStudy: '/projects/discentik'
-};
 
 const PROCESS = ['step1', 'step2', 'step3', 'step4'];
 
 function ServicesSection() {
   const t = useTranslations();
-  const locale = useLocale();
   const categories = t.raw('services.categories');
-  const pick = (value) => (typeof value === 'string' ? value : value?.[locale] || Object.values(value || {})[0]);
 
   return (
     <main className="services-page">
@@ -67,39 +59,9 @@ function ServicesSection() {
         </div>
       </section>
 
-      {/* Featured client project */}
-      <section className="services-featured">
-        <LayeredWaves colors={['#2b2725', '#221f1e', '#1a1717']} height={104} />
-        <Reveal as="div" className="services-featured-card">
-          <a href={FEATURED.liveUrl} target="_blank" rel="noopener noreferrer" className="services-featured-image">
-            <img src={FEATURED.image} alt="Discentik course player with AI chat and a document canvas" loading="lazy" />
-          </a>
-          <div className="services-featured-body">
-            <span className="services-featured-eyebrow">{t('services.featured.eyebrow')}</span>
-            <h2>{t('services.featured.title')}</h2>
-            <p>{t('services.featured.body')}</p>
-            <ul>
-              {t.raw('services.featured.points').map((point) => (
-                <li key={point}>
-                  <CheckCircle2 size={20} strokeWidth={2} />
-                  <span>{point}</span>
-                </li>
-              ))}
-            </ul>
-            <div className="services-featured-links">
-              <a href={FEATURED.liveUrl} target="_blank" rel="noopener noreferrer">
-                {t('services.featured.visit')} <ArrowUpRight size={18} />
-              </a>
-              <Link to={FEATURED.caseStudy}>
-                {t('services.featured.read')} <ArrowRight size={18} />
-              </Link>
-            </div>
-          </div>
-        </Reveal>
-      </section>
-
       {/* Services grid */}
       <section className="services-grid-section">
+        <LayeredWaves colors={['#2b2725', '#221f1e', '#1a1717']} height={104} />
         <div className="services-section-head">
           <h2>{t('services.grid.heading')}</h2>
           <p>{t('services.grid.subtitle')}</p>
@@ -173,27 +135,6 @@ function ServicesSection() {
         </Reveal>
       </section>
 
-      {/* Testimonials: hidden until real, approved quotes are added to data/testimonials.js */}
-      {TESTIMONIALS.length > 0 && (
-        <section className="services-testimonials">
-          <div className="services-section-head">
-            <h2>{t('services.testimonials.heading')}</h2>
-          </div>
-          <div className="services-testimonials-grid">
-            {TESTIMONIALS.map((item, index) => (
-              <Reveal as="figure" key={item.name} delay={index * 70} className="services-testimonial">
-                <Quote size={26} strokeWidth={1.75} aria-hidden="true" />
-                <blockquote>{pick(item.quote)}</blockquote>
-                <figcaption>
-                  <strong>{item.name}</strong>
-                  {item.role && <span>{pick(item.role)}</span>}
-                </figcaption>
-              </Reveal>
-            ))}
-          </div>
-        </section>
-      )}
-
       {/* Process */}
       <section className="services-process">
         <SectionDivider variant="diagonal" color="#ffffff" accent />
@@ -219,6 +160,24 @@ function ServicesSection() {
         </div>
       </section>
 
+      {/* Testimonials: hidden until real, approved quotes are added to data/testimonials.js */}
+      {TESTIMONIALS.length > 0 && (
+        <section className="services-testimonials">
+          <SectionDivider variant="curve" color="#f5f5f5" />
+          <div className="services-section-head">
+            <h2>{t('services.testimonials.heading')}</h2>
+            <p>{t('services.testimonials.subtitle')}</p>
+          </div>
+          <div className="services-testimonials-list">
+            {TESTIMONIALS.map((item, index) => (
+              <Reveal key={item.name} delay={index * 70}>
+                <TestimonialCard testimonial={item} />
+              </Reveal>
+            ))}
+          </div>
+        </section>
+      )}
+
       {/* FAQ: same content as the FAQPage structured data on this page */}
       <section className="services-faq" id="faq">
         <div className="services-section-head">
@@ -236,7 +195,7 @@ function ServicesSection() {
 
       {/* Final CTA */}
       <section className="services-cta">
-        <LayeredWaves colors={['#e2e2e2', '#ececec', '#f5f5f5']} height={92} speed="slow" />
+        <LayeredWaves colors={['#ebebeb', '#f5f5f5', '#ffffff']} height={92} speed="slow" />
         <Reveal className="relative z-10">
           <h2>{t('services.cta.heading')}</h2>
           <p>{t('services.cta.text')}</p>

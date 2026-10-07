@@ -71,6 +71,18 @@
       "heading": "Besoin d'un site ou d'un outil pour votre entreprise ?",
       "text": "Je crée des sites, des réservations en ligne, des automatisations par l'IA et des outils internes simples pour les petites entreprises, expliqués sans jargon et suivis une fois en ligne.",
       "button": "Voir comment je peux vous aider"
+    },
+    "featured": {
+      "eyebrow": "Projet phare",
+      "title": "Discentik, la plateforme d'apprentissage par l'IA que j'ai fondée",
+      "body": "Discentik aide à acquérir des compétences pratiques en IA en réalisant de vraies tâches, avec un accompagnement et un retour automatique. J'ai conçu et développé tout le produit, qui réunit tout ce que je propose : site public, comptes utilisateurs, paiements, fonctions d'IA et automatisation.",
+      "points": [
+        "Inscriptions ouvertes en Irlande, en Espagne, aux États-Unis et en Australie",
+        "Vente de cours et reversements aux formateurs via Stripe",
+        "Chat, retours et recherche par l'IA exécutés de façon sécurisée côté serveur"
+      ],
+      "visit": "Visiter discentik.com",
+      "read": "Lire l'étude de cas"
     }
   },
   "projects": {
@@ -103,7 +115,8 @@
         "description": "Une page pour une avocate en droit de la famille qui envoie automatiquement son guide gratuit sur le divorce à chaque nouvel abonné."
       }
     },
-    "live": "En ligne"
+    "live": "En ligne",
+    "ongoing": "En cours"
   },
   "services": {
     "meta": {
@@ -149,20 +162,10 @@
       "text": "Parlez-moi de votre activité et de ce que vous aimeriez améliorer. Je vous réponds sous quelques jours avec un avis honnête sur la façon dont je peux vous aider.",
       "button": "Démarrer une conversation"
     },
-    "featured": {
-      "eyebrow": "Projet phare",
-      "title": "Discentik, la plateforme d'apprentissage par l'IA que j'ai fondée",
-      "body": "Discentik aide à acquérir des compétences pratiques en IA en réalisant de vraies tâches, avec un accompagnement et un retour automatique. J'ai conçu et développé tout le produit, qui réunit tout ce que je propose : site public, comptes utilisateurs, paiements, fonctions d'IA et automatisation.",
-      "points": [
-        "Inscriptions ouvertes en Irlande, en Espagne, aux États-Unis et en Australie",
-        "Vente de cours et reversements aux formateurs via Stripe",
-        "Chat, retours et recherche par l'IA exécutés de façon sécurisée côté serveur"
-      ],
-      "visit": "Visiter discentik.com",
-      "read": "Lire l'étude de cas"
-    },
     "testimonials": {
-      "heading": "Ce qu'en disent mes clients"
+      "heading": "Ce qu'en disent mes clients",
+      "subtitle": "Recommandations de clients",
+      "readCaseStudy": "Lire l'étude de cas"
     },
     "categories": [
       {

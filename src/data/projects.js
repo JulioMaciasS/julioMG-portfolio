@@ -2,6 +2,27 @@ const BASE_URL = '/images/logos/';
 
 export const PROJECTS = [
   {
+    id: 'discentik',
+    title: 'Discentik',
+    description: 'Final year project. A full-stack AI learning and assessment platform with guided courses, secure AI workflows and automated evaluation.',
+    imageSrc: '/images/discentik/practice-canvas.jpg',
+    date: '2026-04-15',
+    // Still in active development: cards show "Ongoing" and it stays first.
+    ongoing: true,
+    updated: '2026-10-07',
+    link: '/projects/discentik',
+    liveUrl: 'https://discentik.com/',
+    isExternal: false,
+    padding: false,
+    technologies: [
+      { name: 'Next.js', icon: `${BASE_URL}nextjs.svg` },
+      { name: 'React', icon: `${BASE_URL}react.png` },
+      { name: 'Supabase', icon: `${BASE_URL}supabase.svg` },
+      { name: 'OpenAI', icon: `${BASE_URL}openai.png` },
+      { name: 'Cloudflare', icon: `${BASE_URL}cloudflare.svg` }
+    ]
+  },
+  {
     id: 'los-lagos-hotel',
     title: 'Los Lagos Hotel',
     description: 'Two sites for a Patagonian hotel: a bilingual direct-booking website and an internal rate operations tool.',
@@ -18,25 +39,6 @@ export const PROJECTS = [
       { name: 'React', icon: `${BASE_URL}react.png` },
       { name: 'TypeScript', icon: `${BASE_URL}typescript.png` },
       { name: 'Supabase', icon: `${BASE_URL}supabase.svg` },
-      { name: 'Cloudflare', icon: `${BASE_URL}cloudflare.svg` }
-    ]
-  },
-  {
-    id: 'discentik',
-    title: 'Discentik',
-    description: 'Final year project. A full-stack AI learning and assessment platform with guided courses, secure AI workflows and automated evaluation.',
-    imageSrc: '/images/discentik/practice-canvas.jpg',
-    date: '2026-04-15',
-    updated: '2026-10-07',
-    link: '/projects/discentik',
-    liveUrl: 'https://discentik.com/',
-    isExternal: false,
-    padding: false,
-    technologies: [
-      { name: 'Next.js', icon: `${BASE_URL}nextjs.svg` },
-      { name: 'React', icon: `${BASE_URL}react.png` },
-      { name: 'Supabase', icon: `${BASE_URL}supabase.svg` },
-      { name: 'OpenAI', icon: `${BASE_URL}openai.png` },
       { name: 'Cloudflare', icon: `${BASE_URL}cloudflare.svg` }
     ]
   },
