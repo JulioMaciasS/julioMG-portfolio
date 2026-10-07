@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { buildMetadata } from '@/utils/seo';
+import { caseStudyGraph, JsonLd } from '@/utils/structuredData';
 import EugeniaBravo from '@/components/Posts/EugeniaBravo';
 
 export function generateStaticParams() {
@@ -19,7 +20,22 @@ export async function generateMetadata({ params: { locale } }) {
   });
 }
 
-export default function EugeniaBravoPage({ params: { locale } }) {
+export default async function EugeniaBravoPage({ params: { locale } }) {
   setRequestLocale(locale);
-  return <EugeniaBravo />;
+  const t = await getTranslations({ locale });
+  const data = caseStudyGraph({
+    locale,
+    projectId: 'eugenia-bravo',
+    path: '/projects/eugeniabravo',
+    title: t('posts.eugeniaBravo.meta.title'),
+    description: t('posts.eugeniaBravo.meta.description'),
+    image: '/images/eugeniaBravoPost/EugeniaBravoIcon.png',
+    projectsLabel: t('nav.projects'),
+  });
+  return (
+    <>
+      <JsonLd data={data} />
+      <EugeniaBravo />
+    </>
+  );
 }

@@ -15,6 +15,12 @@ const nextConfig = {
 
   async redirects() {
     return [
+      // The rebuild post was merged into the single Eugenia Bravo case study.
+      ...['', '/es', '/fr', '/ar'].map((prefix) => ({
+        source: `${prefix}/projects/eugeniabravo-rebuild`,
+        destination: `${prefix}/projects/eugeniabravo`,
+        permanent: true,
+      })),
       {
         source: '/projects/chatgptlearn',
         destination: '/projects/discentik',

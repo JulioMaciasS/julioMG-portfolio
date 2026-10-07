@@ -31,13 +31,13 @@
   },
   "home": {
     "meta": {
-      "title": "Julio Macias Gonzalez | Développeur logiciel",
-      "description": "Julio Macias Gonzalez, développeur logiciel avec une expérience en entreprise chez Citi. Applications web full-stack, cloud et pilotées par l'IA. Disponible en freelance et en conseil."
+      "title": "Julio Macias Gonzalez | Développeur web, fondateur de Discentik",
+      "description": "Développeur web freelance et fondateur de Discentik. Je crée des sites, des réservations en ligne, de l'automatisation par l'IA et des applications web."
     },
     "hero": {
       "badge": "Disponible en freelance et en conseil",
       "title": "Bonjour, je suis Julio. Je conçois des produits web full-stack.",
-      "subtitle": "Développeur logiciel avec une expérience en entreprise chez Citi, spécialisé dans les applications web full-stack, cloud et pilotées par l'IA. J'aide les entreprises à concevoir, développer et livrer des logiciels fiables.",
+      "subtitle": "Développeur et fondateur de Discentik, une plateforme d'apprentissage par l'IA, avec une expérience professionnelle chez Citi. J'aide les entreprises à concevoir, créer et lancer des sites, des automatisations et des produits fiables propulsés par l'IA.",
       "work": "Travailler avec moi",
       "projects": "Voir mes réalisations",
       "contact": "ou dites simplement bonjour →",
@@ -46,9 +46,10 @@
     "about": {
       "eyebrow": "À propos",
       "title": "Un peu sur moi",
-      "body1": "Je suis développeur logiciel et diplômé en informatique de la Queen's University Belfast, avec une expérience en entreprise chez Citi à construire et livrer des applications full-stack.",
+      "body1": "Je suis Julio Macias Gonzalez, développeur, diplômé en informatique de Queen's University Belfast et fondateur de Discentik, une plateforme d'apprentissage par l'IA. Auparavant, j'ai conçu et livré des applications full-stack chez Citi.",
       "body2": "Je suis passionné par le développement web full-stack, le cloud et l'IA, et j'adore transformer des idées en produits fiables qui génèrent de vrais résultats pour les entreprises.",
       "highlights": {
+        "founder": "Fondateur de Discentik",
         "degree": "Diplômé en informatique, QUB",
         "experience": "Expérience en entreprise chez Citi",
         "focus": "Full-stack, cloud et IA"
@@ -66,16 +67,16 @@
       "more": "Voir tous les projets"
     },
     "servicesCta": {
-      "eyebrow": "Freelance & conseil",
-      "heading": "Besoin d'un développeur qui livre ?",
-      "text": "Je prends des missions en freelance et en conseil, des applications web complètes aux migrations, au cloud et au conseil technique. Communication directe, des résultats réellement livrés.",
-      "button": "Découvrez comment je peux aider"
+      "eyebrow": "Développeur web freelance",
+      "heading": "Besoin d'un site ou d'un outil pour votre entreprise ?",
+      "text": "Je crée des sites, des réservations en ligne, des automatisations par l'IA et des outils internes simples pour les petites entreprises, expliqués sans jargon et suivis une fois en ligne.",
+      "button": "Voir comment je peux vous aider"
     }
   },
   "projects": {
     "meta": {
-      "title": "Projets | Portfolio Julio Macias",
-      "description": "Parcourez les projets d'ingénierie logicielle de Julio Macias Gonzalez, notamment CineShare, EugeniaBravo et bien d'autres."
+      "title": "Projets et études de cas | Julio Macias Gonzalez",
+      "description": "Études de cas de sites, de systèmes de réservation et de produits d'IA que j'ai réalisés, dont Los Lagos Hotel, Discentik et Eugenia Bravo."
     },
     "heading": "Mes projets",
     "subheading": "Du vrai travail client, des plateformes cloud et des expérimentations IA, chacun accompagné d'un compte rendu de sa réalisation.",
@@ -87,101 +88,270 @@
       },
       "discentik": {
         "title": "Discentik",
-        "description": "Projet de fin d'études : une plateforme de formation à l'IA full-stack qui aide les entreprises à apprendre des workflows ChatGPT concrets."
-      },
-      "eugenia-bravo-rebuild": {
-        "title": "Refonte d'EugeniaBravo",
-        "description": "Migration vers Next.js + Supabase pour un meilleur SEO et une exploitation simplifiée."
+        "description": "Une plateforme d'apprentissage par l'IA que j'ai fondée, où l'on s'exerce à de vraies tâches avec l'IA grâce à des cours guidés, avec vente de cours et reversements aux formateurs via Stripe."
       },
       "eugenia-bravo": {
         "title": "Eugenia Bravo",
-        "description": "Projet réel. Site de blog et page d'atterrissage pour une avocate."
+        "description": "Site et blog juridique pour une avocate en droit de la famille, créés en 2024 et refondus en 2025 pour que ses articles apparaissent sur Google."
       },
       "cineshare": {
         "title": "CineShare",
         "description": "Découvrez le développement de CineShare. Un réseau social pour découvrir des films et séries incroyables !"
+      },
+      "tu-divorcio-inteligente": {
+        "title": "Tu Divorcio Inteligente",
+        "description": "Une page pour une avocate en droit de la famille qui envoie automatiquement son guide gratuit sur le divorce à chaque nouvel abonné."
       }
-    }
+    },
+    "live": "En ligne"
   },
   "services": {
     "meta": {
-      "title": "Services | Julio Macias, Développement web et conseil",
-      "description": "Ingénierie logicielle et conseil en freelance par Julio Macias Gonzalez. Spécialisé en Supabase, Next.js et React, avec une expérience en entreprise sur Angular, Java/Spring et CI/CD."
+      "title": "Développement web, SEO et automatisation par l'IA | Julio Macias",
+      "description": "Sites web, réservation en ligne, SEO et GEO, automatisation par l'IA et logiciels sur mesure pour les petites entreprises. Appel gratuit et devis fixe."
     },
     "hero": {
-      "eyebrow": "Conseil & Freelance",
-      "title": "Une ingénierie qui fait avancer votre entreprise",
-      "subtitlePrefix": "Je suis Julio, un ingénieur logiciel spécialisé en ",
-      "subtitleHighlight": "Supabase, Next.js et React",
-      "subtitleSuffix": ". J'aide les startups et les équipes en entreprise à concevoir, développer et livrer des produits web fiables, des applications créées de zéro aux migrations et au CI/CD.",
+      "eyebrow": "Développeur web freelance",
+      "title": "Des sites et des outils qui attirent des clients et vous font gagner du temps",
       "bookCall": "Réserver un appel gratuit",
-      "seeWork": "Voir mes réalisations"
-    },
-    "specialty": {
-      "label": "Spécialisé en"
+      "seeWork": "Voir mes projets",
+      "subtitle": "Je suis Julio, fondateur de Discentik et développeur freelance. Je crée des sites, des réservations en ligne, des automatisations par l'IA et des outils internes simples pour les petites entreprises, expliqués sans jargon et suivis une fois en ligne.",
+      "techLine": "Conçu avec des technologies modernes et fiables : Next.js, React, Supabase et Cloudflare."
     },
     "grid": {
       "heading": "Comment je peux vous aider",
-      "subtitle": "Des collaborations flexibles : au projet, en continu ou sous forme de consultation ponctuelle. Choisissez ce qui vous convient."
-    },
-    "items": {
-      "product": {
-        "title": "Développement de produits et d'applications web",
-        "description": "Des applications web de bout en bout bâties sur ma stack de prédilection : Next.js, React et Supabase. De la première ligne de schéma à un produit rapide et optimisé pour le SEO en production."
-      },
-      "enterprise": {
-        "title": "Ingénierie frontend en entreprise",
-        "description": "Des frontends à grande échelle et maintenables pour les équipes et les outils internes, pas uniquement des produits grand public. À l'aise au sein de bases de code d'entreprise et de design systems établis."
-      },
-      "backend": {
-        "title": "Backend & API",
-        "description": "Des API et services robustes pour propulser votre produit. Des modèles de données Supabase/Postgres aux services Java et Spring Boot pour les charges de travail d'entreprise les plus exigeantes."
-      },
-      "cicd": {
-        "title": "CI/CD & DevOps",
-        "description": "Des pipelines automatisés pour que les mises en production deviennent banales et sûres. Build, test et déploiement à chaque push avec GitHub Actions et Docker, ainsi qu'une bonne gestion des environnements et des versions."
-      },
-      "migrations": {
-        "title": "Migrations & modernisation",
-        "description": "Faire passer des sites anciens ou difficiles à maintenir vers une stack moderne sans perdre le SEO ni le contenu : exactement ce que j'ai fait en migrant le site d'un client en production vers Next.js + Supabase."
-      },
-      "consulting": {
-        "title": "Conseil technique",
-        "description": "Un regard extérieur sur votre architecture, vos choix de stack, vos performances ou votre SEO. Des interventions courtes pour débloquer votre équipe et sécuriser la prochaine décision."
-      }
+      "subtitle": "Cinq domaines, chacun avec quelques offres claires. Chaque projet commence par un appel gratuit et un devis fixe."
     },
     "why": {
       "heading": "Pourquoi travailler avec moi",
-      "point1Lead": "Un vrai travail client, livré en production.",
-      "point1Text": "J'ai reconstruit et migré un site client en production vers Next.js + Supabase, améliorant le SEO, les flux d'administration et les opérations quotidiennes.",
-      "point2Lead": "De l'expérience en entreprise, pas seulement des démos.",
-      "point2Text": "J'ai travaillé sur de grandes bases de code et des outils internes avec Angular, Java et Spring. Je suis donc à l'aise dans des systèmes sérieux et durables.",
-      "point3Lead": "Vous échangez directement avec la personne qui réalise le travail.",
-      "point3Text": "Pas de chargés de compte, pas de relais : une communication directe du premier appel à la livraison.",
-      "caseStudyLink": "Lire l'étude de cas de la migration"
+      "point1Lead": "Éprouvé avec de vrais clients.",
+      "point1Text": "Un site de réservation directe et un outil de tarification pour un hôtel en Patagonie, ainsi qu'un site, un blog et une page de captation pour une avocate en droit de la famille à Málaga. Tous sont en ligne aujourd'hui.",
+      "point2Lead": "Les standards d'une grande entreprise.",
+      "point2Text": "J'ai développé des logiciels chez Citi : votre projet bénéficie du même soin en matière de tests, de sécurité et de fiabilité.",
+      "point3Lead": "Vous parlez à la personne qui fait le travail.",
+      "point3Text": "Ni intermédiaires ni jargon. Je vous explique les options simplement, en anglais ou en espagnol.",
+      "caseStudyLink": "Lire l'étude de cas de l'hôtel"
     },
     "process": {
       "heading": "Comment nous travaillerons ensemble",
       "subtitle": "Un processus simple et transparent, du premier contact à la remise du projet.",
       "step1Title": "Appel de découverte",
-      "step1Text": "Un appel gratuit de 30 minutes pour comprendre vos objectifs, vos contraintes et votre calendrier.",
+      "step1Text": "Un appel gratuit de 30 minutes pour comprendre votre activité, vos objectifs et votre budget.",
       "step2Title": "Proposition & périmètre",
       "step2Text": "Une proposition claire et fixe : ce qui sera développé, le temps nécessaire et le coût.",
       "step3Title": "Développement & livraison",
-      "step3Text": "Une livraison itérative avec des points réguliers, pour que vous voyiez toujours la progression.",
+      "step3Text": "Des points réguliers pour suivre l'avancement et demander facilement des modifications.",
       "step4Title": "Remise & support",
-      "step4Text": "Une remise soignée, de la documentation et un support continu en option."
+      "step4Text": "Une formation pour mettre à jour votre site, une documentation claire et un suivi optionnel."
     },
     "cta": {
       "heading": "Un projet en tête ?",
-      "text": "Dites-moi ce que vous construisez. Je vous répondrai sous quelques jours avec un avis honnête sur la façon dont je peux vous aider.",
+      "text": "Parlez-moi de votre activité et de ce que vous aimeriez améliorer. Je vous réponds sous quelques jours avec un avis honnête sur la façon dont je peux vous aider.",
       "button": "Démarrer une conversation"
+    },
+    "featured": {
+      "eyebrow": "Projet phare",
+      "title": "Discentik, la plateforme d'apprentissage par l'IA que j'ai fondée",
+      "body": "Discentik aide à acquérir des compétences pratiques en IA en réalisant de vraies tâches, avec un accompagnement et un retour automatique. J'ai conçu et développé tout le produit, qui réunit tout ce que je propose : site public, comptes utilisateurs, paiements, fonctions d'IA et automatisation.",
+      "points": [
+        "Inscriptions ouvertes en Irlande, en Espagne, aux États-Unis et en Australie",
+        "Vente de cours et reversements aux formateurs via Stripe",
+        "Chat, retours et recherche par l'IA exécutés de façon sécurisée côté serveur"
+      ],
+      "visit": "Visiter discentik.com",
+      "read": "Lire l'étude de cas"
+    },
+    "testimonials": {
+      "heading": "Ce qu'en disent mes clients"
+    },
+    "categories": [
+      {
+        "key": "websites",
+        "title": "Sites web",
+        "pitch": "Une présence en ligne professionnelle qui attire des clients.",
+        "offers": [
+          {
+            "title": "Sites d'entreprise et pages d'atterrissage",
+            "description": "Des sites rapides et professionnels qui transforment les visites en demandes.",
+            "points": [
+              "Multilingues, dans toutes les langues de vos clients",
+              "Pensés d'abord pour le mobile",
+              "Des contenus que vous modifiez vous-même"
+            ]
+          },
+          {
+            "title": "Réservations et paiements en ligne",
+            "description": "Recevez réservations et paiements sur votre propre site au lieu de payer une commission aux plateformes.",
+            "points": [
+              "Réservation directe sur votre site",
+              "Paiements en ligne et liens de paiement",
+              "Connecté à votre système de réservation"
+            ]
+          },
+          {
+            "title": "Changement de site et refonte",
+            "description": "Passez à un site moderne et plus rapide sans perdre ce qui fonctionne déjà.",
+            "points": [
+              "Depuis WordPress, Wix ou un ancien site sur mesure",
+              "Vos contenus et votre référencement Google conservés",
+              "Plus rapide, plus sûr et plus simple à mettre à jour"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "visibility",
+        "title": "Être trouvé en ligne",
+        "pitch": "Apparaissez sur Google et dans les recommandations des assistants IA.",
+        "offers": [
+          {
+            "title": "SEO : référencement naturel",
+            "description": "Aidez Google à comprendre, indexer et classer votre site.",
+            "points": [
+              "Audit technique : vitesse, mobile et indexation",
+              "Titres, descriptions, sitemaps et données structurées",
+              "Des pages pour chaque langue et chaque zone desservie"
+            ]
+          },
+          {
+            "title": "GEO : optimisation pour l'IA générative",
+            "description": "Faites en sorte que ChatGPT et les autres assistants IA trouvent et recommandent facilement votre entreprise.",
+            "points": [
+              "Des réponses claires aux vraies questions de vos clients",
+              "Des informations structurées sur vos services, prix et horaires",
+              "Des coordonnées cohérentes sur tout le web"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "automation",
+        "title": "IA et automatisation",
+        "pitch": "Confiez les tâches répétitives au logiciel, avec une personne qui valide l'essentiel.",
+        "offers": [
+          {
+            "title": "Assistants IA",
+            "description": "Répondez aux questions fréquentes et préparez des brouillons à partir de vos informations.",
+            "points": [
+              "Des réponses fondées sur vos services, prix et conditions",
+              "Des brouillons d'e-mails, de devis ou de rapports à valider",
+              "Transfert à une personne quand il le faut"
+            ]
+          },
+          {
+            "title": "Captation de contacts et e-mails automatiques",
+            "description": "Transformez les visiteurs en contacts et relancez-les automatiquement.",
+            "points": [
+              "Guides ou offres gratuits en échange d'un e-mail",
+              "E-mails de bienvenue et de relance automatiques",
+              "Contacts enregistrés directement dans votre liste"
+            ]
+          },
+          {
+            "title": "Connectez vos systèmes",
+            "description": "Faites travailler vos outils ensemble pour ne saisir les informations qu'une fois.",
+            "points": [
+              "Réservations, paiements et e-mails synchronisés",
+              "Alertes et tâches quand un prix, une réservation ou un document change",
+              "Moins d'erreurs de copier-coller"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "software",
+        "title": "Logiciel sur mesure",
+        "pitch": "Des outils et des produits adaptés à votre façon de travailler.",
+        "offers": [
+          {
+            "title": "Outils internes et tableaux de bord",
+            "description": "Remplacez tableurs et étapes manuelles par une application simple pour votre équipe.",
+            "points": [
+              "Un tableau de bord avec vos chiffres du quotidien",
+              "Des outils pour les prix, les stocks ou les plannings",
+              "Des accès et permissions propres à chaque personne"
+            ]
+          },
+          {
+            "title": "Applications web et plateformes",
+            "description": "Des produits plus ambitieux avec comptes utilisateurs, paiements et IA intégrés.",
+            "points": [
+              "Comptes, rôles et organisations",
+              "Paiements et reversements avec Stripe",
+              "Des fonctions d'IA pensées dès le départ"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "support",
+        "title": "Conseil et suivi",
+        "pitch": "Des conseils honnêtes avant de dépenser, et un suivi après la mise en ligne.",
+        "offers": [
+          {
+            "title": "Conseil et planification",
+            "description": "Identifiez ce dont vous avez vraiment besoin avant de dépenser quoi que ce soit.",
+            "points": [
+              "Un premier appel gratuit",
+              "Un devis clair et fixe avant de commencer",
+              "Des conseils honnêtes, même si la réponse est plus simple"
+            ]
+          },
+          {
+            "title": "Maintenance et hébergement",
+            "description": "Gardez votre site rapide, sûr et fonctionnel après la mise en ligne.",
+            "points": [
+              "Mises à jour, corrections et petites améliorations",
+              "Mises à jour de sécurité et vérifications régulières",
+              "Hébergement mis en place et géré pour vous"
+            ]
+          },
+          {
+            "title": "Confidentialité et statistiques",
+            "description": "Comprenez comment les visiteurs utilisent votre site, en respectant leur vie privée.",
+            "points": [
+              "Des statistiques chargées seulement après consentement",
+              "Un bandeau cookies qui fonctionne correctement",
+              "Les anciennes données supprimées automatiquement"
+            ]
+          }
+        ]
+      }
+    ],
+    "faq": {
+      "heading": "Questions fréquentes",
+      "items": [
+        {
+          "q": "Combien coûte un site web ?",
+          "a": "Chaque projet reçoit un devis fixe après un appel gratuit de 30 minutes : vous connaissez le prix total avant le début du travail. Le coût dépend du nombre de pages et de langues, et de fonctions comme les réservations, les paiements ou l'IA."
+        },
+        {
+          "q": "Combien de temps dure un projet ?",
+          "a": "Cela dépend du périmètre. Vous recevez un calendrier avec votre devis, et des points réguliers vous permettent de suivre l'avancement."
+        },
+        {
+          "q": "Puis-je mettre à jour le site moi-même ?",
+          "a": "Oui. Je peux inclure un espace d'administration pour modifier les pages, publier des articles et ajouter des images sans toucher au code."
+        },
+        {
+          "q": "Qu'est-ce que le GEO, et en ai-je besoin ?",
+          "a": "Le GEO (optimisation pour l'IA générative) aide les assistants IA comme ChatGPT à comprendre et recommander votre entreprise. Il complète le SEO : des réponses claires aux questions de vos clients, des informations structurées sur vos services et des coordonnées cohérentes sur le web."
+        },
+        {
+          "q": "Travaillez-vous avec des clients hors d'Irlande et d'Espagne ?",
+          "a": "Oui. Je travaille à distance avec des clients partout, en anglais ou en espagnol, et je peux créer votre site dans toutes les langues de vos clients."
+        },
+        {
+          "q": "Que se passe-t-il après la mise en ligne ?",
+          "a": "Vous recevez une passation avec documentation et formation. Si vous le souhaitez, je peux garder votre site à jour, sécurisé et fonctionnel grâce à un suivi continu."
+        }
+      ]
     }
   },
   "contact": {
     "meta": {
-      "title": "Me contacter | Portfolio Julio Macias",
-      "description": "Entrez en contact avec Julio Macias Gonzalez. Formulaire de contact pour vos demandes en ingénierie logicielle et opportunités de collaboration."
+      "title": "Contact | Julio Macias Gonzalez",
+      "description": "Parlez-moi de votre projet. Réservez un appel gratuit de 30 minutes pour un site, des réservations en ligne, de l'automatisation par l'IA ou un logiciel."
     },
     "title": "Merci d'avoir pris le temps de me contacter.",
     "heading": "Comment puis-je vous aider aujourd'hui ?",
@@ -223,8 +393,8 @@
     },
     "losLagosHotel": {
       "meta": {
-        "title": "Los Lagos Hotel | Portfolio Julio Macias",
-        "description": "Deux applications web pour un hôtel familial d'El Calafate, en Patagonie : un site bilingue de réservation directe bâti autour du moteur Cloudbeds, et un outil interne qui fixe les prix en dollars et les publie dans Cloudbeds en pesos."
+        "title": "Los Lagos Hotel : site de réservation directe et outil de tarification | Julio Macias",
+        "description": "Un site bilingue de réservation directe et un outil interne de tarification pour un hôtel familial en Patagonie, connectés à Cloudbeds."
       },
       "intro1": "Los Lagos Hotel est un hôtel familial d'El Calafate, la ville de Patagonie que la plupart des voyageurs prennent comme base pour visiter le glacier Perito Moreno. Au démarrage de ce travail, l'hôtel migrait de Minihotel, un système de gestion plus ancien, vers Cloudbeds. C'est cette migration qui a rendu le reste possible : dès lors que les chambres, les tarifs et les réservations vivaient dans un système doté d'une vraie API, l'hôtel pouvait enfin vendre en direct depuis son propre site et maîtriser ses propres prix.",
       "intro2": "J'ai donc construit deux applications web. La première est le site bilingue sur lequel les clients réservent ; la seconde est l'outil interne avec lequel l'hôtel fixe ses prix. Elles ne se ressemblent pas du tout, et c'est voulu. L'une est une vitrine, l'autre un arrière-guichet. Ce qu'elles partagent, c'est le backend, et toutes deux dialoguent avec le même compte Cloudbeds.",
@@ -232,7 +402,7 @@
       "briefBody1": "Le problème financier n'était pas compliqué. Une part importante des réservations arrivait via Booking.com et des plateformes similaires, et chacune s'accompagne d'une commission. L'hôtel avait déjà un site, et ces clients auraient donc pu réserver en direct. Mais le site n'inspirait pas assez confiance pour qu'on y saisisse sa carte, et il n'était pas simple à utiliser. Les deux coûtaient des conversions, et les commissions continuaient d'être versées.",
       "briefBody2": "Vendre en direct paraît simple jusqu'à ce qu'on regarde ce que l'hôtel doit gérer en Argentine. Cloudbeds encaisse en pesos argentins, mais l'hôtel et les spécialistes du revenue qui fixent ses prix travaillent en dollars, car le peso bouge assez souvent pour qu'un prix fixé en pesos devienne faux en une semaine. Et les clients résidant hors d'Argentine sont exonérés des 21 % de TVA sur l'hébergement, si bien que la même chambre a légitimement deux prix selon le lieu de résidence du client.",
       "briefBody3": "Ces deux points retombaient sur la réception, traités au cas par cas. La commande se résumait donc à trois choses : prendre les réservations sur le site de l'hôtel lui-même, rendre ce site digne de confiance au moment de saisir une carte, et afficher à chaque client le prix qui le concerne réellement sans que personne ne fasse les calculs à la main.",
-      "technologiesIntro": "Le site client est en Next.js avec TypeScript, prégénéré statiquement dans chaque langue. L'outil interne est une SPA React construite avec Vite. Supabase est le backend commun : Postgres, la sécurité au niveau des lignes et les Edge Functions. Les deux applications finissent par écrire dans l'API Cloudbeds.",
+      "technologiesIntro": "Le site client est en Next.js avec TypeScript, prégénéré statiquement dans chaque langue. L'outil interne est une SPA React construite avec Vite. Supabase est le backend commun : Postgres, la sécurité au niveau des lignes et les Edge Functions. Les deux applications finissent par écrire dans l'API Cloudbeds. L'outil interne est servi via Cloudflare.",
       "guestSiteHeading": "Site un : le site destiné aux clients",
       "guestSiteBody1": "Le site public est bilingue. L'espagnol conserve les URLs sans préfixe, en préservant les chemins qu'utilisait l'ancien site de l'hôtel, et l'anglais se trouve sous /en. Le visiteur qui arrive pour la première fois n'a pas à le chercher : le site lit la langue demandée par son navigateur, l'oriente en conséquence et retient ce choix dans un cookie pendant un an, avec un sélecteur dans l'en-tête pour qui préfère l'autre. Chaque page est prégénérée dans les deux langues afin que les robots reçoivent du vrai HTML plutôt qu'une coquille vide. Au-delà des chambres et de l'hôtel lui-même, l'essentiel du contenu répond aux questions que les gens se posent réellement avant de s'engager dans un voyage en Patagonie : à quelle distance se trouve le centre, comment arriver depuis l'aéroport, que faire une fois sur place.",
       "guestSiteBody2": "Deux détails que j'ai particulièrement aimé construire. Les sections sont séparées par des transitions SVG courbes plutôt que par le trait droit habituel. Et la page de localisation intègre une carte OpenStreetMap interactive avec des repères personnalisés pour l'hôtel ainsi que pour les restaurants, sites touristiques et banques alentour, accompagnés des temps de trajet à pied et en voiture jusqu'au centre, à la gare routière, à l'aéroport et au glacier. Les notes de TripAdvisor, Google et Booking sont regroupées sur une seule bande pour éviter au client d'aller les chercher.",
@@ -278,27 +448,74 @@
       "complianceHeading": "Confidentialité, consentement et analytique",
       "complianceBody1": "L'Argentine dispose de son propre régime de protection des données, la Ley 25.326, supervisé par l'AAIP, et les sites ont été construits en conformité avec lui plutôt qu'adaptés après coup. Le site client comporte une politique de confidentialité et une politique de cookies rédigées selon cette loi, avec les droits Habeas Data qu'elle accorde et la manière de les exercer, et le tunnel de réservation ne collecte que ce dont une réservation a réellement besoin.",
       "complianceBody2": "Le consentement est appliqué dans le code, pas seulement décrit sur une page. Il existe exactement une catégorie non essentielle sur le site client, l'analytique, et rien de ce qui s'y rapporte ne se charge tant que le visiteur n'a pas donné son accord explicite. Trois éléments ne sont jamais bloqués : la préférence de langue, le moteur de réservation lui-même et l'enregistrement du choix. C'est ce qui satisfait la règle du consentement préalable de la Ley 25.326, ainsi que le RGPD et l'ePrivacy pour les clients européens, nombreux dans cet hôtel.",
-      "complianceBody3": "Derrière cette barrière se trouvent PostHog pour l'analytique produit et le rejeu de session, aux côtés de Google Analytics, afin que l'hôtel voie comment les gens circulent réellement sur le site et à quel moment ils abandonnent une réservation, au lieu de le supposer. L'outil interne a sa propre documentation : une notice de confidentialité pour le personnel, un registre des activités de traitement, et une politique de conservation réellement mise en oeuvre, avec une tâche planifiée qui purge le journal d'activité au bout de 24 mois et les journaux de requêtes Cloudbeds au bout de 90 jours."
+      "complianceBody3": "Derrière cette barrière se trouvent PostHog pour l'analytique produit et le rejeu de session, aux côtés de Google Analytics, afin que l'hôtel voie comment les gens circulent réellement sur le site et à quel moment ils abandonnent une réservation, au lieu de le supposer. L'outil interne a sa propre documentation : une notice de confidentialité pour le personnel, un registre des activités de traitement, et une politique de conservation réellement mise en oeuvre, avec une tâche planifiée qui purge le journal d'activité au bout de 24 mois et les journaux de requêtes Cloudbeds au bout de 90 jours.",
+      "summary": "Un hôtel familial en Patagonie payait une commission sur la plupart de ses réservations et mettait à jour ses prix à la main. J'ai créé un site bilingue où les clients réservent désormais directement, et un outil interne qui réduit la mise à jour des tarifs à un seul nombre, saisi une fois, prévisualisé, publié et vérifié automatiquement."
     },
     "discentik": {
       "meta": {
-        "title": "Discentik | Portfolio Julio Macias",
-        "description": "Discentik, mon projet de fin d'études. Une plateforme de formation à l'IA full-stack construite avec Next.js, React, Supabase et PostgreSQL pour aider les entreprises à apprendre des workflows ChatGPT concrets."
+        "title": "Discentik : étude de cas d'une plateforme d'apprentissage par l'IA | Julio Macias",
+        "description": "Discentik, la plateforme d'apprentissage par l'IA que j'ai fondée, réalisée avec Next.js, React, Supabase et Stripe. Inscriptions ouvertes."
       },
-      "date": "Avril 2026",
-      "intro": "Discentik est mon projet de fin d'études : une plateforme de formation à l'IA full-stack qui aide les entreprises et leurs équipes à apprendre des workflows ChatGPT concrets et pratiques. Plutôt qu'une nouvelle série de diapositives, elle offre aux utilisateurs une véritable interface de type ChatGPT pour s'exercer, intégrée à une expérience de cours et de gestion d'équipe.",
+      "date": "Fondée en septembre 2025",
+      "intro": "Discentik est une plateforme d'apprentissage et d'évaluation par l'IA que j'ai fondée et que je développe. Elle a commencé en septembre 2025 comme mon projet de fin d'études à Queen's University Belfast, noté 77, et est devenue un produit pour les apprenants, les formateurs et les organisations sur discentik.com. Plutôt qu'un simple chat, elle enseigne des compétences pratiques en IA grâce à des cours guidés : on lit de courtes explications, on s'exerce avec l'IA dans des exercices de chat et de rédaction, et on reçoit un retour sur chaque réponse.",
       "goalsHeading": "L'objectif",
-      "goalsBody": "La plupart des formations à l'IA sont théoriques et vite oubliées. L'objectif était de construire une plateforme où les équipes font réellement le travail (en pratiquant des prompts et des workflows dans une interface de chat familière) pendant que les responsables intègrent leurs collaborateurs et suivent leur progression via des cours structurés et un accès sur invitation.",
-      "technologiesIntro": "Discentik repose sur une stack full-stack moderne : Next.js et React côté frontend pour des pages rapides et optimisées pour le SEO, avec Supabase et PostgreSQL pour gérer l'authentification, les données et le stockage.",
+      "goalsBody": "La plupart des formations à l'IA sont théoriques et vite oubliées. L'objectif est une plateforme où l'on fait vraiment le travail, en s'exerçant avec l'IA sur des tâches réalistes, pendant que les formateurs créent des cours et que les organisations les attribuent à leurs équipes et suivent leur progression.",
+      "technologiesIntro": "Discentik repose sur une plateforme Next.js pour les comptes, le catalogue, les espaces de travail et la création de cours, et sur un lecteur de cours React distinct pour les apprenants. Supabase et PostgreSQL gèrent l'authentification, les données, le stockage et les règles d'accès, et les appels à l'IA s'exécutent côté serveur via les Supabase Edge Functions. Les deux applications sont déployées sur Cloudflare Workers.",
       "featuresHeading": "Fonctionnalités clés",
-      "feature1": "Une interface de chat de type ChatGPT où les utilisateurs s'exercent à de vrais workflows de prompting.",
-      "feature2": "Une gestion des cours pour structurer les leçons et les parcours d'apprentissage.",
-      "feature3": "L'intégration des équipes avec un accès sur invitation pour que les entreprises puissent le déployer auprès de leurs collaborateurs.",
-      "feature4": "Un accès basé sur les rôles et un modèle de données relationnel sur Supabase/PostgreSQL.",
-      "aiHeading": "Construit avec le développement assisté par IA",
-      "aiBody": "Le projet a aussi été une expérimentation d'ingénierie assistée par IA. Je l'ai construit en m'appuyant sur des outils comme Claude Code, Codex et GitHub Copilot, en les utilisant pour aller plus vite tout en gardant un contrôle total sur l'architecture et la qualité du code. Cela reflète ma façon de travailler aujourd'hui : l'IA comme multiplicateur de force, et non comme un substitut au jugement d'ingénierie.",
-      "outcomeHeading": "Résultat",
-      "outcomeBody": "Discentik a réuni tout ce qui me tient à cœur (le web full-stack, un véritable cas d'usage produit et l'IA) dans un seul projet de fin d'études noté, et c'est la direction dans laquelle je veux continuer à construire."
+      "aiHeading": "Comment je la développe",
+      "aiBody": "Je développe Discentik avec des outils de programmation par l'IA comme Claude Code, Codex et GitHub Copilot. Ils accélèrent le travail répétitif, tandis que je prends les décisions d'architecture, relis chaque modification et m'appuie sur des tests automatisés pour garantir la qualité. Je travaille de la même façon pour mes clients : des livraisons plus rapides, avec un ingénieur responsable du résultat.",
+      "outcomeHeading": "Où en est le projet",
+      "outcomeBody": "Les inscriptions sont ouvertes aux personnes de 16 ans et plus en Irlande, en Espagne, aux États-Unis et en Australie, avec une liste d'attente pour les autres pays. Je continue à la développer en parallèle de mon travail pour mes clients.",
+      "captions": {
+        "quiz": "Apprendre : un court quiz vérifie que l'apprenant comprend la tâche avant de s'exercer",
+        "feedback": "Retour : évaluation par l'IA selon les exigences de la tâche, avec ce qui est atteint et ce qui manque",
+        "builder": "Formateurs : création d'un cours étape par étape dans l'espace du cours",
+        "progress": "Organisations : attribution d'un cours à un groupe et suivi de la progression de chaque membre"
+      },
+      "screenshotsHeading": "Dans le produit",
+      "screenshotsNote": "Écrans du produit actuel, présentés avec un cours de démonstration préparé.",
+      "featureGroups": [
+        {
+          "title": "Pour les apprenants",
+          "items": [
+            "Des cours guidés avec leçons, quiz, vidéos, exercices de chat et tâches de rédaction dans un canevas.",
+            "Un retour automatique de l'IA sur chaque réponse, selon les exigences définies par l'auteur du cours.",
+            "Des activités Deep Research qui utilisent la recherche web pour produire une réponse structurée avec des sources à vérifier.",
+            "Des certificats de réussite sur les cours éligibles et une messagerie directe avec le formateur."
+          ]
+        },
+        {
+          "title": "Pour les formateurs",
+          "items": [
+            "Un éditeur de cours pour les étapes, consignes, prompts et critères d'évaluation, avec un aperçu qui ne modifie jamais la progression des apprenants.",
+            "Un assistant IA qui recherche et propose des activités que le formateur valide.",
+            "La tarification des cours, les ventes et un tableau des revenus exportable en CSV."
+          ]
+        },
+        {
+          "title": "Pour les organisations",
+          "items": [
+            "Des espaces avec rôles et groupes, et des places de cours achetées pour l'équipe puis attribuées aux apprenants.",
+            "Des échéances, un suivi de la progression et des rapports d'évaluation pour repérer qui a besoin d'aide."
+          ]
+        },
+        {
+          "title": "Paiements et reversements",
+          "items": [
+            "Stripe Checkout pour les cours payants, l'accès n'étant accordé qu'après confirmation du paiement par un webhook Stripe signé, y compris les paiements différés, expirations et remboursements.",
+            "Le reversement aux formateurs via des comptes hébergés par Stripe : un registre privé enregistre chaque vente et les revenus sont virés chaque mois.",
+            "Chaque cours inclut un solde d'IA ; chaque requête réserve d'abord des crédits puis règle l'usage réel."
+          ]
+        },
+        {
+          "title": "Sécurité",
+          "items": [
+            "Les requêtes d'IA passent par le serveur avec des jetons de session de courte durée, des limites de débit et une protection contre les robots.",
+            "Le lecteur de cours s'exécute isolé sur une origine distincte, et le contenu est protégé par des règles d'accès au niveau de la base de données."
+          ]
+        }
+      ],
+      "paymentsNote": "Les achats de cours et les reversements aux formateurs sont développés et testés, et seront activés au lancement des cours payants."
     },
     "cineshare": {
       "meta": {
@@ -331,12 +548,12 @@
     },
     "eugeniaBravo": {
       "meta": {
-        "title": "Projet EugeniaBravo | Portfolio Julio Macias",
-        "description": "EugeniaBravo - Un site web professionnel développé avec React, TypeScript, AWS Amplify et Brevo pour un client professionnel."
+        "title": "Eugenia Bravo : site et blog juridique pour une avocate | Julio Macias",
+        "description": "Site et blog juridique pour une avocate en droit de la famille à Málaga, créés en 2024 et refondus en 2025 avec Next.js et Supabase pour Google."
       },
-      "intro": "Pour développer davantage mes compétences en ingénierie logicielle, j'ai créé eugeniabravo.com et tudivorciointeligente.com. Ce projet a non seulement mis à l'épreuve mes capacités techniques, mais a aussi amélioré mes compétences en communication client.",
+      "intro": "Eugenia a 25 ans d'expérience en droit de la famille et en médiation, et son site associe la présentation de ses services à un blog juridique. Voici les deux versions : la version d'origine de 2024 et la refonte de 2025.",
       "technologiesIntro": "Pour développer ce site, j'ai collaboré avec une amie qui est aussi ma cliente, en choisissant des technologies qui renforceraient mes compétences en ingénierie logicielle plutôt que de m'appuyer sur des solutions clés en main comme WordPress ou Wix. Cette approche a permis de livrer un site robuste et sur mesure.",
-      "frontendSubtitle": "React, TypeScript",
+      "frontendSubtitle": "React et TypeScript",
       "frontendBody1": "Comme il s'agissait d'un projet professionnel, j'ai utilisé React pour tirer parti de ma connaissance avancée du framework. De plus, l'implémentation de TypeScript a garanti une manipulation des données plus sûre qu'avec du JavaScript pur.",
       "frontendBody2Prefix": "Pour démarrer le développement, j'ai expérimenté un outil d'IA innovant appelé ",
       "frontendBody2Suffix": ", capable de générer un projet de zéro, de l'exécuter et d'améliorer le code de façon itérative à partir d'instructions. J'ai ensuite téléchargé le code de base généré pour poursuivre le développement.",
@@ -359,13 +576,15 @@
         "blog": "Blog",
         "services": "Services",
         "contactMe": "Me contacter"
-      }
+      },
+      "v1Heading": "Version 1 (2024) : React et AWS Amplify",
+      "v1Intro": "La première version était une application React monopage avec un backend AWS Amplify : un site public avec un blog, et un espace privé où l'équipe publie les articles.",
+      "rebuildHeading": "La refonte (2025) : Next.js et Supabase",
+      "landingPrefix": "J'ai aussi créé une page pour son guide gratuit sur le divorce, qui envoie le guide automatiquement à chaque nouvel abonné : ",
+      "landingLink": "lire l'étude de cas Tu Divorcio Inteligente",
+      "summary": "Eugenia Bravo, avocate et médiatrice familiale à Málaga, avait besoin d'un site et d'un blog professionnels pour attirer des clients en ligne. Je les ai créés en 2024 puis refondus en 2025 pour que ses articles soient trouvés sur Google, avec un espace d'administration sécurisé d'où elle les publie elle-même."
     },
     "eugeniaBravoRebuild": {
-      "meta": {
-        "title": "Refonte d'EugeniaBravo | Portfolio Julio Macias",
-        "description": "Refonte d'EugeniaBravo - Reconstruit avec Next.js, TypeScript et Supabase pour de meilleures performances et une meilleure maintenabilité."
-      },
       "intro": "EugeniaBravo est passé d'une simple application React monopage à une version Next.js afin d'améliorer le SEO, la visibilité et les flux éditoriaux d'un site axé sur le contenu. La migration a également remplacé AWS Amplify par Supabase, qui convient mieux aux projets de plus petite taille nécessitant tout de même l'authentification, le stockage et une base de données relationnelle.",
       "goalsHeading": "Objectifs de la migration",
       "goalsBody": "Les principaux objectifs étaient d'obtenir une indexation fiable du contenu du blog, d'améliorer les performances des pages et de simplifier les opérations backend, afin que le projet reste léger sans renoncer à des fonctionnalités telles que les outils d'administration, le téléversement de médias et l'édition de contenu riche.",
@@ -383,10 +602,6 @@
       "safeguardsHeading": "Garde-fous de la version démo",
       "safeguardsBody1": "La branche de démonstration est livrée sans secrets, fonctionne sur des fixtures en mémoire et désactive les écritures afin que les évaluateurs puissent explorer l'interface en toute sécurité. Les outils d'analytique et de cookies sont conditionnés par des variables d'environnement pour isoler la démo de la production.",
       "safeguardsBody2Prefix": "La démo publique est disponible avec les pages d'administration activées à l'adresse ",
-      "previousHeading": "Version précédente",
-      "previousBodyPrefix": "Si vous souhaitez un décryptage complet de la stack originale React et Amplify, vous pouvez lire l'article précédent ",
-      "previousBodyLink": "ici",
-      "previousBodySuffix": ".",
       "ctaPrefix": "Visitez le site en ligne à l'adresse ",
       "ctaMiddle": ", explorez la démo à l'adresse ",
       "ctaBeforeRepo": ", ou parcourez le dépôt sur ",
@@ -405,6 +620,32 @@
         "addNewPost": "Ajouter un nouvel article",
         "editPost": "Modifier l'article"
       }
+    },
+    "tuDivorcioInteligente": {
+      "meta": {
+        "title": "Tu Divorcio Inteligente : page de captation de contacts | Julio Macias",
+        "description": "Une page pour une avocate qui envoie automatiquement son guide gratuit sur le divorce à chaque nouvel inscrit, réalisée avec Next.js et Brevo."
+      },
+      "intro": "Tu Divorcio Inteligente est une page que j'ai créée pour Eugenia Bravo dans le cadre du même projet que son site principal. Elle a un seul objectif : offrir aux personnes qui traversent une séparation un guide pratique et gratuit, et transformer cet intérêt en un contact que le cabinet peut suivre.",
+      "flowHeading": "Comment fonctionne l'automatisation",
+      "steps": [
+        "La page explique ce que couvre le guide et en quoi il aide, avec un bouton « Télécharger le guide » aux endroits clés.",
+        "Le bouton ouvre un court formulaire pour le nom et l'e-mail, avec une case de consentement à la newsletter et une protection anti-spam reCAPTCHA.",
+        "Le formulaire est un formulaire d'inscription Brevo : chaque envoi crée un contact dans le compte Brevo d'Eugenia.",
+        "Brevo envoie ensuite le guide par e-mail automatiquement, sans que personne au cabinet n'ait à répondre à la main."
+      ],
+      "pageHeading": "Conçue pour inspirer confiance",
+      "pageBody": "La page commence par la promesse du guide, explique en quelques points pourquoi il est utile, puis présente Eugenia, avocate et médiatrice familiale avec 25 ans d'expérience. Elle se termine par ses bureaux, son numéro de téléphone et un formulaire de contact pour demander une consultation.",
+      "technologiesIntro": "La page est réalisée avec Next.js et React et hébergée sur Vercel, tandis que Brevo gère le formulaire d'inscription, la liste de contacts et l'e-mail automatique.",
+      "captions": {
+        "hero": "La page s'ouvre sur la promesse du guide et un seul appel à l'action",
+        "benefits": "Ce que propose le guide, en points courts et faciles à lire",
+        "guideForm": "Le formulaire Brevo : nom, e-mail et consentement, protégé par reCAPTCHA",
+        "contact": "Coordonnées et formulaire pour demander une consultation"
+      },
+      "relatedPrefix": "Cette page a été créée en même temps que le site et le blog principaux d'Eugenia : ",
+      "relatedLink": "lire l'étude de cas Eugenia Bravo",
+      "summary": "Eugenia Bravo voulait toucher les personnes qui envisagent un divorce avant qu'elles ne choisissent un avocat. J'ai créé une page pour son guide gratuit qui l'envoie automatiquement à chaque inscrit et l'ajoute à sa liste de diffusion, sans travail manuel pour le cabinet."
     }
   }
 }

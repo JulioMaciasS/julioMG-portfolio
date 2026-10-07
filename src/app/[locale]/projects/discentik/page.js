@@ -1,6 +1,7 @@
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { buildMetadata } from '@/utils/seo';
+import { caseStudyGraph, JsonLd } from '@/utils/structuredData';
 import Discentik from '@/components/Posts/Discentik';
 
 export function generateStaticParams() {
@@ -14,12 +15,27 @@ export async function generateMetadata({ params: { locale } }) {
     path: '/projects/discentik',
     title: t('title'),
     description: t('description'),
-    image: '/images/discentik/cover.png',
+    image: '/images/discentik/practice-canvas.jpg',
     type: 'article',
   });
 }
 
-export default function DiscentikPage({ params: { locale } }) {
+export default async function DiscentikPage({ params: { locale } }) {
   setRequestLocale(locale);
-  return <Discentik />;
+  const t = await getTranslations({ locale });
+  const data = caseStudyGraph({
+    locale,
+    projectId: 'discentik',
+    path: '/projects/discentik',
+    title: t('posts.discentik.meta.title'),
+    description: t('posts.discentik.meta.description'),
+    image: '/images/discentik/practice-canvas.jpg',
+    projectsLabel: t('nav.projects'),
+  });
+  return (
+    <>
+      <JsonLd data={data} />
+      <Discentik />
+    </>
+  );
 }

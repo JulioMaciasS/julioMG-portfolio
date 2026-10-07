@@ -3,11 +3,11 @@ import { useTranslations } from 'next-intl';
 import './SkillsCard.css';
 
 const TECHS = [
+  { name: 'Next.js', icon: '/images/logos/nextjs.svg' },
   { name: 'React', icon: '/images/logos/react.png' },
-  { name: 'HTML', icon: '/images/logos/html.png' },
   { name: 'JavaScript', icon: '/images/logos/javascript.png' },
-  { name: 'CSS', icon: '/images/logos/css.png' },
-  { name: 'Node.js', icon: '/images/logos/node.png' }
+  { name: 'HTML', icon: '/images/logos/html.png' },
+  { name: 'CSS', icon: '/images/logos/css.png' }
 ];
 
 function SkillsCard() {

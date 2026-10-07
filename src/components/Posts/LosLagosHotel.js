@@ -4,6 +4,7 @@ import '../Post.css';
 import ImageSlider from './ImageSlider';
 import PostBreadcrumb from './PostBreadcrumb';
 import PostUpdated from './PostUpdated';
+import PostSummary from './PostSummary';
 import { postUpdatedDate } from '../../data/projects';
 
 function LosLagosHotel() {
@@ -87,7 +88,8 @@ function LosLagosHotel() {
     'Next.js': '/images/logos/nextjs.svg',
     React: '/images/logos/react.png',
     TypeScript: '/images/logos/typescript.png',
-    Supabase: '/images/logos/supabase.svg'
+    Supabase: '/images/logos/supabase.svg',
+    Cloudflare: '/images/logos/cloudflare.svg'
   };
 
   const bookingFeatures = [
@@ -129,6 +131,7 @@ function LosLagosHotel() {
               </a>
             </div>
             <PostUpdated date={postUpdatedDate('los-lagos-hotel')} />
+            <PostSummary namespace="losLagosHotel" />
 
             <div className='text-left space-y-5'>
               <section className="py-2">
@@ -159,17 +162,17 @@ function LosLagosHotel() {
                 <p className="text-gray-700 !mb-6">
                   {t('posts.losLagosHotel.technologiesIntro')}
                 </p>
-                <div className='flex flex-row flex-wrap gap-6 justify-center items-center w-full text-center mb-6'>
+                <div className='flex flex-row flex-wrap gap-5 justify-center items-start w-full text-center mt-8 mb-4'>
                   {Object.entries(ICONS).map(([name, icon]) => (
                     <div key={name} className='flex flex-col items-center'>
-                      <div className="bg-white p-3 rounded-xl shadow-md mb-2 w-24 h-24 flex items-center justify-center">
+                      <div className="bg-white p-2.5 rounded-xl shadow-md mb-2 w-16 h-16 flex items-center justify-center">
                         <img
                           src={icon}
                           className='object-contain max-h-full max-w-full rounded-lg'
                           alt={`${name} icon`}
                         />
                       </div>
-                      <label className='text-gray-700 font-medium'>{name}</label>
+                      <label className='text-sm text-gray-700 font-medium'>{name}</label>
                     </div>
                   ))}
                 </div>

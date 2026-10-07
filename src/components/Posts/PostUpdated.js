@@ -11,7 +11,7 @@ export default function PostUpdated({ date }) {
   const formatted = formatPostDate(date, locale);
   if (!formatted) return null;
   return (
-    <p className="text-sm text-gray-500 -mt-2 mb-6">
+    <p className="!text-sm !text-gray-500 -mt-2 !mb-4">
       {t('posts.common.lastUpdated')} <time dateTime={date}>{formatted}</time>
     </p>
   );

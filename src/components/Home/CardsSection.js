@@ -37,6 +37,8 @@ export default function CardsSection() {
               isExternal={project.isExternal}
               isNew={project.isNew}
               tag={t('projects.new')}
+              isLive={Boolean(project.liveUrl)}
+              liveLabel={t('projects.live')}
               date={formatProjectDate(project.date, locale)}
             />
           </Reveal>

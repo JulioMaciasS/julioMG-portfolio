@@ -26,21 +26,7 @@ import FloatingContact from '@/components/Layout/FloatingContact';
 import CookieConsent from '@/components/Consent/CookieConsent';
 import EasterEgg from '@/components/common/EasterEgg';
 import PageviewTracker from '@/components/Analytics/PageviewTracker';
-
-// Person structured data — consolidates the two name forms for Google.
-const PERSON_LD = {
-  '@context': 'https://schema.org',
-  '@type': 'Person',
-  name: 'Julio Macias Gonzalez',
-  alternateName: 'Julio Macias',
-  url: 'https://juliomacias.dev',
-  sameAs: [
-    'https://www.linkedin.com/in/julio-macias-gonzalez-199266282/',
-    'https://github.com/JulioMaciasS',
-  ],
-  jobTitle: 'Software Engineer',
-  knowsAbout: ['Web Development', 'React', 'Next.js', 'TypeScript', 'AWS', 'Cloud Architecture'],
-};
+import { siteGraph, JsonLd } from '@/utils/structuredData';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -83,10 +69,7 @@ export default async function LocaleLayout({ children, params: { locale } }) {
           <EasterEgg />
           <PageviewTracker />
         </NextIntlClientProvider>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(PERSON_LD) }}
-        />
+        <JsonLd data={siteGraph(locale)} />
       </body>
     </html>
   );

@@ -9,6 +9,7 @@ export const PROJECTS = [
     date: '2026-07-04',
     updated: '2026-10-07',
     link: '/projects/loslagoshotel',
+    liveUrl: 'https://loslagoshotel.com.ar/',
     isExternal: false,
     padding: false,
     isNew: true,
@@ -16,33 +17,38 @@ export const PROJECTS = [
       { name: 'Next.js', icon: `${BASE_URL}nextjs.svg` },
       { name: 'React', icon: `${BASE_URL}react.png` },
       { name: 'TypeScript', icon: `${BASE_URL}typescript.png` },
-      { name: 'Supabase', icon: `${BASE_URL}supabase.svg` }
+      { name: 'Supabase', icon: `${BASE_URL}supabase.svg` },
+      { name: 'Cloudflare', icon: `${BASE_URL}cloudflare.svg` }
     ]
   },
   {
     id: 'discentik',
     title: 'Discentik',
     description: 'Final year project. A full-stack AI learning and assessment platform with guided courses, secure AI workflows and automated evaluation.',
-    imageSrc: '/images/discentik/cover.png',
+    imageSrc: '/images/discentik/practice-canvas.jpg',
     date: '2026-04-15',
-    updated: '2026-09-02',
+    updated: '2026-10-07',
     link: '/projects/discentik',
+    liveUrl: 'https://discentik.com/',
     isExternal: false,
     padding: false,
     technologies: [
       { name: 'Next.js', icon: `${BASE_URL}nextjs.svg` },
       { name: 'React', icon: `${BASE_URL}react.png` },
       { name: 'Supabase', icon: `${BASE_URL}supabase.svg` },
-      { name: 'OpenAI', icon: `${BASE_URL}openai.png` }
+      { name: 'OpenAI', icon: `${BASE_URL}openai.png` },
+      { name: 'Cloudflare', icon: `${BASE_URL}cloudflare.svg` }
     ]
   },
   {
-    id: 'eugenia-bravo-rebuild',
-    title: 'EugeniaBravo Rebuild',
-    description: 'Migration to Next.js + Supabase for better SEO and easier ops.',
+    id: 'eugenia-bravo',
+    title: 'Eugenia Bravo',
+    description: 'Website and legal blog for a family lawyer, built in 2024 and rebuilt in 2025 so her articles are found on Google.',
     imageSrc: '/images/eugeniaBravoPost/EugeniaBravoIcon.png',
-    date: '2025-11-01',
-    link: '/projects/eugeniabravo-rebuild',
+    date: '2024-03-01',
+    updated: '2026-10-07',
+    link: '/projects/eugeniabravo',
+    liveUrl: 'https://www.eugeniabravo.com/',
     isExternal: false,
     padding: true,
     technologies: [
@@ -53,19 +59,19 @@ export const PROJECTS = [
     ]
   },
   {
-    id: 'eugenia-bravo',
-    title: 'Eugenia Bravo',
-    description: 'Real world project. Blog Website and Landing Page for a lawyer.',
-    imageSrc: '/images/eugeniaBravoPost/EugeniaBravoIcon.png',
+    id: 'tu-divorcio-inteligente',
+    title: 'Tu Divorcio Inteligente',
+    description: 'A landing page for a family lawyer that automatically emails her free divorce guide to every new subscriber.',
+    imageSrc: '/images/tuDivorcioInteligente/hero.jpg',
     date: '2024-03-01',
-    link: '/projects/eugeniabravo',
+    updated: '2026-10-07',
+    link: '/projects/tudivorciointeligente',
+    liveUrl: 'https://www.tudivorciointeligente.com/',
     isExternal: false,
-    padding: true,
+    padding: false,
     technologies: [
+      { name: 'Next.js', icon: `${BASE_URL}nextjs.svg` },
       { name: 'React', icon: `${BASE_URL}react.png` },
-      { name: 'TypeScript', icon: `${BASE_URL}typescript.png` },
-      { name: 'AWS', icon: `${BASE_URL}aws.png` },
-      { name: 'Amplify', icon: `${BASE_URL}amplify.png` },
       { name: 'Brevo', icon: `${BASE_URL}brevo.png` }
     ]
   },

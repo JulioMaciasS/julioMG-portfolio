@@ -1,6 +1,11 @@
 import { ALL_LANGS, DEFAULT_LANG, absoluteUrl } from '@/utils/siteConfig';
+import { PROJECTS } from '@/data/projects';
 
-const LASTMOD = '2026-06-15';
+// Bump when the general pages change materially; case studies use their own dates.
+const LASTMOD = '2026-10-07';
+const projectDates = Object.fromEntries(
+  PROJECTS.map((p) => [p.link, p.updated || p.date])
+);
 
 // Logical paths with their relative crawl priority (mirrors the old static
 // sitemap.xml, now generated so it stays in sync with the routes).
@@ -13,7 +18,7 @@ const PATHS = [
   { path: '/projects/discentik', priority: 0.8 },
   { path: '/projects/cineshare', priority: 0.7 },
   { path: '/projects/eugeniabravo', priority: 0.7 },
-  { path: '/projects/eugeniabravo-rebuild', priority: 0.7 },
+  { path: '/projects/tudivorciointeligente', priority: 0.7 },
   { path: '/privacy-policy', priority: 0.3 },
   { path: '/cookie-policy', priority: 0.3 },
 ];
@@ -31,7 +36,7 @@ export default function sitemap() {
     for (const locale of ALL_LANGS) {
       entries.push({
         url: absoluteUrl(path, locale),
-        lastModified: LASTMOD,
+        lastModified: projectDates[path] || LASTMOD,
         changeFrequency: 'monthly',
         priority,
         alternates: { languages },

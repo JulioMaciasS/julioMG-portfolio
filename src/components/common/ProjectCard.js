@@ -20,6 +20,8 @@ export default function ProjectCard({
   padding,
   isNew,
   tag,
+  isLive,
+  liveLabel,
   date,
   technologies,
 }) {
@@ -35,6 +37,12 @@ export default function ProjectCard({
           loading="lazy"
         />
         {isNew && <span className="pcard-badge">{tag}</span>}
+        {isLive && (
+          <span className="pcard-live">
+            <span className="pcard-live-dot" aria-hidden="true" />
+            {liveLabel}
+          </span>
+        )}
       </div>
 
       <div className="pcard-body">

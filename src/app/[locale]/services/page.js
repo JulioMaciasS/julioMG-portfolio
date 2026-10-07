@@ -2,6 +2,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { buildMetadata } from '@/utils/seo';
 import ServicesSection from '@/components/Services/ServicesSection';
+import { servicesGraph, JsonLd } from '@/utils/structuredData';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -18,7 +19,20 @@ export async function generateMetadata({ params: { locale } }) {
   });
 }
 
-export default function ServicesPage({ params: { locale } }) {
+export default async function ServicesPage({ params: { locale } }) {
   setRequestLocale(locale);
-  return <ServicesSection />;
+  const t = await getTranslations({ locale, namespace: 'services' });
+  const data = servicesGraph({
+    locale,
+    title: t('meta.title'),
+    description: t('meta.description'),
+    categories: t.raw('categories'),
+    faq: t.raw('faq'),
+  });
+  return (
+    <>
+      <JsonLd data={data} />
+      <ServicesSection />
+    </>
+  );
 }

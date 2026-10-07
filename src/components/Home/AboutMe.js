@@ -1,10 +1,11 @@
 import React from 'react'
 import { useTranslations } from 'next-intl'
-import { GraduationCap, Briefcase, Code2 } from 'lucide-react'
+import { GraduationCap, Briefcase, Code2, Rocket } from 'lucide-react'
 import Reveal from '../common/Reveal'
 import './AboutMe.css'
 
 const HIGHLIGHTS = [
+  { key: 'founder', Icon: Rocket },
   { key: 'degree', Icon: GraduationCap },
   { key: 'experience', Icon: Briefcase },
   { key: 'focus', Icon: Code2 },

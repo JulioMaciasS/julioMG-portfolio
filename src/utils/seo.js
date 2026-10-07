@@ -1,5 +1,7 @@
 import { SITE_URL, ALL_LANGS, DEFAULT_LANG, absoluteUrl } from './siteConfig';
 
+const OG_LOCALES = { en: 'en_IE', es: 'es_ES', fr: 'fr_FR', ar: 'ar_AR' };
+
 const toAbsolute = (image) =>
   image ? (image.startsWith('http') ? image : `${SITE_URL}${image}`) : undefined;
 
@@ -24,7 +26,7 @@ export function buildMetadata({ locale, path, title, description, image, type = 
   });
   languages['x-default'] = absoluteUrl(path, DEFAULT_LANG);
 
-  const ogImage = toAbsolute(image);
+  const ogImage = toAbsolute(image || '/og-image.png');
 
   return {
     metadataBase: new URL(SITE_URL),
@@ -37,6 +39,8 @@ export function buildMetadata({ locale, path, title, description, image, type = 
       title,
       description,
       siteName: 'Julio Macias',
+      locale: OG_LOCALES[locale],
+      alternateLocale: ALL_LANGS.filter((l) => l !== locale).map((l) => OG_LOCALES[l]),
       images: ogImage ? [{ url: ogImage, width: 1200, height: 630 }] : undefined,
     },
     twitter: {
