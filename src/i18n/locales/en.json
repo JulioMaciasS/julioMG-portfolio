@@ -96,7 +96,7 @@
     "items": {
       "los-lagos-hotel": {
         "title": "Los Lagos Hotel",
-        "description": "Two sites for a Patagonian hotel: a bilingual direct-booking website and an internal rate operations tool."
+        "description": "Two sites for a Patagonian hotel: a bilingual direct-booking website and an internal rate operations tool, both integrated with Cloudbeds."
       },
       "discentik": {
         "title": "Discentik",
@@ -133,7 +133,7 @@
     },
     "grid": {
       "heading": "How I can help",
-      "subtitle": "Five areas, each with a few clear offers. Every project starts with a free call and a fixed quote."
+      "subtitle": "Six areas, each with a few clear offers. Every project starts with a free call and a fixed quote."
     },
     "why": {
       "heading": "Why work with me",
@@ -198,6 +198,40 @@
               "From WordPress, Wix or an old custom site",
               "Your content and Google rankings kept",
               "Faster, more secure and easier to update"
+            ]
+          }
+        ]
+      },
+      {
+        "key": "hotels",
+        "title": "Hotels on Cloudbeds",
+        "pitch": "Sell direct and manage your rates, built around the Cloudbeds account you already use.",
+        "offers": [
+          {
+            "title": "Direct booking with the Cloudbeds booking engine",
+            "description": "Take bookings on your own website instead of paying platform commission, with the Cloudbeds booking engine built into your site.",
+            "points": [
+              "The right tax for each guest, based on where they live",
+              "Prices set in one currency and charged in another, at a checked exchange rate",
+              "Price breakdown and bed choice saved on every reservation"
+            ]
+          },
+          {
+            "title": "Rate management tools",
+            "description": "An internal tool where your team sets prices once and publishes them to Cloudbeds.",
+            "points": [
+              "A price calendar for a single day, a date range or a whole season by CSV",
+              "Preview every change, then publish it and check it against Cloudbeds",
+              "Exchange-rate updates that wait for a person to approve them"
+            ]
+          },
+          {
+            "title": "Cloudbeds API integrations",
+            "description": "Connect Cloudbeds to the other systems your hotel uses, so information is entered only once.",
+            "points": [
+              "Payments, accounting or point of sale connected to Cloudbeds",
+              "Automations when a booking arrives, such as assigning rooms",
+              "Cloudbeds credentials kept on the server, never in the browser"
             ]
           }
         ]
@@ -339,6 +373,10 @@
         {
           "q": "What is GEO, and do I need it?",
           "a": "GEO (generative engine optimisation) makes your business easy for AI assistants such as ChatGPT to understand and recommend. It works alongside SEO: clear answers to your customers' questions, structured information about your services and consistent business details across the web."
+        },
+        {
+          "q": "Do you work with hotels on Cloudbeds?",
+          "a": "Yes. For Los Lagos Hotel in Patagonia I built a direct-booking website on the Cloudbeds booking engine and an internal tool that publishes rates to Cloudbeds through its API. The Los Lagos Hotel case study, under Projects, explains how both work."
         },
         {
           "q": "Do you work with clients outside Ireland and Spain?",

@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { Button } from '../Button';
 import {
   Globe,
+  Hotel,
   Search,
   Bot,
   Wrench,
@@ -21,6 +22,7 @@ import LayeredWaves from '../common/LayeredWaves';
 // Service categories, in display order. Copy lives under services.categories.
 const CATEGORY_ICONS = {
   websites: Globe,
+  hotels: Hotel,
   visibility: Search,
   automation: Bot,
   software: Wrench,
