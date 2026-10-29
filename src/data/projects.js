@@ -39,7 +39,8 @@ export const PROJECTS = [
       { name: 'React', icon: `${BASE_URL}react.png` },
       { name: 'TypeScript', icon: `${BASE_URL}typescript.png` },
       { name: 'Supabase', icon: `${BASE_URL}supabase.svg` },
-      { name: 'Cloudflare', icon: `${BASE_URL}cloudflare.svg` }
+      { name: 'Cloudflare', icon: `${BASE_URL}cloudflare.svg` },
+      { name: 'Cloudbeds', icon: `${BASE_URL}cloudbeds.svg` }
     ]
   },
   {

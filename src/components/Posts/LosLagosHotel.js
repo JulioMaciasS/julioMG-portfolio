@@ -93,7 +93,8 @@ function LosLagosHotel() {
     React: '/images/logos/react.png',
     TypeScript: '/images/logos/typescript.png',
     Supabase: '/images/logos/supabase.svg',
-    Cloudflare: '/images/logos/cloudflare.svg'
+    Cloudflare: '/images/logos/cloudflare.svg',
+    Cloudbeds: '/images/logos/cloudbeds.svg'
   };
 
   const bookingFeatures = [
