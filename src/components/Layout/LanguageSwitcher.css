@@ -7,14 +7,15 @@
 .lang-switcher-toggle {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
   background: transparent;
   border: none;
   border-radius: 10px;
-  color: rgba(255, 255, 255, 0.85);
-  padding: 7px 10px;
+  /* Same colour, size and weight as the other nav links. */
+  color: #fff;
+  padding: 0.5rem 0.75rem;
   cursor: pointer;
-  font-size: 0.95rem;
+  font: inherit;
   transition: all 0.2s ease-out;
 }
 
@@ -33,8 +34,7 @@
 }
 
 .lang-switcher-current {
-  font-size: 0.95rem;
-  font-weight: 500;
+  letter-spacing: 0.04em;
 }
 
 .lang-switcher-menu {
@@ -47,7 +47,7 @@
   background: #242222;
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 14px;
-  min-width: 160px;
+  min-width: 170px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
   z-index: 1000;
 }
@@ -75,6 +75,20 @@
   transition: background 0.15s ease-out;
 }
 
+.lang-switcher-option-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.lang-switcher-code {
+  min-width: 1.6em;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  opacity: 0.6;
+}
+
 .lang-switcher-option:hover {
   background: rgba(255, 255, 255, 0.1);
 }
@@ -96,7 +110,7 @@
 
   .lang-switcher-toggle {
     padding: 10px 22px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .lang-switcher-menu {
