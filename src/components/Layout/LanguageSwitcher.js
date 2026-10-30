@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
-import { Globe, Check, ChevronDown } from 'lucide-react';
+import { Check, ChevronDown } from 'lucide-react';
 import { SUPPORTED_LANGUAGES } from '../../i18n/config';
 import { usePathname, useRouter } from '../../i18n/navigation';
 import './LanguageSwitcher.css';
@@ -46,9 +46,9 @@ function LanguageSwitcher({ onSelect }) {
         aria-haspopup="listbox"
         aria-expanded={open}
         aria-label={t('language.select')}
+        title={activeLang.label}
       >
-        <Globe size={20} />
-        <span className="lang-switcher-current">{activeLang.label}</span>
+        <span className="lang-switcher-current">{activeLang.code.toUpperCase()}</span>
         <ChevronDown
           size={16}
           className={`lang-switcher-chevron ${open ? 'is-open' : ''}`}
@@ -67,7 +67,10 @@ function LanguageSwitcher({ onSelect }) {
                 }`}
                 onClick={() => changeLanguage(lang.code)}
               >
-                <span>{lang.label}</span>
+                <span className="lang-switcher-option-label">
+                  <span className="lang-switcher-code">{lang.code.toUpperCase()}</span>
+                  <span lang={lang.code}>{lang.label}</span>
+                </span>
                 {lang.code === current && <Check size={16} />}
               </button>
             </li>

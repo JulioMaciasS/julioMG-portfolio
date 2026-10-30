@@ -9,7 +9,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 1.05rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   position: sticky;
   top: 0;
   z-index: 999;
@@ -31,31 +32,38 @@
   pointer-events: none;
 }
 
-/* Glass layer: an even translucent dark tint that blurs whatever sits behind
-   the bar. Sits behind the logo/links (z-index: -1). */
+/* Glass layer: a mostly opaque dark tint that blurs whatever sits behind the
+   bar. At lower opacity the bar flipped between black and grey as it passed
+   over the page's alternating dark and white sections. Sits behind the
+   logo/links (z-index: -1); its own compositing layer stops Chrome's
+   sticky-backdrop flicker. */
 .navbar::before {
   content: '';
   position: absolute;
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background-color: rgba(18, 16, 15, 0.5);
+  transform: translateZ(0);
+  background-color: rgba(26, 23, 23, 0.9);
   -webkit-backdrop-filter: blur(14px) saturate(140%);
   backdrop-filter: blur(14px) saturate(140%);
 }
 
+/* Three columns: logo, centred page links, and the language + call actions.
+   The equal outer columns keep the links centred on the page. */
 .navbar-container {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
+  width: 100%;
+  max-width: 1280px;
   height: 80px;
-  max-width: 1500px;
+  padding: 0 24px;
 }
 
 .navbar-logo {
   color: #fff;
   justify-self: start;
-  margin-left: 20px;
   cursor: pointer;
   text-decoration: none;
   font-family: 'Space Grotesk', 'Inter', sans-serif;
@@ -91,14 +99,13 @@
 }
 
 .nav-menu {
-  display: grid;
-  grid-template-columns: repeat(6, auto);
-  grid-gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
   list-style: none;
   text-align: center;
-  width: 60vw;
-  justify-content: end;
-  margin-right: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-item {
@@ -106,17 +113,59 @@
 }
 
 .nav-links {
-  color: #fff;
+  position: relative;
+  color: rgba(255, 255, 255, 0.72);
   display: flex;
   align-items: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
+  transition: color 0.2s ease-out;
 }
 
-.nav-links:hover {
-  border-bottom: 4px solid #fff;
-  transition: all 0.2s ease-out;
+.nav-links:hover,
+.nav-links.is-active {
+  color: #fff;
+}
+
+/* Amber marker under the current page's link. */
+.nav-links.is-active::after {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 22px;
+  height: 2px;
+  border-radius: 2px;
+  background: #f4b942;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.nav-cta {
+  background: #f4b942;
+  color: #1a1717;
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s ease-out;
+}
+
+.nav-cta:hover {
+  background: #fff;
+}
+
+/* Language and call actions repeated inside the mobile menu. */
+.nav-item--mobile {
+  display: none;
 }
 
 .fa-bars {
@@ -175,9 +224,21 @@
 /* Rest of the CSS remains the same */
 
 @media screen and (max-width: 960px) {
+  .navbar-container {
+    grid-template-columns: 1fr;
+    padding: 0 16px;
+  }
+
   .navbar-logo {
-    margin-left: 16px;
     font-size: 1.35rem;
+  }
+
+  .nav-actions {
+    display: none;
+  }
+
+  .nav-item--mobile {
+    display: flex;
   }
 
   .menu-icon {
@@ -241,10 +302,14 @@
     transition: background 0.2s ease, color 0.2s ease;
   }
 
-  .nav-links:hover {
+  .nav-links:hover,
+  .nav-links.is-active {
     background-color: rgba(255, 255, 255, 0.08);
     color: #f4b942;
-    border-bottom: none;
+  }
+
+  .nav-links.is-active::after {
+    display: none;
   }
 
   .fa-times {
