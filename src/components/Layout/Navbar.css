@@ -31,15 +31,19 @@
   pointer-events: none;
 }
 
-/* Glass layer: an even translucent dark tint that blurs whatever sits behind
-   the bar. Sits behind the logo/links (z-index: -1). */
+/* Glass layer: a mostly opaque dark tint that blurs whatever sits behind the
+   bar. At lower opacity the bar flipped between black and grey as it passed
+   over the page's alternating dark and white sections. Sits behind the
+   logo/links (z-index: -1); its own compositing layer stops Chrome's
+   sticky-backdrop flicker. */
 .navbar::before {
   content: '';
   position: absolute;
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  background-color: rgba(18, 16, 15, 0.5);
+  transform: translateZ(0);
+  background-color: rgba(26, 23, 23, 0.9);
   -webkit-backdrop-filter: blur(14px) saturate(140%);
   backdrop-filter: blur(14px) saturate(140%);
 }
