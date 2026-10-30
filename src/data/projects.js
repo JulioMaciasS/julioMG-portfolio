@@ -25,7 +25,7 @@ export const PROJECTS = [
   {
     id: 'los-lagos-hotel',
     title: 'Los Lagos Hotel',
-    description: 'Two sites for a Patagonian hotel: a bilingual direct-booking website and an internal rate operations tool.',
+    description: 'Two sites for a Patagonian hotel: a bilingual direct-booking website and an internal rate operations tool, both integrated with Cloudbeds.',
     imageSrc: '/images/losLagosHotel/cover.jpg',
     date: '2026-07-04',
     updated: '2026-10-07',
@@ -39,7 +39,8 @@ export const PROJECTS = [
       { name: 'React', icon: `${BASE_URL}react.png` },
       { name: 'TypeScript', icon: `${BASE_URL}typescript.png` },
       { name: 'Supabase', icon: `${BASE_URL}supabase.svg` },
-      { name: 'Cloudflare', icon: `${BASE_URL}cloudflare.svg` }
+      { name: 'Cloudflare', icon: `${BASE_URL}cloudflare.svg` },
+      { name: 'Cloudbeds', icon: `${BASE_URL}cloudbeds.svg` }
     ]
   },
   {
