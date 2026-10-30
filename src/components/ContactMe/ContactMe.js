@@ -63,6 +63,16 @@ function ContactMe() {
     if (mode === 'call') setCallOpened(true);
   }, [mode]);
 
+  // The navbar's "Book a call" button links here with #book-a-call.
+  useEffect(() => {
+    const openCallFromHash = () => {
+      if (window.location.hash === '#book-a-call') setMode('call');
+    };
+    openCallFromHash();
+    window.addEventListener('hashchange', openCallFromHash);
+    return () => window.removeEventListener('hashchange', openCallFromHash);
+  }, []);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!WEB3FORMS_KEY) {

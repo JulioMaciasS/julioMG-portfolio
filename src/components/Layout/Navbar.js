@@ -5,11 +5,22 @@ import Link from '../LocalizedLink';
 import { useTranslations } from 'next-intl';
 import { Menu, X } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
+import { usePathname } from '../../i18n/navigation';
 import './Navbar.css';
 
 function Navbar() {
     const t = useTranslations();
+    const pathname = usePathname();
     const [click, setClick] = useState(false);
+
+    // Locale-agnostic path match for the current-page marker.
+    const isActive = (to) => (to === '/' ? pathname === '/' : pathname.startsWith(to));
+    const NAV_LINKS = [
+        { to: '/', label: t('nav.home') },
+        { to: '/services', label: t('nav.services') },
+        { to: '/projects', label: t('nav.projects') },
+        { to: '/contact-me', label: t('nav.contact') },
+    ];
 
     const handleClick = () => {
         // Toggle menu state
@@ -66,35 +77,33 @@ useEffect(() => {
                     <div className='menu-icon' onClick={handleClick}>
                         {click ? <X size={28} color='#fff' /> : <Menu size={28} color='#fff' />}
                     </div>
-                    <div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                        <li className='nav-item'>
-                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                                {t('nav.home')}
-                            </Link>
-                        </li>
-
-                        <li className='nav-item justify-center'>
-                        <Link to='/services' className='nav-links' onClick={closeMobileMenu}>
-                                {t('nav.services')}
-                            </Link>
-                        </li>
-
-                        <li className='nav-item justify-center'>
-                        <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
-                                {t('nav.projects')}
-                            </Link>
-                        </li>
-
-                        <li className='nav-item justify-center'>
-                        <Link to='/contact-me' className='nav-links' onClick={closeMobileMenu}>
-                                {t('nav.contact')}
-                            </Link>
-                        </li>
-                        <li className='nav-item flex items-center justify-center'>
+                        {NAV_LINKS.map(({ to, label }) => (
+                            <li key={to} className='nav-item'>
+                                <Link
+                                    to={to}
+                                    className={`nav-links ${isActive(to) ? 'is-active' : ''}`}
+                                    aria-current={isActive(to) ? 'page' : undefined}
+                                    onClick={closeMobileMenu}
+                                >
+                                    {label}
+                                </Link>
+                            </li>
+                        ))}
+                        <li className='nav-item nav-item--mobile'>
                             <LanguageSwitcher onSelect={closeMobileMenu} />
                         </li>
+                        <li className='nav-item nav-item--mobile'>
+                            <Link to='/contact-me#book-a-call' className='nav-links-mobile' onClick={closeMobileMenu}>
+                                {t('contact.tabs.call')}
+                            </Link>
+                        </li>
                     </ul>
+                    <div className='nav-actions'>
+                        <LanguageSwitcher />
+                        <Link to='/contact-me#book-a-call' className='nav-cta'>
+                            {t('contact.tabs.call')}
+                        </Link>
                     </div>
                     {/* {button && <Button buttonStyle='btn--outline'>Download CV/Resume</Button>} */}
                 </div>
