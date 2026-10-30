@@ -133,7 +133,7 @@
     },
     "grid": {
       "heading": "Cómo puedo ayudarte",
-      "subtitle": "Seis áreas, cada una con unas pocas propuestas claras. Cada proyecto empieza con una llamada gratuita y un presupuesto cerrado."
+      "subtitle": "Cinco servicios, cada uno con su propia página de detalles. Cada proyecto empieza con una llamada gratuita y un presupuesto cerrado."
     },
     "why": {
       "heading": "Por qué trabajar conmigo",
@@ -170,7 +170,7 @@
     "categories": [
       {
         "key": "websites",
-        "title": "Webs",
+        "title": "Webs y reservas online",
         "pitch": "Una presencia online profesional que consigue clientes.",
         "offers": [
           {
@@ -199,8 +199,32 @@
               "Conservando tu contenido y tu posicionamiento en Google",
               "Más rápida, segura y fácil de actualizar"
             ]
+          },
+          {
+            "title": "Privacidad y analítica",
+            "description": "Entiende cómo usan tu web los visitantes, respetando su privacidad.",
+            "points": [
+              "Analítica que solo se carga tras el consentimiento",
+              "Un banner de cookies que funciona correctamente",
+              "Datos antiguos eliminados de forma programada"
+            ]
           }
-        ]
+        ],
+        "page": {
+          "metaTitle": "Webs para negocios y reservas online | Julio Macias",
+          "metaDescription": "Webs rápidas y multilingües con reservas y pagos online, pensadas para convertir visitas en consultas. Primera llamada gratuita y presupuesto cerrado.",
+          "intro": "Una web rápida y profesional que te trae consultas, en todos los idiomas de tus clientes. Si trabajas con reservas, tus clientes pueden reservar y pagar en tu propia web en lugar de hacerlo en plataformas que cobran comisión.",
+          "faq": [
+            {
+              "q": "¿Puedes migrar mi web actual sin perder mi posicionamiento en Google?",
+              "a": "Sí. Migro webs desde WordPress, Wix o desarrollos antiguos a medida conservando tu contenido y, cuando es posible, tus direcciones actuales, para que Google mantenga el posicionamiento que ya tienes."
+            },
+            {
+              "q": "¿Mis clientes pueden pagar online?",
+              "a": "Sí. Las reservas y los pagos pueden hacerse en tu propia web, con pagos online o enlaces de pago, conectados al sistema de reservas que ya usas."
+            }
+          ]
+        }
       },
       {
         "key": "hotels",
@@ -234,11 +258,26 @@
               "Las credenciales de Cloudbeds se quedan en el servidor, nunca en el navegador"
             ]
           }
-        ]
+        ],
+        "page": {
+          "metaTitle": "Webs y herramientas para hoteles con Cloudbeds | Julio Macias",
+          "metaDescription": "Webs de reserva directa, herramientas de gestión de tarifas e integraciones con la API de Cloudbeds para hoteles independientes, basadas en un proyecto real en la Patagonia.",
+          "intro": "Si tu hotel trabaja con Cloudbeds, puedes vender directo desde tu propia web y gestionar tus tarifas sin salir del sistema que ya usas. Eso es justamente lo que construí para Los Lagos Hotel, en la Patagonia: una web bilingüe de reservas directas y una herramienta interna de tarifas, ambas conectadas a Cloudbeds.",
+          "faq": [
+            {
+              "q": "¿El motor de reservas sigue siendo el de Cloudbeds?",
+              "a": "Sí. Tu web integra el motor de reservas de Cloudbeds, así que las reservas, las tarifas y la disponibilidad siguen en Cloudbeds. Yo agrego lo que tu hotel necesita alrededor, como el impuesto según dónde reside el huésped o la elección del tipo de cama."
+            },
+            {
+              "q": "¿Los precios pueden actualizarse solos cuando cambia el tipo de cambio?",
+              "a": "La herramienta puede vigilar el tipo de cambio y recalcular tus precios, pero una persona aprueba el cambio antes de publicarlo. Una cotización brusca o errónea nunca debería cambiar tus tarifas por sí sola."
+            }
+          ]
+        }
       },
       {
         "key": "visibility",
-        "title": "Que te encuentren",
+        "title": "SEO y visibilidad en IA",
         "pitch": "Aparece en Google y en las recomendaciones de los asistentes de IA.",
         "offers": [
           {
@@ -259,7 +298,22 @@
               "Datos de tu negocio coherentes en toda la web"
             ]
           }
-        ]
+        ],
+        "page": {
+          "metaTitle": "SEO y GEO para pequeños negocios | Julio Macias",
+          "metaDescription": "SEO técnico y optimización para IA generativa (GEO) para que tu negocio aparezca en Google y en las recomendaciones de asistentes como ChatGPT.",
+          "intro": "Haz que tus clientes te encuentren en Google y en las respuestas de asistentes de IA como ChatGPT. Corrijo la base técnica, estructuro tu información para que los buscadores y la IA la entiendan, y creo páginas para cada idioma y zona en la que trabajas.",
+          "faq": [
+            {
+              "q": "¿Necesito SEO y GEO, o solo uno de los dos?",
+              "a": "Funcionan juntos. El SEO ayuda a Google a entender, indexar y posicionar tu web; el GEO hace que esa misma información sea fácil de entender y recomendar para los asistentes de IA. La mayor parte del trabajo, como las respuestas claras y los datos estructurados, sirve para los dos."
+            },
+            {
+              "q": "¿Puedes mejorar el SEO de una web que no hiciste tú?",
+              "a": "Sí. Empiezo con una auditoría técnica de velocidad, móvil e indexación, y después corrijo lo que más importa. Si la plataforma de tu web te está frenando, te lo digo con sinceridad."
+            }
+          ]
+        }
       },
       {
         "key": "automation",
@@ -293,7 +347,22 @@
               "Menos errores de copiar y pegar"
             ]
           }
-        ]
+        ],
+        "page": {
+          "metaTitle": "Asistentes con IA y automatización para negocios | Julio Macias",
+          "metaDescription": "Asistentes con IA, email automático y sistemas conectados que te quitan el trabajo repetitivo, con una persona aprobando lo importante.",
+          "intro": "Deja el trabajo repetitivo al software: responder preguntas frecuentes, hacer el seguimiento de nuevos contactos y mantener tus herramientas sincronizadas. Todo lo importante espera la aprobación de una persona.",
+          "faq": [
+            {
+              "q": "¿Un asistente con IA puede inventarse cosas?",
+              "a": "Sus respuestas se basan en tus propios servicios, precios y condiciones, y pasa la conversación a una persona cuando hace falta. Los borradores de correos, presupuestos o informes esperan a que los apruebes."
+            },
+            {
+              "q": "¿Qué herramientas puedes conectar?",
+              "a": "Lo más habitual son sistemas de reservas, pagos, correo y listas de correo. Si una herramienta tiene API, normalmente se puede conectar, para cargar la información una sola vez en lugar de copiarla a mano."
+            }
+          ]
+        }
       },
       {
         "key": "software",
@@ -318,41 +387,22 @@
               "Funciones de IA pensadas desde el principio"
             ]
           }
-        ]
-      },
-      {
-        "key": "support",
-        "title": "Soporte y asesoramiento",
-        "pitch": "Consejos sinceros antes de invertir y cuidado después del lanzamiento.",
-        "offers": [
-          {
-            "title": "Asesoramiento y planificación",
-            "description": "Descubre lo que de verdad necesitas antes de gastar nada.",
-            "points": [
-              "Una primera llamada gratuita",
-              "Un presupuesto cerrado y claro antes de empezar",
-              "Consejos sinceros, aunque la respuesta sea algo más sencillo"
-            ]
-          },
-          {
-            "title": "Mantenimiento y alojamiento",
-            "description": "Mantén tu web rápida, segura y funcionando después del lanzamiento.",
-            "points": [
-              "Actualizaciones, correcciones y pequeñas mejoras",
-              "Actualizaciones de seguridad y comprobaciones de que todo funciona",
-              "Alojamiento configurado y gestionado por mí"
-            ]
-          },
-          {
-            "title": "Privacidad y analítica",
-            "description": "Entiende cómo usan tu web los visitantes, respetando su privacidad.",
-            "points": [
-              "Analítica que solo se carga tras el consentimiento",
-              "Un banner de cookies que funciona correctamente",
-              "Datos antiguos eliminados de forma programada"
-            ]
-          }
-        ]
+        ],
+        "page": {
+          "metaTitle": "Software a medida, herramientas internas y aplicaciones web | Julio Macias",
+          "metaDescription": "Herramientas internas, paneles y aplicaciones web adaptadas a cómo trabaja tu negocio, con cuentas de usuario, pagos e IA integrados.",
+          "intro": "Cuando las hojas de cálculo y los pasos manuales empiezan a frenar a tu equipo, una aplicación sencilla pensada para tu forma de trabajar puede reemplazarlos. Creo herramientas internas y paneles, y aplicaciones web más grandes con cuentas, pagos e IA.",
+          "faq": [
+            {
+              "q": "¿Mis datos están seguros?",
+              "a": "Cada persona tiene su propio acceso y sus permisos, y las operaciones sensibles se ejecutan en el servidor, no en el navegador. Desarrollé software en Citi y aplico el mismo cuidado en pruebas y seguridad."
+            },
+            {
+              "q": "¿Puede funcionar con las herramientas que ya uso?",
+              "a": "Sí. Una herramienta a medida puede leer y escribir en tus sistemas actuales a través de sus API, como hace la herramienta de tarifas de Los Lagos Hotel con Cloudbeds."
+            }
+          ]
+        }
       }
     ],
     "faq": {
@@ -387,6 +437,23 @@
           "a": "Recibes una entrega con documentación y formación. Si quieres, puedo mantener tu web actualizada, segura y funcionando con soporte continuo."
         }
       ]
+    },
+    "support": {
+      "title": "Asesoramiento antes, soporte después",
+      "text": "Cada proyecto empieza con una llamada gratuita y un presupuesto cerrado. Cuando tu web ya está publicada, puedo mantenerla actualizada, segura y alojada.",
+      "points": [
+        "Una primera llamada gratuita y un presupuesto claro y cerrado",
+        "Actualizaciones, correcciones y revisiones de seguridad",
+        "Alojamiento configurado y gestionado por mí"
+      ]
+    },
+    "detail": {
+      "breadcrumb": "Servicios",
+      "included": "Qué incluye",
+      "proof": "Proyectos recientes",
+      "faq": "Preguntas frecuentes",
+      "others": "Otros servicios",
+      "learnMore": "Ver qué incluye"
     }
   },
   "contact": {

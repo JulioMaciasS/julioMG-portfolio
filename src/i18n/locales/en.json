@@ -133,7 +133,7 @@
     },
     "grid": {
       "heading": "How I can help",
-      "subtitle": "Six areas, each with a few clear offers. Every project starts with a free call and a fixed quote."
+      "subtitle": "Five services, each with its own page of details. Every project starts with a free call and a fixed quote."
     },
     "why": {
       "heading": "Why work with me",
@@ -170,7 +170,7 @@
     "categories": [
       {
         "key": "websites",
-        "title": "Websites",
+        "title": "Websites and online booking",
         "pitch": "A professional online presence that wins customers.",
         "offers": [
           {
@@ -199,8 +199,32 @@
               "Your content and Google rankings kept",
               "Faster, more secure and easier to update"
             ]
+          },
+          {
+            "title": "Privacy and analytics",
+            "description": "See how visitors use your site, while respecting their privacy.",
+            "points": [
+              "Analytics that only load after visitors consent",
+              "A cookie banner that works properly",
+              "Old data deleted on a schedule"
+            ]
           }
-        ]
+        ],
+        "page": {
+          "metaTitle": "Business Websites and Online Booking | Julio Macias",
+          "metaDescription": "Fast, multilingual business websites with online booking and payments, built to turn visitors into enquiries. A free first call and a fixed quote.",
+          "intro": "A fast, professional website that brings in enquiries, in every language your customers speak. If you take bookings, customers can book and pay on your own site instead of through platforms that charge commission.",
+          "faq": [
+            {
+              "q": "Can you move my current website without losing my Google rankings?",
+              "a": "Yes. I move sites from WordPress, Wix or older custom builds, keeping your content and, where possible, your existing addresses, so Google can carry over the rankings you already have."
+            },
+            {
+              "q": "Can customers pay online?",
+              "a": "Yes. Bookings and payments can happen on your own site, with online payments or payment links, connected to the booking or reservation system you already use."
+            }
+          ]
+        }
       },
       {
         "key": "hotels",
@@ -234,11 +258,26 @@
               "Cloudbeds credentials kept on the server, never in the browser"
             ]
           }
-        ]
+        ],
+        "page": {
+          "metaTitle": "Websites and Tools for Hotels on Cloudbeds | Julio Macias",
+          "metaDescription": "Direct-booking websites, rate management tools and Cloudbeds API integrations for independent hotels, based on a live project for a hotel in Patagonia.",
+          "intro": "If your hotel runs on Cloudbeds, you can sell direct from your own website and manage your rates without leaving the system you already use. I built exactly this for Los Lagos Hotel in Patagonia: a bilingual direct-booking website and an internal rate tool, both connected to Cloudbeds.",
+          "faq": [
+            {
+              "q": "Is the booking engine still Cloudbeds?",
+              "a": "Yes. Your site embeds the Cloudbeds booking engine, so reservations, rates and availability stay in Cloudbeds. I add what your hotel needs around it, such as tax based on where the guest lives or a choice of bed type."
+            },
+            {
+              "q": "Can prices update automatically when the exchange rate changes?",
+              "a": "The tool can watch the exchange rate and recalculate your prices, but a person approves the change before it goes live. A sudden or wrong reading should never reprice your rooms on its own."
+            }
+          ]
+        }
       },
       {
         "key": "visibility",
-        "title": "Get found online",
+        "title": "SEO and AI visibility",
         "pitch": "Be found on Google and recommended by AI assistants.",
         "offers": [
           {
@@ -259,7 +298,22 @@
               "Consistent business details across the web"
             ]
           }
-        ]
+        ],
+        "page": {
+          "metaTitle": "SEO and GEO for Small Businesses | Julio Macias",
+          "metaDescription": "Technical SEO and generative engine optimisation (GEO), so your business is found on Google and recommended by AI assistants such as ChatGPT.",
+          "intro": "Help customers find you on Google and in the answers of AI assistants such as ChatGPT. I fix the technical basics, structure your information so search engines and AI can understand it, and create pages for each language and location you serve.",
+          "faq": [
+            {
+              "q": "Do I need SEO and GEO, or just one?",
+              "a": "They work together. SEO helps Google understand, index and rank your site; GEO makes the same information easy for AI assistants to understand and recommend. Most of the work, such as clear answers and structured data, helps both."
+            },
+            {
+              "q": "Can you improve the SEO of a site you didn't build?",
+              "a": "Yes. I start with a technical audit of speed, mobile and indexing, then fix what matters most. If your site's platform is holding it back, I'll tell you honestly."
+            }
+          ]
+        }
       },
       {
         "key": "automation",
@@ -293,7 +347,22 @@
               "Fewer copy-and-paste mistakes"
             ]
           }
-        ]
+        ],
+        "page": {
+          "metaTitle": "AI Assistants and Business Automation | Julio Macias",
+          "metaDescription": "AI assistants, email automation and connected systems that take repetitive work off your plate, with a person approving what matters.",
+          "intro": "Let software handle the repetitive work: answering common questions, following up with new contacts and keeping your tools in sync. Anything important waits for a person to approve it.",
+          "faq": [
+            {
+              "q": "Will an AI assistant make things up?",
+              "a": "Its answers are based on your own services, prices and policies, and it hands over to a person when needed. Drafts of emails, quotes or reports wait for you to approve them."
+            },
+            {
+              "q": "Which tools can you connect?",
+              "a": "Booking systems, payments, email and mailing lists are the most common. If a tool has an API, it can usually be connected, so information is entered once instead of copied by hand."
+            }
+          ]
+        }
       },
       {
         "key": "software",
@@ -318,41 +387,22 @@
               "AI features designed in from the start"
             ]
           }
-        ]
-      },
-      {
-        "key": "support",
-        "title": "Support and advice",
-        "pitch": "Honest advice before you spend, and care after launch.",
-        "offers": [
-          {
-            "title": "Advice and planning",
-            "description": "Work out what you actually need before spending anything.",
-            "points": [
-              "A free first call",
-              "A clear, fixed quote before work starts",
-              "Honest advice, even when the answer is something simpler"
-            ]
-          },
-          {
-            "title": "Maintenance and hosting",
-            "description": "Keep your site fast, secure and working after launch.",
-            "points": [
-              "Updates, fixes and small improvements",
-              "Security updates and checks that everything works",
-              "Hosting set up and looked after for you"
-            ]
-          },
-          {
-            "title": "Privacy and analytics",
-            "description": "See how visitors use your site, while respecting their privacy.",
-            "points": [
-              "Analytics that only load after visitors consent",
-              "A cookie banner that works properly",
-              "Old data deleted on a schedule"
-            ]
-          }
-        ]
+        ],
+        "page": {
+          "metaTitle": "Custom Software, Internal Tools and Web Apps | Julio Macias",
+          "metaDescription": "Internal tools, dashboards and web apps built around how your business works, with user accounts, payments and AI built in.",
+          "intro": "When spreadsheets and manual steps start slowing your team down, a simple app built around how you work can replace them. I build internal tools and dashboards, and larger web apps with accounts, payments and AI.",
+          "faq": [
+            {
+              "q": "Is my data secure?",
+              "a": "Each person gets their own login and permissions, and sensitive operations run on the server, not in the browser. I built software at Citi and bring the same care for testing and security."
+            },
+            {
+              "q": "Can it work with the tools I already use?",
+              "a": "Yes. A custom tool can read from and write to your existing systems through their APIs, the way the rate tool for Los Lagos Hotel works with Cloudbeds."
+            }
+          ]
+        }
       }
     ],
     "faq": {
@@ -387,6 +437,23 @@
           "a": "You get a handover with documentation and training. If you want, I can keep your site updated, secure and working with ongoing support."
         }
       ]
+    },
+    "support": {
+      "title": "Advice before, support after",
+      "text": "Every project starts with a free call and a fixed quote. Once your site is live, I can keep it updated, secure and hosted.",
+      "points": [
+        "A free first call and a clear, fixed quote",
+        "Updates, fixes and security checks",
+        "Hosting set up and looked after for you"
+      ]
+    },
+    "detail": {
+      "breadcrumb": "Services",
+      "included": "What's included",
+      "proof": "Recent work",
+      "faq": "Frequently asked questions",
+      "others": "Other services",
+      "learnMore": "See what's included"
     }
   },
   "contact": {

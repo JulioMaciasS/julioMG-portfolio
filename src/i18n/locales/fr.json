@@ -133,7 +133,7 @@
     },
     "grid": {
       "heading": "Comment je peux vous aider",
-      "subtitle": "Six domaines, chacun avec quelques offres claires. Chaque projet commence par un appel gratuit et un devis fixe."
+      "subtitle": "Cinq services, chacun avec sa propre page détaillée. Chaque projet commence par un appel gratuit et un devis fixe."
     },
     "why": {
       "heading": "Pourquoi travailler avec moi",
@@ -170,7 +170,7 @@
     "categories": [
       {
         "key": "websites",
-        "title": "Sites web",
+        "title": "Sites web et réservation en ligne",
         "pitch": "Une présence en ligne professionnelle qui attire des clients.",
         "offers": [
           {
@@ -199,8 +199,32 @@
               "Vos contenus et votre référencement Google conservés",
               "Plus rapide, plus sûr et plus simple à mettre à jour"
             ]
+          },
+          {
+            "title": "Confidentialité et statistiques",
+            "description": "Comprenez comment les visiteurs utilisent votre site, en respectant leur vie privée.",
+            "points": [
+              "Des statistiques chargées seulement après consentement",
+              "Un bandeau cookies qui fonctionne correctement",
+              "Les anciennes données supprimées automatiquement"
+            ]
           }
-        ]
+        ],
+        "page": {
+          "metaTitle": "Sites web d'entreprise et réservation en ligne | Julio Macias",
+          "metaDescription": "Des sites rapides et multilingues avec réservation et paiement en ligne, conçus pour transformer les visites en demandes. Premier appel gratuit et devis fixe.",
+          "intro": "Un site rapide et professionnel qui vous apporte des demandes, dans toutes les langues de vos clients. Si vous prenez des réservations, vos clients peuvent réserver et payer sur votre propre site au lieu de passer par des plateformes qui prennent une commission.",
+          "faq": [
+            {
+              "q": "Pouvez-vous migrer mon site actuel sans perdre mon référencement Google ?",
+              "a": "Oui. Je migre des sites depuis WordPress, Wix ou d'anciens sites sur mesure en conservant vos contenus et, si possible, vos adresses actuelles, pour que Google garde le référencement que vous avez déjà."
+            },
+            {
+              "q": "Mes clients peuvent-ils payer en ligne ?",
+              "a": "Oui. Les réservations et les paiements peuvent se faire sur votre propre site, avec paiement en ligne ou liens de paiement, connectés au système de réservation que vous utilisez déjà."
+            }
+          ]
+        }
       },
       {
         "key": "hotels",
@@ -234,11 +258,26 @@
               "Les identifiants Cloudbeds restent sur le serveur, jamais dans le navigateur"
             ]
           }
-        ]
+        ],
+        "page": {
+          "metaTitle": "Sites et outils pour les hôtels sous Cloudbeds | Julio Macias",
+          "metaDescription": "Sites de réservation directe, outils de gestion des tarifs et intégrations avec l'API Cloudbeds pour les hôtels indépendants, d'après un projet réel en Patagonie.",
+          "intro": "Si votre hôtel fonctionne avec Cloudbeds, vous pouvez vendre en direct depuis votre propre site et gérer vos tarifs sans quitter le système que vous utilisez déjà. C'est exactement ce que j'ai construit pour Los Lagos Hotel, en Patagonie : un site bilingue de réservation directe et un outil interne de tarifs, tous deux connectés à Cloudbeds.",
+          "faq": [
+            {
+              "q": "Le moteur de réservation reste-t-il celui de Cloudbeds ?",
+              "a": "Oui. Votre site intègre le moteur de réservation Cloudbeds : les réservations, les tarifs et les disponibilités restent dans Cloudbeds. J'ajoute autour ce dont votre hôtel a besoin, comme la taxe selon le lieu de résidence du client ou le choix du type de lit."
+            },
+            {
+              "q": "Les prix peuvent-ils se mettre à jour seuls quand le taux de change bouge ?",
+              "a": "L'outil peut surveiller le taux de change et recalculer vos prix, mais une personne valide le changement avant sa mise en ligne. Une variation brusque ou erronée ne devrait jamais modifier vos tarifs toute seule."
+            }
+          ]
+        }
       },
       {
         "key": "visibility",
-        "title": "Être trouvé en ligne",
+        "title": "SEO et visibilité dans l'IA",
         "pitch": "Apparaissez sur Google et dans les recommandations des assistants IA.",
         "offers": [
           {
@@ -259,7 +298,22 @@
               "Des coordonnées cohérentes sur tout le web"
             ]
           }
-        ]
+        ],
+        "page": {
+          "metaTitle": "SEO et GEO pour les petites entreprises | Julio Macias",
+          "metaDescription": "SEO technique et optimisation pour l'IA générative (GEO), pour que votre entreprise soit trouvée sur Google et recommandée par des assistants comme ChatGPT.",
+          "intro": "Aidez vos clients à vous trouver sur Google et dans les réponses des assistants IA comme ChatGPT. Je corrige les bases techniques, je structure vos informations pour que les moteurs de recherche et l'IA les comprennent, et je crée des pages pour chaque langue et chaque zone que vous desservez.",
+          "faq": [
+            {
+              "q": "Ai-je besoin du SEO et du GEO, ou d'un seul ?",
+              "a": "Ils fonctionnent ensemble. Le SEO aide Google à comprendre, indexer et classer votre site ; le GEO rend ces mêmes informations faciles à comprendre et à recommander pour les assistants IA. L'essentiel du travail, comme des réponses claires et des données structurées, sert aux deux."
+            },
+            {
+              "q": "Pouvez-vous améliorer le SEO d'un site que vous n'avez pas créé ?",
+              "a": "Oui. Je commence par un audit technique de la vitesse, du mobile et de l'indexation, puis je corrige ce qui compte le plus. Si la plateforme de votre site vous freine, je vous le dirai honnêtement."
+            }
+          ]
+        }
       },
       {
         "key": "automation",
@@ -293,7 +347,22 @@
               "Moins d'erreurs de copier-coller"
             ]
           }
-        ]
+        ],
+        "page": {
+          "metaTitle": "Assistants IA et automatisation pour les entreprises | Julio Macias",
+          "metaDescription": "Assistants IA, e-mails automatiques et systèmes connectés qui vous libèrent des tâches répétitives, avec une personne qui valide l'essentiel.",
+          "intro": "Laissez le logiciel gérer le travail répétitif : répondre aux questions fréquentes, relancer les nouveaux contacts et garder vos outils synchronisés. Tout ce qui est important attend la validation d'une personne.",
+          "faq": [
+            {
+              "q": "Un assistant IA peut-il inventer des choses ?",
+              "a": "Ses réponses s'appuient sur vos propres services, prix et conditions, et il passe la main à une personne si nécessaire. Les brouillons d'e-mails, de devis ou de rapports attendent votre validation."
+            },
+            {
+              "q": "Quels outils pouvez-vous connecter ?",
+              "a": "Le plus souvent : systèmes de réservation, paiements, e-mail et listes de diffusion. Si un outil dispose d'une API, il peut généralement être connecté, pour saisir les informations une seule fois au lieu de les recopier à la main."
+            }
+          ]
+        }
       },
       {
         "key": "software",
@@ -318,41 +387,22 @@
               "Des fonctions d'IA pensées dès le départ"
             ]
           }
-        ]
-      },
-      {
-        "key": "support",
-        "title": "Conseil et suivi",
-        "pitch": "Des conseils honnêtes avant de dépenser, et un suivi après la mise en ligne.",
-        "offers": [
-          {
-            "title": "Conseil et planification",
-            "description": "Identifiez ce dont vous avez vraiment besoin avant de dépenser quoi que ce soit.",
-            "points": [
-              "Un premier appel gratuit",
-              "Un devis clair et fixe avant de commencer",
-              "Des conseils honnêtes, même si la réponse est plus simple"
-            ]
-          },
-          {
-            "title": "Maintenance et hébergement",
-            "description": "Gardez votre site rapide, sûr et fonctionnel après la mise en ligne.",
-            "points": [
-              "Mises à jour, corrections et petites améliorations",
-              "Mises à jour de sécurité et vérifications régulières",
-              "Hébergement mis en place et géré pour vous"
-            ]
-          },
-          {
-            "title": "Confidentialité et statistiques",
-            "description": "Comprenez comment les visiteurs utilisent votre site, en respectant leur vie privée.",
-            "points": [
-              "Des statistiques chargées seulement après consentement",
-              "Un bandeau cookies qui fonctionne correctement",
-              "Les anciennes données supprimées automatiquement"
-            ]
-          }
-        ]
+        ],
+        "page": {
+          "metaTitle": "Logiciel sur mesure, outils internes et applications web | Julio Macias",
+          "metaDescription": "Outils internes, tableaux de bord et applications web conçus autour du fonctionnement de votre entreprise, avec comptes utilisateurs, paiements et IA intégrés.",
+          "intro": "Quand les tableurs et les étapes manuelles commencent à ralentir votre équipe, une application simple pensée pour votre façon de travailler peut les remplacer. Je crée des outils internes et des tableaux de bord, ainsi que des applications web plus complètes avec comptes, paiements et IA.",
+          "faq": [
+            {
+              "q": "Mes données sont-elles en sécurité ?",
+              "a": "Chaque personne a ses propres identifiants et permissions, et les opérations sensibles s'exécutent sur le serveur, pas dans le navigateur. J'ai développé des logiciels chez Citi et j'applique le même soin aux tests et à la sécurité."
+            },
+            {
+              "q": "Peut-il fonctionner avec les outils que j'utilise déjà ?",
+              "a": "Oui. Un outil sur mesure peut lire et écrire dans vos systèmes existants via leurs API, comme le fait l'outil de tarifs de Los Lagos Hotel avec Cloudbeds."
+            }
+          ]
+        }
       }
     ],
     "faq": {
@@ -387,6 +437,23 @@
           "a": "Vous recevez une passation avec documentation et formation. Si vous le souhaitez, je peux garder votre site à jour, sécurisé et fonctionnel grâce à un suivi continu."
         }
       ]
+    },
+    "support": {
+      "title": "Des conseils avant, du soutien après",
+      "text": "Chaque projet commence par un appel gratuit et un devis fixe. Une fois votre site en ligne, je peux le maintenir à jour, sécurisé et hébergé.",
+      "points": [
+        "Un premier appel gratuit et un devis clair et fixe",
+        "Mises à jour, corrections et contrôles de sécurité",
+        "Hébergement mis en place et géré pour vous"
+      ]
+    },
+    "detail": {
+      "breadcrumb": "Services",
+      "included": "Ce qui est inclus",
+      "proof": "Projets récents",
+      "faq": "Questions fréquentes",
+      "others": "Autres services",
+      "learnMore": "Voir ce qui est inclus"
     }
   },
   "contact": {

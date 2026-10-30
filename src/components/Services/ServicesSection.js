@@ -2,39 +2,23 @@ import React from 'react';
 import Link from '../LocalizedLink';
 import { useTranslations } from 'next-intl';
 import { Button } from '../Button';
-import {
-  Globe,
-  Hotel,
-  Search,
-  Bot,
-  Wrench,
-  LifeBuoy,
-  ArrowRight,
-  CheckCircle2
-} from 'lucide-react';
+import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import { TESTIMONIALS } from '../../data/testimonials';
+import { SERVICES, servicePath } from '../../data/services';
+import { SERVICE_ICONS } from './serviceIcons';
+import SupportStrip from './SupportStrip';
 import TestimonialCard from '../common/TestimonialCard';
 import './ServicesSection.css';
 import Reveal from '../common/Reveal';
 import SectionDivider from '../common/SectionDivider';
 import LayeredWaves from '../common/LayeredWaves';
 
-// Service categories, in display order. Copy lives under services.categories.
-const CATEGORY_ICONS = {
-  websites: Globe,
-  hotels: Hotel,
-  visibility: Search,
-  automation: Bot,
-  software: Wrench,
-  support: LifeBuoy
-};
-
-
 const PROCESS = ['step1', 'step2', 'step3', 'step4'];
 
 function ServicesSection() {
   const t = useTranslations();
   const categories = t.raw('services.categories');
+  const copyFor = (key) => categories.find((category) => category.key === key);
 
   return (
     <main className="services-page">
@@ -46,7 +30,7 @@ function ServicesSection() {
           <h1 className="services-title">{t('services.hero.title')}</h1>
           <p className="services-subtitle">{t('services.hero.subtitle')}</p>
           <div className="services-hero-cta">
-            <Link to="/contact-me">
+            <Link to="/contact-me#book-a-call">
               <Button buttonStyle="btn--primary" buttonSize="btn--large" buttonShape="btn--round">
                 {t('services.hero.bookCall')}
               </Button>
@@ -68,53 +52,41 @@ function ServicesSection() {
           <h2>{t('services.grid.heading')}</h2>
           <p>{t('services.grid.subtitle')}</p>
         </div>
-        <nav className="services-jump" aria-label={t('services.grid.heading')}>
-          {categories.map((category) => {
-            const Icon = CATEGORY_ICONS[category.key];
+        {/* One card per service, linking to its own page. The ids keep the old
+            /services#services-<key> anchors working. */}
+        <div className="services-grid">
+          {SERVICES.map((service, index) => {
+            const category = copyFor(service.key);
+            const Icon = SERVICE_ICONS[service.key];
             return (
-              <a key={category.key} href={`#services-${category.key}`}>
-                <Icon size={16} strokeWidth={2} aria-hidden="true" />
-                {category.title}
-              </a>
-            );
-          })}
-        </nav>
-
-        <div className="services-categories">
-          {categories.map((category) => {
-            const Icon = CATEGORY_ICONS[category.key];
-            return (
-              <section key={category.key} id={`services-${category.key}`} className="services-category">
-                <div className="services-category-head">
-                  <div className="services-category-icon">
-                    <Icon size={24} strokeWidth={1.75} />
+              <Reveal key={service.key} delay={index * 60} className="service-card-wrapper">
+                <div id={`services-${service.key}`} className="services-card-anchor" />
+                <div className="service-card-shadow" />
+                <Link to={servicePath(service)} className="service-card">
+                  <div className="service-card-icon">
+                    <Icon size={26} strokeWidth={1.75} aria-hidden="true" />
                   </div>
-                  <div>
-                    <h3>{category.title}</h3>
-                    <p>{category.pitch}</p>
-                  </div>
-                </div>
-                <div className="services-offers">
-                  {category.offers.map((offer, index) => (
-                    <Reveal as="article" key={offer.title} delay={index * 60} className="services-offer">
-                      <h4>{offer.title}</h4>
-                      <p>{offer.description}</p>
-                      <ul>
-                        {offer.points.map((point) => (
-                          <li key={point}>
-                            <CheckCircle2 size={16} strokeWidth={2.25} aria-hidden="true" />
-                            <span>{point}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </Reveal>
-                  ))}
-                </div>
-              </section>
+                  <h3>{category.title}</h3>
+                  <p>{category.pitch}</p>
+                  <ul className="service-card-examples">
+                    {category.offers.map((offer) => (
+                      <li key={offer.title}>
+                        <CheckCircle2 size={16} strokeWidth={2.25} aria-hidden="true" />
+                        <span>{offer.title}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <span className="service-card-more">
+                    {t('services.detail.learnMore')} <ArrowRight size={16} aria-hidden="true" />
+                  </span>
+                </Link>
+              </Reveal>
             );
           })}
         </div>
       </section>
+
+      <SupportStrip />
 
       {/* Why work with me */}
       <section className="services-why">

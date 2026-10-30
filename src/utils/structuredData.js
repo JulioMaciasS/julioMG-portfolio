@@ -90,6 +90,7 @@ export function servicesGraph({ locale, title, description, categories, faq }) {
             '@type': 'OfferCatalog',
             name: category.title,
             description: category.pitch,
+            url: category.url,
             itemListElement: category.offers.map((offer) => ({
               '@type': 'Offer',
               itemOffered: {
@@ -108,6 +109,60 @@ export function servicesGraph({ locale, title, description, categories, faq }) {
         url,
         inLanguage: locale,
         mainEntity: faq.items.map((item) => ({
+          '@type': 'Question',
+          name: item.q,
+          acceptedAnswer: { '@type': 'Answer', text: item.a },
+        })),
+      },
+    ],
+  };
+}
+
+/** Service + BreadcrumbList + FAQPage for a single page under /services. */
+export function serviceGraph({ locale, path, category, servicesLabel }) {
+  const url = absoluteUrl(path, locale);
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [
+      {
+        '@type': 'Service',
+        '@id': `${url}#service`,
+        name: category.title,
+        description: category.page.metaDescription,
+        url,
+        serviceType: category.title,
+        provider: { '@id': PERSON_ID },
+        areaServed: { '@type': 'Place', name: 'Worldwide (remote)' },
+        availableLanguage: ['English', 'Spanish'],
+        inLanguage: locale,
+        hasOfferCatalog: {
+          '@type': 'OfferCatalog',
+          name: category.title,
+          itemListElement: category.offers.map((offer) => ({
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: offer.title,
+              description: `${offer.description} ${offer.points.join('. ')}.`,
+              provider: { '@id': PERSON_ID },
+            },
+          })),
+        },
+      },
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Julio Macias', item: absoluteUrl('/', locale) },
+          { '@type': 'ListItem', position: 2, name: servicesLabel, item: absoluteUrl('/services', locale) },
+          { '@type': 'ListItem', position: 3, name: category.title, item: url },
+        ],
+      },
+      {
+        '@type': 'FAQPage',
+        '@id': `${url}#faq`,
+        url,
+        inLanguage: locale,
+        mainEntity: category.page.faq.map((item) => ({
           '@type': 'Question',
           name: item.q,
           acceptedAnswer: { '@type': 'Answer', text: item.a },
