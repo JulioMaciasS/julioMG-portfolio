@@ -124,16 +124,9 @@
       "description": "Websites, online booking, SEO and GEO, AI automation and custom software for small businesses. A free first call and a fixed quote, in English or Spanish."
     },
     "hero": {
-      "eyebrow": "Freelance web developer",
-      "title": "Websites and tools that bring in customers and save you time",
-      "bookCall": "Book a free call",
-      "seeWork": "See my work",
-      "subtitle": "I'm Julio, founder of Discentik and a freelance developer. I build websites, online booking, AI automations and simple internal tools for small businesses, explained in plain language and looked after once they are live.",
-      "techLine": "Built with modern, reliable technology: Next.js, React, Supabase and Cloudflare."
-    },
-    "grid": {
-      "heading": "How I can help",
-      "subtitle": "Five services, each with its own page of details. Every project starts with a free call and a fixed quote."
+      "title": "Services for small businesses",
+      "subtitle": "Websites, hotel booking, SEO, AI automation and custom software. Every project starts with a free call and a fixed quote.",
+      "bookCall": "Book a free call"
     },
     "why": {
       "heading": "Why work with me",
@@ -451,7 +444,6 @@
       "breadcrumb": "Services",
       "included": "What's included",
       "gallery": "From real projects",
-      "proof": "Recent work",
       "faq": "Frequently asked questions",
       "others": "Other services",
       "learnMore": "See what's included"

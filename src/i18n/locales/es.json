@@ -124,16 +124,9 @@
       "description": "Webs, reservas online, SEO y GEO, automatización con IA y software a medida para pequeños negocios. Primera llamada gratuita y presupuesto cerrado."
     },
     "hero": {
-      "eyebrow": "Desarrollador web freelance",
-      "title": "Webs y herramientas que te traen clientes y te ahorran tiempo",
-      "bookCall": "Reserva una llamada gratuita",
-      "seeWork": "Ver mis proyectos",
-      "subtitle": "Soy Julio, fundador de Discentik y desarrollador freelance. Creo webs, reservas online, automatizaciones con IA y herramientas internas sencillas para pequeños negocios, te lo explico sin tecnicismos y me ocupo de ellas una vez publicadas.",
-      "techLine": "Hecho con tecnología moderna y fiable: Next.js, React, Supabase y Cloudflare."
-    },
-    "grid": {
-      "heading": "Cómo puedo ayudarte",
-      "subtitle": "Cinco servicios, cada uno con su propia página de detalles. Cada proyecto empieza con una llamada gratuita y un presupuesto cerrado."
+      "title": "Servicios para pequeños negocios",
+      "subtitle": "Webs, reservas para hoteles, SEO, automatización con IA y software a medida. Cada proyecto empieza con una llamada gratuita y un presupuesto cerrado.",
+      "bookCall": "Reserva una llamada gratuita"
     },
     "why": {
       "heading": "Por qué trabajar conmigo",
@@ -451,7 +444,6 @@
       "breadcrumb": "Servicios",
       "included": "Qué incluye",
       "gallery": "De proyectos reales",
-      "proof": "Proyectos recientes",
       "faq": "Preguntas frecuentes",
       "others": "Otros servicios",
       "learnMore": "Ver qué incluye"

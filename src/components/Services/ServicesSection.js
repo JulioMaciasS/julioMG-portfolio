@@ -4,8 +4,8 @@ import { useTranslations } from 'next-intl';
 import { Button } from '../Button';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 import { TESTIMONIALS } from '../../data/testimonials';
-import { SERVICES, servicePath } from '../../data/services';
-import { SERVICE_ICONS } from './serviceIcons';
+import { SERVICES } from '../../data/services';
+import ServiceCard from './ServiceCard';
 import SupportStrip from './SupportStrip';
 import TestimonialCard from '../common/TestimonialCard';
 import './ServicesSection.css';
@@ -22,70 +22,29 @@ function ServicesSection() {
 
   return (
     <main className="services-page">
-      {/* Hero */}
-      <section className="services-hero">
+      {/* Compact hero: the page is about the services, so the cards start
+          right below it, within the first screen. */}
+      <section className="services-hero services-hero--compact">
         <div className="services-hero-overlay" />
         <div className="services-hero-content">
-          <span className="services-eyebrow">{t('services.hero.eyebrow')}</span>
           <h1 className="services-title">{t('services.hero.title')}</h1>
           <p className="services-subtitle">{t('services.hero.subtitle')}</p>
-          <div className="services-hero-cta">
-            <Link to="/contact-me#book-a-call">
-              <Button buttonStyle="btn--primary" buttonSize="btn--large" buttonShape="btn--round">
-                {t('services.hero.bookCall')}
-              </Button>
-            </Link>
-            <Link to="/projects">
-              <Button buttonStyle="btn--outline" buttonSize="btn--large" buttonShape="btn--round">
-                {t('services.hero.seeWork')}
-              </Button>
-            </Link>
-          </div>
-          <p className="services-techline">{t('services.hero.techLine')}</p>
         </div>
       </section>
 
-      {/* Services grid */}
-      <section className="services-grid-section">
-        <LayeredWaves colors={['#2b2725', '#221f1e', '#1a1717']} height={104} />
-        <div className="services-section-head">
-          <h2>{t('services.grid.heading')}</h2>
-          <p>{t('services.grid.subtitle')}</p>
-        </div>
-        {/* One card per service, linking to its own page. The ids keep the old
-            /services#services-<key> anchors working. */}
-        <div className="services-grid">
-          {SERVICES.map((service, index) => {
-            const category = copyFor(service.key);
-            const Icon = SERVICE_ICONS[service.key];
-            return (
-              <Reveal key={service.key} delay={index * 60} className="service-card-wrapper">
-                <div id={`services-${service.key}`} className="services-card-anchor" />
-                <div className="service-card-shadow" />
-                <Link to={servicePath(service)} className="service-card">
-                  <div className="service-card-thumb">
-                    <img src={service.visuals[0].src} alt="" loading="lazy" decoding="async" />
-                    <div className="service-card-icon">
-                      <Icon size={24} strokeWidth={1.75} aria-hidden="true" />
-                    </div>
-                  </div>
-                  <h3>{category.title}</h3>
-                  <p>{category.pitch}</p>
-                  <ul className="service-card-examples">
-                    {category.offers.map((offer) => (
-                      <li key={offer.title}>
-                        <CheckCircle2 size={16} strokeWidth={2.25} aria-hidden="true" />
-                        <span>{offer.title}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <span className="service-card-more">
-                    {t('services.detail.learnMore')} <ArrowRight size={16} aria-hidden="true" />
-                  </span>
-                </Link>
-              </Reveal>
-            );
-          })}
+      <section className="services-grid-section services-grid-section--overview">
+        <LayeredWaves colors={['#2b2725', '#221f1e', '#1a1717']} height={64} />
+        <div className="services-grid services-grid--five">
+          {SERVICES.map((service, index) => (
+            <ServiceCard
+              key={service.key}
+              service={service}
+              category={copyFor(service.key)}
+              learnMore={t('services.detail.learnMore')}
+              delay={index * 60}
+              anchor
+            />
+          ))}
         </div>
       </section>
 

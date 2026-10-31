@@ -1,30 +1,31 @@
 import React from 'react';
 import Link from '../LocalizedLink';
-import { useTranslations, useLocale } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import { Button } from '../Button';
-import { ArrowRight, ChevronRight, CheckCircle2 } from 'lucide-react';
-import { SERVICES, servicePath } from '../../data/services';
-import { PROJECTS, formatProjectDate } from '../../data/projects';
-import { SERVICE_ICONS } from './serviceIcons';
+import { ChevronRight, Check } from 'lucide-react';
+import { SERVICES } from '../../data/services';
+import { PROJECTS } from '../../data/projects';
+import { SERVICE_ICONS, OFFER_ICONS } from './serviceIcons';
 import SupportStrip from './SupportStrip';
 import ServiceShot from './ServiceShot';
-import ProjectCard from '../common/ProjectCard';
+import ServiceCard from './ServiceCard';
+import ServiceIllustration from './ServiceIllustration';
 import Reveal from '../common/Reveal';
 import LayeredWaves from '../common/LayeredWaves';
 import './ServicesSection.css';
-import '../Projects/ProjectsSection/ProjectCards.css';
 
-// A single service page: what's included, related case studies and a short
-// FAQ, built from the same services.categories copy as the overview.
+// A single service page: what's included, screenshots from real projects and
+// a short FAQ, built from the same services.categories copy as the overview.
 function ServiceDetail({ service }) {
   const t = useTranslations();
-  const locale = useLocale();
   const categories = t.raw('services.categories');
-  const category = categories.find((c) => c.key === service.key);
+  const copyFor = (key) => categories.find((c) => c.key === key);
+  const category = copyFor(service.key);
   const Icon = SERVICE_ICONS[service.key];
-  const projects = service.projects.map((id) => PROJECTS.find((p) => p.id === id));
+  const offerIcons = OFFER_ICONS[service.key];
   const others = SERVICES.filter((s) => s.key !== service.key);
   const shots = service.visuals.map((visual) => {
+    if (visual.illustration) return visual;
     const project = PROJECTS.find((p) => p.id === visual.project);
     return {
       ...visual,
@@ -59,7 +60,15 @@ function ServiceDetail({ service }) {
               </Link>
             </div>
           </div>
-          <ServiceShot {...heroShot} eager className="service-shot--hero" />
+          {heroShot.illustration ? (
+            <div className="service-shot service-shot--hero">
+              <div className="service-shot-frame service-illustration-frame">
+                <ServiceIllustration type={heroShot.illustration} />
+              </div>
+            </div>
+          ) : (
+            <ServiceShot {...heroShot} eager className="service-shot--hero" />
+          )}
         </div>
       </section>
 
@@ -69,21 +78,27 @@ function ServiceDetail({ service }) {
           <h2>{t('services.detail.included')}</h2>
           <p>{category.pitch}</p>
         </div>
-        <div className="services-offers service-detail-offers">
-          {category.offers.map((offer, index) => (
-            <Reveal as="article" key={offer.title} delay={index * 60} className="services-offer">
-              <h3>{offer.title}</h3>
-              <p>{offer.description}</p>
-              <ul>
-                {offer.points.map((point) => (
-                  <li key={point}>
-                    <CheckCircle2 size={16} strokeWidth={2.25} aria-hidden="true" />
-                    <span>{point}</span>
-                  </li>
-                ))}
-              </ul>
-            </Reveal>
-          ))}
+        <div className="service-offer-grid">
+          {category.offers.map((offer, index) => {
+            const OfferIcon = offerIcons[index];
+            return (
+              <Reveal as="article" key={offer.title} delay={index * 60} className="service-offer">
+                <div className="service-offer-icon">
+                  <OfferIcon size={24} strokeWidth={1.75} aria-hidden="true" />
+                </div>
+                <h3>{offer.title}</h3>
+                <p>{offer.description}</p>
+                <ul className="service-offer-points">
+                  {offer.points.map((point) => (
+                    <li key={point}>
+                      <Check size={14} strokeWidth={3} aria-hidden="true" />
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              </Reveal>
+            );
+          })}
         </div>
       </section>
 
@@ -95,32 +110,6 @@ function ServiceDetail({ service }) {
           {galleryShots.map((shot, index) => (
             <Reveal key={shot.src} delay={index * 80}>
               <ServiceShot {...shot} />
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
-      <section className="service-detail-proof">
-        <div className="services-section-head">
-          <h2>{t('services.detail.proof')}</h2>
-        </div>
-        <div className="proj-cards-grid service-detail-projects">
-          {projects.map((project, i) => (
-            <Reveal key={project.id} delay={(i % 2) * 90} className="h-full flex">
-              <ProjectCard
-                imageURL={project.imageSrc}
-                title={t(`projects.items.${project.id}.title`)}
-                description={t(`projects.items.${project.id}.description`)}
-                technologies={project.technologies}
-                padding={project.padding}
-                isNew={project.isNew}
-                tag={t('projects.new')}
-                isLive={Boolean(project.liveUrl)}
-                liveLabel={t('projects.live')}
-                date={project.ongoing ? t('projects.ongoing') : formatProjectDate(project.date, locale)}
-                hrefLink={project.link}
-                isExternal={project.isExternal}
-              />
             </Reveal>
           ))}
         </div>
@@ -147,17 +136,17 @@ function ServiceDetail({ service }) {
         <div className="services-section-head">
           <h2>{t('services.detail.others')}</h2>
         </div>
-        <nav className="services-jump" aria-label={t('services.detail.others')}>
-          {others.map((other) => {
-            const OtherIcon = SERVICE_ICONS[other.key];
-            return (
-              <Link key={other.key} to={servicePath(other)}>
-                <OtherIcon size={16} strokeWidth={2} aria-hidden="true" />
-                {categories.find((c) => c.key === other.key).title}
-              </Link>
-            );
-          })}
-        </nav>
+        <div className="services-grid services-grid--others">
+          {others.map((other, index) => (
+            <ServiceCard
+              key={other.key}
+              service={other}
+              category={copyFor(other.key)}
+              learnMore={t('services.detail.learnMore')}
+              delay={index * 60}
+            />
+          ))}
+        </div>
       </section>
 
       <section className="services-cta">
