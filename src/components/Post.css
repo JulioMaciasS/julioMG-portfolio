@@ -1,31 +1,13 @@
+/* Case studies read as a plain white page: no dark backdrop and no floating
+   card, so the content starts right under the navbar. */
 .post-container {
   width: 100%;
   margin: 0;
-  padding: 48px 16px 80px;
+  padding: 8px 16px 72px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: relative;
-  isolation: isolate;
-  background-color: #1a1717;
-}
-/* Clean static bloom + dotted texture (matches the site backdrop). */
-.post-container::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background:
-    radial-gradient(650px circle at 50% 0%, rgba(244, 185, 66, 0.12), transparent 60%),
-    radial-gradient(900px circle at 50% 0%, rgba(255, 255, 255, 0.05), transparent 55%);
-}
-.post-container::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-size: 26px 26px;
+  background-color: #ffffff;
 }
 
 .white-container {
@@ -33,10 +15,6 @@
   flex-direction: column;
   width: 100%;
   max-width: 860px;
-  background-color: #ffffff;
-  border-radius: 24px;
-  box-shadow: 0 30px 60px -25px rgba(0, 0, 0, 0.5);
-  overflow: hidden;
 }
 
 .contents-container {
@@ -44,7 +22,7 @@
   flex-direction: column;
   align-items: stretch;
   width: 100%;
-  padding: 40px 44px;
+  padding: 24px 24px 0;
 }
 
 .post-breadcrumb {
@@ -111,5 +89,5 @@
 }
 
 @media only screen and (max-width: 900px) {
-  .contents-container { padding: 28px 22px; }
+  .contents-container { padding: 20px 6px 0; }
 }
