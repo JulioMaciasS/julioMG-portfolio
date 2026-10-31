@@ -36,7 +36,7 @@ function CodeWindow() {
 }
 
 /**
- * Pixel-art ghost companion. It is FIXED to the viewport. Behaviours:
+ * Pixel-art robot companion. It is FIXED to the viewport. Behaviours:
  *  - It wanders the bottom band ONLY while the hero is in view, so it never
  *    distracts readers in the content below.
  *  - Once the reader scrolls into the content, it glides up to rest above the
@@ -113,7 +113,7 @@ function HeroMascot() {
     s.heroRatio = heroRatio;
 
     // On mobile/tablet the bottom strip is occupied by the hero CTAs + contact
-    // button, so the ghost rests above the button instead of wandering.
+    // button, so the robot rests above the button instead of wandering.
     const isMobile = () => window.innerWidth < 1024;
     const canWander = () => !reduce && !isMobile();
     s.canWander = canWander;
@@ -146,7 +146,7 @@ function HeroMascot() {
     }
 
     // Wander only while the hero is in view. Once the reader scrolls into the
-    // content, the ghost rests above the contact button (no jump, no wandering)
+    // content, the robot rests above the contact button (no jump, no wandering)
     // so it never distracts. Hysteresis avoids flapping at the boundary.
     const onScroll = () => {
       if (s.cancelled || s.clicking || !canWander()) return;
@@ -201,7 +201,7 @@ function HeroMascot() {
       if (s.cancelled) return;
       const pupils = pupilsRef.current;
       if (pupils) {
-        const cx = s.x + s.w / 2;                        // ghost centre, screen px
+        const cx = s.x + s.w / 2;                        // robot centre, screen px
         const cy = window.innerHeight - s.y - s.h / 2;
         // While gliding to + jumping over the contact button, look at the
         // button; otherwise follow the cursor.
@@ -271,7 +271,7 @@ function HeroMascot() {
       onClick={handleClick}
       className={`hero-mascot ${jumping ? 'is-jumping' : ''}`}
       style={{ transform: 'translate(48px, -110px)' }}
-      aria-label="Poke the mascot"
+      aria-label="Poke the robot"
     >
       <span className="hero-mascot-bob">
         <svg
@@ -281,22 +281,25 @@ function HeroMascot() {
           width="48"
           height="38"
         >
-          <g fill="#f4b942">
-            <rect x="3" y="0" width="4" height="1" />
-            <rect x="2" y="1" width="6" height="1" />
-            <rect x="1" y="2" width="8" height="5" />
-            <rect x="1" y="7" width="2" height="1" />
-            <rect x="4" y="7" width="2" height="1" />
-            <rect x="7" y="7" width="2" height="1" />
+          {/* Antenna, ears and feet in a darker shade of the head colour. */}
+          <rect x="4" y="0" width="2" height="1" fill="#ffd27a" />
+          <g fill="#c9902a">
+            <rect x="4" y="1" width="2" height="1" />
+            <rect x="0" y="3" width="1" height="2" />
+            <rect x="9" y="3" width="1" height="2" />
+            <rect x="2" y="7" width="2" height="1" />
+            <rect x="6" y="7" width="2" height="1" />
           </g>
+          <rect x="1" y="2" width="8" height="5" fill="#f4b942" />
           <g fill="#ffffff">
             <rect x="2" y="3" width="2" height="2" />
-            <rect x="5" y="3" width="2" height="2" />
+            <rect x="6" y="3" width="2" height="2" />
           </g>
           <g fill="#1a1717" ref={pupilsRef}>
             <rect x="2.5" y="3.5" width="1" height="1" />
-            <rect x="5.5" y="3.5" width="1" height="1" />
+            <rect x="6.5" y="3.5" width="1" height="1" />
           </g>
+          <rect x="3" y="5.5" width="4" height="1" fill="#1a1717" />
         </svg>
       </span>
     </button>,
