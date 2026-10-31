@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
 import { Send, CheckCircle2, Loader2, MessageSquare, CalendarDays } from 'lucide-react'
 import Cal, { getCalApi } from '@calcom/embed-react'
+import LayeredWaves from '../common/LayeredWaves'
 import "./ContactMe.css"
 
 const WEB3FORMS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_KEY;
@@ -107,14 +108,15 @@ function ContactMe() {
     'outline-none transition';
 
   return (
-    <div className='project-container'>
-      <div className="project-cards-container min-h-[calc(100vh-80px)]">
-        <h1 className="text-center" id='title'>{t('contact.title')}</h1>
+    <main className='contact-page'>
+      <section className='page-hero'>
+        <h1 className='page-hero-title'>{t('contact.title')}</h1>
+        <p className='page-hero-subtitle'>{t('contact.heading')}</p>
+      </section>
 
+      <div className='contact-body'>
+        <LayeredWaves colors={['#2b2725', '#221f1e', '#1a1717']} height={64} />
         <div className='contact-content'>
-          <div className='contact-heading'>
-            <h2>{t('contact.heading')}</h2>
-          </div>
 
           {/* Slider selector: write a message, or book a call. */}
           <div className="contact-switch" role="tablist" aria-label={t('contact.heading')}>
@@ -229,7 +231,7 @@ function ContactMe() {
           )}
         </div>
       </div>
-    </div>
+    </main>
   )
 }
 

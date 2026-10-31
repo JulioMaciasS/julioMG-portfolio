@@ -10,9 +10,9 @@ function ProjectsSection() {
     const t = useTranslations();
     return (
         <main className='projects-page'>
-            <section className='projects-hero'>
-                <h1 className='projects-hero-title'>{t('projects.heading')}</h1>
-                <p className='projects-hero-subtitle'>{t('projects.subheading')}</p>
+            <section className='page-hero'>
+                <h1 className='page-hero-title'>{t('projects.heading')}</h1>
+                <p className='page-hero-subtitle'>{t('projects.subheading')}</p>
             </section>
             <section className='projects-list'>
                 <LayeredWaves colors={['#2b2725', '#221f1e', '#1a1717']} height={64} />
