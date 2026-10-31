@@ -2,18 +2,31 @@ import React from 'react';
 import Link from '../LocalizedLink';
 import { useTranslations } from 'next-intl';
 import { Button } from '../Button';
-import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import {
+  ArrowRight, BadgeCheck, Building2, MessagesSquare,
+  Phone, FileText, Hammer, LifeBuoy,
+} from 'lucide-react';
 import { TESTIMONIALS } from '../../data/testimonials';
 import { SERVICES } from '../../data/services';
 import ServiceCard from './ServiceCard';
-import SupportStrip from './SupportStrip';
 import TestimonialCard from '../common/TestimonialCard';
 import './ServicesSection.css';
 import Reveal from '../common/Reveal';
 import SectionDivider from '../common/SectionDivider';
 import LayeredWaves from '../common/LayeredWaves';
 
-const PROCESS = ['step1', 'step2', 'step3', 'step4'];
+const WHY = [
+  { key: 'point1', Icon: BadgeCheck },
+  { key: 'point2', Icon: Building2 },
+  { key: 'point3', Icon: MessagesSquare },
+];
+
+const PROCESS = [
+  { key: 'step1', Icon: Phone },
+  { key: 'step2', Icon: FileText },
+  { key: 'step3', Icon: Hammer },
+  { key: 'step4', Icon: LifeBuoy },
+];
 
 function ServicesSection() {
   const t = useTranslations();
@@ -48,27 +61,27 @@ function ServicesSection() {
         </div>
       </section>
 
-      <SupportStrip />
-
-      {/* Why work with me */}
+      {/* Why work with me: three icon cards rather than a block of text. */}
       <section className="services-why">
-        <Reveal as="div" className="services-why-card">
+        <div className="services-section-head">
           <h2>{t('services.why.heading')}</h2>
-          <ul>
-            {['point1', 'point2', 'point3'].map((point) => (
-              <li key={point}>
-                <CheckCircle2 size={22} strokeWidth={2} />
-                <span>
-                  <strong>{t(`services.why.${point}Lead`)}</strong>{' '}
-                  {t(`services.why.${point}Text`)}
-                </span>
-              </li>
-            ))}
-          </ul>
+        </div>
+        <div className="services-why-grid">
+          {WHY.map(({ key, Icon }, index) => (
+            <Reveal key={key} delay={index * 70} className="services-why-item">
+              <div className="service-offer-icon">
+                <Icon size={24} strokeWidth={1.75} aria-hidden="true" />
+              </div>
+              <h3>{t(`services.why.${key}Lead`)}</h3>
+              <p>{t(`services.why.${key}Text`)}</p>
+            </Reveal>
+          ))}
+        </div>
+        <div className="services-why-more">
           <Link to="/projects/loslagoshotel" className="services-why-link">
-            {t('services.why.caseStudyLink')} <ArrowRight size={18} />
+            {t('services.why.caseStudyLink')} <ArrowRight size={18} aria-hidden="true" />
           </Link>
-        </Reveal>
+        </div>
       </section>
 
       {/* Process */}
@@ -79,10 +92,15 @@ function ServicesSection() {
           <p>{t('services.process.subtitle')}</p>
         </div>
         <div className="services-process-grid">
-          {PROCESS.map((step, index) => (
+          {PROCESS.map(({ key: step, Icon }, index) => (
             <React.Fragment key={step}>
               <Reveal delay={index * 70} className="services-process-step">
-                <span className="services-process-number">{`0${index + 1}`}</span>
+                <div className="services-process-top">
+                  <div className="services-process-icon">
+                    <Icon size={22} strokeWidth={1.8} aria-hidden="true" />
+                  </div>
+                  <span className="services-process-number">{`0${index + 1}`}</span>
+                </div>
                 <h3>{t(`services.process.${step}Title`)}</h3>
                 <p>{t(`services.process.${step}Text`)}</p>
               </Reveal>

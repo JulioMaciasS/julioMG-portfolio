@@ -14,8 +14,9 @@ import Reveal from '../common/Reveal';
 import LayeredWaves from '../common/LayeredWaves';
 import './ServicesSection.css';
 
-// A single service page: what's included, screenshots from real projects and
-// a short FAQ, built from the same services.categories copy as the overview.
+// A single service page: an illustration of the service, what's included,
+// real screenshots from client work and a short FAQ, built from the same
+// services.categories copy as the overview.
 function ServiceDetail({ service }) {
   const t = useTranslations();
   const categories = t.raw('services.categories');
@@ -23,8 +24,7 @@ function ServiceDetail({ service }) {
   const category = copyFor(service.key);
   const offerIcons = OFFER_ICONS[service.key];
   const others = SERVICES.filter((s) => s.key !== service.key);
-  const shots = service.visuals.map((visual) => {
-    if (visual.illustration) return visual;
+  const shots = service.screenshots.map((visual) => {
     const project = PROJECTS.find((p) => p.id === visual.project);
     return {
       ...visual,
@@ -33,7 +33,6 @@ function ServiceDetail({ service }) {
       projectTitle: t(`projects.items.${project.id}.title`),
     };
   });
-  const [heroShot, ...galleryShots] = shots;
 
   return (
     <main className="services-page">
@@ -56,15 +55,11 @@ function ServiceDetail({ service }) {
               </Link>
             </div>
           </div>
-          {heroShot.illustration ? (
-            <div className="service-shot service-shot--hero">
-              <div className="service-shot-frame service-illustration-frame">
-                <ServiceIllustration type={heroShot.illustration} />
-              </div>
+          <div className="service-shot service-shot--hero">
+            <div className="service-shot-frame service-illustration-frame">
+              <ServiceIllustration type={service.illustration} />
             </div>
-          ) : (
-            <ServiceShot {...heroShot} eager className="service-shot--hero" />
-          )}
+          </div>
         </div>
       </section>
 
@@ -102,8 +97,8 @@ function ServiceDetail({ service }) {
         <div className="services-section-head">
           <h2>{t('services.detail.gallery')}</h2>
         </div>
-        <div className="service-detail-shots">
-          {galleryShots.map((shot, index) => (
+        <div className={`service-detail-shots service-detail-shots--${shots.length}`}>
+          {shots.map((shot, index) => (
             <Reveal key={shot.src} delay={index * 80}>
               <ServiceShot {...shot} />
             </Reveal>
