@@ -5,7 +5,7 @@ import { Button } from '../Button';
 import { ChevronRight, Check } from 'lucide-react';
 import { SERVICES } from '../../data/services';
 import { PROJECTS } from '../../data/projects';
-import { SERVICE_ICONS, OFFER_ICONS } from './serviceIcons';
+import { OFFER_ICONS } from './serviceIcons';
 import SupportStrip from './SupportStrip';
 import ServiceShot from './ServiceShot';
 import ServiceRow from './ServiceRow';
@@ -21,7 +21,6 @@ function ServiceDetail({ service }) {
   const categories = t.raw('services.categories');
   const copyFor = (key) => categories.find((c) => c.key === key);
   const category = copyFor(service.key);
-  const Icon = SERVICE_ICONS[service.key];
   const offerIcons = OFFER_ICONS[service.key];
   const others = SERVICES.filter((s) => s.key !== service.key);
   const shots = service.visuals.map((visual) => {
@@ -47,9 +46,6 @@ function ServiceDetail({ service }) {
               <ChevronRight size={14} aria-hidden="true" />
               <span aria-current="page">{category.title}</span>
             </nav>
-            <div className="service-detail-icon">
-              <Icon size={28} strokeWidth={1.75} aria-hidden="true" />
-            </div>
             <h1 className="services-title">{category.title}</h1>
             <p className="services-subtitle">{category.page.intro}</p>
             <div className="services-hero-cta">

@@ -635,18 +635,6 @@
   transform: scaleX(-1);
 }
 
-.service-detail-icon {
-  width: 60px;
-  height: 60px;
-  margin: 0 auto 20px;
-  border-radius: 16px;
-  background: rgba(244, 185, 66, 0.12);
-  border: 1px solid rgba(244, 185, 66, 0.35);
-  color: #f4b942;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .service-detail-offers {
   max-width: 1100px;
@@ -761,18 +749,42 @@
 }
 
 /* Hero: text beside a framed screenshot on wide screens. */
+/* Compact like the overview hero: smaller type and padding, with the
+   screenshot capped so the page content starts sooner. */
+.service-detail-hero {
+  padding: 44px 24px 72px;
+}
+
+.service-detail-hero .services-title {
+  font-size: clamp(1.9rem, 3.6vw, 2.5rem);
+  margin-bottom: 12px;
+}
+
+.service-detail-hero .services-subtitle {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+.service-detail-hero .service-breadcrumb {
+  margin-bottom: 14px;
+}
+
+.service-detail-hero .service-shot--hero {
+  width: 100%;
+  max-width: 460px;
+  justify-self: end;
+}
+
 .service-detail-hero .service-detail-hero-grid {
-  max-width: 1160px;
+  max-width: 1080px;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
-  gap: 56px;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: 48px;
   align-items: center;
   text-align: start;
 }
 
-.service-detail-hero .service-detail-icon {
-  margin-inline: 0;
-}
 
 .service-detail-hero .services-hero-cta {
   justify-content: flex-start;
@@ -817,13 +829,14 @@
 @media screen and (max-width: 900px) {
   .service-detail-hero .service-detail-hero-grid {
     grid-template-columns: minmax(0, 1fr);
-    gap: 40px;
+    gap: 32px;
     text-align: center;
   }
 
-  .service-detail-hero .service-detail-icon {
-    margin-inline: auto;
+  .service-detail-hero .service-shot--hero {
+    justify-self: center;
   }
+
 
   .service-detail-hero .services-hero-cta {
     justify-content: center;
