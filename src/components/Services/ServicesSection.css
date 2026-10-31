@@ -121,89 +121,6 @@
   margin: 0 auto;
 }
 
-.service-card-wrapper {
-  position: relative;
-  height: 100%;
-}
-
-.service-card-shadow {
-  position: absolute;
-  inset: 0;
-  transform: translate(10px, 10px);
-  background: #313131;
-  border-radius: 22px;
-  transition: transform 0.25s ease-out;
-}
-
-.service-card {
-  position: relative;
-  height: 100%;
-  background: #fff;
-  border: 2px solid #313131;
-  border-radius: 22px;
-  padding: 30px 28px;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.25s ease-out;
-}
-
-.service-card-wrapper:hover .service-card {
-  transform: translate(4px, 4px);
-}
-
-.service-card-wrapper:hover .service-card-shadow {
-  transform: translate(6px, 6px);
-}
-
-.service-card-wrapper:hover .service-card-icon {
-  background: #f4b942;
-  color: #1a1717;
-  transition: background 0.25s ease, color 0.25s ease;
-}
-
-.service-card-icon {
-  width: 56px;
-  height: 56px;
-  border-radius: 16px;
-  background: #1a1717;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 18px;
-}
-
-.service-card h3 {
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: #1a1717;
-  margin-bottom: 12px;
-}
-
-.service-card p {
-  color: #5c5c5c;
-  font-size: 0.98rem;
-  line-height: 1.6;
-  margin-bottom: 18px;
-  flex-grow: 1;
-}
-
-.service-card-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.service-card-tags span {
-  background: whitesmoke;
-  color: #313131;
-  font-size: 0.78rem;
-  font-weight: 600;
-  padding: 5px 12px;
-  border-radius: 50px;
-}
-
 /* ---------- Why ---------- */
 .services-why {
   padding: 20px 24px 80px;
@@ -455,44 +372,6 @@
   color: #1a1717;
 }
 
-/* Concrete examples inside each service card */
-.service-card .service-card-examples-label {
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #9a6f12;
-  margin: 0.25rem 0 0.5rem;
-}
-
-.service-card-examples {
-  display: grid;
-  gap: 0.45rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.service-card-examples li {
-  display: flex;
-  gap: 0.5rem;
-  align-items: flex-start;
-  font-size: 0.92rem;
-  line-height: 1.45;
-  color: #313131;
-}
-
-.service-card-examples li svg {
-  flex-shrink: 0;
-  margin-top: 3px;
-  color: #c9a23f;
-}
-
-/* Keep the examples directly under each card's description */
-.service-card p {
-  flex-grow: 0;
-}
-
 /* Services grouped into categories, each with a few offers */
 .services-jump {
   max-width: 1100px;
@@ -678,31 +557,6 @@
   gap: 1.5rem;
 }
 
-/* ---------- Service cards (overview) ---------- */
-.services-card-anchor {
-  position: absolute;
-  top: -110px;
-}
-
-.service-card {
-  color: inherit;
-  text-decoration: none;
-}
-
-.service-card-more {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: auto;
-  padding-top: 20px;
-  font-weight: 600;
-  color: #1a1717;
-}
-
-.service-card-wrapper:hover .service-card-more {
-  color: #9a6f12;
-}
-
 /* ---------- Support strip ---------- */
 .services-support {
   background: #ffffff;
@@ -807,7 +661,6 @@
   margin: 0 0 0.35rem;
 }
 
-
 .service-detail-others {
   background: #ffffff;
   padding: 0 24px 72px;
@@ -839,46 +692,7 @@
   }
 }
 
-/* "Other services": the four remaining cards in one row on wide screens. */
-@media screen and (min-width: 1100px) {
-  .services-grid--others {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 22px;
-  }
-}
-
 /* ---------- Real screenshots ---------- */
-.service-card-thumb {
-  position: relative;
-  margin: -14px -12px 34px;
-  border-radius: 14px;
-  border: 1px solid #ece8e0;
-  background: #f5f5f5;
-  aspect-ratio: 16 / 9;
-}
-
-.service-card-thumb img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 13px;
-  object-fit: cover;
-  object-position: top;
-}
-
-/* The service icon sits as a badge on the thumbnail's lower edge. */
-.service-card-thumb .service-card-icon {
-  position: absolute;
-  inset-inline-start: 16px;
-  bottom: -24px;
-  width: 48px;
-  height: 48px;
-  margin: 0;
-  border-radius: 14px;
-  border: 3px solid #fff;
-}
-
 .service-shot {
   display: block;
   color: inherit;
@@ -1047,12 +861,6 @@
   height: 100%;
 }
 
-.service-card-thumb .service-illustration {
-  position: absolute;
-  inset: 0;
-  border-radius: 13px;
-}
-
 .service-illustration-frame .service-illustration {
   aspect-ratio: 16 / 10;
   height: auto;
@@ -1129,4 +937,171 @@
 .service-offer-points li svg {
   flex-shrink: 0;
   color: #c9a23f;
+}
+
+/* ---------- Service cards (overview): bordered card, one quiet hover ---------- */
+.service-card {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #e6e2da;
+  border-radius: 18px;
+  padding: 12px 12px 20px;
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.2s ease;
+}
+
+.service-card:hover {
+  border-color: #1a1717;
+}
+
+.services-card-anchor {
+  position: absolute;
+  top: -110px;
+}
+
+.service-card-thumb {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f5f5f5;
+  margin-bottom: 18px;
+}
+
+.service-card-thumb img,
+.service-card-thumb .service-illustration {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.service-card h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a1717;
+  margin: 0 8px 6px;
+}
+
+.service-card p {
+  color: #5c5c5c;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  margin: 0 8px;
+}
+
+.service-card-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: auto 8px 0;
+  padding-top: 16px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #1a1717;
+}
+
+.service-card-more svg {
+  transition: transform 0.2s ease;
+}
+
+.service-card:hover .service-card-more svg {
+  transform: translateX(4px);
+}
+
+[dir='rtl'] .service-card-more svg {
+  transform: scaleX(-1);
+}
+
+[dir='rtl'] .service-card:hover .service-card-more svg {
+  transform: scaleX(-1) translateX(4px);
+}
+
+/* ---------- Service rows ("Other services") ---------- */
+.service-rows {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.service-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #fff;
+  border: 1px solid #e6e2da;
+  border-radius: 14px;
+  padding: 14px 16px;
+  color: inherit;
+  text-decoration: none;
+  text-align: start;
+  transition: background 0.2s ease;
+}
+
+.service-row:hover {
+  background: #faf8f4;
+}
+
+.service-row-icon {
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: rgba(244, 185, 66, 0.18);
+  color: #1a1717;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-row-text {
+  min-width: 0;
+}
+
+.service-row h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1a1717;
+  margin: 0 0 2px;
+}
+
+.service-row p {
+  font-size: 0.88rem;
+  line-height: 1.45;
+  color: #5c5c5c;
+  margin: 0;
+}
+
+.service-row-arrow {
+  flex-shrink: 0;
+  margin-inline-start: auto;
+  color: #9a948a;
+  transition: transform 0.2s ease;
+}
+
+.service-row:hover .service-row-arrow {
+  transform: translateX(4px);
+}
+
+[dir='rtl'] .service-row-arrow {
+  transform: scaleX(-1);
+}
+
+[dir='rtl'] .service-row:hover .service-row-arrow {
+  transform: scaleX(-1) translateX(4px);
+}
+
+@media screen and (max-width: 720px) {
+  .service-rows {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }

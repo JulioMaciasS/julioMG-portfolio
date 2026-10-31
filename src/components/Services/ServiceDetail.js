@@ -8,7 +8,7 @@ import { PROJECTS } from '../../data/projects';
 import { SERVICE_ICONS, OFFER_ICONS } from './serviceIcons';
 import SupportStrip from './SupportStrip';
 import ServiceShot from './ServiceShot';
-import ServiceCard from './ServiceCard';
+import ServiceRow from './ServiceRow';
 import ServiceIllustration from './ServiceIllustration';
 import Reveal from '../common/Reveal';
 import LayeredWaves from '../common/LayeredWaves';
@@ -136,17 +136,11 @@ function ServiceDetail({ service }) {
         <div className="services-section-head">
           <h2>{t('services.detail.others')}</h2>
         </div>
-        <div className="services-grid services-grid--others">
-          {others.map((other, index) => (
-            <ServiceCard
-              key={other.key}
-              service={other}
-              category={copyFor(other.key)}
-              learnMore={t('services.detail.learnMore')}
-              delay={index * 60}
-            />
+        <nav className="service-rows" aria-label={t('services.detail.others')}>
+          {others.map((other) => (
+            <ServiceRow key={other.key} service={other} category={copyFor(other.key)} />
           ))}
-        </div>
+        </nav>
       </section>
 
       <section className="services-cta">
