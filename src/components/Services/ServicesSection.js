@@ -63,8 +63,11 @@ function ServicesSection() {
                 <div id={`services-${service.key}`} className="services-card-anchor" />
                 <div className="service-card-shadow" />
                 <Link to={servicePath(service)} className="service-card">
-                  <div className="service-card-icon">
-                    <Icon size={26} strokeWidth={1.75} aria-hidden="true" />
+                  <div className="service-card-thumb">
+                    <img src={service.visuals[0].src} alt="" loading="lazy" decoding="async" />
+                    <div className="service-card-icon">
+                      <Icon size={24} strokeWidth={1.75} aria-hidden="true" />
+                    </div>
                   </div>
                   <h3>{category.title}</h3>
                   <p>{category.pitch}</p>

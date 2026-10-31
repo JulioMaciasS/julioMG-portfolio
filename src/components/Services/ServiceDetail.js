@@ -7,6 +7,7 @@ import { SERVICES, servicePath } from '../../data/services';
 import { PROJECTS, formatProjectDate } from '../../data/projects';
 import { SERVICE_ICONS } from './serviceIcons';
 import SupportStrip from './SupportStrip';
+import ServiceShot from './ServiceShot';
 import ProjectCard from '../common/ProjectCard';
 import Reveal from '../common/Reveal';
 import LayeredWaves from '../common/LayeredWaves';
@@ -23,29 +24,42 @@ function ServiceDetail({ service }) {
   const Icon = SERVICE_ICONS[service.key];
   const projects = service.projects.map((id) => PROJECTS.find((p) => p.id === id));
   const others = SERVICES.filter((s) => s.key !== service.key);
+  const shots = service.visuals.map((visual) => {
+    const project = PROJECTS.find((p) => p.id === visual.project);
+    return {
+      ...visual,
+      href: project.link,
+      caption: t(visual.caption),
+      projectTitle: t(`projects.items.${project.id}.title`),
+    };
+  });
+  const [heroShot, ...galleryShots] = shots;
 
   return (
     <main className="services-page">
       <section className="services-hero service-detail-hero">
         <div className="services-hero-overlay" />
-        <div className="services-hero-content">
-          <nav className="service-breadcrumb" aria-label="Breadcrumb">
-            <Link to="/services">{t('services.detail.breadcrumb')}</Link>
-            <ChevronRight size={14} aria-hidden="true" />
-            <span aria-current="page">{category.title}</span>
-          </nav>
-          <div className="service-detail-icon">
-            <Icon size={28} strokeWidth={1.75} aria-hidden="true" />
+        <div className="services-hero-content service-detail-hero-grid">
+          <div className="service-detail-hero-text">
+            <nav className="service-breadcrumb" aria-label="Breadcrumb">
+              <Link to="/services">{t('services.detail.breadcrumb')}</Link>
+              <ChevronRight size={14} aria-hidden="true" />
+              <span aria-current="page">{category.title}</span>
+            </nav>
+            <div className="service-detail-icon">
+              <Icon size={28} strokeWidth={1.75} aria-hidden="true" />
+            </div>
+            <h1 className="services-title">{category.title}</h1>
+            <p className="services-subtitle">{category.page.intro}</p>
+            <div className="services-hero-cta">
+              <Link to="/contact-me#book-a-call">
+                <Button buttonStyle="btn--primary" buttonSize="btn--large" buttonShape="btn--round">
+                  {t('services.hero.bookCall')}
+                </Button>
+              </Link>
+            </div>
           </div>
-          <h1 className="services-title">{category.title}</h1>
-          <p className="services-subtitle">{category.page.intro}</p>
-          <div className="services-hero-cta">
-            <Link to="/contact-me#book-a-call">
-              <Button buttonStyle="btn--primary" buttonSize="btn--large" buttonShape="btn--round">
-                {t('services.hero.bookCall')}
-              </Button>
-            </Link>
-          </div>
+          <ServiceShot {...heroShot} eager className="service-shot--hero" />
         </div>
       </section>
 
@@ -68,6 +82,19 @@ function ServiceDetail({ service }) {
                   </li>
                 ))}
               </ul>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      <section className="service-detail-gallery">
+        <div className="services-section-head">
+          <h2>{t('services.detail.gallery')}</h2>
+        </div>
+        <div className="service-detail-shots">
+          {galleryShots.map((shot, index) => (
+            <Reveal key={shot.src} delay={index * 80}>
+              <ServiceShot {...shot} />
             </Reveal>
           ))}
         </div>
