@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslations } from 'next-intl';
 import './Legal.css';
 
-const LAST_UPDATED = '2026-06-07';
+const LAST_UPDATED = '2026-11-02';
 
 const CONTROLLER = {
   controllerName: 'Julio Macias Gonzalez',
@@ -34,7 +34,6 @@ function PrivacyPolicy() {
       <div className="legal-container">
         <h1>{t('privacy.title')}</h1>
         <p className="legal-updated">{t('privacy.lastUpdated', { date: LAST_UPDATED })}</p>
-        <p className="legal-notice">{t('privacy.templateNotice')}</p>
         <p className="legal-intro">{t('privacy.intro', vars)}</p>
 
         {SECTIONS.map(([titleKey, bodyKey]) => (
