@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react'
+import { preconnect } from 'react-dom'
 import { useTranslations } from 'next-intl'
 import { Send, CheckCircle2, Loader2, MessageSquare, CalendarDays } from 'lucide-react'
 import Cal, { getCalApi } from '@calcom/embed-react'
@@ -54,11 +55,20 @@ function ContactMe() {
   const t = useTranslations();
   const [status, setStatus] = useState('idle'); // idle | sending | success | error
   const [mode, setMode] = useState('message'); // 'message' | 'call'
-  // Mount the booking embed the first time the visitor opens the call tab, then
-  // keep it mounted (just hidden when inactive). Lazy so the Cal script isn't
-  // fetched until asked for, but never unmounted/remounted — remounting the
-  // iframe is what tripped Cal's init error.
+  // Mount the booking embed only once the visitor shows they want it: they
+  // arrive on #book-a-call, or point at, focus or touch the "Book a call" tab.
+  // Starting on that first sign of intent, before the click, gives Cal a head
+  // start without loading it (or its cookies) for people here to send a
+  // message. Never unmounted/remounted — remounting the iframe is what tripped
+  // Cal's init error.
   const [callOpened, setCallOpened] = useState(false);
+  const warmUpCall = () => {
+    if (CAL_LINK) setCallOpened(true);
+  };
+
+  // Open the connection to Cal's servers early: no request or cookies until
+  // the embed mounts, but the calendar starts faster when it does.
+  if (CAL_LINK) preconnect('https://app.cal.com');
 
   useEffect(() => {
     if (mode === 'call') setCallOpened(true);
@@ -150,6 +160,9 @@ function ContactMe() {
               aria-controls="contact-panel-call"
               className={`contact-switch-option ${mode === 'call' ? 'is-active' : ''}`}
               onClick={() => setMode('call')}
+              onPointerEnter={warmUpCall}
+              onFocus={warmUpCall}
+              onTouchStart={warmUpCall}
             >
               <CalendarDays size={18} aria-hidden="true" /> {t('contact.tabs.call')}
             </button>
@@ -225,7 +238,13 @@ function ContactMe() {
 
           {CAL_LINK ? (
             callOpened && (
-              <div className='contact-cal-card' role="tabpanel" id="contact-panel-call" aria-labelledby="contact-tab-call" hidden={mode !== 'call'}>
+              <div
+                className={`contact-cal-card ${mode === 'call' ? '' : 'is-parked'}`}
+                role="tabpanel"
+                id="contact-panel-call"
+                aria-labelledby="contact-tab-call"
+                aria-hidden={mode !== 'call'}
+              >
                 <BookingEmbed />
               </div>
             )
