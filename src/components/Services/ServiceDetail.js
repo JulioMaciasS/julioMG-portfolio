@@ -70,7 +70,7 @@ function ServiceDetail({ service }) {
       <section className="services-grid-section">
         <LayeredWaves colors={['#2b2725', '#221f1e', '#1a1717']} height={104} />
         <div className="services-section-head">
-          <h2>{t('services.detail.included')}</h2>
+          <h2>{t('services.detail.possible')}</h2>
           <p>{category.pitch}</p>
         </div>
         <div className="service-offer-grid">
@@ -94,6 +94,7 @@ function ServiceDetail({ service }) {
             </Reveal>
           ))}
         </div>
+        <p className="service-offer-note">{t('services.detail.possibleNote')}</p>
       </section>
 
       {category.page.examples && (

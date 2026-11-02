@@ -243,12 +243,12 @@
             ]
           },
           {
-            "title": "Rate management tools",
-            "description": "An internal tool where your team sets prices once and publishes them to Cloudbeds.",
+            "title": "Custom tools for your team",
+            "description": "Internal tools built around the way your hotel works. For example, a rate tool where staff set prices once and publish them to Cloudbeds.",
             "points": [
-              "A price calendar for a single day, a date range or a whole season by CSV",
-              "Preview every change, then publish it and check it against Cloudbeds",
-              "Changes that wait for a person to approve them before going live"
+              "Price calendars, bulk changes or CSV imports",
+              "Every change previewed, then checked against Cloudbeds",
+              "Approval steps before anything goes live"
             ]
           },
           {
@@ -552,11 +552,12 @@
     },
     "detail": {
       "breadcrumb": "Services",
-      "included": "What's included",
+      "possible": "What's possible",
+      "possibleNote": "Every business works differently, so these are examples of what can be built, not a fixed package. I'll shape the project around what you actually need.",
       "gallery": "From real projects",
       "faq": "Frequently asked questions",
       "others": "Other services",
-      "learnMore": "See what's included",
+      "learnMore": "See what's possible",
       "results": {
         "heading": "What the research says",
         "subtitle": "Published studies on what this kind of work tends to change.",

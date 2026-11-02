@@ -243,12 +243,12 @@
             ]
           },
           {
-            "title": "Outils de gestion des tarifs",
-            "description": "Un outil interne où votre équipe fixe les prix une seule fois et les publie sur Cloudbeds.",
+            "title": "Des outils sur mesure pour votre équipe",
+            "description": "Des outils internes conçus selon le fonctionnement de votre hôtel. Par exemple, un outil tarifaire où l'équipe fixe les prix une seule fois et les publie sur Cloudbeds.",
             "points": [
-              "Un calendrier des prix par jour, par période ou pour toute une saison via CSV",
-              "Un aperçu de chaque modification, puis une publication vérifiée auprès de Cloudbeds",
-              "Des modifications qui attendent la validation d'une personne avant leur mise en ligne"
+              "Calendriers de prix, modifications groupées ou import CSV",
+              "Un aperçu de chaque modification, puis une vérification auprès de Cloudbeds",
+              "Des étapes de validation avant toute mise en ligne"
             ]
           },
           {
@@ -552,11 +552,12 @@
     },
     "detail": {
       "breadcrumb": "Services",
-      "included": "Ce qui est inclus",
+      "possible": "Ce qui est possible",
+      "possibleNote": "Chaque entreprise fonctionne différemment : ce sont des exemples de ce qui peut être construit, pas une offre figée. J'adapte le projet à vos besoins réels.",
       "gallery": "Tiré de projets réels",
       "faq": "Questions fréquentes",
       "others": "Autres services",
-      "learnMore": "Voir ce qui est inclus",
+      "learnMore": "Voir ce qui est possible",
       "results": {
         "heading": "Ce que disent les études",
         "subtitle": "Des études publiées sur ce que ce type de travail change en général.",
