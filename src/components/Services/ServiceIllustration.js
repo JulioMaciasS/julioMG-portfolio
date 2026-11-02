@@ -1,22 +1,5 @@
 import React from 'react';
-
-// Shared palette: cream canvas, white cards, charcoal and the site's amber.
-const C = {
-  canvas: '#f6f3ec', card: '#ffffff', line: '#e6e2da', ink: '#1a1717',
-  ink2: '#2a2624', amber: '#f4b942', amberSoft: '#fbe3b0', amberDark: '#c9902a',
-  bar: '#d9d4ca', bar2: '#c9c3b8', muted: '#9a948a',
-};
-
-// Five-point star centred on (cx, cy), for the rating row.
-const star = (cx, cy, r) =>
-  Array.from({ length: 10 }, (_, i) => {
-    const radius = i % 2 === 0 ? r : r * 0.45;
-    const angle = (Math.PI / 5) * i - Math.PI / 2;
-    return `${(cx + radius * Math.cos(angle)).toFixed(1)},${(cy + radius * Math.sin(angle)).toFixed(1)}`;
-  }).join(' ');
-
-const sparkle = 'M0,-13 C2,-3 3,-2 13,0 C3,2 2,3 0,13 C-2,3 -3,2 -13,0 C-3,-2 -2,-3 0,-13Z';
-const check = (x, y, s = 1) => `M${x - 7 * s},${y} l${5 * s},${5 * s} l${10 * s},${-11 * s}`;
+import { C, check, star, sparkle } from './illustrationKit';
 
 // A website in a browser window, and the same site on a phone with a booking step.
 function Websites() {

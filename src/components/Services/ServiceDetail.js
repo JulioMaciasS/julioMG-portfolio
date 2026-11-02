@@ -5,11 +5,12 @@ import { Button } from '../Button';
 import { ChevronRight, Check } from 'lucide-react';
 import { SERVICES } from '../../data/services';
 import { PROJECTS } from '../../data/projects';
-import { OFFER_ICONS } from './serviceIcons';
+import { OFFER_ART } from './serviceIcons';
 import SupportStrip from './SupportStrip';
 import ServiceShot from './ServiceShot';
 import ServiceRow from './ServiceRow';
 import ServiceIllustration from './ServiceIllustration';
+import OfferIllustration from './OfferIllustration';
 import Reveal from '../common/Reveal';
 import LayeredWaves from '../common/LayeredWaves';
 import './ServicesSection.css';
@@ -22,7 +23,7 @@ function ServiceDetail({ service }) {
   const categories = t.raw('services.categories');
   const copyFor = (key) => categories.find((c) => c.key === key);
   const category = copyFor(service.key);
-  const offerIcons = OFFER_ICONS[service.key];
+  const offerArt = OFFER_ART[service.key];
   const others = SERVICES.filter((s) => s.key !== service.key);
   const shots = service.screenshots.map((visual) => {
     const project = PROJECTS.find((p) => p.id === visual.project);
@@ -70,13 +71,12 @@ function ServiceDetail({ service }) {
           <p>{category.pitch}</p>
         </div>
         <div className="service-offer-grid">
-          {category.offers.map((offer, index) => {
-            const OfferIcon = offerIcons[index];
-            return (
-              <Reveal as="article" key={offer.title} delay={index * 60} className="service-offer">
-                <div className="service-offer-icon">
-                  <OfferIcon size={24} strokeWidth={1.75} aria-hidden="true" />
-                </div>
+          {category.offers.map((offer, index) => (
+            <Reveal as="article" key={offer.title} delay={index * 60} className="service-offer">
+              <div className="service-offer-art">
+                <OfferIllustration type={offerArt[index]} />
+              </div>
+              <div className="service-offer-body">
                 <h3>{offer.title}</h3>
                 <p>{offer.description}</p>
                 <ul className="service-offer-points">
@@ -87,9 +87,9 @@ function ServiceDetail({ service }) {
                     </li>
                   ))}
                 </ul>
-              </Reveal>
-            );
-          })}
+              </div>
+            </Reveal>
+          ))}
         </div>
       </section>
 

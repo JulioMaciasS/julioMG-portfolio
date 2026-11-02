@@ -961,21 +961,30 @@
   background: #fff;
   border: 1px solid #ece8e0;
   border-radius: 18px;
-  padding: 24px 22px 22px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
 
-.service-offer-icon {
-  width: 52px;
-  height: 52px;
-  border-radius: 14px;
-  background: #1a1717;
-  color: #f4b942;
+.service-offer-art {
+  background: #f6f3ec;
+  border-bottom: 1px solid #ece8e0;
+}
+
+/* Capped so the pictures don't tower over the text on two-column pages;
+   the cream backdrop fills the sides when the card is wider. */
+.offer-illustration {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+}
+
+.service-offer-body {
+  flex: 1;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 16px;
+  flex-direction: column;
+  padding: 20px 22px 22px;
 }
 
 .service-offer h3 {

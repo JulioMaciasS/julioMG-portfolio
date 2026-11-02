@@ -1,13 +1,5 @@
 import React from 'react';
-
-// Same palette as the service illustrations.
-const C = {
-  canvas: '#f6f3ec', card: '#ffffff', line: '#e6e2da', ink: '#1a1717',
-  ink2: '#2a2624', amber: '#f4b942', amberSoft: '#fbe3b0', amberDark: '#c9902a',
-  bar: '#d9d4ca', bar2: '#c9c3b8', muted: '#9a948a',
-};
-
-const check = (x, y, s = 1) => `M${x - 7 * s},${y} l${5 * s},${5 * s} l${10 * s},${-11 * s}`;
+import { C, check } from './illustrationKit';
 
 // Head-and-shoulders silhouette centred on (cx, cy).
 const Person = ({ cx, cy, body, head }) => (

@@ -1,10 +1,4 @@
-import {
-  Globe, Hotel, Search, Bot, Wrench,
-  LayoutTemplate, CalendarCheck, ArrowRightLeft, ShieldCheck,
-  BedDouble, CalendarRange, Plug,
-  Sparkles, MessagesSquare, Mail, Workflow,
-  LayoutDashboard, AppWindow,
-} from 'lucide-react';
+import { Globe, Hotel, Search, Bot, Wrench } from 'lucide-react';
 
 // One icon per service, keyed like services.categories.
 export const SERVICE_ICONS = {
@@ -15,11 +9,12 @@ export const SERVICE_ICONS = {
   software: Wrench,
 };
 
-// One icon per offer, in the same order as each category's offers.
-export const OFFER_ICONS = {
-  websites: [LayoutTemplate, CalendarCheck, ArrowRightLeft, ShieldCheck],
-  hotels: [BedDouble, CalendarRange, Plug],
-  visibility: [Search, Sparkles],
-  automation: [MessagesSquare, Mail, Workflow],
-  software: [LayoutDashboard, AppWindow],
+// One illustration per offer (see OfferIllustration), in the same order as
+// each category's offers.
+export const OFFER_ART = {
+  websites: ['site', 'booking', 'migration', 'privacy'],
+  hotels: ['directBooking', 'rates', 'api'],
+  visibility: ['seo', 'geo'],
+  automation: ['assistant', 'leads', 'connect'],
+  software: ['dashboard', 'webapp'],
 };
