@@ -205,8 +205,8 @@
             "description": "Comprenez comment les visiteurs utilisent votre site, en respectant leur vie privée.",
             "points": [
               "Des statistiques chargées seulement après consentement",
-              "Un bandeau cookies qui fonctionne correctement",
-              "Les anciennes données supprimées automatiquement"
+              "Un bandeau de cookies qui fonctionne correctement",
+              "Les anciennes données supprimées à intervalles réguliers"
             ]
           }
         ],
@@ -382,14 +382,14 @@
             },
             {
               "q": "Comment savoir ce qui vaut la peine d'être automatisé ?",
-              "a": "Commencez par les tâches qui reviennent chaque semaine, suivent toujours les mêmes étapes et consistent à recopier des informations d'un endroit à un autre. Lors du premier appel, nous passons votre semaine en revue et choisissons les une ou deux qui vous feraient gagner le plus de temps."
+              "a": "Commencez par les tâches qui reviennent chaque semaine, suivent toujours les mêmes étapes et consistent à recopier des informations d'un endroit à un autre. Lors du premier appel, nous passons votre semaine en revue et choisissons une ou deux tâches qui vous feraient gagner le plus de temps."
             }
           ],
           "results": {
             "neverReplied": "Des entreprises n'ont jamais répondu à une demande de démo envoyée via leur site, sur un test de 1 000 sites B2B",
             "replyTime": "Attente moyenne avant une première réponse, chez les entreprises qui ont répondu",
             "communication": "Du temps passé dans Microsoft 365 va aux réunions, e-mails et messages, laissant 43 % à la création",
-            "communicationBefore": "Créer documents et tableurs",
+            "communicationBefore": "Création de documents et de tableurs",
             "communicationAfter": "Réunions, e-mails et messages"
           },
           "examples": {
@@ -417,7 +417,7 @@
                 "automated": "Une facture est créée pour chaque réservation ou commande, et des relances courtoises partent jusqu'au paiement."
               },
               {
-                "title": "Paperasse et saisie de données",
+                "title": "Documents et saisie de données",
                 "today": "Les informations des e-mails, formulaires ou PDF sont recopiées à la main dans un tableur.",
                 "automated": "L'IA lit le document, remplit les champs et vous laisse vérifier ce qui n'est pas sûr."
               },
@@ -464,7 +464,7 @@
               "a": "Chaque personne a ses propres identifiants et permissions, et les opérations sensibles s'exécutent sur le serveur, pas dans le navigateur. J'ai développé des logiciels chez Citi et j'applique le même soin aux tests et à la sécurité."
             },
             {
-              "q": "Peut-il fonctionner avec les outils que j'utilise déjà ?",
+              "q": "Un outil sur mesure peut-il fonctionner avec les outils que j'utilise déjà ?",
               "a": "Oui. Un outil sur mesure peut lire et écrire dans vos systèmes existants via leurs API, comme le fait l'outil de tarifs de Los Lagos Hotel avec Cloudbeds."
             }
           ],
@@ -474,19 +474,19 @@
             "searching": "Des personnes disent passer trop de temps à chercher des informations pendant leur journée"
           },
           "examples": {
-            "heading": "Ce qu’un outil sur mesure pourrait prendre en charge",
+            "heading": "Ce qu'un outil sur mesure pourrait prendre en charge",
             "subtitle": "Des tâches courantes qui dépassent les tableurs, les e-mails et la mémoire, et comment elles fonctionneraient avec une application simple conçue pour elles.",
             "afterLabel": "Avec un outil sur mesure",
             "items": [
               {
                 "title": "Suivi et documents des clients",
                 "today": "Les clients écrivent pour savoir où en est leur dossier ou pour recevoir à nouveau un fichier.",
-                "automated": "Les clients se connectent à un portail pour voir l’avancement, leurs documents et leurs factures quand ils en ont besoin."
+                "automated": "Les clients se connectent à un portail pour voir l'avancement, leurs documents et leurs factures quand ils en ont besoin."
               },
               {
                 "title": "Un tableur partagé",
                 "today": "Plusieurs personnes modifient le même tableur, les formules cassent et personne ne sait quelle version est la bonne.",
-                "automated": "Une application simple avec des formulaires, des contrôles sur la saisie, un accès par personne et l’historique de chaque modification."
+                "automated": "Une application simple avec des formulaires, des contrôles sur la saisie, un accès par personne et l'historique de chaque modification."
               },
               {
                 "title": "Devis",
@@ -495,8 +495,8 @@
               },
               {
                 "title": "Stocks et fournitures",
-                "today": "Le stock est compté à la main, et vous découvrez une rupture quand un client demande l’article.",
-                "automated": "Le stock se met à jour à chaque vente ou livraison, et vous êtes alerté avant qu’un article ne manque."
+                "today": "Le stock est compté à la main, et vous découvrez une rupture quand un client demande l'article.",
+                "automated": "Le stock se met à jour à chaque vente ou livraison, et vous êtes alerté avant qu'un article ne manque."
               },
               {
                 "title": "Plannings du personnel",
@@ -504,9 +504,9 @@
                 "automated": "Les plannings sont centralisés, chacun voit ses horaires sur son téléphone et les échanges attendent votre validation."
               },
               {
-                "title": "Suivi des chantiers et commandes",
+                "title": "Suivi des dossiers et des commandes",
                 "today": "Les dossiers sont sur un tableau blanc, dans des notes et dans la tête de chacun.",
-                "automated": "Chaque dossier est suivi de la demande à la facture, et toute l’équipe voit où il en est."
+                "automated": "Chaque dossier est suivi de la demande à la facture, et toute l'équipe voit où il en est."
               }
             ]
           }
@@ -559,7 +559,7 @@
       "breadcrumb": "Services",
       "possible": "Ce qui est possible",
       "possibleNote": "Chaque entreprise fonctionne différemment : ce sont des exemples de ce qui peut être construit, pas une offre figée. J'adapte le projet à vos besoins réels.",
-      "gallery": "Tiré de projets réels",
+      "gallery": "Extraits de projets réels",
       "faq": "Questions fréquentes",
       "others": "Autres services",
       "learnMore": "Voir ce qui est possible",
