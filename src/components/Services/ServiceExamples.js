@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslations } from 'next-intl';
 import { EXAMPLE_ICONS } from './serviceIcons';
 import Reveal from '../common/Reveal';
+import SectionDivider from '../common/SectionDivider';
 
 /**
  * Everyday tasks a service can take over, each shown as how it works today
@@ -14,6 +15,7 @@ function ServiceExamples({ serviceKey, examples }) {
 
   return (
     <section className="service-examples">
+      <SectionDivider variant="wave" color="#ffffff" />
       <div className="services-section-head">
         <h2>{examples.heading}</h2>
         <p>{examples.subtitle}</p>

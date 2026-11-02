@@ -2,6 +2,7 @@ import React from 'react';
 import { useLocale, useTranslations } from 'next-intl';
 import { TrendingUp, ArrowUpRight } from 'lucide-react';
 import Reveal from '../common/Reveal';
+import SectionDivider from '../common/SectionDivider';
 
 // Intl options per unit, so numbers, percentages and currency read naturally
 // in every locale (Arabic digits, % and $ placement, "h" abbreviations).
@@ -17,8 +18,10 @@ const FORMATS = {
  * Figures from published studies on what this kind of work changes, each
  * with a link to its source. `labels` holds the sentence for each figure and,
  * for figures with a comparison, `<key>Before` / `<key>After` bar labels.
+ * `above` is the background of the section before, which the curved top
+ * continues.
  */
-function ServiceResults({ results, labels }) {
+function ServiceResults({ results, labels, above }) {
   const t = useTranslations('services.detail.results');
   const locale = useLocale();
   const format = (value, unit) => {
@@ -28,6 +31,7 @@ function ServiceResults({ results, labels }) {
 
   return (
     <section className="service-results">
+      <SectionDivider variant="curve" color={above} height={64} />
       <div className="services-section-head">
         <h2>{t('heading')}</h2>
         <p>{t('subtitle')}</p>

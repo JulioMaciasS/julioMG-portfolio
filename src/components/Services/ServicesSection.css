@@ -878,8 +878,9 @@
 
 /* ---------- Automation examples: today vs automated ---------- */
 .service-examples {
+  position: relative;
   background: #f6f3ec;
-  padding: 72px 24px;
+  padding: 112px 24px 72px;
 }
 
 .service-examples-grid {
@@ -965,10 +966,10 @@
 
 /* ---------- Research figures: a dark band of sourced statistics ---------- */
 .service-results {
+  position: relative;
   background: #1a1717;
   color: #fff;
-  padding: 72px 24px 56px;
-  margin-bottom: 72px;
+  padding: 120px 24px 64px;
 }
 
 .service-results .services-section-head h2 {
@@ -1102,8 +1103,9 @@
 }
 
 .service-detail-gallery {
+  position: relative;
   background: #ffffff;
-  padding: 8px 24px 80px;
+  padding: 112px 24px 80px;
 }
 
 .service-detail-shots {

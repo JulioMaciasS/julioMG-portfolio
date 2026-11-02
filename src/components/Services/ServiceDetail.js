@@ -15,6 +15,7 @@ import ServiceResults from './ServiceResults';
 import ServiceExamples from './ServiceExamples';
 import Reveal from '../common/Reveal';
 import LayeredWaves from '../common/LayeredWaves';
+import SectionDivider from '../common/SectionDivider';
 import './ServicesSection.css';
 
 // A single service page: an illustration of the service, what's included,
@@ -99,9 +100,15 @@ function ServiceDetail({ service }) {
         <ServiceExamples serviceKey={service.key} examples={category.page.examples} />
       )}
 
-      <ServiceResults results={service.results} labels={category.page.results} />
+      <ServiceResults
+        results={service.results}
+        labels={category.page.results}
+        // The band's curved top continues whichever section sits above it.
+        above={category.page.examples ? '#f6f3ec' : '#ffffff'}
+      />
 
       <section className="service-detail-gallery">
+        <SectionDivider variant="diagonal" color="#1a1717" accent />
         <div className="services-section-head">
           <h2>{t('services.detail.gallery')}</h2>
         </div>
