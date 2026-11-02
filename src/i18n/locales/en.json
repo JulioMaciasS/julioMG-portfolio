@@ -50,7 +50,7 @@
       "eyebrow": "About me",
       "title": "A bit about me",
       "body1": "I'm Julio Macias Gonzalez, a software developer, Computer Science graduate from Queen's University Belfast and the founder of Discentik, an AI learning platform. Before that, I built and shipped full-stack applications at Citi.",
-      "body2": "I'm passionate about full-stack web development, cloud and AI, and I love turning ideas into reliable products that drive real business results.",
+      "body2": "I work with small businesses in Ireland, Spain and beyond, from a hotel in Patagonia to a family lawyer in Málaga. Projects run in English or Spanish, whichever suits you.",
       "highlights": {
         "founder": "Founder of Discentik",
         "degree": "Computer Science graduate, QUB",
@@ -66,7 +66,7 @@
     },
     "cards": {
       "heading": "Latest work",
-      "subheading": "A few recent projects, from real client work to cloud and AI experiments.",
+      "subheading": "Recent client work, the platform I founded and earlier projects.",
       "more": "View all projects"
     },
     "servicesCta": {
@@ -99,7 +99,7 @@
       "description": "Case studies of websites, booking systems and AI products I have built, including Los Lagos Hotel, Discentik and Eugenia Bravo."
     },
     "heading": "My Projects",
-    "subheading": "Real client work, cloud platforms and AI experiments, each with a write-up of how it was built.",
+    "subheading": "Client work, the platform I founded and earlier projects, each with a write-up of how it was built.",
     "new": "New!",
     "items": {
       "los-lagos-hotel": {
