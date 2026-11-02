@@ -1,75 +1,21 @@
-.project-container {
-  width: 100%;
-  margin: 0;
-  padding: 40px 16px 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  isolation: isolate;
-  /* Clean charcoal field + static bloom + dotted texture — the same backdrop
-     used across the site (replaces the old animated tiled pattern). */
-  background-color: #1a1717;
-}
-.project-container::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background:
-    radial-gradient(700px circle at 50% 0%, rgba(244, 185, 66, 0.12), transparent 60%),
-    radial-gradient(900px circle at 50% 0%, rgba(255, 255, 255, 0.05), transparent 55%);
-}
-.project-container::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-  background-size: 26px 26px;
-}
-
-.project-cards-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: calc(100vh - 200px);
-  height: fit-content;
-  width: 100%;
-  max-width: 860px;
-  background-color: whitesmoke;
-  padding: 48px 40px;
-  border-radius: 28px;
-  box-shadow: 0 30px 60px -25px rgba(0, 0, 0, 0.5);
-}
-
-#title {
-  text-align: center;
-  color: #1a1717;
-  font-family: 'Space Grotesk', sans-serif;
-  font-size: clamp(2.25rem, 3.5vw, 3.5rem);
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  margin: 0 0 12px;
-}
-
-#title::after {
-  content: '';
-  display: block;
-  width: 72px;
-  height: 4px;
-  margin: 16px auto 0;
-  background-color: #f4b942;
-  border-radius: 999px;
-}
-
 #bottom {
   margin-bottom: 100px;
 }
 
+/* ---------- /projects: full-width grid under the shared .page-hero ---------- */
+.projects-list {
+  position: relative;
+  background: #f5f5f5;
+  padding: 72px 24px 88px;
+}
+
+.projects-list-inner {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
 @media only screen and (max-width: 768px) {
-  .project-cards-container {
-    padding: 32px 18px;
-    border-radius: 20px;
+  .projects-list {
+    padding: 56px 16px 64px;
   }
 }
