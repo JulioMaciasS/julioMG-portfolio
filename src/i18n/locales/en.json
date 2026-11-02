@@ -220,9 +220,11 @@
             }
           ],
           "results": {
-            "enquiries": "Enquiries per month",
-            "loadTime": "Load time on a phone",
-            "bounce": "Visitors who leave straight away"
+            "conversion": "Higher conversion rate for a site that loads in 1 second than for one that takes 5",
+            "conversionBefore": "Loads in 5 seconds",
+            "conversionAfter": "Loads in 1 second",
+            "bounce": "Higher chance a visitor leaves when a page takes 3 seconds to load instead of 1",
+            "speed": "More conversions on retail sites when the mobile site loads just 0.1 seconds faster"
           }
         }
       },
@@ -274,9 +276,11 @@
             }
           ],
           "results": {
-            "directShare": "Bookings made directly",
-            "commission": "Platform commission per month",
-            "rateHours": "Hours a week updating rates"
+            "bookingValue": "Higher average booking value on a hotel's own website than through global distribution systems",
+            "bookingValueBefore": "Global distribution systems",
+            "bookingValueAfter": "Hotel's own website",
+            "directRevenue": "More revenue, at best, from a direct booking than from other booking sources",
+            "travelSpeed": "More conversions on travel sites when the mobile site loads just 0.1 seconds faster"
           }
         }
       },
@@ -319,9 +323,9 @@
             }
           ],
           "results": {
-            "searchVisitors": "Visitors from search per month",
-            "firstPage": "Searches where you're on page one",
-            "indexed": "Pages Google shows, out of 40"
+            "topResult": "Of clicks go to the first organic result on Google, on average",
+            "noTraffic": "Of pages get no traffic at all from Google",
+            "aiAnswers": "More visibility in AI-generated answers, at best, when a page adds citations, quotes and statistics"
           }
         }
       },
@@ -373,9 +377,11 @@
             }
           ],
           "results": {
-            "replyTime": "Minutes to answer a new enquiry",
-            "emailHours": "Hours a week on routine email",
-            "followUp": "Leads that get a follow-up"
+            "withinHour": "More likely to qualify a lead when you contact it within an hour rather than later",
+            "withinHourBefore": "Contacted after an hour",
+            "withinHourAfter": "Contacted within an hour",
+            "neverReplied": "Of companies never replied to a test enquiry sent through their website",
+            "email": "Of the workweek goes on managing email, for the average knowledge worker"
           }
         }
       },
@@ -418,9 +424,9 @@
             }
           ],
           "results": {
-            "sheetHours": "Hours a week in spreadsheets",
-            "errors": "Data-entry mistakes per month",
-            "reportTime": "Minutes to prepare the weekly report"
+            "spreadsheets": "Of the spreadsheets checked in audit studies contained errors",
+            "cellErrors": "Of formula cells were wrong on average, about 1 in 25",
+            "searching": "Nearly a fifth of the workweek goes on looking for information or tracking down colleagues"
           }
         }
       }
@@ -475,11 +481,10 @@
       "others": "Other services",
       "learnMore": "See what's included",
       "results": {
-        "heading": "What it can change",
-        "subtitle": "Typical before-and-after figures for a small business that starts from a weak setup.",
-        "before": "Before",
-        "after": "After",
-        "note": "Example figures to show the kind of change to expect. They aren't results from a specific client, and every business is different."
+        "heading": "What the research says",
+        "subtitle": "Published studies on what this kind of work tends to change.",
+        "source": "Source: {name}, {year}",
+        "note": "Figures come from the studies linked on each card. They're industry averages, not results from a specific client, and every business is different."
       }
     }
   },

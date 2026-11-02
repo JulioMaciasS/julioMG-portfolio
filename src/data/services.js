@@ -4,13 +4,21 @@
  * `illustration` is the drawn picture of the service used on its card and
  * page hero (see ServiceIllustration). `screenshots` are real ones from the
  * case studies, shown on the service page as examples; their captions reuse
- * the case studies' translated captions. `results` are example before/after
- * figures for a typical small business (labelled as examples on the page,
- * not client results).
+ * the case studies' translated captions. `results` are figures from published
+ * studies, each linked to its source on the page (industry figures, not
+ * client results). `compare` adds a pair of bars when the study gives both
+ * sides of the comparison.
  */
 const LL = '/images/losLagosHotel/';
 const shot = (project, src, caption) => ({ project, src, caption });
-const result = (key, before, after, unit) => ({ key, before, after, unit });
+const result = (key, value, unit, source, compare) => ({ key, value, unit, source, compare });
+const source = (name, year, url) => ({ name, year, url });
+
+const DELOITTE = source('Deloitte & 55 for Google', 2020, 'https://web.dev/case-studies/milliseconds-make-millions');
+const SITEMINDER = source('SiteMinder Hotel Booking Trends', 2025, 'https://www.siteminder.com/news/siteminder-hotel-booking-trends-2025/');
+const HBR = source('Harvard Business Review', 2011, 'https://hbr.org/2011/03/the-short-life-of-online-sales-leads');
+const MCKINSEY = source('McKinsey Global Institute', 2012, 'https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-social-economy');
+const PANKO = source('Panko, University of Hawaii', 2015, 'https://arxiv.org/abs/1602.02601');
 
 export const SERVICES = [
   {
@@ -23,9 +31,9 @@ export const SERVICES = [
       shot('los-lagos-hotel', `${LL}web-contact.jpg`, 'posts.losLagosHotel.captions.contact'),
     ],
     results: [
-      result('enquiries', 4, 19, 'count'),
-      result('loadTime', 6.8, 1.2, 'second'),
-      result('bounce', 68, 34, 'percent'),
+      result('conversion', 3, 'times', source('Portent', 2022, 'https://www.portent.com/blog/analytics/research-site-speed-hurting-everyone.htm'), { values: [1, 3], unit: 'times' }),
+      result('bounce', 32, 'increase', source('Google', 2017, 'https://www.thinkwithgoogle.com/data/page-load-time-statistics/')),
+      result('speed', 8.4, 'increase', DELOITTE),
     ],
   },
   {
@@ -38,9 +46,9 @@ export const SERVICES = [
       shot('los-lagos-hotel', `${LL}ops-fx.jpg`, 'posts.losLagosHotel.captions.opsFx'),
     ],
     results: [
-      result('directShare', 12, 38, 'percent'),
-      result('commission', 2400, 900, 'eur'),
-      result('rateHours', 6, 1, 'hour'),
+      result('bookingValue', 35, 'increase', SITEMINDER, { values: [380, 519], unit: 'usd' }),
+      result('directRevenue', 60, 'increase', SITEMINDER),
+      result('travelSpeed', 10.1, 'increase', DELOITTE),
     ],
   },
   {
@@ -52,9 +60,9 @@ export const SERVICES = [
       shot('los-lagos-hotel', `${LL}web-location.jpg`, 'posts.losLagosHotel.captions.location'),
     ],
     results: [
-      result('searchVisitors', 100, 2550, 'count'),
-      result('firstPage', 3, 85, 'count'),
-      result('indexed', 12, 40, 'count'),
+      result('topResult', 27.6, 'percent', source('Backlinko', 2023, 'https://backlinko.com/google-ctr-stats')),
+      result('noTraffic', 96.55, 'percent', source('Ahrefs', 2023, 'https://ahrefs.com/blog/search-traffic-study/')),
+      result('aiAnswers', 40, 'increase', source('Aggarwal et al., KDD', 2024, 'https://arxiv.org/abs/2311.09735')),
     ],
   },
   {
@@ -67,9 +75,9 @@ export const SERVICES = [
       shot('los-lagos-hotel', `${LL}ops-telegram.jpg`, 'posts.losLagosHotel.captions.opsTelegram'),
     ],
     results: [
-      result('replyTime', 480, 2, 'minute'),
-      result('emailHours', 10, 2, 'hour'),
-      result('followUp', 40, 100, 'percent'),
+      result('withinHour', 7, 'times', HBR, { values: [1, 7], unit: 'times' }),
+      result('neverReplied', 23, 'percent', HBR),
+      result('email', 28, 'percent', MCKINSEY),
     ],
   },
   {
@@ -82,9 +90,9 @@ export const SERVICES = [
       shot('los-lagos-hotel', `${LL}ops-security.jpg`, 'posts.losLagosHotel.captions.opsSecurity'),
     ],
     results: [
-      result('sheetHours', 8, 1, 'hour'),
-      result('errors', 15, 1, 'count'),
-      result('reportTime', 240, 1, 'minute'),
+      result('spreadsheets', 94, 'percent', PANKO),
+      result('cellErrors', 3.9, 'percent', PANKO),
+      result('searching', 20, 'percent', MCKINSEY),
     ],
   },
 ];

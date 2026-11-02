@@ -220,9 +220,11 @@
             }
           ],
           "results": {
-            "enquiries": "Consultas al mes",
-            "loadTime": "Tiempo de carga en el móvil",
-            "bounce": "Visitantes que se van enseguida"
+            "conversion": "Más conversión en una web que carga en 1 segundo que en una que tarda 5",
+            "conversionBefore": "Carga en 5 segundos",
+            "conversionAfter": "Carga en 1 segundo",
+            "bounce": "Más probabilidad de que un visitante se vaya si la página tarda 3 segundos en cargar en lugar de 1",
+            "speed": "Más conversiones en tiendas online cuando la web móvil carga solo 0,1 segundos más rápido"
           }
         }
       },
@@ -274,9 +276,11 @@
             }
           ],
           "results": {
-            "directShare": "Reservas directas",
-            "commission": "Comisión de plataformas al mes",
-            "rateHours": "Horas a la semana actualizando tarifas"
+            "bookingValue": "Mayor valor medio por reserva en la web del propio hotel que a través de los sistemas globales de distribución",
+            "bookingValueBefore": "Sistemas globales de distribución",
+            "bookingValueAfter": "Web del propio hotel",
+            "directRevenue": "Más ingresos, en el mejor caso, por una reserva directa que por otros canales de reserva",
+            "travelSpeed": "Más conversiones en webs de viajes cuando la web móvil carga solo 0,1 segundos más rápido"
           }
         }
       },
@@ -319,9 +323,9 @@
             }
           ],
           "results": {
-            "searchVisitors": "Visitas desde buscadores al mes",
-            "firstPage": "Búsquedas en las que sales en la primera página",
-            "indexed": "Páginas que muestra Google, de 40"
+            "topResult": "De los clics van al primer resultado orgánico de Google, de media",
+            "noTraffic": "De las páginas no reciben ninguna visita desde Google",
+            "aiAnswers": "Más visibilidad en respuestas generadas por IA, en el mejor caso, cuando una página añade citas, fuentes y datos"
           }
         }
       },
@@ -373,9 +377,11 @@
             }
           ],
           "results": {
-            "replyTime": "Minutos para responder una consulta nueva",
-            "emailHours": "Horas a la semana en correos rutinarios",
-            "followUp": "Contactos que reciben seguimiento"
+            "withinHour": "Más probabilidad de cualificar un contacto si lo atiendes en menos de una hora que más tarde",
+            "withinHourBefore": "Atendido pasada una hora",
+            "withinHourAfter": "Atendido en menos de una hora",
+            "neverReplied": "De las empresas nunca respondieron a una consulta de prueba enviada desde su web",
+            "email": "De la semana laboral se dedica a gestionar el correo, para un profesional medio de oficina"
           }
         }
       },
@@ -418,9 +424,9 @@
             }
           ],
           "results": {
-            "sheetHours": "Horas a la semana en hojas de cálculo",
-            "errors": "Errores al introducir datos al mes",
-            "reportTime": "Minutos para preparar el informe semanal"
+            "spreadsheets": "De las hojas de cálculo revisadas en auditorías contenían errores",
+            "cellErrors": "De las celdas con fórmulas eran incorrectas de media, alrededor de 1 de cada 25",
+            "searching": "Casi una quinta parte de la semana laboral se va en buscar información o localizar a compañeros"
           }
         }
       }
@@ -475,11 +481,10 @@
       "others": "Otros servicios",
       "learnMore": "Ver qué incluye",
       "results": {
-        "heading": "Lo que puede cambiar",
-        "subtitle": "Cifras típicas de antes y después para un pequeño negocio que parte de una base débil.",
-        "before": "Antes",
-        "after": "Después",
-        "note": "Cifras de ejemplo para mostrar el tipo de cambio que cabe esperar. No son resultados de un cliente concreto, y cada negocio es distinto."
+        "heading": "Lo que dicen los estudios",
+        "subtitle": "Estudios publicados sobre lo que suele cambiar este tipo de trabajo.",
+        "source": "Fuente: {name}, {year}",
+        "note": "Las cifras proceden de los estudios enlazados en cada tarjeta. Son medias del sector, no resultados de un cliente concreto, y cada negocio es distinto."
       }
     }
   },

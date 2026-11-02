@@ -220,9 +220,11 @@
             }
           ],
           "results": {
-            "enquiries": "Demandes par mois",
-            "loadTime": "Temps de chargement sur mobile",
-            "bounce": "Visiteurs qui repartent aussitôt"
+            "conversion": "Taux de conversion plus élevé pour un site qui se charge en 1 seconde que pour un site qui en met 5",
+            "conversionBefore": "Chargement en 5 secondes",
+            "conversionAfter": "Chargement en 1 seconde",
+            "bounce": "Plus de risque qu'un visiteur reparte quand une page met 3 secondes à se charger au lieu de 1",
+            "speed": "Plus de conversions pour les sites marchands quand le site mobile se charge seulement 0,1 seconde plus vite"
           }
         }
       },
@@ -274,9 +276,11 @@
             }
           ],
           "results": {
-            "directShare": "Réservations en direct",
-            "commission": "Commission des plateformes par mois",
-            "rateHours": "Heures par semaine à mettre à jour les tarifs"
+            "bookingValue": "Valeur moyenne de réservation plus élevée sur le site de l'hôtel que via les systèmes de distribution mondiaux",
+            "bookingValueBefore": "Systèmes de distribution mondiaux",
+            "bookingValueAfter": "Site de l'hôtel",
+            "directRevenue": "Plus de revenus, dans le meilleur des cas, pour une réservation directe que pour les autres canaux",
+            "travelSpeed": "Plus de conversions pour les sites de voyage quand le site mobile se charge seulement 0,1 seconde plus vite"
           }
         }
       },
@@ -319,9 +323,9 @@
             }
           ],
           "results": {
-            "searchVisitors": "Visiteurs venant des moteurs de recherche par mois",
-            "firstPage": "Recherches où vous êtes en première page",
-            "indexed": "Pages affichées par Google, sur 40"
+            "topResult": "Des clics vont au premier résultat naturel de Google, en moyenne",
+            "noTraffic": "Des pages ne reçoivent aucune visite de Google",
+            "aiAnswers": "Plus de visibilité dans les réponses générées par l'IA, dans le meilleur des cas, quand une page ajoute citations, sources et statistiques"
           }
         }
       },
@@ -373,9 +377,11 @@
             }
           ],
           "results": {
-            "replyTime": "Minutes pour répondre à une nouvelle demande",
-            "emailHours": "Heures par semaine sur les e-mails courants",
-            "followUp": "Prospects relancés"
+            "withinHour": "Plus de chances de qualifier un prospect contacté dans l'heure que plus tard",
+            "withinHourBefore": "Contacté après une heure",
+            "withinHourAfter": "Contacté dans l'heure",
+            "neverReplied": "Des entreprises n'ont jamais répondu à une demande test envoyée via leur site",
+            "email": "De la semaine de travail est consacrée à gérer les e-mails, pour un employé de bureau moyen"
           }
         }
       },
@@ -418,9 +424,9 @@
             }
           ],
           "results": {
-            "sheetHours": "Heures par semaine dans des tableurs",
-            "errors": "Erreurs de saisie par mois",
-            "reportTime": "Minutes pour préparer le rapport hebdomadaire"
+            "spreadsheets": "Des tableurs examinés lors d'audits contenaient des erreurs",
+            "cellErrors": "Des cellules de formule étaient fausses en moyenne, environ 1 sur 25",
+            "searching": "Près d’un cinquième de la semaine de travail passe à chercher des informations ou des collègues"
           }
         }
       }
@@ -475,11 +481,10 @@
       "others": "Autres services",
       "learnMore": "Voir ce qui est inclus",
       "results": {
-        "heading": "Ce que cela peut changer",
-        "subtitle": "Des chiffres avant/après typiques pour une petite entreprise qui part d'une base faible.",
-        "before": "Avant",
-        "after": "Après",
-        "note": "Chiffres d'exemple pour montrer le type de changement à attendre. Ce ne sont pas les résultats d'un client précis, et chaque entreprise est différente."
+        "heading": "Ce que disent les études",
+        "subtitle": "Des études publiées sur ce que ce type de travail change en général.",
+        "source": "Source : {name}, {year}",
+        "note": "Les chiffres proviennent des études citées sur chaque carte. Ce sont des moyennes du secteur, pas les résultats d'un client précis, et chaque entreprise est différente."
       }
     }
   },

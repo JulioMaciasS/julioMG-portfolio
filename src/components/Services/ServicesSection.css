@@ -876,7 +876,7 @@
   color: #f6e7c4;
 }
 
-/* ---------- Example results: a dark band of before/after figures ---------- */
+/* ---------- Research figures: a dark band of sourced statistics ---------- */
 .service-results {
   background: #1a1717;
   color: #fff;
@@ -906,13 +906,15 @@
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 18px;
   padding: 22px;
+  display: flex;
+  flex-direction: column;
 }
 
-.service-result h3 {
+.service-result-label {
   font-size: 0.95rem;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.75);
-  margin: 0 0 6px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.78);
+  margin: 0 0 16px;
 }
 
 .service-result-change {
@@ -923,21 +925,19 @@
   font-size: 2.1rem;
   font-weight: 700;
   color: #f4b942;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   font-variant-numeric: tabular-nums;
 }
 
 .service-result-bars {
   display: grid;
   gap: 10px;
-  margin: 0;
+  margin: 0 0 16px;
 }
 
 .service-result-row {
   display: grid;
-  grid-template-columns: 64px 1fr;
-  align-items: center;
-  gap: 10px;
+  gap: 4px;
 }
 
 .service-result-row dt {
@@ -972,12 +972,38 @@
 }
 
 .service-result-value {
-  min-width: 64px;
+  min-width: 48px;
   font-size: 0.85rem;
   font-weight: 600;
   color: #fff;
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
+}
+
+.service-result-source {
+  margin-top: auto;
+  display: block;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.25);
+  text-underline-offset: 3px;
+}
+
+.service-result-source:hover,
+.service-result-source:focus-visible {
+  color: #f4b942;
+  text-decoration-color: currentColor;
+}
+
+.service-result-source svg {
+  display: inline;
+  vertical-align: -2px;
+  margin-inline-start: 4px;
+}
+
+[dir='rtl'] .service-result-source svg {
+  transform: scaleX(-1);
 }
 
 .service-results-note {
