@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react'
+import { preconnect } from 'react-dom'
 import { useTranslations } from 'next-intl'
 import { Send, CheckCircle2, Loader2, MessageSquare, CalendarDays } from 'lucide-react'
 import Cal, { getCalApi } from '@calcom/embed-react'
@@ -53,11 +54,20 @@ function ContactMe() {
   const t = useTranslations();
   const [status, setStatus] = useState('idle'); // idle | sending | success | error
   const [mode, setMode] = useState('message'); // 'message' | 'call'
-  // Mount the booking embed once the page is idle (or straight away if the
-  // visitor opens the call tab first), parked off-view, so the calendar is
-  // already loaded when they switch to it. Never unmounted/remounted —
-  // remounting the iframe is what tripped Cal's init error.
+  // Mount the booking embed only once the visitor shows they want it: they
+  // arrive on #book-a-call, or point at, focus or touch the "Book a call" tab.
+  // Starting on that first sign of intent, before the click, gives Cal a head
+  // start without loading it (or its cookies) for people here to send a
+  // message. Never unmounted/remounted — remounting the iframe is what tripped
+  // Cal's init error.
   const [callOpened, setCallOpened] = useState(false);
+  const warmUpCall = () => {
+    if (CAL_LINK) setCallOpened(true);
+  };
+
+  // Open the connection to Cal's servers early: no request or cookies until
+  // the embed mounts, but the calendar starts faster when it does.
+  if (CAL_LINK) preconnect('https://app.cal.com');
 
   useEffect(() => {
     if (mode === 'call') setCallOpened(true);
@@ -101,18 +111,6 @@ function ContactMe() {
     }
   };
 
-  // Preload the booking calendar after the page has finished its own work.
-  useEffect(() => {
-    if (!CAL_LINK) return undefined;
-    const preload = () => setCallOpened(true);
-    if ('requestIdleCallback' in window) {
-      const id = window.requestIdleCallback(preload, { timeout: 2000 });
-      return () => window.cancelIdleCallback(id);
-    }
-    const id = window.setTimeout(preload, 1000);
-    return () => window.clearTimeout(id);
-  }, []);
-
   const inputClass =
     'w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-gray-800 ' +
     'placeholder-gray-400 focus:border-[#1a1717] focus:ring-2 focus:ring-[#1a1717]/15 ' +
@@ -150,6 +148,9 @@ function ContactMe() {
               aria-controls="contact-panel-call"
               className={`contact-switch-option ${mode === 'call' ? 'is-active' : ''}`}
               onClick={() => setMode('call')}
+              onPointerEnter={warmUpCall}
+              onFocus={warmUpCall}
+              onTouchStart={warmUpCall}
             >
               <CalendarDays size={18} aria-hidden="true" /> {t('contact.tabs.call')}
             </button>
