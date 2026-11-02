@@ -29,6 +29,9 @@ function SmoothScroll() {
     return () => media.removeEventListener('change', update);
   }, []);
 
+  // A fresh instance per page: a client-side navigation resets the scroll
+  // position under Lenis, which otherwise keeps gliding toward the old page's
+  // target and swallows the wheel.
   useEffect(() => {
     if (!enabled) return undefined;
     let lenis;
@@ -49,7 +52,7 @@ function SmoothScroll() {
       cancelled = true;
       lenis?.destroy();
     };
-  }, [enabled]);
+  }, [enabled, pathname]);
 
   return null;
 }
