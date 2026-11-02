@@ -5,6 +5,7 @@ const COLLAGE = [
   '/images/tuDivorcioInteligente/hero.jpg',
   '/images/losLagosHotel/booking-rooms.jpg',
   '/images/losLagosHotel/web-home-en.jpg',
+  '/images/guiasDeMalaga/home.jpg',
 ];
 
 const PHOTOS = {

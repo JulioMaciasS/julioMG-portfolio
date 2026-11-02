@@ -162,10 +162,10 @@
   object-fit: cover;
 }
 
-/* Three client screenshots stacked like prints. */
+/* Four client screenshots stacked like prints. */
 .why-collage-shot {
   position: absolute;
-  width: 68%;
+  width: 60%;
   aspect-ratio: 16 / 10;
   border-radius: 8px;
   overflow: hidden;
@@ -181,9 +181,10 @@
   object-position: top;
 }
 
-.why-collage-shot--1 { top: 9%; left: 5%; transform: rotate(-5deg); }
-.why-collage-shot--2 { top: 14%; right: 4%; transform: rotate(4deg); }
-.why-collage-shot--3 { bottom: 7%; left: 17%; transform: rotate(-1deg); z-index: 1; }
+.why-collage-shot--1 { top: 6%; left: 5%; transform: rotate(-5deg); }
+.why-collage-shot--2 { top: 10%; right: 4%; transform: rotate(4deg); }
+.why-collage-shot--3 { bottom: 6%; left: 7%; transform: rotate(3deg); z-index: 1; }
+.why-collage-shot--4 { bottom: 4%; right: 6%; transform: rotate(-2deg); z-index: 2; }
 
 .services-why-item h3 {
   font-family: 'Space Grotesk', sans-serif;
