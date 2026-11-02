@@ -83,6 +83,11 @@
       ],
       "visit": "Visit discentik.com",
       "read": "Read the case study"
+    },
+    "services": {
+      "heading": "How I can help",
+      "subtitle": "Five ways I help small businesses, from a first website to software built around how you work.",
+      "all": "See all services"
     }
   },
   "projects": {

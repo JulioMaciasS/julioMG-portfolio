@@ -17,7 +17,7 @@ export default function CardsSection() {
 
   return (
     <section className="cards-section w-full bg-[whitesmoke] px-4 pt-28 pb-12 relative overflow-hidden">
-      <SectionDivider variant="curve" color="#ffffff" />
+      <SectionDivider variant="curve" color="#1a1717" />
       <Reveal className="text-center max-w-2xl mx-auto mb-12 relative z-10">
         <h2 className="font-display text-3xl sm:text-4xl font-bold text-[#1a1717] mb-3">
           {t('home.cards.heading')}

@@ -614,6 +614,12 @@
   line-height: 1.65;
 }
 
+/* The client's own words, right after what the service can do. */
+.service-detail-quotes {
+  background: #ffffff;
+  padding: 8px 24px 88px;
+}
+
 .services-testimonials-list {
   max-width: 820px;
   margin: 0 auto;

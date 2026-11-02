@@ -5,6 +5,7 @@ import { Button } from '../Button';
 import { ChevronRight, Check } from 'lucide-react';
 import { SERVICES } from '../../data/services';
 import { PROJECTS } from '../../data/projects';
+import { TESTIMONIALS } from '../../data/testimonials';
 import { OFFER_ART } from './serviceIcons';
 import SupportStrip from './SupportStrip';
 import ServiceShot from './ServiceShot';
@@ -13,6 +14,7 @@ import ServiceIllustration from './ServiceIllustration';
 import OfferIllustration from './OfferIllustration';
 import ServiceResults from './ServiceResults';
 import ServiceExamples from './ServiceExamples';
+import TestimonialCard from '../common/TestimonialCard';
 import Reveal from '../common/Reveal';
 import LayeredWaves from '../common/LayeredWaves';
 import SectionDivider from '../common/SectionDivider';
@@ -28,6 +30,7 @@ function ServiceDetail({ service }) {
   const category = copyFor(service.key);
   const offerArt = OFFER_ART[service.key];
   const others = SERVICES.filter((s) => s.key !== service.key);
+  const quotes = TESTIMONIALS.filter((item) => service.testimonials?.includes(item.project));
   const shots = service.screenshots.map((visual) => {
     const project = PROJECTS.find((p) => p.id === visual.project);
     return {
@@ -96,6 +99,21 @@ function ServiceDetail({ service }) {
         </div>
         <p className="service-offer-note">{t('services.detail.possibleNote')}</p>
       </section>
+
+      {quotes.length > 0 && (
+        <section className="service-detail-quotes">
+          <div className="services-section-head">
+            <h2>{t('services.testimonials.heading')}</h2>
+          </div>
+          <div className="services-testimonials-list">
+            {quotes.map((item) => (
+              <Reveal key={item.name}>
+                <TestimonialCard testimonial={item} />
+              </Reveal>
+            ))}
+          </div>
+        </section>
+      )}
 
       {category.page.examples && (
         <ServiceExamples serviceKey={service.key} examples={category.page.examples} />

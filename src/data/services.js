@@ -7,7 +7,8 @@
  * the case studies' translated captions. `results` are figures from published
  * studies, each linked to its source on the page (industry figures, not
  * client results). `compare` adds a pair of bars when the study gives both
- * sides of the comparison.
+ * sides of the comparison. `testimonials` lists the projects whose client
+ * quotes (data/testimonials.js) are shown on the page.
  */
 const LL = '/images/losLagosHotel/';
 const shot = (project, src, caption) => ({ project, src, caption });
@@ -45,6 +46,7 @@ export const SERVICES = [
       shot('los-lagos-hotel', `${LL}web-datepicker.jpg`, 'posts.losLagosHotel.captions.datePicker'),
       shot('los-lagos-hotel', `${LL}ops-fx.jpg`, 'posts.losLagosHotel.captions.opsFx'),
     ],
+    testimonials: ['los-lagos-hotel'],
     results: [
       result('bookingValue', 35, 'increase', SITEMINDER, { values: [380, 519], unit: 'usd' }),
       result('directRevenue', 60, 'increase', SITEMINDER),

@@ -83,6 +83,11 @@
       ],
       "visit": "Visiter discentik.com",
       "read": "Lire l'étude de cas"
+    },
+    "services": {
+      "heading": "Comment je peux vous aider",
+      "subtitle": "Cinq façons d'aider les petites entreprises, du premier site web au logiciel conçu autour de votre façon de travailler.",
+      "all": "Voir tous les services"
     }
   },
   "projects": {
