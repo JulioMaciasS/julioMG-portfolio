@@ -12,10 +12,10 @@ import useSpotlight from '../../hooks/useSpotlight';
 
 // Live client sites shown in the hero, back to front.
 const CLIENT_WORK = [
-  { name: 'Discentik', src: '/images/discentik/home.jpg' },
-  { name: 'Tu Divorcio Inteligente', src: '/images/tuDivorcioInteligente/hero.jpg' },
   { name: 'Los Lagos Hotel', src: '/images/losLagosHotel/web-home-en.jpg' },
+  { name: 'Discentik', src: '/images/discentik/home.jpg' },
   { name: 'Guías de Málaga', src: '/images/guiasDeMalaga/home.jpg' },
+  { name: 'Tu Divorcio Inteligente', src: '/images/tuDivorcioInteligente/hero.jpg' },
 ];
 
 /**
