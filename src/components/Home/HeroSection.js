@@ -326,7 +326,7 @@ export default function HeroSection() {
   return (
     <section
       ref={spotlightRef}
-      className="spotlight-bg hero-container relative flex flex-col items-center justify-center h-[calc(100vh-80px)] overflow-hidden px-6"
+      className="spotlight-bg hero-container relative flex flex-col items-center justify-center min-h-[calc(100vh-80px)] lg:h-[calc(100vh-80px)] overflow-hidden px-6"
     >
       <div className="hero-content relative z-10 flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-16 w-full max-w-6xl">
         {/* Text */}
@@ -367,7 +367,7 @@ export default function HeroSection() {
         </div>
 
         {/* Client work */}
-        <div className="hidden lg:flex lg:w-[45%] justify-center">
+        <div className="flex w-full lg:w-[45%] justify-center">
           <ClientWork label={t('home.hero.seeWork')} />
         </div>
       </div>

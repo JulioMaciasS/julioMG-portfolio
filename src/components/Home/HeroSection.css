@@ -38,10 +38,6 @@
   box-shadow: 0 8px 22px rgba(0, 0, 0, 0.55);
 }
 @media (max-width: 640px) {
-  /* Lift the hero block (photo first) higher up the phone screen */
-  .hero-content {
-    top: -32px;
-  }
   .hero-avatar {
     width: 100px;
     height: 100px;
@@ -198,6 +194,18 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+/* Below the buttons on phones and tablets: smaller, so the hero stays short,
+   with room underneath for the scroll-down arrow. */
+@media (max-width: 1023px) {
+  .hero-container {
+    padding-top: 40px;
+    padding-bottom: 96px;
+  }
+  .hero-work {
+    max-width: 340px;
+  }
+}
+
 @keyframes hero-work-float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
