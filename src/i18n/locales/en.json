@@ -63,7 +63,7 @@
     },
     "cards": {
       "heading": "Latest work",
-      "subheading": "A few recent projects, from real client work to cloud and AI experiments.",
+      "subheading": "Recent client work, the platform I founded and earlier projects.",
       "more": "View all projects"
     },
     "servicesCta": {
@@ -91,7 +91,7 @@
       "description": "Case studies of websites, booking systems and AI products I have built, including Los Lagos Hotel, Discentik and Eugenia Bravo."
     },
     "heading": "My Projects",
-    "subheading": "Real client work, cloud platforms and AI experiments, each with a write-up of how it was built.",
+    "subheading": "Client work, the platform I founded and earlier projects, each with a write-up of how it was built.",
     "new": "New!",
     "items": {
       "los-lagos-hotel": {

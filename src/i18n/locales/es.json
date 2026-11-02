@@ -63,7 +63,7 @@
     },
     "cards": {
       "heading": "Últimos trabajos",
-      "subheading": "Algunos proyectos recientes, desde trabajo real con clientes hasta experimentos en la nube y de IA.",
+      "subheading": "Trabajo reciente con clientes, la plataforma que fundé y proyectos anteriores.",
       "more": "Ver todos los proyectos"
     },
     "servicesCta": {
@@ -91,7 +91,7 @@
       "description": "Casos de webs, sistemas de reservas y productos con IA que he desarrollado, como Los Lagos Hotel, Discentik y Eugenia Bravo."
     },
     "heading": "Mis proyectos",
-    "subheading": "Trabajo real con clientes, plataformas en la nube y experimentos de IA, cada uno con una descripción de cómo se construyó.",
+    "subheading": "Trabajo con clientes, la plataforma que fundé y proyectos anteriores, cada uno con una explicación de cómo se construyó.",
     "new": "¡Nuevo!",
     "items": {
       "los-lagos-hotel": {
