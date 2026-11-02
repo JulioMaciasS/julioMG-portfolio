@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslations } from 'next-intl';
 import './Legal.css';
 
-const LAST_UPDATED = '2026-06-07';
+const LAST_UPDATED = '2026-11-02';
 
 function CookiePolicy() {
   const t = useTranslations('legal');
@@ -40,6 +40,11 @@ function CookiePolicy() {
                 <td>PostHog</td>
                 <td>{t('cookie.analyticsBody')}</td>
                 <td>{t('cookie.analyticsTitle')}</td>
+              </tr>
+              <tr>
+                <td>Cal.com</td>
+                <td>{t('cookie.calBody')}</td>
+                <td>{t('cookie.calCategory')}</td>
               </tr>
             </tbody>
           </table>
