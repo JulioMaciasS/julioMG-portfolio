@@ -36,7 +36,7 @@ function CodeWindow() {
 }
 
 /**
- * Pixel-art ghost companion. It is FIXED to the viewport. Behaviours:
+ * Pixel-art robot companion. It is FIXED to the viewport. Behaviours:
  *  - It wanders the bottom band ONLY while the hero is in view, so it never
  *    distracts readers in the content below.
  *  - Once the reader scrolls into the content, it glides up to rest above the
@@ -54,7 +54,7 @@ function HeroMascot() {
   const st = useRef({
     x: 0, y: 110, face: 1, clicking: false, parked: false, cancelled: false, reduce: false,
     wander: null, timers: [], step: null, glideToButton: null, heroRatio: null, w: 48, h: 38,
-    eyeX: 0, eyeY: 0, eyeRaf: null,
+    eyeX: 0, eyeY: 0, eyeRaf: null, calm: false,
   });
   const [jumping, setJumping] = useState(false);
 
@@ -113,7 +113,7 @@ function HeroMascot() {
     s.heroRatio = heroRatio;
 
     // On mobile/tablet the bottom strip is occupied by the hero CTAs + contact
-    // button, so the ghost rests above the button instead of wandering.
+    // button, so the robot rests above the button instead of wandering.
     const isMobile = () => window.innerWidth < 1024;
     const canWander = () => !reduce && !isMobile();
     s.canWander = canWander;
@@ -124,7 +124,7 @@ function HeroMascot() {
     place('none');
 
     const step = () => {
-      if (s.cancelled || s.clicking || s.parked) return;
+      if (s.cancelled || s.clicking || s.parked || s.calm) return;
       const r = region();
       const tx = rand(r.minX, r.maxX);
       const ty = rand(r.minY, r.maxY);
@@ -146,7 +146,7 @@ function HeroMascot() {
     }
 
     // Wander only while the hero is in view. Once the reader scrolls into the
-    // content, the ghost rests above the contact button (no jump, no wandering)
+    // content, the robot rests above the contact button (no jump, no wandering)
     // so it never distracts. Hysteresis avoids flapping at the boundary.
     const onScroll = () => {
       if (s.cancelled || s.clicking || !canWander()) return;
@@ -195,13 +195,46 @@ function HeroMascot() {
     const finePointer = window.matchMedia('(pointer: fine)').matches;
     let lastMouseX = window.innerWidth / 2;
     let lastMouseY = window.innerHeight / 2;
-    const onMouseMove = (e) => { lastMouseX = e.clientX; lastMouseY = e.clientY; };
+    let hasMouse = false;
+    const onMouseMove = (e) => { lastMouseX = e.clientX; lastMouseY = e.clientY; hasMouse = true; };
+
+    // Easier to catch: when the cursor comes close, the robot eases to a stop
+    // where it is, and wanders off again once the cursor moves away.
+    const NEAR = 120;
+    const FAR = 180;
+    const settle = () => {
+      s.calm = true;
+      clearTimeout(s.wander);
+      const r = el.getBoundingClientRect();
+      const vx = r.left;
+      const vy = window.innerHeight - r.bottom;
+      // Coast a few pixels further along its path, decelerating to a stop.
+      const dx = s.x - vx;
+      const dy = s.y - vy;
+      const len = Math.hypot(dx, dy) || 1;
+      const coast = Math.min(16, len);
+      s.x = vx + (dx / len) * coast;
+      s.y = vy + (dy / len) * coast;
+      place('transform 0.7s cubic-bezier(0.15, 0.7, 0.3, 1)');
+    };
+    const checkCursor = () => {
+      if (!hasMouse) return;
+      const r = el.getBoundingClientRect();
+      const d = Math.hypot(lastMouseX - (r.left + r.width / 2), lastMouseY - (r.top + r.height / 2));
+      if (!s.calm && d < NEAR && !s.clicking && !s.parked) {
+        settle();
+      } else if (s.calm && d > FAR) {
+        s.calm = false;
+        clearTimeout(s.wander);
+        s.wander = setTimeout(step, 700);
+      }
+    };
     const EYE_MAX = 0.5; // max pupil shift in SVG units — keeps the pupil inside the eye
     const tickEyes = () => {
       if (s.cancelled) return;
       const pupils = pupilsRef.current;
       if (pupils) {
-        const cx = s.x + s.w / 2;                        // ghost centre, screen px
+        const cx = s.x + s.w / 2;                        // robot centre, screen px
         const cy = window.innerHeight - s.y - s.h / 2;
         // While gliding to + jumping over the contact button, look at the
         // button; otherwise follow the cursor.
@@ -224,6 +257,7 @@ function HeroMascot() {
         s.eyeY += (ty - s.eyeY) * 0.2;
         pupils.setAttribute('transform', `translate(${s.eyeX.toFixed(3)} ${s.eyeY.toFixed(3)})`);
       }
+      checkCursor();
       s.eyeRaf = requestAnimationFrame(tickEyes);
     };
     if (finePointer && !reduce) {
@@ -247,6 +281,7 @@ function HeroMascot() {
     const s = st.current;
     if (!el || s.clicking || !s.glideToButton) return;
     s.clicking = true;
+    s.calm = false;
     clearTimeout(s.wander);
 
     const arrive = s.glideToButton(2.4) + 40; // progressive glide (0 if already parked)
@@ -271,7 +306,7 @@ function HeroMascot() {
       onClick={handleClick}
       className={`hero-mascot ${jumping ? 'is-jumping' : ''}`}
       style={{ transform: 'translate(48px, -110px)' }}
-      aria-label="Poke the mascot"
+      aria-label="Poke the robot"
     >
       <span className="hero-mascot-bob">
         <svg
@@ -281,22 +316,25 @@ function HeroMascot() {
           width="48"
           height="38"
         >
-          <g fill="#f4b942">
-            <rect x="3" y="0" width="4" height="1" />
-            <rect x="2" y="1" width="6" height="1" />
-            <rect x="1" y="2" width="8" height="5" />
-            <rect x="1" y="7" width="2" height="1" />
-            <rect x="4" y="7" width="2" height="1" />
-            <rect x="7" y="7" width="2" height="1" />
+          {/* Antenna, ears and feet in a darker shade of the head colour. */}
+          <rect x="4" y="0" width="2" height="1" fill="#ffd27a" />
+          <g fill="#c9902a">
+            <rect x="4" y="1" width="2" height="1" />
+            <rect x="0" y="3" width="1" height="2" />
+            <rect x="9" y="3" width="1" height="2" />
+            <rect x="2" y="7" width="2" height="1" />
+            <rect x="6" y="7" width="2" height="1" />
           </g>
+          <rect x="1" y="2" width="8" height="5" fill="#f4b942" />
           <g fill="#ffffff">
             <rect x="2" y="3" width="2" height="2" />
-            <rect x="5" y="3" width="2" height="2" />
+            <rect x="6" y="3" width="2" height="2" />
           </g>
           <g fill="#1a1717" ref={pupilsRef}>
             <rect x="2.5" y="3.5" width="1" height="1" />
-            <rect x="5.5" y="3.5" width="1" height="1" />
+            <rect x="6.5" y="3.5" width="1" height="1" />
           </g>
+          <rect x="3" y="5.5" width="4" height="1" fill="#1a1717" />
         </svg>
       </span>
     </button>,
