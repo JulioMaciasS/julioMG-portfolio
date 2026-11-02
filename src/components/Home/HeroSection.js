@@ -54,7 +54,7 @@ function HeroMascot() {
   const st = useRef({
     x: 0, y: 110, face: 1, clicking: false, parked: false, cancelled: false, reduce: false,
     wander: null, timers: [], step: null, glideToButton: null, heroRatio: null, w: 48, h: 38,
-    eyeX: 0, eyeY: 0, eyeRaf: null,
+    eyeX: 0, eyeY: 0, eyeRaf: null, calm: false,
   });
   const [jumping, setJumping] = useState(false);
 
@@ -124,7 +124,7 @@ function HeroMascot() {
     place('none');
 
     const step = () => {
-      if (s.cancelled || s.clicking || s.parked) return;
+      if (s.cancelled || s.clicking || s.parked || s.calm) return;
       const r = region();
       const tx = rand(r.minX, r.maxX);
       const ty = rand(r.minY, r.maxY);
@@ -195,7 +195,40 @@ function HeroMascot() {
     const finePointer = window.matchMedia('(pointer: fine)').matches;
     let lastMouseX = window.innerWidth / 2;
     let lastMouseY = window.innerHeight / 2;
-    const onMouseMove = (e) => { lastMouseX = e.clientX; lastMouseY = e.clientY; };
+    let hasMouse = false;
+    const onMouseMove = (e) => { lastMouseX = e.clientX; lastMouseY = e.clientY; hasMouse = true; };
+
+    // Easier to catch: when the cursor comes close, the robot eases to a stop
+    // where it is, and wanders off again once the cursor moves away.
+    const NEAR = 120;
+    const FAR = 180;
+    const settle = () => {
+      s.calm = true;
+      clearTimeout(s.wander);
+      const r = el.getBoundingClientRect();
+      const vx = r.left;
+      const vy = window.innerHeight - r.bottom;
+      // Coast a few pixels further along its path, decelerating to a stop.
+      const dx = s.x - vx;
+      const dy = s.y - vy;
+      const len = Math.hypot(dx, dy) || 1;
+      const coast = Math.min(16, len);
+      s.x = vx + (dx / len) * coast;
+      s.y = vy + (dy / len) * coast;
+      place('transform 0.7s cubic-bezier(0.15, 0.7, 0.3, 1)');
+    };
+    const checkCursor = () => {
+      if (!hasMouse) return;
+      const r = el.getBoundingClientRect();
+      const d = Math.hypot(lastMouseX - (r.left + r.width / 2), lastMouseY - (r.top + r.height / 2));
+      if (!s.calm && d < NEAR && !s.clicking && !s.parked) {
+        settle();
+      } else if (s.calm && d > FAR) {
+        s.calm = false;
+        clearTimeout(s.wander);
+        s.wander = setTimeout(step, 700);
+      }
+    };
     const EYE_MAX = 0.5; // max pupil shift in SVG units — keeps the pupil inside the eye
     const tickEyes = () => {
       if (s.cancelled) return;
@@ -224,6 +257,7 @@ function HeroMascot() {
         s.eyeY += (ty - s.eyeY) * 0.2;
         pupils.setAttribute('transform', `translate(${s.eyeX.toFixed(3)} ${s.eyeY.toFixed(3)})`);
       }
+      checkCursor();
       s.eyeRaf = requestAnimationFrame(tickEyes);
     };
     if (finePointer && !reduce) {
@@ -247,6 +281,7 @@ function HeroMascot() {
     const s = st.current;
     if (!el || s.clicking || !s.glideToButton) return;
     s.clicking = true;
+    s.calm = false;
     clearTimeout(s.wander);
 
     const arrive = s.glideToButton(2.4) + 40; // progressive glide (0 if already parked)

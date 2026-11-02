@@ -27,7 +27,6 @@ export default function FloatingContact() {
       aria-label={t('nav.contactFloating')}
     >
       <span className="floating-contact-text">{t('nav.contactFloating')}</span>
-      <span className="floating-contact-wave" aria-hidden="true">👋</span>
     </Link>
   );
 }

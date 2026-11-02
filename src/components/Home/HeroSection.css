@@ -210,6 +210,12 @@
   cursor: pointer;
   will-change: transform;
 }
+/* Invisible hit area around the sprite, so it's easier to click or tap. */
+.hero-mascot::before {
+  content: '';
+  position: absolute;
+  inset: -16px;
+}
 .hero-mascot:focus-visible {
   outline: 2px solid #f4b942;
   outline-offset: 4px;
