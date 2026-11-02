@@ -467,6 +467,43 @@
             "spreadsheets": "Des tableurs examinés lors d'audits contenaient des erreurs",
             "cellErrors": "Des cellules de formule étaient fausses en moyenne, environ 1 sur 25",
             "searching": "Des personnes disent passer trop de temps à chercher des informations pendant leur journée"
+          },
+          "examples": {
+            "heading": "Ce qu’un outil sur mesure pourrait prendre en charge",
+            "subtitle": "Des tâches courantes qui dépassent les tableurs, les e-mails et la mémoire, et comment elles fonctionneraient avec une application simple conçue pour elles.",
+            "afterLabel": "Avec un outil sur mesure",
+            "items": [
+              {
+                "title": "Suivi et documents des clients",
+                "today": "Les clients écrivent pour savoir où en est leur dossier ou pour recevoir à nouveau un fichier.",
+                "automated": "Les clients se connectent à un portail pour voir l’avancement, leurs documents et leurs factures quand ils en ont besoin."
+              },
+              {
+                "title": "Un tableur partagé",
+                "today": "Plusieurs personnes modifient le même tableur, les formules cassent et personne ne sait quelle version est la bonne.",
+                "automated": "Une application simple avec des formulaires, des contrôles sur la saisie, un accès par personne et l’historique de chaque modification."
+              },
+              {
+                "title": "Devis",
+                "today": "Chaque devis est préparé à la main, et les prix dépendent de la personne qui le rédige.",
+                "automated": "Un générateur de devis applique vos prix et vos règles et produit un PDF à vos couleurs en quelques minutes."
+              },
+              {
+                "title": "Stocks et fournitures",
+                "today": "Le stock est compté à la main, et vous découvrez une rupture quand un client demande l’article.",
+                "automated": "Le stock se met à jour à chaque vente ou livraison, et vous êtes alerté avant qu’un article ne manque."
+              },
+              {
+                "title": "Plannings du personnel",
+                "today": "Les plannings sont faits dans un tableur et les changements se perdent dans un groupe de discussion.",
+                "automated": "Les plannings sont centralisés, chacun voit ses horaires sur son téléphone et les échanges attendent votre validation."
+              },
+              {
+                "title": "Suivi des chantiers et commandes",
+                "today": "Les dossiers sont sur un tableau blanc, dans des notes et dans la tête de chacun.",
+                "automated": "Chaque dossier est suivi de la demande à la facture, et toute l’équipe voit où il en est."
+              }
+            ]
           }
         }
       }

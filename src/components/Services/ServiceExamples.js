@@ -5,8 +5,8 @@ import Reveal from '../common/Reveal';
 
 /**
  * Everyday tasks a service can take over, each shown as how it works today
- * and how it works once automated. Rendered only for categories whose copy
- * has page.examples.
+ * and how it works afterwards. Rendered only for categories whose copy has
+ * page.examples; `afterLabel` there overrides the default "Automated".
  */
 function ServiceExamples({ serviceKey, examples }) {
   const t = useTranslations('services.detail.examples');
@@ -37,7 +37,7 @@ function ServiceExamples({ serviceKey, examples }) {
                   <dd>{item.today}</dd>
                 </div>
                 <div className="service-example-row is-automated">
-                  <dt>{t('automated')}</dt>
+                  <dt>{examples.afterLabel || t('automated')}</dt>
                   <dd>{item.automated}</dd>
                 </div>
               </dl>

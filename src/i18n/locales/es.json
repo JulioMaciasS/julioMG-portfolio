@@ -467,6 +467,43 @@
             "spreadsheets": "De las hojas de cálculo revisadas en auditorías contenían errores",
             "cellErrors": "De las celdas con fórmulas eran incorrectas de media, alrededor de 1 de cada 25",
             "searching": "De las personas dicen pasar demasiado tiempo de su jornada buscando información"
+          },
+          "examples": {
+            "heading": "Lo que podría resolver una herramienta a medida",
+            "subtitle": "Tareas cotidianas que se le quedan grandes a las hojas de cálculo, el correo y la memoria, y cómo funcionarían con una aplicación sencilla pensada para ellas.",
+            "afterLabel": "Con una herramienta a medida",
+            "items": [
+              {
+                "title": "Novedades y documentos para clientes",
+                "today": "Los clientes escriben para preguntar cómo va su encargo o para que les reenvíes un archivo.",
+                "automated": "Los clientes entran en un portal y ven el estado, sus documentos y facturas cuando los necesitan."
+              },
+              {
+                "title": "Una hoja de cálculo compartida",
+                "today": "Varias personas editan la misma hoja, las fórmulas se rompen y nadie sabe qué versión es la buena.",
+                "automated": "Una aplicación sencilla con formularios, comprobaciones de lo que se introduce, un acceso por persona y el historial de cada cambio."
+              },
+              {
+                "title": "Presupuestos",
+                "today": "Cada presupuesto se monta a mano y los precios dependen de quién lo haga.",
+                "automated": "Un generador de presupuestos aplica tus precios y reglas y crea un PDF con tu marca en un par de minutos."
+              },
+              {
+                "title": "Stock y material",
+                "today": "El stock se cuenta a mano y te enteras de que algo se ha agotado cuando un cliente lo pide.",
+                "automated": "El stock se actualiza con cada venta o entrega y recibes un aviso antes de que algo se acabe."
+              },
+              {
+                "title": "Turnos del personal",
+                "today": "Los turnos se planifican en una hoja de cálculo y los cambios se pierden en un grupo de chat.",
+                "automated": "Los turnos se planifican en un solo sitio, cada persona ve los suyos en el móvil y los cambios esperan tu aprobación."
+              },
+              {
+                "title": "Seguimiento de trabajos y pedidos",
+                "today": "Los trabajos están en una pizarra, en notas y en la cabeza de cada uno.",
+                "automated": "Cada trabajo se sigue desde la solicitud hasta la factura, y cualquiera del equipo ve en qué punto está."
+              }
+            ]
           }
         }
       }

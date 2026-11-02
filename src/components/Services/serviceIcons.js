@@ -1,6 +1,7 @@
 import {
   Globe, Hotel, Search, Bot, Wrench,
   MessagesSquare, MailCheck, CalendarCheck, Receipt, ScanText, BarChart3,
+  UserRound, Sheet, Calculator, Package, CalendarDays, ClipboardList,
 } from 'lucide-react';
 
 // One icon per service, keyed like services.categories.
@@ -22,8 +23,9 @@ export const OFFER_ART = {
   software: ['dashboard', 'webapp'],
 };
 
-// One icon per "What you could automate" example, in the same order as the
-// category's page.examples.items.
+// One icon per example on a service page ("What you could automate" and the
+// like), in the same order as the category's page.examples.items.
 export const EXAMPLE_ICONS = {
   automation: [MessagesSquare, MailCheck, CalendarCheck, Receipt, ScanText, BarChart3],
+  software: [UserRound, Sheet, Calculator, Package, CalendarDays, ClipboardList],
 };

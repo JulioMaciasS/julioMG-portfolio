@@ -467,6 +467,43 @@
             "spreadsheets": "Of the spreadsheets checked in audit studies contained errors",
             "cellErrors": "Of formula cells were wrong on average, about 1 in 25",
             "searching": "Of people say they spend too much of their workday searching for information"
+          },
+          "examples": {
+            "heading": "What a custom tool could take over",
+            "subtitle": "Everyday jobs that outgrow spreadsheets, email and memory, and how a simple app built around them would work.",
+            "afterLabel": "With a custom tool",
+            "items": [
+              {
+                "title": "Client updates and documents",
+                "today": "Clients email to ask how their job is going or to get a file sent again.",
+                "automated": "Clients log in to a portal to see the status, their documents and invoices whenever they need them."
+              },
+              {
+                "title": "A shared spreadsheet",
+                "today": "Several people edit the same spreadsheet, formulas break and nobody knows which version is right.",
+                "automated": "A simple app with forms, checks on what is entered, a login for each person and a history of every change."
+              },
+              {
+                "title": "Quotes and estimates",
+                "today": "Each quote is put together by hand, and prices depend on who writes it.",
+                "automated": "A quote builder applies your prices and rules and produces a branded PDF in a couple of minutes."
+              },
+              {
+                "title": "Stock and supplies",
+                "today": "Stock is counted by hand, and you find out something has run out when a customer asks for it.",
+                "automated": "Stock updates with every sale or delivery, and you get an alert before anything runs low."
+              },
+              {
+                "title": "Staff rotas",
+                "today": "Shifts are planned in a spreadsheet and changes get lost in a group chat.",
+                "automated": "Shifts are planned in one place, staff see theirs on their phone and swaps wait for your approval."
+              },
+              {
+                "title": "Tracking jobs and orders",
+                "today": "Jobs live on a whiteboard, in notes and in people’s heads.",
+                "automated": "Every job is tracked from request to invoice, so anyone on the team can see where it stands."
+              }
+            ]
           }
         }
       }
