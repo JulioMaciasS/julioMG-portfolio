@@ -128,7 +128,9 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
-  gap: 12px;
+  /* Tight enough for six icons beside the date on one line in the
+     four-column home grid. */
+  gap: 8px;
 }
 .pcard-tech-item {
   position: relative;
@@ -136,8 +138,8 @@
   align-items: center;
 }
 .pcard-tech-icon {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   object-fit: contain;
   opacity: 0.85;
   transition: opacity 0.18s ease, transform 0.18s ease;
