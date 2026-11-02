@@ -1,0 +1,192 @@
+import React from 'react';
+import Link from '../LocalizedLink';
+import { useTranslations } from 'next-intl';
+import { Button } from '../Button';
+import { ChevronRight, Check } from 'lucide-react';
+import { SERVICES } from '../../data/services';
+import { PROJECTS } from '../../data/projects';
+import { TESTIMONIALS } from '../../data/testimonials';
+import { OFFER_ART } from './serviceIcons';
+import SupportStrip from './SupportStrip';
+import ServiceShot from './ServiceShot';
+import ServiceRow from './ServiceRow';
+import ServiceIllustration from './ServiceIllustration';
+import OfferIllustration from './OfferIllustration';
+import ServiceResults from './ServiceResults';
+import ServiceExamples from './ServiceExamples';
+import TestimonialCard from '../common/TestimonialCard';
+import Reveal from '../common/Reveal';
+import LayeredWaves from '../common/LayeredWaves';
+import SectionDivider from '../common/SectionDivider';
+import './ServicesSection.css';
+
+// A single service page: an illustration of the service, what's included,
+// real screenshots from client work and a short FAQ, built from the same
+// services.categories copy as the overview.
+function ServiceDetail({ service }) {
+  const t = useTranslations();
+  const categories = t.raw('services.categories');
+  const copyFor = (key) => categories.find((c) => c.key === key);
+  const category = copyFor(service.key);
+  const offerArt = OFFER_ART[service.key];
+  const others = SERVICES.filter((s) => s.key !== service.key);
+  const quotes = TESTIMONIALS.filter((item) => service.testimonials?.includes(item.project));
+  const resolveShot = (visual) => {
+    const project = PROJECTS.find((p) => p.id === visual.project);
+    return {
+      ...visual,
+      href: project.link,
+      caption: t(visual.caption),
+      projectTitle: t(`projects.items.${project.id}.title`),
+    };
+  };
+  const shots = service.screenshots.map(resolveShot);
+
+  return (
+    <main className="services-page">
+      <section className="services-hero service-detail-hero">
+        <div className="services-hero-overlay" />
+        <div className="services-hero-content service-detail-hero-grid">
+          <div className="service-detail-hero-text">
+            <nav className="service-breadcrumb" aria-label="Breadcrumb">
+              <Link to="/services">{t('services.detail.breadcrumb')}</Link>
+              <ChevronRight size={14} aria-hidden="true" />
+              <span aria-current="page">{category.title}</span>
+            </nav>
+            <h1 className="services-title">{category.title}</h1>
+            <p className="services-subtitle">{category.page.intro}</p>
+            <div className="services-hero-cta">
+              <Link to="/contact-me#book-a-call">
+                <Button buttonStyle="btn--primary" buttonSize="btn--large" buttonShape="btn--round">
+                  {t('services.hero.bookCall')}
+                </Button>
+              </Link>
+            </div>
+          </div>
+          {service.heroShot ? (
+            <ServiceShot {...resolveShot(service.heroShot)} eager className="service-shot--hero" />
+          ) : (
+            <div className="service-shot service-shot--hero">
+              <div className="service-shot-frame service-illustration-frame">
+                <ServiceIllustration type={service.illustration} />
+              </div>
+            </div>
+          )}
+        </div>
+      </section>
+
+      <section className="services-grid-section">
+        <LayeredWaves colors={['#2b2725', '#221f1e', '#1a1717']} height={104} />
+        <div className="services-section-head">
+          <h2>{t('services.detail.possible')}</h2>
+          <p>{category.pitch}</p>
+        </div>
+        <div className="service-offer-grid">
+          {category.offers.map((offer, index) => (
+            <Reveal as="article" key={offer.title} delay={index * 60} className="service-offer">
+              <div className="service-offer-art">
+                <OfferIllustration type={offerArt[index]} />
+              </div>
+              <div className="service-offer-body">
+                <h3>{offer.title}</h3>
+                <p>{offer.description}</p>
+                <ul className="service-offer-points">
+                  {offer.points.map((point) => (
+                    <li key={point}>
+                      <Check size={14} strokeWidth={3} aria-hidden="true" />
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+        <p className="service-offer-note">{t('services.detail.possibleNote')}</p>
+      </section>
+
+      {quotes.length > 0 && (
+        <section className="service-detail-quotes">
+          <div className="services-section-head">
+            <h2>{t('services.testimonials.heading')}</h2>
+          </div>
+          <div className="services-testimonials-list">
+            {quotes.map((item) => (
+              <Reveal key={item.name}>
+                <TestimonialCard testimonial={item} />
+              </Reveal>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {category.page.examples && (
+        <ServiceExamples serviceKey={service.key} examples={category.page.examples} />
+      )}
+
+      <ServiceResults
+        results={service.results}
+        labels={category.page.results}
+        // The band's curved top continues whichever section sits above it.
+        above={category.page.examples ? '#f6f3ec' : '#ffffff'}
+      />
+
+      <section className="service-detail-gallery">
+        <SectionDivider variant="diagonal" color="#1a1717" accent />
+        <div className="services-section-head">
+          <h2>{t('services.detail.gallery')}</h2>
+        </div>
+        <div className={`service-detail-shots service-detail-shots--${shots.length}`}>
+          {shots.map((shot, index) => (
+            <Reveal key={shot.src} delay={index * 80}>
+              <ServiceShot {...shot} />
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      <SupportStrip />
+
+      {/* FAQ: same content as the FAQPage structured data on this page */}
+      <section className="services-faq" id="faq">
+        <div className="services-section-head">
+          <h2>{t('services.detail.faq')}</h2>
+        </div>
+        <div className="services-faq-list">
+          {category.page.faq.map((item) => (
+            <details key={item.q} className="services-faq-item">
+              <summary>{item.q}</summary>
+              <p>{item.a}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+
+      <section className="service-detail-others">
+        <div className="services-section-head">
+          <h2>{t('services.detail.others')}</h2>
+        </div>
+        <nav className="service-rows" aria-label={t('services.detail.others')}>
+          {others.map((other) => (
+            <ServiceRow key={other.key} service={other} category={copyFor(other.key)} />
+          ))}
+        </nav>
+      </section>
+
+      <section className="services-cta">
+        <LayeredWaves colors={['#ebebeb', '#f5f5f5', '#ffffff']} height={92} speed="slow" />
+        <Reveal className="relative z-10">
+          <h2>{t('services.cta.heading')}</h2>
+          <p>{t('services.cta.text')}</p>
+          <Link to="/contact-me#book-a-call">
+            <Button buttonStyle="btn--primary" buttonSize="btn--large" buttonShape="btn--round">
+              {t('services.cta.button')}
+            </Button>
+          </Link>
+        </Reveal>
+      </section>
+    </main>
+  );
+}
+
+export default ServiceDetail;

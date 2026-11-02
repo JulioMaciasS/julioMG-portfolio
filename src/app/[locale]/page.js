@@ -6,6 +6,7 @@ import Marquee from '@/components/Home/Marquee';
 import AboutMe from '@/components/Home/AboutMe';
 import FeaturedProject from '@/components/Home/FeaturedProject';
 import CardsSection from '@/components/Home/CardsSection';
+import HomeServices from '@/components/Home/HomeServices';
 import Testimonials from '@/components/Home/Testimonials';
 import ServicesCta from '@/components/Home/ServicesCta';
 import SectionDivider from '@/components/common/SectionDivider';
@@ -36,6 +37,9 @@ export default function HomePage({ params: { locale } }) {
 
       {/* Flagship: the product I founded */}
       <FeaturedProject id="after-hero" />
+
+      {/* What I offer: the five services */}
+      <HomeServices />
 
       {/* Proof: latest work */}
       <CardsSection />

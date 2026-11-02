@@ -83,6 +83,11 @@
       ],
       "visit": "Visit discentik.com",
       "read": "Read the case study"
+    },
+    "services": {
+      "heading": "How I can help",
+      "subtitle": "Five ways I help small businesses, from a first website to software built around how you work.",
+      "all": "See all services"
     }
   },
   "projects": {
@@ -124,16 +129,9 @@
       "description": "Websites, online booking, SEO and GEO, AI automation and custom software for small businesses. A free first call and a fixed quote, in English or Spanish."
     },
     "hero": {
-      "eyebrow": "Freelance web developer",
-      "title": "Websites and tools that bring in customers and save you time",
-      "bookCall": "Book a free call",
-      "seeWork": "See my work",
-      "subtitle": "I'm Julio, founder of Discentik and a freelance developer. I build websites, online booking, AI automations and simple internal tools for small businesses, explained in plain language and looked after once they are live.",
-      "techLine": "Built with modern, reliable technology: Next.js, React, Supabase and Cloudflare."
-    },
-    "grid": {
-      "heading": "How I can help",
-      "subtitle": "Six areas, each with a few clear offers. Every project starts with a free call and a fixed quote."
+      "title": "Services for small businesses",
+      "subtitle": "Websites, hotel booking, SEO, AI automation and custom software. Every project starts with a free call and a fixed quote.",
+      "bookCall": "Book a free call"
     },
     "why": {
       "heading": "Why work with me",
@@ -141,8 +139,10 @@
       "point1Text": "A direct-booking website and pricing tool for a hotel in Patagonia, and a website, blog and lead-capture page for a family lawyer in Málaga. All of them are live today.",
       "point2Lead": "Big-company standards.",
       "point2Text": "I built software at Citi, so your project gets the same care for testing, security and reliability.",
+      "point2Alt": "Julio Macias Gonzalez outside a Citi office",
       "point3Lead": "You talk to the person doing the work.",
       "point3Text": "No account managers, no hand-offs and no jargon. I explain your options in plain language, in English or Spanish.",
+      "point3Alt": "Julio Macias Gonzalez going through a project on a laptop with someone",
       "caseStudyLink": "Read the hotel case study"
     },
     "process": {
@@ -170,7 +170,7 @@
     "categories": [
       {
         "key": "websites",
-        "title": "Websites",
+        "title": "Websites and online booking",
         "pitch": "A professional online presence that wins customers.",
         "offers": [
           {
@@ -199,8 +199,39 @@
               "Your content and Google rankings kept",
               "Faster, more secure and easier to update"
             ]
+          },
+          {
+            "title": "Privacy and analytics",
+            "description": "See how visitors use your site, while respecting their privacy.",
+            "points": [
+              "Analytics that only load after visitors consent",
+              "A cookie banner that works properly",
+              "Old data deleted on a schedule"
+            ]
           }
-        ]
+        ],
+        "page": {
+          "metaTitle": "Business Websites and Online Booking | Julio Macias",
+          "metaDescription": "Fast, multilingual business websites with online booking and payments, built to turn visitors into enquiries. A free first call and a fixed quote.",
+          "intro": "A fast, professional website that brings in enquiries, in every language your customers speak. If you take bookings, customers can book and pay on your own site instead of through platforms that charge commission.",
+          "faq": [
+            {
+              "q": "Can you move my current website without losing my Google rankings?",
+              "a": "Yes. I move sites from WordPress, Wix or older custom builds, keeping your content and, where possible, your existing addresses, so Google can carry over the rankings you already have."
+            },
+            {
+              "q": "Can customers pay online?",
+              "a": "Yes. Bookings and payments can happen on your own site, with online payments or payment links, connected to the booking or reservation system you already use."
+            }
+          ],
+          "results": {
+            "conversion": "Higher conversion rate for a site that loads in 1 second than for one that takes 5",
+            "conversionBefore": "Loads in 5 seconds",
+            "conversionAfter": "Loads in 1 second",
+            "bounce": "Higher chance a visitor leaves when a page takes 3 seconds to load instead of 1",
+            "speed": "More conversions on retail sites when the mobile site loads just 0.1 seconds faster"
+          }
+        }
       },
       {
         "key": "hotels",
@@ -212,17 +243,17 @@
             "description": "Take bookings on your own website instead of paying platform commission, with the Cloudbeds booking engine built into your site.",
             "points": [
               "The right tax for each guest, based on where they live",
-              "Prices set in one currency and charged in another, at a checked exchange rate",
+              "Rules specific to your hotel, such as charging in a second currency",
               "Price breakdown and bed choice saved on every reservation"
             ]
           },
           {
-            "title": "Rate management tools",
-            "description": "An internal tool where your team sets prices once and publishes them to Cloudbeds.",
+            "title": "Custom tools for your team",
+            "description": "Internal tools built around the way your hotel works. For example, a rate tool where staff set prices once and publish them to Cloudbeds.",
             "points": [
-              "A price calendar for a single day, a date range or a whole season by CSV",
-              "Preview every change, then publish it and check it against Cloudbeds",
-              "Exchange-rate updates that wait for a person to approve them"
+              "Price calendars, bulk changes or CSV imports",
+              "Every change previewed, then checked against Cloudbeds",
+              "Approval steps before anything goes live"
             ]
           },
           {
@@ -234,11 +265,33 @@
               "Cloudbeds credentials kept on the server, never in the browser"
             ]
           }
-        ]
+        ],
+        "page": {
+          "metaTitle": "Websites and Tools for Hotels on Cloudbeds | Julio Macias",
+          "metaDescription": "Direct-booking websites, rate management tools and Cloudbeds API integrations for independent hotels, based on a live project for a hotel in Patagonia.",
+          "intro": "If your hotel runs on Cloudbeds, you can sell direct from your own website and manage your rates without leaving the system you already use. I built exactly this for Los Lagos Hotel in Patagonia: a bilingual direct-booking website and an internal rate tool, both connected to Cloudbeds.",
+          "faq": [
+            {
+              "q": "Is the booking engine still Cloudbeds?",
+              "a": "Yes. Your site embeds the Cloudbeds booking engine, so reservations, rates and availability stay in Cloudbeds. I add what your hotel needs around it, such as tax based on where the guest lives or a choice of bed type."
+            },
+            {
+              "q": "Can you build something specific to my hotel?",
+              "a": "Yes. Cloudbeds' API makes it possible to build around the way your hotel works. For Los Lagos Hotel, for example, I built a tool that watches the exchange rate and recalculates peso prices, with staff approving each change before it goes live. Other examples are deposit or cancellation rules, automatic guest messages, or one report that brings together data from Cloudbeds and your other tools."
+            }
+          ],
+          "results": {
+            "bookingValue": "Higher average booking value on a hotel's own website than through global distribution systems",
+            "bookingValueBefore": "Global distribution systems",
+            "bookingValueAfter": "Hotel's own website",
+            "directRevenue": "More revenue, at best, from a direct booking than from other booking sources",
+            "travelSpeed": "More conversions on travel sites when the mobile site loads just 0.1 seconds faster"
+          }
+        }
       },
       {
         "key": "visibility",
-        "title": "Get found online",
+        "title": "SEO and AI visibility",
         "pitch": "Be found on Google and recommended by AI assistants.",
         "offers": [
           {
@@ -259,7 +312,27 @@
               "Consistent business details across the web"
             ]
           }
-        ]
+        ],
+        "page": {
+          "metaTitle": "SEO and GEO for Small Businesses | Julio Macias",
+          "metaDescription": "Technical SEO and generative engine optimisation (GEO), so your business is found on Google and recommended by AI assistants such as ChatGPT.",
+          "intro": "Help customers find you on Google and in the answers of AI assistants such as ChatGPT. I fix the technical basics, structure your information so search engines and AI can understand it, and create pages for each language and location you serve.",
+          "faq": [
+            {
+              "q": "Do I need SEO and GEO, or just one?",
+              "a": "They work together. SEO helps Google understand, index and rank your site; GEO makes the same information easy for AI assistants to understand and recommend. Most of the work, such as clear answers and structured data, helps both."
+            },
+            {
+              "q": "Can you improve the SEO of a site you didn't build?",
+              "a": "Yes. I start with a technical audit of speed, mobile and indexing, then fix what matters most. If your site's platform is holding it back, I'll tell you honestly."
+            }
+          ],
+          "results": {
+            "topResult": "Of clicks go to the first organic result on Google, on average",
+            "noTraffic": "Of pages get no traffic at all from Google",
+            "aiAnswers": "More visibility in AI-generated answers, at best, when a page adds citations, quotes and statistics"
+          }
+        }
       },
       {
         "key": "automation",
@@ -293,7 +366,69 @@
               "Fewer copy-and-paste mistakes"
             ]
           }
-        ]
+        ],
+        "page": {
+          "metaTitle": "AI Assistants and Business Automation | Julio Macias",
+          "metaDescription": "AI assistants, email automation and connected systems that take repetitive work off your plate, with a person approving what matters.",
+          "intro": "Let software handle the repetitive work: answering common questions, following up with new contacts, chasing invoices, preparing reports and keeping your tools in sync. Anything important waits for a person to approve it.",
+          "faq": [
+            {
+              "q": "Will an AI assistant make things up?",
+              "a": "Its answers are based on your own services, prices and policies, and it hands over to a person when needed. Drafts of emails, quotes or reports wait for you to approve them."
+            },
+            {
+              "q": "Which tools can you connect?",
+              "a": "Booking systems, payments, email and mailing lists are the most common. If a tool has an API, it can usually be connected, so information is entered once instead of copied by hand."
+            },
+            {
+              "q": "How do I know what's worth automating?",
+              "a": "Start with tasks that come back every week, follow the same steps and involve copying information from one place to another. On the first call we go through your week and pick the one or two that would save the most time."
+            }
+          ],
+          "results": {
+            "neverReplied": "Of companies never replied to a demo request sent through their website, in a test of 1,000 B2B sites",
+            "replyTime": "Average wait for a first reply from the companies that did answer",
+            "communication": "Of time in Microsoft 365 goes on meetings, email and chat, leaving 43% for creating",
+            "communicationBefore": "Creating documents and spreadsheets",
+            "communicationAfter": "Meetings, email and chat"
+          },
+          "examples": {
+            "heading": "What you could automate",
+            "subtitle": "Everyday tasks that take hours each week and can run on their own, with you approving what matters.",
+            "items": [
+              {
+                "title": "Answering the same questions",
+                "today": "You answer questions about prices, opening hours and availability one message at a time.",
+                "automated": "An assistant answers from your own information and passes anything unusual to you."
+              },
+              {
+                "title": "Replying to new enquiries",
+                "today": "A new enquiry waits in the inbox until someone has time to see it.",
+                "automated": "The person gets an instant reply, you get a notification and the contact is saved for follow-up."
+              },
+              {
+                "title": "Bookings and reminders",
+                "today": "Appointments are arranged by back-and-forth emails or calls, and people forget to turn up.",
+                "automated": "Customers book a free slot online and get confirmations and reminders on their own."
+              },
+              {
+                "title": "Invoices and payment reminders",
+                "today": "Invoices are typed up by hand and unpaid ones are chased when someone remembers.",
+                "automated": "An invoice is created for each booking or order, and polite reminders go out until it is paid."
+              },
+              {
+                "title": "Paperwork and data entry",
+                "today": "Details from emails, forms or PDFs are copied into a spreadsheet by hand.",
+                "automated": "AI reads the document, fills in the fields and leaves anything uncertain for you to check."
+              },
+              {
+                "title": "Weekly reports",
+                "today": "Numbers are gathered from several tools and pasted into a report every week.",
+                "automated": "A summary of the week's bookings, sales and enquiries arrives in your inbox every Monday."
+              }
+            ]
+          }
+        }
       },
       {
         "key": "software",
@@ -318,41 +453,64 @@
               "AI features designed in from the start"
             ]
           }
-        ]
-      },
-      {
-        "key": "support",
-        "title": "Support and advice",
-        "pitch": "Honest advice before you spend, and care after launch.",
-        "offers": [
-          {
-            "title": "Advice and planning",
-            "description": "Work out what you actually need before spending anything.",
-            "points": [
-              "A free first call",
-              "A clear, fixed quote before work starts",
-              "Honest advice, even when the answer is something simpler"
-            ]
+        ],
+        "page": {
+          "metaTitle": "Custom Software, Internal Tools and Web Apps | Julio Macias",
+          "metaDescription": "Internal tools, dashboards and web apps built around how your business works, with user accounts, payments and AI built in.",
+          "intro": "When spreadsheets and manual steps start slowing your team down, a simple app built around how you work can replace them. I build internal tools and dashboards, and larger web apps with accounts, payments and AI.",
+          "faq": [
+            {
+              "q": "Is my data secure?",
+              "a": "Each person gets their own login and permissions, and sensitive operations run on the server, not in the browser. I built software at Citi and bring the same care for testing and security."
+            },
+            {
+              "q": "Can it work with the tools I already use?",
+              "a": "Yes. A custom tool can read from and write to your existing systems through their APIs, the way the rate tool for Los Lagos Hotel works with Cloudbeds."
+            }
+          ],
+          "results": {
+            "spreadsheets": "Of the spreadsheets checked in audit studies contained errors",
+            "cellErrors": "Of formula cells were wrong on average, about 1 in 25",
+            "searching": "Of people say they spend too much of their workday searching for information"
           },
-          {
-            "title": "Maintenance and hosting",
-            "description": "Keep your site fast, secure and working after launch.",
-            "points": [
-              "Updates, fixes and small improvements",
-              "Security updates and checks that everything works",
-              "Hosting set up and looked after for you"
-            ]
-          },
-          {
-            "title": "Privacy and analytics",
-            "description": "See how visitors use your site, while respecting their privacy.",
-            "points": [
-              "Analytics that only load after visitors consent",
-              "A cookie banner that works properly",
-              "Old data deleted on a schedule"
+          "examples": {
+            "heading": "What a custom tool could take over",
+            "subtitle": "Everyday jobs that outgrow spreadsheets, email and memory, and how a simple app built around them would work.",
+            "afterLabel": "With a custom tool",
+            "items": [
+              {
+                "title": "Client updates and documents",
+                "today": "Clients email to ask how their job is going or to get a file sent again.",
+                "automated": "Clients log in to a portal to see the status, their documents and invoices whenever they need them."
+              },
+              {
+                "title": "A shared spreadsheet",
+                "today": "Several people edit the same spreadsheet, formulas break and nobody knows which version is right.",
+                "automated": "A simple app with forms, checks on what is entered, a login for each person and a history of every change."
+              },
+              {
+                "title": "Quotes and estimates",
+                "today": "Each quote is put together by hand, and prices depend on who writes it.",
+                "automated": "A quote builder applies your prices and rules and produces a branded PDF in a couple of minutes."
+              },
+              {
+                "title": "Stock and supplies",
+                "today": "Stock is counted by hand, and you find out something has run out when a customer asks for it.",
+                "automated": "Stock updates with every sale or delivery, and you get an alert before anything runs low."
+              },
+              {
+                "title": "Staff rotas",
+                "today": "Shifts are planned in a spreadsheet and changes get lost in a group chat.",
+                "automated": "Shifts are planned in one place, staff see theirs on their phone and swaps wait for your approval."
+              },
+              {
+                "title": "Tracking jobs and orders",
+                "today": "Jobs live on a whiteboard, in notes and in people’s heads.",
+                "automated": "Every job is tracked from request to invoice, so anyone on the team can see where it stands."
+              }
             ]
           }
-        ]
+        }
       }
     ],
     "faq": {
@@ -387,6 +545,34 @@
           "a": "You get a handover with documentation and training. If you want, I can keep your site updated, secure and working with ongoing support."
         }
       ]
+    },
+    "support": {
+      "title": "Advice before, support after",
+      "text": "Every project starts with a free call and a fixed quote. Once your site is live, I can keep it updated, secure and hosted.",
+      "points": [
+        "A free first call and a clear, fixed quote",
+        "Updates, fixes and security checks",
+        "Hosting set up and looked after for you"
+      ]
+    },
+    "detail": {
+      "breadcrumb": "Services",
+      "possible": "What's possible",
+      "possibleNote": "Every business works differently, so these are examples of what can be built, not a fixed package. I'll shape the project around what you actually need.",
+      "gallery": "From real projects",
+      "faq": "Frequently asked questions",
+      "others": "Other services",
+      "learnMore": "See what's possible",
+      "results": {
+        "heading": "What the research says",
+        "subtitle": "Published studies on what this kind of work tends to change.",
+        "source": "Source: {name}, {year}",
+        "note": "Figures come from the studies linked on each card. They're industry averages, not results from a specific client, and every business is different."
+      },
+      "examples": {
+        "today": "Today",
+        "automated": "Automated"
+      }
     }
   },
   "contact": {

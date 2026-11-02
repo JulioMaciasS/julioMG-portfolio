@@ -1,6 +1,7 @@
 import en from '@/i18n/locales/en.json';
 import { PROJECTS } from '@/data/projects';
 import { TESTIMONIALS } from '@/data/testimonials';
+import { SERVICES, servicePath } from '@/data/services';
 import { SITE_URL, absoluteUrl } from '@/utils/siteConfig';
 
 // llms.txt: a plain-text summary for AI assistants and LLM crawlers (GEO),
@@ -24,13 +25,15 @@ export function GET() {
     `${s.meta.description} Details: ${absoluteUrl('/services', 'en')}`,
     '',
   ];
-  for (const category of s.categories) {
-    lines.push(`### ${category.title}`, '', category.pitch, '');
+  for (const service of SERVICES) {
+    const category = s.categories.find((c) => c.key === service.key);
+    lines.push(`### ${category.title}`, '', `${category.page.intro} Details: ${absoluteUrl(servicePath(service), 'en')}`, '');
     for (const offer of category.offers) {
       lines.push(`- **${offer.title}**: ${offer.description} ${offer.points.join('; ')}.`);
     }
     lines.push('');
   }
+  lines.push(`### ${s.support.title}`, '', `${s.support.text} ${s.support.points.join('; ')}.`, '');
   lines.push('## Case studies', '');
   for (const project of PROJECTS) {
     const item = en.projects.items[project.id];

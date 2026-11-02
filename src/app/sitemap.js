@@ -1,8 +1,9 @@
 import { ALL_LANGS, DEFAULT_LANG, absoluteUrl } from '@/utils/siteConfig';
 import { PROJECTS } from '@/data/projects';
+import { SERVICES, servicePath } from '@/data/services';
 
 // Bump when the general pages change materially; case studies use their own dates.
-const LASTMOD = '2026-10-07';
+const LASTMOD = '2026-10-30';
 const projectDates = Object.fromEntries(
   PROJECTS.map((p) => [p.link, p.updated || p.date])
 );
@@ -12,6 +13,7 @@ const projectDates = Object.fromEntries(
 const PATHS = [
   { path: '/', priority: 1.0 },
   { path: '/services', priority: 0.9 },
+  ...SERVICES.map((service) => ({ path: servicePath(service), priority: 0.8 })),
   { path: '/contact-me', priority: 0.9 },
   { path: '/projects', priority: 0.8 },
   { path: '/projects/loslagoshotel', priority: 0.8 },

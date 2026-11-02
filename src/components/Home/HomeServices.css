@@ -1,0 +1,78 @@
+.home-services {
+  position: relative;
+  overflow: hidden;
+  background: #1a1717;
+  padding: 120px 24px 72px;
+}
+
+.home-services-head {
+  max-width: 640px;
+  margin: 0 auto 44px;
+  text-align: center;
+}
+
+.home-services-head h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(1.9rem, 4vw, 2.4rem);
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 10px;
+}
+
+.home-services-head p {
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.home-services .service-card {
+  border-color: transparent;
+}
+
+.home-services .service-card:hover {
+  border-color: #f4b942;
+}
+
+.home-services-more {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.home-services-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #f4b942;
+}
+
+.home-services-link:hover {
+  color: #f4b942;
+}
+
+[dir='rtl'] .home-services-link svg {
+  transform: scaleX(-1);
+}
+
+/* Phones: text-only cards, so five services don't take five screens. */
+@media (max-width: 640px) {
+  .home-services {
+    padding: 96px 16px 64px;
+  }
+
+  .home-services .services-grid {
+    gap: 12px;
+  }
+
+  .home-services .service-card {
+    padding: 18px 18px 16px;
+  }
+
+  .home-services .service-card-thumb {
+    display: none;
+  }
+}

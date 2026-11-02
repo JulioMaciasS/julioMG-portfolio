@@ -83,6 +83,11 @@
       ],
       "visit": "Visitar discentik.com",
       "read": "Leer el caso completo"
+    },
+    "services": {
+      "heading": "Cómo puedo ayudarte",
+      "subtitle": "Cinco formas de ayudar a pequeñas empresas, desde una primera web hasta software hecho a la medida de tu forma de trabajar.",
+      "all": "Ver todos los servicios"
     }
   },
   "projects": {
@@ -124,16 +129,9 @@
       "description": "Webs, reservas online, SEO y GEO, automatización con IA y software a medida para pequeños negocios. Primera llamada gratuita y presupuesto cerrado."
     },
     "hero": {
-      "eyebrow": "Desarrollador web freelance",
-      "title": "Webs y herramientas que te traen clientes y te ahorran tiempo",
-      "bookCall": "Reserva una llamada gratuita",
-      "seeWork": "Ver mis proyectos",
-      "subtitle": "Soy Julio, fundador de Discentik y desarrollador freelance. Creo webs, reservas online, automatizaciones con IA y herramientas internas sencillas para pequeños negocios, te lo explico sin tecnicismos y me ocupo de ellas una vez publicadas.",
-      "techLine": "Hecho con tecnología moderna y fiable: Next.js, React, Supabase y Cloudflare."
-    },
-    "grid": {
-      "heading": "Cómo puedo ayudarte",
-      "subtitle": "Seis áreas, cada una con unas pocas propuestas claras. Cada proyecto empieza con una llamada gratuita y un presupuesto cerrado."
+      "title": "Servicios para pequeños negocios",
+      "subtitle": "Webs, reservas para hoteles, SEO, automatización con IA y software a medida. Cada proyecto empieza con una llamada gratuita y un presupuesto cerrado.",
+      "bookCall": "Reserva una llamada gratuita"
     },
     "why": {
       "heading": "Por qué trabajar conmigo",
@@ -141,8 +139,10 @@
       "point1Text": "Una web de reservas directas y una herramienta de precios para un hotel en la Patagonia, y una web, un blog y una página de captación para una abogada de familia en Málaga. Todo está publicado y funcionando.",
       "point2Lead": "Estándares de gran empresa.",
       "point2Text": "Desarrollé software en Citi, así que tu proyecto recibe el mismo cuidado en pruebas, seguridad y fiabilidad.",
+      "point2Alt": "Julio Macias Gonzalez frente a una oficina de Citi",
       "point3Lead": "Hablas con quien hace el trabajo.",
       "point3Text": "Sin intermediarios ni tecnicismos. Te explico las opciones con claridad, en español o en inglés.",
+      "point3Alt": "Julio Macias Gonzalez revisando un proyecto en un portátil con otra persona",
       "caseStudyLink": "Leer el caso del hotel"
     },
     "process": {
@@ -170,7 +170,7 @@
     "categories": [
       {
         "key": "websites",
-        "title": "Webs",
+        "title": "Webs y reservas online",
         "pitch": "Una presencia online profesional que consigue clientes.",
         "offers": [
           {
@@ -199,8 +199,39 @@
               "Conservando tu contenido y tu posicionamiento en Google",
               "Más rápida, segura y fácil de actualizar"
             ]
+          },
+          {
+            "title": "Privacidad y analítica",
+            "description": "Entiende cómo usan tu web los visitantes, respetando su privacidad.",
+            "points": [
+              "Analítica que solo se carga tras el consentimiento",
+              "Un banner de cookies que funciona correctamente",
+              "Datos antiguos eliminados de forma programada"
+            ]
           }
-        ]
+        ],
+        "page": {
+          "metaTitle": "Webs para negocios y reservas online | Julio Macias",
+          "metaDescription": "Webs rápidas y multilingües con reservas y pagos online, pensadas para convertir visitas en consultas. Primera llamada gratuita y presupuesto cerrado.",
+          "intro": "Una web rápida y profesional que te trae consultas, en todos los idiomas de tus clientes. Si trabajas con reservas, tus clientes pueden reservar y pagar en tu propia web en lugar de hacerlo en plataformas que cobran comisión.",
+          "faq": [
+            {
+              "q": "¿Puedes migrar mi web actual sin perder mi posicionamiento en Google?",
+              "a": "Sí. Migro webs desde WordPress, Wix o desarrollos antiguos a medida conservando tu contenido y, cuando es posible, tus direcciones actuales, para que Google mantenga el posicionamiento que ya tienes."
+            },
+            {
+              "q": "¿Mis clientes pueden pagar online?",
+              "a": "Sí. Las reservas y los pagos pueden hacerse en tu propia web, con pagos online o enlaces de pago, conectados al sistema de reservas que ya usas."
+            }
+          ],
+          "results": {
+            "conversion": "Más conversión en una web que carga en 1 segundo que en una que tarda 5",
+            "conversionBefore": "Carga en 5 segundos",
+            "conversionAfter": "Carga en 1 segundo",
+            "bounce": "Más probabilidad de que un visitante se vaya si la página tarda 3 segundos en cargar en lugar de 1",
+            "speed": "Más conversiones en tiendas online cuando la web móvil carga solo 0,1 segundos más rápido"
+          }
+        }
       },
       {
         "key": "hotels",
@@ -212,17 +243,17 @@
             "description": "Recibe reservas en tu propia web en lugar de pagar comisión a las plataformas, con el motor de reservas de Cloudbeds integrado en tu sitio.",
             "points": [
               "El impuesto correcto para cada huésped, según dónde reside",
-              "Precios fijados en una moneda y cobrados en otra, con un tipo de cambio verificado",
+              "Reglas propias de tu hotel, como cobrar en una segunda moneda",
               "Desglose del precio y tipo de cama guardados en cada reserva"
             ]
           },
           {
-            "title": "Herramientas de gestión de tarifas",
-            "description": "Una herramienta interna donde tu equipo fija los precios una sola vez y los publica en Cloudbeds.",
+            "title": "Herramientas a medida para tu equipo",
+            "description": "Herramientas internas pensadas para cómo funciona tu hotel. Por ejemplo, una herramienta de tarifas donde el equipo fija los precios una sola vez y los publica en Cloudbeds.",
             "points": [
-              "Calendario de precios por día, por rango de fechas o por temporada completa con un CSV",
-              "Vista previa de cada cambio antes de publicarlo, y verificación contra Cloudbeds",
-              "Cambios de tipo de cambio que esperan la aprobación de una persona"
+              "Calendarios de precios, cambios masivos o importación por CSV",
+              "Vista previa de cada cambio y verificación contra Cloudbeds",
+              "Pasos de aprobación antes de publicar nada"
             ]
           },
           {
@@ -234,11 +265,33 @@
               "Las credenciales de Cloudbeds se quedan en el servidor, nunca en el navegador"
             ]
           }
-        ]
+        ],
+        "page": {
+          "metaTitle": "Webs y herramientas para hoteles con Cloudbeds | Julio Macias",
+          "metaDescription": "Webs de reserva directa, herramientas de gestión de tarifas e integraciones con la API de Cloudbeds para hoteles independientes, basadas en un proyecto real en la Patagonia.",
+          "intro": "Si tu hotel trabaja con Cloudbeds, puedes vender directo desde tu propia web y gestionar tus tarifas sin salir del sistema que ya usas. Eso es justamente lo que construí para Los Lagos Hotel, en la Patagonia: una web bilingüe de reservas directas y una herramienta interna de tarifas, ambas conectadas a Cloudbeds.",
+          "faq": [
+            {
+              "q": "¿El motor de reservas sigue siendo el de Cloudbeds?",
+              "a": "Sí. Tu web integra el motor de reservas de Cloudbeds, así que las reservas, las tarifas y la disponibilidad siguen en Cloudbeds. Yo agrego lo que tu hotel necesita alrededor, como el impuesto según dónde reside el huésped o la elección del tipo de cama."
+            },
+            {
+              "q": "¿Puedes crear algo específico para mi hotel?",
+              "a": "Sí. La API de Cloudbeds permite construir alrededor de cómo funciona tu hotel. Para Los Lagos Hotel, por ejemplo, creé una herramienta que vigila el tipo de cambio y recalcula los precios en pesos, y el personal aprueba cada cambio antes de publicarlo. Otros ejemplos son reglas de depósito o cancelación, mensajes automáticos a los huéspedes o un informe que reúne los datos de Cloudbeds y de tus otras herramientas."
+            }
+          ],
+          "results": {
+            "bookingValue": "Mayor valor medio por reserva en la web del propio hotel que a través de los sistemas globales de distribución",
+            "bookingValueBefore": "Sistemas globales de distribución",
+            "bookingValueAfter": "Web del propio hotel",
+            "directRevenue": "Más ingresos, en el mejor caso, por una reserva directa que por otros canales de reserva",
+            "travelSpeed": "Más conversiones en webs de viajes cuando la web móvil carga solo 0,1 segundos más rápido"
+          }
+        }
       },
       {
         "key": "visibility",
-        "title": "Que te encuentren",
+        "title": "SEO y visibilidad en IA",
         "pitch": "Aparece en Google y en las recomendaciones de los asistentes de IA.",
         "offers": [
           {
@@ -259,7 +312,27 @@
               "Datos de tu negocio coherentes en toda la web"
             ]
           }
-        ]
+        ],
+        "page": {
+          "metaTitle": "SEO y GEO para pequeños negocios | Julio Macias",
+          "metaDescription": "SEO técnico y optimización para IA generativa (GEO) para que tu negocio aparezca en Google y en las recomendaciones de asistentes como ChatGPT.",
+          "intro": "Haz que tus clientes te encuentren en Google y en las respuestas de asistentes de IA como ChatGPT. Corrijo la base técnica, estructuro tu información para que los buscadores y la IA la entiendan, y creo páginas para cada idioma y zona en la que trabajas.",
+          "faq": [
+            {
+              "q": "¿Necesito SEO y GEO, o solo uno de los dos?",
+              "a": "Funcionan juntos. El SEO ayuda a Google a entender, indexar y posicionar tu web; el GEO hace que esa misma información sea fácil de entender y recomendar para los asistentes de IA. La mayor parte del trabajo, como las respuestas claras y los datos estructurados, sirve para los dos."
+            },
+            {
+              "q": "¿Puedes mejorar el SEO de una web que no hiciste tú?",
+              "a": "Sí. Empiezo con una auditoría técnica de velocidad, móvil e indexación, y después corrijo lo que más importa. Si la plataforma de tu web te está frenando, te lo digo con sinceridad."
+            }
+          ],
+          "results": {
+            "topResult": "De los clics van al primer resultado orgánico de Google, de media",
+            "noTraffic": "De las páginas no reciben ninguna visita desde Google",
+            "aiAnswers": "Más visibilidad en respuestas generadas por IA, en el mejor caso, cuando una página añade citas, fuentes y datos"
+          }
+        }
       },
       {
         "key": "automation",
@@ -293,7 +366,69 @@
               "Menos errores de copiar y pegar"
             ]
           }
-        ]
+        ],
+        "page": {
+          "metaTitle": "Asistentes con IA y automatización para negocios | Julio Macias",
+          "metaDescription": "Asistentes con IA, email automático y sistemas conectados que te quitan el trabajo repetitivo, con una persona aprobando lo importante.",
+          "intro": "Deja el trabajo repetitivo al software: responder preguntas frecuentes, hacer el seguimiento de nuevos contactos, reclamar facturas, preparar informes y mantener tus herramientas sincronizadas. Todo lo importante espera la aprobación de una persona.",
+          "faq": [
+            {
+              "q": "¿Un asistente con IA puede inventarse cosas?",
+              "a": "Sus respuestas se basan en tus propios servicios, precios y condiciones, y pasa la conversación a una persona cuando hace falta. Los borradores de correos, presupuestos o informes esperan a que los apruebes."
+            },
+            {
+              "q": "¿Qué herramientas puedes conectar?",
+              "a": "Lo más habitual son sistemas de reservas, pagos, correo y listas de correo. Si una herramienta tiene API, normalmente se puede conectar, para cargar la información una sola vez en lugar de copiarla a mano."
+            },
+            {
+              "q": "¿Cómo sé qué merece la pena automatizar?",
+              "a": "Empieza por las tareas que se repiten cada semana, siguen siempre los mismos pasos y consisten en copiar información de un sitio a otro. En la primera llamada repasamos tu semana y elegimos las una o dos que más tiempo te ahorrarían."
+            }
+          ],
+          "results": {
+            "neverReplied": "De las empresas nunca respondieron a una solicitud de demo enviada desde su web, en una prueba con 1.000 webs B2B",
+            "replyTime": "Espera media hasta la primera respuesta de las empresas que sí contestaron",
+            "communication": "Del tiempo en Microsoft 365 se va en reuniones, correo y chat, y queda un 43 % para crear",
+            "communicationBefore": "Crear documentos y hojas de cálculo",
+            "communicationAfter": "Reuniones, correo y chat"
+          },
+          "examples": {
+            "heading": "Lo que podrías automatizar",
+            "subtitle": "Tareas cotidianas que se llevan horas cada semana y pueden funcionar solas, con tu aprobación en lo importante.",
+            "items": [
+              {
+                "title": "Responder siempre las mismas preguntas",
+                "today": "Respondes preguntas sobre precios, horarios y disponibilidad mensaje a mensaje.",
+                "automated": "Un asistente responde con tu propia información y te pasa lo que se salga de lo normal."
+              },
+              {
+                "title": "Responder a nuevas consultas",
+                "today": "Una consulta nueva espera en la bandeja de entrada hasta que alguien tiene tiempo de verla.",
+                "automated": "La persona recibe una respuesta al instante, a ti te llega un aviso y el contacto queda guardado para el seguimiento."
+              },
+              {
+                "title": "Citas y recordatorios",
+                "today": "Las citas se cuadran con idas y venidas de correos o llamadas, y hay gente que no se presenta.",
+                "automated": "Los clientes reservan un hueco libre en línea y reciben confirmaciones y recordatorios automáticamente."
+              },
+              {
+                "title": "Facturas y recordatorios de pago",
+                "today": "Las facturas se hacen a mano y las impagadas se reclaman cuando alguien se acuerda.",
+                "automated": "Se crea una factura por cada reserva o pedido, y se envían recordatorios amables hasta que se paga."
+              },
+              {
+                "title": "Papeleo e introducción de datos",
+                "today": "Los datos de correos, formularios o PDF se copian a mano en una hoja de cálculo.",
+                "automated": "La IA lee el documento, rellena los campos y te deja para revisar lo que no esté claro."
+              },
+              {
+                "title": "Informes semanales",
+                "today": "Cada semana se recogen cifras de varias herramientas y se pegan en un informe.",
+                "automated": "Cada lunes te llega al correo un resumen con las reservas, ventas y consultas de la semana."
+              }
+            ]
+          }
+        }
       },
       {
         "key": "software",
@@ -318,41 +453,64 @@
               "Funciones de IA pensadas desde el principio"
             ]
           }
-        ]
-      },
-      {
-        "key": "support",
-        "title": "Soporte y asesoramiento",
-        "pitch": "Consejos sinceros antes de invertir y cuidado después del lanzamiento.",
-        "offers": [
-          {
-            "title": "Asesoramiento y planificación",
-            "description": "Descubre lo que de verdad necesitas antes de gastar nada.",
-            "points": [
-              "Una primera llamada gratuita",
-              "Un presupuesto cerrado y claro antes de empezar",
-              "Consejos sinceros, aunque la respuesta sea algo más sencillo"
-            ]
+        ],
+        "page": {
+          "metaTitle": "Software a medida, herramientas internas y aplicaciones web | Julio Macias",
+          "metaDescription": "Herramientas internas, paneles y aplicaciones web adaptadas a cómo trabaja tu negocio, con cuentas de usuario, pagos e IA integrados.",
+          "intro": "Cuando las hojas de cálculo y los pasos manuales empiezan a frenar a tu equipo, una aplicación sencilla pensada para tu forma de trabajar puede reemplazarlos. Creo herramientas internas y paneles, y aplicaciones web más grandes con cuentas, pagos e IA.",
+          "faq": [
+            {
+              "q": "¿Mis datos están seguros?",
+              "a": "Cada persona tiene su propio acceso y sus permisos, y las operaciones sensibles se ejecutan en el servidor, no en el navegador. Desarrollé software en Citi y aplico el mismo cuidado en pruebas y seguridad."
+            },
+            {
+              "q": "¿Puede funcionar con las herramientas que ya uso?",
+              "a": "Sí. Una herramienta a medida puede leer y escribir en tus sistemas actuales a través de sus API, como hace la herramienta de tarifas de Los Lagos Hotel con Cloudbeds."
+            }
+          ],
+          "results": {
+            "spreadsheets": "De las hojas de cálculo revisadas en auditorías contenían errores",
+            "cellErrors": "De las celdas con fórmulas eran incorrectas de media, alrededor de 1 de cada 25",
+            "searching": "De las personas dicen pasar demasiado tiempo de su jornada buscando información"
           },
-          {
-            "title": "Mantenimiento y alojamiento",
-            "description": "Mantén tu web rápida, segura y funcionando después del lanzamiento.",
-            "points": [
-              "Actualizaciones, correcciones y pequeñas mejoras",
-              "Actualizaciones de seguridad y comprobaciones de que todo funciona",
-              "Alojamiento configurado y gestionado por mí"
-            ]
-          },
-          {
-            "title": "Privacidad y analítica",
-            "description": "Entiende cómo usan tu web los visitantes, respetando su privacidad.",
-            "points": [
-              "Analítica que solo se carga tras el consentimiento",
-              "Un banner de cookies que funciona correctamente",
-              "Datos antiguos eliminados de forma programada"
+          "examples": {
+            "heading": "Lo que podría resolver una herramienta a medida",
+            "subtitle": "Tareas cotidianas que se le quedan grandes a las hojas de cálculo, el correo y la memoria, y cómo funcionarían con una aplicación sencilla pensada para ellas.",
+            "afterLabel": "Con una herramienta a medida",
+            "items": [
+              {
+                "title": "Novedades y documentos para clientes",
+                "today": "Los clientes escriben para preguntar cómo va su encargo o para que les reenvíes un archivo.",
+                "automated": "Los clientes entran en un portal y ven el estado, sus documentos y facturas cuando los necesitan."
+              },
+              {
+                "title": "Una hoja de cálculo compartida",
+                "today": "Varias personas editan la misma hoja, las fórmulas se rompen y nadie sabe qué versión es la buena.",
+                "automated": "Una aplicación sencilla con formularios, comprobaciones de lo que se introduce, un acceso por persona y el historial de cada cambio."
+              },
+              {
+                "title": "Presupuestos",
+                "today": "Cada presupuesto se monta a mano y los precios dependen de quién lo haga.",
+                "automated": "Un generador de presupuestos aplica tus precios y reglas y crea un PDF con tu marca en un par de minutos."
+              },
+              {
+                "title": "Stock y material",
+                "today": "El stock se cuenta a mano y te enteras de que algo se ha agotado cuando un cliente lo pide.",
+                "automated": "El stock se actualiza con cada venta o entrega y recibes un aviso antes de que algo se acabe."
+              },
+              {
+                "title": "Turnos del personal",
+                "today": "Los turnos se planifican en una hoja de cálculo y los cambios se pierden en un grupo de chat.",
+                "automated": "Los turnos se planifican en un solo sitio, cada persona ve los suyos en el móvil y los cambios esperan tu aprobación."
+              },
+              {
+                "title": "Seguimiento de trabajos y pedidos",
+                "today": "Los trabajos están en una pizarra, en notas y en la cabeza de cada uno.",
+                "automated": "Cada trabajo se sigue desde la solicitud hasta la factura, y cualquiera del equipo ve en qué punto está."
+              }
             ]
           }
-        ]
+        }
       }
     ],
     "faq": {
@@ -387,6 +545,34 @@
           "a": "Recibes una entrega con documentación y formación. Si quieres, puedo mantener tu web actualizada, segura y funcionando con soporte continuo."
         }
       ]
+    },
+    "support": {
+      "title": "Asesoramiento antes, soporte después",
+      "text": "Cada proyecto empieza con una llamada gratuita y un presupuesto cerrado. Cuando tu web ya está publicada, puedo mantenerla actualizada, segura y alojada.",
+      "points": [
+        "Una primera llamada gratuita y un presupuesto claro y cerrado",
+        "Actualizaciones, correcciones y revisiones de seguridad",
+        "Alojamiento configurado y gestionado por mí"
+      ]
+    },
+    "detail": {
+      "breadcrumb": "Servicios",
+      "possible": "Qué se puede hacer",
+      "possibleNote": "Cada negocio funciona de forma distinta, así que estos son ejemplos de lo que se puede construir, no un paquete cerrado. Adapto el proyecto a lo que realmente necesitas.",
+      "gallery": "De proyectos reales",
+      "faq": "Preguntas frecuentes",
+      "others": "Otros servicios",
+      "learnMore": "Ver qué se puede hacer",
+      "results": {
+        "heading": "Lo que dicen los estudios",
+        "subtitle": "Estudios publicados sobre lo que suele cambiar este tipo de trabajo.",
+        "source": "Fuente: {name}, {year}",
+        "note": "Las cifras proceden de los estudios enlazados en cada tarjeta. Son medias del sector, no resultados de un cliente concreto, y cada negocio es distinto."
+      },
+      "examples": {
+        "today": "Hoy",
+        "automated": "Automatizado"
+      }
     }
   },
   "contact": {

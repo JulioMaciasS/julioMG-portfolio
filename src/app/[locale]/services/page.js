@@ -3,6 +3,8 @@ import { routing } from '@/i18n/routing';
 import { buildMetadata } from '@/utils/seo';
 import ServicesSection from '@/components/Services/ServicesSection';
 import { servicesGraph, JsonLd } from '@/utils/structuredData';
+import { SERVICES, servicePath } from '@/data/services';
+import { absoluteUrl } from '@/utils/siteConfig';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
@@ -26,7 +28,10 @@ export default async function ServicesPage({ params: { locale } }) {
     locale,
     title: t('meta.title'),
     description: t('meta.description'),
-    categories: t.raw('categories'),
+    categories: t.raw('categories').map((category) => ({
+      ...category,
+      url: absoluteUrl(servicePath(SERVICES.find((s) => s.key === category.key)), locale),
+    })),
     faq: t.raw('faq'),
   });
   return (
