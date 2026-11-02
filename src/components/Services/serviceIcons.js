@@ -1,4 +1,7 @@
-import { Globe, Hotel, Search, Bot, Wrench } from 'lucide-react';
+import {
+  Globe, Hotel, Search, Bot, Wrench,
+  MessagesSquare, MailCheck, CalendarCheck, Receipt, ScanText, BarChart3,
+} from 'lucide-react';
 
 // One icon per service, keyed like services.categories.
 export const SERVICE_ICONS = {
@@ -17,4 +20,10 @@ export const OFFER_ART = {
   visibility: ['seo', 'geo'],
   automation: ['assistant', 'leads', 'connect'],
   software: ['dashboard', 'webapp'],
+};
+
+// One icon per "What you could automate" example, in the same order as the
+// category's page.examples.items.
+export const EXAMPLE_ICONS = {
+  automation: [MessagesSquare, MailCheck, CalendarCheck, Receipt, ScanText, BarChart3],
 };

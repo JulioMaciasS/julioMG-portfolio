@@ -238,7 +238,7 @@
             "description": "Take bookings on your own website instead of paying platform commission, with the Cloudbeds booking engine built into your site.",
             "points": [
               "The right tax for each guest, based on where they live",
-              "Prices set in one currency and charged in another, at a checked exchange rate",
+              "Rules specific to your hotel, such as charging in a second currency",
               "Price breakdown and bed choice saved on every reservation"
             ]
           },
@@ -248,7 +248,7 @@
             "points": [
               "A price calendar for a single day, a date range or a whole season by CSV",
               "Preview every change, then publish it and check it against Cloudbeds",
-              "Exchange-rate updates that wait for a person to approve them"
+              "Changes that wait for a person to approve them before going live"
             ]
           },
           {
@@ -271,8 +271,8 @@
               "a": "Yes. Your site embeds the Cloudbeds booking engine, so reservations, rates and availability stay in Cloudbeds. I add what your hotel needs around it, such as tax based on where the guest lives or a choice of bed type."
             },
             {
-              "q": "Can prices update automatically when the exchange rate changes?",
-              "a": "The tool can watch the exchange rate and recalculate your prices, but a person approves the change before it goes live. A sudden or wrong reading should never reprice your rooms on its own."
+              "q": "Can you build something specific to my hotel?",
+              "a": "Yes. Cloudbeds' API makes it possible to build around the way your hotel works. For Los Lagos Hotel, for example, I built a tool that watches the exchange rate and recalculates peso prices, with staff approving each change before it goes live. Other examples are deposit or cancellation rules, automatic guest messages, or one report that brings together data from Cloudbeds and your other tools."
             }
           ],
           "results": {
@@ -365,7 +365,7 @@
         "page": {
           "metaTitle": "AI Assistants and Business Automation | Julio Macias",
           "metaDescription": "AI assistants, email automation and connected systems that take repetitive work off your plate, with a person approving what matters.",
-          "intro": "Let software handle the repetitive work: answering common questions, following up with new contacts and keeping your tools in sync. Anything important waits for a person to approve it.",
+          "intro": "Let software handle the repetitive work: answering common questions, following up with new contacts, chasing invoices, preparing reports and keeping your tools in sync. Anything important waits for a person to approve it.",
           "faq": [
             {
               "q": "Will an AI assistant make things up?",
@@ -374,6 +374,10 @@
             {
               "q": "Which tools can you connect?",
               "a": "Booking systems, payments, email and mailing lists are the most common. If a tool has an API, it can usually be connected, so information is entered once instead of copied by hand."
+            },
+            {
+              "q": "How do I know what's worth automating?",
+              "a": "Start with tasks that come back every week, follow the same steps and involve copying information from one place to another. On the first call we go through your week and pick the one or two that would save the most time."
             }
           ],
           "results": {
@@ -382,6 +386,42 @@
             "communication": "Of time in Microsoft 365 goes on meetings, email and chat, leaving 43% for creating",
             "communicationBefore": "Creating documents and spreadsheets",
             "communicationAfter": "Meetings, email and chat"
+          },
+          "examples": {
+            "heading": "What you could automate",
+            "subtitle": "Everyday tasks that take hours each week and can run on their own, with you approving what matters.",
+            "items": [
+              {
+                "title": "Answering the same questions",
+                "today": "You answer questions about prices, opening hours and availability one message at a time.",
+                "automated": "An assistant answers from your own information and passes anything unusual to you."
+              },
+              {
+                "title": "Replying to new enquiries",
+                "today": "A new enquiry waits in the inbox until someone has time to see it.",
+                "automated": "The person gets an instant reply, you get a notification and the contact is saved for follow-up."
+              },
+              {
+                "title": "Bookings and reminders",
+                "today": "Appointments are arranged by back-and-forth emails or calls, and people forget to turn up.",
+                "automated": "Customers book a free slot online and get confirmations and reminders on their own."
+              },
+              {
+                "title": "Invoices and payment reminders",
+                "today": "Invoices are typed up by hand and unpaid ones are chased when someone remembers.",
+                "automated": "An invoice is created for each booking or order, and polite reminders go out until it is paid."
+              },
+              {
+                "title": "Paperwork and data entry",
+                "today": "Details from emails, forms or PDFs are copied into a spreadsheet by hand.",
+                "automated": "AI reads the document, fills in the fields and leaves anything uncertain for you to check."
+              },
+              {
+                "title": "Weekly reports",
+                "today": "Numbers are gathered from several tools and pasted into a report every week.",
+                "automated": "A summary of the week's bookings, sales and enquiries arrives in your inbox every Monday."
+              }
+            ]
           }
         }
       },
@@ -485,6 +525,10 @@
         "subtitle": "Published studies on what this kind of work tends to change.",
         "source": "Source: {name}, {year}",
         "note": "Figures come from the studies linked on each card. They're industry averages, not results from a specific client, and every business is different."
+      },
+      "examples": {
+        "today": "Today",
+        "automated": "Automated"
       }
     }
   },

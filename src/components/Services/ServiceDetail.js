@@ -12,6 +12,7 @@ import ServiceRow from './ServiceRow';
 import ServiceIllustration from './ServiceIllustration';
 import OfferIllustration from './OfferIllustration';
 import ServiceResults from './ServiceResults';
+import ServiceExamples from './ServiceExamples';
 import Reveal from '../common/Reveal';
 import LayeredWaves from '../common/LayeredWaves';
 import './ServicesSection.css';
@@ -93,6 +94,10 @@ function ServiceDetail({ service }) {
           ))}
         </div>
       </section>
+
+      {category.page.examples && (
+        <ServiceExamples serviceKey={service.key} examples={category.page.examples} />
+      )}
 
       <ServiceResults results={service.results} labels={category.page.results} />
 

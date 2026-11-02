@@ -238,7 +238,7 @@
             "description": "Recevez les réservations sur votre propre site au lieu de payer une commission aux plateformes, avec le moteur de réservation Cloudbeds intégré à votre site.",
             "points": [
               "La bonne taxe pour chaque client, selon son lieu de résidence",
-              "Des prix fixés dans une devise et encaissés dans une autre, à un taux de change vérifié",
+              "Des règles propres à votre hôtel, comme encaisser dans une seconde devise",
               "Le détail du prix et le type de lit enregistrés sur chaque réservation"
             ]
           },
@@ -248,7 +248,7 @@
             "points": [
               "Un calendrier des prix par jour, par période ou pour toute une saison via CSV",
               "Un aperçu de chaque modification, puis une publication vérifiée auprès de Cloudbeds",
-              "Des mises à jour du taux de change qui attendent la validation d'une personne"
+              "Des modifications qui attendent la validation d'une personne avant leur mise en ligne"
             ]
           },
           {
@@ -271,8 +271,8 @@
               "a": "Oui. Votre site intègre le moteur de réservation Cloudbeds : les réservations, les tarifs et les disponibilités restent dans Cloudbeds. J'ajoute autour ce dont votre hôtel a besoin, comme la taxe selon le lieu de résidence du client ou le choix du type de lit."
             },
             {
-              "q": "Les prix peuvent-ils se mettre à jour seuls quand le taux de change bouge ?",
-              "a": "L'outil peut surveiller le taux de change et recalculer vos prix, mais une personne valide le changement avant sa mise en ligne. Une variation brusque ou erronée ne devrait jamais modifier vos tarifs toute seule."
+              "q": "Pouvez-vous créer quelque chose de spécifique à mon hôtel ?",
+              "a": "Oui. L'API de Cloudbeds permet de construire autour du fonctionnement de votre hôtel. Pour Los Lagos Hotel, par exemple, j'ai créé un outil qui surveille le taux de change et recalcule les prix en pesos, l'équipe validant chaque changement avant sa mise en ligne. D'autres exemples : des règles d'acompte ou d'annulation, des messages automatiques aux clients ou un rapport qui réunit les données de Cloudbeds et de vos autres outils."
             }
           ],
           "results": {
@@ -365,7 +365,7 @@
         "page": {
           "metaTitle": "Assistants IA et automatisation pour les entreprises | Julio Macias",
           "metaDescription": "Assistants IA, e-mails automatiques et systèmes connectés qui vous libèrent des tâches répétitives, avec une personne qui valide l'essentiel.",
-          "intro": "Laissez le logiciel gérer le travail répétitif : répondre aux questions fréquentes, relancer les nouveaux contacts et garder vos outils synchronisés. Tout ce qui est important attend la validation d'une personne.",
+          "intro": "Laissez le logiciel gérer le travail répétitif : répondre aux questions fréquentes, relancer les nouveaux contacts, suivre les factures, préparer les rapports et garder vos outils synchronisés. Tout ce qui est important attend la validation d'une personne.",
           "faq": [
             {
               "q": "Un assistant IA peut-il inventer des choses ?",
@@ -374,6 +374,10 @@
             {
               "q": "Quels outils pouvez-vous connecter ?",
               "a": "Le plus souvent : systèmes de réservation, paiements, e-mail et listes de diffusion. Si un outil dispose d'une API, il peut généralement être connecté, pour saisir les informations une seule fois au lieu de les recopier à la main."
+            },
+            {
+              "q": "Comment savoir ce qui vaut la peine d'être automatisé ?",
+              "a": "Commencez par les tâches qui reviennent chaque semaine, suivent toujours les mêmes étapes et consistent à recopier des informations d'un endroit à un autre. Lors du premier appel, nous passons votre semaine en revue et choisissons les une ou deux qui vous feraient gagner le plus de temps."
             }
           ],
           "results": {
@@ -382,6 +386,42 @@
             "communication": "Du temps passé dans Microsoft 365 va aux réunions, e-mails et messages, laissant 43 % à la création",
             "communicationBefore": "Créer documents et tableurs",
             "communicationAfter": "Réunions, e-mails et messages"
+          },
+          "examples": {
+            "heading": "Ce que vous pourriez automatiser",
+            "subtitle": "Des tâches courantes qui prennent des heures chaque semaine et peuvent tourner seules, avec votre validation pour ce qui compte.",
+            "items": [
+              {
+                "title": "Répondre aux mêmes questions",
+                "today": "Vous répondez aux questions sur les prix, les horaires et les disponibilités message par message.",
+                "automated": "Un assistant répond à partir de vos propres informations et vous transmet tout ce qui sort de l'ordinaire."
+              },
+              {
+                "title": "Répondre aux nouvelles demandes",
+                "today": "Une nouvelle demande attend dans la boîte de réception jusqu'à ce que quelqu'un ait le temps de la voir.",
+                "automated": "La personne reçoit une réponse immédiate, vous êtes prévenu et le contact est enregistré pour la relance."
+              },
+              {
+                "title": "Rendez-vous et rappels",
+                "today": "Les rendez-vous se calent à coups d'e-mails ou d'appels, et certains clients oublient de venir.",
+                "automated": "Les clients réservent un créneau libre en ligne et reçoivent confirmations et rappels automatiquement."
+              },
+              {
+                "title": "Factures et relances de paiement",
+                "today": "Les factures sont saisies à la main et les impayés relancés quand quelqu'un y pense.",
+                "automated": "Une facture est créée pour chaque réservation ou commande, et des relances courtoises partent jusqu'au paiement."
+              },
+              {
+                "title": "Paperasse et saisie de données",
+                "today": "Les informations des e-mails, formulaires ou PDF sont recopiées à la main dans un tableur.",
+                "automated": "L'IA lit le document, remplit les champs et vous laisse vérifier ce qui n'est pas sûr."
+              },
+              {
+                "title": "Rapports hebdomadaires",
+                "today": "Chaque semaine, des chiffres sont récupérés dans plusieurs outils et collés dans un rapport.",
+                "automated": "Chaque lundi, un résumé des réservations, ventes et demandes de la semaine arrive dans votre boîte mail."
+              }
+            ]
           }
         }
       },
@@ -485,6 +525,10 @@
         "subtitle": "Des études publiées sur ce que ce type de travail change en général.",
         "source": "Source : {name}, {year}",
         "note": "Les chiffres proviennent des études citées sur chaque carte. Ce sont des moyennes du secteur, pas les résultats d'un client précis, et chaque entreprise est différente."
+      },
+      "examples": {
+        "today": "Aujourd'hui",
+        "automated": "Automatisé"
       }
     }
   },

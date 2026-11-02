@@ -238,7 +238,7 @@
             "description": "Recibe reservas en tu propia web en lugar de pagar comisión a las plataformas, con el motor de reservas de Cloudbeds integrado en tu sitio.",
             "points": [
               "El impuesto correcto para cada huésped, según dónde reside",
-              "Precios fijados en una moneda y cobrados en otra, con un tipo de cambio verificado",
+              "Reglas propias de tu hotel, como cobrar en una segunda moneda",
               "Desglose del precio y tipo de cama guardados en cada reserva"
             ]
           },
@@ -248,7 +248,7 @@
             "points": [
               "Calendario de precios por día, por rango de fechas o por temporada completa con un CSV",
               "Vista previa de cada cambio antes de publicarlo, y verificación contra Cloudbeds",
-              "Cambios de tipo de cambio que esperan la aprobación de una persona"
+              "Cambios que esperan la aprobación de una persona antes de publicarse"
             ]
           },
           {
@@ -271,8 +271,8 @@
               "a": "Sí. Tu web integra el motor de reservas de Cloudbeds, así que las reservas, las tarifas y la disponibilidad siguen en Cloudbeds. Yo agrego lo que tu hotel necesita alrededor, como el impuesto según dónde reside el huésped o la elección del tipo de cama."
             },
             {
-              "q": "¿Los precios pueden actualizarse solos cuando cambia el tipo de cambio?",
-              "a": "La herramienta puede vigilar el tipo de cambio y recalcular tus precios, pero una persona aprueba el cambio antes de publicarlo. Una cotización brusca o errónea nunca debería cambiar tus tarifas por sí sola."
+              "q": "¿Puedes crear algo específico para mi hotel?",
+              "a": "Sí. La API de Cloudbeds permite construir alrededor de cómo funciona tu hotel. Para Los Lagos Hotel, por ejemplo, creé una herramienta que vigila el tipo de cambio y recalcula los precios en pesos, y el personal aprueba cada cambio antes de publicarlo. Otros ejemplos son reglas de depósito o cancelación, mensajes automáticos a los huéspedes o un informe que reúne los datos de Cloudbeds y de tus otras herramientas."
             }
           ],
           "results": {
@@ -365,7 +365,7 @@
         "page": {
           "metaTitle": "Asistentes con IA y automatización para negocios | Julio Macias",
           "metaDescription": "Asistentes con IA, email automático y sistemas conectados que te quitan el trabajo repetitivo, con una persona aprobando lo importante.",
-          "intro": "Deja el trabajo repetitivo al software: responder preguntas frecuentes, hacer el seguimiento de nuevos contactos y mantener tus herramientas sincronizadas. Todo lo importante espera la aprobación de una persona.",
+          "intro": "Deja el trabajo repetitivo al software: responder preguntas frecuentes, hacer el seguimiento de nuevos contactos, reclamar facturas, preparar informes y mantener tus herramientas sincronizadas. Todo lo importante espera la aprobación de una persona.",
           "faq": [
             {
               "q": "¿Un asistente con IA puede inventarse cosas?",
@@ -374,6 +374,10 @@
             {
               "q": "¿Qué herramientas puedes conectar?",
               "a": "Lo más habitual son sistemas de reservas, pagos, correo y listas de correo. Si una herramienta tiene API, normalmente se puede conectar, para cargar la información una sola vez en lugar de copiarla a mano."
+            },
+            {
+              "q": "¿Cómo sé qué merece la pena automatizar?",
+              "a": "Empieza por las tareas que se repiten cada semana, siguen siempre los mismos pasos y consisten en copiar información de un sitio a otro. En la primera llamada repasamos tu semana y elegimos las una o dos que más tiempo te ahorrarían."
             }
           ],
           "results": {
@@ -382,6 +386,42 @@
             "communication": "Del tiempo en Microsoft 365 se va en reuniones, correo y chat, y queda un 43 % para crear",
             "communicationBefore": "Crear documentos y hojas de cálculo",
             "communicationAfter": "Reuniones, correo y chat"
+          },
+          "examples": {
+            "heading": "Lo que podrías automatizar",
+            "subtitle": "Tareas cotidianas que se llevan horas cada semana y pueden funcionar solas, con tu aprobación en lo importante.",
+            "items": [
+              {
+                "title": "Responder siempre las mismas preguntas",
+                "today": "Respondes preguntas sobre precios, horarios y disponibilidad mensaje a mensaje.",
+                "automated": "Un asistente responde con tu propia información y te pasa lo que se salga de lo normal."
+              },
+              {
+                "title": "Responder a nuevas consultas",
+                "today": "Una consulta nueva espera en la bandeja de entrada hasta que alguien tiene tiempo de verla.",
+                "automated": "La persona recibe una respuesta al instante, a ti te llega un aviso y el contacto queda guardado para el seguimiento."
+              },
+              {
+                "title": "Citas y recordatorios",
+                "today": "Las citas se cuadran con idas y venidas de correos o llamadas, y hay gente que no se presenta.",
+                "automated": "Los clientes reservan un hueco libre en línea y reciben confirmaciones y recordatorios automáticamente."
+              },
+              {
+                "title": "Facturas y recordatorios de pago",
+                "today": "Las facturas se hacen a mano y las impagadas se reclaman cuando alguien se acuerda.",
+                "automated": "Se crea una factura por cada reserva o pedido, y se envían recordatorios amables hasta que se paga."
+              },
+              {
+                "title": "Papeleo e introducción de datos",
+                "today": "Los datos de correos, formularios o PDF se copian a mano en una hoja de cálculo.",
+                "automated": "La IA lee el documento, rellena los campos y te deja para revisar lo que no esté claro."
+              },
+              {
+                "title": "Informes semanales",
+                "today": "Cada semana se recogen cifras de varias herramientas y se pegan en un informe.",
+                "automated": "Cada lunes te llega al correo un resumen con las reservas, ventas y consultas de la semana."
+              }
+            ]
           }
         }
       },
@@ -485,6 +525,10 @@
         "subtitle": "Estudios publicados sobre lo que suele cambiar este tipo de trabajo.",
         "source": "Fuente: {name}, {year}",
         "note": "Las cifras proceden de los estudios enlazados en cada tarjeta. Son medias del sector, no resultados de un cliente concreto, y cada negocio es distinto."
+      },
+      "examples": {
+        "today": "Hoy",
+        "automated": "Automatizado"
       }
     }
   },
