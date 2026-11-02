@@ -35,12 +35,15 @@
       "description": "Freelance web developer and founder of Discentik. I build websites, online booking, AI automation and web apps for businesses, with industry experience at Citi."
     },
     "hero": {
-      "badge": "Available for freelance & consulting",
-      "title": "Hi, I'm Julio. I build full-stack web products.",
-      "subtitle": "Software developer and founder of Discentik, an AI learning platform, with industry experience at Citi. I help businesses design, build and ship reliable websites, automations and AI-powered products.",
-      "work": "Work with me",
-      "projects": "View my work",
-      "contact": "or just say hello →",
+      "badge": "Available for new projects",
+      "title": "Hi, I'm Julio. I build websites and software for small businesses.",
+      "proof": {
+        "founder": "Founder of Discentik",
+        "citi": "Industry experience at Citi",
+        "languages": "English and Spanish"
+      },
+      "bookCall": "Book a free call",
+      "seeWork": "See my work",
       "scrollAria": "Scroll to the next section"
     },
     "about": {
