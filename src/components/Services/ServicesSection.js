@@ -16,7 +16,7 @@ import LayeredWaves from '../common/LayeredWaves';
 const WHY = [
   { key: 'point1', visual: 'collage' },
   { key: 'point2', visual: 'citi' },
-  { key: 'point3', visual: 'call' },
+  { key: 'point3', visual: 'together' },
 ];
 
 const PROCESS = [
@@ -60,7 +60,7 @@ function ServicesSection() {
       </section>
 
       {/* Why work with me: each card leads with a picture (client work, a photo
-          at Citi, a call with me) so the section feels personal, not textual. */}
+          at Citi, a photo of me working with someone) so the section feels personal, not textual. */}
       <section className="services-why">
         <div className="services-section-head">
           <h2>{t('services.why.heading')}</h2>
