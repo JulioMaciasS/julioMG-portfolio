@@ -700,7 +700,7 @@
         "quiz": "Aprender: un breve cuestionario comprueba que el estudiante entiende la tarea antes de practicar",
         "feedback": "Feedback: evaluación con IA según los requisitos de la tarea, con lo que se cumplió y lo que faltó",
         "builder": "Instructores: creación de un curso etapa a etapa en el espacio del curso",
-        "progress": "Organizaciones: asignación de un curso a un grupo y seguimiento del progreso de cada miembro"
+        "progress": "Organizaciones: analíticas del equipo con la actividad, la finalización de cursos y quién necesita atención"
       },
       "screenshotsHeading": "Dentro del producto",
       "screenshotsNote": "Pantallas del producto actual, con un curso de demostración preparado.",

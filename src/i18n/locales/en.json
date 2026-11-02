@@ -700,7 +700,7 @@
         "quiz": "Learn: a short quiz checks the learner understands the task before practising",
         "feedback": "Feedback: AI evaluation against the task requirements, with what was met and what was missed",
         "builder": "Instructors: building a course stage by stage in the course workspace",
-        "progress": "Organisations: assigning a course to a group and following each member's progress"
+        "progress": "Organisations: team analytics showing activity, course completion and anyone who needs attention"
       },
       "screenshotsHeading": "Inside the product",
       "screenshotsNote": "Screens from the current product, shown with a prepared demo course.",

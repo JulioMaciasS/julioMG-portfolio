@@ -700,7 +700,7 @@
         "quiz": "Apprendre : un court quiz vérifie que l'apprenant comprend la tâche avant de s'exercer",
         "feedback": "Retour : évaluation par l'IA selon les exigences de la tâche, avec ce qui est atteint et ce qui manque",
         "builder": "Formateurs : création d'un cours étape par étape dans l'espace du cours",
-        "progress": "Organisations : attribution d'un cours à un groupe et suivi de la progression de chaque membre"
+        "progress": "Organisations : statistiques de l'équipe avec l'activité, l'achèvement des cours et les personnes qui ont besoin d'attention"
       },
       "screenshotsHeading": "Dans le produit",
       "screenshotsNote": "Écrans du produit actuel, présentés avec un cours de démonstration préparé.",

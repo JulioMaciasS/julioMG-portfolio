@@ -20,9 +20,9 @@ function Discentik() {
 
   const screenshots = [
     { src: '/images/discentik/quiz.jpg', alt: 'Discentik quiz checking the learner understands the task', caption: t('posts.discentik.captions.quiz') },
-    { src: '/images/discentik/ai-feedback.jpg', alt: 'Discentik AI feedback listing requirements met and not met', caption: t('posts.discentik.captions.feedback') },
+    { src: '/images/discentik/ai-feedback.jpg', alt: 'Discentik AI feedback with the next step and the requirements still missing', caption: t('posts.discentik.captions.feedback') },
     { src: '/images/discentik/instructor-builder.jpg', alt: 'Discentik instructor course workspace with modules and stages', caption: t('posts.discentik.captions.builder') },
-    { src: '/images/discentik/organisation-progress.jpg', alt: 'Discentik organisation group with a course assignment and member progress', caption: t('posts.discentik.captions.progress') }
+    { src: '/images/discentik/organisation-progress.jpg', alt: 'Discentik team analytics with activity over time, completion and overdue assignments', caption: t('posts.discentik.captions.progress') }
   ];
 
   const featureGroups = t.raw('posts.discentik.featureGroups');
