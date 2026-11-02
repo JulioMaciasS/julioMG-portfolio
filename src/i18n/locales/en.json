@@ -218,7 +218,12 @@
               "q": "Can customers pay online?",
               "a": "Yes. Bookings and payments can happen on your own site, with online payments or payment links, connected to the booking or reservation system you already use."
             }
-          ]
+          ],
+          "results": {
+            "enquiries": "Enquiries per month",
+            "loadTime": "Load time on a phone",
+            "bounce": "Visitors who leave straight away"
+          }
         }
       },
       {
@@ -267,7 +272,12 @@
               "q": "Can prices update automatically when the exchange rate changes?",
               "a": "The tool can watch the exchange rate and recalculate your prices, but a person approves the change before it goes live. A sudden or wrong reading should never reprice your rooms on its own."
             }
-          ]
+          ],
+          "results": {
+            "directShare": "Bookings made directly",
+            "commission": "Platform commission per month",
+            "rateHours": "Hours a week updating rates"
+          }
         }
       },
       {
@@ -307,7 +317,12 @@
               "q": "Can you improve the SEO of a site you didn't build?",
               "a": "Yes. I start with a technical audit of speed, mobile and indexing, then fix what matters most. If your site's platform is holding it back, I'll tell you honestly."
             }
-          ]
+          ],
+          "results": {
+            "searchVisitors": "Visitors from search per month",
+            "firstPage": "Searches where you're on page one",
+            "indexed": "Pages Google shows, out of 40"
+          }
         }
       },
       {
@@ -356,7 +371,12 @@
               "q": "Which tools can you connect?",
               "a": "Booking systems, payments, email and mailing lists are the most common. If a tool has an API, it can usually be connected, so information is entered once instead of copied by hand."
             }
-          ]
+          ],
+          "results": {
+            "replyTime": "Minutes to answer a new enquiry",
+            "emailHours": "Hours a week on routine email",
+            "followUp": "Leads that get a follow-up"
+          }
         }
       },
       {
@@ -396,7 +416,12 @@
               "q": "Can it work with the tools I already use?",
               "a": "Yes. A custom tool can read from and write to your existing systems through their APIs, the way the rate tool for Los Lagos Hotel works with Cloudbeds."
             }
-          ]
+          ],
+          "results": {
+            "sheetHours": "Hours a week in spreadsheets",
+            "errors": "Data-entry mistakes per month",
+            "reportTime": "Minutes to prepare the weekly report"
+          }
         }
       }
     ],
@@ -448,7 +473,14 @@
       "gallery": "From real projects",
       "faq": "Frequently asked questions",
       "others": "Other services",
-      "learnMore": "See what's included"
+      "learnMore": "See what's included",
+      "results": {
+        "heading": "What it can change",
+        "subtitle": "Typical before-and-after figures for a small business that starts from a weak setup.",
+        "before": "Before",
+        "after": "After",
+        "note": "Example figures to show the kind of change to expect. They aren't results from a specific client, and every business is different."
+      }
     }
   },
   "contact": {

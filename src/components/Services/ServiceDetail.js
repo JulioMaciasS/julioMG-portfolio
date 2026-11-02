@@ -11,6 +11,7 @@ import ServiceShot from './ServiceShot';
 import ServiceRow from './ServiceRow';
 import ServiceIllustration from './ServiceIllustration';
 import OfferIllustration from './OfferIllustration';
+import ServiceResults from './ServiceResults';
 import Reveal from '../common/Reveal';
 import LayeredWaves from '../common/LayeredWaves';
 import './ServicesSection.css';
@@ -92,6 +93,8 @@ function ServiceDetail({ service }) {
           ))}
         </div>
       </section>
+
+      <ServiceResults results={service.results} labels={category.page.results} />
 
       <section className="service-detail-gallery">
         <div className="services-section-head">

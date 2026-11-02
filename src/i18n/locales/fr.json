@@ -218,7 +218,12 @@
               "q": "Mes clients peuvent-ils payer en ligne ?",
               "a": "Oui. Les réservations et les paiements peuvent se faire sur votre propre site, avec paiement en ligne ou liens de paiement, connectés au système de réservation que vous utilisez déjà."
             }
-          ]
+          ],
+          "results": {
+            "enquiries": "Demandes par mois",
+            "loadTime": "Temps de chargement sur mobile",
+            "bounce": "Visiteurs qui repartent aussitôt"
+          }
         }
       },
       {
@@ -267,7 +272,12 @@
               "q": "Les prix peuvent-ils se mettre à jour seuls quand le taux de change bouge ?",
               "a": "L'outil peut surveiller le taux de change et recalculer vos prix, mais une personne valide le changement avant sa mise en ligne. Une variation brusque ou erronée ne devrait jamais modifier vos tarifs toute seule."
             }
-          ]
+          ],
+          "results": {
+            "directShare": "Réservations en direct",
+            "commission": "Commission des plateformes par mois",
+            "rateHours": "Heures par semaine à mettre à jour les tarifs"
+          }
         }
       },
       {
@@ -307,7 +317,12 @@
               "q": "Pouvez-vous améliorer le SEO d'un site que vous n'avez pas créé ?",
               "a": "Oui. Je commence par un audit technique de la vitesse, du mobile et de l'indexation, puis je corrige ce qui compte le plus. Si la plateforme de votre site vous freine, je vous le dirai honnêtement."
             }
-          ]
+          ],
+          "results": {
+            "searchVisitors": "Visiteurs venant des moteurs de recherche par mois",
+            "firstPage": "Recherches où vous êtes en première page",
+            "indexed": "Pages affichées par Google, sur 40"
+          }
         }
       },
       {
@@ -356,7 +371,12 @@
               "q": "Quels outils pouvez-vous connecter ?",
               "a": "Le plus souvent : systèmes de réservation, paiements, e-mail et listes de diffusion. Si un outil dispose d'une API, il peut généralement être connecté, pour saisir les informations une seule fois au lieu de les recopier à la main."
             }
-          ]
+          ],
+          "results": {
+            "replyTime": "Minutes pour répondre à une nouvelle demande",
+            "emailHours": "Heures par semaine sur les e-mails courants",
+            "followUp": "Prospects relancés"
+          }
         }
       },
       {
@@ -396,7 +416,12 @@
               "q": "Peut-il fonctionner avec les outils que j'utilise déjà ?",
               "a": "Oui. Un outil sur mesure peut lire et écrire dans vos systèmes existants via leurs API, comme le fait l'outil de tarifs de Los Lagos Hotel avec Cloudbeds."
             }
-          ]
+          ],
+          "results": {
+            "sheetHours": "Heures par semaine dans des tableurs",
+            "errors": "Erreurs de saisie par mois",
+            "reportTime": "Minutes pour préparer le rapport hebdomadaire"
+          }
         }
       }
     ],
@@ -448,7 +473,14 @@
       "gallery": "Tiré de projets réels",
       "faq": "Questions fréquentes",
       "others": "Autres services",
-      "learnMore": "Voir ce qui est inclus"
+      "learnMore": "Voir ce qui est inclus",
+      "results": {
+        "heading": "Ce que cela peut changer",
+        "subtitle": "Des chiffres avant/après typiques pour une petite entreprise qui part d'une base faible.",
+        "before": "Avant",
+        "after": "Après",
+        "note": "Chiffres d'exemple pour montrer le type de changement à attendre. Ce ne sont pas les résultats d'un client précis, et chaque entreprise est différente."
+      }
     }
   },
   "contact": {

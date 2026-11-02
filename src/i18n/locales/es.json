@@ -218,7 +218,12 @@
               "q": "¿Mis clientes pueden pagar online?",
               "a": "Sí. Las reservas y los pagos pueden hacerse en tu propia web, con pagos online o enlaces de pago, conectados al sistema de reservas que ya usas."
             }
-          ]
+          ],
+          "results": {
+            "enquiries": "Consultas al mes",
+            "loadTime": "Tiempo de carga en el móvil",
+            "bounce": "Visitantes que se van enseguida"
+          }
         }
       },
       {
@@ -267,7 +272,12 @@
               "q": "¿Los precios pueden actualizarse solos cuando cambia el tipo de cambio?",
               "a": "La herramienta puede vigilar el tipo de cambio y recalcular tus precios, pero una persona aprueba el cambio antes de publicarlo. Una cotización brusca o errónea nunca debería cambiar tus tarifas por sí sola."
             }
-          ]
+          ],
+          "results": {
+            "directShare": "Reservas directas",
+            "commission": "Comisión de plataformas al mes",
+            "rateHours": "Horas a la semana actualizando tarifas"
+          }
         }
       },
       {
@@ -307,7 +317,12 @@
               "q": "¿Puedes mejorar el SEO de una web que no hiciste tú?",
               "a": "Sí. Empiezo con una auditoría técnica de velocidad, móvil e indexación, y después corrijo lo que más importa. Si la plataforma de tu web te está frenando, te lo digo con sinceridad."
             }
-          ]
+          ],
+          "results": {
+            "searchVisitors": "Visitas desde buscadores al mes",
+            "firstPage": "Búsquedas en las que sales en la primera página",
+            "indexed": "Páginas que muestra Google, de 40"
+          }
         }
       },
       {
@@ -356,7 +371,12 @@
               "q": "¿Qué herramientas puedes conectar?",
               "a": "Lo más habitual son sistemas de reservas, pagos, correo y listas de correo. Si una herramienta tiene API, normalmente se puede conectar, para cargar la información una sola vez en lugar de copiarla a mano."
             }
-          ]
+          ],
+          "results": {
+            "replyTime": "Minutos para responder una consulta nueva",
+            "emailHours": "Horas a la semana en correos rutinarios",
+            "followUp": "Contactos que reciben seguimiento"
+          }
         }
       },
       {
@@ -396,7 +416,12 @@
               "q": "¿Puede funcionar con las herramientas que ya uso?",
               "a": "Sí. Una herramienta a medida puede leer y escribir en tus sistemas actuales a través de sus API, como hace la herramienta de tarifas de Los Lagos Hotel con Cloudbeds."
             }
-          ]
+          ],
+          "results": {
+            "sheetHours": "Horas a la semana en hojas de cálculo",
+            "errors": "Errores al introducir datos al mes",
+            "reportTime": "Minutos para preparar el informe semanal"
+          }
         }
       }
     ],
@@ -448,7 +473,14 @@
       "gallery": "De proyectos reales",
       "faq": "Preguntas frecuentes",
       "others": "Otros servicios",
-      "learnMore": "Ver qué incluye"
+      "learnMore": "Ver qué incluye",
+      "results": {
+        "heading": "Lo que puede cambiar",
+        "subtitle": "Cifras típicas de antes y después para un pequeño negocio que parte de una base débil.",
+        "before": "Antes",
+        "after": "Después",
+        "note": "Cifras de ejemplo para mostrar el tipo de cambio que cabe esperar. No son resultados de un cliente concreto, y cada negocio es distinto."
+      }
     }
   },
   "contact": {

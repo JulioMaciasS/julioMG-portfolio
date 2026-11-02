@@ -876,6 +876,118 @@
   color: #f6e7c4;
 }
 
+/* ---------- Example results: a dark band of before/after figures ---------- */
+.service-results {
+  background: #1a1717;
+  color: #fff;
+  padding: 72px 24px 56px;
+  margin-bottom: 72px;
+}
+
+.service-results .services-section-head h2 {
+  color: #fff;
+}
+
+.service-results .services-section-head p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.service-results-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  text-align: start;
+}
+
+.service-result {
+  background: #231f1e;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  padding: 22px;
+}
+
+.service-result h3 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0 0 6px;
+}
+
+.service-result-change {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #f4b942;
+  margin-bottom: 16px;
+  font-variant-numeric: tabular-nums;
+}
+
+.service-result-bars {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+}
+
+.service-result-row {
+  display: grid;
+  grid-template-columns: 64px 1fr;
+  align-items: center;
+  gap: 10px;
+}
+
+.service-result-row dt {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.service-result-row dd {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+}
+
+.service-result-bar {
+  flex: 1;
+  height: 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+}
+
+.service-result-bar span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: #5a524c;
+}
+
+.service-result-row.is-after .service-result-bar span {
+  background: #f4b942;
+}
+
+.service-result-value {
+  min-width: 64px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.service-results-note {
+  max-width: 1100px;
+  margin: 22px auto 0;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
 .service-detail-gallery {
   background: #ffffff;
   padding: 8px 24px 80px;
