@@ -2,13 +2,11 @@ import React from 'react';
 import Link from '../LocalizedLink';
 import { useTranslations } from 'next-intl';
 import { Button } from '../Button';
-import {
-  ArrowRight, BadgeCheck, Building2, MessagesSquare,
-  Phone, FileText, Hammer, LifeBuoy,
-} from 'lucide-react';
+import { ArrowRight, Phone, FileText, Hammer, LifeBuoy } from 'lucide-react';
 import { TESTIMONIALS } from '../../data/testimonials';
 import { SERVICES } from '../../data/services';
 import ServiceCard from './ServiceCard';
+import WhyVisual from './WhyVisual';
 import TestimonialCard from '../common/TestimonialCard';
 import './ServicesSection.css';
 import Reveal from '../common/Reveal';
@@ -16,9 +14,9 @@ import SectionDivider from '../common/SectionDivider';
 import LayeredWaves from '../common/LayeredWaves';
 
 const WHY = [
-  { key: 'point1', Icon: BadgeCheck },
-  { key: 'point2', Icon: Building2 },
-  { key: 'point3', Icon: MessagesSquare },
+  { key: 'point1', visual: 'collage' },
+  { key: 'point2', visual: 'citi' },
+  { key: 'point3', visual: 'call' },
 ];
 
 const PROCESS = [
@@ -61,19 +59,20 @@ function ServicesSection() {
         </div>
       </section>
 
-      {/* Why work with me: three icon cards rather than a block of text. */}
+      {/* Why work with me: each card leads with a picture (client work, a photo
+          at Citi, a call with me) so the section feels personal, not textual. */}
       <section className="services-why">
         <div className="services-section-head">
           <h2>{t('services.why.heading')}</h2>
         </div>
         <div className="services-why-grid">
-          {WHY.map(({ key, Icon }, index) => (
+          {WHY.map(({ key, visual }, index) => (
             <Reveal key={key} delay={index * 70} className="services-why-item">
-              <div className="service-offer-icon">
-                <Icon size={24} strokeWidth={1.75} aria-hidden="true" />
+              <WhyVisual type={visual} alt={visual === 'collage' ? '' : t(`services.why.${key}Alt`)} />
+              <div className="services-why-body">
+                <h3>{t(`services.why.${key}Lead`)}</h3>
+                <p>{t(`services.why.${key}Text`)}</p>
               </div>
-              <h3>{t(`services.why.${key}Lead`)}</h3>
-              <p>{t(`services.why.${key}Text`)}</p>
             </Reveal>
           ))}
         </div>
