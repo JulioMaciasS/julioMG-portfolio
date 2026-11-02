@@ -2,11 +2,12 @@ import React from 'react';
 import Link from '../LocalizedLink';
 import { useTranslations } from 'next-intl';
 import { Button } from '../Button';
-import { ArrowRight, Phone, FileText, Hammer, LifeBuoy } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { TESTIMONIALS } from '../../data/testimonials';
 import { SERVICES } from '../../data/services';
 import ServiceCard from './ServiceCard';
 import WhyVisual from './WhyVisual';
+import ProcessIllustration from './ProcessIllustration';
 import TestimonialCard from '../common/TestimonialCard';
 import './ServicesSection.css';
 import Reveal from '../common/Reveal';
@@ -20,10 +21,10 @@ const WHY = [
 ];
 
 const PROCESS = [
-  { key: 'step1', Icon: Phone },
-  { key: 'step2', Icon: FileText },
-  { key: 'step3', Icon: Hammer },
-  { key: 'step4', Icon: LifeBuoy },
+  { key: 'step1', art: 'call' },
+  { key: 'step2', art: 'proposal' },
+  { key: 'step3', art: 'build' },
+  { key: 'step4', art: 'handover' },
 ];
 
 function ServicesSection() {
@@ -91,17 +92,17 @@ function ServicesSection() {
           <p>{t('services.process.subtitle')}</p>
         </div>
         <div className="services-process-grid">
-          {PROCESS.map(({ key: step, Icon }, index) => (
+          {PROCESS.map(({ key: step, art }, index) => (
             <React.Fragment key={step}>
               <Reveal delay={index * 70} className="services-process-step">
-                <div className="services-process-top">
-                  <div className="services-process-icon">
-                    <Icon size={22} strokeWidth={1.8} aria-hidden="true" />
-                  </div>
+                <div className="services-process-art">
+                  <ProcessIllustration type={art} />
                   <span className="services-process-number">{`0${index + 1}`}</span>
                 </div>
-                <h3>{t(`services.process.${step}Title`)}</h3>
-                <p>{t(`services.process.${step}Text`)}</p>
+                <div className="services-process-body">
+                  <h3>{t(`services.process.${step}Title`)}</h3>
+                  <p>{t(`services.process.${step}Text`)}</p>
+                </div>
               </Reveal>
               {index < PROCESS.length - 1 && (
                 <div className="services-process-arrow" aria-hidden="true">

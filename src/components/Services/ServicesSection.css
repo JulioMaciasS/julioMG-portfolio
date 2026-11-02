@@ -252,8 +252,12 @@
   min-width: 190px;
   background: #fff;
   border-radius: 18px;
-  padding: 28px 24px;
   border: 1px solid #e6e6e6;
+  overflow: hidden;
+}
+
+.services-process-body {
+  padding: 18px 22px 24px;
 }
 
 .services-process-arrow {
@@ -269,35 +273,37 @@
   transform: scaleX(-1);
 }
 
-.services-process-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.services-process-art {
+  position: relative;
+  border-bottom: 1px solid #ece8e0;
 }
 
-.services-process-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 14px;
-  background: #1a1717;
-  color: #f4b942;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.process-illustration {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
+/* Step number as a small tag over the picture's corner. */
 .services-process-number {
+  position: absolute;
+  top: 10px;
+  inset-inline-start: 10px;
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 1.6rem;
+  font-size: 0.85rem;
   font-weight: 700;
-  color: #e6d3a8;
+  color: #1a1717;
+  background: #fff;
+  border: 1px solid #ece8e0;
+  border-radius: 999px;
+  padding: 2px 10px;
 }
 
 .services-process-step h3 {
   font-size: 1.15rem;
   font-weight: 700;
   color: #1a1717;
-  margin: 8px 0 10px;
+  margin: 0 0 8px;
 }
 
 .services-process-step p {
@@ -355,6 +361,12 @@
   .services-process-grid {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  /* In a column the 200px flex-basis would become a fixed height and clip
+     the step text under the picture. */
+  .services-process-step {
+    flex: 0 0 auto;
   }
 
   /* Stacked vertically in both reading directions, so the arrow points
