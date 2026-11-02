@@ -377,11 +377,11 @@
             }
           ],
           "results": {
-            "withinHour": "Plus de chances de qualifier un prospect contacté dans l'heure que plus tard",
-            "withinHourBefore": "Contacté après une heure",
-            "withinHourAfter": "Contacté dans l'heure",
-            "neverReplied": "Des entreprises n'ont jamais répondu à une demande test envoyée via leur site",
-            "email": "De la semaine de travail est consacrée à gérer les e-mails, pour un employé de bureau moyen"
+            "neverReplied": "Des entreprises n'ont jamais répondu à une demande de démo envoyée via leur site, sur un test de 1 000 sites B2B",
+            "replyTime": "Attente moyenne avant une première réponse, chez les entreprises qui ont répondu",
+            "communication": "Du temps passé dans Microsoft 365 va aux réunions, e-mails et messages, laissant 43 % à la création",
+            "communicationBefore": "Créer documents et tableurs",
+            "communicationAfter": "Réunions, e-mails et messages"
           }
         }
       },
@@ -426,7 +426,7 @@
           "results": {
             "spreadsheets": "Des tableurs examinés lors d'audits contenaient des erreurs",
             "cellErrors": "Des cellules de formule étaient fausses en moyenne, environ 1 sur 25",
-            "searching": "Près d’un cinquième de la semaine de travail passe à chercher des informations ou des collègues"
+            "searching": "Des personnes disent passer trop de temps à chercher des informations pendant leur journée"
           }
         }
       }

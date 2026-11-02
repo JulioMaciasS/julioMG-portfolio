@@ -377,11 +377,11 @@
             }
           ],
           "results": {
-            "withinHour": "Más probabilidad de cualificar un contacto si lo atiendes en menos de una hora que más tarde",
-            "withinHourBefore": "Atendido pasada una hora",
-            "withinHourAfter": "Atendido en menos de una hora",
-            "neverReplied": "De las empresas nunca respondieron a una consulta de prueba enviada desde su web",
-            "email": "De la semana laboral se dedica a gestionar el correo, para un profesional medio de oficina"
+            "neverReplied": "De las empresas nunca respondieron a una solicitud de demo enviada desde su web, en una prueba con 1.000 webs B2B",
+            "replyTime": "Espera media hasta la primera respuesta de las empresas que sí contestaron",
+            "communication": "Del tiempo en Microsoft 365 se va en reuniones, correo y chat, y queda un 43 % para crear",
+            "communicationBefore": "Crear documentos y hojas de cálculo",
+            "communicationAfter": "Reuniones, correo y chat"
           }
         }
       },
@@ -426,7 +426,7 @@
           "results": {
             "spreadsheets": "De las hojas de cálculo revisadas en auditorías contenían errores",
             "cellErrors": "De las celdas con fórmulas eran incorrectas de media, alrededor de 1 de cada 25",
-            "searching": "Casi una quinta parte de la semana laboral se va en buscar información o localizar a compañeros"
+            "searching": "De las personas dicen pasar demasiado tiempo de su jornada buscando información"
           }
         }
       }

@@ -4,11 +4,12 @@ import { TrendingUp, ArrowUpRight } from 'lucide-react';
 import Reveal from '../common/Reveal';
 
 // Intl options per unit, so numbers, percentages and currency read naturally
-// in every locale (Arabic digits, % and $ placement).
+// in every locale (Arabic digits, % and $ placement, "h" abbreviations).
 const FORMATS = {
   percent: { style: 'unit', unit: 'percent', maximumFractionDigits: 2 },
   increase: { style: 'unit', unit: 'percent', maximumFractionDigits: 1, signDisplay: 'always' },
   times: {},
+  hour: { style: 'unit', unit: 'hour', unitDisplay: 'short' },
   usd: { style: 'currency', currency: 'USD', maximumFractionDigits: 0 },
 };
 

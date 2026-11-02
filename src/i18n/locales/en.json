@@ -377,11 +377,11 @@
             }
           ],
           "results": {
-            "withinHour": "More likely to qualify a lead when you contact it within an hour rather than later",
-            "withinHourBefore": "Contacted after an hour",
-            "withinHourAfter": "Contacted within an hour",
-            "neverReplied": "Of companies never replied to a test enquiry sent through their website",
-            "email": "Of the workweek goes on managing email, for the average knowledge worker"
+            "neverReplied": "Of companies never replied to a demo request sent through their website, in a test of 1,000 B2B sites",
+            "replyTime": "Average wait for a first reply from the companies that did answer",
+            "communication": "Of time in Microsoft 365 goes on meetings, email and chat, leaving 43% for creating",
+            "communicationBefore": "Creating documents and spreadsheets",
+            "communicationAfter": "Meetings, email and chat"
           }
         }
       },
@@ -426,7 +426,7 @@
           "results": {
             "spreadsheets": "Of the spreadsheets checked in audit studies contained errors",
             "cellErrors": "Of formula cells were wrong on average, about 1 in 25",
-            "searching": "Nearly a fifth of the workweek goes on looking for information or tracking down colleagues"
+            "searching": "Of people say they spend too much of their workday searching for information"
           }
         }
       }

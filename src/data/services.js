@@ -16,8 +16,8 @@ const source = (name, year, url) => ({ name, year, url });
 
 const DELOITTE = source('Deloitte & 55 for Google', 2020, 'https://web.dev/case-studies/milliseconds-make-millions');
 const SITEMINDER = source('SiteMinder Hotel Booking Trends', 2025, 'https://www.siteminder.com/news/siteminder-hotel-booking-trends-2025/');
-const HBR = source('Harvard Business Review', 2011, 'https://hbr.org/2011/03/the-short-life-of-online-sales-leads');
-const MCKINSEY = source('McKinsey Global Institute', 2012, 'https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/the-social-economy');
+const REVENUEHERO = source('RevenueHero', 2024, 'https://www.revenuehero.io/resources/lead-response-times-report');
+const MICROSOFT = source('Microsoft Work Trend Index', 2023, 'https://www.microsoft.com/en-us/worklab/work-trend-index/will-ai-fix-work');
 const PANKO = source('Panko, University of Hawaii', 2015, 'https://arxiv.org/abs/1602.02601');
 
 export const SERVICES = [
@@ -75,9 +75,9 @@ export const SERVICES = [
       shot('los-lagos-hotel', `${LL}ops-telegram.jpg`, 'posts.losLagosHotel.captions.opsTelegram'),
     ],
     results: [
-      result('withinHour', 7, 'times', HBR, { values: [1, 7], unit: 'times' }),
-      result('neverReplied', 23, 'percent', HBR),
-      result('email', 28, 'percent', MCKINSEY),
+      result('neverReplied', 63.5, 'percent', REVENUEHERO),
+      result('replyTime', 29, 'hour', REVENUEHERO),
+      result('communication', 57, 'percent', MICROSOFT, { values: [43, 57], unit: 'percent' }),
     ],
   },
   {
@@ -92,7 +92,7 @@ export const SERVICES = [
     results: [
       result('spreadsheets', 94, 'percent', PANKO),
       result('cellErrors', 3.9, 'percent', PANKO),
-      result('searching', 20, 'percent', MCKINSEY),
+      result('searching', 62, 'percent', MICROSOFT),
     ],
   },
 ];
