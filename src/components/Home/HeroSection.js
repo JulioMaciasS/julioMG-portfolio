@@ -15,6 +15,7 @@ const CLIENT_WORK = [
   { name: 'Discentik', src: '/images/discentik/ai-feedback.jpg' },
   { name: 'Tu Divorcio Inteligente', src: '/images/tuDivorcioInteligente/hero.jpg' },
   { name: 'Los Lagos Hotel', src: '/images/losLagosHotel/web-home-en.jpg' },
+  { name: 'Guías de Málaga', src: '/images/guiasDeMalaga/home.jpg' },
 ];
 
 /**
