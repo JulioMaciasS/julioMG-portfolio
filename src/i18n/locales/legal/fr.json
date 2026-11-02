@@ -43,7 +43,7 @@
     "cookiesTitle": "Cookies et mesure d'audience",
     "cookiesBody": "Les cookies de mesure d'audience et les cookies associés ne sont chargés qu'après votre consentement. Pour le détail des cookies et outils spécifiques utilisés, consultez la politique relative aux cookies.",
     "thirdPartiesTitle": "Services tiers",
-    "thirdPartiesBody": "J'utilise Web3Forms pour acheminer les messages du formulaire de contact vers ma boîte de réception, et Cal.com pour afficher mes disponibilités et gérer les réservations d'appels ; le calendrier de réservation de la page de contact est chargé depuis Cal.com. Avec votre consentement, j'utilise également PostHog pour une analyse de produit respectueuse de la vie privée (comprenant des cartes de chaleur et des statistiques de session). Ces prestataires traitent les données pour mon compte selon leurs propres conditions.",
+    "thirdPartiesBody": "J'utilise Web3Forms pour acheminer les messages du formulaire de contact vers ma boîte de réception, et Cal.com pour afficher mes disponibilités et gérer les réservations d'appels ; le calendrier de réservation de la page de contact est chargé depuis Cal.com lorsque vous l'ouvrez. Avec votre consentement, j'utilise également PostHog pour une analyse de produit respectueuse de la vie privée (comprenant des cartes de chaleur et des statistiques de session). Ces prestataires traitent les données pour mon compte selon leurs propres conditions.",
     "rightsTitle": "Vos droits",
     "rightsBody": "Si vous résidez dans l'UE/EEE ou au Royaume-Uni, vous disposez du droit d'accéder à vos données personnelles, de les rectifier, de les supprimer, d'en limiter le traitement ou de vous y opposer, du droit à la portabilité des données, ainsi que du droit de retirer votre consentement à tout moment sans que cela n'affecte les traitements antérieurs. Vous avez également le droit d'introduire une réclamation auprès de votre autorité locale de protection des données (autorité de contrôle). Pour exercer l'un de ces droits, contactez-moi à l'adresse {contactEmail}.",
     "retentionTitle": "Conservation des données",
@@ -79,6 +79,6 @@
     "tablePurpose": "Finalité",
     "tableCategory": "Catégorie",
     "calCategory": "Tiers (calendrier de réservation)",
-    "calBody": "Le calendrier de réservation de la page de contact est fourni par Cal.com et chargé depuis ses serveurs. Cal.com peut déposer ses propres cookies, régis par ses politiques de confidentialité et de cookies."
+    "calBody": "Le calendrier de réservation de la page de contact est fourni par Cal.com et chargé depuis ses serveurs lorsque vous l'ouvrez. Cal.com peut déposer ses propres cookies, régis par ses politiques de confidentialité et de cookies."
   }
 }

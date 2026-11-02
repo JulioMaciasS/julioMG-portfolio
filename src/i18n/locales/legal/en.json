@@ -43,7 +43,7 @@
     "cookiesTitle": "Cookies and analytics",
     "cookiesBody": "Analytics and related cookies are loaded only after you give consent. For details of the specific cookies and tools used, see the Cookie Policy.",
     "thirdPartiesTitle": "Third-party services",
-    "thirdPartiesBody": "I use Web3Forms to deliver contact-form messages to my inbox, and Cal.com to show my availability and handle call bookings; the booking calendar on the contact page loads from Cal.com. With your consent, I also use PostHog for privacy-friendly product analytics (including heatmaps and session statistics). These providers process data on my behalf under their own terms.",
+    "thirdPartiesBody": "I use Web3Forms to deliver contact-form messages to my inbox, and Cal.com to show my availability and handle call bookings; the booking calendar on the contact page loads from Cal.com when you open it. With your consent, I also use PostHog for privacy-friendly product analytics (including heatmaps and session statistics). These providers process data on my behalf under their own terms.",
     "rightsTitle": "Your rights",
     "rightsBody": "If you are in the EU/EEA or UK, you have the right to access, correct, delete, restrict or object to the processing of your personal data, the right to data portability, and the right to withdraw consent at any time without affecting prior processing. You also have the right to lodge a complaint with your local data protection (supervisory) authority. To exercise any of these rights, contact me at {contactEmail}.",
     "retentionTitle": "Data retention",
@@ -79,6 +79,6 @@
     "tablePurpose": "Purpose",
     "tableCategory": "Category",
     "calCategory": "Third party (booking calendar)",
-    "calBody": "The booking calendar on the contact page is provided by Cal.com and loads from Cal.com's servers. Cal.com may set its own cookies, which are covered by Cal.com's privacy and cookie policies."
+    "calBody": "The booking calendar on the contact page is provided by Cal.com and loads from Cal.com's servers when you open it. Cal.com may set its own cookies, which are covered by Cal.com's privacy and cookie policies."
   }
 }
