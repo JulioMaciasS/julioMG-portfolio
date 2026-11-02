@@ -53,10 +53,10 @@ function ContactMe() {
   const t = useTranslations();
   const [status, setStatus] = useState('idle'); // idle | sending | success | error
   const [mode, setMode] = useState('message'); // 'message' | 'call'
-  // Mount the booking embed the first time the visitor opens the call tab, then
-  // keep it mounted (just hidden when inactive). Lazy so the Cal script isn't
-  // fetched until asked for, but never unmounted/remounted — remounting the
-  // iframe is what tripped Cal's init error.
+  // Mount the booking embed once the page is idle (or straight away if the
+  // visitor opens the call tab first), parked off-view, so the calendar is
+  // already loaded when they switch to it. Never unmounted/remounted —
+  // remounting the iframe is what tripped Cal's init error.
   const [callOpened, setCallOpened] = useState(false);
 
   useEffect(() => {
@@ -100,6 +100,18 @@ function ContactMe() {
       setStatus('error');
     }
   };
+
+  // Preload the booking calendar after the page has finished its own work.
+  useEffect(() => {
+    if (!CAL_LINK) return undefined;
+    const preload = () => setCallOpened(true);
+    if ('requestIdleCallback' in window) {
+      const id = window.requestIdleCallback(preload, { timeout: 2000 });
+      return () => window.cancelIdleCallback(id);
+    }
+    const id = window.setTimeout(preload, 1000);
+    return () => window.clearTimeout(id);
+  }, []);
 
   const inputClass =
     'w-full rounded-xl border border-gray-300 bg-white px-4 py-3 text-gray-800 ' +
@@ -213,7 +225,13 @@ function ContactMe() {
 
           {CAL_LINK ? (
             callOpened && (
-              <div className='contact-cal-card' role="tabpanel" id="contact-panel-call" aria-labelledby="contact-tab-call" hidden={mode !== 'call'}>
+              <div
+                className={`contact-cal-card ${mode === 'call' ? '' : 'is-parked'}`}
+                role="tabpanel"
+                id="contact-panel-call"
+                aria-labelledby="contact-tab-call"
+                aria-hidden={mode !== 'call'}
+              >
                 <BookingEmbed />
               </div>
             )

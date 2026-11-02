@@ -20,6 +20,7 @@
 }
 
 .contact-content {
+    position: relative;
     width: 100%;
     max-width: 720px;
     margin: 0 auto;
@@ -122,6 +123,20 @@
     border-radius: 18px;
     padding: 8px;
     overflow: hidden;
+}
+
+/* Preloaded but not shown: still laid out at its real width so the calendar
+   renders correctly, just invisible and taking no space. Not display:none,
+   which would load the calendar at zero width. */
+.contact-cal-card.is-parked {
+    position: absolute;
+    top: 0;
+    inset-inline-start: 0;
+    height: 0;
+    padding: 0;
+    border: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .contact-cal-empty {
