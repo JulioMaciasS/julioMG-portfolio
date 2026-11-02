@@ -2,7 +2,7 @@ import React from 'react';
 import Link from '../LocalizedLink';
 import { useTranslations } from 'next-intl';
 import { Button } from '../Button';
-import { ChevronRight, Check } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 import { SERVICES } from '../../data/services';
 import { PROJECTS } from '../../data/projects';
 import { OFFER_ART } from './serviceIcons';
@@ -84,10 +84,7 @@ function ServiceDetail({ service }) {
                 <p>{offer.description}</p>
                 <ul className="service-offer-points">
                   {offer.points.map((point) => (
-                    <li key={point}>
-                      <Check size={14} strokeWidth={3} aria-hidden="true" />
-                      {point}
-                    </li>
+                    <li key={point}>{point}</li>
                   ))}
                 </ul>
               </div>
