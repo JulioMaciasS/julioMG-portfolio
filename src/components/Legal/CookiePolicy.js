@@ -12,7 +12,6 @@ function CookiePolicy() {
       <div className="legal-container">
         <h1>{t('cookie.title')}</h1>
         <p className="legal-updated">{t('cookie.lastUpdated', { date: LAST_UPDATED })}</p>
-        <p className="legal-notice">{t('cookie.templateNotice')}</p>
         <p className="legal-intro">{t('cookie.intro')}</p>
 
         <section className="legal-section">

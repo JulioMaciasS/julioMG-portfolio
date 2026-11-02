@@ -34,7 +34,6 @@ function PrivacyPolicy() {
       <div className="legal-container">
         <h1>{t('privacy.title')}</h1>
         <p className="legal-updated">{t('privacy.lastUpdated', { date: LAST_UPDATED })}</p>
-        <p className="legal-notice">{t('privacy.templateNotice')}</p>
         <p className="legal-intro">{t('privacy.intro', vars)}</p>
 
         {SECTIONS.map(([titleKey, bodyKey]) => (
