@@ -35,12 +35,15 @@
       "description": "Desarrollador web freelance y fundador de Discentik. Creo webs, reservas online, automatización con IA y aplicaciones web para empresas. Experiencia en Citi."
     },
     "hero": {
-      "badge": "Disponible para freelance y consultoría",
-      "title": "Hola, soy Julio. Construyo productos web full-stack.",
-      "subtitle": "Desarrollador de software y fundador de Discentik, una plataforma de aprendizaje con IA, con experiencia profesional en Citi. Ayudo a empresas a diseñar, crear y lanzar webs, automatizaciones y productos con IA fiables.",
-      "work": "Trabaja conmigo",
-      "projects": "Ver mi trabajo",
-      "contact": "o simplemente saluda →",
+      "badge": "Disponible para nuevos proyectos",
+      "title": "Hola, soy Julio. Creo webs y software para pequeños negocios.",
+      "proof": {
+        "founder": "Fundador de Discentik",
+        "citi": "Experiencia profesional en Citi",
+        "languages": "Inglés y español"
+      },
+      "bookCall": "Reserva una llamada gratis",
+      "seeWork": "Ver mi trabajo",
       "scrollAria": "Desplázate a la sección Acerca de"
     },
     "about": {

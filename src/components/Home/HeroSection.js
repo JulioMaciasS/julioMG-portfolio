@@ -6,32 +6,36 @@ import '../../App.css';
 import { Button } from '../Button';
 import './HeroSection.css';
 import Link from '../LocalizedLink';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, ArrowRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import useSpotlight from '../../hooks/useSpotlight';
 
-/** Stylised code window — the hero's visual focal point on desktop. */
-function CodeWindow() {
+// Live client sites shown in the hero, back to front.
+const CLIENT_WORK = [
+  { name: 'Los Lagos Hotel', src: '/images/losLagosHotel/web-home-en.jpg' },
+  { name: 'Discentik', src: '/images/discentik/home.jpg' },
+  { name: 'Guías de Málaga', src: '/images/guiasDeMalaga/home.jpg' },
+  { name: 'Tu Divorcio Inteligente', src: '/images/tuDivorcioInteligente/hero.jpg' },
+];
+
+/**
+ * Collage of live client sites — the hero's visual on desktop. It shows the
+ * kind of work on offer instead of describing it, and links to the projects.
+ */
+function ClientWork({ label }) {
   return (
-    <div className="hero-code" aria-hidden="true">
-      <div className="hero-code-glow" />
-      <div className="hero-code-window">
-        <div className="hero-code-bar">
-          <span className="hero-code-dot is-red" />
-          <span className="hero-code-dot is-yellow" />
-          <span className="hero-code-dot is-green" />
-          <span className="hero-code-file">julio.js</span>
-        </div>
-        <pre className="hero-code-body"><code>
-<span className="c-kw">const</span> <span className="c-var">julio</span> = {'{'}
-{'\n'}  role: <span className="c-str">'Full-stack developer'</span>,
-{'\n'}  stack: [<span className="c-str">'React'</span>, <span className="c-str">'Next.js'</span>, <span className="c-str">'Supabase'</span>],
-{'\n'}  focus: [<span className="c-str">'web'</span>, <span className="c-str">'cloud'</span>, <span className="c-str">'AI'</span>],
-{'\n'}  openToWork: <span className="c-bool">true</span>,
-{'\n'}{'}'};<span className="hero-code-cursor" />
-        </code></pre>
-      </div>
-    </div>
+    <Link to="/projects" className="hero-work" aria-label={label}>
+      <div className="hero-work-glow" aria-hidden="true" />
+      {CLIENT_WORK.map((site, index) => (
+        <figure key={site.name} className={`hero-work-shot hero-work-shot--${index + 1}`} aria-hidden="true">
+          <div className="hero-work-bar">
+            <span /><span /><span />
+            <em>{site.name}</em>
+          </div>
+          <img src={site.src} alt="" decoding="async" />
+        </figure>
+      ))}
+    </Link>
   );
 }
 
@@ -361,7 +365,7 @@ export default function HeroSection() {
   return (
     <section
       ref={spotlightRef}
-      className="spotlight-bg hero-container relative flex flex-col items-center justify-center h-[calc(100vh-80px)] overflow-hidden px-6"
+      className="spotlight-bg hero-container relative flex flex-col items-center justify-center min-h-[calc(100vh-80px)] lg:h-[calc(100vh-80px)] overflow-hidden px-6"
     >
       <div className="hero-content relative z-10 flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-16 w-full max-w-6xl">
         {/* Text */}
@@ -379,32 +383,31 @@ export default function HeroSection() {
               </span>
             </div>
           </div>
-          <h1 className="hero-title text-4xl sm:text-5xl lg:text-5xl xl:text-6xl font-bold mt-5 mb-4 animate-fade-up">
+          <h1 className="hero-title text-4xl sm:text-5xl xl:text-[3.4rem] font-bold mt-5 mb-5 animate-fade-up">
             {t('home.hero.title')}
           </h1>
-          <p className="hero-subtitle text-lg lg:text-xl text-gray-300 mb-8 max-w-xl mx-auto lg:mx-0">
-            {t('home.hero.subtitle')}
-          </p>
-          <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-4">
-            <Link to="/services">
+          {/* Credentials as short tags rather than a paragraph; the About
+              section below tells the full story. */}
+          <ul className="hero-proof justify-center lg:justify-start">
+            {['founder', 'citi', 'languages'].map((key) => (
+              <li key={key}>{t(`home.hero.proof.${key}`)}</li>
+            ))}
+          </ul>
+          <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-x-7 gap-y-4 mt-8">
+            <Link to="/contact-me#book-a-call">
               <Button buttonStyle="btn--primary" buttonSize="btn--large" buttonShape="btn--round">
-                {t('home.hero.work')}
+                {t('home.hero.bookCall')}
               </Button>
             </Link>
-            <Link to="/projects">
-              <Button buttonStyle="btn--outline" buttonSize="btn--large" buttonShape="btn--round">
-                {t('home.hero.projects')}
-              </Button>
+            <Link to="/projects" className="hero-text-link">
+              {t('home.hero.seeWork')} <ArrowRight size={18} aria-hidden="true" />
             </Link>
           </div>
-          <Link to="/contact-me" className="hero-text-link">
-            {t('home.hero.contact')}
-          </Link>
         </div>
 
-        {/* Code window */}
-        <div className="hidden lg:flex lg:w-[45%] justify-center">
-          <CodeWindow />
+        {/* Client work */}
+        <div className="flex w-full lg:w-[45%] justify-center">
+          <ClientWork label={t('home.hero.seeWork')} />
         </div>
       </div>
 
