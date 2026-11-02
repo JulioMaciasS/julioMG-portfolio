@@ -1,9 +1,10 @@
 import React from 'react';
 import './Marquee.css';
 
+// What client projects and Discentik run on, then the Java stack from Citi.
 const ITEMS = [
-  'React', 'Next.js', 'TypeScript', 'Supabase', 'AWS', 'Java',
-  'Spring Boot', 'Angular', 'Docker', 'CI/CD', 'PostgreSQL', 'Node.js'
+  'Next.js', 'React', 'TypeScript', 'Supabase', 'PostgreSQL', 'Stripe',
+  'Cloudflare', 'AWS', 'Java', 'Spring Boot'
 ];
 
 /** Infinite horizontal ticker of the tech stack — the moving transition between
