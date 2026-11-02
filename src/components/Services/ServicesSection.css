@@ -160,8 +160,6 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* Keeps both Julio and the Citi sign in a landscape crop of the portrait. */
-  object-position: 50% 80%;
 }
 
 /* Three client screenshots stacked like prints. */
