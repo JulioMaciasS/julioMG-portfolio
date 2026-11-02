@@ -15,7 +15,7 @@ export async function generateMetadata({ params: { locale } }) {
     path: '/projects/eugeniabravo',
     title: t('title'),
     description: t('description'),
-    image: '/images/eugeniaBravoPost/EugeniaBravoIcon.png',
+    image: '/images/eugeniaBravoPost/home.jpg',
     type: 'article',
   });
 }
@@ -29,7 +29,7 @@ export default async function EugeniaBravoPage({ params: { locale } }) {
     path: '/projects/eugeniabravo',
     title: t('posts.eugeniaBravo.meta.title'),
     description: t('posts.eugeniaBravo.meta.description'),
-    image: '/images/eugeniaBravoPost/EugeniaBravoIcon.png',
+    image: '/images/eugeniaBravoPost/home.jpg',
     projectsLabel: t('nav.projects'),
   });
   return (
