@@ -31,7 +31,7 @@ function ServiceDetail({ service }) {
   const offerArt = OFFER_ART[service.key];
   const others = SERVICES.filter((s) => s.key !== service.key);
   const quotes = TESTIMONIALS.filter((item) => service.testimonials?.includes(item.project));
-  const shots = service.screenshots.map((visual) => {
+  const resolveShot = (visual) => {
     const project = PROJECTS.find((p) => p.id === visual.project);
     return {
       ...visual,
@@ -39,7 +39,8 @@ function ServiceDetail({ service }) {
       caption: t(visual.caption),
       projectTitle: t(`projects.items.${project.id}.title`),
     };
-  });
+  };
+  const shots = service.screenshots.map(resolveShot);
 
   return (
     <main className="services-page">
@@ -62,11 +63,15 @@ function ServiceDetail({ service }) {
               </Link>
             </div>
           </div>
-          <div className="service-shot service-shot--hero">
-            <div className="service-shot-frame service-illustration-frame">
-              <ServiceIllustration type={service.illustration} />
+          {service.heroShot ? (
+            <ServiceShot {...resolveShot(service.heroShot)} eager className="service-shot--hero" />
+          ) : (
+            <div className="service-shot service-shot--hero">
+              <div className="service-shot-frame service-illustration-frame">
+                <ServiceIllustration type={service.illustration} />
+              </div>
             </div>
-          </div>
+          )}
         </div>
       </section>
 

@@ -8,7 +8,8 @@
  * studies, each linked to its source on the page (industry figures, not
  * client results). `compare` adds a pair of bars when the study gives both
  * sides of the comparison. `testimonials` lists the projects whose client
- * quotes (data/testimonials.js) are shown on the page.
+ * quotes (data/testimonials.js) are shown on the page. `heroShot`, when set,
+ * puts a real screenshot in the page hero instead of the drawing.
  */
 const LL = '/images/losLagosHotel/';
 const shot = (project, src, caption) => ({ project, src, caption });
@@ -41,6 +42,7 @@ export const SERVICES = [
     key: 'hotels',
     slug: 'cloudbeds-hotels',
     illustration: 'hotels',
+    heroShot: shot('los-lagos-hotel', `${LL}web-home-en.jpg`, 'posts.losLagosHotel.captions.home'),
     screenshots: [
       shot('los-lagos-hotel', `${LL}booking-rooms.jpg`, 'posts.losLagosHotel.captions.rooms'),
       shot('los-lagos-hotel', `${LL}web-datepicker.jpg`, 'posts.losLagosHotel.captions.datePicker'),
