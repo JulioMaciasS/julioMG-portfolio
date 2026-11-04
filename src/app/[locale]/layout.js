@@ -26,7 +26,6 @@ import FloatingContact from '@/components/Layout/FloatingContact';
 import CookieConsent from '@/components/Consent/CookieConsent';
 import EasterEgg from '@/components/common/EasterEgg';
 import PageviewTracker from '@/components/Analytics/PageviewTracker';
-import SmoothScroll from '@/components/Layout/SmoothScroll';
 import { siteGraph, JsonLd } from '@/utils/structuredData';
 
 export function generateStaticParams() {
@@ -68,7 +67,6 @@ export default async function LocaleLayout({ children, params: { locale } }) {
           <CookieConsent />
           <EasterEgg />
           <PageviewTracker />
-          <SmoothScroll />
         </NextIntlClientProvider>
         <JsonLd data={siteGraph(locale)} />
       </body>
