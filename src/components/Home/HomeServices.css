@@ -57,22 +57,3 @@
 [dir='rtl'] .home-services-link svg {
   transform: scaleX(-1);
 }
-
-/* Phones: text-only cards, so five services don't take five screens. */
-@media (max-width: 640px) {
-  .home-services {
-    padding: 96px 16px 64px;
-  }
-
-  .home-services .services-grid {
-    gap: 12px;
-  }
-
-  .home-services .service-card {
-    padding: 18px 18px 16px;
-  }
-
-  .home-services .service-card-thumb {
-    display: none;
-  }
-}
