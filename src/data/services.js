@@ -16,7 +16,7 @@ const shot = (project, src, caption) => ({ project, src, caption });
 const result = (key, value, unit, source, compare) => ({ key, value, unit, source, compare });
 const source = (name, year, url) => ({ name, year, url });
 
-const DELOITTE = source('Deloitte & 55 for Google', 2020, 'https://web.dev/case-studies/milliseconds-make-millions');
+const DELOITTE = source('Deloitte & 55 for Google', 2020, 'https://www.deloitte.com/ie/en/services/consulting/research/milliseconds-make-millions.html');
 const SITEMINDER = source('SiteMinder Hotel Booking Trends', 2025, 'https://www.siteminder.com/news/siteminder-hotel-booking-trends-2025/');
 const REVENUEHERO = source('RevenueHero', 2024, 'https://www.revenuehero.io/resources/lead-response-times-report');
 const MICROSOFT = source('Microsoft Work Trend Index', 2023, 'https://www.microsoft.com/en-us/worklab/work-trend-index/will-ai-fix-work');
@@ -33,8 +33,8 @@ export const SERVICES = [
       shot('los-lagos-hotel', `${LL}web-contact.jpg`, 'posts.losLagosHotel.captions.contact'),
     ],
     results: [
-      result('conversion', 3, 'times', source('Portent', 2022, 'https://www.portent.com/blog/analytics/research-site-speed-hurting-everyone.htm'), { values: [1, 3], unit: 'times' }),
-      result('bounce', 32, 'increase', source('Google', 2017, 'https://www.thinkwithgoogle.com/data/page-load-time-statistics/')),
+      result('conversion', 3, 'times', source('Portent', 2022, 'https://portent.com/blog/analytics/research-site-speed-hurting-everyones-revenue.htm'), { values: [1, 3], unit: 'times' }),
+      result('bounce', 32, 'increase', source('Google/SOASTA Research', 2017, 'https://web.archive.org/web/20200814113113/https://www.thinkwithgoogle.com/data/page-load-time-statistics/')),
       result('speed', 8.4, 'increase', DELOITTE),
     ],
   },
