@@ -13,7 +13,7 @@ const QUERY = '(min-width: 961px) and (pointer: fine) and (prefers-reduced-motio
 const NATIVE_ONLY = /\/(privacy-policy|cookie-policy)\/?$/;
 
 /**
- * Smooth, slightly weighted wheel scrolling (Lenis) for the marketing pages.
+ * Lightly smoothed wheel scrolling (Lenis) for the marketing pages.
  * No snapping: the pages have sections of very different heights.
  */
 function SmoothScroll() {
@@ -44,7 +44,9 @@ function SmoothScroll() {
         anchors: true,
         // Clicking a link mid-glide shouldn't carry the glide into the next page.
         stopInertiaOnNavigate: true,
-        lerp: 0.09,
+        // Light easing: the page settles in about 0.2s at 60fps (0.09 glided
+        // for about half a second, which felt like the page lagged behind).
+        lerp: 0.2,
       });
     });
 
