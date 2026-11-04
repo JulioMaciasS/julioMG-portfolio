@@ -9,6 +9,15 @@ export const PERSON_ID = `${SITE_URL}/#person`;
 export const WEBSITE_ID = `${SITE_URL}/#website`;
 export const DISCENTIK_ID = 'https://discentik.com/#organization';
 
+// Based in Dublin; works with clients there, across Ireland and Spain, and remotely.
+const DUBLIN = { '@type': 'PostalAddress', addressLocality: 'Dublin', addressCountry: 'IE' };
+const AREA_SERVED = [
+  { '@type': 'City', name: 'Dublin' },
+  { '@type': 'Country', name: 'Ireland' },
+  { '@type': 'Country', name: 'Spain' },
+  { '@type': 'Place', name: 'Worldwide (remote)' },
+];
+
 const toAbsolute = (path) => (path.startsWith('http') ? path : `${SITE_URL}${path}`);
 
 /** Person, Discentik and WebSite, rendered on every page from the root layout. */
@@ -24,10 +33,10 @@ export function siteGraph(locale) {
         url: SITE_URL,
         image: toAbsolute('/images/hero/profile-pic.jpg'),
         email: 'mailto:julio@juliomacias.dev',
-        jobTitle: 'Freelance web developer and founder of Discentik',
+        jobTitle: 'Full-stack software engineer and freelance web developer',
         description:
-          'Freelance web developer and founder of Discentik. Builds websites, online booking, AI automation and web apps for businesses, with industry experience at Citi.',
-        address: { '@type': 'PostalAddress', addressLocality: 'Dublin', addressCountry: 'IE' },
+          'Full-stack software engineer and freelance web developer based in Dublin, and founder of Discentik. Builds websites, online booking, AI automation and web apps for businesses, with industry experience at Citi.',
+        address: DUBLIN,
         alumniOf: { '@type': 'CollegeOrUniversity', name: "Queen's University Belfast" },
         founder: { '@id': DISCENTIK_ID },
         knowsLanguage: ['en', 'es'],
@@ -69,18 +78,15 @@ export function servicesGraph({ locale, title, description, categories, faq }) {
       {
         '@type': 'ProfessionalService',
         '@id': `${url}#service`,
-        name: title,
+        name: 'Julio Macias Web Development',
         description,
         url,
         image: toAbsolute('/og-image.png'),
         email: 'julio@juliomacias.dev',
         founder: { '@id': PERSON_ID },
         provider: { '@id': PERSON_ID },
-        areaServed: [
-          { '@type': 'Country', name: 'Ireland' },
-          { '@type': 'Country', name: 'Spain' },
-          { '@type': 'Place', name: 'Worldwide (remote)' },
-        ],
+        address: DUBLIN,
+        areaServed: AREA_SERVED,
         availableLanguage: ['English', 'Spanish'],
         inLanguage: locale,
         hasOfferCatalog: {
@@ -132,7 +138,7 @@ export function serviceGraph({ locale, path, category, servicesLabel }) {
         url,
         serviceType: category.title,
         provider: { '@id': PERSON_ID },
-        areaServed: { '@type': 'Place', name: 'Worldwide (remote)' },
+        areaServed: AREA_SERVED,
         availableLanguage: ['English', 'Spanish'],
         inLanguage: locale,
         hasOfferCatalog: {
