@@ -8,6 +8,7 @@ import './HeroSection.css';
 import Link from '../LocalizedLink';
 import { ChevronDown, ArrowRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { responsiveImage } from '../../utils/responsiveImage';
 import useSpotlight from '../../hooks/useSpotlight';
 
 // Live client sites shown in the hero, back to front.
@@ -24,7 +25,7 @@ const CLIENT_WORK = [
  */
 function ClientWork({ label }) {
   return (
-    <Link to="/projects" className="hero-work" aria-label={label}>
+    <Link to="/projects" className="hero-work" aria-label={`${label}: ${CLIENT_WORK.map((site) => site.name).join(', ')}`}>
       <div className="hero-work-glow" aria-hidden="true" />
       {CLIENT_WORK.map((site, index) => (
         <figure key={site.name} className={`hero-work-shot hero-work-shot--${index + 1}`} aria-hidden="true">
@@ -32,7 +33,13 @@ function ClientWork({ label }) {
             <span /><span /><span />
             <em>{site.name}</em>
           </div>
-          <img src={site.src} alt="" decoding="async" />
+          {/* The first shot is the largest thing on screen on phones, so it loads first. */}
+          <img
+            {...responsiveImage(site.src, '(max-width: 1023px) 280px, 400px')}
+            alt=""
+            decoding="async"
+            fetchPriority={index === 0 ? 'high' : undefined}
+          />
         </figure>
       ))}
     </Link>
@@ -373,7 +380,7 @@ export default function HeroSection() {
           <div className="hero-intro justify-center lg:justify-start animate-fade-in">
             <div className="hero-avatar-wrap">
               <img
-                src="/images/profile-pic.jpeg"
+                {...responsiveImage('/images/profile-pic.jpeg', '128px')}
                 alt="Julio Macias"
                 className="hero-avatar"
               />
@@ -383,7 +390,8 @@ export default function HeroSection() {
               </span>
             </div>
           </div>
-          <h1 className="hero-title text-4xl sm:text-5xl xl:text-[3.4rem] font-bold mt-5 mb-5 animate-fade-up">
+          {/* No entrance animation: the headline is the main message, so it shows at once. */}
+          <h1 className="hero-title text-4xl sm:text-5xl xl:text-[3.4rem] font-bold mt-5 mb-5">
             {t('home.hero.title')}
           </h1>
           {/* Credentials as short tags rather than a paragraph; the About

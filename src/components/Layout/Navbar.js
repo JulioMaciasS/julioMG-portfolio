@@ -66,7 +66,7 @@ useEffect(() => {
             <div className='navbar-top-backdrop' aria-hidden='true' />
             <nav className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
                 <div className='navbar-container'>
-                    <Link to='/' className='navbar-logo' onClick={closeMobileMenu} aria-label='Julio Macias, home'>
+                    <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
                         <svg className='navbar-logo-mark' viewBox='0 0 64 64' width='34' height='34' aria-hidden='true'>
                             <rect width='64' height='64' rx='15' fill='#2a2624' stroke='#4a423d' strokeWidth='1.5' />
                             <text x='32' y='44' textAnchor='middle' fontFamily="'Space Grotesk', sans-serif"

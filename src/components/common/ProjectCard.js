@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from '../LocalizedLink';
 import { ArrowUpRight } from 'lucide-react';
+import { responsiveImage } from '../../utils/responsiveImage';
 import './ProjectCard.css';
 
 /**
@@ -32,7 +33,7 @@ export default function ProjectCard({
       <div className="pcard-image-wrap">
         <img
           className={`pcard-image ${padding ? 'object-contain p-5' : 'object-cover object-center'}`}
-          src={imageURL}
+          {...responsiveImage(imageURL, '(max-width: 640px) 100vw, 420px')}
           alt={title}
           loading="lazy"
         />

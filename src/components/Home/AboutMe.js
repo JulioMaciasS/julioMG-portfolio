@@ -2,6 +2,7 @@ import React from 'react'
 import { useTranslations } from 'next-intl'
 import { GraduationCap, Briefcase, Code2, Rocket } from 'lucide-react'
 import Reveal from '../common/Reveal'
+import { responsiveImage } from '../../utils/responsiveImage'
 import './AboutMe.css'
 
 const HIGHLIGHTS = [
@@ -22,8 +23,9 @@ function AboutMe() {
           <div className="about-photo">
             <div className="about-photo-shadow" aria-hidden="true" />
             <img
-              src="/images/hero/profile-pic.jpg"
+              {...responsiveImage('/images/hero/profile-pic.jpg', '(max-width: 640px) 70vw, 320px')}
               alt="Julio Macias"
+              loading="lazy"
               className="about-photo-img"
             />
           </div>

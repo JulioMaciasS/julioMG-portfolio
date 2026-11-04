@@ -3,6 +3,7 @@ import { useTranslations } from 'next-intl';
 import { ArrowRight, ArrowUpRight, CheckCircle2 } from 'lucide-react';
 import Link from '../LocalizedLink';
 import Reveal from '../common/Reveal';
+import { responsiveImage } from '../../utils/responsiveImage';
 import './FeaturedProject.css';
 
 // The project shown first on the home page. "Latest work" skips it to avoid repeating it.
@@ -21,7 +22,13 @@ export default function FeaturedProject({ id }) {
     <section id={id} className="services-featured">
       <Reveal as="div" className="services-featured-card">
         <a href={FEATURED.liveUrl} target="_blank" rel="noopener noreferrer" className="services-featured-image">
-          <img src={FEATURED.image} alt="Discentik course player with AI chat and a document canvas" loading="lazy" />
+          <img
+            {...responsiveImage(FEATURED.image, '(max-width: 900px) 100vw, 560px')}
+            alt="Discentik course player with AI chat and a document canvas"
+            width="1280"
+            height="720"
+            loading="lazy"
+          />
         </a>
         <div className="services-featured-body">
           <span className="services-featured-eyebrow">{t('home.featured.eyebrow')}</span>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { responsiveImage } from '../../utils/responsiveImage';
 
 // Screenshots from live client sites, stacked like prints on a desk.
 const COLLAGE = [
@@ -24,7 +25,7 @@ function WhyVisual({ type, alt }) {
       <div className="why-visual why-visual--collage" aria-hidden="true">
         {COLLAGE.map((src, index) => (
           <div key={src} className={`why-collage-shot why-collage-shot--${index + 1}`}>
-            <img src={src} alt="" loading="lazy" decoding="async" />
+            <img {...responsiveImage(src, '(max-width: 900px) 60vw, 240px')} alt="" loading="lazy" decoding="async" />
           </div>
         ))}
       </div>
@@ -33,7 +34,7 @@ function WhyVisual({ type, alt }) {
 
   return (
     <div className="why-visual why-visual--photo">
-      <img src={PHOTOS[type]} alt={alt} loading="lazy" decoding="async" />
+      <img {...responsiveImage(PHOTOS[type], '(max-width: 900px) 100vw, 360px')} alt={alt} loading="lazy" decoding="async" />
     </div>
   );
 }

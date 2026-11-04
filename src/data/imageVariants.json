@@ -1,0 +1,562 @@
+{
+  "/images/CineShare.png": {
+    "width": 664,
+    "variants": [
+      400
+    ]
+  },
+  "/images/about/citi-office.jpg": {
+    "width": 900,
+    "variants": [
+      400,
+      800
+    ]
+  },
+  "/images/about/working-together.jpg": {
+    "width": 900,
+    "variants": [
+      400,
+      800
+    ]
+  },
+  "/images/chatgptlearn/cover.png": {
+    "width": 1200,
+    "variants": [
+      400,
+      800
+    ]
+  },
+  "/images/cineSharePost/awsTechnologies.png": {
+    "width": 1024,
+    "variants": [
+      400,
+      800
+    ]
+  },
+  "/images/cineSharePost/copilotCover.png": {
+    "width": 1200,
+    "variants": [
+      400,
+      800
+    ]
+  },
+  "/images/cineSharePost/mainLoggedPage.png": {
+    "width": 982,
+    "variants": [
+      400,
+      800
+    ]
+  },
+  "/images/cineSharePost/mainPage.png": {
+    "width": 1017,
+    "variants": [
+      400,
+      800
+    ]
+  },
+  "/images/cineSharePost/moviesRanking.png": {
+    "width": 1022,
+    "variants": [
+      400,
+      800
+    ]
+  },
+  "/images/cineSharePost/registerPage.png": {
+    "width": 931,
+    "variants": [
+      400,
+      800
+    ]
+  },
+  "/images/computer.png": {
+    "width": 2198,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/covers/banner-ad-cover-img.png": {
+    "width": 1351,
+    "variants": [
+      400,
+      800
+    ]
+  },
+  "/images/covers/microt-cover-img.png": {
+    "width": 1200,
+    "variants": [
+      400,
+      800
+    ]
+  },
+  "/images/discentik/ai-feedback.jpg": {
+    "width": 1280,
+    "variants": [
+      400,
+      800
+    ]
+  },
+  "/images/discentik/home.jpg": {
+    "width": 1440,
+    "variants": [
+      400,
+      800
+    ]
+  },
+  "/images/discentik/instructor-builder.jpg": {
+    "width": 1600,
+    "variants": [
+      400,
+      800
+    ]
+  },
+  "/images/discentik/organisation-progress.jpg": {
+    "width": 1600,
+    "variants": [
+      400,
+      800
+    ]
+  },
+  "/images/discentik/practice-canvas.jpg": {
+    "width": 1280,
+    "variants": [
+      400,
+      800
+    ]
+  },
+  "/images/discentik/quiz.jpg": {
+    "width": 1280,
+    "variants": [
+      400,
+      800
+    ]
+  },
+  "/images/eugeniaBravoPost/AdminPanel1.png": {
+    "width": 1820,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/eugeniaBravoPost/AdminPanel2.png": {
+    "width": 1808,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/eugeniaBravoPost/AdminPanel3.png": {
+    "width": 1807,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/eugeniaBravoPost/AdminPanel4.png": {
+    "width": 1804,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/eugeniaBravoPost/EugeniaBravoIcon.png": {
+    "width": 1171,
+    "variants": [
+      400,
+      800
+    ]
+  },
+  "/images/eugeniaBravoPost/Public1.png": {
+    "width": 1970,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/eugeniaBravoPost/Public2.png": {
+    "width": 1970,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/eugeniaBravoPost/Public3.png": {
+    "width": 1970,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/eugeniaBravoPost/Public4.png": {
+    "width": 1970,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/eugeniaBravoPost/home.jpg": {
+    "width": 1440,
+    "variants": [
+      400,
+      800
+    ]
+  },
+  "/images/eugeniaBravoRebuild/Admin 1.png": {
+    "width": 1716,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/eugeniaBravoRebuild/Admin 2.png": {
+    "width": 1718,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/eugeniaBravoRebuild/Admin 3.png": {
+    "width": 1707,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/eugeniaBravoRebuild/Admin 4.png": {
+    "width": 1718,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/eugeniaBravoRebuild/Admin 5.png": {
+    "width": 1719,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/eugeniaBravoRebuild/Admin 6.png": {
+    "width": 1718,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/eugeniaBravoRebuild/Admin 7.png": {
+    "width": 1714,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/eugeniaBravoRebuild/Public 1.png": {
+    "width": 1707,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/eugeniaBravoRebuild/Public 2.png": {
+    "width": 1705,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/eugeniaBravoRebuild/Public 3.png": {
+    "width": 1708,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/eugeniaBravoRebuild/Public 4.png": {
+    "width": 1704,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/eugeniaBravoRebuild/Public 5.png": {
+    "width": 1708,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/guiasDeMalaga/home.jpg": {
+    "width": 1440,
+    "variants": [
+      400,
+      800
+    ]
+  },
+  "/images/hero/profile-pic.jpg": {
+    "width": 1000,
+    "variants": [
+      400,
+      800
+    ]
+  },
+  "/images/img-1.jpg": {
+    "width": 4016,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/img-2.jpg": {
+    "width": 2992,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/img-3.jpg": {
+    "width": 2245,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/img-4.jpg": {
+    "width": 3954,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/img-5.jpg": {
+    "width": 2882,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/img-6.jpg": {
+    "width": 2063,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/img-7.jpg": {
+    "width": 3456,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/img-8.jpg": {
+    "width": 1920,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/img-9.jpg": {
+    "width": 1920,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/img-home.jpg": {
+    "width": 1920,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/img-project.jpg": {
+    "width": 1480,
+    "variants": [
+      400,
+      800
+    ]
+  },
+  "/images/losLagosHotel/booking-rooms.jpg": {
+    "width": 1800,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/losLagosHotel/cover.jpg": {
+    "width": 1600,
+    "variants": [
+      400,
+      800
+    ]
+  },
+  "/images/losLagosHotel/ops-calendar.jpg": {
+    "width": 1800,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/losLagosHotel/ops-dashboard.jpg": {
+    "width": 1800,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/losLagosHotel/ops-fx.jpg": {
+    "width": 1800,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/losLagosHotel/ops-help.jpg": {
+    "width": 1800,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/losLagosHotel/ops-security.jpg": {
+    "width": 1800,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/losLagosHotel/ops-telegram.jpg": {
+    "width": 804,
+    "variants": [
+      400,
+      800
+    ]
+  },
+  "/images/losLagosHotel/web-contact.jpg": {
+    "width": 1800,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/losLagosHotel/web-datepicker.jpg": {
+    "width": 1800,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/losLagosHotel/web-home-en.jpg": {
+    "width": 1800,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/losLagosHotel/web-language.jpg": {
+    "width": 1800,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/losLagosHotel/web-location.jpg": {
+    "width": 1800,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/losLagosHotel/web-reviews.jpg": {
+    "width": 1800,
+    "variants": [
+      400,
+      800,
+      1600
+    ]
+  },
+  "/images/profile-pic.jpeg": {
+    "width": 1000,
+    "variants": [
+      400,
+      800
+    ]
+  },
+  "/images/q-mark-icon.jpg": {
+    "width": 1024,
+    "variants": [
+      400,
+      800
+    ]
+  },
+  "/images/tuDivorcioInteligente/benefits.jpg": {
+    "width": 1440,
+    "variants": [
+      400,
+      800
+    ]
+  },
+  "/images/tuDivorcioInteligente/contact.jpg": {
+    "width": 1440,
+    "variants": [
+      400,
+      800
+    ]
+  },
+  "/images/tuDivorcioInteligente/guide-form.jpg": {
+    "width": 1440,
+    "variants": [
+      400,
+      800
+    ]
+  },
+  "/images/tuDivorcioInteligente/hero.jpg": {
+    "width": 1440,
+    "variants": [
+      400,
+      800
+    ]
+  }
+}
