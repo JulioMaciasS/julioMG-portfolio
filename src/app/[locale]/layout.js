@@ -34,7 +34,7 @@ export function generateStaticParams() {
 }
 
 export const metadata = {
-  metadataBase: new URL('https://juliomacias.dev'),
+  metadataBase: new URL('https://www.juliomacias.dev'),
   icons: {
     icon: [
       { url: '/favicon.ico' },
@@ -50,7 +50,6 @@ export const viewport = {
   themeColor: '#1a1717',
   width: 'device-width',
   initialScale: 1,
-  maximumScale: 1,
 };
 
 export default async function LocaleLayout({ children, params: { locale } }) {
